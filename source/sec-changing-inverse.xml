@@ -41,6 +41,7 @@
 	</p>
 
 	<xi:include href="./previews/PA-changing-inverse-F-C.xml"/>
+	<xi:include href="./previews/PA-changing-inverse-F-C-D.xml"/>
 
   </subsection>
 
@@ -58,7 +59,7 @@
   		<idx><h>inverse function</h><h>definition</h></idx>
   		<statement>
   			<p>
-  				Let <m>f : A \to B</m> be a function.  If there exists a function <m>g : B \to A</m> such that 
+  				Let <m>f : A \to B</m> be a function.  If there exists a function <m>g : B \to A</m> such that
   				<me>
   					g(f(a)) = a \text{ and } f(g(b)) = b
   				</me>
@@ -78,25 +79,25 @@
 	<xi:include href="./activities/act-changing-inverse-Dolbear.xml"/>
 
 	<p>
-		When a given function has an inverse function, it allows us to express the same relationship from two different points of view.  For instance, if <m>y = f(t) = 2t+1</m>, we can show<fn>Observe that <m>g(f(t)) = g(2t+1) = \frac{(2t+1)-1}{2} = \frac{2t}{2} = t</m>.  Similarly, <m>f(g(y)) = f\left(\frac{y-1}{2}\right) = 2\left(\frac{y-1}{2} \right) + 1 = y-1 + 1 = y</m>.</fn> that the function <m>t = g(y) = \frac{y-1}{2}</m> reverses the effect of <m>f</m> (and vice versa), and thus <m>g = f^{-1}</m>.  We observe that 
+		When a given function has an inverse function, it allows us to express the same relationship from two different points of view.  For instance, if <m>y = f(t) = 2t+1</m>, we can show<fn>Observe that <m>g(f(t)) = g(2t+1) = \frac{(2t+1)-1}{2} = \frac{2t}{2} = t</m>.  Similarly, <m>f(g(y)) = f\left(\frac{y-1}{2}\right) = 2\left(\frac{y-1}{2} \right) + 1 = y-1 + 1 = y</m>.</fn> that the function <m>t = g(y) = \frac{y-1}{2}</m> reverses the effect of <m>f</m> (and vice versa), and thus <m>g = f^{-1}</m>.  We observe that
 		<me>
 			y = f(t) = 2t + 1 \text{ and } t = f^{-1}(y) = \frac{y-1}{2}
 		</me>
 		are equivalent forms of the same equation, and thus they say the same thing from two different perspectives.  The first version of the equation is solved for <m>y</m> in terms of <m>t</m>, while the second equation is solved for <m>t</m> in terms of <m>y</m>.  This important principle holds in general whenever a function has an inverse function.
-	</p>	
+	</p>
 
 	<assemblage xml:id="asm-inverse-two-perspectives">
 		<title>Two perspectives from a function and its inverse function</title>
 		<idx><h>inverse function</h><h>two perspectives</h></idx>
 		<p>
-			If <m>y = f(t)</m> has an inverse function, then the equations 
+			If <m>y = f(t)</m> has an inverse function, then the equations
 			<me>
-				y = f(t)  \text{ and } t = f^{-1}(y) 
+				y = f(t)  \text{ and } t = f^{-1}(y)
 			</me>
 			say the exact same thing but from two different perspectives.
 		</p>
 	</assemblage>
-	
+
   </subsection>
 
   <subsection xml:id="changing-inverse-does-it">
@@ -156,7 +157,7 @@
 					</tabular>
 				</table>
 			</sidebyside>
-			
+
 		</statement>
 		<solution>
 			<p>
@@ -249,7 +250,7 @@
 			</p>
 
 			<p>
-				Taking <m>y = 3 - \frac{1}{5}(t-1)^3</m>, we try to solve for <m>t</m> by first subtracting <m>3</m> from both sides to get 
+				Taking <m>y = 3 - \frac{1}{5}(t-1)^3</m>, we try to solve for <m>t</m> by first subtracting <m>3</m> from both sides to get
 				<me>
 					y - 3 = -\frac{1}{5}(t-1)^3
 				</me>.
@@ -273,7 +274,7 @@
 				<me>
 					y - 3 = -\frac{1}{5}(t-1)^2
 				</me>.
-				After multiplying both sides by <m>-5</m>, we have 
+				After multiplying both sides by <m>-5</m>, we have
 				<me>
 					(t-1)^2 = -5(y-3)
 				</me>.
@@ -332,8 +333,8 @@
   				</li>
 				<li>
 					<p>
-						The functions <m>f</m> and <m>f^{-1}</m> reverse one anothers' processes.  Symbolically, 
-						<m>f^{-1}(f(a)) = a</m> for every input <m>a</m> in the domain of <m>f</m>, and similarly, 
+						The functions <m>f</m> and <m>f^{-1}</m> reverse one anothers' processes.  Symbolically,
+						<m>f^{-1}(f(a)) = a</m> for every input <m>a</m> in the domain of <m>f</m>, and similarly,
 						<m>f(f^{-1}(b)) = b</m> for every input <m>b</m> in the domain of <m>f^{-1}</m>.
 					</p>
 				</li>

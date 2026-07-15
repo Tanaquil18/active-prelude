@@ -1,0 +1,125 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <function name="f">$func</function>
+  <number fixed name="zero">0</number>
+  <number fixed name="one">1</number>
+  <number fixed name="negone">-1</number>
+</setup>
+
+<p>
+  We are going to explore <em>transformations</em> of a familiar quadratic function, <m>y=x^2</m>.
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      First, move the slider for <m>a</m> back and forth and observe the effect(s) on the graph of <m>f(x)+a</m> compared to the graph of <m>f(x)</m>. You can also drag the point around to see how the value of <m>a</m> changes.
+    </p>
+    <slider name="a" step="0.1" from="-9" to="9"><label><m>a</m></label></slider>
+    <graph xMin="-6.5" xMax="6.5" yMin="-10.5" yMax="10.5" fixAxes size="small">
+      <shortDescription>graph of a function a plus f of x for different values of a</shortDescription>
+      <function name="f1">$f</function>
+      <curve styleNumber="2" name="fplusa">$f+$a</curve>
+      <point styleNumber="2">($zero,$$f($zero)+$a)</point>
+      <legend position="lowerLeft">
+        <label forObject="$f1">
+          <m>y=f(x)</m>
+        </label>
+        <label forObject="$fplusa">
+          <m>y=f(x)+a</m>
+        </label>
+      </legend>
+    </graph>
+    <p>
+      Set the value of the slider to <m>a=9.</m>
+      <answer disableAfterCorrect><award><when>$a=9</when></award></answer><br/>
+      You can move it again afterwards.
+    </p>
+    <p>
+      Which of the following observations are true for <br/><m>y=f(x)+a</m>?
+      <answer><choiceInput selectMultiple><shortDescription>properties of a plus f of x</shortDescription><choice>The graph of <m>f(x)</m> is deformed (stretched or shrunk) vertically by <m>a</m>.</choice><choice credit="1">The graph of <m>f(x)</m> is shifted vertically by <m>a</m>.</choice><choice>The graph of <m>f(x)</m> is shifted horizontally by <m>a</m>.</choice><choice>The graph of <m>f(x)</m> is reflected across the <m>x</m>-axis when <m>a</m> is negative.</choice><choice credit="1">The graph is the same as <m>f(x)</m> when <m>a=0</m>.</choice><choice>The graph is the same as <m>f(x)</m> when <m>a=1</m>.</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Next, move the slider for <m>b</m> back and forth and observe the effect(s) on the graph of <m>f(x-b)</m> compared to the graph of <m>f(x)</m>. You can also drag the point around to see how the value of <m>b</m> changes.
+    </p>
+    <slider name="b" step="0.1" from="-6" to="6"><label><m>b</m></label></slider>
+<graph xMin="-6.5" xMax="6.5" yMin="-10.5" yMax="10.5" fixAxes size="small">
+  <shortDescription>graph of a function f of the quantity x minus b for different values of b</shortDescription>
+  <function name="f2">$f</function>
+  <function styleNumber="2" name="fxminusb">$$f(x-$b)</function>
+  <point styleNumber="2">($b,$$fxminusb($b))</point>
+  <legend position="lowerLeft">
+    <label forObject="$f2">
+      <m>y=f(x)</m>
+    </label>
+    <label forObject="$fxminusb">
+      <m>y=f(x-b)</m>
+    </label>
+  </legend>
+</graph>
+    <p>
+      Set the value of the slider to <m>b=6.</m>
+      <answer disableAfterCorrect><award><when>$b=6</when></award></answer><br/>
+      You can move it again afterwards.
+    </p>
+    <p>
+      Which of the following observations are true for <br/><m>y=f(x-b)</m>?
+      <answer><choiceInput selectMultiple><shortDescription>properties of f of the quantity x minus b</shortDescription><choice>The graph of <m>f(x)</m> is deformed (stretched or shrunk) vertically by <m>b</m>.</choice><choice>The graph of <m>f(x)</m> is shifted vertically by <m>b</m>.</choice><choice credit="1">The graph of <m>f(x)</m> is shifted horizontally by <m>b</m>.</choice><choice>The graph of <m>f(x)</m> is reflected across the <m>x</m>-axis when <m>b</m> is negative.</choice><choice credit="1">The graph is the same as <m>f(x)</m> when <m>b=0</m>.</choice><choice>The graph is the same as <m>f(x)</m> when <m>b=1</m>.</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Third, move the slider for <m>c</m> back and forth and observe the effect(s) on the graph of <m>cf(x)</m> compared to the graph of <m>f(x)</m>. You can also drag the point around to see how the value of <m>c</m> changes.
+    </p>
+    <slider name="c" step="0.1" from="-6" to="6"><label><m>c</m></label></slider>
+    <graph xMin="-6.5" xMax="6.5" yMin="-10.5" yMax="10.5" fixAxes size="small">
+      <shortDescription>graph of a function c times f of x for different values of c</shortDescription>
+      <function name="f3">$f</function>
+      <function styleNumber="2" name="ctimesf">$c*$f</function>
+      <point styleNumber="2" hide="$$f(1)=0">($one,$c*$$f($one))</point>
+      <point styleNumber="2" hide="$$f(1)!=0">($zero,$c*$$f($zero))</point>
+      <legend position="lowerLeft">
+        <label forObject="$f3">
+          <m>y=f(x)</m>
+        </label>
+        <label forObject="$ctimesf">
+          <m>y=cf(x)</m>
+        </label>
+      </legend>
+    </graph>
+    <p>
+      Set the value of the slider to <m>c=6.</m>
+      <answer disableAfterCorrect><award><when>$c=6</when></award></answer><br/>
+      You can move it again afterwards.
+    </p>
+    <p>
+      Which of the following observations are true for <br/><m>y=cf(x)</m>?
+      <answer><choiceInput selectMultiple><shortDescription>properties of c times f of x </shortDescription><choice credit="1">The graph of <m>f(x)</m> is deformed (stretched or shrunk) vertically by <m>a</m>.</choice><choice>The graph of <m>f(x)</m> is shifted vertically by <m>c</m>.</choice><choice>The graph of <m>f(x)</m> is shifted horizontally by <m>c</m>.</choice><choice credit="1">The graph of <m>f(x)</m> is reflected across the <m>x</m>-axis when <m>c</m> is negative.</choice><choice>The graph is the same as <m>f(x)</m> when <m>c=0</m>.</choice><choice credit="1">The graph is the same as <m>f(x)</m> when <m>c=1</m>.</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Finally, change the function entered below and explore the sliders above again for this new function.  Do any of your selected choices change when the function we are comparing to has changed? You can come up with your own functions to try, but some good ones to try that will fit in the window nicely could be <m>f(x)=x+1</m>, <m>f(x) = x^2 + 2x + 3</m>, or <m>f(x) = x^3 - 1</m>.
+    </p>
+    <p>
+      <mathInput name="func" prefill="x^2"><label><m>f(x)=</m></label></mathInput>
+    </p>
+  </li>
+</ol>

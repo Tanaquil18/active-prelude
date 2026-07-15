@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-exp-e">
+<worksheet label="ws-PA-exp-e" component="static">
   <exploration xml:id="PA-exp-e">
     <introduction>
       <p>
@@ -22,7 +22,7 @@
     <task workspace="3cm" xml:id="PA-exp-e-task-0">
       <statement>
         <p>
-						By experimenting with the value of <m>k</m>, find a value of <m>k</m> so that the graph of <m>p(t) = f(kt) = 2^{kt}</m> appears to align with the graph of <m>g(t) = 3^t</m>.   What is the value of <m>k</m>?  
+						By experimenting with the value of <m>k</m>, find a value of <m>k</m> so that the graph of <m>p(t) = f(kt) = 2^{kt}</m> appears to align with the graph of <m>g(t) = 3^t</m>.   What is the value of <m>k</m>?
 					</p>
       </statement>
       <hint/>
@@ -36,7 +36,7 @@
     <task workspace="3cm" xml:id="PA-exp-e-task-1">
       <statement>
         <p>
-						Similarly, experiment to find a value of <m>k</m> so that the graph of <m>p(t) = f(kt) = 2^{kt}</m> appears to align with the graph of <m>h(t) = (\frac{1}{3})^t</m>.   What is the value of <m>k</m>?  
+						Similarly, experiment to find a value of <m>k</m> so that the graph of <m>p(t) = f(kt) = 2^{kt}</m> appears to align with the graph of <m>h(t) = (\frac{1}{3})^t</m>.   What is the value of <m>k</m>?
 					</p>
       </statement>
       <hint/>

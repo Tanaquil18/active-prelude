@@ -31,25 +31,27 @@
 
   <subsection><title>Introduction</title>
   	<p>
-  		In our preparation for calculus, we aspire to understand functions from a wide range of perspectives and to become familiar with a library of basic functions.  So far, two basic families of functions we have considered are linear functions and quadratic functions, the simplest of which are <m>L(x) = x</m> and <m>Q(x) = x^2</m>.  As we progress further, we will endeavor to understand a <q>parent</q> function  as the most fundamental member of a family of functions, as well as how other similar but more complicated functions are the result of transforming the parent function.  
+  		In our preparation for calculus, we aspire to understand functions from a wide range of perspectives and to become familiar with a library of basic functions.  So far, two basic families of functions we have considered are linear functions and quadratic functions, the simplest of which are <m>L(x) = x</m> and <m>Q(x) = x^2</m>.  As we progress further, we will endeavor to understand a <q>parent</q> function  as the most fundamental member of a family of functions, as well as how other similar but more complicated functions are the result of transforming the parent function.
   	</p>
 
 	<p>
 		Informally, a transformation <idx><h>transformation of a function</h></idx> of a given function is an algebraic process by which we change the function to a related function that has the same fundamental shape, but may be shifted, reflected, and/or stretched in a systematic way.  For example, among all quadratic functions, the simplest is the parent function <m>Q(x) = x^2</m>, but any other quadratic function such as <m>g(x) = -3(x-5)^2 + 4</m> can also be understood in relation to the parent function.  We say that <q><m>g</m> is a transformation of <m>Q</m>.</q>
 	</p>
 
-	<p>	
+	<p>
   		In <xref ref="PA-changing-transformations-quadratic">Preview Activity</xref>, we investigate the effects of the constants <m>a</m>, <m>b</m>, and <m>c</m> in generating the function <m>g(x) = af(x-b) + c</m> in the context of already knowing the function <m>f</m>.
   	</p>
 
 	<xi:include href="./previews/PA-changing-transformations-quadratic.xml"/>
+	<xi:include href="./previews/PA-changing-transformations-quadratic-D.xml"/>
+
 
   </subsection>
 
   <subsection xml:id="subsec-changing-transformations-translation">
   	<title>Translations of Functions</title>
   	<p>
-  		We begin by summarizing two of our findings in <xref ref="PA-changing-transformations-quadratic">Preview Activity</xref>.  
+  		We begin by summarizing two of our findings in <xref ref="PA-changing-transformations-quadratic">Preview Activity</xref>.
   	</p>
 
 	<assemblage xml:id="asm-transformations-vertical">
@@ -61,7 +63,7 @@
 	</assemblage>
 
 	<p>
-		As we found in our <em>Desmos</em> explorations in the preview activity, is especially helpful to see the effects of vertical translation dynamically.  
+		As we found in our <em>Desmos</em> explorations in the preview activity, is especially helpful to see the effects of vertical translation dynamically.
 	</p>
 
 	<figure xml:id="F-transformations-vertical-translation">
@@ -74,12 +76,12 @@
 			<slate xml:id="vtranslations" aspect="4:4" surface="canvas"/>
 			<instructions>
 				<p>
-					Move the slider<fn>Huge thanks to the amazing <url href="http://merganser.math.gvsu.edu/david/">David Austin</url> for making these interactive javascript graphics for the text.</fn> by clicking and dragging on the red point to see how changing <m>a</m> affects the graph of <m>y = f(x) + a</m>, which appears in blue.  The graph of <m>y = f(x)</m> will appear in grey and remain fixed.  
+					Move the slider<fn>Huge thanks to the amazing <url href="http://merganser.math.gvsu.edu/david/">David Austin</url> for making these interactive javascript graphics for the text.</fn> by clicking and dragging on the red point to see how changing <m>a</m> affects the graph of <m>y = f(x) + a</m>, which appears in blue.  The graph of <m>y = f(x)</m> will appear in grey and remain fixed.
 				</p>
 			</instructions>
 		</interactive>
-	</figure> 
-	
+	</figure>
+
 	<p>
 		In a vertical translation, the graph of <m>g</m> lies above the graph of <m>f</m> whenever <m>a \gt 0</m>, while the graph of <m>g</m> lies below the graph of <m>f</m> whenever <m>a \lt 0</m>.  In <xref ref="F-transformations-vert">Figure</xref>, we see the original parent function <m>f(x) = |x|</m> along with the resulting transformation <m>g(x) = f(x)-3</m>, which is a downward vertical shift of <m>3</m> units.  Note particularly that every point on the original graph of <m>f</m> is moved <m>3</m> units down; we often indicate this by an arrow and labeling at least one key point on each graph.
 	</p>
@@ -98,7 +100,7 @@
 	</sidebyside>
 
 	<p>
-		In <xref ref="F-transformations-horiz">Figure</xref>, we see a horizontal translation of the original function <m>f</m> that shifts its graph <m>2</m> units to the right to form the function <m>h</m>.  Observe that <m>f</m> is not a familiar basic function; transformations may be applied to any original function we desire.	
+		In <xref ref="F-transformations-horiz">Figure</xref>, we see a horizontal translation of the original function <m>f</m> that shifts its graph <m>2</m> units to the right to form the function <m>h</m>.  Observe that <m>f</m> is not a familiar basic function; transformations may be applied to any original function we desire.
 	</p>
 
 	<p>
@@ -110,7 +112,7 @@
 	</p>
 
 	<p>
-		Again, it's instructive to see the effects of horizontal translation dynamically.  
+		Again, it's instructive to see the effects of horizontal translation dynamically.
 	</p>
 
 	<figure xml:id="F-transformations-horizontal-translation">
@@ -123,11 +125,11 @@
 			<slate xml:id="htranslations" aspect="4:4" surface="canvas"/>
 			<instructions>
 				<p>
-					Move the slider by clicking and dragging on the red point to see how changing <m>b</m> affects the graph of <m>y = f(x-b)</m>, which appears in blue.  The graph of <m>y = f(x)</m> will appear in grey and remain fixed. 
+					Move the slider by clicking and dragging on the red point to see how changing <m>b</m> affects the graph of <m>y = f(x-b)</m>, which appears in blue.  The graph of <m>y = f(x)</m> will appear in grey and remain fixed.
 				</p>
 			</instructions>
 		</interactive>
-	</figure> 	
+	</figure>
 
 	<p>
 		Overall, we have the following general principle.
@@ -139,7 +141,7 @@
 		<p>
 			Given a function <m>y = f(x)</m> and a real number <m>b</m>, the transformed function <m>y = h(x) = f(x-b)</m> is a <em>horizontal translation</em> of the graph of <m>f</m>.  That is, every point <m>(x,f(x))</m> on the graph of <m>f</m> gets shifted horizontally to the corresponding point <m>(x+b,f(x))</m> on the graph of <m>g</m>.
 		</p>
-	</assemblage>	
+	</assemblage>
 
 	<p>
 		We emphasize that in the horizontal translation <m>h(x) = f(x-b)</m>, if <m>b \gt 0</m> the graph of <m>h</m> lies <m>b</m> units to the right of <m>f</m>, while if <m>b \lt 0</m>, <m>h</m> lies <m>b</m> units to the left of <m>f</m>.
@@ -197,7 +199,7 @@
   	</example>
 
 	<p>
-		As with vertical and horizontal translation, it's particularly instructive to see the effects of vertical scaling in a dynamic way.  
+		As with vertical and horizontal translation, it's particularly instructive to see the effects of vertical scaling in a dynamic way.
 	</p>
 
 	<figure xml:id="F-transformations-vertical-scaling">
@@ -210,11 +212,11 @@
 			<slate xml:id="stretching" aspect="4:4" surface="canvas"/>
 			<instructions>
 				<p>
-					Move the slider by clicking and dragging on the red point to see how changing <m>c</m> affects the graph of <m>y = cf(x)</m>, which is shown in blue.  The graph of <m>y = f(x)</m> will appear in grey and remain fixed. 
+					Move the slider by clicking and dragging on the red point to see how changing <m>c</m> affects the graph of <m>y = cf(x)</m>, which is shown in blue.  The graph of <m>y = f(x)</m> will appear in grey and remain fixed.
 				</p>
 			</instructions>
 		</interactive>
-	</figure> 
+	</figure>
 
   	<p>
   		We summarize and generalize our observations from <xref ref="ex-transformations-vert-stretch">Example</xref> and <xref ref="F-transformations-vertical-scaling">Figure</xref> as follows.
@@ -231,7 +233,7 @@
   			Given a function <m>y = f(x)</m> and a real number <m>c \lt 0</m>, the transformed function <m>y = v(x) = cf(x)</m> is a reflection of the graph of <m>f</m> across the <m>x</m>-axis followed by a vertical stretch by a factor of <m>|c|</m>.
   		</p>
   	</assemblage>
-  	
+
 	<xi:include href="./activities/act-changing-transformations-vert-stretch.xml"/>
 
   </subsection>
@@ -249,7 +251,7 @@
 		<ol>
 			<li>
 				<p>
-					add <m>1</m> to <m>x</m> and then 
+					add <m>1</m> to <m>x</m> and then
 					apply the function <m>r</m> to the quantity <m>x+1</m>;
 				</p>
 			</li>
@@ -282,7 +284,7 @@
 			</sidebyside>
 
 	<p>
-		Continuing, we now consider the function <m>q(x) = 2p(x) = 2r(x+1)</m>, which results in a vertical stretch of <m>p</m> away from the <m>x</m>-axis by a factor of <m>2</m>, as seen in <xref ref="F-transformations-combined-order-3">Figure</xref>. 
+		Continuing, we now consider the function <m>q(x) = 2p(x) = 2r(x+1)</m>, which results in a vertical stretch of <m>p</m> away from the <m>x</m>-axis by a factor of <m>2</m>, as seen in <xref ref="F-transformations-combined-order-3">Figure</xref>.
 	</p>
 
 			<sidebyside width="50%">
@@ -303,7 +305,7 @@
 	</p>
 
 	<p>
-		While there are some transformations that can be executed in either order (such as a combination of a horizontal translation and a vertical translation, as seen in part (b) of <xref ref="act-changing-transformations-translations">Activity</xref>), in other situations order matters.  For instance, in our preceding discussion, we have to apply the vertical stretch <em>before</em> applying the vertical shift.  Algebraically, this is because 
+		While there are some transformations that can be executed in either order (such as a combination of a horizontal translation and a vertical translation, as seen in part (b) of <xref ref="act-changing-transformations-translations">Activity</xref>), in other situations order matters.  For instance, in our preceding discussion, we have to apply the vertical stretch <em>before</em> applying the vertical shift.  Algebraically, this is because
 		<me>
 			2r(x+1) - 1 \ne 2[r(x+1)-1]
 		</me>.

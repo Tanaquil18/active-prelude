@@ -41,7 +41,7 @@
 	</p>
 
 	<p>
-		By changing our perspective slightly, we can see that it is equivalent to think of the values of the sine and cosine function as representing the lengths of legs in right triangles.  Specifically, given a central angle<fn>In our work with right triangles, we'll often represent the angle by <m>\theta</m> and think of this angle as fixed, as opposed to our previous use of <m>t</m> where we frequently think of <m>t</m> as changing.</fn> <m>\theta</m> in standard position <idx><h>standard position</h></idx> (vertex at the origin, and one side on the positive <m>x</m>-axis), if we think of the right triangle with vertices <m>(\cos(\theta),0)</m>, <m>(0,0)</m>, and <m>(\cos(\theta), \sin(\theta))</m>, then the length of the horizontal leg is <m>\cos(\theta)</m> and the length of the vertical leg is <m>\sin(\theta)</m>, as seen in <xref ref="F-right-sine-cosine-right">Figure</xref>.  
+		By changing our perspective slightly, we can see that it is equivalent to think of the values of the sine and cosine function as representing the lengths of legs in right triangles.  Specifically, given a central angle<fn>In our work with right triangles, we'll often represent the angle by <m>\theta</m> and think of this angle as fixed, as opposed to our previous use of <m>t</m> where we frequently think of <m>t</m> as changing.</fn> <m>\theta</m> in standard position <idx><h>standard position</h></idx> (vertex at the origin, and one side on the positive <m>x</m>-axis), if we think of the right triangle with vertices <m>(\cos(\theta),0)</m>, <m>(0,0)</m>, and <m>(\cos(\theta), \sin(\theta))</m>, then the length of the horizontal leg is <m>\cos(\theta)</m> and the length of the vertical leg is <m>\sin(\theta)</m>, as seen in <xref ref="F-right-sine-cosine-right">Figure</xref>.
 	</p>
 
 	<sidebyside width="45%">
@@ -62,6 +62,7 @@
 	</p>
 
   	<xi:include href="./previews/PA-trig-right.xml"/>
+	<xi:include href="./previews/PA-trig-right-D.xml"/>
 
   </subsection>
 
@@ -167,7 +168,7 @@
   	<title>Using a ratio involving sine and cosine</title>
 
   	<p>
-  		In <xref ref="act-trig-right-SOH-CAH">Activity</xref>, we found that in many cases where we have a right triangle, knowing two additional pieces of information enables us to find the remaining three unknown quantities in the triangle.  At this point in our studies, the following general principles hold.  
+  		In <xref ref="act-trig-right-SOH-CAH">Activity</xref>, we found that in many cases where we have a right triangle, knowing two additional pieces of information enables us to find the remaining three unknown quantities in the triangle.  At this point in our studies, the following general principles hold.
 	</p>
 
 	<assemblage xml:id="asm-trig-right-missing-info">
@@ -205,13 +206,13 @@
   		We will revisit scenario (2) in our future work.  Now, however, we want to consider a situation that is similar to (1), but where it is one leg of the triangle instead of the hypotenuse that is known.  We encountered this in <xref ref="act-trig-right-SOH-CAH">Activity</xref> part (f): a right triangle where one of the non-right angles is <m>\beta = \frac{\pi}{5}</m> and the leg opposite this angle has length <m>4</m>.
   	</p>
 
-	<example xml:id="ex-right-sin-cos-ratio">  
+	<example xml:id="ex-right-sin-cos-ratio">
 		<statement>
 
 		<sidebyside widths="55% 40%" margins="0% 0%">
                     <stack>
 		    <p>
-					Consider a right triangle in which one of the non-right angles is <m>\beta = \frac{\pi}{5}</m> and the leg opposite <m>\beta</m> has length <m>4</m>.  
+					Consider a right triangle in which one of the non-right angles is <m>\beta = \frac{\pi}{5}</m> and the leg opposite <m>\beta</m> has length <m>4</m>.
 				</p>
 
 				<p>
@@ -225,7 +226,7 @@
 					</description></image>
 				</figure>
 		</sidebyside>
-			
+
 
 		</statement>
 		<solution>
@@ -244,7 +245,7 @@
 				Solving <xref ref="eq-right-sin-ratio">Equation</xref> for <m>h</m>, we see that
 				<men xml:id="eq-right-sin-ratio-2">
 						h = \frac{4}{\sin\left(\frac{\pi}{5}\right)}
-				</men>, which is the exact numerical value of <m>h</m>.  Substituting this result in 
+				</men>, which is the exact numerical value of <m>h</m>.  Substituting this result in
 				<xref ref="eq-right-cos-ratio">Equation</xref>, we find that
 				<men xml:id="eq-right-cos-ratio-2">
 						\cos\left(\frac{\pi}{5}\right) = \frac{x}{\frac{4}{\sin\left(\frac{\pi}{5}\right)}}

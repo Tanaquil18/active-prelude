@@ -11,11 +11,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-trig-finding-angles">
+<worksheet label="ws-PA-trig-finding-angles" component="static">
   <exploration xml:id="PA-trig-finding-angles">
     <introduction>
       <p>
-			Consider a right triangle that has one leg of length <m>3</m> and another leg of length <m>\sqrt{3}</m>.  Let <m>\theta</m> be the angle that lies opposite the shorter leg.  
+			Consider a right triangle that has one leg of length <m>3</m> and another leg of length <m>\sqrt{3}</m>.  Let <m>\theta</m> be the angle that lies opposite the shorter leg.
 		</p>
       <p/>
     </introduction>

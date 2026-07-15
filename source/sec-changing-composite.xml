@@ -76,6 +76,7 @@
 	</p>
 
 	<xi:include href="./previews/PA-changing-composite.xml"/>
+	<xi:include href="./previews/PA-changing-composite-D.xml"/>
 
   </subsection>
 
@@ -88,7 +89,7 @@
   	<definition xml:id="D-composite-compose-functions"> <idx>composite function</idx>
   		<statement>
   			<p>
-  				If <m>f</m> and <m>g</m> are functions such that <m>g : A \to B</m> and <m>f : B \to C</m>, we define the <term>composition of <m>f</m> and <m>g</m></term> to be the new function <m>h: A \to C</m> given by 
+  				If <m>f</m> and <m>g</m> are functions such that <m>g : A \to B</m> and <m>f : B \to C</m>, we define the <term>composition of <m>f</m> and <m>g</m></term> to be the new function <m>h: A \to C</m> given by
   				<me>
   					h(t) = f(g(t))
   				</me>.
@@ -156,7 +157,7 @@
 	  <p>
 	    To think about the interval <m>[a,b]</m> shrinking while <m>a</m> stays fixed, we often change our perspective and think of <m>b</m> as <m>b = a + h</m>, where <m>h</m> measures the horizontal difference from <m>b</m> to <m>a</m>.  This allows us to eventually think about <m>h</m> getting closer and closer to <m>0</m> (without every actually equalling <m>0</m>), and in that context we consider the equivalent expression
 	    <me>
-	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{a+h-a} = \frac{f(a+h) - f(a)}{h} 
+	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{a+h-a} = \frac{f(a+h) - f(a)}{h}
 	    </me>
 	    for the average rate of change of <m>f</m> on	<m>[a,a+h]</m>.
 	  </p>
@@ -165,7 +166,7 @@
 	    In this most recent expression for <m>AV_{[a,a+h]}</m>,
 	    we see the important role that the composite function
 	    <q><m>f(a+h)</m></q> plays.  In particular, to understand the expression for <m>AV_{[a,a+h]}</m> we need to evaluate <m>f</m> at the quantity <m>(a+h)</m>.
-	  </p> 
+	  </p>
 
 	  <example xml:id="ex-composite-aroc-simplify">
 	  	<statement>
@@ -175,7 +176,7 @@
 	  	</statement>
 	  	<solution>
 	  		<p>
-	  			By definition, we know that 
+	  			By definition, we know that
 	  			<me>
 	  				AV_{[3,3+h]} = \frac{f(3+h)-f(3)}{h}.
 	  			</me>
@@ -196,14 +197,14 @@
 				Hence, <m>AV_{[3,3+h]} = 6+h</m>, which is the average rate of change of <m>f(x) = x^2</m> on the interval <m>[3,3+h]</m>.<fn>Note that <m>6 + h</m> is a <em>linear</em> function of <m>h</m>.  This computation is connected to the observation we made in <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref> regarding how there's a linear aspect to how the average rate of change of a quadratic function changes as we modify the interval.</fn>
 	  		</p>
 	  	</solution>
-	  </example> 
+	  </example>
 
 	<xi:include href="./activities/act-changing-composite-aroc.xml"/>
 
 	<p>
-		In <xref ref="act-changing-composite-aroc">Activity</xref>, we see an important setting where algebraic simplification plays a crucial role in calculus.  Because the expresssion 
+		In <xref ref="act-changing-composite-aroc">Activity</xref>, we see an important setting where algebraic simplification plays a crucial role in calculus.  Because the expresssion
 		<me>
-	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
+	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h}
 	    </me>
 	    always begins with an <m>h</m> in the denominator, in order to precisely understand how this quantity behaves when <m>h</m> gets close to <m>0</m>, a simplified version of this expression is needed.  For instance, as we found in part (b) of <xref ref="act-changing-composite-aroc">Activity</xref>, it's possible to show that for <m>f(x) = 2x^2 - 3x + 1</m>,
 	    <me>
@@ -232,7 +233,7 @@
   			<p>
   				Because the expression <m>AV_{[a,a+h]}</m> is defined by
   				<me>
-	      			AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
+	      			AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h}
 	    		</me>
 	    		and this includes the quantity <m>f(a+h)</m>, the average rate of change of a function on the interval <m>[a,a+h]</m> always involves the evaluation of a composite function expression.  This idea plays a crucial role in the study of calculus.
   			</p>

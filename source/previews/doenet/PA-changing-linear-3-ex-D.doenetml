@@ -1,0 +1,159 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <function name="f">7-3x</function>
+  <function name="g">0.5x-0.25</function>
+  <function name="h">-1/3*x+7/3</function>
+</setup>
+
+<ol marker="a.">
+  <li>
+    <p>
+      Let <m>y = f(x) = 7 - 3x</m>.  Determine <m>AV_{[-3,-1]}</m>, <m>AV_{[2,5]}</m>, and <m>AV_{[4,10]}</m> for the function <m>f</m>.		</p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><fractionInput name="AVneg3neg1"><label><m>\displaystyle AV_{[-3,-1]} = \frac{f(-1)-f(-3)}{-1-(-3)}=</m></label></fractionInput><award><when>$AVneg3neg1.numerator=$$f(-1)-$$f(-3) and $AVneg3neg1.denominator=2</when></award></answer><m>=</m><answer name="AVneg3neg1ans" ><shortDescription>single answer for the average rate of change from negative 3 to negative 1</shortDescription><award symbolicEquality><number>($$f(-1)-$$f(-3))/(-1+3)</number></award><award credit="0" name="AVneg3neg1ansnotnumber">($$f(-1)-$$f(-3))/(-1+3)</award></answer>
+    </p>
+    <feedback condition="$AVneg3neg1ansnotnumber">Your process is correct, but you need to enter your answer as a single number.</feedback>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><fractionInput name="AV25"><label><m>\displaystyle AV_{[2,5]} = </m></label></fractionInput><award><when>$AV25.numerator=$$f(5)-$$f(2) and $AV25.denominator=3</when></award></answer><m>=</m><answer name="AV25ans" ><shortDescription>single answer for the average rate of change from 2 to 5</shortDescription><award symbolicEquality><number>($$f(5)-$$f(2))/(5-2)</number></award><award credit="0" name="AV25ansnotnumber">($$f(5)-$$f(2))/(5-2)</award></answer>
+    </p>
+    <feedback condition="$AV25ansnotnumber">Your process is correct, but you need to enter your answer as a single number.</feedback>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><fractionInput name="AV410"><label><m>\displaystyle AV_{[4,10]} = </m></label></fractionInput><award><when>$AV410.numerator=$$f(10)-$$f(4) and $AV410.denominator=6</when></award></answer><m>=</m><answer name="AV410ans" ><shortDescription>single answer for the average rate of change from 4 to 10</shortDescription><award symbolicEquality><number>($$f(10)-$$f(4))/(10-4)</number></award><award credit="0" name="AV410ansnotnumber">($$f(10)-$$f(4))/(10-4)</award></answer>
+    </p>
+    <feedback condition="$AV410ansnotnumber">Your process is correct, but you need to enter your answer as a single number.</feedback>
+  </li>
+  <li>
+    <p>
+      Let <m>y = g(x)</m> be given by the data in the following table.
+    </p>
+          <tabular bottom="minor" top="minor">
+        <row bottom="minor" halign="center">
+          <cell><m>x</m></cell>
+          <cell><m>-5</m></cell>
+          <cell><m>-4</m></cell>
+          <cell><m>-3</m></cell>
+          <cell><m>-2</m></cell>
+          <cell><m>-1</m></cell>
+        </row>
+        <row halign="center" bottom="major">
+          <cell><m>g(x)</m></cell>
+          <cell><m>-2.75</m></cell>
+          <cell><m>-2.25</m></cell>
+          <cell><m>-1.75</m></cell>
+          <cell><m>-1.25</m></cell>
+          <cell><m>-0.75</m></cell>
+        </row>
+        <row bottom="minor" halign="center">
+          <cell><m>x</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>1</m></cell>
+          <cell><m>2</m></cell>
+          <cell><m>3</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row halign="center">
+          <cell><m>g(x)</m></cell>
+          <cell><m>-0.25</m></cell>
+          <cell><m>0.25</m></cell>
+          <cell><m>0.75</m></cell>
+          <cell><m>1.25</m></cell>
+          <cell><m>1.75</m></cell>
+        </row>
+      </tabular>
+      <p>
+        Determine <m>AV_{[-5,-2]}</m>, <m>AV_{[-1,1]}</m>, and <m>AV_{[0,4]}</m> for the function <m>g</m>.
+      </p>
+      <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><fractionInput name="AVgneg5neg2"><label><m>\displaystyle AV_{[-5,-2]} = </m></label></fractionInput><award><when>$AVgneg5neg2.numerator=$$g(-2)-$$g(-5) and $AVgneg5neg2.denominator=3</when></award></answer><m>=</m><answer name="AVgneg5neg2ans" ><shortDescription>single answer for the average rate of change of g from -5 to -2</shortDescription><award symbolicEquality><number>($$g(-2)-$$g(-5))/(-2+5)</number></award><award symbolicEquality>1/2</award><award credit="0" name="AVgneg5neg2ansnotnumber">($$g(-2)-$$g(-5))/(-2+5)</award></answer>
+    </p>
+    <feedback condition="$AVgneg5neg2ansnotnumber">Your process is correct, but you need to enter your answer as a single number in reduced form.</feedback>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><fractionInput name="AVgneg11"><label><m>\displaystyle AV_{[-1,1]} = </m></label></fractionInput><award><when>$AVgneg11.numerator=$$g(1)-$$g(-1) and $AVgneg11.denominator=2</when></award></answer><m>=</m><answer name="AVgneg11ans" ><shortDescription>single answer for the average rate of change of g from -1 to 1</shortDescription><award symbolicEquality><number>($$g(1)-$$g(-1))/(2)</number></award><award symbolicEquality>1/2</award><award credit="0" name="AVgneg11ansnotnumber">($$g(1)-$$g(-1))/(2)</award></answer>
+    </p>
+    <feedback condition="$AVgneg11ansnotnumber">Your process is correct, but you need to enter your answer as a single number in reduced form.</feedback>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><fractionInput name="AVg04"><label><m>\displaystyle AV_{[0,4]} = </m></label></fractionInput><award><when>$AVg04.numerator=$$g(4)-$$g(0) and $AVg04.denominator=4</when></award></answer><m>=</m><answer name="AVg04ans" ><shortDescription>single answer for the average rate of change of g from 0 to 4</shortDescription><award symbolicEquality><number>($$g(4)-$$g(0))/(4)</number></award><award symbolicEquality>1/2</award><award credit="0" name="AVg04ansnotnumber">($$g(4)-$$g(0))/(4)</award></answer>
+    </p>
+    <feedback condition="$AVg04ansnotnumber">Your process is correct, but you need to enter your answer as a single number in reduced form.</feedback>
+
+  </li>
+  <li>
+    <p>
+      Consider the function <m>y = h(x)</m> defined by the graph in the following figure.
+    </p>
+    <graph xMin="-5.5" xMax="5.5" yMin="-5.5" yMax="5.5" fixAxes size="small" grid="1 1" displayXAxisTicks="false" displayYAxisTicks="false">
+      <shortDescription>graph of a line through the points (-5,4) and (-2,3)</shortDescription>
+      <description>
+        Graph of a line going through the points <m>(-5,4)</m>, <m>(-2,3)</m>, <m>(1,2)</m> and <m>(4,1)</m>
+      </description>
+      <repeatForSequence from="-4" to="4" step="2" exclude="0" valueName="i">
+        <lineSegment fixed endpoints="($i,.2) ($i,-.2)" styleNumber="5"/>
+        <lineSegment fixed endpoints="(-.2,$i) (.2,$i)" styleNumber="5"/>
+        <label fixed anchor="(-.6,$i)"><m>$i</m></label>
+        <label fixed anchor="($i,-.5)"><m>$i</m></label>
+      </repeatForSequence>
+      $h
+    </graph>
+    <p>
+      Determine <m>AV_{[-5,-2]}</m>, <m>AV_{[-1,1]}</m>, and <m>AV_{[0,4]}</m> for the function <m>h</m>. Use exact values, not a decimal approximation.
+    </p>
+    <p>
+      <answer><label><m>AV_{[-5,-2]}=</m></label><award symbolicEquality>-1/3</award><award name="close1" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>-1/3</award></answer>
+    </p>
+    <feedback condition="$close1">Your answer is close, but is not exact or is not simplified. Enter your answer as a fraction using exact values from the graph.</feedback>
+    <p>
+      <answer><label><m>AV_{[-1,1]}=</m></label><award symbolicEquality>-1/3</award><award name="close2" credit="0" allowedErrorInNumbers=".05" allowedErrorIsAbsolute>-1/3</award></answer>
+    </p>
+    <feedback condition="$close2">Your answer is close, but is not exact or is not simplified. How does the answer to this question relate to the answer to <m>AV_{[-5,-2]}</m>?</feedback>
+    <p>
+      <answer><label><m>AV_{[0,4]}=</m></label><award symbolicEquality>-1/3</award><award name="close3" credit="0" allowedErrorInNumbers=".05" allowedErrorIsAbsolute>-1/3</award></answer>
+    </p>
+    <feedback condition="$close3">Your answer is close, but is not exact or is not simplified. How does the answer to this question relate to the answer to <m>AV_{[-5,-2]}</m>?</feedback>
+  </li>
+  <li>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      Note that in each of the three examples above, the functions involved were <answer><choiceInput inline><shortDescription>relation of the functions</shortDescription><choice>the same function</choice><choice credit="1">different functions</choice></choiceInput></answer> having <answer><choiceInput inline><shortDescription>relation of the values</shortDescription><choice>the same</choice><choice credit="1">different</choice></choiceInput></answer> <m>y</m>-values and <answer><choiceInput inline><shortDescription>relation of the rates of change</shortDescription><choice>the same</choice><choice credit="1">different</choice></choiceInput></answer> rates of change, but within each example, the value of <m>AV_{[a,b]}</m> was <answer><choiceInput inline><shortDescription>relation of the AV</shortDescription><choice credit="1">the same</choice><choice>different</choice></choiceInput></answer> for different values of <m>a</m> and <m>b</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+      For the function <m>y = f(x) = 7 - 3x</m> from (a), find the simplest expression you can for
+      <me>
+          AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
+      </me>
+      where <m>a \ne b</m>.
+    </p>
+    <p>
+      <answer><label><m>f(b)=</m></label>7-3b</answer>
+    </p>
+    <p>
+      <answer><label><m>f(a)=</m></label>7-3a</answer>
+    </p>
+    <p>
+      <answer><label><m>f(b)-f(a) =</m></label><award symbolicEquality simplifyOnCompare="normalizeOrder">-3b+3a</award><award symbolicEquality simplifyOnCompare="normalizeOrder">-3(b-a)</award><award symbolicEquality simplifyOnCompare="normalizeOrder">3(a-b)</award><award name="notsimplified" credit="0">-3b+3a</award></answer>
+    </p>
+    <feedback condition="$notsimplified">Your process is correct, but your answer isn't simplified enough, yet.</feedback>
+    <p>
+      <answer><label><m>\displaystyle AV_{[a,b]}=\frac{f(b)-f(a)}{b-a} =</m></label><award symbolicEquality>-3</award><award name="notsimplified2" credit="0">-3</award></answer>
+    </p>
+    <feedback condition="$notsimplified2">Your process is correct, but your answer isn't simplified enough, yet.</feedback>
+    <p>
+      Does your answer to <m>\displaystyle AV_{[a,b]}</m> for this function depend on <m>a</m> or <m>b</m>? <answer><choiceInput inline><shortDescription>yes or no</shortDescription><choice>Yes</choice><choice credit="1">No</choice></choiceInput></answer> Does that surprise you? What do you wonder?
+    </p>
+  </li>
+</ol>

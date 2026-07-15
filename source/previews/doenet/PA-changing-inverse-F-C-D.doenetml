@@ -1,0 +1,88 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<p>
+  Recall that <m>F = g(C) = \frac{9}{5}C + 32</m> is the function that takes Celsius temperature inputs and produces the corresponding Fahrenheit temperature outputs.
+</p>
+<ol marker="a.">
+  <li>
+    <p>
+      Solve the equation <m>F = \frac{9}{5}C + 32</m> for <m>C</m> in terms of <m>F</m>.
+    </p>
+    <p>
+      The first step in solving the equation <m>F = \frac{9}{5}C + 32</m> for <m>C</m> in terms of <m>F</m> is <answer name="firststep"><choiceInput inline><shortDescription>possible first operation</shortDescription>
+      <choice>Multiply both sides by <m>\frac{9}{5}</m>.</choice>
+      <choice>Multiply both sides by <m>\frac{5}{9}</m>.</choice>
+      <choice credit="1">Subtract <m>32</m> from both sides.</choice>
+      <choice>Add <m>32</m> to both sides.</choice></choiceInput></answer>
+      <md hide="$firststep.creditAchieved!=1">
+        <mrow>\amp F\amp \amp = \frac{9}{5}C\amp \amp + \amp 32 </mrow>
+        <mrow> \amp \amp-32\amp=  \amp \amp \amp-32 </mrow>
+        <mrow> \amp\amp F-32\amp = \frac{9}{5}C\amp \amp \amp </mrow>
+      </md>
+    </p>
+    <p>
+      The second step in solving the equation <m>F = \frac{9}{5}C + 32</m> for <m>C</m> in terms of <m>F</m> is <answer name="secondstep"><choiceInput inline><shortDescription>possible second operation</shortDescription>
+      <choice>Multiply both sides by <m>\frac{9}{5}</m>.</choice>
+      <choice credit="1">Multiply both sides by <m>\frac{5}{9}</m>.</choice>
+      <choice>Subtract <m>32</m> from both sides.</choice>
+      <choice>Add <m>32</m> to both sides.</choice></choiceInput></answer>
+      <md hide="$secondstep.creditAchieved!=1">
+        <mrow> F-32\amp = \frac{9}{5}C </mrow>
+        <mrow> \frac{5}{9}(F-32)\amp = \frac{5}{9}\cdot\frac{9}{5}C </mrow>
+        <mrow> \frac{5}{9}(F-32)\amp = C </mrow>
+      </md>
+    </p>
+  </li>
+  <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      Note that the equation <m>C = \frac{5}{9}(F-32)</m> expresses <m>C</m> as a function of <m>F</m>.  Call this function <m>h</m> so that <m>C = h(F) = \frac{5}{9}(F-32)</m>.
+	</p>
+    <p>
+    	Find the simplest expression that you can for the composite function <m>j(C) = h(g(C))</m>.
+    </p>
+    <p>
+      <m>j(C) = h(g(C))=\frac{5}{9}\big(g(C)-32\big)</m> <br/>
+      <answer><label><m>\hspace{1.4in}=\frac{5}{9}\bigg(</m></label><description>Enter the expression for <m>g(C)</m>.</description>9/5 C +32</answer><m>-32\bigg)</m> <br/>
+      <answer symbolicEquality><label><m>\hspace{1.4in}=</m></label><description>Calculate and simplify the line above to find the simplest expression for <m>h(g(C))</m>.</description>C</answer>
+    </p>
+  </li>
+  <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+    	Find the simplest expression that you can for the composite function <m>k(F) = g(h(F))</m>.
+    </p>
+    <p>
+      <m>k(F) = g(h(F))=\frac{9}{5}h(F)+32</m> <br/>
+      <answer><label><m>\hspace{1.4in}=\frac{9}{5}\bigg(</m></label><description>Enter the expression for <m>h(F)</m>.</description>5/9(F-32)</answer><m>\bigg)+32</m> <br/>
+      <answer symbolicEquality><label><m>\hspace{1.4in}=</m></label><description>Calculate and simplify the line above to find the simplest expression for <m>g(h(F))</m>.</description>F</answer>
+    </p>
+
+  </li>
+  <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      Complete the following sentences to explain why the functions <m>j</m> and <m>k</m> are so simple.
+    </p>
+    <p>
+      The function <m>g(C)</m> takes in a <answer><choiceInput inline><shortDescription>units on the input to g</shortDescription><choice credit="1">Celsius</choice><choice>Fahrenheit</choice></choiceInput></answer>temperature and produces the same temperature converted to <answer><choiceInput inline><shortDescription>units on the output of g</shortDescription><choice>Celsius</choice><choice credit="1">Fahrenheit</choice></choiceInput></answer> while the function <m>h(F)</m> takes in a <answer><choiceInput inline><shortDescription>units on the input to h</shortDescription><choice>Celsius</choice><choice credit="1">Fahrenheit</choice></choiceInput></answer>temperature and produces the same temperature coverted to <answer><choiceInput inline><shortDescription>units on the output of g</shortDescription><choice credit="1">Celsius.</choice><choice>Fahrenheit.</choice></choiceInput></answer>
+    </p>
+    <p>
+      Then the function <m>j(C)=h(g(C))</m> starts by taking in a <answer><choiceInput inline><shortDescription>units on the input to g</shortDescription><choice credit="1">Celsius</choice><choice>Fahrenheit</choice></choiceInput></answer>temperature and produces the same temperature converted to <answer><choiceInput inline><shortDescription>units on the output of g</shortDescription><choice>Celsius</choice><choice credit="1">Fahrenheit</choice></choiceInput></answer> and then <m>h</m> is applied to that output and converts it back to the equivalent temperature in <answer><choiceInput inline><shortDescription>units on the output of h</shortDescription><choice credit="1">Celsius.</choice><choice>Fahrenheit.</choice></choiceInput></answer>  Whatever temperature we started with is also the one we ended with.
+    </p>
+    <p>
+      Similarly, the function <m>k(F)=g(h(F))</m> starts by taking in a <answer><choiceInput inline><shortDescription>units on the input to h</shortDescription><choice>Celsius</choice><choice credit="1">Fahrenheit</choice></choiceInput></answer>temperature and produces the same temperature converted to <answer><choiceInput inline><shortDescription>units on the output of h</shortDescription><choice credit="1">Celsius</choice><choice>Fahrenheit</choice></choiceInput></answer> and then <m>g</m> is applied to that output and converts it back to the equivalent temperature in <answer><choiceInput inline><shortDescription>units on the output of h</shortDescription><choice>Celsius.</choice><choice credit="1">Fahrenheit.</choice></choiceInput></answer>  Whatever temperature we started with is again the same as the one we ended with.
+    </p>
+  </li>
+</ol>

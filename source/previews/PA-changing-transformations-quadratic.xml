@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-transformations-quadratic">
+<worksheet label="ws-PA-changing-transformations-quadratic" component="static">
   <exploration xml:id="PA-changing-transformations-quadratic">
     <introduction>
       <p>
@@ -31,7 +31,7 @@
 					</p>
         <p>
 						Explore by moving the slider for <m>a</m> and write at least one sentence to describe
-            			the effect that changing the value of <m>a</m> has on the graph of <m>g</m>.  
+            			the effect that changing the value of <m>a</m> has on the graph of <m>g</m>.
 					</p>
       </statement>
       <hint/>

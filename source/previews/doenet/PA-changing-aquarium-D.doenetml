@@ -1,0 +1,103 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<p>
+      Suppose that a rectangular aquarium is being filled with water.  The tank is <m>4</m> feet long by <m>2</m> feet wide by <m>3</m> feet high, and the hose that is filling the tank is delivering water at a rate of <m>0.5</m> cubic feet per minute.
+</p>
+<sideBySide widths="48% 48%">
+  <figure>
+    <image source="https://activecalculus.org/prelude/external/images/tandem-empty-aquarium.svg"><shortDescription>The empty aquarium, with length 4 feet, width 2 feet, and height 3 feet.</shortDescription></image>
+    <caption>
+      The empty aquarium
+    </caption>
+  </figure>
+  <figure>
+    <image source="https://activecalculus.org/prelude/external/images/tandem-filled-aquarium.svg"><shortDescription>The aquarium partially filled to some unmarked height</shortDescription></image>
+    <caption>
+      The aquarium partially filled
+    </caption>
+  </figure>
+
+</sideBySide>
+<ol marker="a">
+  <li>
+    <p>
+      What are some different quantities that are changing in this scenario?
+    </p>
+    <p>
+      Both the
+      <choiceInput name="c1" inline><shortDescription>first changing quantity</shortDescription>
+        <choice>amount of water in the tank</choice>
+        <choice>capacity of the tank</choice>
+        <choice>length of the water </choice>
+        <choice>depth (height) of the water</choice>
+      </choiceInput> and the
+      <choiceInput name="c2" inline><shortDescription>second changing quantity</shortDescription>
+        <choice>amount of water in the tank</choice>
+        <choice>capacity of the tank</choice>
+        <choice>length of the water</choice>
+        <choice>depth (height) of the water</choice>
+      </choiceInput> are changing as the hose delivers water into the tank.
+      <answer><shortDescription>correct changing quantities</shortDescription>
+    <award><when>$c1.selectedIndices=1 and $c2.selectedIndices=4</when></award>
+    <award><when>$c2.selectedIndices=1 and $c1.selectedIndices=4</when></award>
+    </answer>
+    </p>
+
+  </li>
+  <li>
+    <p>
+      After <m>1</m> minute has elapsed, how much water is in the tank?
+    </p>
+    <p>
+      <mathInput name="amount1"><shortDescription>amount of water after 1 minute</shortDescription></mathInput> cubic feet <answer><award><when>$amount1 = 0.5</when></award></answer>
+    </p>
+    <p>
+      At this moment, how deep is the water?
+    </p>
+    <p>
+      <mathInput name="depth1"><shortDescription>depth of water after 1 minute</shortDescription></mathInput> feet <answer><award><when>$depth1 = 0.5/8</when></award><award credit="0" name="close"><when><abs>$depth1-.0625</abs> < .01</when></award></answer>
+    </p>
+    <feedback condition="$close">Your answer is close to the correct answer.  Make sure to either enter the exact fraction or use all the decimal places and don't round.</feedback>
+  </li>
+  <li>
+    <p>
+      How much water is in the tank and how deep is the water after <m>2</m> minutes?
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><label>amount of water is </label>1</answer> cubic feet and <answer><label>depth is </label>1/8</answer> feet
+    </p>
+    <p>
+      After <m>3</m> minutes?
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer><label>amount of water is </label>1.5</answer> cubic feet and <answer><label>depth is </label>1.5/8</answer> feet
+    </p>
+  </li>
+  <li>
+    <p>
+      How long will it take for the tank to be completely full?
+    </p>
+    <p>
+      <mathInput name="time" labelPosition="right"><label>minutes</label></mathInput> <answer><award><when>$time=48</when></award></answer>
+    </p>
+    <hint>
+      <p sectionWideCheckWork>
+      How much water is in a full tank? <answer weight="0"><shortDescription>amount of water in a full tank</shortDescription>24</answer>cubic feet
+      </p>
+    </hint>
+  </li>
+</ol>

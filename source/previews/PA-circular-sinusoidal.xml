@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-circular-sinusoidal">
+<worksheet label="ws-PA-circular-sinusoidal" component="static">
   <exploration xml:id="PA-circular-sinusoidal">
     <introduction>
       <p>

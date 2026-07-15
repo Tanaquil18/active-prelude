@@ -1,0 +1,117 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <number name="zero" fixed>0</number>
+  <number name="r">150/(2*pi)</number>
+
+  <curve name="circum" variable="t" parMin="0" parMax="pi" styleNumber="2" lineWidth="3">
+    (cos($n/30 t-pi/2), sin($n/30 t -pi/2)+1)
+  </curve>
+
+  <lineSegment name="lencircum" endpoints="(2,0) (2+$n/60*2pi,0)" styleNumber="2" lineWidth="3"/>
+
+  <point name="cirpt" styleNumber="2" showCoordsWhenDragging="false">(2sin($n*pi/60)*cos($n*pi/60), 2sin($n*pi/60)*sin($n*pi/60))</point>
+
+  <lineSegment name="height" styleNumber="1" endpoints="($cirpt.x,0) $cirpt" draggable="false" lineStyle="dotted"/>
+
+  <lineSegment name="height2" styleNumber="1" endpoints="($htvcirpt.x,0) $htvcirpt" draggable="false" lineStyle="dotted"/>
+
+  <curve name="htvcir" variable="t" parMin="0" parMax="2pi" styleNumber="5" lineWidth="2">
+    (t+2, 1+sin((t-pi/2)))
+  </curve>
+
+  <point name="htvcirpt" styleNumber="2" showCoordsWhenDragging="false">(2+$n/60*2*pi,$cirpt.y)</point>
+</setup>
+
+<p>
+  A simplified version of the ferris wheel scenario pictured in Figure 2.1.1 has been reproduced below.
+</p>
+
+<slider name="n" from="0" to="60"/>
+<graph xMin="-1.5" xMax="9.5" yMin="-.5" yMax="2.5" aspectRatio="3.5/1" displayXAxisTicks="false" displayYAxis="false" fixAxes><shortDescription>a point going around a circle and a curve showing its height and distance</shortDescription>
+  <circle center="(0,1)" radius="1" fixed styleNumber="5" lineWidth="2"/>
+  $htvcir
+
+  <lineSegment name="rad" styleNumber="5" endpoints="(0,1) (-1,1)" draggable="false"></lineSegment>
+  <label draggable="false" anchor="(-.5,1.2)"><m>r</m></label>
+  <label draggable="false" anchor="($htvcirpt.x-.2,$htvcirpt.y*.85)"><m>h</m></label>
+  <label draggable="false" anchor="(0.2+$htvcirpt.x,0.2)"><m>d</m></label>
+
+  $cirpt
+  $height
+  $height2
+  $circum
+  $htvcirpt
+  $lencircum
+
+</graph>
+
+<booleanInput name="switch"><label>Click to animate</label></booleanInput>
+
+<animateFromSequence
+  target="$n"
+  from="0"
+  to="60"
+  animationInterval="50"
+  animationOn="$switch"
+/>
+
+<p>
+  Assume that the height, <m>h</m>, of the moving point (the cab in which you are riding), and the distance, <m>d</m>, that the point has traveled around the circumference of the ferris wheel are both measured in meters. Assume also that the circumference of the ferris wheel is <m>150</m> meters.
+  <!-- In addition, suppose that after getting in your cab at the lowest point on the wheel, you traverse the full circle several times. -->
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      Recall that the circumference, <m>C</m>, of a circle is connected to the circle's radius, <m>r</m>, by the formula <m>C = 2\pi r</m>.
+    </p>
+    <p>
+      What is the radius of the ferris wheel? <br/><answer name="rEnt" allowedErrorInNumbers=".01" allowedErrorIsAbsolute><label><m>r=</m></label>$r</answer> </p>
+    <p>
+      How high is the highest point on the ferris wheel? <br/> <answer allowedErrorInNumbers=".01" allowedErrorIsAbsolute><label>Maximum height <m>=</m></label><award>2*$r</award><award>2*$rEnt</award></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      How high is the cab after it has traveled <m>1/4</m> of the circumference of the circle? <br/>
+      <answer allowedErrorInNumbers=".01" allowedErrorIsAbsolute><label>Height <m>=</m></label>$r</answer>
+    </p>
+      <hint>In the animation above, the cab goes all the way around the circumference of the circle in <m>60</m> steps, and so the cab will be <m>1/4</m> of the way around when the slider is set to <m>15</m>.</hint>
+  </li>
+  <li>
+    <p>
+      How much distance along the circle has the cab traversed at the moment it first reaches a height of <m>\frac{150}{\pi} \approx 47.75</m> meters? <br/>
+      <answer>
+        <label>Distance <m>=</m></label><award>75</award><award name="close" credit="0" allowedErrorInNumbers=".02" allowedErrorIsAbsolute>75</award>
+      </answer>
+    </p>
+    <feedback condition="$close">Your answer is close, but we can be exact. What fraction of the circle has the cab traversed at this moment, and what is the total distance around the circle?</feedback>
+  </li>
+  <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      Complete the following sentences.
+    </p>
+    <p>
+      The cab's height <m>h</m> at any time <answer><choiceInput inline><shortDescription>can or can't</shortDescription><choice credit="1">can</choice><choice>can't</choice></choiceInput></answer> be thought of as a function of the cab's distance traveled <m>d</m> because given any <answer><choiceInput inline><shortDescription>input or output</shortDescription><choice credit="1">input value of <m>d</m></choice><choice>input value of <m>h</m></choice><choice>output value of <m>d</m></choice><choice>output value of <m>h</m></choice></choiceInput></answer> there <answer><choiceInput inline><shortDescription>is or is not</shortDescription><choice credit="1">is</choice><choice>is not</choice></choiceInput></answer> exactly one possible <answer><choiceInput inline><shortDescription>input or output</shortDescription><choice>input value of <m>d</m>.</choice><choice>input value of <m>h</m>.</choice><choice>output value of <m>d</m>.</choice><choice credit="1">output value of <m>h</m>.</choice></choiceInput></answer>
+    </p>
+    <p>
+      The cab's distance traveled <m>d</m> at any time <answer><choiceInput inline><shortDescription>can or can't</shortDescription><choice>can</choice><choice credit="1">can't</choice></choiceInput></answer> be thought of as a function of the cab's height <m>h</m> because for at least one <answer><choiceInput inline><shortDescription>input or output</shortDescription><choice>value of <m>d</m>,</choice><choice credit="1"> value of <m>h</m>,</choice></choiceInput></answer><answer><choiceInput inline><shortDescription>number of inputs or outputs</shortDescription><choice>there are multiple values of <m>h</m></choice><choice credit="1">there are multiple values of <m>d</m></choice><choice>there is exactly one value of <m>h</m></choice><choice>there is exactly one value of <m>d</m></choice></choiceInput></answer> corresponding to that <answer><choiceInput inline><shortDescription>height or distance</shortDescription><choice>distance.</choice><choice credit="1">height.</choice></choiceInput></answer>
+    </p>
+
+  </li>
+</ol>

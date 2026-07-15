@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-exp-log-properties">
+<worksheet label="ws-PA-exp-log-properties" component="static">
   <exploration xml:id="PA-exp-log-properties">
     <introduction>
       <p>
@@ -70,7 +70,7 @@
       <statement>
         <p>
           Suppose that <m>a</m> and <m>b</m> are positive real numbers so we can think of <m>a</m> as <m>10^x</m> for some real number <m>x</m> and
-          <m>b</m> as <m>10^y</m> for some real number <m>y</m>.  That is, say that <m>a = 10^x</m> and <m>b = 10^y</m>.  What does our work in (c) tell us about 
+          <m>b</m> as <m>10^y</m> for some real number <m>y</m>.  That is, say that <m>a = 10^x</m> and <m>b = 10^y</m>.  What does our work in (c) tell us about
           <m>\log_{10}(ab)</m>?
         </p>
       </statement>

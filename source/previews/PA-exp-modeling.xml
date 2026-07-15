@@ -11,14 +11,14 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-exp-modeling">
+<worksheet label="ws-PA-exp-modeling" component="static">
   <exploration xml:id="PA-exp-modeling">
     <introduction>
       <p>
 		  In <em>Desmos</em>, define
 	      <m>g(t) = ab^t+c</m> and accept the prompt for sliders for <m>a</m>, <m>b</m>, and <m>c</m>.
 	      Edit the sliders so that <m>a</m> has values from <m>a = 5</m> to <m>a = 50</m>,
-	      <m>b</m> has values from <m>b = 0.7</m> to <m>b = 1.3</m>, and 
+	      <m>b</m> has values from <m>b = 0.7</m> to <m>b = 1.3</m>, and
 	      <m>c</m> has values from <m>c = -5</m> to <m>c = 5</m>
 	      (each with a step-size of 0.01).
 	      In addition, in <em>Desmos</em>
