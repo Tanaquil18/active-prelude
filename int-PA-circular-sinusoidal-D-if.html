@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:2400px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <number fixed name="zero">0</number>
+  <number name="horiz">-2.5</number>
+  <number name="vert">-6</number>
+  <math name="fraclengthperg" simplify><integer>$periodg.length/pi*12</integer>/12 pi</math>
+  <number name="horizb">-2.5</number>
+  <number name="vertb">-6</number>
+  <math name="fraclengthpergb" simplify><integer>$periodgb.length/pi*12</integer>/12 pi</math>
+  <number name="horizc">-2.5</number>
+  <number name="vertc">-6</number>
+  <math name="fraclengthpergc" simplify><integer>$periodgc.length/pi*12</integer>/12 pi</math>
+
+  <point name="midgint" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>(0,1.5)</point>
+
+  <point name="pdptg1" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".5"></attractToGrid>(0,$horiz)</point>
+  <point name="pdptg2" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".5"></attractToGrid>(2,$horiz)</point>
+  <point name="ampptg1" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>($vert,$zero)</point>
+  <point name="ampptg2" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>($vert,-1.5)</point>
+  <boolean name="parta">$ampa1.creditAchieved=1 and $ampa2.creditAchieved=1 and $mida1.creditAchieved=1 and $mida2.creditAchieved=1 and $perioda1.creditAchieved=1 and $perioda2.creditAchieved=1</boolean>
+
+  <point name="midgintb" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>(0,1.5)</point>
+
+  <point name="pdptg1b" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".5"></attractToGrid>(0,$horizb)</point>
+  <point name="pdptg2b" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".5"></attractToGrid>(2,$horizb)</point>
+  <point name="ampptg1b" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>($vertb,$zero)</point>
+  <point name="ampptg2b" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>($vertb,-1.5)</point>
+  <boolean name="partb">$ampb1.creditAchieved=1 and $ampb2.creditAchieved=1 and $midb1.creditAchieved=1 and $midb2.creditAchieved=1 and $periodb1.creditAchieved=1 and $periodb2.creditAchieved=1</boolean>
+
+  <point name="midgintc" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>(0,1.5)</point>
+
+  <point name="pdptg1c" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".5"></attractToGrid>(0,$horizc)</point>
+  <point name="pdptg2c" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".5"></attractToGrid>(2,$horizc)</point>
+  <point name="ampptg1c" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>($vertc,$midgc.yintercept)</point>
+  <point name="ampptg2c" showCoordsWhenDragging="false"><attractToGrid dx="pi/12" dy=".25" ythreshold=".1"></attractToGrid>($vertc,-1.5)</point>
+  <boolean name="partc">$ampc1.creditAchieved=1 and $ampc2.creditAchieved=1 and $midc1.creditAchieved=1 and $midc2.creditAchieved=1 and $periodc1.creditAchieved=1 and $periodc2.creditAchieved=1</boolean>
+
+</setup>
+<p>
+  Let <m>f(t) = \cos(t)</m>, which has a midline of <m>y=0</m>, an amplitude of <m>a=1</m>, and a period of <m>P=2\pi</m>.
+</p>
+<p>
+  Answer all of the questions below <em>without</em> using a graph; after answering, a graph will appear and you'll either confirm or reflect on your answers using a graph. Note that there could be more than one correct answer to some questions.
+</p>
+
+<cascade revealAll>
+  <aside><title>a. Functions of the form <m>a\cos(t)</m></title>
+    <p>
+      Consider <m>g(t) = 3\cos(t)</m> and <m>h(t) = -\frac{1}{4}\cos(t)</m>.  <br/> Both <m>g(t)</m> and <m>h(t)</m> involve:
+      <answer name="mcq1" selectMultiple inline="false" shuffleOrder="false">
+        <shortDescription>kind of transformation</shortDescription>
+        <choice>a vertical shift of <m>f(t)</m>.</choice>
+        <choice>a horizontal shift of <m>f(t)</m>.</choice>
+        <choice credit="1">a vertical stretch of <m>f(t)</m>.</choice>
+      </answer>
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>3\cos(t)</m>, the <answer name="mida1"><label>midline is</label>y=0</answer>, the amplitude is <answer name="ampa1"><label><m>a=</m></label>3</answer>, and the period is <answer name="perioda1"><label><m>P=</m></label>2pi</answer>.
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>-\frac{1}{4}\cos(t)</m>, the <answer name="mida2"><label>midline is</label>y=0</answer>, the amplitude is <answer name="ampa2"><label><m>a=</m></label>1/4</answer>, and the period is <answer name="perioda2"><label><m>P=</m></label>2pi</answer>.
+    </p>
+    <p>
+      When you answer the questions above correctly, some lines will appear on the graph below.  Drag them to demonstrate the correct values/locations of the midline, amplitude, and period.
+    </p>
+      <graph size="large" xMin="-3pi" xMax="3pi" yMin="-3.3" yMax="5" displayXAxisTicks="false" displayYAxisTicks="false" aspectRatio="1.3/1" fixAxes yLabelAlignment="right">
+        <shortDescription>graph with lines demonstrating midline, amplitude, and period, possibly of both g and h</shortDescription>
+        <group hide="!$parta">
+          <line name="midg" lineStyle="dashed" styleNumber="5" lineWidth="2" slope="$zero" through="$midgint"/>
+          <lineSegment name="periodg" styleNumber="2" endpoints="$pdptg1 $pdptg2" lineWidth="3" showCoordsWhenDragging="false"></lineSegment>
+          <lineSegment name="ampg" styleNumber="2" endpoints="$ampptg1 $ampptg2" lineWidth="3" lineStyle="dotted" showCoordsWhenDragging="false"/>
+          <legend position="upperLeft">
+              <label forObject="$midg">
+                <m>y=$midg.yintercept</m>
+              </label>
+              <label forObject="$periodg">
+                has length $fraclengthperg
+              </label>
+              <label forObject="$ampg">
+                has length $ampg.length
+              </label>
+          </legend>
+        </group>
+
+        <group hide="!$parta or $hideg">
+          <function name="g" styleNumber="1" lineWidth="4">3cos(x)</function>
+          <legend>
+            <label forObject="$g">
+              <m>3\cos(x)</m>
+            </label>
+          </legend>
+
+        </group>
+
+        <group hide="$propsg.creditAchieved!=1">
+          <function name="f" styleNumber="5" lineWidth="2">cos(x)</function>
+          <legend position="lowerLeft">
+            <label forObject="$f"><m>\cos(x)</m></label>
+          </legend>
+          <repeatForSequence from="-3" to="4" exclude="0" valueName="j">
+            <lineSegment name="ticksy" styleNumber="5" endpoints="(-.2,$j) (.2,$j)" draggable="false" lineWidth="1" labelPosition="left"><label><m>$j</m></label></lineSegment>
+          </repeatForSequence>
+          <repeatForSequence from="-5" to="5" exclude="0" valueName="j">
+            <lineSegment name="ticksx" styleNumber="5" endpoints="($j*pi/2,-.2) ($j*pi/2,.2)" draggable="false" lineWidth="1" labelPosition="bottom"><label><math simplify><math simplify>$j/2</math>pi</math></label></lineSegment>
+          </repeatForSequence>
+          <!-- <lineSegment name="periodf" styleNumber="2" endpoints="(0,1) (2pi,1)" lineWidth="3" fixed></lineSegment>
+          <lineSegment name="ampf" styleNumber="2" endpoints="(pi,0) (pi,1)" lineWidth="3" lineStyle="dotted" fixed/> -->
+
+        </group>
+
+        <group hide="!$showh">
+          <function name="h" styleNumber="3" lineWidth="4">-1/4cos(x)</function>
+          <!-- <line name="midh" fixed lineStyle="dashed" styleNumber="5" lineWidth="2" slope="$zero" through="(0,0)"/>
+          <lineSegment name="periodh" styleNumber="2" endpoints="(0,-.25) (2pi,-.25)" lineWidth="3" fixed></lineSegment>
+          <lineSegment name="amph" styleNumber="2" endpoints="(-pi,0) (-pi,.25)" lineWidth="3" lineStyle="dotted" fixed/> -->
+          <legend position="lowerRight">
+            <label forObject="$h">
+              <m>-\frac{1}{4}\cos(x)</m>
+            </label>
+            <!-- <label forObject="$midh">
+              <m>y=0</m>
+            </label>
+            <label forObject="$periodh">
+              has length <m>2\pi</m>
+            </label>
+            <label forObject="$amph">
+              has length <m>\frac{1}{4}</m>
+            </label> -->
+          </legend>
+
+        </group>
+        <!-- <lineSegment name="periodh" styleNumber="1" endpoints="(0,-$periodloca) (1,-$periodloca)"/> -->
+
+      </graph>
+    <answer name="propsg" matchPartial disableAfterCorrect><award><when>
+        <boolean>$ampg.length=3</boolean>
+      and
+        <boolean>$midg.yintercept=0</boolean>
+      and
+        <boolean>$fraclengthperg=2pi</boolean>
+    </when></award></answer> <booleanInput name="showh" hide="$propsg.creditAchieved!=1"><label>Show <m>h(t)</m></label></booleanInput><booleanInput name="hideg" hide="$propsg.creditAchieved!=1"><label>Hide <m>g(t)</m></label></booleanInput>
+
+    <p>After you have the lines and locations correct, show and hide the functions above, and compare their properties to those of <m>\cos(x)</m>. You can move the period and amplitude lines around to explore without losing credit. Then use your observations to complete the following sentence.</p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>a\cos(x)</m>, which is a
+      <answer inline>
+        <shortDescription>kind of transformation</shortDescription>
+        <choice>vertical shift</choice>
+        <choice>horizontal shift</choice>
+        <choice credit="1">a vertical stretch</choice>
+      </answer>
+      by a number <m>a</m>, the midline
+      <answer inline>
+        <shortDescription>effect on the midline</shortDescription>
+        <choice>shifts up by <m>a</m>,</choice>
+        <choice>shifts to the right by <m>a</m>,</choice>
+        <choice>shifts to the left by <m>a</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer>
+      the amplitude
+      <answer inline>
+        <shortDescription>effect on the amplitude</shortDescription>
+        <choice>is multiplied by <m>a</m>,</choice>
+        <choice credit="1">is multiplied by <m>|a|</m>,</choice>
+        <choice>is multiplied by <m>\frac{1}{a}</m>,</choice>
+        <choice>stays the same,</choice>
+      </answer>
+      and the period
+      <answer inline>
+        <shortDescription>effect on the period</shortDescription>
+        <choice>is multiplied by <m>a</m>.</choice>
+        <choice>is multiplied by <m>|a|</m>.</choice>
+        <choice>is multiplied by <m>\frac{1}{a}</m>.</choice>
+        <choice credit="1">stays the same.</choice>
+      </answer>
+      as that of <m>\cos(x)</m>.
+    </p>
+
+
+
+  </aside>
+  <aside><title>b. Functions of the form <m>\cos(t-b)</m></title>
+    <p>
+      Consider <m>g(t) = \cos(t-\pi)</m> and <m>h(t) = \cos(t+\frac{\pi}{2})</m>.  <br/> Both <m>g(t)</m> and <m>h(t)</m> involve:
+      <answer name="mcq2" selectMultiple inline="false" shuffleOrder="false">
+        <shortDescription>kind of transformation</shortDescription>
+        <choice>a vertical shift of <m>f(t)</m>.</choice>
+        <choice credit="1">a horizontal shift of <m>f(t)</m>.</choice>
+        <choice>a vertical stretch of <m>f(t)</m>.</choice>
+      </answer>
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>\cos(t-\pi)</m>, the <answer name="midb1"><label>midline is</label>y=0</answer>, the amplitude is <answer name="ampb1"><label><m>a=</m></label>1</answer>, and the period is <answer name="periodb1"><label><m>P=</m></label>2pi</answer>.
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m> \cos(t+\frac{\pi}{2})</m>, the <answer name="midb2"><label>midline is</label>y=0</answer>, the amplitude is <answer name="ampb2"><label><m>a=</m></label>1</answer>, and the period is <answer name="periodb2"><label><m>P=</m></label>2pi</answer>.
+    </p>
+    <p>
+      When you answer the questions above correctly, some lines and functions will appear on the graph below.  You may drag them to explore values/locations of the midline, amplitude, and period.
+    </p>
+      <graph size="large" xMin="-3pi" xMax="3pi" yMin="-3.3" yMax="5" displayXAxisTicks="false" displayYAxisTicks="false" aspectRatio="1.3/1" fixAxes yLabelAlignment="right">
+        <shortDescription>graph with lines demonstrating midline, amplitude, and period, possibly of both g and h</shortDescription>
+        <group hide="!$partb">
+          <line name="midgb" lineStyle="dashed" styleNumber="5" lineWidth="2" slope="$zero" through="$midgintb"/>
+          <lineSegment name="periodgb" styleNumber="2" endpoints="$pdptg1b $pdptg2b" lineWidth="3" showCoordsWhenDragging="false"></lineSegment>
+          <lineSegment name="ampgb" styleNumber="2" endpoints="$ampptg1b $ampptg2b" lineWidth="3" lineStyle="dotted" showCoordsWhenDragging="false"/>
+          <legend position="upperLeft">
+              <label forObject="$midgb">
+                <m>y=$midgb.yintercept</m>
+              </label>
+              <label forObject="$periodgb">
+                has length $fraclengthpergb
+              </label>
+              <label forObject="$ampgb">
+                has length $ampgb.length
+              </label>
+          </legend>
+        </group>
+
+        <group hide="!$showgb">
+          <function name="gb" styleNumber="1" lineWidth="4">cos(x-pi)</function>
+          <legend>
+            <label forObject="$gb">
+              <m>\cos(x-\pi)</m>
+            </label>
+          </legend>
+
+        </group>
+
+        <group hide="!$partb">
+          <function name="fb" styleNumber="5" lineWidth="2">cos(x)</function>
+          <legend position="lowerLeft">
+            <label forObject="$fb"><m>\cos(x)</m></label>
+          </legend>
+          <repeatForSequence from="-3" to="4" exclude="0" valueName="j">
+            <lineSegment name="ticksy" styleNumber="5" endpoints="(-.2,$j) (.2,$j)" draggable="false" lineWidth="1" labelPosition="left"><label><m>$j</m></label></lineSegment>
+          </repeatForSequence>
+          <repeatForSequence from="-5" to="5" exclude="0" valueName="j">
+            <lineSegment name="ticksx" styleNumber="5" endpoints="($j*pi/2,-.2) ($j*pi/2,.2)" draggable="false" lineWidth="1" labelPosition="bottom"><label><math simplify><math simplify>$j/2</math>pi</math></label></lineSegment>
+          </repeatForSequence>
+
+        </group>
+
+        <group hide="!$showhb">
+          <function name="hb" styleNumber="3" lineWidth="4">cos(x+pi/2)</function>
+          <!-- <line name="midh" fixed lineStyle="dashed" styleNumber="5" lineWidth="2" slope="$zero" through="(0,0)"/>
+          <lineSegment name="periodh" styleNumber="2" endpoints="(0,-.25) (2pi,-.25)" lineWidth="3" fixed></lineSegment>
+          <lineSegment name="amph" styleNumber="2" endpoints="(-pi,0) (-pi,.25)" lineWidth="3" lineStyle="dotted" fixed/> -->
+          <legend position="lowerRight">
+            <label forObject="$hb">
+              <m>\cos(x+\frac{\pi}{2})</m>
+            </label>
+          </legend>
+
+        </group>
+
+
+      </graph>
+    <booleanInput name="showgb" hide="!$partb"><label>Show <m>g(t)</m></label></booleanInput><booleanInput name="showhb" hide="!$partb"><label>Show <m>h(t)</m></label></booleanInput>
+
+    <p>Show and hide the functions above, and compare their properties to those of <m>\cos(x)</m>. You can move the period and amplitude lines around to explore. Then use your observations to complete the following sentence.</p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>\cos(x-b)</m>, which is a
+      <answer inline>
+        <shortDescription>kind of transformation</shortDescription>
+        <choice>vertical shift up</choice>
+        <choice>vertical shift down</choice>
+        <choice>horizontal shift to the left</choice>
+        <choice credit="1">horizontal shift to the right</choice>
+        <choice>a vertical stretch</choice>
+      </answer>
+      by a number <m>b</m>, the midline
+      <answer inline>
+        <shortDescription>effect on the midline</shortDescription>
+        <choice>shifts down by <m>b</m>,</choice>
+        <choice>shifts to the right by <m>b</m>,</choice>
+        <choice>shifts to the left by <m>b</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer>
+      the amplitude
+      <answer inline>
+        <shortDescription>effect on the amplitude</shortDescription>
+        <choice>is multiplied by <m>b</m>,</choice>
+        <choice>is multiplied by <m>|b|</m>,</choice>
+        <choice>is multiplied by <m>\frac{1}{b}</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer>
+      and the period
+      <answer inline>
+        <shortDescription>effect on the period</shortDescription>
+        <choice>is multiplied by <m>b</m>.</choice>
+        <choice>is multiplied by <m>|b|</m>.</choice>
+        <choice>is multiplied by <m>\frac{1}{b}</m>.</choice>
+        <choice credit="1">stays the same.</choice>
+      </answer>
+      as that of <m>\cos(x)</m>.
+    </p>
+
+
+
+  </aside>
+  <aside><title>c. Functions of the form <m>\cos(t)+c</m></title>
+    <p>
+      Consider <m>g(t) = \cos(t)+4</m> and <m>h(t) = \cos(t)-2</m>.  <br/> Both <m>g(t)</m> and <m>h(t)</m> involve:
+      <answer name="mcq3" selectMultiple inline="false" shuffleOrder="false">
+        <shortDescription>kind of transformation</shortDescription>
+        <choice credit="1">a vertical shift of <m>f(t)</m>.</choice>
+        <choice>a horizontal shift of <m>f(t)</m>.</choice>
+        <choice>a vertical stretch of <m>f(t)</m>.</choice>
+      </answer>
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>\cos(t)+4</m>, the <answer name="midc1"><label>midline is</label>y=4</answer>, the amplitude is <answer name="ampc1"><label><m>a=</m></label>1</answer>, and the period is <answer name="periodc1"><label><m>P=</m></label>2pi</answer>.
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m> \cos(t)-2</m>, the <answer name="midc2"><label>midline is</label>y=-2</answer>, the amplitude is <answer name="ampc2"><label><m>a=</m></label>1</answer>, and the period is <answer name="periodc2"><label><m>P=</m></label>2pi</answer>.
+    </p>
+    <p>
+      When you answer the questions above correctly, some lines and functions will appear on the graph below.  You may drag them to explore values/locations of the midline, amplitude, and period.
+    </p>
+      <graph size="large" xMin="-3pi" xMax="3pi" yMin="-3.3" yMax="5.2" displayXAxisTicks="false" displayYAxisTicks="false" aspectRatio="1.3/1" fixAxes yLabelAlignment="right">
+        <shortDescription>graph with lines demonstrating midline, amplitude, and period, possibly of both g and h</shortDescription>
+        <group hide="!$partc">
+          <line name="midgc" lineStyle="dashed" styleNumber="5" lineWidth="2" slope="$zero" through="$midgintc"/>
+          <lineSegment name="periodgc" styleNumber="2" endpoints="$pdptg1c $pdptg2c" lineWidth="3" showCoordsWhenDragging="false"></lineSegment>
+          <lineSegment name="ampgc" styleNumber="2" endpoints="$ampptg1c $ampptg2c" lineWidth="3" lineStyle="dotted" showCoordsWhenDragging="false"/>
+          <legend position="upperLeft">
+              <label forObject="$midgc">
+                <m>y=$midgc.yintercept</m>
+              </label>
+              <label forObject="$periodgc">
+                has length $fraclengthpergc
+              </label>
+              <label forObject="$ampgc">
+                has length $ampgc.length
+              </label>
+          </legend>
+        </group>
+
+        <group hide="!$showgc">
+          <function name="gc" styleNumber="1" lineWidth="4">cos(x)+4</function>
+          <legend>
+            <label forObject="$gc">
+              <m>\cos(x)+4</m>
+            </label>
+          </legend>
+
+        </group>
+
+        <group hide="!$partc">
+          <function name="fc" styleNumber="5" lineWidth="2">cos(x)</function>
+          <legend position="lowerLeft">
+            <label forObject="$fc"><m>\cos(x)</m></label>
+          </legend>
+          <repeatForSequence from="-3" to="5" exclude="0" valueName="j">
+            <lineSegment styleNumber="5" endpoints="(-.2,$j) (.2,$j)" draggable="false" lineWidth="1" labelPosition="left"><label><m>$j</m></label></lineSegment>
+          </repeatForSequence>
+          <repeatForSequence from="-5" to="5" exclude="0" valueName="j">
+            <lineSegment styleNumber="5" endpoints="($j*pi/2,-.2) ($j*pi/2,.2)" draggable="false" lineWidth="1" labelPosition="bottom"><label><math simplify><math simplify>$j/2</math>pi</math></label></lineSegment>
+          </repeatForSequence>
+
+        </group>
+
+        <group hide="!$showhc">
+          <function name="hc" styleNumber="3" lineWidth="4">cos(x)-2</function>
+          <legend position="lowerRight">
+            <label forObject="$hc">
+              <m>\cos(x)-2</m>
+            </label>
+          </legend>
+
+        </group>
+
+
+      </graph>
+    <booleanInput name="showgc" hide="!$partc"><label>Show <m>g(t)</m></label></booleanInput><booleanInput name="showhc" hide="!$partc"><label>Show <m>h(t)</m></label></booleanInput>
+
+    <p>Show and hide the functions above, and compare their properties to those of <m>\cos(x)</m>. You can move the period and amplitude lines around to explore. Then use your observations to complete the following sentence.</p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      For <m>\cos(x)+c</m>, which is a
+      <answer inline>
+        <shortDescription>kind of transformation</shortDescription>
+        <choice credit="1">vertical shift up</choice>
+        <choice>vertical shift down</choice>
+        <choice>horizontal shift to the left</choice>
+        <choice>horizontal shift to the right</choice>
+        <choice>a vertical stretch</choice>
+      </answer>
+      by a number <m>c</m>, the midline
+      <answer inline>
+        <shortDescription>effect on the midline</shortDescription>
+        <choice>shifts down by <m>c</m>,</choice>
+        <choice credit="1">shifts up by <m>c</m>,</choice>
+        <choice>shifts to the left by <m>c</m>,</choice>
+        <choice>stays the same,</choice>
+      </answer>
+      the amplitude
+      <answer inline>
+        <shortDescription>effect on the amplitude</shortDescription>
+        <choice>is multiplied by <m>c</m>,</choice>
+        <choice>is multiplied by <m>|c|</m>,</choice>
+        <choice>is multiplied by <m>\frac{1}{c}</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer>
+      and the period
+      <answer inline>
+        <shortDescription>effect on the period</shortDescription>
+        <choice>is multiplied by <m>c</m>.</choice>
+        <choice>is multiplied by <m>|c|</m>.</choice>
+        <choice>is multiplied by <m>\frac{1}{c}</m>.</choice>
+        <choice credit="1">stays the same.</choice>
+      </answer>
+      as that of <m>\cos(x)</m>.
+    </p>
+  </aside>
+  <aside><title>d. Functions of the form <m>a\cos(t-b)+c</m></title>
+    <p>
+      Consider
+      <md>
+        <mrow>g(t) \amp = 3\cos(t-\pi)+4</mrow>
+      <mrow>h(t) \amp = -1/4\cos\left(t+\frac{\pi}{2}\right)-2.</mrow></md>
+      Both <m>g(t)</m> and <m>h(t)</m> involve:
+      <answer name="mcq4" selectMultiple inline="false" shuffleOrder="false">
+        <shortDescription>kind of transformation</shortDescription>
+        <choice credit="1">a vertical shift of <m>f(t)</m>.</choice>
+        <choice credit="1">a horizontal shift of <m>f(t)</m>.</choice>
+        <choice credit="1">a vertical stretch of <m>f(t)</m>.</choice>
+      </answer>
+    </p>
+    <p>
+      In fact, <m>g(t)</m> in part d. is a combination of the <m>g(t)</m> functions in parts a, b, and c, and similarly for the <m>h(t)</m> in part d compared to the <m>h(t)</m> functions in parts a, b, and c.
+    </p>
+    <p>
+      Based on your answers to parts a, b, and c about what transformations have been performed and your knowledge of the order of operations, in which order are the transformations applied in functions of the form <m>a\cos(t-b)+c</m>?
+      <answer name="mcq5" inline="false" shuffleOrder="false">
+        <shortDescription>order of transformations</shortDescription>
+        <choice>a vertical stretch by <m>a</m>, followed by a horizontal shift to the right by <m>b</m>, followed by a vertical shift up by <m>c</m></choice>
+        <choice credit="1">a horizontal shift to the right by <m>b</m>, followed by a vertical stretch by <m>a</m>, followed by a vertical shift up by <m>c</m></choice>
+        <choice>a vertical shift up by <m>c</m>, followed by a vertical stretch by <m>a</m>, followed by a horizontal shift to the right by <m>b</m></choice>
+      </answer>
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      This means that after the first transformation, the midline <answer inline>
+        <shortDescription>effect on the midline</shortDescription>
+        <choice>shifts down by <m>b</m>,</choice>
+        <choice>shifts up by <m>b</m>,</choice>
+        <choice>shifts to the left by <m>b</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer> and then after the second transformation, the midline <answer inline>
+        <shortDescription>effect on the midline</shortDescription>
+        <choice>shifts down by <m>a</m>,</choice>
+        <choice>shifts up by <m>a</m>,</choice>
+        <choice>shifts to the left by <m>a</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer> and after the third transformation, the midline <answer inline>
+        <shortDescription>effect on the midline</shortDescription>
+        <choice>shifts down by <m>c</m>.</choice>
+        <choice credit="1">shifts up by <m>c</m>.</choice>
+        <choice>shifts to the left by <m>c</m>.</choice>
+        <choice>stays the same.</choice>
+      </answer>
+
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      Similarly, after the first transformation, the amplitude <answer inline>
+        <shortDescription>effect on the amplitude</shortDescription>
+        <choice>shifts down by <m>b</m>,</choice>
+        <choice>shifts up by <m>b</m>,</choice>
+        <choice>shifts to the left by <m>b</m>,</choice>
+        <choice credit="1">stays the same,</choice>
+      </answer> and then after the second transformation, the amplitude <answer inline>
+        <shortDescription>effect on the amplitude</shortDescription>
+        <choice>is multiplied by <m>a</m>,</choice>
+        <choice credit="1">is multiplied by <m>|a|</m>,</choice>
+        <choice>shifts up by <m>a</m>,</choice>
+        <choice>stays the same,</choice>
+      </answer> and after the third transformation, the period <answer inline>
+        <shortDescription>effect on the period</shortDescription>
+        <choice>is multiplied by <m>c</m>.</choice>
+        <choice>is multiplied by <m>\frac{1}{c}</m>.</choice>
+        <choice>shifts up by <m>c</m>.</choice>
+        <choice credit="1">stays the same.</choice>
+      </answer>
+
+    </p>
+
+  </aside>
+</cascade>
+        </script>
+</div></div>
+</body>
+</html>

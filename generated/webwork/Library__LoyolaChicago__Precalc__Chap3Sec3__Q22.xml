@@ -5,16 +5,16 @@
 <p>As <m>r</m> increases, does the value of <m>t_0</m> increase, decrease, or remain the same?
 <var form="popup">
 <li>
-<p>decrease</p>
-</li>
-<li>
-<p>remain the same</p>
-</li>
-<li>
 <p>increase</p>
 </li>
 <li>
 <p>Choose</p>
+</li>
+<li>
+<p>decrease</p>
+</li>
+<li>
+<p>remain the same</p>
 </li>
 </var></p>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/Library__LoyolaChicago__Precalc__Chap3Sec3__Q22-image-1.png" width="66%"/>

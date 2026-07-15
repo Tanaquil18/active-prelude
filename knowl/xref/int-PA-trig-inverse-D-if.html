@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:2400px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <function name="cosine1" domain="(-3pi,0)">cos(x)</function>
+  <function name="cosine2" domain="(pi,3pi)">cos(x)</function>
+  <function name="cosine0pi" domain="[0,pi]">cos(x)</function>
+</setup>
+
+<p>
+  Consider the plot of the standard cosine function in the following figure along with the emphasized portion of the graph on <m>[0,\pi]</m>.
+</p>
+
+<graph xMin="-9/4 pi" xMax="9/4 pi" yMin="-2.5" yMax="2.5" displayXAxisTicks="false" displayYAxisTicks="false" aspectRatio="4/3" yLabelAlignment="right" fixAxes>
+  <shortDescription>graph of cosine with the part of it between 0 and pi emphasized</shortDescription>
+  <xLabel><m>t</m></xLabel>
+  <yLabel><m>y</m></yLabel>
+  <repeatForSequence from="-4" to="4" exclude="0" valueName="k">
+    <lineSegment fixed styleNumber="5" lineWidth="1" endpoints="($k pi/2,-.1) ($k pi/2,.1)"/>
+    <label maskLabel="false" fixed anchor="($k pi/2,-.3)"><math simplify>$k pi / 2</math></label>
+    <lineSegment fixed styleNumber="5" lineWidth="1" endpoints="(-.2,$k) (.2,$k)"/>
+      <label maskLabel="false" fixed anchor="(-.5,$k)"><m>$k</m></label>
+  </repeatForSequence>
+  <curve lineStyle="dashed">$cosine1</curve>
+  <curve lineStyle="dashed">$cosine2</curve>
+  <curve>$cosine0pi</curve>
+  <label maskLabel="false" fixed anchor="(3pi/4,0.5)"><m>y=g(t)</m></label>
+</graph>
+
+<p>
+  Let <m>g</m> be the function whose domain is <m>0 \le t \le \pi</m> and whose outputs are determined by the rule <m>g(t) = \cos(t)</m>.  <em>Note well</em>: <m>g</m> is defined in terms of the cosine function, but because it has a different domain, it is <em>not</em> the cosine function.
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      <answer><mathInput name="mi1"><label>What is the domain of <m>g</m>?</label><description>You can enter your answer using interval notation like <m>[0,\pi]</m>, or using inequalities in the form <m>0\leq t \leq \pi</m>.</description></mathInput><award><when><subsetOfReals variable="t">$mi1</subsetOfReals>=[0,pi]</when></award></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      <answer><mathInput name="mi2"><label>What is the range of <m>g</m>?</label><description>You can enter your answer using interval notation like <m>[0,\pi]</m>, or using inequalities in the form <m>0\leq t \leq \pi</m>.</description></mathInput><award><when><subsetOfReals variable="t">$mi2</subsetOfReals>=[-1,1]</when></award></answer>
+    </p>
+  </li>
+  <li sectionWideCheckWork colorAnswersSeparately>
+    <p>
+      We can see from the graph that <m>g(t)</m> <answer><choiceInput inline><shortDescription>passes or doesn't pass the HLT</shortDescription><choice credit="1">passes</choice><choice>doesn't pass</choice></choiceInput></answer> the horizontal line test because  <answer><choiceInput inline><label>every possible output value between</label><choice><m>0</m> and <m>\pi</m></choice><choice><m>0</m> and <m>2\pi</m></choice><choice><m>0</m> and <m>1</m></choice><choice credit="1"><m>-1</m> and <m>1</m></choice></choiceInput></answer> <answer><choiceInput inline><label>has only a single input value on the interval</label><choice credit="1"><m>[0,\pi]</m></choice><choice><m>[0,2\pi]</m></choice><choice><m>[0,1]</m></choice><choice><m>[-1,1]</m></choice></choiceInput></answer>.
+    </p>
+    <p>
+      This means that <m>g(t)</m> <answer><choiceInput inline><shortDescription>has or doesn't have an inverse</shortDescription><choice credit="1">has</choice><choice>doesn't have</choice></choiceInput></answer> an inverse function, <m>g^{-1}(t)</m>, <answer><choiceInput inline><label>whose domain is</label><choice><m>[0,\pi]</m></choice><choice><m>[0,2\pi]</m></choice><choice><m>[0,1]</m></choice><choice credit="1"><m>[-1,1]</m></choice></choiceInput></answer> and <answer><choiceInput inline><label>whose range is</label><choice credit="1"><m>[0,\pi]</m></choice><choice><m>[0,2\pi]</m></choice><choice><m>[0,1]</m></choice><choice><m>[-1,1]</m></choice></choiceInput></answer>.
+    </p>
+  </li>
+  <li>
+    <p>
+      We know that <m>g(\frac{\pi}{4}) = \frac{\sqrt{2}}{2}</m>. That means
+	<answer><label>the exact value of <m>g^{-1}\left(\frac{\sqrt{2}}{2}\right)</m> is </label>pi/4</answer>
+    </p>
+    <p>
+      <answer><label>What is the exact value of <m>g^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>?</label>3pi/4</answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the exact values of each of the quantities below.
+    </p>
+    <p>
+      <answer><label><m>g^{-1}\left(-\frac{1}{2}\right)=</m></label>2pi/3</answer>
+    </p>
+    <p>
+      <answer><label><m>g^{-1}\left(\frac{\sqrt{3}}{2}\right)=</m></label>pi/6</answer>
+    </p>
+    <p>
+      <answer><label><m>g^{-1}(0)=</m></label>pi/2</answer>
+    </p>
+    <p>
+      <answer><label><m>g^{-1}(-1)=</m></label>pi</answer>
+    </p>
+    <hint><p><m>g(t)</m> comes from <m>\cos(t)</m>, which takes in an angle and outputs the <m>x</m>-value of the point on the unit circle corresponding to that angle.</p><p><m>g^{-1}(t)</m> swaps that; it takes in an <m>x</m>-value of a point on the unit circle and outputs the angle between <m>0</m> and <m>\pi</m> corresponding to the point.</p></hint>
+  </li>
+
+</ol>
+        </script>
+</div></div>
+</body>
+</html>

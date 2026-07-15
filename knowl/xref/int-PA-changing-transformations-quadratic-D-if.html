@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:2400px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <function name="f">$func</function>
+  <number fixed name="zero">0</number>
+  <number fixed name="one">1</number>
+  <number fixed name="negone">-1</number>
+</setup>
+
+<p>
+  We are going to explore <em>transformations</em> of a familiar quadratic function, <m>y=x^2</m>.
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      First, move the slider for <m>a</m> back and forth and observe the effect(s) on the graph of <m>f(x)+a</m> compared to the graph of <m>f(x)</m>. You can also drag the point around to see how the value of <m>a</m> changes.
+    </p>
+    <slider name="a" step="0.1" from="-9" to="9"><label><m>a</m></label></slider>
+    <graph xMin="-6.5" xMax="6.5" yMin="-10.5" yMax="10.5" fixAxes size="small">
+      <shortDescription>graph of a function a plus f of x for different values of a</shortDescription>
+      <function name="f1">$f</function>
+      <curve styleNumber="2" name="fplusa">$f+$a</curve>
+      <point styleNumber="2">($zero,$$f($zero)+$a)</point>
+      <legend position="lowerLeft">
+        <label forObject="$f1">
+          <m>y=f(x)</m>
+        </label>
+        <label forObject="$fplusa">
+          <m>y=f(x)+a</m>
+        </label>
+      </legend>
+    </graph>
+    <p>
+      Set the value of the slider to <m>a=9.</m>
+      <answer disableAfterCorrect><award><when>$a=9</when></award></answer><br/>
+      You can move it again afterwards.
+    </p>
+    <p>
+      Which of the following observations are true for <br/><m>y=f(x)+a</m>?
+      <answer><choiceInput selectMultiple><shortDescription>properties of a plus f of x</shortDescription><choice>The graph of <m>f(x)</m> is deformed (stretched or shrunk) vertically by <m>a</m>.</choice><choice credit="1">The graph of <m>f(x)</m> is shifted vertically by <m>a</m>.</choice><choice>The graph of <m>f(x)</m> is shifted horizontally by <m>a</m>.</choice><choice>The graph of <m>f(x)</m> is reflected across the <m>x</m>-axis when <m>a</m> is negative.</choice><choice credit="1">The graph is the same as <m>f(x)</m> when <m>a=0</m>.</choice><choice>The graph is the same as <m>f(x)</m> when <m>a=1</m>.</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Next, move the slider for <m>b</m> back and forth and observe the effect(s) on the graph of <m>f(x-b)</m> compared to the graph of <m>f(x)</m>. You can also drag the point around to see how the value of <m>b</m> changes.
+    </p>
+    <slider name="b" step="0.1" from="-6" to="6"><label><m>b</m></label></slider>
+<graph xMin="-6.5" xMax="6.5" yMin="-10.5" yMax="10.5" fixAxes size="small">
+  <shortDescription>graph of a function f of the quantity x minus b for different values of b</shortDescription>
+  <function name="f2">$f</function>
+  <function styleNumber="2" name="fxminusb">$$f(x-$b)</function>
+  <point styleNumber="2">($b,$$fxminusb($b))</point>
+  <legend position="lowerLeft">
+    <label forObject="$f2">
+      <m>y=f(x)</m>
+    </label>
+    <label forObject="$fxminusb">
+      <m>y=f(x-b)</m>
+    </label>
+  </legend>
+</graph>
+    <p>
+      Set the value of the slider to <m>b=6.</m>
+      <answer disableAfterCorrect><award><when>$b=6</when></award></answer><br/>
+      You can move it again afterwards.
+    </p>
+    <p>
+      Which of the following observations are true for <br/><m>y=f(x-b)</m>?
+      <answer><choiceInput selectMultiple><shortDescription>properties of f of the quantity x minus b</shortDescription><choice>The graph of <m>f(x)</m> is deformed (stretched or shrunk) vertically by <m>b</m>.</choice><choice>The graph of <m>f(x)</m> is shifted vertically by <m>b</m>.</choice><choice credit="1">The graph of <m>f(x)</m> is shifted horizontally by <m>b</m>.</choice><choice>The graph of <m>f(x)</m> is reflected across the <m>x</m>-axis when <m>b</m> is negative.</choice><choice credit="1">The graph is the same as <m>f(x)</m> when <m>b=0</m>.</choice><choice>The graph is the same as <m>f(x)</m> when <m>b=1</m>.</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Third, move the slider for <m>c</m> back and forth and observe the effect(s) on the graph of <m>cf(x)</m> compared to the graph of <m>f(x)</m>. You can also drag the point around to see how the value of <m>c</m> changes.
+    </p>
+    <slider name="c" step="0.1" from="-6" to="6"><label><m>c</m></label></slider>
+    <graph xMin="-6.5" xMax="6.5" yMin="-10.5" yMax="10.5" fixAxes size="small">
+      <shortDescription>graph of a function c times f of x for different values of c</shortDescription>
+      <function name="f3">$f</function>
+      <function styleNumber="2" name="ctimesf">$c*$f</function>
+      <point styleNumber="2" hide="$$f(1)=0">($one,$c*$$f($one))</point>
+      <point styleNumber="2" hide="$$f(1)!=0">($zero,$c*$$f($zero))</point>
+      <legend position="lowerLeft">
+        <label forObject="$f3">
+          <m>y=f(x)</m>
+        </label>
+        <label forObject="$ctimesf">
+          <m>y=cf(x)</m>
+        </label>
+      </legend>
+    </graph>
+    <p>
+      Set the value of the slider to <m>c=6.</m>
+      <answer disableAfterCorrect><award><when>$c=6</when></award></answer><br/>
+      You can move it again afterwards.
+    </p>
+    <p>
+      Which of the following observations are true for <br/><m>y=cf(x)</m>?
+      <answer><choiceInput selectMultiple><shortDescription>properties of c times f of x </shortDescription><choice credit="1">The graph of <m>f(x)</m> is deformed (stretched or shrunk) vertically by <m>a</m>.</choice><choice>The graph of <m>f(x)</m> is shifted vertically by <m>c</m>.</choice><choice>The graph of <m>f(x)</m> is shifted horizontally by <m>c</m>.</choice><choice credit="1">The graph of <m>f(x)</m> is reflected across the <m>x</m>-axis when <m>c</m> is negative.</choice><choice>The graph is the same as <m>f(x)</m> when <m>c=0</m>.</choice><choice credit="1">The graph is the same as <m>f(x)</m> when <m>c=1</m>.</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Finally, change the function entered below and explore the sliders above again for this new function.  Do any of your selected choices change when the function we are comparing to has changed? You can come up with your own functions to try, but some good ones to try that will fit in the window nicely could be <m>f(x)=x+1</m>, <m>f(x) = x^2 + 2x + 3</m>, or <m>f(x) = x^3 - 1</m>.
+    </p>
+    <p>
+      <mathInput name="func" prefill="x^2"><label><m>f(x)=</m></label></mathInput>
+    </p>
+  </li>
+</ol>
+        </script>
+</div></div>
+</body>
+</html>

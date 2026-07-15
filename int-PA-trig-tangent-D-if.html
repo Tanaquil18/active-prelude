@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:2400px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+
+  <repeatForSequence name="points" from="1" to="24" valueName="k">
+    <point styleNumber="5" markerStyle="circle" markerSize="4" showCoordsWhenDragging="false">(cos($k/24*2pi),sin($k/24*2pi))
+    </point>
+  </repeatForSequence>
+
+    <integer name="num1a">arccos($P.x)*24/2/pi</integer>
+  <integer name="num2a">(2*pi-arccos($P.x))*24/2/pi</integer>
+
+  <integer name="numP"><conditionalContent><case condition="$P.y< 0">$num2a</case><else>$num1a</else></conditionalContent></integer>
+
+  <pointList name="plist2">(a,b) (sqrt(3)/2,1/2) (sqrt(2)/2, sqrt(2)/2) (1/2,sqrt(3)/2) (a,b) (0,1) (a,b) (-1/2,sqrt(3)/2) (-sqrt(2)/2, sqrt(2)/2) (-sqrt(3)/2,1/2) (a,b) (-1,0) (a,b) (-sqrt(3)/2,-1/2) (-sqrt(2)/2, -sqrt(2)/2) (-1/2,-sqrt(3)/2) (a,b) (0,-1) (a,b) (1/2,-sqrt(3)/2) (sqrt(2)/2, -sqrt(2)/2) (sqrt(3)/2,-1/2) (a,b) (1,0)</pointList>
+
+  <repeatForSequence name="alldists" from="1" to="24" valueName="kz">
+    <math simplify><math simplify>$kz/12</math>pi</math>
+  </repeatForSequence>
+
+  <boolean name="notnice">$numP elementof <mathList>1 5 7 11 13 17 19 23</mathList></boolean>
+  <conditionalContent name="labelpos">
+    <case condition="$P.x>= 0 and $P.y>= 0">
+      upperRight
+    </case>
+    <case condition="$P.x< 0 and $P.y>= 0">
+      upperLeft
+    </case>
+    <case condition="$P.x< 0 and $P.y< 0">
+      lowerLeft
+    </case>
+    <else>
+      lowerRight
+    </else>
+  </conditionalContent>
+
+  <mathList name="undefList">$undefEnt</mathList>
+
+  <mathList name="angles">0 pi/12 pi/6 pi/4 pi/3 5pi/12 pi/2 7pi/12 2pi/3 3pi/4 5pi/6 pi</mathList>
+
+
+  <repeat name="tanpoints" for="$angles" valueName="k">
+    <point styleNumber="5" markerSize="2" displayDecimals="5">($k,<round numDecimals="5">tan($k)</round>)</point>
+  </repeat>
+
+
+
+
+</setup>
+
+<p>
+  Through the following questions, we work to understand the special values and overall behavior of the tangent function.
+</p>
+
+
+    <p>
+       Use the unit circle below (not a computational device) to find the exact value of <m>\tan(t)</m> at the following values:<br/> <m>t = \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{2\pi}{3}, \frac{3\pi}{4}, \frac{5\pi}{6}</m>.
+    </p>
+  <p>
+    Move the square point to each of the above angles and an answer box will appear.  Enter a simplified exact expression, not a decimal approximation.
+  </p>
+  <hint>Recall that <m>\tan(t)=\frac{\sin(t)}{\cos(t)}</m>, and that for any point on a unit circle, the <m>x</m>-coordinate is <m>\cos(\theta)</m> and the <m>y</m>-coordinate is <m>\sin(\theta)</m>.</hint>
+    <sideBySide widths="70% 25%">
+    <graph name="unitcircle" xMin="-1.5" xMax="1.5" yMin="-1.5" yMax="1.5" displayXAxisTicks="false" displayYAxisTicks="false" fixAxes grid=".2 .2"><shortDescription>unit circle with 24 equally spaced points</shortDescription>
+      <circle name="unitcir" center="(0,0)" radius="1" draggable="false"/>
+      $points
+      <point name="P" styleNumber="2" showCoordsWhenDragging="false" markerSize="7"><constrainTo>$points</constrainTo>(cos(pi/12),sin(pi/12))</point>
+      <lineSegment fixed styleNumber="5" lineWidth="2" endpoints="(0,0) $P"></lineSegment>
+      <label maskLabel="false" fixed anchor="($P.x/2-.1$P.y,$P.y/2+.1$P.x)"><m>1</m></label>
+      <label maskLabel="false" fixed anchor="(1.1,1.3)"><m>\displaystyle \theta=$alldists[$numP]</m></label>
+      <curve name="angle1" variable="t" parMin="0" parMax="arccos($P.x)" lineWidth="1" styleNumber="5" hide="$P.y< 0" >
+        (1/5cos(t), 1/5sin(t))
+      </curve>
+        <curve name="angle2" variable="t" parMin="0" parMax="2pi-arccos($P.x)" lineWidth="1" styleNumber="5" hide="$P.y>= 0" >
+        (1/5cos(t), 1/5sin(t))
+      </curve>
+        <label maskLabel="false" fixed anchor="(.35cos(arccos($P.x)/2),.35sin(arccos($P.x)/2))" hide="$P.y< 0"><m>\theta</m></label>
+        <label maskLabel="false" fixed anchor="(-.35cos(arccos($P.x)/2),.35sin(arccos($P.x)/2))" hide="$P.y>= 0"><m>\theta</m></label>
+        <label hide="$notnice" anchor="$P" positionFromAnchor="$labelpos" maskLabel="true">$plist2[$numP]</label>
+    </graph>
+      <div>
+        <answer name="tanpi6" hide="$numP!=2"><label><m>\tan(\frac{\pi}{6})=</m></label><award symbolicEquality>1/sqrt(3)</award><award symbolicEquality>sqrt(3)/3</award><award name="tanpi6notsimp" credit="0">1/sqrt(3)</award></answer>
+        <answer name="tanpi4" hide="$numP!=3"><label><m>\tan(\frac{\pi}{4})=</m></label><award symbolicEquality>1</award><award name="tanpi4notsimp" credit="0">1</award></answer>
+        <answer name="tanpi3" hide="$numP!=4"><label><m>\tan(\frac{\pi}{3})=</m></label><award symbolicEquality>sqrt(3)</award><award symbolicEquality>sqrt(3)/1</award><award name="tanpi3notsimp" credit="0">sqrt(3)</award></answer>
+        <answer name="tan2pi3" hide="$numP!=8"><label><m>\tan(\frac{2\pi}{3})=</m></label><award symbolicEquality>-sqrt(3)</award><award symbolicEquality>-sqrt(3)/1</award><award name="tan2pi3notsimp" credit="0">-sqrt(3)</award></answer>
+        <answer name="tan3pi4" hide="$numP!=9"><label><m>\tan(\frac{3\pi}{4})=</m></label><award symbolicEquality>-1</award><award name="tan3pi4notsimp" credit="0">-1</award></answer>
+        <answer name="tan5pi6" hide="$numP!=10"><label><m>\tan(\frac{5\pi}{6})=</m></label><award symbolicEquality>-1/sqrt(3)</award><award symbolicEquality>-sqrt(3)/3</award><award name="tan5pi6notsimp" credit="0">-1/sqrt(3)</award></answer>
+      </div>
+    </sideBySide>
+
+<hr/>
+
+<p sectionWideCheckWork colorAnswersSeparately>
+  <answer><choiceInput inline><label>When <m>\theta=\frac{\pi}{2}</m>, the point on the unit circle is </label><choice><m>(1,0)</m></choice><choice credit="1"><m>(0,1)</m></choice><choice><m>(-1,0)</m></choice><choice><m>(0,-1)</m></choice></choiceInput></answer>
+   <answer><choiceInput inline><label> and this means </label><choice credit="1"><m>\cos\left( \frac{\pi}{2} \right)=0</m></choice><choice><m>\sin\left( \frac{\pi}{2} \right)= 0</m></choice></choiceInput></answer> and so <answer><choiceInput inline><label><m>\tan\left( \frac{\pi}{2} \right)=\frac{\sin\left( \frac{\pi}{2} \right)}{\cos\left( \frac{\pi}{2} \right)}</m> </label><choice>is <m>0</m></choice><choice credit="1">is undefined</choice></choiceInput></answer> because you can't divide by <m>0</m>.
+</p>
+<p>
+  What are three other input values <m>x</m> for which <m>\tan(x)</m> is not defined? Enter your answers separated by commas. <answer><mathInput name="undefEnt"><shortDescription>list of values of theta where tan theta is undefined</shortDescription></mathInput><award><when>$undefList.numValues=3 and <boolean>cos($undefList[1])=0 and cos($undefList[2])=0 and cos($undefList[3])=0</boolean> and <boolean>$undefList[1]!=$undefList[2] and $undefList[1]!=$undefList[3] and $undefList[3]!=$undefList[2]</boolean> and <boolean>$undefList[1]!=pi/2 and $undefList[1]!=pi/2 and $undefList[3]!=pi/2</boolean> </when></award></answer>
+</p>
+
+<hr/>
+
+<sideBySide widths="65% 30%">
+  <graph name="unitcircle2" xMin="-1.5" xMax="1.5" yMin="-1.5" yMax="1.5" displayXAxisTicks="false" displayYAxisTicks="false" fixAxes grid=".2 .2"><shortDescription>unit circle with 24 equally spaced points</shortDescription>
+      <circle name="unitcir" center="(0,0)" radius="1" draggable="false"/>
+      $points
+      <point name="P2" styleNumber="2" showCoordsWhenDragging="false" markerSize="6"><constrainTo>$unitcir</constrainTo>(cos(pi/12),sin(pi/12))</point>
+    </graph>
+  <div>
+  <p>
+    Drag the point to the approximate location of <m>\theta=\frac{11\pi}{24}</m>.
+  </p>
+    <answer><award><when>abs($P2.x-.125)< .05</when></award></answer>
+  </div>
+</sideBySide>
+<p sectionWideCheckWork colorAnswersSeparately>
+  <answer><choiceInput inline><label>The angle <m>\frac{11\pi}{24}</m> is pretty close to </label><choice><m>0</m></choice><choice><m>\frac{\pi}{4}</m></choice><choice credit="1"><m>\frac{\pi}{2}</m></choice><choice><m>\frac{3\pi}{4}</m></choice><choice><m>\pi</m></choice></choiceInput></answer>, and so <answer><choiceInput inline><label>the point on the unit circle corresponding to <m>\theta=\frac{11\pi}{24}</m> is pretty close to</label><choice><m>(0,0)</m></choice><choice><m>(1,0)</m></choice><choice credit="1"><m>(0,1)</m></choice><choice><m>(-1,0)</m></choice></choiceInput></answer>.
+  As the angles get closer and closer to <m>\frac{\pi}{2}</m>, the function <answer><choiceInput inline><label><m>\tan(\theta)</m> gets closer and closer to dividing by</label><choice credit="1"><m>0</m></choice><choice><m>1</m></choice></choiceInput></answer>, and so <answer><choiceInput inline><label>the values of <m>\tan(\theta)</m> get</label><choice>closer to <m>0</m>.</choice><choice>closer to <m>1</m>.</choice><choice credit="1">larger and larger.</choice></choiceInput></answer>
+</p>
+
+<hr/>
+
+<p>
+  A table of values appears below, including the values from the angles asked about in the first graph above after you've answered them correctly.
+</p>
+
+<tabular width="100%" halign="center" valign="top">
+      <row header="true" bottom="medium">
+        <cell right="minor"><m>x</m></cell>
+        <cell halign="right"><m>y = \tan(x)</m></cell>
+        <cell halign="left"></cell>
+      </row>
+      <row bottom="minor">
+        <cell right="minor"><m>0</m></cell>
+        <cell halign="right"><m>\tan(0)</m></cell>
+        <cell halign="left"><m>= \, </m> <m>0</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell right="minor"><m>\frac{\pi}{12}</m></cell>
+        <cell halign="right"><m>\tan(\frac{\pi}{12})</m></cell>
+        <cell halign="left"><m>=\, </m> <round numDecimals="5">tan(pi/12)</round></cell>
+      </row>
+      <row bottom="minor">
+        <cell right="minor"><m>\frac{\pi}{6}</m></cell>
+        <cell halign="right"><mathInput name="Tpi6" disabled><shortDescription>value of tangent of x</shortDescription><conditionalContent condition="$tanpi6.creditAchieved=1">1/sqrt(3)</conditionalContent></mathInput></cell>
+        <cell halign="left"><m>=</m><mathInput disabled><shortDescription>decimal value of tangent of x</shortDescription><conditionalContent condition="$tanpi6.creditAchieved=1"><round numDecimals="5">tan(pi/6)</round></conditionalContent></mathInput></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{\pi}{4}</m></cell>
+        <cell halign="right"><mathInput name="Tpi4" disabled><shortDescription>value of tangent of x</shortDescription><conditionalContent condition="$tanpi4.creditAchieved=1">1</conditionalContent></mathInput></cell>
+        <cell halign="left"><m>=</m><mathInput disabled><shortDescription>decimal value of tangent of x</shortDescription><conditionalContent condition="$tanpi4.creditAchieved=1"><round numDecimals="5">tan(pi/4)</round></conditionalContent></mathInput></cell>
+      </row>
+      <row bottom="minor">
+        <cell right="minor"><m>\frac{\pi}{3}</m></cell>
+        <cell halign="right"><mathInput name="Tpi3" disabled><shortDescription>value of tangent of x</shortDescription><conditionalContent condition="$tanpi3.creditAchieved=1">sqrt(3)</conditionalContent></mathInput></cell>
+        <cell halign="left"><m>=</m><mathInput disabled><shortDescription>decimal value of tangent of x</shortDescription><conditionalContent condition="$tanpi3.creditAchieved=1"><round numDecimals="5">tan(pi/3)</round></conditionalContent></mathInput></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{5\pi}{12}</m></cell>
+        <cell halign="right"><m>\tan(\frac{5\pi}{12})</m></cell>
+        <cell halign="left"><m>= \, </m> <round numDecimals="5">tan(5pi/12)</round></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{\pi}{2}</m></cell>
+        <cell halign="right"><m>\tan(\frac{\pi}{2})</m></cell>
+        <cell halign="left"><m>= \, </m> undefined</cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{7\pi}{12}</m></cell>
+        <cell halign="right"><m>\tan(\frac{7\pi}{12})</m></cell>
+        <cell halign="left"><m>= \, </m> <round numDecimals="5">tan(7pi/12)</round></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{2\pi}{3}</m></cell>
+        <cell halign="right"><mathInput name="T2pi3" disabled><shortDescription>value of tangent of x</shortDescription><conditionalContent condition="$tan2pi3.creditAchieved=1">-sqrt(3)</conditionalContent></mathInput></cell>
+        <cell halign="left"><m>=</m><mathInput disabled><shortDescription>decimal value of tangent of x</shortDescription><conditionalContent condition="$tan2pi3.creditAchieved=1"><round numDecimals="5">tan(2pi/3)</round></conditionalContent></mathInput></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{3\pi}{4}</m></cell>
+        <cell halign="right"><mathInput name="T3pi4" disabled><shortDescription>value of tangent of x</shortDescription><conditionalContent condition="$tan3pi4.creditAchieved=1">-1</conditionalContent></mathInput></cell>
+        <cell halign="left"><m>=</m><mathInput disabled><shortDescription>decimal value of tangent of x</shortDescription><conditionalContent condition="$tan3pi4.creditAchieved=1"><round numDecimals="5">tan(3pi/4)</round></conditionalContent></mathInput></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\frac{5\pi}{6}</m></cell>
+        <cell halign="right"><mathInput name="T5pi6" disabled><shortDescription>value of tangent of x</shortDescription><conditionalContent condition="$tan5pi6.creditAchieved=1">-1/sqrt(3)</conditionalContent></mathInput></cell>
+        <cell halign="left"><m>=</m><mathInput disabled><shortDescription>decimal value of tangent of x</shortDescription><conditionalContent condition="$tan5pi6.creditAchieved=1"><round numDecimals="5">tan(5pi/6)</round></conditionalContent></mathInput></cell>
+      </row>
+    <row bottom="minor">
+        <cell right="minor"><m>\pi</m></cell>
+        <cell halign="right"><m>\tan(\pi)</m></cell>
+        <cell halign="left"><m>= \, </m> <round numDecimals="5">tan(pi)</round></cell>
+      </row>
+    </tabular>
+
+<p>
+  Moreover, a graph of the values appears below, and you can click to show the function <m>\tan(x)</m>.
+</p>
+
+<sideBySide widths="70% 25%">
+  <graph xMin="-5/2pi" xMax="3pi/2+.2" yMin="-8.5" yMax="8.5" fixAxes xTickScaleFactor="pi" displayXAxisTicks="false"  grid="pi/6 .5">
+    <shortDescription>unit circle with 24 equally spaced points and a movable point</shortDescription>
+    <repeatForSequence from="-5" to="4" exclude="0" valueName="k">
+      <lineSegment fixed styleNumber="5" lineWidth="1" endpoints="($k pi/2,-.2) ($k pi/2,.2)"/>
+      <label fixed maskLabel="false" anchor="($k pi/2,-.75)"><math simplify><math simplify>$k/2</math>pi</math></label>
+    </repeatForSequence>
+    $tanpoints
+    <curve name="tancurve" hide="!$showtan">tan(x)</curve>
+  </graph>
+  <div>
+    <p/>
+    <booleanInput name="showtan"><label>Show <m>\tan(x)</m></label></booleanInput>
+  </div>
+</sideBySide>
+<p>
+  Use the graph and your work above to answer the following:
+</p>
+<div sectionWideCheckWork colorAnswersSeparately>
+<p>
+  <answer><choiceInput inline><label>The domain of <m>y=\tan(x)</m> is</label><choice>all real numbers</choice><choice>all real numbers except <m>x=0</m></choice><choice credit="1">all real numbers except <m>x=\pm\frac{\pi}{2},\pm\frac{3\pi}{2}, \pm\frac{5\pi}{2}, \cdots</m></choice><choice>all real numbers except <m>x=0,\pm\pi,\pm 3\pi, \pm5\pi, \cdots</m></choice></choiceInput></answer>
+</p>
+<p>
+  <answer><choiceInput inline><label>The range of <m>y=\tan(x)</m> is</label><choice credit="1">all real numbers</choice><choice>all real numbers except <m>x=0</m></choice><choice>all real numbers except <m>x=\pm\frac{\pi}{2},\pm\frac{3\pi}{2}, \pm\frac{5\pi}{2}, \cdots</m></choice><choice>all real numbers except <m>x=0,\pm\pi,\pm 3\pi, \pm5\pi, \cdots</m></choice></choiceInput></answer>
+</p>
+<p>
+  <answer><choiceInput inline><label>The period of <m>y=\tan(x)</m> is</label><choice><m>\frac{\pi}{2}</m></choice><choice credit="1"><m>\pi</m></choice><choice><m>\frac{3\pi}{2}</m></choice><choice><m>x=2\pi</m></choice></choiceInput></answer>
+</p>
+</div>
+        </script>
+</div></div>
+</body>
+</html>

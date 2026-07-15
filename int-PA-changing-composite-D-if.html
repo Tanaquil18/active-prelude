@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:2400px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <function name="ffunc">$f</function>
+  <function name="gfunc">$g</function>
+</setup>
+<p>
+  Let <m>y = p(x) = 3x - 4</m> and <m>x = q(t) = t^2 - 1</m>.
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      Let <m>r(t) = p(q(t))</m>. Determine a formula for <m>r</m> that depends only on <m>t</m> and not on <m>p</m> or <m>q</m>.
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <answer name="firststep" symbolicEquality><label><m>p(q(t))=p\bigg(</m></label>t^2-1</answer><m>\bigg)</m></p>
+    <div sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      <m>\hspace{.65in}=3\bigg(</m><mathInput disabled minWidth="20"><shortDescription>q of t</shortDescription><math hide="$firststep.creditAchieved!=1">$firststep</math></mathInput><m>\bigg)-4=</m><answer><shortDescription>p of q of t</shortDescription><award symbolicEquality>3t^2-7</award><award name="notsimplified" credit="0">3t^2-7</award></answer>
+    </p>
+  </div>
+    <feedback condition="$notsimplified">Your process is correct, but your answer isn't simplified enough, yet.</feedback>
+  </li>
+  <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      In the introductory example with <m>y=f(x) = x^2 - 1</m> and <m>x=g(t) = 3t - 4</m>, we substituted <m>3t-4</m> in for the <m>x</m> and calculated <m>f(g(t))</m>.
+    <md>
+      <mrow> y \amp = f(x)</mrow>
+      <mrow> \amp = f(g(t))</mrow>
+      <mrow> \amp = f(3t-4)</mrow>
+      <mrow> \amp = (3t-4)^2-1.</mrow>
+    </md>
+
+    In both part a. and the example above, we had similar functions
+    <md>
+      <mrow> p(x) \amp = 3x-4 \amp q(t)\amp=t^2-1</mrow>
+      <mrow> g(t)\amp = 3t-4 \amp f(x)\amp=x^2-1</mrow>
+    </md>
+    but we composed them in <answer><choiceInput inline><shortDescription>order of composition</shortDescription><choice>in the same order;</choice><choice credit="1">in the opposite order;</choice></choiceInput></answer> in part a., we substituted the <answer><choiceInput inline><shortDescription>type of function</shortDescription><choice>linear function</choice><choice credit="1">quadratic function</choice></choiceInput></answer> into the <answer><choiceInput inline><shortDescription>type of function</shortDescription><choice credit="1">linear function</choice><choice>quadratic function</choice></choiceInput></answer> while in the introductory example, we substituted the <answer><choiceInput inline><shortDescription>type of function</shortDescription><choice credit="1">linear function</choice><choice>quadratic function</choice></choiceInput></answer> into the <answer><choiceInput inline><shortDescription>type of function</shortDescription><choice>linear function.</choice><choice credit="1">quadratic function.</choice></choiceInput></answer>
+
+    </p>
+  </li>
+  <li>
+    <p>
+      Let <m>t = s(z) = \frac{1}{z+4}</m> and recall that <m>x = q(t) = t^2 - 1</m>.  Determine a formula for <m>x = q(s(z))</m> that depends only on <m>z</m>.
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+        <answer name="firststep2" symbolicEquality><label><m>q(s(z))=q\bigg(</m></label>1/(z+4)</answer><m>\bigg)</m></p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+      <m>\hspace{.65in}=</m><answer><shortDescription>q of s of z</shortDescription><award symbolicEquality>(1/(z+4))^2-1</award><award symbolicEquality>(1/z+4)^2-1</award><award name="toosimplified" credit="1">(1/(z+4))^2-1</award></answer>
+    </p>
+    <feedback condition="$toosimplified">Your answer is correct, but you could have left it as <m>\displaystyle \left(\frac{1}{z+4}\right)^2-1</m> or <m>\displaystyle \frac{1}{(z+4)^2}-1</m>.</feedback>
+  </li>
+  <li>
+    <p>
+      Suppose that <m>h(t) = \sqrt{2t^2 + 5}</m>.  Determine formulas for two related functions, <m>y = f(x)</m> and <m>x = g(t)</m>, so that <m>h(t) = f(g(t))</m>.
+    </p>
+    <p>
+      <mathInput name="f"><label><m>y=f(x)=</m></label></mathInput><br/>
+      <mathInput name="g"><label><m>x=g(t)=</m></label></mathInput>
+    </p>
+    <p>
+      The result of composing <m>f(g(t))</m> is <math>$$f($g)</math>.
+    </p>
+    <answer name="compans"><award><when>
+      <boolean name="ghasnox"><derivative variables="x">$gfunc</derivative>=0</boolean> and
+      <boolean name="fhasnot"><derivative variables="t">$ffunc</derivative>=0</boolean> and
+      <boolean name="gjustt"><derivative variables="t">$gfunc</derivative>!=1</boolean> and
+      <boolean name="fjustx"><derivative variables="x">$ffunc</derivative>!=1</boolean> and
+      <boolean name="compright">$$f($g) = sqrt(2t^2+5)</boolean>
+    </when></award></answer>
+    <feedback condition="$compans.justSubmitted and $compans.creditAchieved!=1">
+      <conditionalContent condition="!$compright">The composition <m>f(g(t))</m> is not equal to <m>h(t)=\sqrt{2t^2+5}</m> as required.<br/></conditionalContent>
+      <conditionalContent condition="!$ghasnox">The function <m>g(t)</m> cannot contain the variable <m>x</m>.<br/></conditionalContent>
+      <conditionalContent condition="!$fhasnot">The function <m>f(x)</m> cannot contain the variable <m>t</m>.<br/></conditionalContent>
+      <conditionalContent condition="(!$gjustt or !$fjustx) and $compright">We are looking for two functions that each are related but not the same as <m>h(t)</m>; neither <m>f(x)</m> nor <m>g(t)</m> should be just a single variable.<br/></conditionalContent>
+      <conditionalContent condition="$compans.numSubmissions > 6">You might try setting <m>f(x)=\sqrt{x}</m></conditionalContent>
+    </feedback>
+  </li>
+
+</ol>
+        </script>
+</div></div>
+</body>
+</html>

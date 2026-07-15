@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:2400px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<p>
+    Use the equation <m>T = 40 + 0.25N</m> that relates the temperature, <m>T</m>, to the number of chirps per minute, <m>N</m>, to respond to the questions below.  The equation is also called <q>Dolbear's Law</q>.
+</p>
+<ol marker="a">
+  <li>
+    <p>
+      If we hear snowy tree crickets chirping at a rate of <m>92</m> chirps per minute, what does Dolbear's Law suggest should be the outside temperature?
+    </p>
+    <p sectionWideCheckWork>
+      <answer name="temp1"><shortDescription>temperature at 92 chirps per minute</shortDescription>40+0.25*92</answer><m>^\circ F \, </m>
+    </p>
+  </li>
+  <li>
+    <p>
+      If the outside temperature is <m>77^\circ F</m>, how many chirps per minute should we expect to hear?
+    </p>
+    <p sectionWideCheckWork>
+      <answer name="chirps1"><shortDescription>chirps per minute at 77 degrees Fahrenheit</shortDescription> 4*(77-40)</answer>chirps per minute
+    </p>
+  </li>
+  <li>
+    <p>
+      Is the model valid for determining the number of chirps one should hear when the outside temperature is <m>35^\circ F</m>?  Why or why not?
+    </p>
+    <p>
+      <choiceInput name="c1" inline><shortDescription>yes or no</shortDescription>
+        <choice>Yes</choice>
+        <choice>No</choice>
+      </choiceInput> because
+      <choiceInput name="c2" inline><shortDescription>reason part 1</shortDescription>
+        <choice>we can find a value of <m>N</m> which makes <m>T</m> equal 35,</choice>
+        <choice>we can't find a value of <m>N</m> which makes <m>T</m> equal 35,</choice>
+        <choice><m>T</m> adds a quarter of the number of chirps per minute to <m>40</m>,</choice>
+      </choiceInput> and
+      <choiceInput name="c3" inline><shortDescription>reason part 2</shortDescription>
+        <choice><m>N=-20</m>.</choice>
+        <choice><m>N=20</m>.</choice>
+        <choice>crickets can't chirp a negative number of times per minute.</choice>
+      </choiceInput>
+      <answer><shortDescription>correct explanation</shortDescription>
+    <award><when>$c1.selectedIndex=2 and $c2.selectedIndices=3 and $c3.selectedIndices=3</when></award>
+    </answer>
+    </p>
+
+  </li>
+  <li>
+    <p>
+      Suppose that in the morning an observer hears <m>65</m> chirps per minute, and several hours later hears <m>75</m> chirps per minute.  How much has the temperature risen between observations?
+    </p>
+    <p>
+      <mathInput name="changetemp" labelPosition="right"><label><m>^\circ F</m></label></mathInput> <answer><award><when>$changetemp=2.5</when></award></answer>
+    </p>
+    <hint>
+      <div sectionWideCheckWork forceIndividualAnswerColoring>
+      <p>
+      What temperature corresponds to <m>65</m> chirps per minute? <answer weight="0"><shortDescription>temperature at 65 chirps per minute</shortDescription>56.25</answer><m>^\circ F</m>
+      </p>
+      <p>
+      What temperature corresponds to <m>75</m> chirps per minute? <answer weight="0"><shortDescription>temperature at 75 chirps per minute</shortDescription>58.75</answer><m>^\circ F</m>
+      </p>
+      </div>
+    </hint>
+  </li>
+
+  <li>
+    <div sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      Dolbear's Law is known to be accurate for temperatures from <m>50^\circ</m> to <m>85^\circ</m>.
+    </p>
+    <p>
+      What is the fewest number of chirps per minute an observer could expect to hear?  <answer><shortDescription>fewest chirps per minute</shortDescription>40</answer> chirps per minute
+    </p>
+      <p>
+      What is the greatest number of chirps per minute an observer could expect to hear? <answer><shortDescription>greatest chirps per minute</shortDescription>180</answer> chirps per minute
+    </p>
+    </div>
+  </li>
+</ol>
+        </script>
+</div></div>
+</body>
+</html>
