@@ -6,12 +6,12 @@
 -->
 <project ptx-version="2">
   <targets>
-    <target name="html" format="html" publication="publication.ptx" />
     <target
-      name="runestone"
-      format="html"
-      publication="publication_runestone.ptx"
-      platform="runestone" />
+        name="runestone"
+        format="html"
+        publication="publication_runestone.ptx"
+        platform="runestone" />
+    <target name="html" format="html" publication="publication.ptx" />
     <target name="latex" format="latex" publication="publication.ptx"
             xsl="apc-latex.xsl"/>
     <target name="pdf"
