@@ -7,31 +7,36 @@
 <project ptx-version="2">
   <targets>
     <target name="html" format="html" publication="publication.ptx" />
-    <target name="latex" format="latex" publication="publication.ptx" 
+    <target
+      name="runestone"
+      format="html"
+      publication="publication_runestone.ptx"
+      platform="runestone" />
+    <target name="latex" format="latex" publication="publication.ptx"
             xsl="apc-latex.xsl"/>
-    <target name="pdf" 
+    <target name="pdf"
             latex-engine="xelatex"
             format="pdf"
             publication="publication.ptx"
             xsl="apc-latex.xsl" />
-    <target name="solutions" 
+    <target name="solutions"
             latex-engine="xelatex"
             format="pdf"
             source="apc-solution-manual.ptx"
             publication="publication-solutions.ptx"
             xsl="apc-solution-manual.xsl" />
-    <target name="solutions-latex" 
+    <target name="solutions-latex"
             format="latex"
             source="apc-solution-manual.ptx"
             publication="publication-solutions.ptx"
             xsl="apc-solution-manual.xsl" />
-    <target name="workbook" 
+    <target name="workbook"
             latex-engine="xelatex"
             format="pdf"
             source="apc-activity-workbook.ptx"
             publication="publication-workbook.ptx"
             xsl="apc-activity-workbook.xsl" />
-    <target name="workbook-latex" 
+    <target name="workbook-latex"
             format="latex"
             source="apc-activity-workbook.ptx"
             publication="publication-workbook.ptx"
