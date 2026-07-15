@@ -1,0 +1,99 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <point name="f1" fixed>(0,0)</point>
+  <point name="f2" fixed>(3,0)</point>
+  <point name="f3" fixed>(3,sqrt(3))</point>
+</setup>
+
+<p>
+  Below is an image of a right triangle whose sides are labeled <m>a</m>, <m>b</m>, and <m>c</m>, and whose non-right angles are labeled <m>x</m> and <m>y</m>.
+</p>
+<p>
+  We will complete a sketch of a right triangle with one leg of length <m>3</m> and another leg of length <m>\sqrt{3}</m>.  Let <m>\theta</m> be the angle that lies opposite the shorter leg.
+</p>
+  <graph size="small" fixAxes xMin="-.5" xMax="3.5" yMin="-.5" yMax="2.5" displayXAxis="false" displayYAxis="false">
+    <shortDescription>a right triangle with sides labeled a, b, and c</shortDescription>
+    <description>The longest side of the right triangle is labeled <m>c</m>.  The shortest side, which is vertical, is labeled <m>a</m>, and the remaining side of the triangle, which is horizontal, is labeled <m>b</m>. The angle across from the shortest side is labeled <m>x</m>, while the remaining non-right angle is labeled <m>y</m>.</description>
+    <triangle vertices="$f1 $f2 $f3" fixed></triangle>
+    <label maskLabel="false" hide="$fc.creditAchieved=1" draggable="false" anchor="($f3.x/2-.07$f3.y,$f3.y/2+.07$f3.x)"><m>c</m></label>
+    <label maskLabel="false" hide="$fc.creditAchieved!=1" draggable="false" anchor="($f3.x/2-.07$f3.y,$f3.y/2+.07$f3.x)"><m>\sqrt{12}</m></label>
+    <label maskLabel="false" hide="$fb.creditAchieved=1" draggable="false" anchor="($f2.x/2,-.2)"><m>b</m></label>
+    <label maskLabel="false" hide="$fb.creditAchieved!=1" draggable="false" anchor="($f2.x/2,-.2)"><m>3</m></label>
+    <label maskLabel="false" hide="$fa.creditAchieved=1" draggable="false" anchor="($f3.x+.15,$f3.y/2)"><m>a</m></label>
+    <label maskLabel="false" hide="$fa.creditAchieved!=1" draggable="false" anchor="($f3.x+.2,$f3.y/2)"><m>\sqrt{3}</m></label>
+
+    <curve variable="t" parMin="0" parMax="pi/6" lineWidth="1" styleNumber="5">
+    (.35cos(t), .35sin(t))
+  </curve>
+    <label maskLabel="false" anchor="(.45,.12)" hide="$xcor.creditAchieved=1"><m>x</m></label>
+    <label maskLabel="false" anchor="(.45,.12)" hide="$xcor.creditAchieved!=1"><m>\theta</m></label>
+    <curve variable="t" parMin="pi+pi/6" parMax="3pi/2" lineWidth="1" styleNumber="5">
+    (.35cos(t)+3, .35sin(t)+sqrt(3))
+  </curve>
+    <label maskLabel="false" anchor="(3-.25,sqrt(3)-.4)"><m>y</m></label>
+
+  </graph>
+
+<ol marker="a.">
+  <li>
+    <p>
+      First, determine the exact values of the sides <m>a</m>, <m>b</m> and <m>c</m>.
+    </p>
+    <p>
+      <answer name="fa"><label><m>a=</m></label><award>sqrt(3)</award><award name="fanotexact" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>sqrt(3)</award><award name="fa3" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>3</award></answer>
+      <answer name="fb"><label><m>b=</m></label><award>3</award><award name="fbnotexact" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>3</award><award name="fbsqrt3" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>sqrt(3)</award></answer>
+      <answer name="fc"><label><m>c=</m></label><award>sqrt(12)</award><award name="fcnotexact" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>sqrt(12)</award></answer>
+    </p>
+    <feedback condition="$fanotexact">Your answer is close to correct. Make sure you are entering an exact answer, not a decimal approximation.</feedback>
+  <feedback condition="$fbnotexact">Your answer is close to correct. Make sure you are entering an exact answer, not a decimal approximation.</feedback>
+<feedback condition="$fcnotexact">Your answer is close to correct. Make sure you are entering an exact answer, not a decimal approximation.</feedback>
+    <feedback condition="$fa3">It's both more helpful and more accurate if we assume the lengths are drawn to scale, so make this answer the horizontal leg.</feedback>
+  <feedback condition="$fbsqrt3">It's both more helpful and more accurate if we assume the lengths are drawn to scale, so make this answer the vertical leg.</feedback>
+  <p>
+    <answer name="xcor"><choiceInput inline><label>Which angle is opposite to the shorter leg?</label><choice credit="1"><m>x</m></choice><choice><m>y</m></choice></choiceInput></answer>
+  </p>
+    <p>
+    After answering all the questions in part a. correctly, you now have a correctly labeled right triangle meeting the specified conditions.
+  </p>
+  </li>
+  <li>
+    <p>
+      What is the exact value of <m>\sin(\theta)</m>?
+    </p>
+    <p>
+      <answer name="sintheta"><label><m>\sin(\theta)=</m></label><award symbolicEquality>1/2</award><award name="sinnotsimplified" credit="0">1/2</award></answer>
+    </p>
+    <feedback condition="$sinnotsimplified">Your answer is correct but not in the right form or simplified enough, yet. It might help to rewrite <m>\sqrt{12}=\sqrt{4\cdot 3}=2\sqrt{3}</m>.</feedback>
+  </li>
+  <li>
+    <p>
+      What special angle from the unit circle is <m>\theta</m>?
+    </p>
+    <p>
+      <answer><label><m>\theta=</m></label><description>Which angle from the unit circle looks like the sketch of the triangle and has the value of <m>\sin(\theta)</m> you just calculated?</description>pi/6</answer>
+    </p>
+  </li>
+  <li>
+    <p>
+    Use your answer to c. to rewrite your equation from b. using the arcsine function in the form <m>\arcsin(\Box) = \Delta</m>, where <m>\Box</m> and <m>\Delta</m> are numerical values.
+  </p>
+    <p sectionWideCheckWork colorAnswersSeparately>
+      <answer><mathInput minWidth="25"><label><m>\arcsin\bigg(</m></label></mathInput>1/2</answer><answer><mathInput minWidth="25"><label><m>\bigg) = </m></label></mathInput>pi/6</answer>
+    </p>
+  </li>
+</ol>

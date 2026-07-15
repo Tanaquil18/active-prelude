@@ -1,0 +1,103 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<p>
+  Suppose that at age <m>20</m> you have $<m>20000</m> and you can choose between one of two ways to use the money:  you can invest it in a mutual fund that will, on average, earn <m>8</m>% interest annually, or you can purchase a new automobile that will, on average, depreciate <m>12</m>% annually.  Let's explore how the $<m>20000</m> changes over time.
+</p>
+<p>
+  Let <m>I(t)</m> denote the value of the $<m>20000</m> after <m>t</m> years if it is invested in the mutual fund, and let <m>V(t)</m> denote the value of the automobile <m>t</m> years after it is purchased.
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      Determine <m>I(0)</m>, <m>I(1)</m>, <m>I(2)</m>, and <m>I(3)</m>. Enter each answer as a single number.
+    </p>
+    <p>
+      <answer symbolicEquality><label><m>I(0)=</m></label><description>The amount in the account after 0 years; in other words, at the beginning.</description><number>20000</number></answer>
+    </p>
+    <p>
+      <answer name="Iof1" symbolicEquality><label><m>I(1)=</m></label><description>The amount in the account after 1 year earning <m>8 \%</m> interest. Recall that this can be calculated by <m>1.08\cdot 20000</m>.</description><number>1.08*20000</number></answer>
+    </p>
+    <p>
+      <answer name="Iof2" symbolicEquality><label><m>I(2)=</m></label><description>The amount in the account after 2 years earning <m>8 \%</m> interest. Recall that this can be calculated by <m>1.08\cdot \big(1.08\cdot 20000\big)=1.08^2\cdot 20000</m>.</description><number>1.08^2*20000</number></answer>
+    </p>
+    <p>
+      <answer name="Iof3" allowedErrorInNumbers=".01" allowedErrorIsAbsolute><label><m>I(3)=</m></label><description>The amount in the account after 3 years earning <m>8 \%</m> interest. Recall that this can be calculated by <m>1.08\cdot \big(1.08^2\cdot 20000\big)=1.08^3\cdot 20000</m>.</description><number>1.08^3*20000</number></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Note that if a quantity <em>depreciates</em> <m>12 \%</m> annually then since <m>100-12=88</m>, this means that after a given year <m>88 \%</m> of the quantity remains.  Compute <m>V(0)</m>, <m>V(1)</m>, <m>V(2)</m>, and <m>V(3)</m>. Enter each answer as a single number.
+    </p>
+    <p>
+      <answer symbolicEquality><label><m>V(0)=</m></label><description>The value of the car after 0 years; in other words, at the beginning.</description>20000</answer>
+    </p>
+    <p>
+      <answer name="Vof1" symbolicEquality><label><m>V(1)=</m></label><description>The value of the car after 1 year depreciating <m>12 \%</m>. Recall that this can be calculated by <m>.88\cdot 20000</m>.</description><number>0.88*20000</number></answer>
+    </p>
+    <p>
+      <answer name="Vof2" symbolicEquality><label><m>V(2)=</m></label><description>The value of the car after 2 years depreciating <m>12 \%</m>. Recall that this can be calculated by <m>0.88\cdot \big(0.88\cdot 20000\big)=0.88^2\cdot 20000</m>.</description><number>0.88^2*20000</number></answer>
+    </p>
+    <p>
+      <answer name="Vof3" symbolicEquality><label><m>V(3)=</m></label><description>The value of the car after 3 years depreciating <m>12 \%</m>. Recall that this can be calculated by <m>0.88\cdot \big(0.88^2\cdot 20000\big)=0.88^3\cdot 20000</m>.</description><number>0.88^3*20000</number></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Based on the patterns in your computations in parts a. and b., determine formulas for <m>I(t)</m> and <m>V(t)</m>.
+    </p>
+    <p>
+      <answer><label><m>I(t)=</m></label>1.08^t*20000</answer>
+    </p>
+    <p>
+      <answer><label><m>V(t)=</m></label>0.88^t*20000</answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      The graphs of <m>I(t)</m> and <m>V(t)</m> appear below.
+    </p>
+    <graph xMin="-2.5" xMax="20.5" yMin="-1" yMax="10.5" fixAxes displayXAxisTicks="false" displayYAxisTicks="false" yLabelAlignment="right" aspectRatio="1.2/1">
+      <shortDescription>graph of the functions I and V</shortDescription>
+      <xLabel><m>t</m></xLabel>
+      <yLabel>Value in dollars</yLabel>
+      <repeatForSequence from="2" to="20" step="2" valueName="k">
+        <lineSegment styleNumber="5" lineWidth="1" fixed endpoints="($k,-.1) ($k,.1)"/>
+        <label maskLabel="false" anchor="($k,-.3)" fixed><m>$k</m></label>
+      </repeatForSequence>
+      <repeatForSequence from="1" to="10" valueName="k">
+        <lineSegment styleNumber="5" lineWidth="1" fixed endpoints="(-.15,$k) (.15,$k)"/>
+        <label maskLabel="false" anchor="(-1.4,$k)" fixed><math simplify>$k*10000</math></label>
+      </repeatForSequence>
+      <function domain="[0,21]">2*1.08^x</function>
+      <function domain="[0,21]" styleNumber="2">2* 0.88^x</function>
+      <label anchor="(17,8.2)" fixed><m>I(t)</m></label>
+      <label anchor="(17,0.7)" fixed><m>V(t)</m></label>
+
+    </graph>
+    <p>
+      Complete the sentence with some observations about the behavior of the two functions.
+    </p>
+    <p sectionWideCheckWork forceIndividualAnswerColoring>
+    Even though both functions had the same form, <answer><choiceInput inline><shortDescription>form of the functions</shortDescription><choice><m>20000t+b</m></choice><choice><m>20000t^2+bt+c</m></choice><choice credit="1"><m>b^t\cdot 20000</m></choice><choice><m>20000\cos(bt)+c</m></choice></choiceInput></answer>, the function <m>I(t)</m> is <answer><choiceInput inline><shortDescription>behavior of I of t</shortDescription><choice credit="1">getting larger</choice><choice>getting smaller</choice><choice>staying the same</choice></choiceInput></answer> year after year and <m>V(t)</m> is <answer><choiceInput inline><shortDescription>behavior of V of t</shortDescription><choice>getting larger</choice><choice credit="1">getting smaller</choice><choice>staying the same</choice></choiceInput></answer>. At the end of <m>20</m> years, the account earning interest is worth <answer><choiceInput inline><shortDescription>amount in I of t</shortDescription><choice> around <m>\$ 50000</m></choice><choice credit="1">over <m>\$ 90000</m></choice><choice>a couple thousand dollars</choice></choiceInput></answer>, while the car that depreciates is worth maybe <answer><choiceInput inline><shortDescription>amount in I of t</shortDescription><choice> around <m>\$ 50000</m></choice><choice>over <m>\$ 90000</m></choice><choice credit="1">a couple thousand dollars</choice></choiceInput></answer>.
+    </p>
+    <p>
+      What else do you notice and wonder?
+    </p>
+  </li>
+
+</ol>

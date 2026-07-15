@@ -35,7 +35,7 @@
   </objectives>
 
   <subsection><title>Introduction</title>
-  	
+
   	<p>
   		After linear functions,
     	quadratic functions are arguably the next simplest functions in mathematics.
@@ -48,6 +48,7 @@
   	</p>
 
   	<xi:include href="./previews/PA-changing-quadratic.xml"/>
+	<xi:include href="./previews/PA-changing-quadratic-D.xml"/>
 
 
   </subsection>
@@ -62,7 +63,7 @@
 	<xi:include href="./activities/act-changing-quadratic-parameters.xml"/>
 
 	<p>
-		Because quadratic functions are familiar to us, we will quickly restate some of their important known properties.  
+		Because quadratic functions are familiar to us, we will quickly restate some of their important known properties.
 	</p>
 
 	<assemblage xml:id="asm-quadratic-x-intercepts">
@@ -103,16 +104,16 @@
 	</p>
 
 	<p>
-		Every quadratic function has a <m>y</m>-intercept; <idx><h>quadratic function</h> <h>y-intercept</h></idx> for a function of form <m>y = q(x) = ax^2 + bx + c</m>, the <m>y</m>-intercept is the point <m>(0,c)</m>, as demonstrated in <xref ref="F-quadratic-1-CCD">Figure</xref>.  
+		Every quadratic function has a <m>y</m>-intercept; <idx><h>quadratic function</h> <h>y-intercept</h></idx> for a function of form <m>y = q(x) = ax^2 + bx + c</m>, the <m>y</m>-intercept is the point <m>(0,c)</m>, as demonstrated in <xref ref="F-quadratic-1-CCD">Figure</xref>.
 	</p>
-	<p>	
+	<p>
 		In addition, every quadratic function has a symmetric graph that either always curves upward or always curves downward.  The graph opens upward if and only if <m>a \gt 0</m> and opens downward if and only if <m>a \lt 0</m>.  We often call the graph of a quadratic function a <em>parabola</em>.  <idx><h>parabola</h></idx>  Every parabola is symmetric about a vertical line that runs through its lowest or highest point.
 	</p>
 
 	<assemblage xml:id="asm-quadratic-vertex">
 		<title>The vertex of a parabola</title> <idx><h>parabola</h><h>vertex</h></idx> <idx><h>quadratic function</h><h>vertex</h></idx>
 		<p>
-			The quadratic function <m>y = q(x) = ax^2 + bx + c</m> has its vertex at the point <m>\left( -\frac{b}{2a}, q\left( -\frac{b}{2a} \right) \right)</m>.  When <m>a \gt 0</m>, the vertex is the lowest point on the graph of <m>q</m>, while if <m>a \lt 0</m>, the vertex is the highest point.  Moreover, the graph of <m>q</m> is symmetric about the vertical line <m>x = -\frac{b}{2a}</m>.    
+			The quadratic function <m>y = q(x) = ax^2 + bx + c</m> has its vertex at the point <m>\left( -\frac{b}{2a}, q\left( -\frac{b}{2a} \right) \right)</m>.  When <m>a \gt 0</m>, the vertex is the lowest point on the graph of <m>q</m>, while if <m>a \lt 0</m>, the vertex is the highest point.  Moreover, the graph of <m>q</m> is symmetric about the vertical line <m>x = -\frac{b}{2a}</m>.
 		</p>
 	</assemblage>
 
@@ -130,7 +131,7 @@
 	</sidebyside>
 
 	<p>
-		Note particularly that due to symmetry, the vertex of a quadratic function lies halfway between its <m>x</m>-intercepts (provided the function has <m>x</m>-intercepts).  In both <xref ref="F-quadratic-vertex-CCU">Figures</xref> and <xref ref="F-quadratic-vertex-CCD"/>, we see how the parabola is symmetric about the vertical line that passes through the vertex.  One way to understand this symmetry can be seen by writing a given quadratic function in a different algebraic form.  
+		Note particularly that due to symmetry, the vertex of a quadratic function lies halfway between its <m>x</m>-intercepts (provided the function has <m>x</m>-intercepts).  In both <xref ref="F-quadratic-vertex-CCU">Figures</xref> and <xref ref="F-quadratic-vertex-CCD"/>, we see how the parabola is symmetric about the vertical line that passes through the vertex.  One way to understand this symmetry can be seen by writing a given quadratic function in a different algebraic form.
 	</p>
 
 	<example xml:id="ex-quadratic-vertex-form">
@@ -149,17 +150,17 @@
 				<me>
 					q(x) = 0.25(x^2 - 4x + 4) + 3.5 - 1
 				</me>.
-				It follows that 
+				It follows that
 				<me>
 					q(x) = 0.25(x-2)^2 + 2.5
 				</me>.
 			</p>
-			<p>	
-				Next, observe that the vertex of <m>q</m> is <m>(2,2.5)</m>.  This holds because <m>(x-2)^2</m> is always greater than or equal to <m>0</m>, and thus its smallest possible value is <m>0</m> when <m>x = 2</m>.  Moreover, when <m>x = 2</m>, <m>q(2) = 2.5</m>.<fn>We can also verify this point is the vertex using standard form.  From <m>q(x) = 0.25x^2 - x + 3.5</m>, we see that <m>a = 0.25</m> and <m>b = -1</m>, so <m>x = -\frac{b}{2a} = \frac{1}{0.5} = 2</m>.  In addition, <m>q(2) = 2.5</m>.</fn>  
+			<p>
+				Next, observe that the vertex of <m>q</m> is <m>(2,2.5)</m>.  This holds because <m>(x-2)^2</m> is always greater than or equal to <m>0</m>, and thus its smallest possible value is <m>0</m> when <m>x = 2</m>.  Moreover, when <m>x = 2</m>, <m>q(2) = 2.5</m>.<fn>We can also verify this point is the vertex using standard form.  From <m>q(x) = 0.25x^2 - x + 3.5</m>, we see that <m>a = 0.25</m> and <m>b = -1</m>, so <m>x = -\frac{b}{2a} = \frac{1}{0.5} = 2</m>.  In addition, <m>q(2) = 2.5</m>.</fn>
 			</p>
 
 			<p>
-				Finally, the form <m>q(x) = 0.25(x-2)^2 + 2.5</m> explains the symmetry of <m>q</m> about the line <m>x = 2</m>.  Consider the two points that lie equidistant from <m>x = 2</m> on the <m>x</m>-axis, <m>z</m> units away:  <m>x = 2-z</m> and <m>x = 2 + z</m>.  Observe that for these values, 
+				Finally, the form <m>q(x) = 0.25(x-2)^2 + 2.5</m> explains the symmetry of <m>q</m> about the line <m>x = 2</m>.  Consider the two points that lie equidistant from <m>x = 2</m> on the <m>x</m>-axis, <m>z</m> units away:  <m>x = 2-z</m> and <m>x = 2 + z</m>.  Observe that for these values,
 						<md>
 							<mrow>q(2-z) &amp;= 0.25(2-z-2)^2 + 2.5&amp; q(2+z) &amp;= 0.25(2+z-2)^2 + 2.5</mrow>
 							<mrow>  &amp;= 0.25(-z)^2 + 2.5 &amp; &amp;= 0.25(z)^2 + 2.5</mrow>
@@ -272,7 +273,7 @@
 								<cell><m>q(5) = 0</m></cell>
 							</row>
 						</tabular>
-					</table>	
+					</table>
 					<table xml:id="T-PA-changing-quadratic-AVs-complete">
 						<title>Average rates of change for <m>h</m> on select intervals <m>[a,b]</m>.</title>
 						<tabular>
@@ -306,13 +307,13 @@
 						</tabular>
 					</table>
 				</sidebyside>
-	
-	<p>		
+
+	<p>
 		In <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref>, we see an interesting pattern in the average velocities of the ball.  Indeed, if we remove the <q><m>AV</m></q> notation and focus on the starting value of each interval, viewing the resulting average rate of change, <m>r</m>, as a function of the starting value, we may consider the related table seen in <xref ref="T-quadratic-linear">Table</xref>, where it is apparent that <m>r</m> is a linear function of <m>a</m>.
 	</p>
 
 		<sidebyside width="50%" valign="middle">
-			
+
 					<table xml:id="T-quadratic-linear">
 						<title>Data from <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref>, slightly recast.</title>
 						<tabular>
@@ -356,7 +357,7 @@
 	</p>
 
 	<p>
-		A key closing observation here is that the fact the parabola <q>bends down</q> is apparently connected to the fact that its average rate of change decreases as we move left to right.  By contrast, for a quadratic function that <q>bends up</q>, we can show that its average rate of change increases as we move left to right (see <xref ref="ez-quadratic-aroc-patterns">Exercise</xref>).  Moreover, we also see that it's possible to view the average rate of change of a function on <m>1</m>-unit intervals as <em>itself</em> being a function: a process that relates an input (the starting value of the interval) to a corresponding output (the average rate of change of the original function on the resulting <m>1</m>-unit interval).  
+		A key closing observation here is that the fact the parabola <q>bends down</q> is apparently connected to the fact that its average rate of change decreases as we move left to right.  By contrast, for a quadratic function that <q>bends up</q>, we can show that its average rate of change increases as we move left to right (see <xref ref="ez-quadratic-aroc-patterns">Exercise</xref>).  Moreover, we also see that it's possible to view the average rate of change of a function on <m>1</m>-unit intervals as <em>itself</em> being a function: a process that relates an input (the starting value of the interval) to a corresponding output (the average rate of change of the original function on the resulting <m>1</m>-unit interval).
 	</p>
 
 	<p>

@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-trig-inverse">
+<worksheet label="ws-PA-trig-inverse" component="static">
   <exploration xml:id="PA-trig-inverse">
     <introduction>
       <p>

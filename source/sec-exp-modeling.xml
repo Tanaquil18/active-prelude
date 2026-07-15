@@ -40,7 +40,7 @@
 		<m>
 			A(t) = a(1+r)^t
 		</m>,
-		where <m>a</m> is the amount present at time <m>t = 0</m>.  Many different natural quantities change according to exponential models:  money growth through compounding interest, the growth of a population of cells, and the decay of radioactive elements.   
+		where <m>a</m> is the amount present at time <m>t = 0</m>.  Many different natural quantities change according to exponential models:  money growth through compounding interest, the growth of a population of cells, and the decay of radioactive elements.
   	</p>
 
 	<p>
@@ -76,7 +76,7 @@
 					<cell/>
 					<cell/>
 					<cell/>
-				</row>				
+				</row>
 				<row bottom="minor">
 					<cell><m>18</m></cell>
 					<cell><m>23</m></cell>
@@ -106,10 +106,11 @@
 
 
 	<p>
-		In one sense, the data looks exponential: the points appear to lie on a curve that is always decreasing and decreasing at an increasing rate.  However, we know that the function can't have the form <m>f(t) = ab^t</m> because such a function's range is the set of all positive real numbers, and it's impossible for the coffee's temperature to fall below room temperature (<m>71^\circ</m>).  It is natural to wonder if a function of the form <m>g(t) = ab^t + c</m> will work.  Thus, in order to find a function that fits the data in a situation such as <xref ref="F-modeling-exp-coffee">Figure</xref>, we begin by investigating and understanding the roles of <m>a</m>, <m>b</m>, and <m>c</m> in the behavior of <m>g(t) = ab^t + c</m>.	
+		In one sense, the data looks exponential: the points appear to lie on a curve that is always decreasing and decreasing at an increasing rate.  However, we know that the function can't have the form <m>f(t) = ab^t</m> because such a function's range is the set of all positive real numbers, and it's impossible for the coffee's temperature to fall below room temperature (<m>71^\circ</m>).  It is natural to wonder if a function of the form <m>g(t) = ab^t + c</m> will work.  Thus, in order to find a function that fits the data in a situation such as <xref ref="F-modeling-exp-coffee">Figure</xref>, we begin by investigating and understanding the roles of <m>a</m>, <m>b</m>, and <m>c</m> in the behavior of <m>g(t) = ab^t + c</m>.
 	</p>
 
   	<xi:include href="./previews/PA-exp-modeling.xml"/>
+	<xi:include href="./previews/PA-exp-modeling-D.xml"/>
 
   </subsection>
 
@@ -165,7 +166,7 @@
 	</sidebyside>
 
 	<p>
-		For the increasing function <m>p(t) = 2^t</m>, we see that the output of the function gets very large very quickly.  In addition, there is no upper bound to how large the function can be.  Indeed, we can make the value of <m>p(t)</m> as large as we'd like by taking <m>t</m> sufficiently big.  We thus say that as <m>t</m> increases, <m>p(t)</m> <term>increases without bound</term>. <idx><h>increasing</h><h>without bound</h></idx> 
+		For the increasing function <m>p(t) = 2^t</m>, we see that the output of the function gets very large very quickly.  In addition, there is no upper bound to how large the function can be.  Indeed, we can make the value of <m>p(t)</m> as large as we'd like by taking <m>t</m> sufficiently big.  We thus say that as <m>t</m> increases, <m>p(t)</m> <term>increases without bound</term>. <idx><h>increasing</h><h>without bound</h></idx>
 	</p>
 
 	<p>
@@ -173,7 +174,7 @@
 	</p>
 
 	<p>
-		To represent these two common phenomena with exponential functions<mdash/>the value increasing without bound or the value approaching <m>0</m><mdash/>we will use shorthand notation.  First, it is natural to write <q><m>q(t) \to 0</m></q> as <m>t</m> increases without bound.  Moreover, since we have the notion of the infinite to represent quantities without bound, we use the symbol for infinity and arrow notation <idx><h>infinity</h></idx> (<m>\infty</m>) and write <q><m>p(t) \to \infty</m></q> as <m>t</m> increases without bound in order to indicate that <m>p(t)</m> increases without bound.  
+		To represent these two common phenomena with exponential functions<mdash/>the value increasing without bound or the value approaching <m>0</m><mdash/>we will use shorthand notation.  First, it is natural to write <q><m>q(t) \to 0</m></q> as <m>t</m> increases without bound.  Moreover, since we have the notion of the infinite to represent quantities without bound, we use the symbol for infinity and arrow notation <idx><h>infinity</h></idx> (<m>\infty</m>) and write <q><m>p(t) \to \infty</m></q> as <m>t</m> increases without bound in order to indicate that <m>p(t)</m> increases without bound.
 	</p>
 
 	<p>
@@ -223,7 +224,7 @@
   <subsection xml:id="subsec-exp-modeling-transformations">
   	<title>The role of <m>c</m> in <m>g(t) = ab^t + c</m></title>
   	<p>
-  		The function <m>g(t) = ab^t + c</m> is a vertical translation of the function <m>f(t) = ab^t</m>.  We now have extensive understanding of the behavior of <m>f(t)</m> and how that behavior depends on <m>a</m> and <m>b</m>.  Since a vertical translation by <m>c</m> does not change the shape of any graph, we expect that <m>g</m> will exhibit very similar behavior to <m>f</m>.  Indeed, we can compare the two functions' graphs as shown in <xref ref="F-modeling-vert-transl-0">Figure</xref> and <xref ref="F-modeling-vert-transl-c">Figure</xref> and then make the following general observations.  
+  		The function <m>g(t) = ab^t + c</m> is a vertical translation of the function <m>f(t) = ab^t</m>.  We now have extensive understanding of the behavior of <m>f(t)</m> and how that behavior depends on <m>a</m> and <m>b</m>.  Since a vertical translation by <m>c</m> does not change the shape of any graph, we expect that <m>g</m> will exhibit very similar behavior to <m>f</m>.  Indeed, we can compare the two functions' graphs as shown in <xref ref="F-modeling-vert-transl-0">Figure</xref> and <xref ref="F-modeling-vert-transl-c">Figure</xref> and then make the following general observations.
 	</p>
 
 	<sidebyside>
@@ -264,10 +265,10 @@
 	</p>
 
 	<p>
-  		It's an important skill to be able to look at an exponential function of the form <m>g(t) = ab^t + c</m> and form an accurate mental picture of the graph's main features in light of the values of <m>a</m>, <m>b</m>, and <m>c</m>.  
+  		It's an important skill to be able to look at an exponential function of the form <m>g(t) = ab^t + c</m> and form an accurate mental picture of the graph's main features in light of the values of <m>a</m>, <m>b</m>, and <m>c</m>.
   	</p>
 
-	<xi:include href="./activities/act-exp-modeling-behavior.xml"/> 
+	<xi:include href="./activities/act-exp-modeling-behavior.xml"/>
 
   </subsection>
 
@@ -397,7 +398,7 @@
 
   <xi:include href="./exercises/ez-exp-modeling.xml"/>
 
-  		
+
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
 </section>

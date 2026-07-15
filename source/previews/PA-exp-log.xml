@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-exp-log">
+<worksheet label="ws-PA-exp-log" component="static">
   <exploration xml:id="PA-exp-log">
     <introduction>
       <p>

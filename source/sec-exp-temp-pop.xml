@@ -30,7 +30,7 @@
   </objectives>
 
   <subsection><title>Introduction</title>
-  	
+
 	<p>
 		We've seen that exponential functions can be used to model several different important phenomena, such as the growth of money due to continuously compounded interest, the decay of radioactive quanitities, and the temperature of an object that is cooling or warming due to its surroundings.  From initial work with functions of the form <m>f(t) = ab^t</m> where <m>b \gt 0</m> and <m>b \ne 1</m>, we found that shifted exponential functions of form <m>g(t) = ab^t + c</m> are also important.  Moreover, the special base <m>e</m> allows us to represent all of these functions through horizontal scaling by writing
 		<men xml:id="eq-temp-pop-gen-exp-model">
@@ -57,6 +57,7 @@
 	</p>
 
 	<xi:include href="./previews/PA-exp-temp-pop.xml"/>
+	<xi:include href="./previews/PA-exp-temp-pop-D.xml"/>
 
   </subsection>
 
@@ -94,7 +95,7 @@
   						Once we know the values of <m>a</m> and <m>c</m>, the value of <m>k</m> is determined by knowing the value of the temperature function <m>F(t)</m> at one nonzero value of <m>t</m>.
   					</p>
   				</li>
-  			</ul> 
+  			</ul>
   		</p>
   	</assemblage>
 
@@ -141,14 +142,14 @@
   				Because the exponential function <m>P(t) = Ae^{kt}</m> grows without bound as <m>t</m> increases, such a function is not a realistic model of a population that we expect to level off as time goes on.  The logistic function
   				<me>
   					P(t) = \frac{A}{1 + Me^{-kt}}
-  				</me> 
+  				</me>
   				more appropriately models a population that grows roughly exponentially when <m>P</m> is small but whose size levels off as it approaches the carrying capacity of the surrounding environment, which is the value of the constant <m>A</m>.
   			</p>
   		</li>
   	</ul>
   </subsection>
 
-  <xi:include href="./exercises/ez-exp-temp-pop.xml"/> 
+  <xi:include href="./exercises/ez-exp-temp-pop.xml"/>
 
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
   <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->

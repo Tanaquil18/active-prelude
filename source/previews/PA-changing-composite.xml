@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-composite">
+<worksheet label="ws-PA-changing-composite" component="static">
   <exploration xml:id="PA-changing-composite">
     <introduction>
       <p>

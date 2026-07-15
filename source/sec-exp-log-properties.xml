@@ -39,6 +39,7 @@
   	</p>
 
 	<xi:include href="./previews/PA-exp-log-properties.xml"/>
+	<xi:include href="./previews/PA-exp-log-properties-D.xml"/>
 
   </subsection>
 
@@ -115,8 +116,8 @@
 		A similar argument works to show that for every natural number <m>n</m>,
 		<me>
 			\ln(a^n) = n\ln(a)
-		</me>.  
-		More sophisticated mathematics can be used to prove that the following property holds for every real number exponent <m>t</m>. 
+		</me>.
+		More sophisticated mathematics can be used to prove that the following property holds for every real number exponent <m>t</m>.
 	</p>
 
 	<assemblage xml:id="asm-log-properties-exponents">
@@ -243,7 +244,7 @@
   		<statement>
   			<p>
   				A population of bacteria cells is growing at a rate proportionate to the number of cells present at a given time <m>t</m> (in hours).  Suppose that the number of cells, <m>P</m>, in the population is measured in millions of cells and we know that <m>P(0) = 2.475</m> and <m>P(10) = 4.298</m>.  Find a model of the form <m>P(t) = Ae^{kt}</m> that fits this data and use it to determine the value of <m>k</m> and how long it will take for the population to reach <m>1</m> billion cells.
-  			</p> 
+  			</p>
   		</statement>
   		<solution>
   			<p>
@@ -251,9 +252,9 @@
 	  			<me>
 	  				4.298 = 2.475 e^{k \cdot 10}
 	  			</me>.
-  				To solve for <m>k</m>, we first isolate <m>e^{10k}</m> by dividing both sides by <m>2.475</m> to get 
+  				To solve for <m>k</m>, we first isolate <m>e^{10k}</m> by dividing both sides by <m>2.475</m> to get
   				<me>
-  					e^{10k} = \frac{4.298}{2.475} 
+  					e^{10k} = \frac{4.298}{2.475}
   				</me>.
   				Taking the natural logarithm of each side, we find
   				<me>
@@ -279,7 +280,7 @@
   		</solution>
   	</example>
 
-  	<xi:include href="./activities/act-exp-log-properties-find-k.xml"/> 
+  	<xi:include href="./activities/act-exp-log-properties-find-k.xml"/>
 
   </subsection>
 

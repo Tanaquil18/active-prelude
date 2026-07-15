@@ -44,6 +44,7 @@
   	</p>
 
 	<xi:include href="./previews/PA-changing-linear-3-ex.xml"/>
+	<xi:include href="./previews/PA-changing-linear-3-ex-D.xml"/>
 
   </subsection>
 
@@ -58,8 +59,8 @@
 			<mrow> 		&amp;= \frac{(7-3b) - (7-3a)}{b-a}</mrow>
 			<mrow> 		&amp;= \frac{7-3b - 7+3a}{b-a}</mrow>
 			<mrow> 		&amp;= \frac{-3b + 3a}{b-a}</mrow>
-			<mrow> 		&amp;= \frac{-3(b - a)}{b-a}</mrow>	
-			<mrow> 		&amp;= -3</mrow>		
+			<mrow> 		&amp;= \frac{-3(b - a)}{b-a}</mrow>
+			<mrow> 		&amp;= -3</mrow>
 		</md>.
 		This result shows us that for the function <m>y = f(x) = 7 - 3x</m>, its average rate of change is always <m>-3</m>, regardless of the interval we choose.  We will use the property of having constant rate of change as the defining property of a linear function.
 	</p>
@@ -69,7 +70,7 @@
 		<idx><h>linear function</h><h>slope</h></idx>
 		<statement>
 			<p>
-				A function <m>f</m> is <term>linear</term> provided that its average rate of change is constant on every choice of interval in its domain<fn>Here we are considering functions whose domain is the set of all real numbers.</fn>.  That is, for any inputs <m>a</m> and <m>b</m> for which <m>a \ne b</m>, it follows that 
+				A function <m>f</m> is <term>linear</term> provided that its average rate of change is constant on every choice of interval in its domain<fn>Here we are considering functions whose domain is the set of all real numbers.</fn>.  That is, for any inputs <m>a</m> and <m>b</m> for which <m>a \ne b</m>, it follows that
 				<me>
 					\frac{f(b) - f(a)}{b-a} = m
 				</me>
@@ -83,7 +84,7 @@
 	</p>
 
 	<p>
-		Let's suppose we know that a function <m>f</m> is linear with average rate of change <m>AV_{[a,b]} = m</m> and that we also know the function value is <m>y_0</m> at some fixed input <m>x_0</m>.  That is, we know that <m>f(x_0) = y_0</m>.  From this information, we can find the formula for <m>y = f(x)</m> for <em>any</em> input <m>x</m>.  Working with the known point <m>(x_0, f(x_0))</m> and any other point <m>(x,f(x))</m> on the function's graph, we know that the average rate of change between these two points must be the constant <m>m</m>.  This tells us that 
+		Let's suppose we know that a function <m>f</m> is linear with average rate of change <m>AV_{[a,b]} = m</m> and that we also know the function value is <m>y_0</m> at some fixed input <m>x_0</m>.  That is, we know that <m>f(x_0) = y_0</m>.  From this information, we can find the formula for <m>y = f(x)</m> for <em>any</em> input <m>x</m>.  Working with the known point <m>(x_0, f(x_0))</m> and any other point <m>(x,f(x))</m> on the function's graph, we know that the average rate of change between these two points must be the constant <m>m</m>.  This tells us that
 		<me>
 			\frac{f(x) - f(x_0)}{x-x_0} = m
 		</me>.
@@ -135,7 +136,7 @@
 		<me>
 			AV_{[x_0,x]} = m = \frac{y-y_0}{x-x_0}
 		</me>.
-		Indeed, writing <m>m = \frac{y-y_0}{x-x_0}</m> is a rearrangement of the point-slope form of the line, <m>y = y_0 + m(x-x_0)</m>.	
+		Indeed, writing <m>m = \frac{y-y_0}{x-x_0}</m> is a rearrangement of the point-slope form of the line, <m>y = y_0 + m(x-x_0)</m>.
 	</p>
 
 	<p>
@@ -152,10 +153,10 @@
 			<caption>The slope-intercept form of a line's equation.</caption>
 			<image source="images/linear-slope-intercept" width="50%"><description><p>The slope-intercept form of a line's equation.</p>
 			</description></image>
-		</figure>		
+		</figure>
 	</sidebyside>
 
-	<p>	
+	<p>
 		A special case arises when the known point on a line satisfies <m>x_0 = 0</m>.  In this situation, the known point lies on the <m>y</m>-axis, and thus we call the point the <q><m>y</m>-intercept</q> of the line. <idx><h>line</h><h><m>y</m>-intercept</h></idx>  The resulting form of the line's equation is called <em>slope-intercept form</em>, which is also demonstrated in <xref ref="F-linear-slope-intercept">Figure</xref>.
 	</p>
 
@@ -163,7 +164,7 @@
 		<title>Slope-intercept form</title>
 		<idx><h>line</h><h>slope-intercept form</h></idx>
 		<p>
-			For the line with slope <m>m</m> and passing through <m>(0,y_0)</m>, its equation is 
+			For the line with slope <m>m</m> and passing through <m>(0,y_0)</m>, its equation is
 			<me>
 				y = y_0 + mx
 			</me>.
@@ -210,7 +211,7 @@
   	<p>
   		Since linear functions are defined by the property that their average rate of change is constant, linear functions perfectly model quantities that change at a constant rate.  In context, we can often think of slope as a rate of change; analyzing units carefully often yields significant insight.
   	</p>
-  	
+
   	<example xml:id="ex-linear-Dolbear">
   		<statement>
   			<p>
@@ -232,7 +233,7 @@
 	  					<mrow> &amp;= 0.25 \frac{\text{degrees F}}{\text{chirp per minute}}</mrow>
 	  				</md>.
 				</p>
-				
+
 				<figure xml:id="F-linear-ex-Dolbear-slope">
   					<caption>The linear Dolbear function with slope <m>m = 0.25</m> degrees Fahrenheit per chirp per minute.</caption>
   					<image width="45%" source="images/linear-Dolbears-Law-slope"><description><p>The linear Dolbear function with slope <m>m = 0.25</m> degrees Fahrenheit per chirp per minute.</p>
@@ -241,7 +242,7 @@
 			</sidebyside>
 
   		</solution>
-  	</example>	
+  	</example>
 
 	<p>
 		Like with the Dolbear function, it is often useful to write a linear function (whose output is called <m>y</m>) that models a quantity changing at a constant rate (as a function of some input <m>t</m>) by writing the function relationship in the form

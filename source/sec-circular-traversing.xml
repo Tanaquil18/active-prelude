@@ -52,6 +52,7 @@
   		</p>
 
   		<xi:include href="./previews/PA-circular-traversing.xml"/>
+		<xi:include href="./previews/PA-circular-traversing-D.xml"/>
 
   </subsection>
 

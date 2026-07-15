@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-crickets">
+<worksheet label="ws-PA-crickets" component="static">
   <exploration xml:id="PA-crickets">
     <introduction>
       <p>

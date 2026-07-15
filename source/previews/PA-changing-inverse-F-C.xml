@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-inverse-F-C">
+<worksheet label="ws-PA-changing-inverse-F-C" component="static">
   <exploration xml:id="PA-changing-inverse-F-C">
     <introduction>
       <p>

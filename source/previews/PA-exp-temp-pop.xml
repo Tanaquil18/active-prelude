@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-exp-temp-pop">
+<worksheet label="ws-PA-exp-temp-pop" component="static">
   <exploration xml:id="PA-exp-temp-pop">
     <introduction>
       <p>
@@ -50,7 +50,7 @@
     <task workspace="4cm" xml:id="PA-exp-temp-pop-task-2">
       <statement>
         <p>
-						Later in this section, we'll learn that one model for how a population grows over time can be given by a function of the form 
+						Later in this section, we'll learn that one model for how a population grows over time can be given by a function of the form
 						<me>
 							P(t) = \frac{A}{1 + Me^{-kt}}
 						</me>.  Models of this form lead naturally to equations that have structure like

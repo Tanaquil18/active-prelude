@@ -11,13 +11,13 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-circular-traversing">
+<worksheet label="ws-PA-circular-traversing" component="static">
   <exploration xml:id="PA-circular-traversing">
     <introduction>
       <p>
-			In the context of the ferris wheel pictured in Figure 2.1.1 in the text, assume that the height, <m>h</m>, of the moving point (the cab in which you are riding), and the distance, <m>d</m>, that the point has traveled around the circumference of the ferris wheel are both measured in meters.  
+			In the context of the ferris wheel pictured in Figure 2.1.1 in the text, assume that the height, <m>h</m>, of the moving point (the cab in which you are riding), and the distance, <m>d</m>, that the point has traveled around the circumference of the ferris wheel are both measured in meters.
 		</p>
-      <p>	
+      <p>
 			Further, assume that the circumference of the ferris wheel is <m>150</m> meters.  In addition, suppose that after getting in your cab at the lowest point on the wheel, you traverse the full circle several times.
 		</p>
       <p/>
