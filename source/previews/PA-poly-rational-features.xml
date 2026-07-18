@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-rational-features">
+<worksheet label="ws-PA-poly-rational-features" component="static">
   <exploration xml:id="PA-poly-rational-features">
     <introduction>
       <p>

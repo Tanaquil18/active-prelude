@@ -11,11 +11,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-infty">
+<worksheet label="ws-PA-poly-infty" component="static">
   <exploration xml:id="PA-poly-infty">
     <introduction>
       <p>
-			Complete each of the following statements with an appropriate number or the symbols <m>\infty</m> or <m>-\infty</m>.  Do your best to do so <em>without</em> using a graphing utility; instead use your understanding of the function's graph.  
+			Complete each of the following statements with an appropriate number or the symbols <m>\infty</m> or <m>-\infty</m>.  Do your best to do so <em>without</em> using a graphing utility; instead use your understanding of the function's graph.
 		</p>
       <p/>
     </introduction>

@@ -36,11 +36,11 @@
 
   <subsection><title>Introduction</title>
   	<p>
-  		In <xref ref="sec-exp-modeling">Section</xref>, we compared the behavior of the exponential functions <m>p(t) = 2^t</m> and <m>q(t) = (\frac{1}{2})^t</m>, and observed in <xref ref="F-modeling-exp-reflection">Figure</xref> that as <m>t</m> increases without bound, <m>p(t)</m> also increases without bound, while <m>q(t)</m> approaches <m>0</m> (while having its value be always positive).  We also introduced shorthand notation for describing these phenomena, writing 
+  		In <xref ref="sec-exp-modeling">Section</xref>, we compared the behavior of the exponential functions <m>p(t) = 2^t</m> and <m>q(t) = (\frac{1}{2})^t</m>, and observed in <xref ref="F-modeling-exp-reflection">Figure</xref> that as <m>t</m> increases without bound, <m>p(t)</m> also increases without bound, while <m>q(t)</m> approaches <m>0</m> (while having its value be always positive).  We also introduced shorthand notation for describing these phenomena, writing
   		<me>
   			p(t) \to \infty \text{ as } t \to \infty
   		</me>
-  		and 
+  		and
   		<me>
   			q(t) \to 0 \text{ as } t \to \infty
   		</me>.
@@ -56,13 +56,14 @@
   	</p>
 
   	<xi:include href="./previews/PA-poly-infty.xml"/>
+	<xi:include href="./previews/PA-poly-infty-D.xml"/>
 
   </subsection>
 
   <subsection xml:id="subsec-poly-infty-limit">
   	<title>Limit notation</title>
   	<p>
-  		When observing a pattern in the values of a function that correspond to letting the inputs get closer and closer to a fixed value or letting the inputs increase or decrease without bound, we are often interested in the behavior of the function <q>in the limit</q>.  In either case, we are considering an infinite collection of inputs that are themselves following a pattern, and we ask the question <q>how can we expect the function's output to behave if we continue?</q>  
+  		When observing a pattern in the values of a function that correspond to letting the inputs get closer and closer to a fixed value or letting the inputs increase or decrease without bound, we are often interested in the behavior of the function <q>in the limit</q>.  In either case, we are considering an infinite collection of inputs that are themselves following a pattern, and we ask the question <q>how can we expect the function's output to behave if we continue?</q>
   	</p>
 
   	<p>
@@ -95,8 +96,8 @@
 	  			<me>
 	  				\lim_{t \to \infty} f(t) = L
 	  			</me>
-	  			and say that the <term>limit of <m>f</m> as <m>t</m> increases without bound is <m>L</m></term>.  
-  			</p> 
+	  			and say that the <term>limit of <m>f</m> as <m>t</m> increases without bound is <m>L</m></term>.
+  			</p>
 
   			<p>
   				If the value of <m>f(t)</m> increases without bound as <m>t</m> increases without bound, we instead write
@@ -160,7 +161,7 @@
 		<me>
 			x^{-n} = \frac{1}{x^n}
 		</me>
-		so for a power function such as <m>p(x) = x^{-2}</m>, we can equivalently consider <m>p(x) = \frac{1}{x^2}</m>.  Note well that for these functions, their domain is the set of all real numbers except <m>x = 0</m>.  Like with power functions with positive whole number powers, we want to know how power functions with negative whole number powers behave as <m>x</m> increases without bound, as well as how the functions behave near <m>x = 0</m>.  
+		so for a power function such as <m>p(x) = x^{-2}</m>, we can equivalently consider <m>p(x) = \frac{1}{x^2}</m>.  Note well that for these functions, their domain is the set of all real numbers except <m>x = 0</m>.  Like with power functions with positive whole number powers, we want to know how power functions with negative whole number powers behave as <m>x</m> increases without bound, as well as how the functions behave near <m>x = 0</m>.
 	</p>
 
 	<xi:include href="./activities/act-poly-infty-negative-powers.xml"/>
@@ -267,7 +268,7 @@
 			    </row>
 			    <row bottom="minor" halign="center">
 			      <cell><m>\ln(x)</m></cell>
-			      <cell>NA</cell>			      
+			      <cell>NA</cell>
 			      <cell><m>\lim_{x \to 0^+} \ln(x) = -\infty</m></cell>
 			    </row>
 			    <row bottom="minor" halign="center">

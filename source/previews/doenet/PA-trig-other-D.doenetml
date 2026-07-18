@@ -1,0 +1,110 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <point name="f1" fixed>(0,0)</point>
+  <point name="f2" fixed>(1.1,0)</point>
+  <point name="f3" fixed>(1.1,6)</point>
+
+  <or name="ansnotexact">$sinnotexact $cosnotexact $cscnotexact $secnotexact $tannotexact $cotnotexact</or>
+</setup>
+
+<p>
+  Below is an image of a right triangle whose sides are labeled <m>a</m>, <m>b</m>, and <m>c</m>, and whose non-right angles are labeled <m>x</m> and <m>y</m>.
+</p>
+<p>
+  We will complete a sketch of a right triangle with hypotenuse of length <m>61</m> and one leg of length <m>11</m>.
+  Let <m>\alpha</m> be the angle opposite the side of length <m>11</m>.
+</p>
+  <graph size="small" fixAxes xMin="-.5" xMax="1.6" yMin="-1" yMax="6.6" displayXAxis="false" displayYAxis="false" aspectRatio="5/7">
+    <shortDescription>a right triangle with sides labeled a, b, and c</shortDescription>
+    <description>The longest side of the right triangle is labeled <m>c</m>.  The shortest side, which is horizontal, is labeled <m>b</m>, and the remaining side of the triangle, which is vertical, is labeled <m>a</m>. The angle across from the shortest side is labeled <m>y</m>, while the remaining non-right angle is labeled <m>x</m>.</description>
+    <triangle vertices="$f1 $f2 $f3" fixed></triangle>
+    <label maskLabel="false" hide="$fc.creditAchieved=1" draggable="false" anchor="($f3.x/2-.02$f3.y,$f3.y/2+.02$f3.x)"><m>c</m></label>
+    <label maskLabel="false" hide="$fc.creditAchieved!=1" draggable="false" anchor="($f3.x/2-.02$f3.y,$f3.y/2+.02$f3.x)"><m>61</m></label>
+    <label maskLabel="false" hide="$fb.creditAchieved=1" draggable="false" anchor="($f2.x/2,-.25)"><m>b</m></label>
+    <label maskLabel="false" hide="$fb.creditAchieved!=1" draggable="false" anchor="($f2.x/2,-.25)"><m>11</m></label>
+    <label maskLabel="false" hide="$fa.creditAchieved=1" draggable="false" anchor="($f3.x+.1,$f3.y/2)"><m>a</m></label>
+    <label maskLabel="false" hide="$fa.creditAchieved!=1" draggable="false" anchor="($f3.x+.1,$f3.y/2)"><m>60</m></label>
+
+    <curve variable="t" parMin="0" parMax="arccos(11/61)-.1" lineWidth="1" styleNumber="5">
+    (.3cos(t), .5sin(t))
+  </curve>
+    <label maskLabel="false" anchor="(.3,.4)" hide="$ycor.creditAchieved=1"><m>x</m></label>
+    <label maskLabel="false" anchor="(.3,.4)" hide="$ycor.creditAchieved!=1"><m>\theta</m></label>
+    <curve variable="t" parMin="pi+arccos(11/61)-.05" parMax="3pi/2" lineWidth="1" styleNumber="5">
+    (.75cos(t)+$f3.x, .9sin(t)+$f3.y)
+  </curve>
+    <label maskLabel="false" anchor="($f3.x-.09,$f3.y-1)" hide="$ycor.creditAchieved=1"><m>y</m></label>
+    <label maskLabel="false" anchor="($f3.x-.09,$f3.y-1.1)" hide="$ycor.creditAchieved!=1"><m>\alpha</m></label>
+
+
+  </graph>
+
+<ol marker="a.">
+  <li>
+    <p>
+      First, determine the exact values of the sides <m>a</m>, <m>b</m> and <m>c</m>.
+    </p>
+    <p>
+      <answer name="fa"><label><m>a=</m></label><award>60</award><award name="fanotexact" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>60</award><award name="fa3" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>11</award></answer>
+      <answer name="fb"><label><m>b=</m></label><award>11</award><award name="fbnotexact" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>11</award><award name="fbsqrt3" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>60</award></answer>
+      <answer name="fc"><label><m>c=</m></label><award>61</award><award name="fcnotexact" credit="0" allowedErrorInNumbers="0.01" allowedErrorisAbsolute>61</award></answer>
+    </p>
+    <feedback condition="$fanotexact">Your answer is close to correct. Make sure you are entering an exact answer, not a decimal approximation.</feedback>
+  <feedback condition="$fbnotexact">Your answer is close to correct. Make sure you are entering an exact answer, not a decimal approximation.</feedback>
+<feedback condition="$fcnotexact">Your answer is close to correct. Make sure you are entering an exact answer, not a decimal approximation.</feedback>
+    <feedback condition="$fa3">It's both more helpful and more accurate if we assume the lengths are drawn to scale, so make this answer the horizontal leg.</feedback>
+  <feedback condition="$fbsqrt3">It's both more helpful and more accurate if we assume the lengths are drawn to scale, so make this answer the vertical leg.</feedback>
+  <p>
+    <answer name="ycor"><choiceInput inline><label>Which angle is opposite to the side of length <m>11</m>?</label><choice><m>x</m></choice><choice credit="1"><m>y</m></choice></choiceInput></answer>
+  </p>
+    <p>
+    After answering all the questions in part a. correctly, you now have a correctly labeled right triangle meeting the specified conditions.
+  </p>
+  </li>
+  <li sectionWideCheckWork colorAnswersSeparately>
+    <p>
+      Determine the exact value of each of the six trigonometric functions evaluated at <m>\alpha</m>.
+    </p>
+    <tabular>
+      <row>
+        <cell><answer name="sinalpha"><label><m>\sin(\alpha)=</m></label><description>Recall that <m>\sin(\alpha)=\frac{\text{opp}}{\text{hyp}}</m>.  Which side is opposite to <m>\alpha</m>?</description><award symbolicEquality>11/61</award><award name="sinnotexact" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>11/61</award></answer></cell>
+        <cell><answer name="cscalpha"><label><m>\csc(\alpha)=</m></label><description>Recall that <m>\csc(\alpha)=\frac{\text{hyp}}{\text{opp}}</m>.  Which side is opposite to <m>\alpha</m>?</description><award symbolicEquality>61/11</award><award name="cscnotexact" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>61/11</award></answer></cell>
+      </row>
+      <row>
+        <cell><answer name="cosalpha"><label><m>\cos(\alpha)=</m></label><description>Recall that <m>\cos(\alpha)=\frac{\text{adj}}{\text{hyp}}</m>.  Which side is adjacent to <m>\alpha</m>?</description><award symbolicEquality>60/61</award><award name="cosnotexact" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>60/61</award></answer></cell>
+      <cell><answer name="secalpha"><label><m>\sec(\alpha)=</m></label><description>Recall that <m>\sec(\alpha)=\frac{\text{hyp}}{\text{adj}}</m>.  Which side is adjacent to <m>\alpha</m>?</description><award symbolicEquality>61/60</award><award name="secnotexact" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>61/60</award></answer></cell>
+      </row>
+      <row>
+        <cell><answer name="tanalpha"><label><m>\tan(\alpha)=</m></label><description>Recall that <m>\tan(\alpha)=\frac{\text{opp}}{\text{adj}}</m>.</description><award symbolicEquality>11/60</award><award name="tannotexact" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>11/60</award></answer></cell>
+        <cell><answer name="cotalpha"><label><m>\cot(\alpha)=</m></label><description>Recall that <m>\cot(\alpha)=\frac{\text{adj}}{\text{opp}}</m>. </description><award symbolicEquality>60/11</award><award name="cotnotexact" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>60/11</award></answer></cell>
+      </row>
+    </tabular>
+    <feedback condition="$ansnotexact">Your answer is close but not exact. You can leave your answer as a fraction.</feedback>
+  </li>
+  <li>
+    <p>
+      What are the exact and approximate measures of the two non-right angles in the triangle?
+    </p>
+    <p sectionWideCheckWork colorAnswersSeparately>
+      <answer><mathInput name="alphaEnt"><label><m>\alpha=</m></label><description>Use an inverse trig function on one of your answers from part b.</description></mathInput>arccos(60/61)</answer><m>\approx</m><mathInput disabled><shortDescription>decimal approximation of alpha</shortDescription><round numDecimals="5">$alphaEnt</round></mathInput>
+    </p>
+    <p sectionWideCheckWork colorAnswersSeparately>
+      <answer><mathInput name="thetaEnt"><label><m>\theta=</m></label><description>Use an inverse trig function.</description></mathInput>arcsin(60/61)</answer><m>\approx</m><mathInput disabled><shortDescription>decimal approximation of alpha</shortDescription><round numDecimals="5">$thetaEnt</round></mathInput>
+    </p>
+  </li>
+</ol>
