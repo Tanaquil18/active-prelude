@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -19,7 +19,7 @@
       <ol marker="i.">
         <li>
           <p>
-            always increasing or always decreasing;           
+            always increasing or always decreasing;
           </p>
         </li>
         <li>
@@ -33,9 +33,9 @@
           </p>
         </li>
       </ol>
-      In addition, state the <m>y</m>-intercept and the range of the function. For each function, write a sentence that explains your thinking and sketch a rough graph of how the function appears. 
+      In addition, state the <m>y</m>-intercept and the range of the function. For each function, write a sentence that explains your thinking and sketch a rough graph of how the function appears.
     </p>
-  </introduction>  
+  </introduction>
     <task workspace="5cm" xml:id="act-exp-modeling-behavior-task-0">
       <statement>
         <p>

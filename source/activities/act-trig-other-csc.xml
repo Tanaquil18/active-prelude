@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -20,7 +20,7 @@
 <!--      <figure xml:id="F-cosecant-plot">
         <caption>Axes for plotting <m>q(t) = \csc(t)</m>.</caption> -->
         <image source="images/other-csc-activity-graph" width="70%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--      </figure> --> 
+<!--      </figure> -->
       <p/>
     </introduction>
     <task workspace="1cm" xml:id="act-trig-other-csc-task-0">
@@ -220,7 +220,7 @@
               </cell>
             </row>
           </tabular>
-<!--        </table> --> 
+<!--        </table> -->
       </statement>
       <hint/>
       <answer/>

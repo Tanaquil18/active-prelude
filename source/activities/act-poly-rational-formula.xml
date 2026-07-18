@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-poly-rational-formula">
     <introduction>
       <p>
-			Find a formula for a rational function that meets the stated criteria as given by words, a sign chart, or graph.  Write several sentences to justify why your formula matches the specifications.  
+			Find a formula for a rational function that meets the stated criteria as given by words, a sign chart, or graph.  Write several sentences to justify why your formula matches the specifications.
 		</p>
       <p/>
     </introduction>

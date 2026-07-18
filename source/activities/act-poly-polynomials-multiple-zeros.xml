@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-poly-polynomials-multiple-zeros">
     <introduction>
       <p>
-			For each of the following prompts, try to determine a formula for a polynomial that satisfies the given criteria.  If no such polynomial exists, explain why. 
+			For each of the following prompts, try to determine a formula for a polynomial that satisfies the given criteria.  If no such polynomial exists, explain why.
 		</p>
       <p/>
     </introduction>
@@ -39,7 +39,7 @@
 						A polynomial <m>p</m> of degree <m>9</m> that satisfies <m>p(0) = -2</m> and has the graph shown in the following figure.  Assume that all of the zeros of <m>p</m> are shown in the figure.
 					</p>
 
-          <image source="images/poly-degree-9" width="50%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>  
+          <image source="images/poly-degree-9" width="50%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
 
       </statement>
       <hint/>
@@ -53,7 +53,7 @@
     <task workspace="0.5cm" xml:id="act-poly-polynomials-multiple-zeros-task-2">
       <statement>
         <p>
-						A polynomial <m>q</m> of degree <m>8</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> has the sign chart in the figure below and satisfies <m>q(0) = -10</m>. 
+						A polynomial <m>q</m> of degree <m>8</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> has the sign chart in the figure below and satisfies <m>q(0) = -10</m>.
 					</p>
 
             <image source="images/poly-sign-chart-2" width="50%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
@@ -70,7 +70,7 @@
     <task workspace="3cm" xml:id="act-poly-polynomials-multiple-zeros-task-3">
       <statement>
         <p>
-						A polynomial <m>q</m> of degree <m>9</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> satisfies the sign chart in part (c) and satisfies <m>q(0) = -10</m>. 
+						A polynomial <m>q</m> of degree <m>9</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> satisfies the sign chart in part (c) and satisfies <m>q(0) = -10</m>.
 					</p>
       </statement>
       <hint/>

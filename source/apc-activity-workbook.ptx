@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
     <docinfo>
   <brandlogo url="https://activecalculus.org" source="images/APC-cover.jpg"/>
 
-<!--  
+<!--
   <macros>
 		\newcommand{\dollar}{\$}
 		\DeclareMathOperator{\erf}{erf}
@@ -65,9 +65,9 @@
       </preface>
     </frontmatter>
 
-     <xi:include href="./chap-changing-wb.xml"/> 
-      <xi:include href="./chap-circular-wb.xml"/> 
-      <xi:include href="./chap-exp-wb.xml"/> 
+     <xi:include href="./chap-changing-wb.xml"/>
+      <xi:include href="./chap-circular-wb.xml"/>
+      <xi:include href="./chap-exp-wb.xml"/>
       <xi:include href="./chap-trig-wb.xml"/>
       <xi:include href="./chap-poly-wb.xml"/>
 

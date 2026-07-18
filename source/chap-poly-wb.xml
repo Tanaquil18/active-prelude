@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -13,11 +13,11 @@
 <!-- **********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="C-poly">
   	<title>Polynomial and Rational Functions</title>
-  
+
   	<xi:include href="./sec-poly-infty-wb.xml"/>
  	<xi:include href="./sec-poly-polynomials-wb.xml"/>
   	<xi:include href="./sec-poly-polynomial-applications-wb.xml"/>
   	<xi:include href="./sec-poly-rational-wb.xml"/>
-  	<xi:include href="./sec-poly-rational-features-wb.xml"/> 
+  	<xi:include href="./sec-poly-rational-features-wb.xml"/>
 
 </chapter>

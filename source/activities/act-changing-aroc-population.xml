@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -146,7 +146,7 @@
           In both counties, the population increased in every decade from 1960 to 2010,
           so the average rate of change was positive on every decade interval for both counties.
         </p>
-      
+
         <image width="50%" source="solution-images/Kent-Pop-and-Ottawa-Pop.png"/>
       </solution>
     </task>

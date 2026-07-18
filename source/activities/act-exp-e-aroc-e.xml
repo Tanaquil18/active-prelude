@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-exp-e-aroc">
     <introduction>
       <p>
-			Recall from <xref ref="sec-changing-aroc">Section</xref> that the average rate of change of a function <m>f</m> on an interval <m>[a,b]</m> is 
+			Recall from <xref ref="sec-changing-aroc">Section</xref> that the average rate of change of a function <m>f</m> on an interval <m>[a,b]</m> is
 			<me>
 				AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
 			</me>.
@@ -26,7 +26,7 @@
 			In this activity we explore the average rate of change of <m>f(t) = e^t</m> near the points where <m>t = 1</m> and <m>t = 2</m>.
 		</p>
       <p>
-			In a new <em>Desmos</em> worksheet, let <m>f(t) = e^t</m> and define the function <m>A</m> by the rule 
+			In a new <em>Desmos</em> worksheet, let <m>f(t) = e^t</m> and define the function <m>A</m> by the rule
 			<me>
 				A(h) = \frac{f(1+h)-f(1)}{h}
 			</me>.
@@ -36,7 +36,7 @@
     <task workspace="3cm" xml:id="act-exp-e-aroc-task-0">
       <statement>
         <p>
-						What is the meaning of <m>A(0.5)</m> in terms of the function <m>f</m> and its graph?		
+						What is the meaning of <m>A(0.5)</m> in terms of the function <m>f</m> and its graph?
 					</p>
       </statement>
       <hint/>
@@ -118,7 +118,7 @@
     <task workspace="5cm" xml:id="act-exp-e-aroc-task-4">
       <statement>
         <p>
-						Adjust your definition of <m>A</m> in <em>Desmos</em> by changing <m>1</m> to <m>2</m> so that 
+						Adjust your definition of <m>A</m> in <em>Desmos</em> by changing <m>1</m> to <m>2</m> so that
 						<me>
 							A(h) = \frac{f(2+h)-f(2)}{h}
 						</me>.

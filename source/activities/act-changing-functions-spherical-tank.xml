@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,9 +15,9 @@
   <activity xml:id="act-changing-functions-spherical-tank">
     <introduction>
       <p>
-			Consider a spherical tank of radius <m>4</m> m that is filling with water.  Let 
+			Consider a spherical tank of radius <m>4</m> m that is filling with water.  Let
 			<m>V</m> be the volume of water in the tank (in cubic meters) at a given time, and
-			<m>h</m> the depth of the water (in meters) at the same time.  It can be shown using calculus 
+			<m>h</m> the depth of the water (in meters) at the same time.  It can be shown using calculus
 			that <m>V</m> is a function of <m>h</m> according to the rule
       		<me>
         		V = f(h) = \frac{\pi}{3} h^2(12-h)

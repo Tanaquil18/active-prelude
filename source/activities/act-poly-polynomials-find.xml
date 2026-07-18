@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-poly-polynomials-find">
     <introduction>
       <p>
-			By experimenting with coefficients in <em>Desmos</em>, find a formula for a polynomial function that has the stated properties, or explain why no such polynomial exists.  If you enter <c>p(x)=a+bx+cx^2+dx^3+fx^4+gx^5</c> in <em>Desmos</em>, you'll get prompted to add sliders that make it easy to explore a degree <m>5</m> polynomial.  (We skip using <c>e</c> as one of the constants since <em>Desmos</em> reserves <c>e</c> as the Euler constant.) 
+			By experimenting with coefficients in <em>Desmos</em>, find a formula for a polynomial function that has the stated properties, or explain why no such polynomial exists.  If you enter <c>p(x)=a+bx+cx^2+dx^3+fx^4+gx^5</c> in <em>Desmos</em>, you'll get prompted to add sliders that make it easy to explore a degree <m>5</m> polynomial.  (We skip using <c>e</c> as one of the constants since <em>Desmos</em> reserves <c>e</c> as the Euler constant.)
 		</p>
       <p/>
     </introduction>

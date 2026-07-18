@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -28,7 +28,7 @@
       <hint/>
       <answer/>
       <solution>
-        <p>Factor: <m>f(x) = \dfrac{x(x-1)(x-5)}{(x+1)(x-1)}</m>.  The factor <m>(x-1)</m> cancels, giving the reduced form <m>\dfrac{x(x-5)}{x+1}</m>.  
+        <p>Factor: <m>f(x) = \dfrac{x(x-1)(x-5)}{(x+1)(x-1)}</m>.  The factor <m>(x-1)</m> cancels, giving the reduced form <m>\dfrac{x(x-5)}{x+1}</m>.
         <ul>
           <li><p><em>Domain:</em> all reals except <m>x = 1</m> and <m>x = -1</m>.</p></li>
           <li><p><em>Zeros:</em> <m>x = 0</m> and <m>x = 5</m> (where reduced numerator is zero and <m>x \neq -1, 1</m>).</p></li>

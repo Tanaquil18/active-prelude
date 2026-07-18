@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-circular-unit-circle-special-triangles">
     <introduction>
       <p>
-			In what follows, we work to understand key relationships in 
+			In what follows, we work to understand key relationships in
     		<m>45^\circ</m>-<m>45^\circ</m>-<m>90^\circ</m> and
     		<m>30^\circ</m>-<m>60^\circ</m>-<m>90^\circ</m> triangles.
 		</p>

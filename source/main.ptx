@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -13,12 +13,12 @@
 <!-- **********************************************************************-->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 
-	<xi:include href="./bookinfo.xml"/> 
+	<xi:include href="./bookinfo.xml"/>
     <!-- ISBN, website, other metadata -->
 
     <book>
 		<title>Active Prelude to Calculus</title>
-		<xi:include href="./frontmatter.xml"/>  
+		<xi:include href="./frontmatter.xml"/>
 
         <xi:include href="./chap-changing.xml"/>
         <xi:include href="./chap-circular.xml"/>

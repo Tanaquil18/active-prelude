@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -25,14 +25,14 @@
         <p>
 						Consider the function <m>p</m> defined by the following rule:
 					      <me>
-					        p(x) = 
+					        p(x) =
 					        \begin{cases}
 					        	-(x+2)^2 + 2, \amp  x \lt  0 \\
 					        	\frac{1}{2}(x-2)^2 + 1, \amp  x \ge 0
 					        \end{cases}
 					      </me>
 
-					    What are the values of <m>p(-4)</m>, <m>p(-2)</m>, <m>p(0)</m>, <m>p(2)</m>, and <m>p(4)</m>?  
+					    What are the values of <m>p(-4)</m>, <m>p(-2)</m>, <m>p(0)</m>, <m>p(2)</m>, and <m>p(4)</m>?
 					</p>
       </statement>
       <hint/>
@@ -52,7 +52,7 @@
     <task workspace="6cm" xml:id="act-changing-combining-piecewise-task-1">
       <statement>
         <p>
-						What point is the vertex of the quadratic part of <m>p</m> that is valid for <m>x \lt 0</m>?  What point is the vertex of the quadratic part of <m>p</m> that is valid for <m>x \ge 0</m>? 
+						What point is the vertex of the quadratic part of <m>p</m> that is valid for <m>x \lt 0</m>?  What point is the vertex of the quadratic part of <m>p</m> that is valid for <m>x \ge 0</m>?
 					</p>
       </statement>
       <hint/>
@@ -95,7 +95,7 @@
             <caption>Axes to plot <m>y = p(x)</m>.</caption> -->
             <image source="images/functions-y-x-blank-axes-centered-2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
 <!--          </figure>
-          <figure xml:id="F-combining-act-piecewise-graph"> 
+          <figure xml:id="F-combining-act-piecewise-graph">
             <caption>Graph of <m>y = f(x)</m>.</caption> -->
             <image source="images/combining-act-f"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
 <!--          </figure> -->
@@ -105,7 +105,7 @@
       <answer/>
       <solution>
         <p>The graph of <m>y = p(x)</m> consists of two parabolic pieces. For <m>x \lt 0</m>, the piece <m>-(x+2)^2+2</m> is a downward-opening parabola with vertex <m>(-2,2)</m> that passes through <m>(-4,-2)</m>, <m>(-2+\sqrt{2},0)</m>, <m>(-2-\sqrt{2},0)</m>, and approaches <m>(0,3)</m> from the left (open endpoint). For <m>x \ge 0</m>, the piece <m>\frac{1}{2}(x-2)^2+1</m> is an upward-opening parabola with vertex <m>(2,1)</m> that starts at <m>(0,3)</m> (closed endpoint) and passes through <m>(4,3)</m>. The graph has a jump at <m>x = 0</m> but the values approach <m>3</m> from both sides, so the graph is actually continuous there.</p>
-      
+
         <image width="50%" source="solution-images/Activity1.9.4.png"/>
       </solution>
     </task>

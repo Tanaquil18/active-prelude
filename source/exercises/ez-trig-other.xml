@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-trig-other">
-  
+
 
   <exercise xml:id="ez-trig-other-WW1" label="Library__LoyolaChicago__Precalc__Chap6Sec6__Q08-old">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec6/Q08-old.pg"/>
@@ -163,7 +163,7 @@
               <m>\cot(\arcsin(x))</m>
             </p>
           </li>
-        </ol>        
+        </ol>
       </p>
     </statement>
     <answer>

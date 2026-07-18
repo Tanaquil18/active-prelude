@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -38,16 +38,18 @@
 
   <!-- Index follows appendices, preceded only colophon -->
 
-<!--
-  
-  <solutions project="answer">
+
+
+<!-- This is the same thing ACS has, but ACS doesn't have answer or solution elements on Previews, and I can't figure out how to exclude blank answers appearing from exploration vs activity.  Will comment out answer elements from Previews. -->
+
+  <solutions xml:id="activities-answers" project="answer">
       <title>Answers to Activities</title>
       <introduction>
         <p>This appendix contains answers to all activities in the text. Answers for preview activities are not included.</p>
       </introduction>
   </solutions>
 
-    
+<!--
   <solutions divisional="answer">
       <title>Answers to Selected Exercises</title>
       <introduction>
@@ -56,7 +58,7 @@
   </solutions>
 
 -->
-  
+
 
   <index>
     <title>Index</title>

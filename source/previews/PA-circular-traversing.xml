@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -28,8 +28,8 @@
 						Recall that the circumference, <m>C</m>, of a circle is connected to the circle's radius, <m>r</m>, by the formula <m>C = 2\pi r</m>.  What is the radius of the ferris wheel?  How high is the highest point on the ferris wheel?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The circumference <m>2\pi r</m> of the Ferris wheel is 150 meters, so the radius is <m>\frac{150}{2\pi} = \frac{75}{\pi}</m> meters, or about 23.9 meters.  The highest point on the Ferris wheel is twice the radius plus however far the wheel begins off the ground at the bottom.  If we neglect this starting height, the height of this particular Ferris wheel is <m>\frac{150}{\pi}</m> meters, or about 47.7 meters.
@@ -42,8 +42,8 @@
 						How high is the cab after it has traveled <m>1/4</m> of the circumference of the circle?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The cab starts at the bottom, at a height of zero.  At <m>1/4</m> of the distance around, the cab is at the same height as the hub of the wheel, so it is one radius up: <m>\frac{75}{\pi}</m> meters.
@@ -56,8 +56,8 @@
 						How much distance along the circle has the cab traversed at the moment it first reaches a height of <m>\frac{150}{\pi} \approx 47.75</m> meters?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/>-->
       <solution>
         <p>
           The highest point of the Ferris wheel is at <m>\frac{150}{\pi}</m> meters.  There is only one point on the Ferris wheel that is this high.  The first time the cab reaches it is when the cab has traveled one-half the way around the wheel, a distance of 75 meters.
@@ -70,8 +70,8 @@
 						Can <m>h</m> be thought of as a function of <m>d</m>?  Why or why not?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Yes.  In this scenario, the height <m>h</m> may be thought of as a function of distance traveled <m>d</m> because given a distance it is possible to determine the (singular) height of the cab.
@@ -84,8 +84,8 @@
 						Can <m>d</m> be thought of as a function of <m>h</m>?  Why or why not?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           No.  The distance <m>d</m> traveled is not a function of height <m>h</m> because the Ferris wheel may make multiple turns so that there are multiple distances associated with a given height.
@@ -98,8 +98,8 @@
 						Why do you think the curve shown at right in Figure 2.1.1 has the shape that it does?  Write several sentences to explain.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The curve has the shape that it does because the height of the Ferris wheel changes slowly at the bottom and at the top, where much of the distance travelled is horizontal instead of vertical.  The function describing height in terms of distance is a sine function.
