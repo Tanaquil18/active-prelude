@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.21-dev.343/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.21-dev.343/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="active-prelude">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="aspect-ratio: 0.25;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <function name="r">(x^2-1)/(x^2-3x-4)</function>
+</setup>
+<p>
+  Consider the rational function <m>r(x) = \frac{x^2 - 1}{x^2 - 3x - 4}</m>, and let <m>p(x) = x^2 - 1</m> and <m>q(x) = x^2 - 3x - 4</m>.  Note that <m>p(x)</m> is the numerator of <m>r(x)</m> and <m>q(x)</m> is the denominator of <m>r(x)</m>.
+</p>
+
+    <p>
+      <answer><mathInput name="mi1"><label>Reasoning algebraically, for what values of <m>x</m> is <m>p(x) = 0</m>?</label><description>To enter a list of numbers, separate the numbers with commas.</description></mathInput><award><when><mathList>$mi1</mathList>=<mathList unordered>1 -1</mathList></when></award></answer>
+    </p>
+    <p>
+       <answer><mathInput name="mi2"><label>Again reasoning algebraically, for what values of <m>x</m> is <m>q(x) = 0</m>?</label><description>To enter a list of numbers, separate the numbers with commas.</description></mathInput><award><when><mathList>$mi2</mathList>=<mathList unordered>4 -1</mathList></when></award></answer>
+    </p>
+    <p>
+      Type <m>r(x)</m> in the box below, and the following table values will automatically fill in.
+    </p>
+    <p>
+      <answer><mathInput name="rEnt"><label><m>r(x)=</m></label></mathInput><award><when>$rEnt=$r</when></award></answer>
+    </p>
+    <sideBySide widths="30% 37% 33%">
+          <tabular>
+            <row halign="center" bottom="minor">
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell right="minor">
+                <m>r(x)</m>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>4.1</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="3"><shortDescription>expression entered for r of x evaluated entered at 4.1</shortDescription>$$rEnt(4.1)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>4.01</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="3"><shortDescription>expression entered for r of x evaluated entered at 4.01</shortDescription>$$rEnt(4.01)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>4.001</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="3"><shortDescription>expression entered for r of x evaluated entered at 4.001</shortDescription>$$rEnt(4.001)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>3.9</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="3"><shortDescription>expression entered for r of x evaluated entered at 3.9</shortDescription>$$rEnt(3.9)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>3.99</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="3"><shortDescription>expression entered for r of x evaluated entered at 3.99</shortDescription>$$rEnt(3.99)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>3.999</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="3"><shortDescription>expression entered for r of x evaluated entered at 3.999</shortDescription>$$rEnt(3.999)</mathInput>
+              </cell>
+            </row>
+          </tabular>
+          <tabular>
+            <row halign="center" bottom="minor">
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell right="minor">
+                <m>r(x)</m>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>1.1</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at 1.1</shortDescription>$$rEnt(1.1)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>1.01</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at 1.01</shortDescription>$$rEnt(1.01)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>1.001</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at 1.001</shortDescription>$$rEnt(1.001)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>0.9</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at 0.9</shortDescription>$$rEnt(0.9)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>0.99</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at 0.99</shortDescription>$$rEnt(0.99)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>0.999</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at 0.999</shortDescription>$$rEnt(0.999)</mathInput>
+              </cell>
+            </row>
+          </tabular>
+          <tabular>
+            <row halign="center" bottom="minor">
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell right="minor">
+                <m>r(x)</m>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>-1.1</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at -1.1</shortDescription>$$rEnt(-1.1)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>-1.01</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at -1.01</shortDescription>$$rEnt(-1.01)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>-1.001</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at -1.001</shortDescription>$$rEnt(-1.001)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>-0.9</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at -0.9</shortDescription>$$rEnt(-0.9)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>-0.99</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at -0.99</shortDescription>$$rEnt(-0.99)</mathInput>
+              </cell>
+            </row>
+            <row halign="center">
+              <cell>
+                <m>-0.999</m>
+              </cell>
+              <cell right="minor">
+                <mathInput disabled displayDecimals="4"><shortDescription>expression entered for r of x evaluated entered at -0.999</shortDescription>$$rEnt(-0.999)</mathInput>
+              </cell>
+            </row>
+          </tabular>
+        </sideBySide>
+
+<p>
+  Complete the sentences below to explain why <m>r(x)</m> behaves the way it does near <m>x = 4</m>, near <m>x=1</m>, and near <m>x=-1</m>.
+</p>
+<div sectionWideCheckWork colorAnswersSeparately>
+<p>
+  As <m>x</m> gets closer and closer to <m>4</m>, <answer><mathInput minWidth="25"><label>the numerator <m>p(x)=x^2-1</m> is approaching</label></mathInput>15</answer>, while <answer><mathInput minWidth="20"><label>the denominator <m>q(x)=x^2-3x-4</m> approaches</label></mathInput>0</answer>. <answer><choiceInput inline><label>This means that <m>r(x)=\frac{p(x)}{q(x)}</m></label><choice>approaches <m>0</m></choice><choice credit="1">increases or decreases without bound</choice><choice>approaches <m>0.4</m></choice><choice>approaches two different numbers</choice></choiceInput></answer> near <m>x = 4</m>.  <answer><choiceInput inline><label>The function <m>r(x)</m> has a </label><choice>zero</choice>
+  <choice>hole</choice><choice>jump</choice><choice credit="1">vertical asymptote</choice></choiceInput></answer> at <m>x=4</m>.
+</p>
+</div>
+
+<div sectionWideCheckWork colorAnswersSeparately>
+<p>
+  As <m>x</m> gets closer and closer to <m>1</m>, <answer><mathInput minWidth="20"><label>the numerator <m>p(x)=x^2-1</m> is approaching</label></mathInput>0</answer>, while <answer><mathInput minWidth="25"><label>the denominator <m>q(x)=x^2-3x-4</m> approaches</label></mathInput>-6</answer>. <answer><choiceInput inline><label>This means that <m>r(x)=\frac{p(x)}{q(x)}</m></label><choice credit="1">approaches <m>0</m></choice><choice>increases or decreases without bound</choice><choice>approaches <m>0.4</m></choice><choice>approaches two different numbers</choice></choiceInput></answer> near <m>x = 1</m>.  <answer><choiceInput inline><label>The function <m>r(x)</m> has a </label><choice credit="1">zero</choice>
+  <choice>hole</choice><choice>jump</choice><choice>vertical asymptote</choice></choiceInput></answer> at <m>x=1</m>.
+</p>
+</div>
+
+<div sectionWideCheckWork colorAnswersSeparately>
+<p>
+  As <m>x</m> gets closer and closer to <m>-1</m>, <answer><mathInput minWidth="20"><label>the numerator <m>p(x)=x^2-1</m> is approaching</label></mathInput>0</answer>, and <answer><mathInput minWidth="20"><label>the denominator <m>q(x)=x^2-3x-4</m> also approaches</label></mathInput>0</answer>. Factoring both the numerator and denominator results in <m>\frac{(x-1)(x+1)}{(x-4)(x+1)}</m>. As long as <m>x\neq -1</m>, the two <m>(x+1)</m> terms cancel, resulting in <m>\frac{x-1}{x-4}</m>. <answer><choiceInput inline><label>This means that <m>r(x)=\frac{p(x)}{q(x)}</m></label><choice>approaches <m>0</m></choice><choice>increases or decreases without bound</choice><choice credit="1">approaches <m>\frac{-2}{-5}=0.4</m></choice><choice>approaches two different numbers</choice></choiceInput></answer> near <m>x = -1</m>, even though <m>r(x)</m> is undefined at <m>x=-1</m>.  <answer><choiceInput inline><label>The function <m>r(x)</m> has a </label><choice>zero</choice>
+  <choice credit="1">hole</choice><choice>jump</choice><choice>vertical asymptote</choice></choiceInput></answer> at <m>x=-1</m>.
+</p>
+</div>
+
+<p>
+  Finally, the graph of <m>r(x)</m> appears below.
+</p>
+
+<graph>
+  <shortDescription>graph of the function r of x</shortDescription>
+  $r
+  <legend position="upperLeft">
+    <label><m>\displaystyle r(x)=\frac{x^2-1}{x^2-3x-4}</m></label>
+  </legend>
+</graph>
+
+<p>
+  Can you see all the behavior we just discussed, or only some of it? Remember that you can zoom in and out using the "+" and "-" in the lower right corner of the graph, and that the "O" returns to the original view.
+  <answer><choiceInput selectMultiple><label>Select the features of <m>r(x)</m> which appear on the graph.</label><choice credit="1">zero</choice><choice>hole</choice><choice>jump</choice><choice credit="1">vertical asymptote</choice></choiceInput></answer>
+</p>
+        </script>
+</div></div>
+</body>
+</html>
