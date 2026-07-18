@@ -11,12 +11,12 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-rational">
+<worksheet label="ws-PA-poly-rational" component="static">
   <exploration xml:id="PA-poly-rational">
     <introduction>
       <p>
 			A drug company estimates that to produce a new drug,
-			it will cost $5 million in startup resources, and that once they reach production, each gram of the drug will cost $2500 to make.  
+			it will cost <m>$5</m> million in startup resources, and that once they reach production, each gram of the drug will cost <m>$2500</m> to make.
 		</p>
       <p/>
     </introduction>
@@ -35,7 +35,7 @@
     <task workspace="3cm" xml:id="PA-poly-rational-task-1">
       <statement>
         <p>
-						The drug company needs to sell the drug at a price of more than $2500 per gram in order to at least break even.  To investigate how they might set prices, they first consider what their <em>average</em> cost per gram is.  What is the <em>total</em> cost of producing <m>1000</m> grams?  What is the <em>average</em> cost per gram to produce <m>1000</m> grams?
+						The drug company needs to sell the drug at a price of more than <m>$2500</m> per gram in order to at least break even.  To investigate how they might set prices, they first consider what their <em>average</em> cost per gram is.  What is the <em>total</em> cost of producing <m>1000</m> grams?  What is the <em>average</em> cost per gram to produce <m>1000</m> grams?
 					</p>
       </statement>
       <hint/>
@@ -75,7 +75,7 @@
     <task workspace="4cm" xml:id="PA-poly-rational-task-4">
       <statement>
         <p>
-						Explain why another formula for <m>A</m> is <m>A(q) = 2500 + \frac{5000000}{q}</m>.  
+						Explain why another formula for <m>A</m> is <m>A(q) = 2500 + \frac{5000000}{q}</m>.
 					</p>
       </statement>
       <hint/>
@@ -102,7 +102,7 @@
     </task>
     <conclusion>
       <p>
-        This activity is based on p. 457ff in <em>Functions Modeling Change</em>, by Connally et al.
+        This activity is based on p. 457ff in <em>Functions Modeling Change</em>, 5th edition, by Connally et al.
       </p>
     </conclusion>
   </exploration>

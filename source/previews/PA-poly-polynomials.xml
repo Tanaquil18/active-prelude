@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-polynomials">
+<worksheet label="ws-PA-poly-polynomials" component="static">
   <exploration xml:id="PA-poly-polynomials">
     <introduction>
       <p>
@@ -22,10 +22,10 @@
     <task workspace="4cm" xml:id="PA-poly-polynomials-task-0">
       <statement>
         <p>
-						What is the largest number of distinct points at which <m>p(x)</m> can cross the <m>x</m>-axis? 
+						What is the largest number of distinct points at which <m>p(x)</m> can cross the <m>x</m>-axis?
 					</p>
         <p>
-						Recall from the definition of a polynoimal function what we mean by a <term>zero</term> of the polynomial.  Give examples of values for <m>a_0, \ldots, a_4</m> that lead to that largest number of zeros for <m>p(x)</m>.
+						Recall from the definition of a polynomial function what we mean by a <term>zero</term> of the polynomial.  Give examples of values for <m>a_0, \ldots, a_4</m> that lead to that largest number of zeros for <m>p(x)</m>.
 					</p>
       </statement>
       <hint/>
@@ -77,7 +77,7 @@
       <answer/>
       <solution>
         <p>
-          A degree 4 polynomial can have <m>1</m> or <m>3</m> turning points (or <m>0</m> is technically possible, but not for most configurations).  With 0 real zeros, it can have just 1 turning point (like <m>x^4 + 1</m>).  It can also have 2 turning points, for example when one zero has multiplicity 2.  So <m>1, 2,</m> or <m>3</m> turning points are all possible.
+          A degree 4 polynomial can have <m>1</m> or <m>3</m> turning points.  When it has <m>0</m> real zeros, it can have just 1 turning point (like <m>x^4 + 1</m>).
         </p>
       </solution>
     </task>

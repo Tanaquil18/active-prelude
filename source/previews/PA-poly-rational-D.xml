@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                        -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,15 +12,17 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-trig-other" component="static">
-  <exploration xml:id="PA-trig-other">
+
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-poly-rational" component="doenet">
+  <dynamic>
     <statement>
-      <p>
-			Consider a right triangle with hypotenuse of length <m>61</m> and one leg of length <m>11</m>.
-      		Let <m>\alpha</m> be the angle opposite the side of length <m>11</m>.
-      		Find the exact length of the other leg and then determine the value of each of the six trigonometric functions evaluated at <m>\alpha</m>.
-      		In addition, what are the exact and approximate measures of the two non-right angles in the triangle?
-		</p>
+      <interactive label="int-PA-poly-rational-D" platform="doenetml" width="100%" aspect="2:8">
+        <slate surface="doenetml">
+          <xi:include href="doenet/PA-poly-rational-D.doenetml" parse="text"/>
+        </slate>
+      </interactive>`
     </statement>
-  </exploration>
-</worksheet>
+  </dynamic>
+  <static/>
+
+</exploration>

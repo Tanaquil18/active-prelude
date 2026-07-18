@@ -63,9 +63,9 @@
 			<p>
         Given real numbers <m>a_0, a_1, \ldots, a_n</m> where <m>a_n \ne 0</m>, we say that the function
         <me>
-          P(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n 
+          P(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n
         </me>
-        is a <term>polynomial of degree <m>n</m></term>. <idx><h>polynomial</h><h>degree</h></idx> In addition, we say that the values of <m>a_i</m> are the <term>coefficients</term> of the polynomial and the individual power functions <m>a_i x^i</m> are the <term>terms</term> of the polynomial.  <idx><h>polynomial</h><h>coefficients</h></idx> <idx><h>polynomial</h><h>terms</h></idx>  Any value of <m>x</m> for which <m>P(x) = 0</m> is called a <term>zero</term> of the polynomial.  <idx><h>polynomial</h><h>zero</h></idx>   
+        is a <term>polynomial of degree <m>n</m></term>. <idx><h>polynomial</h><h>degree</h></idx> In addition, we say that the values of <m>a_i</m> are the <term>coefficients</term> of the polynomial and the individual power functions <m>a_i x^i</m> are the <term>terms</term> of the polynomial.  <idx><h>polynomial</h><h>coefficients</h></idx> <idx><h>polynomial</h><h>terms</h></idx>  Any value of <m>x</m> for which <m>P(x) = 0</m> is called a <term>zero</term> of the polynomial.  <idx><h>polynomial</h><h>zero</h></idx>
       </p>
 		</statement>
 	</definition>
@@ -83,6 +83,7 @@
 	  </p>
 
 	<xi:include href="./previews/PA-poly-polynomials.xml"/>
+	<xi:include href="./previews/PA-poly-polynomials-D.xml"/>
 
   </subsection>
 
@@ -100,7 +101,7 @@
   	</assemblage>
 
   	<p>
-  		We know that each of the power functions <m>x</m>, <m>x^2</m>, <m>\ldots</m>, <m>x^n</m> grow without bound as <m>x \to \infty</m>.  Intuitively, we sense that <m>x^5</m> grows faster than <m>x^4</m> (and likewise for any comparison of a higher power to a lower one).  This means that for large values of <m>x</m>, the most important term in any polynomial is its highest order term, as we saw in <xref ref="PA-poly-polynomials">Preview Activity</xref> when we compared <m>p(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4</m> and <m>y = a_4 x^4</m>.  
+  		We know that each of the power functions <m>x</m>, <m>x^2</m>, <m>\ldots</m>, <m>x^n</m> grow without bound as <m>x \to \infty</m>.  Intuitively, we sense that <m>x^5</m> grows faster than <m>x^4</m> (and likewise for any comparison of a higher power to a lower one).  This means that for large values of <m>x</m>, the most important term in any polynomial is its highest order term, as we saw in <xref ref="PA-poly-polynomials">Preview Activity</xref> when we compared <m>p(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4</m> and <m>y = a_4 x^4</m>.
   	</p>
 
   	<assemblage xml:id="asm-polynomials-long-range">
@@ -152,11 +153,11 @@
   	</p>
 
   	<p>
-  		The Zero Product Property <idx><h>Zero Product Property</h></idx> states that if two or more numbers are multiplied together and the result is <m>0</m>, then at least one of the numbers must be <m>0</m>.  We use the Zero Product Property regularly with polynomial functions.  If we can determine all <m>n</m> zeros of a degree <m>n</m> polynomial, and we call those zeros <m>r_1</m>, <m>r_2</m>, <m>\ldots</m>, <m>r_n</m>, we can write 
+  		The Zero Product Property <idx><h>Zero Product Property</h></idx> states that if two or more numbers are multiplied together and the result is <m>0</m>, then at least one of the numbers must be <m>0</m>.  We use the Zero Product Property regularly with polynomial functions.  If we can determine all <m>n</m> zeros of a degree <m>n</m> polynomial, and we call those zeros <m>r_1</m>, <m>r_2</m>, <m>\ldots</m>, <m>r_n</m>, we can write
   		<me>
   			p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)
-  		</me>.  
-  		Moreover, if we are given a polynomial in this factored form, we can quickly determine its zeros.  For instance, if <m>p(x) = 2(x+7)(x+1)(x-2)(x-5)</m>, we know that the only way <m>p(x) = 0</m> is if at least one of the factors <m>(x+7)</m>, <m>(x+1)</m>, <m>(x-2)</m>, or <m>(x-5)</m> equals <m>0</m>, which implies that <m>x = -7</m>, <m>x = -1</m>, <m>x = 2</m>, or <m>x = 5</m>.  Hence, from the factored form of a polynomial, it is straightforward to identify the polynomial's zeros, the <m>x</m>-values at which its graph crosses the <m>x</m>-axis.  We can also use the factored form of a polynomial to develop what we call a <em>sign chart</em>, which we demonstrate in <xref ref="ex-polynomial-signs">Example</xref>. <idx><h>sign chart</h></idx> 
+  		</me>.
+  		Moreover, if we are given a polynomial in this factored form, we can quickly determine its zeros.  For instance, if <m>p(x) = 2(x+7)(x+1)(x-2)(x-5)</m>, we know that the only way <m>p(x) = 0</m> is if at least one of the factors <m>(x+7)</m>, <m>(x+1)</m>, <m>(x-2)</m>, or <m>(x-5)</m> equals <m>0</m>, which implies that <m>x = -7</m>, <m>x = -1</m>, <m>x = 2</m>, or <m>x = 5</m>.  Hence, from the factored form of a polynomial, it is straightforward to identify the polynomial's zeros, the <m>x</m>-values at which its graph crosses the <m>x</m>-axis.  We can also use the factored form of a polynomial to develop what we call a <em>sign chart</em>, which we demonstrate in <xref ref="ex-polynomial-signs">Example</xref>. <idx><h>sign chart</h></idx>
   	</p>
 
   	<example xml:id="ex-polynomial-signs">
@@ -215,7 +216,7 @@
   	</p>
 
   	<p>
-  		To see the impact of repeated factors, we examine a collection of degree <m>4</m> polynomials that each have <m>4</m> real zeros.  We start with the simplest of all, the function <m>f(x) = x^4</m>, whose zeros are <m>x = 0, 0, 0, 0</m>.  Because the factor <q><m>x-0</m></q> is repeated <m>4</m> times, the zero <m>x = 0</m> has multiplicity <m>4</m>. 
+  		To see the impact of repeated factors, we examine a collection of degree <m>4</m> polynomials that each have <m>4</m> real zeros.  We start with the simplest of all, the function <m>f(x) = x^4</m>, whose zeros are <m>x = 0, 0, 0, 0</m>.  Because the factor <q><m>x-0</m></q> is repeated <m>4</m> times, the zero <m>x = 0</m> has multiplicity <m>4</m>.
   	</p>
 
   	<p>
@@ -247,8 +248,8 @@
     </sidebyside>
 
 	<p>
-		If we next let <m>h(x) = x^2 (x-1)^2</m>, we see that <m>h</m> has two distinct real zeros, each of multiplicity <m>2</m>.  The graph of <m>h</m> in <xref ref="F-polynomial-4B">Figure</xref> shows that <m>h</m> behaves similar to a basic quadratic function near each of those zeros and thus shows U-shaped behavior nearby.  If instead we let <m>k(x) = x^2(x-1)(x+1)</m>, we see approximately linear behavior near <m>x = -1</m> and <m>x = 1</m> (the zeros of multiplicity <m>1</m>), and quadratic (U-shaped) behavior near <m>x = 0</m> (the zero of multiplicity <m>2</m>), as seen in <xref ref="F-polynomial-4C">Figure</xref>.  
-  </p>  
+		If we next let <m>h(x) = x^2 (x-1)^2</m>, we see that <m>h</m> has two distinct real zeros, each of multiplicity <m>2</m>.  The graph of <m>h</m> in <xref ref="F-polynomial-4B">Figure</xref> shows that <m>h</m> behaves similar to a basic quadratic function near each of those zeros and thus shows U-shaped behavior nearby.  If instead we let <m>k(x) = x^2(x-1)(x+1)</m>, we see approximately linear behavior near <m>x = -1</m> and <m>x = 1</m> (the zeros of multiplicity <m>1</m>), and quadratic (U-shaped) behavior near <m>x = 0</m> (the zero of multiplicity <m>2</m>), as seen in <xref ref="F-polynomial-4C">Figure</xref>.
+  </p>
 
   	<sidebyside width="45%">
   		<figure xml:id="F-polynomial-4B">

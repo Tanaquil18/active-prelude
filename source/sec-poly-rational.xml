@@ -63,6 +63,7 @@
 		</p>
 
 		<xi:include href="./previews/PA-poly-rational.xml"/>
+		<xi:include href="./previews/PA-poly-rational-D.xml"/>
 
 	</subsection>
 
@@ -87,7 +88,7 @@
 		</definition>
 
 		<p>
-			Like with polynomial functions, we are interested in such natural questions as 
+			Like with polynomial functions, we are interested in such natural questions as
 			<ul>
 				<li>
 					<p>
@@ -116,7 +117,7 @@
 			<me>
 				\lim_{x \to \infty} \frac{2500}{x^2} = 0
 			</me>
-			since <m>2500</m> times a quantity approaching <m>0</m> will still approach <m>0</m> as <m>x</m> increases.  
+			since <m>2500</m> times a quantity approaching <m>0</m> will still approach <m>0</m> as <m>x</m> increases.
 		</p>
 
 		<xi:include href="./activities/act-poly-rational-long-term-1.xml"/>
@@ -163,7 +164,7 @@
 		 						(where the sign of the limit depends on the signs of <m>a_n</m> and <m>b_m</m>) which tells us that <m>r</m> is does not have a horizontal asymptote.
 		 					</p>
 		 				</li>
-		 			</ol> 
+		 			</ol>
 	 			</p>
 			<p>
 				In both situations (a) and (b), the value of <m>\lim_{x \to -\infty} r(x)</m> is identical to <m>\lim_{x \to \infty} r(x)</m>.
@@ -217,7 +218,7 @@
 			Rational functions arise naturally in the study of the average rate of change of a polynomial function, leading to expressions such as
 			<me>
 				AV_{[2,2+h]} = \frac{-32h - 16h^2}{h}
-			</me>.  
+			</me>.
 			We will study several subtle issues that correspond to such functions further in <xref ref="sec-poly-rational-features">Section</xref>.  For now, we will focus on a different setting in which rational functions play a key role.
 		</p>
 
@@ -245,7 +246,7 @@
 			</statement>
 			<solution>
 				<p>
-					Neglecting any scrap, the amount of material it takes to construct the container is its surface area, which we know to be 
+					Neglecting any scrap, the amount of material it takes to construct the container is its surface area, which we know to be
 					<me>
 						S = 2\pi r^2 + 2\pi r h
 					</me>.
@@ -261,7 +262,7 @@
 					<me>
 						S(r) = \frac{2 \pi r^3 + 40}{r}
 					</me>
-					and thus we see that <m>S</m> is a rational function of <m>r</m>.  Because of the physical context of the problem and the fact that the denominator of <m>S</m> is <m>r</m>, the domain of <m>S</m> is the set of all positive real numbers. 
+					and thus we see that <m>S</m> is a rational function of <m>r</m>.  Because of the physical context of the problem and the fact that the denominator of <m>S</m> is <m>r</m>, the domain of <m>S</m> is the set of all positive real numbers.
 				</p>
 			</solution>
 		</example>
@@ -304,7 +305,7 @@
 			</li>
 			<li>
 				<p>
-					Two reasons that rational functions are important are that they arise naturally when we consider the average rate of change on an interval whose length varies and when we consider problems that relate the volume and surface area of three-dimensional containers when one of those two quantities is constrained. 
+					Two reasons that rational functions are important are that they arise naturally when we consider the average rate of change on an interval whose length varies and when we consider problems that relate the volume and surface area of three-dimensional containers when one of those two quantities is constrained.
 				</p>
 			</li>
 		</ul>
