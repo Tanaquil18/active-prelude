@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-changing-functions-is-it">
     <introduction>
       <p>
-			Each of the following prompts describes a relationship between two quantities.  For each, your task is to decide whether or not the relationship can be thought of as a function.  If not, explain why.  If so, state the domain and codomain of the function and write at least one sentence to explain the process that leads from the collection of inputs to the collection of outputs.  
+			Each of the following prompts describes a relationship between two quantities.  For each, your task is to decide whether or not the relationship can be thought of as a function.  If not, explain why.  If so, state the domain and codomain of the function and write at least one sentence to explain the process that leads from the collection of inputs to the collection of outputs.
 		</p>
       <p/>
     </introduction>

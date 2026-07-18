@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-exp-log-properties-exp-or-log">
     <introduction>
       <p>
-			In the questions that follow, we compare and contrast the properties and behaviors of exponential and logarithmic functions. 
+			In the questions that follow, we compare and contrast the properties and behaviors of exponential and logarithmic functions.
 		</p>
       <p/>
     </introduction>

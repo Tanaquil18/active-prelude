@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-exp-growth-find-a-b">
     <introduction>
       <p>
-			The value of an automobile is depreciating.  When the car is <m>3</m> years old, its value is $<m>12500</m>; when the car is <m>7</m> years old, its value is $<m>6500</m>.  
+			The value of an automobile is depreciating.  When the car is <m>3</m> years old, its value is $<m>12500</m>; when the car is <m>7</m> years old, its value is $<m>6500</m>.
 		</p>
       <p/>
     </introduction>

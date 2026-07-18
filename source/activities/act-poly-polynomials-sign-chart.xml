@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-poly-polynomials-sign-chart">
     <introduction>
       <p>
-			Consider the polynomial function given by 
+			Consider the polynomial function given by
 			<me>
 				p(x) = 4692(x+1520)(x^2+10000)(x-3471)^2(x-9738)
 			</me>.
@@ -86,7 +86,7 @@
     <task workspace="6cm" xml:id="act-poly-polynomials-sign-chart-task-4">
       <statement>
         <p>
-						Without using a graphing utility, construct an approximate graph of <m>p</m> that has the zeros of <m>p</m> carefully labeled on the <m>x</m>-axis.  
+						Without using a graphing utility, construct an approximate graph of <m>p</m> that has the zeros of <m>p</m> carefully labeled on the <m>x</m>-axis.
 					</p>
       </statement>
       <hint/>

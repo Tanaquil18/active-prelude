@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -109,7 +109,7 @@
     <task workspace="3cm" xml:id="act-changing-combining-arithmetic-task-5">
       <statement>
         <p>
-						Are there any values of <m>x</m> for which <m>(f-g)(x) = 0</m>?  Why or why not?  
+						Are there any values of <m>x</m> for which <m>(f-g)(x) = 0</m>?  Why or why not?
 					</p>
       </statement>
       <hint/>

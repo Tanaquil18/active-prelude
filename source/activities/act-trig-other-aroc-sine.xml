@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -56,7 +56,7 @@
     <task workspace="6cm" xml:id="act-trig-other-aroc-sine-task-2">
       <statement>
         <p>
-						Explain why your work in (a) and (b) together with some algebra shows that 
+						Explain why your work in (a) and (b) together with some algebra shows that
 						<me>
 							AV_{[a,a+h]} = \sin(a) \cdot \frac{\cos(h)-1}{h} - \cos(a) \cdot \frac{\sin(h)}{h}
 						</me>.
@@ -79,7 +79,7 @@
     <task workspace="6cm" xml:id="act-trig-other-aroc-sine-task-3">
       <statement>
         <p>
-						In calculus, we move from <em>average</em> rate of change to <em>instantaneous</em> rate of change by letting <m>h</m> approach <m>0</m> in the expression for average rate of change.  Using a computational device in radian mode, investigate the behavior of 
+						In calculus, we move from <em>average</em> rate of change to <em>instantaneous</em> rate of change by letting <m>h</m> approach <m>0</m> in the expression for average rate of change.  Using a computational device in radian mode, investigate the behavior of
 						<me>
 							\frac{\cos(h)-1}{h}
 						</me>

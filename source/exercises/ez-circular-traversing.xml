@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -94,7 +94,7 @@
                   <cell><m>13</m></cell>
                   <cell><m>14</m></cell>
                   <cell><m>15</m></cell>
-                  <cell><m>16</m></cell>                  
+                  <cell><m>16</m></cell>
                 </row>
                 <row>
                   <cell><m>k</m></cell>
@@ -114,8 +114,8 @@
                   <cell><m/></cell>
                   <cell><m/></cell>
                   <cell><m/></cell>
-                  <cell><m/></cell>                  
-                </row>                      
+                  <cell><m/></cell>
+                </row>
             </tabular>
           </table>
         </li>

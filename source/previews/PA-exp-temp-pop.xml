@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -25,8 +25,8 @@
 						The temperature of a warming object in an oven is given by <m>F(t) = 275 - 203e^{-kt}</m>, and we know that the object's  temperature after <m>20</m> minutes is <m>F(20) = 101</m>.  Determine the exact value of <m>k</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Setting <m>F(20) = 101</m>, we have <m>275 - 203e^{-20k} = 101</m>, so <m>203e^{-20k} = 174</m> and <m>e^{-20k} = \frac{174}{203}</m>.  Thus <m>k = -\dfrac{1}{20}\ln\!\left(\frac{174}{203}\right) \approx 7.708 \times 10^{-3}</m>.
@@ -39,8 +39,8 @@
 						The temperature of a cooling object in a refrigerator is modeled by <m>F(t) = a + 37.4e^{-0.05t}</m>, and the temperature of the refrigerator is <m>39.8^\circ</m>.  By thinking about the long-term behavior of <m>e^{-0.05t}</m> and the long-term behavior of the object's temperature, determine the exact value of <m>a</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           As <m>t \to \infty</m>, <m>e^{-0.05t} \to 0</m>, so <m>F(t) \to a</m>.  Since the object cools toward the refrigerator temperature of <m>39.8^\circ</m>, the long-term temperature is <m>39.8^\circ</m>, and therefore <m>a = 39.8</m>.
@@ -60,8 +60,8 @@
 						Solve the equation <m>3 = \frac{10}{1+x}</m> for the exact value of <m>x</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Multiplying both sides by <m>(1+x)</m> gives <m>3(1+x) = 10</m>, so <m>1+x = \frac{10}{3}</m> and <m>x = \frac{10}{3} - 1 = \frac{7}{3}</m>.
@@ -74,8 +74,8 @@
 						Suppose that <m>y = a + be^{-kt}</m>.  Solve for <m>t</m> in terms of <m>a</m>, <m>b</m>, <m>k</m>, and <m>y</m>.  What does this new equation represent?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Starting from <m>y = a + be^{-kt}</m>, we subtract <m>a</m>: <m>y - a = be^{-kt}</m>.  Dividing by <m>b</m>: <m>\frac{y-a}{b} = e^{-kt}</m>.  Taking the natural log: <m>-kt = \ln\!\left(\frac{y-a}{b}\right)</m>.  Therefore <m>t = -\dfrac{1}{k}\ln\!\left(\frac{y-a}{b}\right)</m>.  This is the inverse of the original function and gives the time at which the object reaches temperature <m>y</m>.

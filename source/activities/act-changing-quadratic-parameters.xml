@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -19,7 +19,7 @@
 	      In <em>Desmos</em>, enter <c>q(x) = ax^2 + bx + c</c>;
 	      you will be prompted to add sliders for <m>a</m>, <m>b</m>,
 	      and <m>c</m>.  Do so.
-	      Then begin exploring with the sliders and respond to the following questions.			
+	      Then begin exploring with the sliders and respond to the following questions.
 		</p>
       <p/>
     </introduction>

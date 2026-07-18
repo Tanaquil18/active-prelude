@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-polynomial-applications">
-  
+
 
   <exercise xml:id="ez-poly-polynomial-applications-WW1" label="Library__LoyolaChicago__Precalc__Chap9Sec3__Q44">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec3/Q44.pg"/>
@@ -21,7 +21,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec3/Q43.pg"/>
   </exercise>
 
-<!--  
+<!--
   <exercise xml:id="ez-poly-polynomial-applications-WW3" label="Library__Rochester__setAlgebra23PolynomialZeros__beth1polydiv">
     <webwork source="Library/Rochester/setAlgebra23PolynomialZeros/beth1polydiv.pg" />
   </exercise>

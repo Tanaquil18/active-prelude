@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -13,7 +13,7 @@
 <!-- **********************************************************************-->
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="C-trig">
   	<title>Trigonometry</title>
-  
+
   	<xi:include href="./sec-trig-right.xml"/>
   	<xi:include href="./sec-trig-tangent.xml"/>
   	<xi:include href="./sec-trig-inverse.xml"/>

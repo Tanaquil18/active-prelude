@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <title>Modeling with exponential functions</title>
 
   	<xi:include href="./previews/PA-exp-modeling.xml"/>
-		<xi:include href="./activities/act-exp-modeling-behavior.xml"/> 
+		<xi:include href="./activities/act-exp-modeling-behavior.xml"/>
 		<xi:include href="./activities/act-exp-modeling-soda.xml"/>
 		<xi:include href="./activities/act-exp-modeling-potato.xml"/>
 

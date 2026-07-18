@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -25,8 +25,8 @@
 						If we hear snowy tree crickets chirping at a rate of <m>92</m> chirps per minute, what does Dolbear's Law suggest should be the outside temperature?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>We seek <m>T</m> when <m>N = 92</m>: <m>T = 40 + 0.25(92) = 63</m>. So the temperature should be <m>63^\circ</m> F.</p>
       </solution>
@@ -37,8 +37,8 @@
 						If the outside temperature is <m>77^\circ</m> F, how many chirps per minute should we expect to hear?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>We seek <m>N</m> when <m>T = 77</m>. Solving <m>77 = 40 + 0.25N</m> gives <m>N = \frac{77 - 40}{0.25} = 148</m> chirps per minute.</p>
       </solution>
@@ -49,8 +49,8 @@
 						Is the model valid for determining the number of chirps one should hear when the outside temperature is <m>35^\circ</m> F?  Why or why not?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The model is known to be accurate only for temperatures from <m>50^\circ</m> to <m>85^\circ</m> F, so <m>35^\circ</m> F lies outside the valid range and we should not expect reasonable results at this temperature.</p>
       </solution>
@@ -61,8 +61,8 @@
 						Suppose that in the morning an observer hears <m>65</m> chirps per minute, and several hours later hears <m>75</m> chirps per minute.  How much has the temperature risen between observations?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>At <m>65</m> chirps per minute the temperature is <m>T = 40 + 0.25(65) = 56.25^\circ</m> F, and at <m>75</m> chirps per minute the temperature is <m>T = 40 + 0.25(75) = 58.75^\circ</m> F. The temperature has risen by <m>58.75 - 56.25 = 2.5</m> degrees Fahrenheit.</p>
       </solution>
@@ -73,8 +73,8 @@
 						Dolbear's Law is known to be accurate for temperatures from <m>50^\circ</m> to <m>85^\circ</m>.  What is the fewest number of chirps per minute an observer could expect to hear?  the greatest number of chirps per minute?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>At <m>50^\circ</m> F we get <m>N = \frac{50 - 40}{0.25} = 40</m> chirps per minute; at <m>85^\circ</m> F we get <m>N = \frac{85 - 40}{0.25} = 180</m> chirps per minute. The fewest expected is <m>40</m> and the greatest is <m>180</m> chirps per minute.</p>
       </solution>

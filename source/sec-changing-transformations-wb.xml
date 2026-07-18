@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <title>Transformations of Functions</title>
 
 	<xi:include href="./previews/PA-changing-transformations-quadratic.xml"/>
-	<xi:include href="./activities/act-changing-transformations-translations.xml"/>  	
+	<xi:include href="./activities/act-changing-transformations-translations.xml"/>
 	<xi:include href="./activities/act-changing-transformations-vert-stretch.xml"/>
 	<xi:include href="./activities/act-changing-transformations-combined.xml"/>
 

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -26,9 +26,44 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Sketches should look something like the following image.</p>
+        <image width="60%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-cone-ans">
+                    <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-4,-1,4,4)">
+                      <ellipse center="(0,2)" axes="(2,.3)" stroke="black"/>
+                      <line endpoints="((-2,2), (0,0))" stroke="black"/>
+                      <line endpoints="((2,2), (0,0))" stroke="black"/>
+                      <line endpoints="((2,2), (0,2))" stroke="gray" dash="4 4"/>
+                      <label anchor="(.7,2.14)"><m>2</m></label>
+                      <line endpoints="((2,2), (2,0))" stroke="gray" dash="4 4"/>
+                      <label anchor="(2.2,1)"><m>4</m></label>
+                      <polygon points="((-1,1),(1,1),(0,0))" closed="yes"
+                              fill="blue" fill-opacity=".5"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+            <description><p>An inverted cone with labeled radius <m>2</m> ft and depth <m>4</m> ft, with water partially filling the bottom of the tank.</p></description></image>
+        </answer>
       <solution>
         <p>Answers will vary. A sketch should show an inverted cone with labeled radius <m>2</m> ft and depth <m>4</m> ft, with water partially filling the bottom of the tank.</p>
+        <image width="60%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-cone-soln">
+                    <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="(-4,-1,4,4)">
+                      <ellipse center="(0,2)" axes="(2,.3)" stroke="black"/>
+                      <line endpoints="((-2,2), (0,0))" stroke="black"/>
+                      <line endpoints="((2,2), (0,0))" stroke="black"/>
+                      <line endpoints="((2,2), (0,2))" stroke="gray" dash="4 4"/>
+                      <label anchor="(.7,2.14)"><m>2</m></label>
+                      <line endpoints="((2,2), (2,0))" stroke="gray" dash="4 4"/>
+                      <label anchor="(2.2,1)"><m>4</m></label>
+                      <polygon points="((-1,1),(1,1),(0,0))" closed="yes"
+                              fill="blue" fill-opacity=".5"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+            <description><p>An inverted cone with labeled radius <m>2</m> ft and depth <m>4</m> ft, with water partially filling the bottom of the tank.</p></description></image>
       </solution>
     </task>
     <task workspace="6cm" xml:id="act-tandem-conical-tank-task-1">
@@ -38,7 +73,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Volume, height, surface area, and time are changing. Rate of water entering, height of tank, and radius of tank are not changing.</p></answer>
       <solution>
         <p>Quantities that are changing include the volume of water in the tank, the height of the water, the surface area of the top of the water, and time. Quantities that are not changing include the rate at which water enters, the height of the tank, and the radius of the tank.</p>
       </solution>
@@ -49,8 +84,6 @@
 						Fill in the following table of values to determine how much water, <m>V</m>, is in the tank at a given time in minutes, <m>t</m>, and thus generate a graph of the relationship between volume and time by plotting the data on the provided axes.
 					</p>
         <sidebyside width="50%" valign="middle">
-<!--          <table xml:id="T-tandem-act-cone-V-t"> 
-            <title>Table to record data on volume and time in the conical tank.</title> -->
             <tabular>
               <row bottom="minor">
                 <cell>
@@ -109,19 +142,168 @@
                 </cell>
               </row>
             </tabular>
-<!--          </table> -->
-
-<!--          <figure xml:id="F-tandem-act-cone-V-t">
-            <caption>How volume and time change in tandem in the conical tank.</caption>
-          -->
-            <image width="45%" source="images/tandem-V-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--          </figure> -->
+            <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-volumegraph-blankaxes-1">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="V" hlabels="(1,1,5)" vlabels="(1,1,5)"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Blank axes for making a graph of volume versus time.</p></description></image>
+            <!-- <image width="45%" source="images/tandem-V-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <sidebyside width="50%" valign="middle">
+            <tabular>
+              <row bottom="minor">
+                <cell>
+                  <m>t</m>
+                </cell>
+                <cell>
+                  <m>V</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>0.75</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>1.5</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>2.25</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>3.0</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>5</m>
+                </cell>
+                <cell>
+                  <m>3.75</m>
+                </cell>
+              </row>
+            </tabular>
+            <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-volumegraph-ans">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>f(x)=0.75*x</definition>
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="V" hlabels="(1,1,5)" vlabels="(1,1,5)"/>
+                        <graph at="graph" function="f"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>A graph of volume versus time, using the values from the table. The graph is a straight line through the origin with slope <m>0.75</m>.</p></description></image>
+        </sidebyside>
+      </answer>
       <solution>
         <p>Since water enters at a constant rate of <m>0.75</m> cubic feet per minute, <m>V = 0.75t</m>. The table values are: <m>t = 0, V = 0</m>; <m>t = 1, V = 0.75</m>; <m>t = 2, V = 1.5</m>; <m>t = 3, V = 2.25</m>; <m>t = 4, V = 3.0</m>; <m>t = 5, V = 3.75</m>. The graph of <m>V</m> versus <m>t</m> is a straight line through the origin with slope <m>0.75</m>.</p>
+          <sidebyside width="50%" valign="middle">
+            <tabular>
+              <row bottom="minor">
+                <cell>
+                  <m>t</m>
+                </cell>
+                <cell>
+                  <m>V</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>0.75</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>1.5</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>2.25</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>3.0</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>5</m>
+                </cell>
+                <cell>
+                  <m>3.75</m>
+                </cell>
+              </row>
+            </tabular>
+            <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-volumegraph-soln">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>f(x)=0.75*x</definition>
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="V" hlabels="(1,1,5)" vlabels="(1,1,5)"/>
+                        <graph at="graph" function="f"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>A graph of volume versus time, using the values from the table. The graph is a straight line through the origin with slope <m>0.75</m>.</p></description></image>
+        </sidebyside>
       </solution>
     </task>
     <task workspace="1cm" xml:id="act-tandem-conical-tank-task-3">
@@ -130,21 +312,35 @@
 						Finally, think about how the height, <m>h</m>, of the water changes in tandem with time.  Without attempting to determine specific values of <m>h</m> at particular values of <m>t</m>, how would you expect the data for the relationship between <m>h</m> and <m>t</m> to appear?  Use the provided axes to sketch at least two possibilities; write at least one sentence to explain how you think the graph should appear.
 					</p>
         <sidebyside width="50%">
-          <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-          <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-heightgraph-blankaxes-1">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="h" hlabels="(1,1,5)" vlabels="(1,1,5)"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Blank axes for making a graph of height versus time.</p></description></image>
+          <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-heightgraph-blankaxes-2">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="h" hlabels="(1,1,5)" vlabels="(1,1,5)"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Blank axes for making a graph of height versus time.</p></description></image>
+          <!-- <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Sketches should show a curve starting at the origin that is bending downwards as it approaches the maximum depth of <m>4</m> ft.</p></answer>
       <solution>
         <p>Since the radius of the cone increases as the water level rises, the height of the water increases rapidly at first but the rate of increase slows as the water level rises. Sketches should show a concave-down increasing curve approaching the maximum depth of <m>4</m> ft.</p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p>See solutions to individual tasks above.</p>
-    </solution>
   </activity>
 </worksheet>

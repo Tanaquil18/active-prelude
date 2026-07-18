@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -31,8 +31,8 @@
 						Label each of the subsequent points on the unit circle with the exact distance they lie counter-clockwise away from <m>(1,0)</m>; write each fraction in lowest terms.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <image width="50%" source="solution-images/PreviewActivity2.2.1.jpg"/>
       </solution>
@@ -43,8 +43,8 @@
 						Which distance along the unit circle corresponds to <m>\frac{1}{4}</m> of a full rotation around?  to <m>\frac{5}{8}</m> of a full rotation?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           One-quarter of a full rotation corresponds to a distance of <m>\frac{\pi}{2}</m>.  Five-eighths of a full rotation corresponds to a distance of <m>\frac{5\pi}{4}</m>.
@@ -68,8 +68,8 @@
 						Suppose that <m>\alpha</m> and <m>\beta</m> are angles with respective radian measures <m>\alpha = \frac{\pi}{3}</m> and <m>\beta = \frac{3\pi}{4}</m>.  Assuming that we view <m>\alpha</m> and <m>\beta</m> as having their vertex at <m>(0,0)</m> and one side along the positive <m>x</m>-axis, sketch the angles <m>\alpha</m> and <m>\beta</m> on the unit circle in part (a).
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <image width="50%" source="solution-images/PreviewActivity2.2.1c.png"/>
       </solution>
@@ -80,8 +80,8 @@
 						What is the radian measure that corresponds to a <m>90^\circ</m> angle?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <m>90^\circ</m> corresponds to <m>\frac{\pi}{2}</m> radians.

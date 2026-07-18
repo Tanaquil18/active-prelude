@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -34,8 +34,8 @@
             			the effect that changing the value of <m>a</m> has on the graph of <m>g</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Changing <m>a</m> shifts the graph of <m>f</m> vertically: positive values of
@@ -56,8 +56,8 @@
             			the effect that changing the value of <m>b</m> has on the graph of <m>h</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Changing <m>b</m> shifts the graph of <m>f</m> horizontally: positive values of
@@ -79,8 +79,8 @@
             			how is the graph of <m>p</m> related to the graph of <m>f</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The value <m>c</m> vertically stretches or compresses the graph of <m>f</m>:
@@ -102,8 +102,8 @@
             			Write a couple of sentences to describe your observations of your explorations.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The same three effects hold for any choice of <m>f</m>: adding <m>a</m> shifts

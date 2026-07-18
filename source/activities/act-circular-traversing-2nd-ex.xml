@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -22,7 +22,7 @@
           <caption>A point traversing the circle.</caption> -->
           <image source="images/traversing-act-circle"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
 <!--         </figure>
-        <figure xml:id="F-act-circular-traversing-grid"> 
+        <figure xml:id="F-act-circular-traversing-grid">
           <caption>Axes for plotting <m>h</m> as a function of <m>d</m>.</caption> -->
           <image source="images/traversing-act-circular-grid"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
 <!--         </figure> -->

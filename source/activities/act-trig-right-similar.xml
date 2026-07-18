@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -54,7 +54,7 @@
     <task workspace="4cm" xml:id="act-trig-right-similar-task-2">
       <statement>
         <p>
-						What is the value of <m>ON</m> in terms of <m>\theta</m>?  What is the value of <m>MN</m> in terms of <m>\theta</m>?  
+						What is the value of <m>ON</m> in terms of <m>\theta</m>?  What is the value of <m>MN</m> in terms of <m>\theta</m>?
 					</p>
       </statement>
       <hint/>
