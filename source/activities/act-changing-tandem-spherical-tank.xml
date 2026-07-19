@@ -26,7 +26,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Sketches should show a sphere with labeled radius <m>3</m> ft, with water partially filling the tank.</p></answer>
       <solution>
         <p>Answers will vary. A sketch should show a sphere with labeled radius <m>3</m> ft, with water partially filling the tank.</p>
       </solution>
@@ -38,7 +38,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Changing: volume, height, surface area, and time. Not changing: rate of water being pumped out and radius of the tank.</p></answer>
       <solution>
         <p>Quantities that are changing include the volume of water in the tank, the height of the water, the surface area of the top of the water, and time. Quantities that are not changing include the rate at which water is pumped out and the radius of the tank.</p>
       </solution>
@@ -50,7 +50,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\frac{4}{3}\pi(3)^3 = 36\pi \approx 113.1</m> cubic feet of water.</p></answer>
       <solution>
         <p>Since the radius is <m>3</m> feet, the full tank contains <m>\frac{4}{3}\pi(3)^3 = 36\pi \approx 113.1</m> cubic feet of water.</p>
       </solution>
@@ -62,7 +62,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Approximately <m>94.25</m> minutes</p></answer>
       <solution>
         <p>Water is removed at <m>1.2</m> cubic feet per minute. The tank drains when <m>1.2t = 36\pi</m>, so <m>t = \frac{36\pi}{1.2} = 30\pi \approx 94.25</m> minutes.</p>
       </solution>
@@ -116,7 +116,7 @@
               </row>
               <row>
                 <cell>
-                  <m>94.24</m>
+                  <m>94.25</m>
                 </cell>
                 <cell/>
               </row>
@@ -129,7 +129,75 @@
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <sidebyside width="50%" valign="middle">
+<!--          <table xml:id="T-tandem-act-sphere-V-t">
+            <title>Data for how volume and time change together.</title> -->
+            <tabular>
+              <row bottom="minor">
+                <cell>
+                  <m>t</m>
+                </cell>
+                <cell>
+                  <m>V</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell><m>113.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>20</m>
+                </cell>
+                <cell><m>89.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>40</m>
+                </cell>
+                <cell><m>65.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>60</m>
+                </cell>
+                <cell><m>41.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>80</m>
+                </cell>
+                <cell><m>17.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>94.25</m>
+                </cell>
+                <cell><m>0</m></cell>
+              </row>
+            </tabular>
+<!--          </table>
+          <figure xml:id="F-tandem-act-sphere-V-t">
+            <caption>A plot of how volume and time change in tandem in a draining spherical tank.</caption> -->
+            <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-tandem-sphere-volumegraph-ans">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>f(x)=36*pi-1.2*x</definition>
+                      <coordinates bbox="(-20,-20,120,120)">
+                        <grid spacings="((-20,10,100),(-20,10,100))"/>
+                        <grid-axes xlabel="t" ylabel="V \text{(cubic feet)}" hticks="(-20,20,100)" vticks="(-20,20,100)" hlabels="(20,40,100)" vlabels="(20,40,100)"/>
+                        <graph at="graph" function="f"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>A graph of volume versus time, using the values from the table. The graph is a straight line through the origin with slope <m>0.75</m>.</p></description></image>
+            <!-- <image width="45%" source="images/tandem-sphere-V-t"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+<!--          </figure> -->
+        </sidebyside>
+        </answer>
       <solution>
         <p>Since water is removed at a constant rate, <m>V = 36\pi - 1.2t</m>. The approximate values are: <m>t = 0, V \approx 113.1</m>; <m>t = 20, V \approx 89.1</m>; <m>t = 40, V \approx 65.1</m>; <m>t = 60, V \approx 41.1</m>; <m>t = 80, V \approx 17.1</m>; <m>t = 94.24, V \approx 0</m>. The graph is linear because water is removed at a constant rate.</p>
       </solution>
@@ -140,21 +208,35 @@
 						Finally, think about how the height of the water changes in tandem with time. What is the height of the water when <m>t = 0</m>?  What is the height when the tank is empty?  How would you expect the data for the relationship between <m>h</m> and <m>t</m> to appear?  Use the provided axes to sketch at least two possibilities; write at least one sentence to explain how you think the graph should appear.
 					</p>
         <sidebyside width="50%">
-          <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-          <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-heightgraph-blankaxes-3">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="h" hticks="(1,1,5)" vticks="(1,1,5)" hlabels="no" vlabels="no"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Blank axes for making a graph of height versus time.</p></description></image>
+          <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-heightgraph-blankaxes-4">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-1,-1,6,6)">
+                        <grid spacings="((-1,0.5,6),(-1,1/2,6))"/>
+                        <grid-axes xlabel="t" ylabel="h" hticks="(1,1,5)" vticks="(1,1,5)" hlabels="no" vlabels="no"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Blank axes for making a graph of height versus time.</p></description></image>
+          <!-- <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="45%" source="images/tandem-h-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Sketches should show an S-shaped decreasing curve from <m>h = 6</m> to <m>h = 0</m>.</p></answer>
       <solution>
         <p>When <m>t = 0</m> the tank is full, so the height of the water is the diameter <m>h = 6</m> ft. When the tank is empty, <m>h = 0</m>. The height decreases quickly at first, then the rate of decrease slows as the widest part of the sphere is reached, then speeds up again as the tank nears empty. Sketches should show an S-shaped decreasing curve from <m>h = 6</m> to <m>h = 0</m>.</p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p>See solutions to individual tasks above.</p>
-    </solution>
   </activity>
 </worksheet>

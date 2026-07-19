@@ -29,7 +29,10 @@
 	          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          <m>AV_{[0,1]} = 3</m>, <m>AV_{[1,2]} = 1</m>, <m>AV_{[2,3]} = -1</m>, and <m>AV_{[3,4]} = -3</m>.
+          The function <m>q</m> is decreasing on <m>[2,4]</m>.
+        </p></answer>
       <solution>
         <p>
           Computing the function values: <m>q(0)=0</m>, <m>q(1)=3</m>, <m>q(2)=4</m>,
@@ -51,7 +54,10 @@
 	          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          <m>AV_{[-1,1]} = 1.5</m>, <m>AV_{[1,3]} \approx 0.375</m>, and <m>AV_{[3,5]} \approx 0.094</m>.
+          On <m>[-1,5]</m>, the function <m>h</m> is increasing but at a decreasing rate.
+        </p></answer>
       <solution>
         <p>
           Computing function values: <m>h(-1) = 3 - 2(0.5)^{-1} = 3 - 4 = -1</m>,
@@ -82,19 +88,36 @@
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          (a)
+        </p>
+        <sidebyside widths="30% 30% 30%">
+          <image source="solution-images/Activity1.3.3ci.png"><shortdescription>plot of average rate of change on the graph of q</shortdescription></image>
+          <image source="solution-images/Activity1.3.3cii.png"><shortdescription>plot of average rate of change on the graph of q</shortdescription></image>
+          <image source="solution-images/Activity1.3.3ciii.png"><shortdescription>plot of average rate of change on the graph of q</shortdescription></image>
+        </sidebyside>
+        <p>
+          (b)
+        </p>
+        <sidebyside widths="30% 30% 30%">
+          <image source="solution-images/Activity1.3.3civ.png"><shortdescription>plot of average rate of change on the graph of h</shortdescription></image>
+          <image source="solution-images/Activity1.3.3cv.png"><shortdescription>plot of average rate of change on the graph of h</shortdescription></image>
+          <image source="solution-images/Activity1.3.3cvi.png"><shortdescription>plot of average rate of change on the graph of h</shortdescription></image>
+        </sidebyside>
+      </answer>
       <solution>
         <p>On the graph of <m>q</m>, draw four line segments: one connecting <m>(0,0)</m> and <m>(1,3)</m> (slope <m>3</m>), one connecting <m>(1,3)</m> and <m>(2,4)</m> (slope <m>1</m>), one connecting <m>(2,4)</m> and <m>(3,3)</m> (slope <m>-1</m>), and one connecting <m>(3,3)</m> and <m>(4,0)</m> (slope <m>-3</m>). On the graph of <m>h</m>, draw three line segments: one connecting <m>(-1,-1)</m> and <m>(1,2)</m> (slope <m>1.5</m>), one connecting <m>(1,2)</m> and <m>(3,2.75)</m> (slope <m>0.375</m>), and one connecting <m>(3,2.75)</m> and <m>(5,2.9375)</m> (slope <m>0.094</m>). The decreasing slopes on the left graph reflect that <m>q</m> increases then decreases, while the positive but decreasing slopes on the right reflect that <m>h</m> is increasing at a decreasing rate.</p>
 
         <sidebyside widths="30% 30% 30%">
-          <image source="solution-images/Activity1.3.3ci.png"/>
-          <image source="solution-images/Activity1.3.3cii.png"/>
-          <image source="solution-images/Activity1.3.3ciii.png"/>
+          <image source="solution-images/Activity1.3.3ci.png"><shortdescription>plot of average rate of change on the graph of q</shortdescription></image>
+          <image source="solution-images/Activity1.3.3cii.png"><shortdescription>plot of average rate of change on the graph of q</shortdescription></image>
+          <image source="solution-images/Activity1.3.3ciii.png"><shortdescription>plot of average rate of change on the graph of q</shortdescription></image>
         </sidebyside>
         <sidebyside widths="30% 30% 30%">
-          <image source="solution-images/Activity1.3.3civ.png"/>
-          <image source="solution-images/Activity1.3.3cv.png"/>
-          <image source="solution-images/Activity1.3.3cvi.png"/>
+          <image source="solution-images/Activity1.3.3civ.png"><shortdescription>plot of average rate of change on the graph of h</shortdescription></image>
+          <image source="solution-images/Activity1.3.3cv.png"><shortdescription>plot of average rate of change on the graph of h</shortdescription></image>
+          <image source="solution-images/Activity1.3.3cvi.png"><shortdescription>plot of average rate of change on the graph of h</shortdescription></image>
         </sidebyside>
       </solution>
     </task>
@@ -105,7 +128,11 @@
 				</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          False.
+        </p>
+      </answer>
       <solution>
         <p>
           False.  Although <m>AV_{[0,3]} = \frac{q(3)-q(0)}{3} = \frac{3-0}{3} = 1 > 0</m>,
@@ -125,7 +152,7 @@
 	          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Answers will vary but will be linear.</p></answer>
       <solution>
         <p>
           Any linear function has constant average rate of change.  For example,
@@ -134,11 +161,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p>See solutions to individual tasks above.</p>
-    </solution>
   </activity>
 </worksheet>
