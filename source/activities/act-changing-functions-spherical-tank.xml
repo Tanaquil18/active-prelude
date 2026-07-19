@@ -32,7 +32,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>0 \le h \le 8</m> and <m>0 \le V \le \frac{256\pi}{3}</m></p></answer>
       <solution>
         <p>
           Since depth can't be negative and can't exceed the tank's diameter of <m>8</m> m,
@@ -49,7 +49,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The domain is <m>[0, 8]</m> and the codomain is <m>\left[0, \frac{256\pi}{3}\right]</m>.</p></answer>
       <solution>
         <p>
           The domain of <m>f</m> in context is <m>[0, 8]</m>, since the water depth
@@ -69,7 +69,15 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <md>
+            <mrow> f(2)\amp = \frac{40\pi}{3} \approx 41.9 \text{ m}^3</mrow>
+            <mrow> f(4)\amp = \frac{128\pi}{3} \approx 134.0 \text{ m}^3</mrow>
+            <mrow> f(8)\amp = \frac{256\pi}{3} \approx 268.1 \text{ m}^3</mrow>
+          </md>
+        </p>
+      </answer>
       <solution>
         <p>
           <md>
@@ -91,7 +99,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Neither claim is valid.</p></answer>
       <solution>
         <p>
           Neither claim is valid.  The domain of <m>f</m> is <m>[0, 8]</m>, so
@@ -109,7 +117,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>No, the tank cannot hold 300 cubic meters of water.</p></answer>
       <solution>
         <p>
           No.  The maximum value of <m>f</m> on its domain <m>[0, 8]</m> is
@@ -118,11 +126,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>
