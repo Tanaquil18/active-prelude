@@ -26,9 +26,54 @@
 					</p>
       </statement>
       <hint/>
-      <answer><p>Sketches should show a sphere with labeled radius <m>3</m> ft, with water partially filling the tank.</p></answer>
+      <answer><p>Sketches should look something like the following image.</p>
+        <image width="60%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-sphere-ans">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>points=((-1.8,-.4),(2*cos(5*pi/4),2*sin(5*pi/4)),(2*cos(6*pi/4),2*sin(6*pi/4)),(2*cos(7*pi/4),2*sin(7*pi/4)), (1.8,-.43), (0,-.43), (-1.8,-.4))</definition>
+                      <coordinates bbox="(-2.5,-2.5,2.5,2.5)">
+                        <ellipse center="(0,0)" axes="(2,.4)" stroke="black"/>
+                        <line endpoints="((0,0),(2,0))" dash="4 4"/>
+                        <label anchor="(.8,.17)"><m>\small{3}</m></label>
+                        <!-- <arc center="(0,0)" radius="2" range="(-18,199)" stroke="orange"/> -->
+                        <define-shapes>
+                          <spline at="water" points="points" closed="yes" stroke="red"/>
+                          <ellipse at="watertop" center="(0,-.5)" axes="(1.9,.4)" />
+                        </define-shapes>
+                        <shape shape="watertop" stroke="blue"
+                        stroke-opacity=".5" fill="blue" fill-opacity=".5" />
+                          <shape shapes="water,watertop" operation="difference"
+                      fill="blue" fill-opacity=".5"/>
+                      <circle center="(0,0)" radius="2" stroke="black"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>An sphere with labeled radius <m>3</m> ft, with water partially filling the bottom of the spherical tank.</p></description></image>
+        </answer>
       <solution>
         <p>Answers will vary. A sketch should show a sphere with labeled radius <m>3</m> ft, with water partially filling the tank.</p>
+          <image width="60%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-tandem-sphere-soln">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>points=((-1.8,-.4),(2*cos(5*pi/4),2*sin(5*pi/4)),(2*cos(6*pi/4),2*sin(6*pi/4)),(2*cos(7*pi/4),2*sin(7*pi/4)), (1.8,-.43), (0,-.43), (-1.8,-.4))</definition>
+                      <coordinates bbox="(-2.5,-2.5,2.5,2.5)">
+                        <ellipse center="(0,0)" axes="(2,.4)" stroke="black"/>
+                        <line endpoints="((0,0),(2,0))" dash="4 4"/>
+                        <label anchor="(.8,.17)"><m>\small{3}</m></label>
+                        <!-- <arc center="(0,0)" radius="2" range="(-18,199)" stroke="orange"/> -->
+                        <define-shapes>
+                          <spline at="water" points="points" closed="yes" stroke="red"/>
+                          <ellipse at="watertop" center="(0,-.5)" axes="(1.9,.4)" />
+                        </define-shapes>
+                        <shape shape="watertop" stroke="blue"
+                        stroke-opacity=".5" fill="blue" fill-opacity=".5" />
+                          <shape shapes="water,watertop" operation="difference"
+                      fill="blue" fill-opacity=".5"/>
+                      <circle center="(0,0)" radius="2" stroke="black"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>An sphere with labeled radius <m>3</m> ft, with water partially filling the bottom of the spherical tank.</p></description></image>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-tandem-spherical-tank-task-1">
@@ -124,7 +169,17 @@
 <!--          </table>
           <figure xml:id="F-tandem-act-sphere-V-t">
             <caption>A plot of how volume and time change in tandem in a draining spherical tank.</caption> -->
-            <image width="45%" source="images/tandem-sphere-V-t"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+            <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-tandem-sphere-volumegraph-blank">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-20,-20,120,120)">
+                        <grid-axes xlabel="t" ylabel="V \text{(cubic feet)}" hticks="(-20,20,100)" vticks="(-20,20,100)" hlabels="(20,40,100)" vlabels="(20,40,100)" spacings="((-20,10,120),(-20,10,120))"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Blank axes for graphing volume versus time.</p></description></image>
+
+            <!-- <image width="45%" source="images/tandem-sphere-V-t"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--          </figure> -->
         </sidebyside>
       </statement>
@@ -187,19 +242,84 @@
                     <diagram dimensions="(300,300)" margins="5">
                       <definition>f(x)=36*pi-1.2*x</definition>
                       <coordinates bbox="(-20,-20,120,120)">
-                        <grid spacings="((-20,10,100),(-20,10,100))"/>
-                        <grid-axes xlabel="t" ylabel="V \text{(cubic feet)}" hticks="(-20,20,100)" vticks="(-20,20,100)" hlabels="(20,40,100)" vlabels="(20,40,100)"/>
+                        <grid-axes xlabel="t" ylabel="V \text{(cubic feet)}" hticks="(-20,20,100)" vticks="(-20,20,100)" hlabels="(20,40,100)" vlabels="(20,40,100)" spacings="((-20,10,120),(-20,10,120))"/>
                         <graph at="graph" function="f"/>
                       </coordinates>
                     </diagram>
                 </prefigure>
-            <description><p>A graph of volume versus time, using the values from the table. The graph is a straight line through the origin with slope <m>0.75</m>.</p></description></image>
+            <description><p>A graph of volume versus time, using the values from the table. The graph is a straight line through <m>(0, 36\pi)</m> with slope <m>-1.2</m>.</p></description></image>
             <!-- <image width="45%" source="images/tandem-sphere-V-t"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--          </figure> -->
         </sidebyside>
         </answer>
       <solution>
         <p>Since water is removed at a constant rate, <m>V = 36\pi - 1.2t</m>. The approximate values are: <m>t = 0, V \approx 113.1</m>; <m>t = 20, V \approx 89.1</m>; <m>t = 40, V \approx 65.1</m>; <m>t = 60, V \approx 41.1</m>; <m>t = 80, V \approx 17.1</m>; <m>t = 94.24, V \approx 0</m>. The graph is linear because water is removed at a constant rate.</p>
+          <sidebyside width="50%" valign="middle">
+<!--          <table xml:id="T-tandem-act-sphere-V-t">
+            <title>Data for how volume and time change together.</title> -->
+            <tabular>
+              <row bottom="minor">
+                <cell>
+                  <m>t</m>
+                </cell>
+                <cell>
+                  <m>V</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell><m>113.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>20</m>
+                </cell>
+                <cell><m>89.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>40</m>
+                </cell>
+                <cell><m>65.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>60</m>
+                </cell>
+                <cell><m>41.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>80</m>
+                </cell>
+                <cell><m>17.1</m></cell>
+              </row>
+              <row>
+                <cell>
+                  <m>94.25</m>
+                </cell>
+                <cell><m>0</m></cell>
+              </row>
+            </tabular>
+<!--          </table>
+          <figure xml:id="F-tandem-act-sphere-V-t">
+            <caption>A plot of how volume and time change in tandem in a draining spherical tank.</caption> -->
+            <image width="45%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-tandem-sphere-volumegraph-soln">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>f(x)=36*pi-1.2*x</definition>
+                      <coordinates bbox="(-20,-20,120,120)">
+                        <grid-axes xlabel="t" ylabel="V \text{(cubic feet)}" hticks="(-20,20,100)" vticks="(-20,20,100)" hlabels="(20,40,100)" vlabels="(20,40,100)" spacings="((-20,10,120),(-20,10,120))"/>
+                        <graph at="graph" function="f"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>A graph of volume versus time, using the values from the table. The graph is a straight line through <m>(0, 36\pi)</m> with slope <m>-1.2</m>.</p></description></image>
+            <!-- <image width="45%" source="images/tandem-sphere-V-t"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+<!--          </figure> -->
+        </sidebyside>
       </solution>
     </task>
     <task workspace="1cm" xml:id="act-tandem-spherical-tank-task-5">
