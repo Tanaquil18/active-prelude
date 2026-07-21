@@ -26,7 +26,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>H(N) = \frac{5}{9}(8 + 0.25N)</m></p></answer>
       <solution>
         <p>
           <md>H(N) = G(D(N)) = \frac{5}{9}((40 + 0.25N) - 32) = \frac{5}{9}(8 + 0.25N).</md>
@@ -40,7 +40,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The function <m>H</m> converts the number of cricket chirps per minute directly
+          into a temperature in degrees Celsius.
+        </p></answer>
       <solution>
         <p>
           The function <m>H</m> converts the number of cricket chirps per minute directly
@@ -56,23 +59,172 @@
         <sidebyside width="45%">
 <!--         <figure xml:id="F-act-changing-composite-Dolbear-revisited">
             <caption>Dolbear's function.</caption> -->
-            <image source="images/functions-Dolbears-Law"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-Dolbears-Law-degrees-F">
+                    <diagram dimensions="(300,300)" margins="5">
+                    <definition>p1=(40,50)</definition>
+                    <definition>p2=(80,60)</definition>
+                    <definition>p3=(120,70)</definition>
+                    <definition>p4=(160,80)</definition>
+                    <definition>p5=(180,85)</definition>
+                    <coordinates bbox="(-20,-10,200,100)">
+                      <grid-axes xlabel="N \text{ (chirps/min)}"
+                      ylabel="T \text{ (degrees Fahrenheit)}"
+                      hlabels="(40,40,160)"  vlabels="(20,20,80)"
+                      spacings="((-20,20,200),(-10,10,100))"/>
+                      <line endpoints="(p1,p5)" stroke="blue" />
+                      <point p="p1"/>
+                      <point p="p2"/>
+                      <point p="p3" alignment="se" offset="(.2,0)"><m>(120,70)</m></point>
+                      <point p="p4"/>
+                      <point p="p5"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+                <description>
+                  <p>Plot of <m>D(N)</m> with horizontal axis labeled <m>N</m> (chirps per minute) and vertical axis in degrees Fahrenheit.</p>
+                  <p>
+                    The graph is a line segment from <m>(40,50)</m> to <m>(180,85)</m>, also going through the points <m>(80, 60)</m>, <m>(120, 70)</m>, and <m>(160, 80)</m>.
+                  </p>
+                </description>
+              </image>
+
+            <!-- <image source="images/functions-Dolbears-Law"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--          </figure>
           <figure xml:id="F-act-changing-composite-Dolbear-celcius">
             <caption>Blank axes to plot <m>H = (G \circ D)(N)</m>.</caption> -->
-            <image source="images/composite-Dolbears-Law-celcius-blank"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-Dolbears-Law-blank">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="(-20,-10,200,100)">
+                        <grid-axes xlabel="N \text{ (chirps/min)}"
+                        hlabels="(40,40,160)" vticks="(20,20,80)" decorations="no"
+                        spacings="((-20,20,200),(-10,10,100))"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+                <description>
+                  <p>Blank axes for plotting <m>H(N)</m> with horizontal axis labeled <m>N</m> (chirps per minute).</p>
+                </description>
+              </image>
+
+            <!-- <image source="images/composite-Dolbears-Law-celcius-blank"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--          </figure> -->
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <sidebyside widths="45% 45%">
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-Dolbears-Law-degrees-F-ans">
+                    <diagram dimensions="(300,300)" margins="5">
+                    <definition>p1=(40,50)</definition>
+                    <definition>p2=(80,60)</definition>
+                    <definition>p3=(120,70)</definition>
+                    <definition>p4=(160,80)</definition>
+                    <definition>p5=(180,85)</definition>
+                    <coordinates bbox="(-20,-10,200,100)">
+                      <grid-axes xlabel="N \text{ (chirps/min)}"
+                      ylabel="T \text{ (degrees Fahrenheit)}"
+                      hlabels="(40,40,160)"  vlabels="(20,20,80)"
+                      spacings="((-20,20,200),(-10,10,100))"/>
+                      <line endpoints="(p1,p5)" stroke="blue" />
+                      <point p="p1"/>
+                      <point p="p2"/>
+                      <point p="p3" alignment="se" offset="(.2,0)"><m>(120,70)</m></point>
+                      <point p="p4"/>
+                      <point p="p5"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+                <description>
+                  <p>Plot of <m>D(N)</m> with horizontal axis labeled <m>N</m> (chirps per minute) and vertical axis in degrees Fahrenheit.</p>
+                  <p>
+                    The graph is a line segment from <m>(40,50)</m> to <m>(180,85)</m>, also going through the points <m>(80, 60)</m>, <m>(120, 70)</m>, and <m>(160, 80)</m>.
+                  </p>
+                </description>
+              </image>
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-Dolbears-Law-C-ans">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>h(x)=5/9*(8+0.25*x)</definition>
+                      <coordinates bbox="(-20,-10,200,100)">
+                        <grid-axes xlabel="N \text{ (chirps/min)}"
+                        ylabel="T \text{ (degrees Celsius)}"
+                        hlabels="(40,40,160)" vlabels="(20,20,80)"
+                        spacings="((-20,20,200),(-10,10,100))"/>
+                        <graph function="h" domain="(40,180)"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+                <description>
+                  <p>Plot of the function <m>H(N)</m> with horizontal axis labeled <m>N</m> (chirps per minute) and vertical axis labeled <m>T</m> (degrees Celsius).</p>
+                  <p>
+                    The graph is a line segment from <m>(40,10)</m> to <m>(180, \frac{265}{9})</m>.
+                  </p>
+                </description>
+              </image>
+        </sidebyside>
+      </answer>
       <solution>
         <p>Both Dolbear's function <m>D</m> and <m>H = (G \circ D)</m> are linear functions of <m>N</m>, so their graphs have the same shape. Dolbear's function has slope <m>\frac{1}{4}</m> (degrees Fahrenheit per chirp per minute), while <m>H(N) = \frac{5}{9}(0.25N+8)</m> has a smaller slope of <m>\frac{5}{36}</m> (degrees Celsius per chirp per minute). The vertical scale on the plot of <m>H</m> should reflect the Celsius range: <m>H(40) = 10</m> (corresponding to <m>50^\circ</m> F) and <m>H(180) = \frac{265}{9} \approx 29.4</m> (corresponding to <m>85^\circ</m> F). The plot of <m>H</m> is an increasing line on <m>[40, 180]</m>, similar to Dolbear's function but with a shallower slope and Celsius units on the vertical axis.</p>
 
         <sidebyside widths="45% 45%">
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-Dolbears-Law-degrees-F-soln">
+                    <diagram dimensions="(300,300)" margins="5">
+                    <definition>p1=(40,50)</definition>
+                    <definition>p2=(80,60)</definition>
+                    <definition>p3=(120,70)</definition>
+                    <definition>p4=(160,80)</definition>
+                    <definition>p5=(180,85)</definition>
+                    <coordinates bbox="(-20,-10,200,100)">
+                      <grid-axes xlabel="N \text{ (chirps/min)}"
+                      ylabel="T \text{ (degrees Fahrenheit)}"
+                      hlabels="(40,40,160)" vlabels="(20,20,80)"
+                      spacings="((-20,20,200),(-10,10,100))"/>
+                      <line endpoints="(p1,p5)" stroke="blue" />
+                      <point p="p1"/>
+                      <point p="p2"/>
+                      <point p="p3" alignment="se" offset="(.2,0)"><m>(120,70)</m></point>
+                      <point p="p4"/>
+                      <point p="p5"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+                <description>
+                  <p>Plot of <m>D(N)</m> with horizontal axis labeled <m>N</m> (chirps per minute) and vertical axis in degrees Fahrenheit.</p>
+                  <p>
+                    The graph is a line segment from <m>(40,50)</m> to <m>(180,85)</m>, also going through the points <m>(80, 60)</m>, <m>(120, 70)</m>, and <m>(160, 80)</m>.
+                  </p>
+                </description>
+              </image>
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-Dolbears-Law-C-soln">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>h(x)=5/9*(8+0.25*x)</definition>
+                      <coordinates bbox="(-20,-10,200,100)">
+                        <grid-axes xlabel="N \text{ (chirps/min)}"
+                        ylabel="T \text{ (degrees Celsius)}"
+                        hlabels="(40,40,160)" vlabels="(20,20,80)"
+                        spacings="((-20,20,200),(-10,10,100))"/>
+                        <graph function="h" domain="(40,180)"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+                <description>
+                  <p>Plot of the function <m>H(N)</m> with horizontal axis labeled <m>N</m> (chirps per minute) and vertical axis labeled <m>T</m> (degrees Celsius).</p>
+                  <p>
+                    The graph is a line segment from <m>(40,10)</m> to <m>(180, \frac{265}{9})</m>.
+                  </p>
+                </description>
+              </image>
+        </sidebyside>
+
+        <!-- <sidebyside widths="45% 45%">
           <image source="solution-images/Fig1.6.5.png"/>
           <image source="solution-images/Fig1.6.6.png"/>
-        </sidebyside>
+        </sidebyside> -->
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-changing-composite-crickets-celcius-task-3">
@@ -82,7 +234,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The domain of <m>H</m> is <m>[40, 180]</m> and the range is approximately <m>[10, 29.4]</m>.</p></answer>
       <solution>
         <p>
           As an abstract mathematical function, both the domain and range are all real
@@ -92,11 +244,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p>See solutions to individual tasks above.</p>
-    </solution>
   </activity>
 </worksheet>
