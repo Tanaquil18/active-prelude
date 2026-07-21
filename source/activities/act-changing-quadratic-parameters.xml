@@ -30,7 +30,9 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>If <m>a &gt; 0</m> the parabola opens upward; if <m>a &lt; 0</m> it opens downward.
+          The larger <m>|a|</m> is, the narrower the parabola; the closer <m>|a|</m> is to
+          zero, the wider the parabola.</p></answer>
       <solution>
         <p>
           If <m>a &gt; 0</m> the parabola opens upward; if <m>a &lt; 0</m> it opens downward.
@@ -46,7 +48,9 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>With <m>a = 1</m> and <m>c = 0</m>, changing <m>b</m> shifts the vertex
+          diagonally: making <m>b &gt; 0</m> moves the vertex left and down, while
+          making <m>b &lt; 0</m> moves it right and down.</p></answer>
       <solution>
         <p>
           With <m>a = 1</m> and <m>c = 0</m>, changing <m>b</m> shifts the vertex
@@ -62,7 +66,8 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>With <m>a = 1</m> and <m>b = 0</m>, changing <m>c</m> moves the vertex straight
+          up or down along the <m>y</m>-axis.</p></answer>
       <solution>
         <p>
           With <m>a = 1</m> and <m>b = 0</m>, changing <m>c</m> moves the vertex straight
@@ -80,7 +85,7 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The parameter <m>c</m> seems to have the simplest effect while <m>b</m> seems to have the most complicated effect.</p></answer>
       <solution>
         <p>
           The parameter <m>a</m> has the most clearly understandable effect: it controls
@@ -99,7 +104,7 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>q(x) = -2x^2 + 6x + 8</m></p></answer>
       <solution>
         <p>
           Yes.  Since <m>(1,12)</m> and <m>(2,12)</m> have the same output, the axis of
@@ -111,11 +116,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>
