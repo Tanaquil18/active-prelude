@@ -29,7 +29,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>g(3) = 1.8</m> cm/hr.  At <m>t = 3</m> hours into the storm, the rain is falling at a rate of <m>1.8</m> centimeters per hour.</p></answer>
       <solution>
         <p>
           <md>g(3) = \frac{4}{3+2} + 1 = \frac{4}{5} + 1 = \frac{9}{5} = 1.8 \text{ cm/hr.}</md>
@@ -45,7 +45,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>AV_{[3,5]} = -\frac{4}{35}</m> <m>\text{cm/hr}^2</m>.  This means that between hours <m>3</m> and <m>5</m>, the rate of rainfall decreased on average by about <m>0.114</m> cm/hr per hour.  We expect the rainfall rate to continue decreasing.</p></answer>
       <solution>
         <p>
           Using <m>g(3) = \frac{9}{5}</m> and <m>g(5) = \frac{4}{7} + 1 = \frac{11}{7}</m>:
@@ -63,7 +63,19 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="50%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-inverse-rainfall-ans">
+                  <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="[-1,-1,11,4]">
+                      <grid-axes xlabel="t" ylabel="R=g(t)"/>
+                      <definition>g(x)=4/(x+2)+1</definition>
+                      <graph function="g" domain="[0,10]"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+            <description><p>Graph of <m>R=g(t)</m>, which goes through <m>(0,3)</m> and decreases curving upward until stopping at <m>(10,\frac{4}{3})</m>.</p></description></image>
+        <p>The range of <m>g</m> on <m>[0,10]</m> is <m>\left[\frac{4}{3}, 3\right]</m>.  The function <m>g</m> has an inverse because it is strictly decreasing and passes the horizontal line test.</p></answer>
       <solution>
         <p>
           At the endpoints: <m>g(0) = \frac{4}{2}+1 = 3</m> and
@@ -73,7 +85,19 @@
           this domain — it passes the horizontal line test.
         </p>
 
-        <image width="50%" source="solution-images/Activity1.7.4.png"/>
+        <image width="50%">
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-inverse-rainfall-soln">
+                  <diagram dimensions="(300,300)" margins="5">
+                    <coordinates bbox="[-1,-1,11,4]">
+                      <grid-axes xlabel="t" ylabel="R=g(t)"/>
+                      <definition>g(x)=4/(x+2)+1</definition>
+                      <graph function="g" domain="[0,10]"/>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+            <description><p>Graph of <m>R=g(t)</m>, which goes through <m>(0,3)</m> and decreases curving upward until stopping at <m>(10,\frac{4}{3})</m>.</p></description></image>
+
+        <!-- <image width="50%" source="solution-images/Activity1.7.4.png"/> -->
       </solution>
     </task>
     <task workspace="4.5cm" xml:id="act-0-0-0-task-3">
@@ -83,7 +107,8 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>g^{-1}\!\left(\frac{9}{5}\right) = 3</m>.  The rainfall rate equals
+          <m>1.8</m> cm/hr at exactly <m>3</m> hours into the storm.</p></answer>
       <solution>
         <p>
           Setting <m>\frac{9}{5} = \frac{4}{t+2} + 1</m>:
@@ -103,7 +128,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>No. Setting <m>g(t) = 1</m> gives <m>\frac{4}{t+2} + 1 = 1</m>, but <m>\frac{4}{t+2} \gt 0</m> for all <m>t</m> in <m>[0,10]</m>, so there is no solution.</p></answer>
       <solution>
         <p>
           No.  Setting <m>g(t) = 1</m> gives <m>\frac{4}{t+2} + 1 = 1</m>, so
@@ -114,11 +139,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

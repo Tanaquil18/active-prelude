@@ -1,0 +1,28 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-5,-5,5,5]">
+
+    <grid-axes xlabel="x" ylabel="y"
+	    hlabels="(-4,2,4)" vlabels="(-4,2,4)" spacings="((-5,.5,5),(-5,.5,5))"/>
+
+    <definition>f1(x)=-(x+2)^2+2</definition>
+    <definition>f2(x)=1/2*(x-2)^2+1</definition>
+
+    <definition>a=-2</definition>
+    <definition>b=2</definition>
+    <definition>c=0</definition>
+
+    <group outline="tactile">
+      <graph function="f1" domain="(-5,0)" />
+      <graph function="f2" domain="(0,5)" />
+    </group>
+
+    <point p="(c,f1(c))" fill="white"/>
+    <point p="(c,f2(c))" fill="blue"/>
+
+    <label p="(-2,3.5)" alignment="nw" clear-background="yes">
+      <m>p(x)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>

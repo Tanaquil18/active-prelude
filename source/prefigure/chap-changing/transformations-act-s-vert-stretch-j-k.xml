@@ -1,0 +1,42 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-4,-5,3,4]">
+    <grid-axes xlabel="x" ylabel="y" />
+
+    <definition>f(x)=-3-3*(x+2)</definition>
+    <definition>g(x)=-3+0.5*(x+2)</definition>
+    <definition>f1(x)=-1/2*f(x)</definition>
+    <definition>g1(x)=-1/2*g(x)</definition>
+    <definition>f2(x)=-f(x)</definition>
+    <definition>g2(x)=-g(x)</definition>
+
+    <group outline="tactile">
+      <graph function="f" domain="(-4,-2)" stroke="#999" />
+      <graph function="g" domain="(-2,4)" stroke="#999" />
+    </group>
+
+    <group outline="tactile">
+      <graph function="f1" domain="(-4,-2)" stroke="red" />
+      <graph function="g1" domain="(-2,4)" stroke="red" />
+    </group>
+
+    <group outline="tactile">
+      <graph function="f2" domain="(-4,-2)" stroke="blue" />
+      <graph function="g2" domain="(-2,4)" stroke="blue" />
+    </group>
+
+    <label p="(2,-2)" clear-background="yes">
+      <m>s(x)</m>
+    </label>
+    <label p="(-1,3)" alignment="n" clear-background="yes">
+      <m>k(x)</m>
+    </label>
+    <label p="(-1,.2)" alignment="n" clear-background="yes">
+      <m>j(x)</m>
+    </label>
+    <point p="(-2,-3)" fill="#999"/>
+    <point p="(-2,3/2)" fill="red"/>
+    <point p="(-2,3)" fill="blue"/>
+  </coordinates>
+
+</diagram>
+

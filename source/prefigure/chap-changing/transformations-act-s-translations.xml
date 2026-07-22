@@ -1,7 +1,6 @@
-<graphics id="figure" width="250" height="250" margins="5">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <coordinates bbox="[-4,-4,4,4]">
-    <grid />
-    <axes id="axes" xlabel="x" ylabel="y" />
+    <grid-axes xlabel="x" ylabel="y" />
 
     <definition>f(x)=-3-3*(x+2)</definition>
     <definition>g(x)=-3+0.5*(x+2)</definition>
@@ -16,5 +15,5 @@
     </label>
   </coordinates>
 
-</graphics>
+</diagram>
 

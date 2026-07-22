@@ -1,4 +1,4 @@
-<graphics id="figure" width="250" height="250" margins="[12,5,5,5]">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="[12,5,5,5]">
   <coordinates bbox="[-1,-1,5,5]">
     <group>
       <axes id="axes" xlabel="x" ylabel="y" decorations="no" />
@@ -10,7 +10,7 @@
 
     <polygon points="((a,f(a)), (b,f(a)), (b,f(b)))"
 	     stroke="black" thickness="2"/>
-    
+
     <graph function="f" />
 
     <point p="(a,f(a))" alignment="nw"><m>(0,y_0)</m></point>
@@ -24,11 +24,11 @@
 	   clear-background="yes">
       <m>x</m>
     </label>
-    <label p="(1,4.0)" alignment="east" 
+    <label p="(1,4.0)" alignment="east"
 	   clear-background="yes">
       <m>y=y_0+mx</m>
     </label>
 
   </coordinates>
 
-</graphics>
+</diagram>

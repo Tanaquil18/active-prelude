@@ -18,7 +18,7 @@
     %entities;
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
-    xmlns:pi="http://pretextbook.org/2020/pretext/internal"
+    xmlns:pi="https://pretextbook.org/2020/pretext/internal"
 >
 
 <xsl:import href="./core/pretext-latex.xsl" />

@@ -1,0 +1,26 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+    <coordinates bbox="[-4,-4,4,4]">
+        <grid-axes xlabel="x" ylabel="y"/>
+
+        <definition>f(x)=-1.5*sin(pi*x)</definition>
+        <definition>g(x)=2*f(x+0.5)-0.75</definition>
+
+        <graph function="f" tactile-N="200"/>
+        <graph function="g" tactile-N="200" stroke="red"/>
+
+        <point p="(1.5,1.5)" alignment="ne" clear-background="yes" offset="(7,10)" tactile-offset="(7,15)">
+        <m>(1.5,1.5)</m>
+        </point>
+        <point p="(1,2.25)" alignment="nw" fill="blue" clear-background="yes" offset="(7,7)" tactile-offset="(7,15)">
+        <m>(1,2.25)</m>
+        </point>
+        <label p="(-2.5,1.6)" alignment="ne">
+        <m>g(x)</m>
+        </label>
+        <label p="(-3,2.3)" alignment="n">
+        <m>q(x)</m>
+        </label>
+
+    </coordinates>
+
+</diagram>

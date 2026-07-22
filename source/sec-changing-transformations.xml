@@ -89,13 +89,24 @@
 	<sidebyside width="50%">
 		<figure xml:id="F-transformations-vert">
 			<caption>A vertical translation, <m>g</m>, of the function <m>y = f(x) = |x|</m>.</caption>
-			<image source="images/transformations-vert"><description><p>A vertical translation, <m>g</m>, of the function <m>y = f(x) = |x|</m>.</p>
-			</description></image>
+			<!-- <image source="images/transformations-vert"> -->
+			<image>
+				<prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-vert">
+					<xi:include href="prefigure/chap-changing/transformations-vert.xml"/>
+				</prefigure>
+				<description><p>A vertical translation, <m>g</m>, of the function <m>y = f(x) = |x|</m>.</p></description>
+			</image>
 		</figure>
 		<figure xml:id="F-transformations-horiz">
 			<caption>A horizontal translation, <m>h</m>, of a different function <m>y = f(x)</m>.</caption>
-			<image source="images/transformations-horiz"><description><p>A horizontal translation, <m>h</m>, of a different function <m>y = f(x)</m>.</p>
-			</description></image>
+			<!-- <image source="images/transformations-horiz"> -->
+			<image>
+				<prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-horiz">
+					<xi:include href="prefigure/chap-changing/transformations-horiz.xml"/>
+				</prefigure>
+				<description><p>A horizontal translation, <m>h</m>, of a different function <m>y = f(x)</m>.</p>
+				</description>
+			</image>
 		</figure>
 	</sidebyside>
 
@@ -270,38 +281,54 @@
 		These three steps correspond to three basic transformations:  (1) shift the graph of <m>r</m> to the left by <m>1</m> unit; (2) stretch the resulting graph vertically by a factor of <m>2</m>; (3) shift the resulting graph vertically by <m>-1</m> units.  We can see the graphical impact of these algebraic steps by taking them one at a time.  In <xref ref="F-transformations-combined-order-2">Figure</xref>, we see the function <m>p</m> that results from a shift <m>1</m> unit left of the parent function in <xref ref="F-transformations-combined-order-1">Figure</xref>.  (Each time we take an additional step, we will de-emphasize the preceding function by having it appear in lighter color and dashed.)
 	</p>
 
-			<sidebyside width="50%">
+			<sidebyside width="45%">
 				<figure xml:id="F-transformations-combined-order-1">
 					<caption>The parent function <m>y = r(x)</m>.</caption>
-					<image source="images/transformations-combined-order-1"><description><p>The parent function <m>y = r(x)</m>.</p>
+					<image>
+						<prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-combined-order-1">
+							<xi:include href="prefigure/chap-changing/transformations-combined-order-1.xml"/>
+						</prefigure>
+					<description><p>The parent function <m>y = r(x)</m>.</p>
 					</description></image>
 				</figure>
 				<figure xml:id="F-transformations-combined-order-2">
-					<caption>The parent function <m>y = r(x)</m> along with the horizontal shift <m>y = p(x) = r(x+1)</m>.</caption>
-					<image source="images/transformations-combined-order-2"><description><p>The parent function <m>y = r(x)</m> along with the horizontal shift <m>y = p(x) = r(x+1)</m>.</p>
+					<caption>The parent function <m>y = r(x)</m> along with the horizontal shift <m>y = s(x) = r(x+1)</m>.</caption>
+					<image>
+						<prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-combined-order-2">
+							<xi:include href="prefigure/chap-changing/transformations-combined-order-2.xml"/>
+						</prefigure>
+					<description><p>The parent function <m>y = r(x)</m> along with the horizontal shift <m>y = s(x) = r(x+1)</m>.</p>
 					</description></image>
 				</figure>
 			</sidebyside>
 
 	<p>
-		Continuing, we now consider the function <m>q(x) = 2p(x) = 2r(x+1)</m>, which results in a vertical stretch of <m>p</m> away from the <m>x</m>-axis by a factor of <m>2</m>, as seen in <xref ref="F-transformations-combined-order-3">Figure</xref>.
+		Continuing, we now consider the function <m>q(x) = 2s(x) = 2r(x+1)</m>, which results in a vertical stretch of <m>s</m> away from the <m>x</m>-axis by a factor of <m>2</m>, as seen in <xref ref="F-transformations-combined-order-3">Figure</xref>.
 	</p>
 
-			<sidebyside width="50%">
+			<sidebyside width="45%">
 				<figure xml:id="F-transformations-combined-order-3">
-					<caption>The function <m>y = q(x) = 2p(x) = 2r(x+1)</m> along with graphs of <m>p</m> and <m>r</m>.</caption>
-					<image source="images/transformations-combined-order-3"><description><p>The function <m>y = q(x) = 2p(x) = 2r(x+1)</m> along with graphs of <m>p</m> and <m>r</m>.</p>
+					<caption>The function <m>y = q(x) = 2s(x) = 2r(x+1)</m> along with the graph of <m>s</m>.</caption>
+					<image>
+						<prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-combined-order-3">
+							<xi:include href="prefigure/chap-changing/transformations-combined-order-3.xml"/>
+						</prefigure>
+					<description><p>The function <m>y = q(x) = 2s(x) = 2r(x+1)</m> along with the graph of <m>s</m>.</p>
 					</description></image>
 				</figure>
 				<figure xml:id="F-transformations-combined-order-4">
-					<caption>The function <m>y = m(x) = q(x)-1 = 2r(x+1) - 1</m> along with graphs of <m>q</m>, <m>p</m> and <m>r</m>.</caption>
-					<image source="images/transformations-combined-order-4"><description><p>The function <m>y = m(x) = q(x)-1 = 2r(x+1) - 1</m> along with graphs of <m>q</m>, <m>p</m> and <m>r</m>.</p>
+					<caption>The function <m>y = m(x) = q(x)-1 = 2r(x+1) - 1</m> along with the graph of <m>q</m>.</caption>
+					<image>
+						<prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-combined-order-4">
+							<xi:include href="prefigure/chap-changing/transformations-combined-order-4.xml"/>
+						</prefigure>
+					<description><p>The function <m>y = m(x) = q(x)-1 = 2r(x+1) - 1</m> along with the graph of <m>q</m>.</p>
 					</description></image>
 				</figure>
 			</sidebyside>
 
 	<p>
-		Finally, we arrive at <m>y = m(x) = 2r(x+1) - 1</m> by subtracting <m>1</m> from <m>q(x) = 2r(x+1)</m>; this of course is a vertical shift of <m>-1</m> units, and produces the graph of <m>m</m> shown in red in <xref ref="F-transformations-combined-order-4">Figure</xref>.  We can also track the point <m>(2,-1)</m> on the original parent function:  it first moves left <m>1</m> unit to <m>(1,-1)</m>, then it is stretched vertically by a factor of <m>2</m> away from the <m>x</m>-axis to <m>(1,-2)</m>, and lastly is shifted <m>1</m> unit down to the point <m>(1,-3)</m>, which we see on the graph of <m>m</m>.
+		Finally, we arrive at <m>y = m(x) = 2r(x+1) - 1</m> by subtracting <m>1</m> from <m>q(x) = 2r(x+1)</m>; this of course is a vertical shift of <m>-1</m> units, and produces the graph of <m>m</m> shown in <xref ref="F-transformations-combined-order-4">Figure</xref>.  We can also track the point <m>(2,-1)</m> on the original parent function:  it first moves left <m>1</m> unit to <m>(1,-1)</m>, then it is stretched vertically by a factor of <m>2</m> away from the <m>x</m>-axis to <m>(1,-2)</m>, and lastly is shifted <m>1</m> unit down to the point <m>(1,-3)</m>, which we see on the graph of <m>m</m>.
 	</p>
 
 	<p>

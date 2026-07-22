@@ -1,4 +1,4 @@
-<graphics id="figure" width="250" height="250" margins="5">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <coordinates bbox="[-0.5, -10, 3.5, 70]">
     <axes id="axes" xlabel="x" ylabel="y"
 	  decorations="no" hticks="(1,1,2)" />
@@ -27,13 +27,13 @@
     <label p="(b,-5)" alignment="center"
 	   tactile-p="(b,0)"
 	   tactile-alignment="ha"><m>a+h</m></label>
-      
+
     <label p="((a+b)/2,5)" alignment="north" tactile-offset="(0,10)">
       <m>h</m>
     </label>
-      
+
 
   </coordinates>
 
-</graphics>
+</diagram>
 

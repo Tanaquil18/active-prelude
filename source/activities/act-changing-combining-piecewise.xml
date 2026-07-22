@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-changing-combining-piecewise">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-changing-combining-piecewise">
   <activity xml:id="act-changing-combining-piecewise">
     <introduction>
       <p>
@@ -36,7 +36,14 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          <m>p(-4) = -2</m>;
+          <m>p(-2) = 2</m>;
+          <m>p(0) = 3</m>;
+          <m>p(2) = 1</m>;
+          <m>p(4) = 3</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           For <m>x \lt 0</m>, use <m>p(x) = -(x+2)^2 + 2</m>:
@@ -56,7 +63,8 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The parabola that is valid for <m>x \lt 0</m> has vertex <m>(-2, 2)</m>. The parabola that is valid for <m>x \ge 0</m> has vertex <m>(2, 1)</m>.</p>
+      </answer>
       <solution>
         <p>
           The left-side parabola <m>-(x+2)^2 + 2</m> (valid for <m>x \lt 0</m>) opens
@@ -73,7 +81,9 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>p(x)=0</m> when <m>x = -2 + \sqrt{2} \approx -0.586</m>
+        and <m>x = -2 - \sqrt{2} \approx -3.414</m>. The <m>y</m>-intercept is <m>p(0) = 3</m>.</p>
+      </answer>
       <solution>
         <p>
           For <m>x \lt 0</m>, setting <m>-(x+2)^2 + 2 = 0</m> gives <m>(x+2)^2 = 2</m>,
@@ -91,22 +101,49 @@
 						Sketch an accurate, labeled graph of <m>y = p(x)</m> on the axes provided at left in the following figure.
 					</p>
         <sidebyside width="45%">
-<!--          <figure xml:id="F-combining-act-piecewise-axes">
-            <caption>Axes to plot <m>y = p(x)</m>.</caption> -->
-            <image source="images/functions-y-x-blank-axes-centered-2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--          </figure>
-          <figure xml:id="F-combining-act-piecewise-graph">
-            <caption>Graph of <m>y = f(x)</m>.</caption> -->
-            <image source="images/combining-act-f"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--          </figure> -->
+            <!-- <image source="images/functions-y-x-blank-axes-centered-2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-changing-combining-act-blank-axes-x-y-centered">
+                <xi:include href="../prefigure/chap-changing/functions-y-x-blank-axes-centered-2.xml"/>
+              </prefigure>
+              <description><p>Blank axes for graphing <m>y = p(x)</m></p>
+              </description>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-changing-combining-act-f-2">
+                <xi:include href="../prefigure/chap-changing/combining-act-f.xml"/>
+              </prefigure>
+              <description><p>A piecewise linear function <m>f(x)</m>. The first piece goes through <m>(-2,3.5)</m> and ends at the closed circle <m>(-1,3)</m>, while the second piece starts at an open circle at <m>(-1,1)</m> and ends at a closed circle at <m>(1,4)</m>, and the third piece starts at an open circle at <m>(1,1)</m> passes through an open circle at <m>(2,1/4)</m> and continues to the edge of the graph.
+                </p>
+              </description>
+            </image>
+            <!-- <image source="images/combining-act-f"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-combining-piecewise-act-parabolas-ans">
+              <xi:include href="../prefigure/chap-changing/combining-piecewise-act-parabolas.xml"/>
+            </prefigure>
+            <description><p>A piecewise function <m>p(x)</m>. The first piece is an downward-opening parabola with vertex <m>(-2,2)</m> ending in an open circle at <m>(0,-2)</m>, while the second piece is an upward-opening parabola starting at a closed circle at <m>(0,3)</m> with vertex <m>(2,1)</m>.
+              </p>
+            </description>
+          </image>
+      </answer>
       <solution>
-        <p>The graph of <m>y = p(x)</m> consists of two parabolic pieces. For <m>x \lt 0</m>, the piece <m>-(x+2)^2+2</m> is a downward-opening parabola with vertex <m>(-2,2)</m> that passes through <m>(-4,-2)</m>, <m>(-2+\sqrt{2},0)</m>, <m>(-2-\sqrt{2},0)</m>, and approaches <m>(0,3)</m> from the left (open endpoint). For <m>x \ge 0</m>, the piece <m>\frac{1}{2}(x-2)^2+1</m> is an upward-opening parabola with vertex <m>(2,1)</m> that starts at <m>(0,3)</m> (closed endpoint) and passes through <m>(4,3)</m>. The graph has a jump at <m>x = 0</m> but the values approach <m>3</m> from both sides, so the graph is actually continuous there.</p>
+        <p>The graph of <m>y = p(x)</m> consists of two parabolic pieces. For <m>x \lt 0</m>, the piece <m>-(x+2)^2+2</m> is a downward-opening parabola with vertex <m>(-2,2)</m> that passes through <m>(-4,-2)</m>, <m>(-2+\sqrt{2},0)</m>, <m>(-2-\sqrt{2},0)</m>, and approaches <m>(0,-2)</m> from the left (open endpoint). For <m>x \ge 0</m>, the piece <m>\frac{1}{2}(x-2)^2+1</m> is an upward-opening parabola with vertex <m>(2,1)</m> that starts at <m>(0,3)</m> (closed endpoint) and passes through <m>(4,3)</m>. The graph has a jump at <m>x = 0</m>.</p>
 
-        <image width="50%" source="solution-images/Activity1.9.4.png"/>
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-combining-piecewise-act-parabolas-soln">
+              <xi:include href="../prefigure/chap-changing/combining-piecewise-act-parabolas.xml"/>
+            </prefigure>
+            <description><p>A piecewise function <m>p(x)</m>. The first piece is an downward-opening parabola with vertex <m>(-2,2)</m> ending in an open circle at <m>(0,-2)</m>, while the second piece is an upward-opening parabola starting at a closed circle at <m>(0,3)</m> with vertex <m>(2,1)</m>.
+              </p>
+            </description>
+          </image>
+
+        <!-- <image width="50%" source="solution-images/Activity1.9.4.png"/> -->
       </solution>
     </task>
     <task workspace="6cm" xml:id="act-changing-combining-piecewise-task-4">
@@ -116,16 +153,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><md>f(x) = \begin{cases} 3 - \frac{1}{2}(x+1), \amp -2.5 \lt x \le -1 \\ 4 + \frac{3}{2}(x-1), \amp -1 \lt x \le 1 \\ 1 - \frac{3}{4}(x-1), \amp 1 \lt x \lt 3.5, \ x \ne 2 \end{cases}</md></p>
+      </answer>
       <solution>
         <p>Reading from the graph of <m>f</m>, the function appears piecewise linear on three intervals. For <m>-2.5 \lt x \le -1</m>, the line passes through <m>(-2,3.5)</m> and <m>(-1,3)</m>, giving slope <m>-\frac{1}{2}</m> and formula <m>f(x) = 3 - \frac{1}{2}(x+1)</m>. For <m>-1 \lt x \le 1</m>, the line passes through <m>(0,2.5)</m> and <m>(1,4)</m>, giving slope <m>\frac{3}{2}</m> and formula <m>f(x) = 4 + \frac{3}{2}(x-1)</m>. For <m>1 \lt x \lt 3.5</m> (excluding <m>x = 2</m>), the line passes through <m>(1,1)</m> and <m>(3,-0.5)</m>, giving slope <m>-\frac{3}{4}</m> and formula <m>f(x) = 1 - \frac{3}{4}(x-1)</m>. Thus <me>f(x) = \begin{cases} 3 - \frac{1}{2}(x+1), \amp -2.5 \lt x \le -1 \\ 4 + \frac{3}{2}(x-1), \amp -1 \lt x \le 1 \\ 1 - \frac{3}{4}(x-1), \amp 1 \lt x \lt 3.5, \ x \ne 2 \end{cases}</me></p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p>See solutions to individual tasks above.</p>
-    </solution>
   </activity>
 </worksheet>
