@@ -1,0 +1,53 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-4,-5,3,4]">
+    <grid-axes xlabel="x" ylabel="y" />
+
+    <definition>f(x)=-3-3*(x+2)</definition>
+    <definition>g(x)=-3+0.5*(x+2)</definition>
+    <definition>f1(x)=f(x)-1</definition>
+    <definition>g1(x)=g(x)-1</definition>
+    <definition>f2(x)=f(x-2)</definition>
+    <definition>g2(x)=g(x-2)</definition>
+    <definition>f3(x)=f(x-2)-1</definition>
+    <definition>g3(x)=g(x-2)-1</definition>
+
+    <group outline="tactile">
+      <graph function="f" domain="(-4,-2)" stroke="#999" />
+      <graph function="g" domain="(-2,4)" stroke="#999" />
+    </group>
+
+    <group outline="tactile">
+      <graph function="f1" domain="(-4,-2)" stroke="blue" />
+      <graph function="g1" domain="(-2,4)" stroke="blue" />
+    </group>
+
+    <group outline="tactile">
+      <graph function="f2" domain="(-4,0)" stroke="red" />
+      <graph function="g2" domain="(0,4)" stroke="red" />
+    </group>
+
+    <group outline="tactile">
+      <graph function="f3" domain="(-4,0)" stroke="orange" />
+      <graph function="g3" domain="(0,4)" stroke="orange" />
+    </group>
+
+    <label p="(-2.9,2)" clear-background="yes">
+      <m>s(x)</m>
+    </label>
+    <label p="(-3.5,-1.7)" clear-background="yes">
+      <m>k(x)</m>
+    </label>
+    <label p="(-1.2,3)" clear-background="yes">
+      <m>j(x)</m>
+    </label>
+    <label p="(2,-3.8)" clear-background="yes">
+      <m>m(x)</m>
+    </label>
+    <point p="(-2,-3)" fill="#999"/>
+    <point p="(-2,-4)" fill="blue"/>
+    <point p="(0,-3)" fill="red"/>
+    <point p="(0,-4)" fill="orange"/>
+  </coordinates>
+
+</diagram>
+

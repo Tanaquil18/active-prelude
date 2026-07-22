@@ -1,4 +1,4 @@
-<graphics id="figure" width="250" height="250" margins="5">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <coordinates bbox="[-20,-10,200,100]">
     <group>
       <grid id="grid" rx="(-20,20,200)" ry="(-10,10,100)"/>
@@ -16,5 +16,5 @@
 
   </coordinates>
 
-</graphics>
+</diagram>
 

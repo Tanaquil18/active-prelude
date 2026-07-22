@@ -1,4 +1,4 @@
-<graphics id="figure" width="250" height="250" margins="5">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <coordinates bbox="[-1,-1,5,5]">
     <group>
       <grid id="grid" rx="(-1,0.5,5)" ry="(-1,0.5,5)"/>
@@ -12,9 +12,9 @@
     <label p="(1,4)" alignment="ne" clear-background="yes">
       <m>h(t)=3-2(0.5)^t</m>
     </label>
-    
+
 
   </coordinates>
 
-</graphics>
+</diagram>
 

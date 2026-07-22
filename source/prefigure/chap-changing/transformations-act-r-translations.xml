@@ -1,7 +1,6 @@
-<graphics id="figure" width="250" height="250" margins="5">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <coordinates bbox="[-4,-4,4,4]">
-    <grid />
-    <axes id="axes" xlabel="x" ylabel="y" />
+    <grid-axes xlabel="x" ylabel="y" />
 
     <definition>p=3/2</definition>
     <definition>d=4^p/2</definition>
@@ -21,5 +20,5 @@
 
   </coordinates>
 
-</graphics>
+</diagram>
 

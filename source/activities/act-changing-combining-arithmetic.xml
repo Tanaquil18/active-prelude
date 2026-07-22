@@ -11,22 +11,36 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-changing-combining-arithmetic">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-changing-combining-arithmetic">
   <activity xml:id="act-changing-combining-arithmetic">
     <introduction>
       <p>
 			Consider the functions <m>f</m> and <m>g</m> defined by the following figures.  Assume that the given lines and curves pass through intersection points on the grid when it looks plausible.  For instance, <m>(0,2.5)</m> and <m>(3,-0.5)</m> lie on the graph of <m>f</m>, and <m>(-1,3)</m> and <m>(1.5, 1.5)</m> lie on the graph of <m>g</m>.
 		</p>
       <sidebyside width="45%">
-<!--        <figure xml:id="F-act-combining-f">
-          <caption>The function <m>f</m>.</caption> -->
-          <image source="images/combining-act-f"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--        </figure>
-        <figure xml:id="F-act-combining-g">
-          <caption>The function <m>g</m>.</caption> -->
-          <image source="images/composite-ez-g"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--        </figure> -->
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-combining-act-f">
+              <xi:include href="../prefigure/chap-changing/combining-act-f.xml"/>
+            </prefigure>
+            <description><p>A piecewise linear function <m>f(x)</m>. The first piece goes through <m>(-2,3.5)</m> and ends at the closed circle <m>(-1,3)</m>, while the second piece starts at an open circle at <m>(-1,1)</m> and ends at a closed circle at <m>(1,4)</m>, and the third piece starts at an open circle at <m>(1,1)</m> passes through an open circle at <m>(2,1/4)</m> and continues to the edge of the graph.
+              </p>
+            </description>
+          </image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-composite-ez-g-2">
+              <xi:include href="../prefigure/chap-changing/composite-ez-g.xml"/>
+            </prefigure>
+            <description><p>A piecewise function <m>g(x)</m>. The first piece is a parabola opening downward, with an open circle at the vertex <m>(0,4)</m> and a closed circle at the point <m>(0,1)</m>.  The first piece ends at a closed circle at <m>(1,3)</m>.  The second piece is a line starting at an open circle at <m>(1,2)</m> passing through an open circle at <m>(2,1)</m>, and continuing to the edge of the graph.
+              </p>
+            </description>
+          </image>
       </sidebyside>
+
+
+
+          <!-- <image source="images/combining-act-f"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image source="images/composite-ez-g"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+
       <p/>
     </introduction>
     <task workspace="3cm" xml:id="act-changing-combining-arithmetic-task-0">
@@ -36,7 +50,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>(f+g)(0) = \frac{7}{2}</m></p></answer>
       <solution>
         <p>
           From the graphs, <m>f(0) = \frac{5}{2}</m> and <m>g(0) = 1</m>, so
@@ -51,7 +65,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>(g-f)(1) = -1</m></p></answer>
       <solution>
         <p>
           From the graphs, <m>f(1) = 4</m> and <m>g(1) = 3</m>, so
@@ -66,11 +80,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>(f \cdot g)(-1) = 3</m></p></answer>
       <solution>
         <p>
-          From the graphs, <m>f(-1) = 3</m> and <m>g(-1) = 3</m>, so
-          <m>(f \cdot g)(-1) = 3 \cdot 3 = 9</m>.
+          From the graphs, <m>f(-1) = 1</m> and <m>g(-1) = 3</m>, so
+          <m>(f \cdot g)(-1) = 1 \cdot 3 = 3</m>.
         </p>
       </solution>
     </task>
@@ -81,7 +95,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>x = -2</m> and <m>x = 3</m></p></answer>
       <solution>
         <p>
           <m>\left(\frac{f}{g}\right)(x)</m> is undefined wherever <m>g(x) = 0</m>.
@@ -96,13 +110,13 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>(f \cdot g)(x) = 0</m> at <m>x= -2,\, \frac{7}{3},\, 3</m></p></answer>
       <solution>
         <p>
           <m>(f \cdot g)(x) = 0</m> wherever <m>f(x) = 0</m> or <m>g(x) = 0</m>.
           From the graphs, <m>f(x) = 0</m> at <m>x = \frac{7}{3}</m>, and
           <m>g(x) = 0</m> at <m>x = -2</m> and <m>x = 3</m>.
-          So <m>(f \cdot g)(x) = 0</m> at <m>x \in \left\{-2,\, \frac{7}{3},\, 3\right\}</m>.
+          So <m>(f \cdot g)(x) = 0</m> at <m>x= -2,\, \frac{7}{3},\, 3</m>.
         </p>
       </solution>
     </task>
@@ -113,26 +127,19 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>(f-g)(x) = 0</m> at one value between <m>x=0</m> and <m>x=1</m>.  Using algebraic formulas for the functions, <m>x = \dfrac{\sqrt{7}-1}{2}</m></p></answer>
       <solution>
         <p>
           Yes: <m>(f-g)(x) = 0</m> when <m>f(x) = g(x)</m>.
-          One intersection is visible from the graphs at <m>x = -1</m>.
-          On the interval <m>-1 \lt x \le 1</m>, the formulas are <m>f(x) = \frac{5}{2} + x</m>
+          On the interval <m>0 \lt x \le 1</m>, the function <m>f</m> starts out below the function <m>g</m> and ends up above the function <m>g</m> with no jumps or holes, so there must have been a place where the two functions crossed.  The formulas are <m>f(x) = \frac{5}{2} + x</m>
           and <m>g(x) = -x^2 + 4</m>; setting them equal gives:
           <md>
             <mrow>x^2 + x - \frac{3}{2} &amp;= 0</mrow>
             <mrow>x &amp;= \frac{-1 + \sqrt{7}}{2}.</mrow>
           </md>
-          So <m>(f-g)(x) = 0</m> at <m>x = -1</m> and <m>x = \dfrac{\sqrt{7}-1}{2}</m>.
+          So <m>(f-g)(x) = 0</m> at <m>x = \dfrac{\sqrt{7}-1}{2}</m>, and it looks like they'll cross again off the right side of the graph as well if both functions continue.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

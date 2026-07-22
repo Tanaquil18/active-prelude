@@ -51,7 +51,7 @@
 <!--        </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The function <m>f</m> does not have an inverse, because <m>f(1) = 2 = f(4)</m>.</p></answer>
       <solution>
         <p>
           The function <m>f</m> does <em>not</em> have an inverse, because <m>f(1) = 2 = f(4)</m>,
@@ -91,7 +91,7 @@
 <!--        </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The function <m>g</m> <em>does</em> have an inverse. For example, <m>g^{-1}(4) = 0</m> and <m>g^{-1}(0) = 1</m>.</p></answer>
       <solution>
         <p>
           The function <m>g</m> <em>does</em> have an inverse, since all five output values
@@ -106,7 +106,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The function <m>p</m> <em>does</em> have an inverse.  For example, <m>p^{-1}(7) = 0</m> and <m>p^{-1}(4) = 5</m>.</p></answer>
       <solution>
         <p>
           The function <m>p(t) = 7 - \frac{3}{5}t</m> is linear and one-to-one, so it
@@ -123,7 +123,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The function <m>q</m> does not have an inverse, because <m>q(1) = q(-1)</m>.</p></answer>
       <solution>
         <p>
           The function <m>q(t) = 7 - \frac{3}{5}t^4</m> does <em>not</em> have an inverse.
@@ -135,21 +135,54 @@
     <task workspace="3.5cm" xml:id="act-changing-inverse-does-it-task-4">
       <statement>
         <p>
-						The functions <m>r</m> and <m>s</m> given by the graphs in the figures below.  Assume that the graphs show all of the important behavior of the functions and that the apparent trends continue beyond what is pictured.
-					</p>
-        <sidebyside width="45%">
-<!--          <figure xml:id="F-act-inverse-does-it-1">
-            <caption>The graph of <m>y = r(t)</m>.</caption> -->
-            <image source="images/inverse-act-does-it-1"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--          </figure>
-          <figure xml:id="F-act-inverse-does-it-2">
-            <caption>The graph of <m>y = s(t)</m>.</caption> -->
-            <image source="images/inverse-act-does-it-2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--          </figure> -->
+          The functions <m>r</m> and <m>s</m> given by the graphs in the figures below.  Assume that the graphs show all of the important behavior of the functions and that the apparent trends continue beyond what is pictured.
+        </p>
+
+        <sidebyside widths="45% 45%">
+          <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-inverse-act-doesit-1">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="[-5,-5,5,5]">
+                        <grid-axes xlabel="t" ylabel="y"/>
+                        <definition>f(x)=-2.5*atan(x)</definition>
+                        <graph function="f"/>
+                        <label p="(-4,f(-4))" alignment="ne" offset="(7,7)" clear-background="yes">
+                        <m>y=r(t)</m>
+                        </label>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Graph of a decreasing function <m>r(t)</m>that is first curving downward, goes through the origin, and starts curving upward.</p></description></image>
+          <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-changing-inverse-act-doesit-2">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <coordinates bbox="[-5,-5,5,5]">
+                        <grid-axes xlabel="t" ylabel="y"/>
+                        <definition>f1(x)=-2*(x+3)+1</definition>
+                        <definition>f2(x)=2/3*x</definition>
+                        <definition>f3(x)=-x</definition>
+                        <graph function="f1" domain="(-5,-3)"/>
+                        <graph function="f2" domain="(-3,3)"/>
+                        <graph function="f3" domain="(3,5)"/>
+                        <label p="(-4,f1(-4))" alignment="ne" offset="(7,7)" clear-background="yes">
+                        <m>y=s(t)</m>
+                        </label>
+                        <point p="(-3,f1(-3))" fill="white"/>
+                        <point p="(-3,f2(-3))" fill="blue"/>
+                        <point p="(3,f2(3))" fill="white"/>
+                        <point p="(3,f3(3))" fill="blue"/>
+                      </coordinates>
+                    </diagram>
+                </prefigure>
+            <description><p>Graph of a piecewise linear function <m>s(t)</m> whose first piece goes from <m>(-5,5)</m> to an open circle at <m>(-3,1)</m>, and whose second piece goes from a closed circle at <m>(-3,-2)</m> ending with an open circle at <m>(3,2)</m>, and whose third piece goes from a closed circle at <m>(3,-3)</m> to the edge of the graph at <m>(5,-5)</m>.</p></description></image>
         </sidebyside>
+        <!-- <sidebyside width="45%">
+            <image source="images/inverse-act-does-it-1"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+            <image source="images/inverse-act-does-it-2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        </sidebyside> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The function <m>r</m> has an inverse, for example <m>r^{-1}(2) = -1</m> and <m>r^{-1}(0) = 0</m>.  The function <m>s</m> does not have an inverse.</p></answer>
       <solution>
         <p>
           The function <m>r(t)</m> passes the horizontal line test, so it <em>does</em>
@@ -162,11 +195,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

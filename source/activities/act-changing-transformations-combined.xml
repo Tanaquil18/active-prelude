@@ -11,22 +11,28 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-changing-transformations-combined">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-changing-transformations-combined">
   <activity xml:id="act-changing-transformations-combined">
     <introduction>
       <p>
 			Consider the functions <m>f</m> and <m>g</m> given in the following figures.
 		</p>
-      <sidebyside width="45%">
-<!--        <figure xml:id="F-act-transformations-f">
-          <caption>A parent function <m>f</m>.</caption> -->
+    <sidebyside widths="45% 45%">
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-f-combined">
+              <xi:include href="../prefigure/chap-changing/transformations-act-f-combined.xml"/>
+            </prefigure>
+            <description><p>Graph of a piecewise linear function <m>f(x)</m> whose first piece goes from <m>(-4,2)</m> to the point <m>(-2,2)</m>, and whose second piece goes from <m>(-2,2)</m> to <m>(2,2)</m>, and whose third piece goes from <m>(2,2)</m> to the edge of the graph at <m>(4,2)</m>. The point <m>(-2,2)</m> is marked on the graph.</p></description></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-g-combined">
+              <xi:include href="../prefigure/chap-changing/transformations-act-g-combined.xml"/>
+            </prefigure>
+            <description><p>Graph of a function <m>g(x)</m> which is going up and down repeatedly, hitting peaks of <m>1.5</m> and valleys of <m>-1.5</m>.  The point <m>(1.5,1.5)</m> is marked on the graph.</p></description></image>
+        </sidebyside>
+      <!-- <sidebyside width="45%">
           <image source="images/transformations-act-f-combined"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--        </figure>
-        <figure xml:id="F-act-transformations-g">
-          <caption>A parent function <m>g</m>.</caption> -->
           <image source="images/transformations-act-g-combined"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--        </figure> -->
-      </sidebyside>
+      </sidebyside> -->
       <p/>
     </introduction>
     <task workspace="5cm" xml:id="act-changing-transformations-combined-task-0">
@@ -36,7 +42,14 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Shift right 1 unit, then compress vertically by a factor of <m>\frac{1}{2}</m>, then reflect across the <m>x</m>-axis, and lastly shift up 2 units. The point <m>(-2, 2)</m> on <m>f</m> moves to <m>(-1, 1)</m> on <m>p</m>.</p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-f-combined-p-ans">
+            <xi:include href="../prefigure/chap-changing/transformations-act-f-combined-p.xml"/>
+          </prefigure>
+          <description><p>Graph of the piecewise linear function <m>f(x)</m>, along with a transformation of <m>f</m>.</p><p>The function <m>p(x)</m> is also piecewise linear, but has been flipped upside-down, shrunk vertically so that the slopes of each line are half what they are in <m>g</m>, and shifted to the right. The point <m>(-1,1)</m> is marked on the graph of <m>p</m>.</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
           The function <m>p(x) = -\frac{1}{2}f(x-1)+2</m> is obtained from <m>f</m> by
@@ -45,7 +58,14 @@
           The point <m>(-2, 2)</m> on <m>f</m> moves to <m>(-1, 1)</m> on <m>p</m>.
         </p>
 
-        <image width="50%" source="solution-images/Activity1.8.4a.png"/>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-f-combined-p-soln">
+            <xi:include href="../prefigure/chap-changing/transformations-act-f-combined-p.xml"/>
+          </prefigure>
+          <description><p>Graph of the piecewise linear function <m>f(x)</m>, along with a transformation of <m>f</m>.</p><p>The function <m>p(x)</m> is also piecewise linear, but has been flipped upside-down, shrunk vertically so that the slopes of each line are half the magnitude of what they are in <m>g</m>, and shifted to the right. The point <m>(-1,1)</m> is marked on the graph of <m>p</m>.</p></description>
+        </image>
+
+        <!-- <image width="50%" source="solution-images/Activity1.8.4a.png"/> -->
       </solution>
     </task>
     <task workspace="5cm" xml:id="act-changing-transformations-combined-task-1">
@@ -55,7 +75,15 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Shift left <m>0.5</m> units, then stretch vertically by a factor of 2, and lastly
+          shift down <m>0.75</m> units. The point <m>(1.5, 1.5)</m> on <m>g</m> moves to <m>(1, 2.25)</m> on <m>q</m>.</p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-g-combined-q-ans">
+            <xi:include href="../prefigure/chap-changing/transformations-act-g-combined-q.xml"/>
+          </prefigure>
+          <description><p>Graph of the function <m>g(x)</m>, along with a transformation of <m>g</m>.</p><p>The function <m>g</m> is going up and down repeatedly, hitting peaks of <m>1.5</m> and valleys of <m>-1.5</m>.  The point <m>(1.5,1.5)</m> is marked on the graph of <m>g</m>.</p><p>The function <m>q(x)</m> is also going up and down repeatedly, but reaches higher peaks and valleys and has been shifted horizontally. The point <m>(1,2.25)</m> is marked on the graph of <m>q</m>.</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
           The function <m>q(x) = 2g(x+0.5) - 0.75</m> is obtained from <m>g</m> by
@@ -64,7 +92,13 @@
           The point <m>(1.5, 1.5)</m> on <m>g</m> moves to <m>(1, 2.25)</m> on <m>q</m>.
         </p>
 
-        <image width="50%" source="solution-images/Activity1.8.4b.png"/>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-g-combined-q-soln">
+            <xi:include href="../prefigure/chap-changing/transformations-act-g-combined-q.xml"/>
+          </prefigure>
+          <description><p>Graph of the function <m>g(x)</m>, along with a transformation of <m>g</m>.</p><p>The function <m>g</m> is going up and down repeatedly, hitting peaks of <m>1.5</m> and valleys of <m>-1.5</m>.  The point <m>(1.5,1.5)</m> is marked on the graph of <m>g</m>.</p><p>The function <m>q(x)</m> is also going up and down repeatedly, but reaches higher peaks and valleys and has been shifted horizontally. The point <m>(1,2.25)</m> is marked on the graph of <m>q</m>.</p></description></image>
+
+        <!-- <image width="50%" source="solution-images/Activity1.8.4b.png"/> -->
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-changing-transformations-combined-task-2">
@@ -74,7 +108,9 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Both shift <m>f</m> right 1 unit and apply a vertical
+          compression and reflection by <m>-\frac{1}{2}</m>, but <m>p</m> then shifts
+          the result up 2 units while <m>r</m> shifts it down 2 units.</p></answer>
       <solution>
         <p>
           Algebraically:
@@ -92,26 +128,35 @@
         <p>
 						Find a formula for a function <m>y = s(x)</m> (in terms of <m>g</m>) that represents this transformation of <m>g</m>: a horizontal shift of <m>1.25</m> units left, followed by a reflection across the <m>x</m>-axis and a vertical stretch by a factor of <m>2.5</m> units, followed by a vertical shift of <m>1.75</m> units.  Sketch an accurate, labeled graph of <m>s</m> on the following axes along with the given parent function <m>g</m>.
 					</p>
-        <sidebyside width="45%">
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-g-combined-2">
+                <xi:include href="../prefigure/chap-changing/transformations-act-g-combined.xml"/>
+            </prefigure>
+            <description><p>Graph of a function <m>g(x)</m> which is going up and down repeatedly, hitting peaks of <m>1.5</m> and valleys of <m>-1.5</m>.  The point <m>(1.5,1.5)</m> is marked on the graph.</p></description></image>
+        <!-- <sidebyside width="45%">
           <image width="50%" source="images/transformations-act-g-combined"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-        </sidebyside>
+        </sidebyside> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>s(x) = -2.5\,g(x+1.25) + 1.75.</m></p>
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-g-combined-s-ans">
+                <xi:include href="../prefigure/chap-changing/transformations-act-g-combined-s.xml"/>
+            </prefigure>
+            <description><p>Graph of a function <m>g(x)</m> which is going up and down repeatedly, hitting peaks of <m>1.5</m> and valleys of <m>-1.5</m>.  The point <m>(1.5,1.5)</m> is marked on the graph.</p></description></image>
+      </answer>
       <solution>
         <p>
           <md>s(x) = -2.5\,g(x+1.25) + 1.75.</md>
           The point <m>(1.5, 1.5)</m> on <m>g</m> moves to <m>(0.25, -2)</m> on <m>s</m>.
         </p>
-
-        <image width="50%" source="solution-images/Activity1.8.4d.png"/>
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-g-combined-s-soln">
+                <xi:include href="../prefigure/chap-changing/transformations-act-g-combined-s.xml"/>
+            </prefigure>
+            <description><p>Graph of a function <m>g(x)</m> which is going up and down repeatedly, hitting peaks of <m>1.5</m> and valleys of <m>-1.5</m>.  The point <m>(1.5,1.5)</m> is marked on the graph.</p></description></image>
+        <!-- <image width="50%" source="solution-images/Activity1.8.4d.png"/> -->
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

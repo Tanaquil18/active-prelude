@@ -1,4 +1,4 @@
-<graphics id="figure" width="250" height="250" margins="5">
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <coordinates bbox="[-4,-4,4,4]">
     <group>
       <grid rx="(-4,1,4)" ry="(-4,1,4)" />
@@ -33,9 +33,9 @@
     <label p="(-2.8,3)" alignment="ne" offset="(5,5)" clear-background="yes">
       <m>f(x)</m>
     </label>
-      
+
 
   </coordinates>
 
-</graphics>
+</diagram>
 
