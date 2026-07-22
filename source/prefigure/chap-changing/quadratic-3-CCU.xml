@@ -1,0 +1,32 @@
+<graphics id="figure" width="250" height="250" margins="[5,5,5,5]">
+  <coordinates bbox="[-3,-3,7,7]">
+    <group>
+      <grid />
+      <axes id="axes" xlabel="x" ylabel="y" decorations="no"/>
+    </group>
+
+    <definition>q(x)=(x-2)^2/4</definition>
+    <definition>r(x)=q(x)-2.5</definition>
+    <definition>p(x)=q(x)+2.5</definition>
+
+    <graph function="q" />
+    <graph function="r" tactile-dash="18 18" />
+    <graph function="p" tactile-dash="18 9" />
+
+    <point p="(2,0)" />
+    <point p="(2+sqrt(10),0)" />
+    <point p="(2-sqrt(10),0)" />
+
+    <label p="(4.9,5)" alignment="nw" clear-background="yes">
+      <m>p(x)</m>
+    </label>
+    <label p="(3.75,1)" alignment="nw" clear-background="yes">
+      <m>q(x)</m>
+    </label>
+    <label p="(4.25,-1.5)" alignment="se" clear-background="yes">
+      <m>r(x)</m>
+    </label>
+
+  </coordinates>
+
+</graphics>

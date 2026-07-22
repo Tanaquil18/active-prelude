@@ -1,0 +1,29 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-0.5, -10, 3.5, 70]">
+    <axes id="axes" xlabel="x" ylabel="y"
+	  decorations="no" hticks="(1,1,2)" />
+
+    <definition>f(x)=64-16*(x-1/2)^2</definition>
+
+    <definition>a=1</definition>
+    <definition>b=2</definition>
+
+    <line p1="(a,f(a))" p2="(b,f(b))" stroke="green" thickness="2"
+	  tactile-dash="18 18" infinite="yes" cliptobbox="yes"/>
+
+    <graph function="f" />
+    <point p="(a,f(a))"><m>(a,f(a))</m></point>
+    <point p="(b,f(b))" alignment="sw"><m>(b,f(b))</m></point>
+
+    <label p="(a,-5)" alignment="center"
+	   tactile-p="(a,0)"
+	   tactile-alignment="ha"><m>a</m></label>
+    <label p="(b,-5)" alignment="center"
+	   tactile-p="(b,0)"
+	   tactile-alignment="ha"><m>b</m></label>
+      
+
+  </coordinates>
+
+</graphics>
+

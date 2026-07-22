@@ -1,0 +1,13 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-5,-2,5,8]">
+    <group>
+      <grid id="grid" rx="(-5,1,5)" ry="(-2,1,8)"/>
+      <axes id="axes" decorations="no"
+	    hticks="(-5,1,5)" vticks="(-2,1,8)"
+	    xlabel="x" ylabel="y"/>
+    </group>
+
+  </coordinates>
+
+</graphics>
+

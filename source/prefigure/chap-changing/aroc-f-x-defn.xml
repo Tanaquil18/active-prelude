@@ -1,0 +1,27 @@
+<graphics id="figure" width="300" height="300" margins="5">
+  <coordinates bbox="[-1,-1,5,5]">
+    <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+    <definition> a=1 </definition>
+    <definition> b=4 </definition>
+    <definition> f(x) = (0.05*x*(x+2)*(x-4))*(x+1) + 2.5 </definition>
+    
+    <group id="graph-secant">
+      <graph id="graph" function="f" />
+      <line id="secant" p1="(a,f(a))" p2="(b,f(b))" stroke="red"
+	    thickness="2" infinite="yes"/>
+      <point id="point-a" p="(a,f(a))" alignment="se" offset="(14,0)">
+	<m>(a,f(a))</m>
+      </point>
+      <point id="point-b" p="(b,f(b))" alignment="nw" >
+	<m>(b,f(b))</m>
+      </point>
+    </group>
+    
+    <label p="(2,4)" aligment="center" clear-background="yes">
+      <me>AV_{[a,b]} = \frac{s(b)-s(a)}{b-a}</me>
+    </label>
+    
+  </coordinates>
+  
+</graphics>
+

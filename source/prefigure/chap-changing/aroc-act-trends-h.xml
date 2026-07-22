@@ -1,0 +1,20 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-1,-1,5,5]">
+    <group>
+      <grid id="grid" rx="(-1,0.5,5)" ry="(-1,0.5,5)"/>
+      <axes id="axes" xlabel="t" ylabel="y"/>
+    </group>
+
+    <definition>h(t)=3-2*(0.5)^t</definition>
+
+    <graph function="h" />
+
+    <label p="(1,4)" alignment="ne" clear-background="yes">
+      <m>h(t)=3-2(0.5)^t</m>
+    </label>
+    
+
+  </coordinates>
+
+</graphics>
+

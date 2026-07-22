@@ -1,0 +1,17 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-5,-5,5,5]">
+    <group>
+      <grid id="grid" />
+      <axes id="axes" xlabel="x" ylabel="y" />
+    </group>
+
+    <definition>f(x)=3-1/3*(x+2)</definition>
+
+    <graph function="f" />
+
+    <label p="(3,3)" alignment="center" clear-background="yes">
+      <m>y=h(x)</m>
+    </label>
+  </coordinates>
+
+</graphics>

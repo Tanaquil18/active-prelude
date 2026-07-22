@@ -1,0 +1,25 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-4,-4,4,4]">
+    <grid />
+    <axes id="axes" xlabel="x" ylabel="y" />
+
+    <definition>p=3/2</definition>
+    <definition>d=4^p/2</definition>
+    <definition>f(x)=1+3/2*(x+2)</definition>
+    <definition>g(x)=1-(x+2)^p/d</definition>
+    <definition>h(x)=-1+(x-2)</definition>
+
+    <group outline="tactile">
+      <graph function="f" domain="(-4,-2)" />
+      <graph function="g" domain="(-2,2)" />
+      <graph function="h" domain="(2,4)" />
+    </group>
+
+    <label p="(-2,1)" alignment="nw" clear-background="yes" offset="(-7,7)">
+      <m>r(x)</m>
+    </label>
+
+  </coordinates>
+
+</graphics>
+

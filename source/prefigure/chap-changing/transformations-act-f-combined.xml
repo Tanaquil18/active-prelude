@@ -1,0 +1,27 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-4,-4,4,4]">
+    <grid />
+    <axes id="axes" xlabel="x" ylabel="y" />
+
+    <definition>f(x)=2+2*(x+2)</definition>
+    <definition>g(x)=2</definition>
+    <definition>h(x)=2-2*(x-2)</definition>
+
+    <group outline="tactile">
+      <graph function="f" domain="(-4,-2)" />
+      <graph function="g" domain="(-2,2)" />
+      <graph function="h" domain="(2,4)" />
+    </group>
+    
+    <point p="(-2,2)" alignment="nw" clear-background="yes"
+	   offset="(-7,7)" tactile-offset="(-7,15)">
+      <m>(-2,2)</m>
+    </point>
+    <label p="(2.8,1)" alignment="east">
+      <m>f(x)</m>
+    </label>
+
+  </coordinates>
+
+</graphics>
+

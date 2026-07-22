@@ -1,0 +1,21 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-4,-4,4,4]">
+    <grid />
+    <axes id="axes" xlabel="x" ylabel="y" />
+
+    <definition>f(x)=-1.5*sin(pi*x)</definition>
+
+    <graph function="f" tactile-N="200"/>
+    
+    <point p="(1.5,1.5)" alignment="ne" clear-background="yes"
+	   offset="(7,7)" tactile-offset="(7,15)">
+      <m>(1.5,1.5)</m>
+    </point>
+    <label p="(-2.5,2)" alignment="ne">
+      <m>g(x)</m>
+    </label>
+
+  </coordinates>
+
+</graphics>
+

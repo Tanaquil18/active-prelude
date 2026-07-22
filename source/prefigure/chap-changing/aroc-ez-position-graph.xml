@@ -1,0 +1,32 @@
+<graphics id="figure" width="250" height="321" margins="5">
+  <coordinates bbox="[-2,-2,12,16]">
+    <group>
+      <grid id="grid" rx="(-2,1,12)" ry="(-2,1,16)"/>
+      <axes id="axes" xlabel="t" ylabel="y"
+	    hlabels="(2,4,10)" vlabels="(2,4,14)"
+	    hticks="(2,2,10)" vticks="(2,2,14)"/>
+    </group>
+
+    <definition>f1(x)=2*sin(0.5*pi*(x-1)) + 2</definition>
+    <definition>f2(x)=4</definition>
+    <definition>f3(x)=-2*sin(0.5*pi*(x-2)) + 6</definition>
+    <definition>f4(x)=8</definition>
+    <definition>f5(x)=-2*sin(0.5*pi*(x-2)) + 10</definition>
+    <definition>f6(x)=12</definition>
+    <definition>f7(x)=-2*sin(0.5*pi*(x-1)) + 14 </definition>
+
+    <graph function="f1" domain="(0,2)" />
+    <graph function="f2" domain="(2,3)" />
+    <graph function="f3" domain="(3,5)" />
+    <graph function="f4" domain="(5,7)" />
+    <graph function="f5" domain="(7,9)" />
+    <graph function="f6" domain="(9,10)" />
+    <graph function="f7" domain="(10,12)" />
+
+    <label p="(6,12)" alignment="west" clear-background="yes">
+      <m>y=s(t)</m>
+    </label>
+  </coordinates>
+
+</graphics>
+

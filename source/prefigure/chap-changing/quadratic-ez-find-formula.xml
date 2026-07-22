@@ -1,0 +1,34 @@
+<graphics id="figure" width="250" height="250" margins="[5,5,5,5]">
+  <coordinates bbox="[-7,-7,7,7]">
+    <group>
+      <grid rx="(-6,2,6)" ry="(-6,2,6)" />
+      <axes id="axes" xlabel="x" ylabel="y"
+	    hlabels="(-6,2,6)" vlabels="(-6,2,6)" />
+    </group>
+
+    <definition>f(x)=2+(x-2)^2/2</definition>
+    <definition>g(x)=2-2*(x+2)^2</definition>
+
+    <graph function="f" />
+
+    <graph function="g" stroke="green" tactile-dash="18 18" />
+
+    <point p="(0,f(0))" />
+    <point p="(2,f(2))" />
+    <point p="(-4,g(-4))" />
+    <point p="(-3,g(-3))" />
+    <point p="(-1,g(-1))" />
+
+    <label p="(-2,g(-2))" alignment="nw" clear-background="yes"
+	   offset="(-7,7)" >
+      <m>g(x)</m>
+    </label>
+    
+    <label p="(4,4)" alignment="se" clear-background="yes"
+	   offset="(7,-7)">
+      <m>f(x)</m>
+    </label>
+    
+  </coordinates>
+
+</graphics>
