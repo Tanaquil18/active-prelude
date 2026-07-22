@@ -1,0 +1,12 @@
+<graphics id="figure" width="250" height="321" margins="5">
+  <coordinates bbox="[-2,-2,12,16]">
+    <group>
+      <grid id="grid" rx="(-2,1,12)" ry="(-2,1,16)"/>
+      <axes id="axes" xlabel="t" ylabel="s" decorations="no"
+	    hticks="(2,2,10)" vticks="(2,2,14)"/>
+    </group>
+
+  </coordinates>
+
+</graphics>
+

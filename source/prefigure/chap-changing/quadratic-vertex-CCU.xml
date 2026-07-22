@@ -1,0 +1,30 @@
+<graphics id="figure" width="250" height="250" margins="[5,5,5,5]">
+  <coordinates bbox="[-3,-3,7,7]">
+    <group>
+      <axes id="axes" xlabel="x" ylabel="y" decorations="no"/>
+    </group>
+
+    <definition>p(x)=(x-2)^2/4+2.5</definition>
+
+    <line p1="(2,bbox[1])" p2="(2,bbox[3])" stroke="#999"
+	  thickness="2" infinite="yes" cliptobbox="yes" dash="8 8"
+	  tactile-dash="18 18"/>
+
+    <graph function="p" />
+
+    <point p="(2,p(2))" alignment="se">
+      <m>\left(-\frac{b}{2a},p\left(-\frac{b}{2a}\right)\right)</m>
+    </point>
+    <point p="(0,p(0))" />
+    <point p="(4,p(4))" />
+
+    <label p="(2,-2)" alignment="east">
+      <m>x=-\frac{b}{2a}</m>
+    </label>
+    <label p="(5.25,p(5.25))" alignment="nw">
+      <m>p(x)</m>
+    </label>
+
+  </coordinates>
+
+</graphics>

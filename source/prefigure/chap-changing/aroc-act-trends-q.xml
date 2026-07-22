@@ -1,0 +1,20 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-1,-1,5,5]">
+    <group>
+      <grid id="grid" rx="(-1,0.5,5)" ry="(-1,0.5,5)"/>
+      <axes id="axes" xlabel="x" ylabel="y"/>
+    </group>
+
+    <definition>f(x)=4-(x-2)^2</definition>
+
+    <graph function="f" />
+
+    <label p="(1,4.2)" alignment="ne" clear-background="yes">
+      <m>q(x)=4-(x-2)^2</m>
+    </label>
+    
+
+  </coordinates>
+
+</graphics>
+
