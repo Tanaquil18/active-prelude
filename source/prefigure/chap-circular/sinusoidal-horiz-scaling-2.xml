@@ -1,0 +1,25 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>f(x)=-(x+2)^2+2</definition>
+  <coordinates bbox="[-8,-8,8,8]">
+    <grid rx="(-8,2,8)" ry="(-8,2,8)" />
+    <axes id="axes" xlabel="t" ylabel="y"
+	  hticks="(-8,2,8)" vticks="(-8,2,8)"
+	  hlabels="(-6,6,6)" vlabels="(-6,6,6)"/>
+
+    <graph function="f"/>
+
+    <point p="(-4,-2)"/>
+    <point p="(-2,2)" alignment="nw">
+      <m>(-2,2)</m>
+    </point>
+    <point p="(0,-2)"/>
+
+    <label p="(-6,-4)" alignment="center" clear-background="yes">
+      <m>g(t)</m>
+    </label>
+
+  </coordinates>
+
+
+</diagram>
+

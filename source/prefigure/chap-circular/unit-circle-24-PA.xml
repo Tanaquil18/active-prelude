@@ -1,0 +1,26 @@
+<diagram xmlns="https://prefigure.org" width="350" height="350" margins="5">
+  <definition>space=0.2</definition>
+  <definition>p(x)=(cos(x/12*pi),sin(x/12*pi))</definition>
+
+  <coordinates bbox="[-6*space,-6*space,6*space,6*space]">
+    <grid rx="(-6*space,space,6*space)" ry="(-6*space,space,6*space)"/>
+    <axes id="axes" decorations="no"/>
+
+    <circle center="(0,0)" r="1"/>
+
+    <repeat parameter="k=0..23">
+      <point p="p(k)"/>
+    </repeat>
+
+    <label p="p(1)" alignment="sw" tactile-offset="(-9,-9)">
+      <m>t=\frac{\pi}{12}</m>
+    </label>
+
+    <label p="p(2)" alignment="sw" tactile-offset="(-9,-9)">
+      <m>t=\frac{\pi}{6}</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

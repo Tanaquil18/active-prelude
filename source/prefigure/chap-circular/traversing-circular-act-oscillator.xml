@@ -1,0 +1,24 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>p=2*pi/4</definition>
+  <definition>f(x)=8-5*sin(p*x)</definition>
+
+  <coordinates bbox="[-2,-2,14,14]">
+    <clip lower-left="(0,0)" dimensions="(20,20)">
+      <grid rx="(0,2,14)" ry="(0,2,14)"/>
+    </clip>
+
+    <axes id="axes"
+	  xlabel="t" ylabel="h"
+	  hlabels="(2,2,14)" vlabels="(2,2,14)"/>
+
+    <graph function="f" domain="(0,14)"/>
+
+    <label p="(9,3)" alignment="sw" offset="(-8,-8)"
+	   clear-background="yes">
+      <m>h=f(t)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

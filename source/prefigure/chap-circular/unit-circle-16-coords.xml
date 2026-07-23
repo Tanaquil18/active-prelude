@@ -1,0 +1,44 @@
+<diagram xmlns="https://prefigure.org" width="500" height="500" margins="[5,5,50,5]">
+  <definition>space=0.2</definition>
+  <definition>p=(cos(pi/3), sin(pi/3))</definition>
+
+  <coordinates bbox="[-6*space,-6*space,6*space,6*space]">
+    <grid rx="(-6*space,space,6*space)" ry="(-6*space,space,6*space)"/>
+    <axes id="axes" decorations="no" xlabel="x" ylabel="y" />
+
+    <circle center="(0,0)" r="1" cliptobbox="yes"/>
+
+    <line p1="(0,0)" p2="(cos(pi/6), sin(pi/6))" stroke="green"
+	     tactile-dash="9 9" thickness="2"/>
+
+    <repeat parameter="k=0..3">
+      <point p="(cos(k*pi/2), sin(k*pi/2))"/>
+      <point p="(cos(pi/3+k*pi/2), sin(pi/3+k*pi/2))"/>
+      <point p="(cos(pi/4+k*pi/2), sin(pi/4+k*pi/2))"/>
+      <point p="(cos(pi/6+k*pi/2), sin(pi/6+k*pi/2))"/>
+    </repeat>
+
+
+    <label p="(cos(pi/6), sin(pi/6))" alignment="east"
+	   clear-background="no">
+      <m>\left(\frac{\sqrt{3}}2, \frac12\right)_{t=\frac{\pi}6}</m>
+    </label>
+
+    <label p="(cos(pi/4), sin(pi/4))" alignment="east" offset="(9,9)"
+	   clear-background="no">
+      <m>\left(\frac1{\sqrt{2}}, \frac1{\sqrt{2}}\right)_{t=\frac{\pi}4}</m>
+    </label>
+
+    <label p="(cos(pi/3), sin(pi/3))" alignment="ne" offset="(0,6)"
+	   clear-background="no">
+      <m>\left(\frac12,\frac{\sqrt{3}}2\right)_{t=\frac{\pi}3}</m>
+    </label>
+
+    <label p="smult(0.5,(cos(pi/6), sin(pi/6)))" alignment="nw">
+      <m>1</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

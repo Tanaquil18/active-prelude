@@ -1,0 +1,61 @@
+<diagram xmlns="https://prefigure.org" dimensions="(450,250)" margins="5">
+  <definition>k=pi/8</definition>
+  <definition>f(x)=cos(k*x)</definition>
+  <definition>p=[0,4/3,2,8/3,4,16/3,6,20/3]</definition>
+
+  <coordinates bbox="[-2,-1.25,18,1.25]">
+    <grid-axes decorations="no" xlabel="t" ylabel="k"
+	  hticks="(0,2,18)" vticks="(-1,0.25,1)"
+	  vlabels="(-1,1,1)" spacings="((-2,1,18),(-1.25,0.25,1.25))"/>
+
+    <graph function="f"/>
+
+    <point p="(2,f(2))" alignment="ne"><m>\left(\frac{\pi}{4},\frac{\sqrt{2}}{2}\right)</m></point>
+    <point p="(2.666,f(2.666))" alignment="sw"><m>\left(\frac{\pi}{3},\frac{1}{2}\right)</m></point>
+    <point p="(8,f(8))" alignment="s"><m>\left(\pi,-1\right)</m></point>
+    <point p="(9.333,f(9.333))" alignment="e"><m>\left(\frac{7\pi}{6},-\frac{\sqrt{3}}{2}\right)</m></point>
+    <point p="(16,f(16))" alignment="nw"><m>\left(2\pi,1\right)</m></point>
+
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(4,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}2</m>
+    </label>
+
+    <label p="(6,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(10,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{5\pi}4</m>
+    </label>
+
+    <label p="(12,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}2</m>
+    </label>
+
+    <label p="(14,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{7\pi}4</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-12)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <label p="(8,1.15)" clear-background="yes">
+      <m>g(t)=\cos(t)</m>
+    </label>
+
+
+  </coordinates>
+
+
+
+</diagram>
+

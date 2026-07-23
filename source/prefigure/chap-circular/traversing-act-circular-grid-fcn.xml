@@ -1,0 +1,22 @@
+<diagram xmlns="https://prefigure.org" width="550" height="300" margins="5">
+  <definition>f(x)=4/pi*sin(pi/4*x-pi)+2</definition>
+  <coordinates bbox="[-.6,-.3,16.6,4]">
+    <grid-axes
+	    xlabel="d" ylabel="h" hlabels="(2,2,16)"
+	    hticks="(0,1,16)" vticks="(0,.5,8)" spacings="((0,1,16),(0,.5,8))"/>
+
+    <graph function="f" domain="[0,16]"/>
+
+    <point p="(6,f(6))"><m>(6,3.27)</m></point>
+    <point p="(2,f(2))" alignment="se"><m>(2,0.73)</m></point>
+    <point p="(4,f(4))" alignment="nw"><m>(4,2)</m></point>
+    <point p="(8,f(8))" alignment="ne"><m>(8,2)</m></point>
+    <point p="(10,f(10))" alignment="se"><m>(10,0.73)</m></point>
+    <point p="(12,f(12))" alignment="nw"><m>(12,2)</m></point>
+    <point p="(14,f(14))"><m>(14,3.27)</m></point>
+    <point p="(16,f(16))" alignment="s"><m>(16,2)</m></point>
+
+  </coordinates>
+
+</diagram>
+

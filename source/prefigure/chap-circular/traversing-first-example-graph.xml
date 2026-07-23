@@ -1,0 +1,40 @@
+<diagram xmlns="https://prefigure.org" width="350" height="250" margins="[20,20,5,5]">
+  <coordinates bbox="[0,-1,48,8]">
+    <group>
+      <clip lower-left="(0,0)" dimensions="(50,10)">
+	<grid id="grid" rx="(0,3,48)" ry="(0,1,8)"/>
+      </clip>
+      <axes id="axes" decorations="no"
+	    ylabel="h"
+	    hlabels="(6,6,48)" vlabels="(2,2,6)"
+	    hticks="(6,6,48)" vticks="(0,1,8)"/>
+    </group>
+
+    <definition>r=12/pi</definition>
+    <definition>f(x)=r-r*cos(x/12*pi)</definition>
+    <line p1="(3,0)" p2="(3,f(3))" stroke="green" tactile-dash="8 8" />
+    <line p1="(15,0)" p2="(15,f(15))" stroke="green" tactile-dash="8 8" />
+    <graph function="f"/>
+    <repeat parameter="k=0..16">
+      <point p="(3*k, f(3*k))"/>
+    </repeat>
+
+    <label p="(3,f(3))" alignment="east" clear-background="yes"
+	   offset="(12,-8)">
+      <m>(3,f(3))</m>
+    </label>
+    <label p="(15,f(15))" alignment="east" clear-background="yes"
+	   offset="(12,8)">
+      <m>(15,f(15))</m>
+    </label>
+    <label p="(42,2)" alignment="west" clear-background="yes">
+      <m>h=f(d)</m>
+    </label>
+    <label p="(48,0.5)" alignment="c" tactile-offset="(0,5)">
+      <m>d</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

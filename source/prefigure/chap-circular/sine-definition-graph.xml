@@ -1,0 +1,73 @@
+<diagram xmlns="https://prefigure.org" width="450" height="250" margins="5">
+  <definition>k=pi/8</definition>
+  <definition>f(x)=sin(k*x)</definition>
+  <definition>p=[0,1/6,1/4,1/3,1/2,2/3,3/4,5/6]</definition>
+  <definition>p=[0,4/3,2,8/3,4,16/3,6,20/3]</definition>
+
+  <coordinates bbox="[-2,-1.25,18,1.25]">
+    <grid rx="(-2,1,18)" ry="(-1.25,0.25,1.25)"/>
+    <axes id="axes" decorations="no" xlabel="t" ylabel="h"
+	  hticks="(0,2,18)" vticks="(-1,0.25,1)"
+	  vlabels="(-1,1,1)"/>
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(4,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}2</m>
+    </label>
+
+    <label p="(6,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(10,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{5\pi}4</m>
+    </label>
+
+    <label p="(12,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}2</m>
+    </label>
+
+    <label p="(14,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{7\pi}4</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <label p="(16,0.75)" alignment="west" clear-background="yes"
+	   tactile-offset="(0,40)">
+      <m>h=f(t)</m>
+    </label>
+
+    <graph function="f"/>
+
+    <repeat parameter="m=0..7">
+      <point p="(p[m], f(p[m]))" />
+      <point p="(p[m]+8, f(p[m]+8))" />
+    </repeat>
+
+    <point p="(16,0)"/>
+
+    <label p="(20/3, f(20/3))" alignment="ne">
+      <m>\left(\frac{5\pi}6,\frac12\right)</m>
+    </label>
+
+    <label p="(40/3, f(40/3))" alignment="se">
+      <m>\left(\frac{5\pi}3,-\frac{\sqrt{3}}2\right)</m>
+    </label>
+
+
+
+  </coordinates>
+
+
+
+</diagram>
+

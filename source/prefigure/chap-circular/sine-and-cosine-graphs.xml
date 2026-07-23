@@ -1,0 +1,67 @@
+<diagram xmlns="https://prefigure.org" dimensions="(450,250)" margins="5">
+  <definition>k=pi/8</definition>
+  <definition>f(x)=sin(k*x)</definition>
+  <definition>g(x)=cos(k*x)</definition>
+  <definition>p=[0,4/3,2,8/3,4,16/3,6,20/3]</definition>
+
+  <coordinates bbox="[-2,-1.25,18,1.25]">
+    <grid rx="(-2,1,18)" ry="(-1.25,0.25,1.25)"/>
+    <axes id="axes" decorations="no" xlabel="t" ylabel="y"
+	  hticks="(0,2,18)" vticks="(-1,0.25,1)"
+	  vlabels="(-1,1,1)"/>
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(4,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}2</m>
+    </label>
+
+    <label p="(6,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(10,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{5\pi}4</m>
+    </label>
+
+    <label p="(12,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}2</m>
+    </label>
+
+    <label p="(14,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{7\pi}4</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <label p="(6,-1)" alignment="nw" clear-background="yes">
+      <m>g(t)=\cos(t)</m>
+    </label>
+
+    <label p="(6,1)" alignment="se" clear-background="yes">
+      <m>f(t)=\sin(t)</m>
+    </label>
+
+    <group outline="tactile">
+      <vector v="(4,0)" tail="(8/3,1/2)" thickness="3"/>
+
+      <graph function="f"/>
+      <graph function="g" stroke="green" tactile-dash="9 9"/>
+    </group>
+
+
+
+
+  </coordinates>
+
+
+
+</diagram>
+

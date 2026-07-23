@@ -1,0 +1,33 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>space=0.2</definition>
+  <definition>p=(0.8,0.6)</definition>
+
+  <coordinates bbox="[-6*space,-6*space,6*space,6*space]">
+    <grid rx="(-6*space,space,6*space)" ry="(-6*space,space,6*space)"/>
+    <axes id="axes" decorations="no"/>
+
+    <circle center="(0,0)" r="1"/>
+
+    <polygon points="((0,0), (p[0],0), p)" closed="yes" stroke="green"
+	     tactile-dash="9 9" thickness="2"/>
+
+    <point p="p" alignment="ne">
+      <m>(x,y)</m>
+    </point>
+
+    <label p="smult(0.5,p)" alignment="nw">
+      <m>1</m>
+    </label>
+
+    <label p="(p[0],p[1]/2)" alignment="west">
+      <m>y</m>
+    </label>
+
+    <label p="(p[0]/2,0)" alignment="south">
+      <m>x</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

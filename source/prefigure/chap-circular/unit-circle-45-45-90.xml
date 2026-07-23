@@ -1,0 +1,36 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+
+  <coordinates bbox="[-0.1,-0.1,1.1,1.1]">
+    <arc points="(1,0),(0,0),(1,1)" radius="25" pixel-dims="yes"
+	 stroke="black" thickness="2"/>
+    <arc points="(0,0),(1,1),(1,0)" radius="25" pixel-dims="yes"
+	 stroke="black" thickness="2"/>
+    <polygon points="((0,0), (1,0), (1,1))" closed="yes"
+	     stroke="blue" thickness="2"/>
+
+    <label p="(1/2,0)" alignment="south" offset="(0,-9)">
+      <m>x</m>
+    </label>
+
+    <label p="(1,1/2)" alignment="east" offset="(9,0)">
+      <m>y</m>
+    </label>
+
+    <label p="(1/2,1/2)" alignment="nw" offset="(-9,9)">
+      <m>1</m>
+    </label>
+
+    <label p="(0.15*cos(pi/8),0.15*sin(pi/8))" alignment="east"
+	   offset="(9,9)">
+      <m>45^\circ</m>
+    </label>
+
+    <label p="(1-0.15*sin(pi/8),1-0.15*cos(pi/8))" alignment="south"
+	   offset="(-9,-9)">
+      <m>45^\circ</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

@@ -1,0 +1,54 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>q=(cos(pi/10), sin(pi/10))</definition>
+  <definition>r=(cos(4*pi/10), sin(4*pi/10))</definition>
+
+  <coordinates bbox="[-0.15,-0.15,1.2,1.2]">
+    <axes id="axes" decorations="no"/>
+
+    <arc center="(0,0)" radius="1" range="(0,90)"
+	 stroke="blue" thickness="2"/>
+
+    <group outline="tactile">
+      <line p1="(1,0)" p2="q" stroke="green" tactile-dash="9 9"/>
+      <line p1="(1,0)" p2="(q[0],0)" stroke="green" tactile-dash="9 9"/>
+      <line p1="(q[0],0)" p2="q" stroke="green" tactile-dash="9 9"/>
+    </group>
+
+    <group outline="tactile">
+      <line p1="(0,1)" p2="r" stroke="magenta" tactile-dash="4 4"/>
+      <line p1="(0,1)" p2="(0,r[1])" stroke="magenta" tactile-dash="4 4"/>
+      <line p1="(0,r[1])" p2="r" stroke="magenta" tactile-dash="4 4"/>
+    </group>
+
+    <label p="(q[0],q[1]/2)" alignment="west">
+      <m>h_1</m>
+    </label>
+    <label p="(cos(pi/20), sin(pi/20))" alignment="ne"
+	   tactile-offset="(9,9)">
+      <m>d_1</m>
+    </label>
+
+    <label p="(0,(1+r[1])/2)" alignment="west" tactile-offset="(-12,0)">
+      <m>h_2</m>
+    </label>
+    <label p="(cos(9*pi/20), sin(9*pi/20))" alignment="ne" tactile-offset="(9,9)">
+      <m>d_2</m>
+    </label>
+
+    <point p="(0,1)" alignment="ne">
+      <m>S</m>
+    </point>
+    <point p="r" alignment="ne">
+      <m>R</m>
+    </point>
+    <point p="q" alignment="ne">
+      <m>Q</m>
+    </point>
+    <point p="(1,0)" alignment="ne">
+      <m>P</m>
+    </point>
+
+  </coordinates>
+
+</diagram>
+

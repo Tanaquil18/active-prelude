@@ -1,0 +1,42 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>space=0.2</definition>
+  <definition>p(x)=(cos(x/12*pi),sin(x/12*pi))</definition>
+
+  <coordinates bbox="[-6*space,-6*space,6*space,6*space]">
+    <grid rx="(-6*space,space,6*space)" ry="(-6*space,space,6*space)"/>
+    <axes id="axes" decorations="no"/>
+
+    <circle center="(0,0)" r="1"/>
+
+    <point p="p(0)" alignment="ne">
+      <m>t_0</m>
+    </point>
+
+    <point p="p(1)" alignment="ne">
+      <m>t_1</m>
+    </point>
+
+    <point p="p(2)" alignment="ne">
+      <m>t_2</m>
+    </point>
+
+    <point p="p(3)" alignment="ne">
+      <m>t_3</m>
+    </point>
+
+    <point p="p(4)" alignment="ne">
+      <m>t_4</m>
+    </point>
+
+    <point p="p(5)" alignment="ne">
+      <m>t_5</m>
+    </point>
+
+    <point p="p(6)" alignment="ne">
+      <m>t_6</m>
+    </point>
+
+  </coordinates>
+
+</diagram>
+

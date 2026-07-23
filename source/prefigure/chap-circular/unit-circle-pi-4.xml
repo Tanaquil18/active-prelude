@@ -1,0 +1,41 @@
+<diagram xmlns="https://prefigure.org" width="200" height="200" margins="5">
+  <definition>space=0.2</definition>
+  <definition>p=(cos(pi/4), sin(pi/4))</definition>
+
+  <coordinates bbox="[-space,-space,6*space,6*space]">
+    <grid rx="(-6*space,space,6*space)" ry="(-6*space,space,6*space)"/>
+    <axes id="axes" decorations="no"/>
+
+    <circle center="(0,0)" r="1" cliptobbox="yes"/>
+
+    <polygon points="((0,0), (p[0],0), p)" closed="yes" stroke="green"
+	     tactile-dash="9 9" thickness="2"/>
+
+    <point p="p" alignment="ne">
+      <m>(x,y)</m>
+    </point>
+
+    <label p="smult(0.5,p)" alignment="nw" clear-background="no">
+      <m>1</m>
+    </label>
+
+    <label p="(p[0],p[1]/2)" alignment="west" clear-background="no"
+	   offset="(-9,0)">
+      <m>y</m>
+    </label>
+
+    <label p="(p[0]/2,0)" alignment="south" clear-background="no"
+	   offset="(0,-9)">
+      <m>x</m>
+    </label>
+
+    <label p="smult(0.15, (cos(pi/8), sin(pi/8)))" alignment="east"
+	   offset="(9,6)"
+	   clear-background="no">
+      <m>\pi/4</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

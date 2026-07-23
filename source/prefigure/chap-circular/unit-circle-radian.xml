@@ -1,0 +1,42 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>space=0.2</definition>
+  <definition>p(x)=(cos(x/12*pi),sin(x/12*pi))</definition>
+
+  <coordinates bbox="[-6*space,-6*space,6*space,6*space]">
+    <grid rx="(-6*space,space,6*space)" ry="(-6*space,space,6*space)"/>
+    <axes id="axes" decorations="no"/>
+
+    <circle center="(0,0)" r="1"/>
+
+    <group outline="tactile">
+      <arc center="(0,0)" radius="1" range="(0,180/pi)" thickness="3"
+	   stroke="green" tactile-dash="9 9"/>
+      <polygon points="((1,0), (0,0), (cos(1),sin(1)))"
+	       stroke="green" thickness="3"
+	       tactile-dash="9 9"/>
+    </group>
+
+    <label p="(cos(0.5), sin(0.5))" alignment="ne" offset="(9,9)"
+	     clear-background="yes">
+      <m>1</m>
+    </label>
+
+    <label p="(0.5,0)" alignment="south" offset="(0,-9)"
+	   clear-background="yes">
+      <m>1</m>
+    </label>
+
+    <label p="(cos(1)/2,sin(1)/2)" alignment="nw" offset="(-9,9)"
+	   clear-background="yes">
+      <m>1</m>
+    </label>
+
+    <label p="(0.2*cos(1/2),0.2*sin(1))" alignment="east" offset="(9,-3)"
+	   clear-background="yes">
+      <m>\theta=1</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+
