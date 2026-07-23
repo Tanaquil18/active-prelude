@@ -1,0 +1,29 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-0.5,-0.5,4,4]">
+    <grid-axes spacings="((-0.5,0.5,4),(-0.5,0.5,4))" />
+
+    <definition>r=4/pi</definition>
+    <definition>f(x)=r-r*cos(x/12*pi)</definition>
+
+    <circle center="(2,2)" radius="4/pi" stroke="blue"/>
+    <repeat parameter="k=0..8">
+      <point p="(2+r*cos(k*pi/4), 2+r*sin(k*pi/4))" />
+    </repeat>
+
+    <point p="(2,2)" fill="black" alignment="north" offset="(0,2)"
+	   clear-background="yes" tactile-offset="(0,18)">
+      <m>(2,2)</m>
+    </point>
+
+    <label p="(2-r, 2)" alignment="nw" clear-background="yes"
+	   offset="(-9,9)">
+      <m>P_0</m>
+    </label>
+    <label p="(2-r*cos(pi/4), 2-r*sin(pi/4))" alignment="sw"
+	   clear-background="yes" offset="(-9,-10)">
+      <m>P_1</m>
+    </label>
+
+  </coordinates>
+
+</diagram>

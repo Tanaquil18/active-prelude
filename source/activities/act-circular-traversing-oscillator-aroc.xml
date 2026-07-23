@@ -178,7 +178,17 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <ul>
+            <li><m>AV_{[2,2.25]} \approx 7.652</m> inches/sec</li>
+            <li><m>AV_{[2.25,2.5]} \approx 6.492</m> inches/sec</li>
+            <li><m>AV_{[2.5,2.75]} \approx 4.332</m> inches/sec</li>
+            <li><m>AV_{[2.75,3]} \approx 1.524</m> inches/sec</li>
+          </ul>
+          The weight is always moving in the same direction (away from the wall) on the interval <m>[2,3]</m>, but is slowing down.
+        </p>
+      </answer>
       <solution>
         <p>
           <ul>
@@ -198,7 +208,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The weight slows down as it reaches the farthest distance away from the midline and speeds up back toward the center.  The greatest (steepest) negative rates of change occur near the midline where the function is decreasing, in intervals such as <m>[0, 0.25]</m>, <m>[3.75, 4.00]</m>, and <m>[4.00, 4.25]</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The greatest (steepest) negative rates of change occur near the midline where the function is decreasing.  Examples include intervals such as <m>[0, 0.25]</m>, <m>[3.75, 4.00]</m>, and <m>[4.00, 4.25]</m>.  These occur near the midline where the function crosses from above to below (or vice versa), meaning the weight is moving most rapidly toward the equilibrium position.
@@ -212,7 +226,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          Examples of longest such intervals are <m>[3,5]</m>, <m>[7,9]</m>, and <m>[11,13]</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The function is decreasing from each peak to each trough.  Examples of longest such intervals are <m>[3,5]</m>, <m>[7,9]</m>, and <m>[11,13]</m>.
@@ -225,7 +243,11 @@
 						Give an example of an interval on which <m>f</m> is concave up. (Recall that a function is concave up on an interval provided that throughout the interval, the curve bends upward, similar to a parabola that opens up.)</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The intervals on which <m>f</m> is concave up include <m>[0,2]</m>, <m>[4,6]</m>, <m>[8,10]</m>, and <m>[12,14]</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The intervals on which <m>f</m> is concave up include <m>[0,2]</m>, <m>[4,6]</m>, <m>[8,10]</m>, and <m>[12,14]</m>.
@@ -239,7 +261,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The weight is moving toward the wall but slowing down.</p></answer>
       <solution>
         <p>
           On intervals that are decreasing and concave up, the weight is moving toward the wall, but at a decreasing rate (slowing down).
@@ -253,18 +275,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          At the highest and lowest points, the function has the smallest rates of change.  Near the midline, the function has its greatest rates of change.
+        </p>
+      </answer>
       <solution>
         <p>
           At the highest and lowest points, the function has the smallest rates of change.  Near the midline, the function has its greatest rates of change.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>
