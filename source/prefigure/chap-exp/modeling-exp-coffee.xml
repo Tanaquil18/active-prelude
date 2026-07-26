@@ -1,0 +1,33 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>points=((0,186),(1,179),(2,175),(3,171),(8,156),(13,144),
+  (18,135),(23,127),(28,120),(33,116),(38,111),(43,107),(48,104))</definition>
+  <coordinates bbox="[-10,-20,50,200]">
+    <grid rx="(-10,5,50)" ry="(-20,20,200)" />
+    <axes id="axes" decorations="no"
+	  xlabel="t \text{(min)}" ylabel="F \text{(degrees)}"
+	  hticks="(-5,5,50)" vticks="(20,20,200)"
+	  hlabels="(10,10,50)" vlabels="(40,40,200)"/>
+
+    <group outline="tactile">
+      <point p="points[0]"/>
+      <point p="points[1]"/>
+      <point p="points[2]"/>
+      <point p="points[3]"/>
+      <point p="points[4]"/>
+      <point p="points[5]"/>
+      <point p="points[6]"/>
+      <point p="points[7]"/>
+      <point p="points[8]"/>
+      <point p="points[9]"/>
+      <point p="points[10]"/>
+      <point p="points[11]"/>
+      <point p="points[12]"/>
+    </group>
+  </coordinates>
+
+
+
+
+
+</diagram>
+

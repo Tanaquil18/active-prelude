@@ -1,0 +1,22 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>c=-1</definition>
+  <definition>f(x)=c</definition>
+  <definition>p(x)=-2*(0.35)**x</definition>
+  <coordinates bbox="[-3,-4,3,4]">
+    <axes id="axes" decorations="no"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="p"/>
+
+    <label p="(-0.5,p(-0.5))" alignment="nw">
+      <m>q(t)</m>
+    </label>
+
+  </coordinates>
+
+
+
+
+
+</diagram>
+

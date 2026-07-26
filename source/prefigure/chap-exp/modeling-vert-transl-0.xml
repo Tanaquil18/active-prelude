@@ -1,0 +1,27 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>p(x)=6*0.75^x</definition>
+  <coordinates bbox="[-2,-2,12,12]">
+    <axes id="axes" decorations="no"
+	  ylabel="y"/>
+
+    <graph function="p"/>
+
+    <point p="(0,p(0))" alignment="ne">
+      <m>(0,a)</m>
+    </point>
+    <label p="(4,p(4))" alignment="ne">
+      <m>f(t)=a~b^t</m>
+    </label>
+    <label p="(12,0)" alignment="nw" offset="(-4,10)">
+      <m>t</m>
+    </label>
+
+
+  </coordinates>
+
+
+
+
+
+</diagram>
+

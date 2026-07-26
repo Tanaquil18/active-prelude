@@ -1,0 +1,23 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>c=1</definition>
+  <definition>f(x)=c</definition>
+  <definition>p(x)=1.25*(1.75)**x+c</definition>
+  <coordinates bbox="[-3,-4,3,4]">
+    <axes id="axes" decorations="no"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="p"/>
+    <graph function="f" stroke="green" tactile-dash="9 9"/>
+
+    <label p="(-0.5,p(-0.5))" alignment="nw">
+      <m>r(t)</m>
+    </label>
+
+  </coordinates>
+
+
+
+
+
+</diagram>
+
