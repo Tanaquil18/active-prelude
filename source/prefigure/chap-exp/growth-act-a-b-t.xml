@@ -1,0 +1,26 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>f(x)=6*0.75^x</definition>
+  <definition>g(x)=3*1.1^x</definition>
+  <coordinates bbox="[-2,-2,12,12]">
+    <axes decorations="no"
+	  ylabel="y"/>
+
+    <graph function="f"/>
+    <graph function="g" stroke="green" tactile-dash="9 9"/>
+
+    <label p="(6,1)" alignment="ne">
+      <m>p(t)</m>
+    </label>
+    <label p="(6,5.5)" alignment="nw">
+      <m>q(t)</m>
+    </label>
+    <label p="(12,0)" alignment="nw" offset="(-4,10)">
+      <m>t</m>
+    </label>
+
+  </coordinates>
+
+
+
+</diagram>
+

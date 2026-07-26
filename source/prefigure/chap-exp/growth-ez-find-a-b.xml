@@ -1,0 +1,26 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>f(x)=34.82202 * 0.75786**x</definition>
+  <coordinates bbox="[-1,-5,8,40]">
+    <grid rx="(-1,1,8)" ry="(-5,5,40)" />
+    <axes id="axes" decorations="no"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="f"/>
+
+    <label p="(4,f(4))" alignment="ne" clear-background="yes" offset="(8,8)">
+      <m>f(t)=a~b^t</m>
+    </label>
+
+    <point p="(2,f(2))" alignment="ne" offset="(8,8)">
+      <m>(2,20)</m>
+    </point>
+    <point p="(7,f(7))" alignment="sw" offset="(-8,-6)">
+      <m>(7,5)</m>
+    </point>
+
+  </coordinates>
+
+
+
+</diagram>
+
