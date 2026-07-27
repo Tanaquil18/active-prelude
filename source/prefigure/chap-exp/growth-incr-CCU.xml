@@ -1,9 +1,8 @@
 <diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
   <definition>f(x)=2*1.15^x</definition>
   <coordinates bbox="[-2,-2,12,12]">
-    <grid rx="(-2,1,12)" ry="(-2,1,12)" />
-    <axes id="axes" decorations="no"
-	  xlabel="t" ylabel="y"/>
+    <grid-axes id="axes" decorations="no"
+	  xlabel="t" ylabel="y" spacings="((-2,1,12), (-2,1,12))"/>
 
     <graph function="f"/>
 
@@ -12,8 +11,6 @@
     </label>
 
   </coordinates>
-
-
 
 </diagram>
 

@@ -1,18 +1,10 @@
 <diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
-  <definition>points=((0,186),(1,179),(2,175),(3,171),(8,156),(13,144),
-  (18,135),(23,127),(28,120),(33,116),(38,111),(43,107),(48,104))</definition>
-  <definition>f(x)=103.503 * (0.974)**x + 71</definition>
-  <definition>shift=(0,0)</definition>
-  <coordinates bbox="[-2,-2,12,12]">
-    <grid rx="(-2,1,12)" ry="(-2,1,12)" />
-    <axes id="axes" decorations="no"
+  <coordinates bbox="(-2,-2,12,12)">
+    <grid-axes decorations="no"
 	  xlabel="t" ylabel="F"
-	  hticks="(0,2,12)" vticks="(0,2,12)"/>
+	  hticks="(0,2,12)" vticks="(0,2,12)" spacings="((-2,1,12),(-2,1,12))"/>
 
   </coordinates>
-
-
-
 
 
 </diagram>
