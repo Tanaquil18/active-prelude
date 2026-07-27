@@ -68,7 +68,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer><p>When <m>b</m> is less than <m>1</m>, the function is decreasing and concave up, approaching <m>0</m> as <m>x</m> gets larger and larger.  When When <m>b</m> is greater than <m>1</m>, the function is increasing and concave up, approaching <m>/infty</m> as <m>x</m> gets larger and larger.</p></answer>
+      <answer><p>When <m>b</m> is less than <m>1</m>, the function is decreasing and concave up, approaching <m>0</m> as <m>x</m> gets larger and larger.  When When <m>b</m> is greater than <m>1</m>, the function is increasing and concave up, approaching <m>\infty</m> as <m>x</m> gets larger and larger.</p></answer>
       <solution>
         <p>
           When <m>b</m> is less than <m>1</m>, the function is decreasing and concave up.  The graph approaches <m>\infty</m> as <m>t</m> approaches <m>-\infty</m>, and the graph approaches <m>0</m> as <m>t</m> approaches <m>\infty</m>.  When <m>b</m> is greater than <m>1</m>, the function is increasing and concave up.  The graph approaches <m>0</m> as <m>t</m> approaches <m>-\infty</m> and the graph approaches <m>\infty</m> as <m>t</m> approaches <m>\infty</m>.
@@ -101,7 +101,7 @@
           <caption>Graphs of exponential functions <m>p</m> and <m>q</m>.</caption> -->
           <!-- <image width="50%" source="images/growth-act-a-b-t"> -->
           <image width="50%">
-            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-a-b-t">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-act-a-b-t">
                 <xi:include href="../prefigure/chap-exp/growth-act-a-b-t.xml"/>
             </prefigure>
           <description><p>Graph of two exponential functions, <m>p(t)=ab^t</m> and <m>q(t)=cd^t</m>. The function <m>p(t)</m> is decreasing towards <m>0</m> and has a higher <m>y</m>-intercept, while the function <m>q(t)</m> has a lower <m>y</m>-intercept and is increasing towards higher and higher values as <m>x</m> increases.</p></description></image>

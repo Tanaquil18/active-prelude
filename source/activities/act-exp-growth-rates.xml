@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-exp-growth-rates">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-exp-growth-rates">
   <activity xml:id="act-exp-growth-rates">
     <introduction>
       <p>
@@ -23,15 +23,31 @@
       <statement>
         <p>
 						A function <m>p</m> that is always decreasing and decreases at a constant rate.
-					</p>
+				</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          Any line with negative slope, for example, <m>p(x) = -2x + 1</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-line-ans">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-line.xml"/>
+          </prefigure>
+          <description><p>A line with negative slope</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
-          If <m>p</m> is always decreasing at a constant rate, then <m>p</m> is a linear function of the form <m>p(x) = mx + b</m>, where <m>m \lt 0</m>.  For example, <m>p(x) = -4x + 2</m>.
+          If <m>p</m> is always decreasing at a constant rate, then <m>p</m> is a linear function of the form <m>p(x) = mx + b</m>, where <m>m \lt 0</m>.  For example, <m>p(x) = -2x + 1</m>.
         </p>
-        <image width="50%" source="solution-images/Activity3.1.4a.png"/>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-line-soln">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-line.xml"/>
+          </prefigure>
+          <description><p>A line with negative slope</p></description>
+        </image>
+        <!-- <image width="50%" source="solution-images/Activity3.1.4a.png"/> -->
       </solution>
     </task>
     <task workspace="6cm" xml:id="act-exp-growth-rates-task-1">
@@ -41,31 +57,66 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          For example, <m>q(x) = 2^x</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-incr-ccu-ans">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-incr-ccu.xml"/>
+          </prefigure>
+          <description><p>The function <m>2^x</m>, which is increasing at an increasing rate.</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
           If <m>q</m> is always increasing and increases at an increasing rate, then <m>q</m> may be an exponential function.  For example, <m>q(x) = 2^x</m>.
         </p>
-        <image width="50%" source="solution-images/Activity3.1.4b.png"/>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-incr-ccu-soln">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-incr-ccu.xml"/>
+          </prefigure>
+          <description><p>The function <m>2^x</m>, which is increasing at an increasing rate.</p></description>
+        </image>
+        <!-- <image width="50%" source="solution-images/Activity3.1.4b.png"/> -->
       </solution>
     </task>
     <task workspace="6cm" xml:id="act-exp-growth-rates-task-2">
       <statement>
         <p>
-						A function <m>r</m> that is always increasing for <m>t \lt 2</m>, always decreasing for <m>t \gt 2</m>, and is always changing at a decreasing rate.
+						A function <m>r</m> that is always increasing for <m>t \lt 2</m>, always decreasing for <m>t \gt 2</m>, and is always changing at a decreasing rate. (Recall that when a negative number decreases, it becomes more negative.)
 					</p>
       </statement>
       <hint/>
-      <answer/>
-      <solution>
+      <answer>
         <p>
+          One option is a downward-opening parabola, such as <m>-(x-2)^2+4</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-parabola-ans">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-parabola.xml"/>
+          </prefigure>
+          <description><p>A downward-opening parabola which has its peak at <m>x=2</m>.</p></description>
+        </image>
+      </answer>
+      <solution>
+        <!-- <p>
           One option is the piecewise function
           <md>
             r(t) = \begin{cases} -\left(\frac{1}{2}\right)^t &amp; \text{if } t \lt 2 \\ \left(\frac{1}{2}\right)^t - \frac{1}{2} &amp; \text{if } t \gt 2 \end{cases}
           </md>
           whose rate of change is always decreasing with increasing <m>t</m>.
         </p>
-        <image width="50%" source="solution-images/Activity3.1.4c.png"/>
+        <image width="50%" source="solution-images/Activity3.1.4c.png"/> -->
+        <p>
+          One option is a downward-opening parabola, such as <m>-(x-2)^2+4</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-parabola-soln">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-parabola.xml"/>
+          </prefigure>
+          <description><p>A downward-opening parabola which has its peak at <m>x=2</m>.</p></description>
+        </image>
       </solution>
     </task>
     <task workspace="6cm" xml:id="act-exp-growth-rates-task-3">
@@ -75,34 +126,63 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          For example, <m>s(x) = -\left(\frac{1}{2}\right)^x+5</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-incr-ccd-ans">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-incr-ccd.xml"/>
+          </prefigure>
+          <description><p>The function <m>-\left(\frac{1}{2}\right)^x+5</m>, which is increasing at a decreasing rate.</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
-          Let <m>s(t) = -\left(\frac{1}{2}\right)^t</m>, so that <m>s(t)</m> is always increasing with a decreasing rate.
+          We know that an exponential function whose <m>b</m> value is between <m>0</m> and <m>1</m> will be decreasing more and more slowly, so we flip it across the <m>x</m>-axis to obtain a function that is always increasing more and more slowly.  For example, <m>s(x) = -\left(\frac{1}{2}\right)^x+5</m>.
         </p>
-        <image width="50%" source="solution-images/Activity3.1.4d.png"/>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-incr-ccd-soln">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-incr-ccd.xml"/>
+          </prefigure>
+          <description><p>The function <m>-\left(\frac{1}{2}\right)^x+5</m>, which is increasing at a decreasing rate.</p></description>
+        </image>
+        <!-- <image width="50%" source="solution-images/Activity3.1.4d.png"/> -->
       </solution>
     </task>
     <task workspace="6cm" xml:id="act-exp-growth-rates-task-4">
       <statement>
         <p>
-						A function <m>u</m> that is always decreasing and decreases at a decreasing rate.
+						A function <m>u</m> that is always decreasing and decreases at a decreasing rate. (Recall that when a negative number decreases, it becomes more negative.)
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          For example, <m>s(x) = -\left(\frac{1}{2}\right)^{-x}+5</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-decr-ccd-ans">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-decr-ccd.xml"/>
+          </prefigure>
+          <description><p>The function <m>-\left(\frac{1}{2}\right)^{-x}+5</m>, which is decreasing at a decreasing rate.</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
+          We want to take the previous example and flip it left to right, or across the <m>y</m>-axis, to obtain a function that is always decreasing by more and more.  For example, <m>s(x) = -\left(\frac{1}{2}\right)^{-x}+5</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-rates-act-decr-ccd-soln">
+            <xi:include href="../prefigure/chap-exp/growth-rates-act-decr-ccd.xml"/>
+          </prefigure>
+          <description><p>The function <m>-\left(\frac{1}{2}\right)^{-x}+5</m>, which is decreasing at a decreasing rate.</p></description>
+        </image>
+        <!-- <p>
           The function <m>u(t) = \left(\frac{1}{2}\right)^t</m> is always decreasing at a decreasing rate.
         </p>
-        <image width="50%" source="solution-images/Activity3.1.4e.png"/>
+        <image width="50%" source="solution-images/Activity3.1.4e.png"/> -->
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

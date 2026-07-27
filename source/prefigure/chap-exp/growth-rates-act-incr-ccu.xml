@@ -1,0 +1,10 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>f(x)=2^x</definition>
+  <coordinates bbox="[-10,-10,10,10]">
+    <axes ylabel="y" xlabel="x"/>
+
+    <graph function="f" stroke="blue"/>
+
+  </coordinates>
+
+</diagram>
