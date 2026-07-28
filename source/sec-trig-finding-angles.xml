@@ -35,9 +35,9 @@
 
       <p>
         While the original trigonometric functions take a particular angle as input and provide an output that can be viewed as the ratio of two sides of a right triangle, the inverse trigonometric functions take an input that can be viewed as a ratio of two sides of a right triangle and produce the corresponding angle as output.  Indeed, it's imperative to remember that statements such as
-        <me>
+        <md>
           \arccos(x) = \theta \ \text{ and } \ \cos(\theta) = x
-        </me>
+        </md>
         say the exact same thing from two different perspectives, and that we read <q><m>\arccos(x)</m></q> as <q>the angle whose cosine is <m>x</m></q>.
       </p>
 
@@ -79,11 +79,11 @@
 
         <p>
           We can now find the remaining leg's length and the remaining angle's measure.  If we let <m>x</m> represent the length of the horizontal leg, by the Pythagorean Theorem we know that
-          <me>x^2 + 1^2 = 3^2</me>,
+          <md>x^2 + 1^2 = 3^2</md>,
           and thus <m>x^2 = 8</m> so <m>x = \sqrt{8} \approx 2.8284</m>.  Calling the remaining angle <m>\beta</m>, since <m>\alpha + \beta = \frac{\pi}{2}</m>, it follows that
-          <me>
+          <md>
             \beta = \frac{\pi}{2} - \arcsin \left(\frac{1}{3}\right) \approx 1.2310
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -117,9 +117,9 @@
               <stack>
               <p>
               Anytime we know two side lengths in a right triangle, we can use one of the inverse trigonometric functions to determine the measure of one of the non-right angles.  For instance, if we know the values of <m>\text{opp}</m> and <m>\text{adj}</m> in <xref ref="F-finding-angles-SOH-CAH-TOA">Figure</xref>, then since
-              <me>
+              <md>
                 \tan(\theta) = \frac{\text{opp}}{\text{adj}}
-              </me>,
+              </md>,
               it follows that <m>\theta = \arctan(\frac{\text{opp}}{\text{adj}})</m>.
             </p>
           <p>

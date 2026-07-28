@@ -203,9 +203,9 @@
         A can of soda is removed from a refrigerator at time <m>t = 0</m> (in minutes)
         and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
         Based on the data, a model is formulated for the object's temperature, given by
-          <me>
+          <md>
             F(t) = 74.4 - 38.8e^{-0.05t}
-          </me>.
+          </md>.
       </p>
 
       <p>

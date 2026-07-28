@@ -55,25 +55,25 @@
   					<li>
   						<p>
   							For any real number <m>t</m> for which <m>\cos(t) \ne 0</m>, we define the secant of <m>t</m>, denoted <m>\sec(t)</m>, by the rule
-			  				<me>
+			  				<md>
 			  					\sec(t) = \frac{1}{\cos(t)}
-			  				</me>.
+			  				</md>.
   						</p>
   					</li>
   					<li>
   						<p>
   							For any real number <m>t</m> for which <m>\sin(t) \ne 0</m>, we define the cosecant of <m>t</m>, denoted <m>\csc(t)</m>, by the rule
-			  				<me>
+			  				<md>
 			  					\csc(t) = \frac{1}{\sin(t)}
-			  				</me>.
+			  				</md>.
   						</p>
   					</li>
   					<li>
   						<p>
   							For any real number <m>t</m> for which <m>\sin(t) \ne 0</m>, we define the cotangent of <m>t</m>, denoted <m>\cot(t)</m>, by the rule
-			  				<me>
+			  				<md>
 			  					\cot(t) = \frac{\cos(t)}{\sin(t)}
-			  				</me>.
+			  				</md>.
   						</p>
   					</li>
   				</ul>
@@ -286,9 +286,9 @@
   	<title>A few important identities</title>
   	<p>
   		An <em>identity</em> is an equation that is true for all possible values of <m>x</m> for which the involved quantities are defined.  An example of a non-trigonometric identity is
-	    <me>
+	    <md>
 	      (x+1)^2 = x^2 + 2x + 1
-	    </me>,
+	    </md>,
     	since this equation is true for every value of <m>x</m>,
     	and the left and right sides of the equation are simply two different-looking but entirely equivalent expressions.
   	</p>
@@ -317,16 +317,16 @@
 	  <p>
 	    There are two related Pythagorean identities that involve the tangent, secant,
 	    cotangent, and cosecant functions, which we can derive from the fundamental trigonometric identity by dividing both sides by either <m>\cos^2(\theta)</m> or <m>\sin^2(\theta)</m>.  If we divide both sides of <xref ref="eq-fund-trig-identity">Equation</xref> by <m>\cos^2(\theta)</m> (and assume that <m>\cos(\theta) \ne 0</m>), we see that
-	    <me>
+	    <md>
 	    	1 + \frac{\sin^2(\theta)}{\cos^2(\theta)} = \frac{1}{\cos^2(\theta)}
-	    </me>, or equivalently,
-	    <me>
+	    </md>, or equivalently,
+	    <md>
 	    	1 + \tan^2(\theta) = \sec^2(\theta)
-	    </me>.
+	    </md>.
 	    A similar argument dividing by <m>\sin^2(\theta)</m> (while assuming <m>\sin(\theta) \ne 0</m>) shows that
-	    <me>
+	    <md>
 	    	\cot^2(\theta) + 1 = \csc^2(\theta)
-	    </me>.  These identities prove useful in calculus when we develop the formulas for the derivatives of the tangent and cotangent functions.
+	    </md>.  These identities prove useful in calculus when we develop the formulas for the derivatives of the tangent and cotangent functions.
 	  </p>
 
 	  <p>
@@ -369,9 +369,9 @@
   		<li>
   			<p>
   				The secant, cosecant, and cotangent functions are respectively defined as the reciprocals of the cosine, sine, and tangent functions.  That is,
-  				<me>
+  				<md>
   					\sec(t) = \frac{1}{\cos(t)}, \csc(t) = \frac{1}{\sin(t)}, \text{ and } \cot(t) = \frac{1}{\tan(t)}
-  				</me>.
+  				</md>.
   			</p>
   		</li>
   		<li>

@@ -124,9 +124,9 @@
 
       <p>
         Let <m>S(t)</m> be the number of people who have acquired the virus <m>t</m> days after the ship has left port.  It turns out that a logistic function is a good model for <m>S</m>, and thus we assume that
-        <me>
+        <md>
           S(t) = \frac{A}{1 + Me^{-kt}}
-        </me>
+        </md>
         for some positive constants <m>A</m>, <m>M</m>, and <m>k</m>.  Suppose that after <m>1</m> day, <m>20</m> people have gotten the virus.
       </p>
 
@@ -186,13 +186,13 @@
 
       <p>
         It turns out that the problem of determining the amount of salt in the tank at time <m>t</m> is similar to the problem of determining the temperature of a warming or cooling object, and that the function <m>A(t)</m> has form
-        <me>
+        <md>
           A(t) = ae^{-kt} + c
-        </me>
+        </md>
         for constants <m>a</m>, <m>c</m>, and <m>k</m>.  Suppose that for a particular set of conditions, we know that
-        <me>
+        <md>
           A(t) = -500e^{-0.25t} + 750
-        </me>.
+        </md>.
         Again, <m>A(t)</m> measures the amount of salt in the tank after <m>t</m> minutes.
       </p>
 

@@ -66,9 +66,9 @@
       <answer/> -->
       <solution>
         <p>The average cost per gram to produce <m>q</m> grams is
-        <me>
+        <md>
           A(q) = \frac{C(q)}{q} = \frac{5{,}000{,}000 + 2500q}{q}.
-        </me>
+        </md>
         </p>
       </solution>
     </task>
@@ -82,9 +82,9 @@
       <answer/> -->
       <solution>
         <p>Dividing both terms in the numerator of <m>A(q)</m> by <m>q</m>:
-        <me>
+        <md>
           A(q) = \frac{5{,}000{,}000 + 2500q}{q} = \frac{5{,}000{,}000}{q} + \frac{2500q}{q} = 2500 + \frac{5{,}000{,}000}{q}.
-        </me>
+        </md>
         </p>
       </solution>
     </task>

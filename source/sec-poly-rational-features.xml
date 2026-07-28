@@ -57,25 +57,25 @@
 
   	<p>
   		If the numerator of a fraction approaches <m>0</m> while the denominator approaches a nonzero value, then the overall fraction values will approach zero.  For instance, consider the sequence of values
-  		<me>
+  		<md>
   			\frac{0.1}{0.9} = 0.111111\cdots, \frac{0.01}{0.99} = 0.010101\cdots, \frac{0.001}{0.999} = 0.001001\cdots
-  		</me>.
+  		</md>.
   		Because the numerator gets closer and closer to <m>0</m> and the denominator stays away from <m>0</m>, the quotients tend to <m>0</m>.
   	</p>
 
   	<p>
   		Similarly, if the denominator of a fraction approaches <m>0</m> while the numerator approaches a nonzero value, then the overall fraction increases without bound.  If we consider the reciprocal values of the sequence above, we see that
-  		<me>
+  		<md>
   			\frac{0.9}{0.1} = 9, \frac{0.99}{0.01} = 99, \frac{0.999}{0.001} = 999
-  		</me>.
+  		</md>.
   		Since the denominator gets closer and closer to <m>0</m> and the numerator stays away from <m>0</m>, the quotients increase without bound.
   	</p>
 
   	<p>
   		These two behaviors show how the zeros and vertical asympototes of a rational function <m>r(x) = \frac{p(x)}{q(x)}</m> arise:  where the numerator <m>p(x)</m> is zero and the denominator <m>q(x)</m> is nonzero, the function <m>r</m> will have a zero; and where <m>q(x)</m> is zero and <m>p(x)</m> is nonzero, the function will have a vertical asymptote.  What we must be careful of is the special situation where <em>both</em> the numerator <m>p(x)</m> and <m>q(x)</m> are simultaneously zero.  Indeed, if the numerator and denominator of a fraction both approach <m>0</m>, different behavior can arise.  For instance, consider the sequence
-  		<me>
+  		<md>
   			\frac{0.2}{0.1} = 2, \frac{0.02}{0.01} = 2, \frac{0.002}{0.001} = 2
-  		</me>.
+  		</md>.
   		In this situation, both the numerator and denominator are approaching <m>0</m>, but the overall fraction's value is always <m>2</m>.  This is very different from the two sequences we considered above.  In <xref ref="ex-rational-features-hole">Example</xref>, we explore similar behavior in the context of a particular rational function.
   	</p>
 
@@ -164,9 +164,9 @@
 
 	<p>
 		In the situation where a rational function is undefined at a point but does not have a vertical asymptote there, we'll say that the graph of the function has a <term>hole</term>.  <idx><h>rational function</h><h>hole</h></idx> In calculus, we use limit notation to identify a hole in a function's graph.  Indeed, having shown in <xref ref="ex-rational-features-hole">Example</xref> that the value of <m>r(x)</m> gets closer and closer to <m>0.4</m> as <m>x</m> gets closer and closer to <m>-1</m>, we naturally write
-		<me>
+		<md>
 			\lim_{x \to -1} r(x) = 0.4
-		</me>
+		</md>
 		as a shorthand way to represent the behavior of <m>r</m> (similar to how we've written limits involving <m>\infty</m>). This fact, combined with <m>r(-1)</m> being undefined, tells us that near <m>x = -1</m> the graph approaches a value of <m>0.4</m> but has to have a hole at the point <m>(-1,0.4)</m>, as shown in <xref ref="F-rational-features-hole-1A-zoom-actual">Figure</xref>.  Because we'll encounter similar behavior with other functions, we formally define limit notation as follows.
 	</p>
 
@@ -174,9 +174,9 @@
 		<statement>
 			<p>
 				Let <m>a</m> and <m>L</m> be finite real numbers, and let <m>r</m> be a function defined near <m>x = a</m>, but not necessarily at <m>x = a</m> itself.  If we can make the value of <m>r(x)</m> as close to the number <m>L</m> as we like by taking <m>x</m> sufficiently close (but not equal) to <m>a</m>, then we write
-				<me>
+				<md>
 					\lim_{x \to a} r(x) = L
-				</me>
+				</md>
 				and say that <q>the limit of <m>r</m> as <m>x</m> approaches <m>a</m> is <m>L</m></q>.
 			</p>
 		</statement>
@@ -207,9 +207,9 @@
  				<li>
  					<p>
  						If <m>p(a) = 0</m> and <m>q(a) = 0</m> and we can show that there is a finite number <m>L</m> such that
- 						<me>
+ 						<md>
  							\lim_{x \to a} r(x) = L
- 						</me>,
+ 						</md>,
  						then <m>r(a)</m> is not defined and <m>r</m> has a hole at the point <m>(a,L)</m>.<fn>It is possible for both <m>p(a) = 0</m> and <m>q(a) = 0</m> and for <m>r</m> to still have a vertical asymptote at <m>x = a</m>.  We explore this possibility further in <xref ref="ez-poly-rational-features-multiplicities">Exercise</xref>.</fn>
  					</p>
  				</li>
@@ -237,29 +237,29 @@
   		<solution>
   			<p>
   				First, we fully factor <m>q</m> and identify the <m>x</m>-values that are not in its domain.  Since <m>x^2-9 = (x-3)(x+3)</m>, we see that
-  				<me>
+  				<md>
   					q(x) = \frac{(x-2)(x-3)(x+3)}{(x-3)(x-1)^2}
-  				</me>.
+  				</md>.
   				From the denominator, we observe that <m>q</m> is not defined at <m>x = 3</m> and <m>x = 1</m> since those values make the factors <m>x - 3 = 0</m> or <m>(x-1)^2 = 0</m>.  Thus, the domain of <m>q</m> is the set of all real numbers except <m>x = 1</m> and <m>x = 3</m>.  From the numerator, we see that both <m>x = 2</m> and <m>x = -3</m> are zeros of <m>q</m> since these values make the numerator zero while the denominator is nonzero.  We expect that <m>q</m> will have a hole at <m>x = 3</m> since this <m>x</m>-value is not in the domain and it makes both the numerator and denominator <m>0</m>.  Indeed, computing values of <m>q</m> for <m>x</m> near <m>x = 3</m> suggests that
-  				<me>
+  				<md>
   					\lim_{x \to 3} q(x) = 1.5
-  				</me>,
+  				</md>,
   				and thus <m>q</m> does not change sign at <m>x = 3</m>.
   			</p>
 
   			<p>
   				Thus, we have three different <m>x</m>-values to place on the sign chart:  <m>x = -3</m>, <m>x = 1</m>, and <m>x = 2</m>.  We now analyze the sign of each of the factors in <m>q(x) = \frac{(x-2)(x-3)(x+3)}{(x-3)(x-1)^2}</m> on the various intervals.  For <m>x \lt -3</m>, <m>(x-2) \lt 0</m>, <m>(x-3) \lt 0</m>, <m>(x+3) \lt 0</m>, and <m>(x-1)^2 \gt 0</m>.  Thus, for <m>x \lt -3</m>, the sign of <m>q</m> is
-  				<me>
+  				<md>
   					\frac{- - -}{- +} = +
-  				</me>
+  				</md>
   				since there are an even number of negative terms in the quotient.
   			</p>
 
   			<p>
   				On the interval <m>-3 \lt x \lt 1</m>, <m>(x-2) \lt 0</m>, <m>(x-3) \lt 0</m>, <m>(x+3) \gt 0</m>, and <m>(x-1)^2 \gt 0</m>.  Thus, for these <m>x</m>-values, the sign of <m>q</m> is
-  				<me>
+  				<md>
   					\frac{- - +}{- +} = -
-  				</me>.
+  				</md>.
   			</p>
 
   			<p>
@@ -299,9 +299,9 @@
   		<li>
   			<p>
   				If a rational function <m>r(x) = \frac{p(x)}{q(x)}</m> has the properties that <m>p(a) = 0</m> and <m>q(a) = 0</m> and
- 				<me>
+ 				<md>
  					\lim_{x \to a} r(x) = L
- 				</me>,
+ 				</md>,
  				then <m>r</m> has a hole at the point <m>(a,L)</m>.  This behavior can occur when there is a matching factor of <m>(x-a)</m> in both <m>p</m> and <m>q</m>.
   			</p>
   		</li>

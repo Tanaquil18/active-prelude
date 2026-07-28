@@ -150,9 +150,9 @@
 			<sidebyside widths="60% 40%">
 				<p>
 					In a right triangle where one of the non-right angles is <m>\theta</m>, and <q>adj</q> denotes the length of the leg adjacent to <m>\theta</m>, <q>opp</q> the length the side opposite <m>\theta</m>, and <q>hyp</q> the length of the hypotenuse,
-					<me>
+					<md>
 						\cos(\theta) = \frac{\text{adj}}{\text{hyp}} \text{ and } \sin(\theta) = \frac{\text{opp}}{\text{hyp}}
-					</me>.
+					</md>.
 				</p>
 
 				<image source="images/right-triangle-SOH-CAH" width="50%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
@@ -251,9 +251,9 @@
 						\cos\left(\frac{\pi}{5}\right) = \frac{x}{\frac{4}{\sin\left(\frac{\pi}{5}\right)}}
 				</men>.
 				Solving this equation for the single unknown <m>x</m> shows that
-				<me>
+				<md>
 					x = \frac{4 \cos\left(\frac{\pi}{5}\right)}{\sin\left(\frac{\pi}{5}\right)}
-				</me>.
+				</md>.
 				The approximate values of <m>x</m> and <m>h</m> are <m>x \approx 5.506</m> and <m>h \approx  6.805</m>.
 			</p>
 		</solution>
@@ -279,9 +279,9 @@
   		<li>
   			<p>
   				Because a right triangle with hypotenuse of length <m>r</m> can be thought of as a scaled version of a right triangle with hypotenuse of length <m>1</m>, we can conclude that in a right triangle with hypotenuse of length <m>r</m>, the leg adjacent to angle <m>\theta</m> has length <m>r\cos(\theta)</m>, and the leg opposite <m>\theta</m> has length <m>r\sin(\theta)</m>, as seen in <xref ref="F-right-triangle-r-theta">Figure</xref>.  Moreover, in any right triangle with angle <m>\theta</m>, we know that
-  				<me>
+  				<md>
 					\cos(\theta) = \frac{\text{adj}}{\text{hyp}} \text{ and } \sin(\theta) = \frac{\text{opp}}{\text{hyp}}
-				</me>.
+				</md>.
 			</p>
   		</li>
   		<li>

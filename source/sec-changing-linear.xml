@@ -71,9 +71,9 @@
 		<statement>
 			<p>
 				A function <m>f</m> is <term>linear</term> provided that its average rate of change is constant on every choice of interval in its domain<fn>Here we are considering functions whose domain is the set of all real numbers.</fn>.  That is, for any inputs <m>a</m> and <m>b</m> for which <m>a \ne b</m>, it follows that
-				<me>
+				<md>
 					\frac{f(b) - f(a)}{b-a} = m
-				</me>
+				</md>
 				for some fixed constant <m>m</m>.  We call <m>m</m> the <term>slope</term> of the linear function <m>f</m>.
 			</p>
 		</statement>
@@ -85,13 +85,13 @@
 
 	<p>
 		Let's suppose we know that a function <m>f</m> is linear with average rate of change <m>AV_{[a,b]} = m</m> and that we also know the function value is <m>y_0</m> at some fixed input <m>x_0</m>.  That is, we know that <m>f(x_0) = y_0</m>.  From this information, we can find the formula for <m>y = f(x)</m> for <em>any</em> input <m>x</m>.  Working with the known point <m>(x_0, f(x_0))</m> and any other point <m>(x,f(x))</m> on the function's graph, we know that the average rate of change between these two points must be the constant <m>m</m>.  This tells us that
-		<me>
+		<md>
 			\frac{f(x) - f(x_0)}{x-x_0} = m
-		</me>.
+		</md>.
 		Since we are interested in finding a formula for <m>y = f(x)</m>, we solve this most recent equation for <m>f(x)</m>.  Multiplying both sides by <m>(x-x_0)</m>, we see that
-		<me>
+		<md>
 			f(x) - f(x_0) = m(x-x_0)
-		</me>.
+		</md>.
 		Adding <m>f(x_0)</m> to each side, it follows
 		<men xml:id="E-linear-point-slope-first-take">
 			f(x) = f(x_0) + m(x-x_0)
@@ -107,9 +107,9 @@
 
 			<p>
 				<em>Solution</em>.  Using <xref ref="E-linear-point-slope-first-take">Equation</xref> and the facts that <m>m = -\frac{1}{4}</m> and <m>f(-7) = -5</m> (that is, <m>x_0 = -7</m> and <m>f(x_0) = -5</m>), we have
-				<me>
+				<md>
 					f(x) = -5 -\frac{1}{4}(x - (-7)) = -5 - \frac{1}{4}(x+7)
-				</me>.
+				</md>.
 			</p>
 		</statement>
 	</example>
@@ -123,9 +123,9 @@
 		<idx><h>line</h><h>point-slope form</h></idx>
 		<p>
 			A line with slope <m>m</m> (equivalently, average rate of change <m>m</m>) that passes through the point <m>(x_0,y_0)</m> has equation
-			<me>
+			<md>
 				y = y_0 + m(x-x_0)
-			</me>.
+			</md>.
 		</p>
 	</assemblage>
 
@@ -133,9 +133,9 @@
 
 	<p>
 		Visualizing the various components of point-slope form is important.  For a line through <m>(x_0,y_0)</m> with slope <m>m</m>, we know its equation is <m>y = y_0 + m(x-x_0)</m>.  In <xref ref="F-linear-point-slope">Figure</xref>, we see that the line passes through <m>(x_0,y_0)</m> along with an arbitary point <m>(x,y)</m>, which makes the vertical change between the two points given by <m>y - y_0</m> and the horizontal change between the points <m>x - x_0</m>. This is consistent with the fact that
-		<me>
+		<md>
 			AV_{[x_0,x]} = m = \frac{y-y_0}{x-x_0}
-		</me>.
+		</md>.
 		Indeed, writing <m>m = \frac{y-y_0}{x-x_0}</m> is a rearrangement of the point-slope form of the line, <m>y = y_0 + m(x-x_0)</m>.
 	</p>
 
@@ -165,9 +165,9 @@
 		<idx><h>line</h><h>slope-intercept form</h></idx>
 		<p>
 			For the line with slope <m>m</m> and passing through <m>(0,y_0)</m>, its equation is
-			<me>
+			<md>
 				y = y_0 + mx
-			</me>.
+			</md>.
 		</p>
 	</assemblage>
 
@@ -246,9 +246,9 @@
 
 	<p>
 		Like with the Dolbear function, it is often useful to write a linear function (whose output is called <m>y</m>) that models a quantity changing at a constant rate (as a function of some input <m>t</m>) by writing the function relationship in the form
-		<me>
+		<md>
 			y = b + mt
-		</me>
+		</md>
 		where <m>b</m> and <m>m</m> are constants.  We may think of the four quantities involved in the following way:
 	</p>
 

@@ -16,9 +16,9 @@
     <introduction>
       <p>
 			Consider the polynomial function given by
-			<me>
+			<md>
 				p(x) = 4692(x+1520)(x^2+10000)(x-3471)^2(x-9738)
-			</me>.
+			</md>.
 		</p>
       <p/>
     </introduction>

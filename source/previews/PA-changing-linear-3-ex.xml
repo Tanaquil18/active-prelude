@@ -181,9 +181,9 @@
       <statement>
         <p>
 						For the function <m>y = f(x) = 7 - 3x</m> from (a), find the simplest expression you can for
-						<me>
+						<md>
 							AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
-						</me>
+						</md>
 						where <m>a \ne b</m>.
 					</p>
       </statement>

@@ -19,9 +19,9 @@
 		</p>
       <p>
 			Recall that for any function <m>f</m> on an interval <m>[a,a+h]</m>, its average rate of change is
-			<me>
+			<md>
 				AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}
-			</me>.
+			</md>.
 		</p>
       <p/>
     </introduction>
@@ -61,9 +61,9 @@
       <statement>
         <p>
 						Explain why your work in (a) and (b) together with some algebra shows that
-						<me>
+						<md>
 							AV_{[a,a+h]} = \sin(a) \cdot \frac{\cos(h)-1}{h} - \cos(a) \cdot \frac{\sin(h)}{h}
-						</me>.
+						</md>.
 					</p>
       </statement>
       <hint/>
@@ -92,9 +92,9 @@
       <statement>
         <p>
 						In calculus, we move from <em>average</em> rate of change to <em>instantaneous</em> rate of change by letting <m>h</m> approach <m>0</m> in the expression for average rate of change.  Using a computational device in radian mode, investigate the behavior of
-						<me>
+						<md>
 							\frac{\cos(h)-1}{h}
-						</me>
+						</md>
 						as <m>h</m> gets close to <m>0</m>.  What happens?  Similarly, how does <m>\frac{\sin(h)}{h}</m> behave for small values of <m>h</m>?  What does this tell us about <m>AV_{[a,a+h]}</m> for the sine function as <m>h</m> approaches <m>0</m>?
 					</p>
       </statement>

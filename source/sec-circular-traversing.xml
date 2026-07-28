@@ -254,17 +254,17 @@
 
   	<p>
   		Remembering that <m>h</m> is a function of distance traversed along the circle, it follows that the average rate of change of <m>h</m> on any interval of distance between two points <m>P</m> and <m>Q</m> on the circle is given by
-  		<me>
+  		<md>
   			AV_{[P,Q]} = \frac{\text{change in height}}{\text{distance along the circle}}
-  		</me>,
+  		</md>,
   		where both quantities are measured from point <m>P</m> to point <m>Q</m>.
   	</p>
 
   	<p>
   		First, in <xref ref="F-circular-traversing-aroc-eighth">Figure</xref>, we consider points <m>P</m>, <m>Q</m>, and <m>R</m> where <m>Q</m> results from traversing <m>1/8</m> of the circumference from <m>P</m>, and <m>R</m> <m>1/8</m> of the circumference from <m>Q</m>.  In particular, we note that the distance <m>d_1</m> along the circle from <m>P</m> to <m>Q</m> is the same as the distance <m>d_2</m> along the circle from <m>Q</m> to <m>R</m>, and thus <m>d_1 = d_2</m>.  At the same time, it is apparent from the geometry of the circle that the change in height <m>h_1</m> from <m>P</m> to <m>Q</m> is greater than the change in height <m>h_2</m> from <m>Q</m> to <m>R</m>, so <m>h_1 \gt h_2</m>.  Thus, we can say that
-  		<me>
+  		<md>
   			AV_{[P,Q]} = \frac{h_1}{d_1} \gt \frac{h_2}{d_2} = AV_{[Q,R]}
-  		</me>.
+  		</md>.
   	</p>
 
   	<sidebyside width="50%">
@@ -282,9 +282,9 @@
 
   	<p>
   		The differences in certain average rates of change appear to become more extreme if we consider shorter arcs along the circle.  Next we consider traveling <m>1/20</m> of the circumference along the circle.  In <xref ref="F-circular-traversing-aroc-20th">Figure</xref>, points <m>P</m> and <m>Q</m> lie <m>1/20</m> of the circumference apart, as do <m>R</m> and <m>S</m>, so here <m>d_1 = d_5</m>.  In this situation, it is the case that <m>h_1 \gt h_5</m> for the same reasons as above, but we can say even more.  From the green triangle in <xref ref="F-circular-traversing-aroc-20th">Figure</xref>, we see that <m>h_1 \approx d_1</m> (while <m>h_1 \lt d_1</m>), so that <m>AV_{[P,Q]} = \frac{h_1}{d_1} \approx 1</m>.  At the same time, in the magenta triangle in the figure we see that <m>h_5</m> is very small, especially in comparison to <m>d_5</m>, and thus <m>AV_{[R,S]} = \frac{h_5}{d_5} \approx 0</m>.  Hence, in <xref ref="F-circular-traversing-aroc-20th">Figure</xref>,
-  		<me>
+  		<md>
   			AV_{[P,Q]} \approx 1 \text{ and } AV_{[R,S]} \approx 0
-   		</me>.
+   		</md>.
    		This information tells us that a circular function appears to change most rapidly for points near its midline and to change least rapidly for points near its highest and lowest values.
   	</p>
 

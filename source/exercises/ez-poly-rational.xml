@@ -181,9 +181,9 @@
           <li>
             <p>
               Substituting:
-              <me>
+              <md>
                 C(x) = 11.25x^2 + 12.50 \cdot x \cdot \frac{16}{3x^2} = 11.25x^2 + \frac{200}{3x}.
-              </me>
+              </md>
             </p>
           </li>
           <li>

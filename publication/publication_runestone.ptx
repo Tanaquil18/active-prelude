@@ -4,6 +4,9 @@
 		 />
     <version include="doenet online"/>
   </source>
+  <numbering>
+    <projects level="2" distinct="yes"/>
+  </numbering>
   <html>
     <!-- <search google-cx="015103900096539427448:ngwuia10qci" /> -->
     <css theme="default-modern" palette="blues" />

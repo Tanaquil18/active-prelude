@@ -43,9 +43,9 @@
     <solution>
       <p>
         With <m>\cos(\beta) = -\frac{12}{13}</m> and <m>\beta</m> in quadrant II, the Pythagorean identity gives <m>\sin(\beta) = \frac{5}{13}</m> (positive in QII).  The remaining values are:
-        <me>
+        <md>
           \sec(\beta) = -\frac{13}{12}, \quad \csc(\beta) = \frac{13}{5}, \quad \tan(\beta) = -\frac{5}{12}, \quad \cot(\beta) = -\frac{12}{5}.
-        </me>
+        </md>
       </p>
       <p>
         If <m>\beta</m> lies in quadrant III, then <m>\cos(\beta)</m> is still <m>-\frac{12}{13}</m> but now <m>\sin(\beta) = -\frac{5}{13}</m> (negative in QIII).  So <m>\sec(\beta) = -\frac{13}{12}</m> (unchanged), <m>\csc(\beta) = -\frac{13}{5}</m>, <m>\tan(\beta) = \frac{5}{12}</m>, and <m>\cot(\beta) = \frac{12}{5}</m>.

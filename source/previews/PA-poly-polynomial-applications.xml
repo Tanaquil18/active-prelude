@@ -41,9 +41,9 @@
       <answer/> -->
       <solution>
         <p>After cutting <m>x \times x</m> squares from each corner, the base of the box has dimensions <m>(12 - 2x)</m> by <m>(18 - 2x)</m>, and the height of the box is <m>x</m>.  Thus
-        <me>
+        <md>
           V(x) = (12-2x)(18-2x)x = 4(6-x)(9-x)x.
-        </me>
+        </md>
         </p>
       </solution>
     </task>

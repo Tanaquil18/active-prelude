@@ -19,9 +19,9 @@
 			<m>V</m> be the volume of water in the tank (in cubic meters) at a given time <m>t</m> (in minutes), and
 			<m>h</m> the depth of the water (in meters) at the same time.  It can be shown using calculus
 			that <m>V</m> is a function of <m>t</m> according to the model
-      		<me>
+      		<md>
         		V = p(t) = \frac{256\pi}{3} - \frac{\pi}{24} t^2(24-t)
-      		</me>.
+      		</md>.
       		In addition, let <m>h = q(t)</m> be the function whose output is the depth of the water in the tank at time <m>t</m>.
 		</p>
       <p/>

@@ -51,9 +51,9 @@
   		<title>Transformations of sine and cosine</title>
   		<p>
   			Given real numbers <m>a</m>, <m>b</m>, and <m>c</m> with <m>a \ne 0</m>, the functions
-  			<me>
+  			<md>
   				k(t) = a\cos(t-b)+c \ \text{ and } \ h(t) = a\sin(t-b) + c
-  			</me>
+  			</md>
   			each represent a horizontal shift by <m>b</m> units to the right, followed by a vertical stretch by <m>|a|</m> units (if <m>a \lt 0</m>, there is also a reflection across the <m>x</m>-axis), followed by a vertical shift of <m>c</m> units, applied to the parent function (<m>\cos(t)</m> or <m>\sin(t)</m>, respectively).  The resulting circular functions have midline <m>y = c</m>, amplitude <m>|a|</m>, range <m>[c-|a|,c+|a|]</m>, and period <m>p = 2\pi</m>.  In addition, the point <m>(b,a+c)</m> lies on the graph of <m>k</m> and the point <m>(b,c)</m> lies on the graph of <m>h</m>.
   		</p>
   	</assemblage>
@@ -117,13 +117,13 @@
 
 	<p>
 		We can also understand this from the perspective of function composition.  To evaluate <m>h(t) = f(2t)</m>, at a given value of <m>t</m>, we first multiply the input <m>t</m> by a factor of <m>2</m>, and then evaluate the function <m>f</m> at the result.  An important observation is that
-		<me>
+		<md>
 			h\left( \frac{1}{2}t \right) = f\left( 2 \cdot \frac{1}{2}t \right) = f(t)
-		</me>.
+		</md>.
 		This tells us that the point <m>(\frac{1}{2}t, f(t))</m> lies on the graph of <m>h</m> since an input of <m>\frac{1}{2}t</m> in <m>h</m> results in the value <m>f(t)</m>.  At the same time, the point <m>(t,f(t))</m> lies on the graph of <m>f</m>.  Thus we see that the correlation between points on the graphs of <m>f</m> and <m>h</m> (where <m>h(t) = f(2t)</m>) is
-		<me>
+		<md>
 			(t, f(t)) \rightarrow \left( \frac{1}{2}t, f(t) \right)
-		</me>.
+		</md>.
 		We can therefore think of the transformation <m>h(t) = f(2t)</m> as achieving the output values of <m>f</m> twice as fast as the original function <m>f(t)</m> does.  Analogously, the transformation <m>h(t) = f(\frac{1}{2}t)</m> will achieve the output values of <m>f</m> only half as quickly as the original function.
 	</p>
 
@@ -181,9 +181,9 @@
   	<title>The period of a circular function</title>
   	<p>
   		For any constant <m>k \gt 0</m>, the period of the functions <m>\sin(kt)</m> and <m>\cos(kt)</m> is
-  		<me>
+  		<md>
   			P = \frac{2\pi}{k}
-  		</me>.
+  		</md>.
   	</p>
   </assemblage>
 
@@ -204,9 +204,9 @@
   		<li>
   			<p>
   				Given real numbers <m>a</m>, <m>b</m>, and <m>c</m> with <m>a \ne 0</m>, the functions
-	  			<me>
+	  			<md>
 	  				k(t) = a\cos(t-b)+c \text{ and } h(t) = a\sin(t-b) + c
-	  			</me>
+	  			</md>
 	  			each represent a horizontal shift by <m>b</m> units to the right, followed by a vertical stretch by <m>|a|</m> units (with a reflection across the <m>x</m>-axis if <m>a \lt 0</m>), followed by a vertical shift of <m>c</m> units, applied to the parent function (<m>\cos(t)</m> or <m>\sin(t)</m>, respectively).  The resulting circular functions have midline <m>y = c</m>, amplitude <m>|a|</m>, range <m>[c-|a|,c+|a|]</m>, and period <m>p = 2\pi</m>.  In addition, the anchor point <m>(b,a+c)</m> lies on the graph of <m>k</m> and the anchor point <m>(b,c)</m> lies on the graph of <m>h</m>.
   			</p>
   		</li>
@@ -218,9 +218,9 @@
   		<li>
   			<p>
   				Given any circular periodic function for which the midline, amplitude, period, and an anchor point are known, we can find a corresponding formula for the function of the form
-  				<me>
+  				<md>
   					k(t) = a\cos(k(t-b))+c \text{ or } h(t) = a\sin(k(t-b)) + c
-  				</me>.
+  				</md>.
   				Each of these functions has midline <m>y = c</m>, amplitude <m>|a|</m>, and period <m>P = \frac{2\pi}{k}</m>.  The point <m>(b,a+c)</m> lies on <m>k</m> and the point <m>(b,c)</m> lies on <m>h</m>.
   			</p>
   		</li>

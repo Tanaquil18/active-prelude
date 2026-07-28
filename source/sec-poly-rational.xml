@@ -37,9 +37,9 @@
 	<subsection><title>Introduction</title>
 		<p>
 			The average rate of change of a function on an interval always involves a ratio.  Indeed, for a given function <m>f</m> that interests us near <m>t = 2</m>, we can investigate its average rate of change on intervals near this value by considering
-			<me>
+			<md>
 				AV_{[2,2+h]} = \frac{f(2+h)-f(2)}{h}
-			</me>.
+			</md>.
 			Suppose, for instance, that <m>f</m> meausures the height of a falling ball at time <m>t</m> and is given by <m>f(t) = -16t^2 + 32t + 48</m>, which happens to be a polynomial function of degree <m>2</m>.  For this particular function, its average rate of change on <m>[2,2+h]</m> is
 			<md>
 				<mrow>
@@ -80,9 +80,9 @@
 			<statement>
 				<p>
 					A function <m>r</m> is <term>rational</term> provided that it is possible to write <m>r</m> as the ratio of two polynomials, <m>p</m> and <m>q</m>. That is, <m>r</m> is rational provided that for some polynomial functions <m>p</m> and <m>q</m>, we have
-				    <me>
+				    <md>
 				      r(x) = \frac{p(x)}{q(x)}
-				    </me>.
+				    </md>.
  				</p>
 			</statement>
 		</definition>
@@ -110,13 +110,13 @@
 
 		<p>
 			We begin by focusing on the long-range behavior of rational functions.  It's important first to recall our earlier work with power functions of the form <m>p(x) = x^{-n}</m> where <m>n = 1, 2, \ldots</m>.  For such functions, we know that <m>p(x) = \frac{1}{x^n}</m> where <m>n \gt 0</m> and that
-			<me>
+			<md>
 				\lim_{x \to \infty} \frac{1}{x^n} = 0
-			</me>
+			</md>
 			since <m>x^n</m> increases without bound as <m>x \to \infty</m>.  The same is true when <m>x \to -\infty</m>:  <m>\lim_{x \to -\infty} \frac{1}{x^n} = 0</m>. Thus, any time we encounter a quantity such as <m>\frac{1}{x^3}</m>, this quantity will approach <m>0</m> as <m>x</m> increases without bound, and this will also occur for any constant numerator.  For instance,
-			<me>
+			<md>
 				\lim_{x \to \infty} \frac{2500}{x^2} = 0
-			</me>
+			</md>
 			since <m>2500</m> times a quantity approaching <m>0</m> will still approach <m>0</m> as <m>x</m> increases.
 		</p>
 
@@ -140,27 +140,27 @@
 		 				<li>
 		 					<p>
 		 						if <m>n \lt m</m>, then the degree of the numerator is less than the degree of the denominator, and thus
-		 						<me>
+		 						<md>
 		 							\lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0} = 0
-		 						</me>,
+		 						</md>,
 		 						which tells us that <m>y = 0</m> is a horizontal asymptote of <m>r</m>;
 		 					</p>
 		 				</li>
 		 				<li>
 		 					<p>
 		 						if <m>n = m</m>, then the degree of the numerator equals the degree of the denominator, and thus
-		 						<me>
+		 						<md>
 		 							\lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_n x^n + \cdots + b_0} = \frac{a_n}{b_n}
-		 						</me>,
+		 						</md>,
 		 						which tells us that <m>y = \frac{a_n}{b_n}</m> (the ratio of the coefficients of the highest order terms in <m>p</m> and <m>q</m>) is a horizontal asymptote of <m>r</m>;
 		 					</p>
 		 				</li>
 		 				<li>
 		 					<p>
 		 						if <m>n \gt m</m>, then the degree of the numerator is greater than the degree of the denominator, and thus
-		 						<me>
+		 						<md>
 		 							\lim_{n \to \infty} r(x) = \lim_{n \to \infty} \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0} = \pm \infty
-		 						</me>,
+		 						</md>,
 		 						(where the sign of the limit depends on the signs of <m>a_n</m> and <m>b_m</m>) which tells us that <m>r</m> is does not have a horizontal asymptote.
 		 					</p>
 		 				</li>
@@ -196,9 +196,9 @@
 	  		<solution>
 	  			<p>
 	  				To find the domain of any rational function, we need to determine where the denominator is zero.  The best way to find these values exactly is to factor the denominator.  Thus, we observe that
-	  				<me>
+	  				<md>
 	  					2x^3 - 6x^2 - 8x = 2x(x^2 - 3x - 4) = 2x(x+1)(x-4)
-	  				</me>.
+	  				</md>.
 	  				By the Zero Product Property, it follows that the denominator of <m>r</m> is zero at <m>x = 0</m>, <m>x = -1</m>, and <m>x = 4</m>.  Hence, the domain of <m>r</m> is the set of all real numbers except <m>-1</m>, <m>0</m>, and <m>4</m>.
 	  			</p>
 	  		</solution>
@@ -216,21 +216,21 @@
 		<title>Applications of rational functions</title>
 		<p>
 			Rational functions arise naturally in the study of the average rate of change of a polynomial function, leading to expressions such as
-			<me>
+			<md>
 				AV_{[2,2+h]} = \frac{-32h - 16h^2}{h}
-			</me>.
+			</md>.
 			We will study several subtle issues that correspond to such functions further in <xref ref="sec-poly-rational-features">Section</xref>.  For now, we will focus on a different setting in which rational functions play a key role.
 		</p>
 
 		<p>
 			In <xref ref="sec-poly-polynomial-applications">Section</xref>, we encountered a class of problems where a key quantity was modeled by a polynomial function.  We found that if we considered a container such as a cylinder with fixed surface area, then the volume of the container could be written as a polynomial of a single variable.  For instance, if we consider a circular cylinder with surface area <m>10</m> square feet, then we know that
-			<me>
+			<md>
 				S = 10 = 2\pi r^2 + 2\pi r h
-			</me>
+			</md>
 			and therefore <m>h = \frac{10 - 2\pi r^2}{2 \pi r}</m>.  Since the cylinder's volume is <m>V = \pi r^2 h</m>, it follows that
-			<me>
+			<md>
 				V = \pi r^2 h = \pi r^2 \left( \frac{10 - 2\pi r^2}{2 \pi r} \right) = r(5 - \pi r^2)
-			</me>,
+			</md>,
 			which is a polynomial function of <m>r</m>.
 		</p>
 
@@ -247,21 +247,21 @@
 			<solution>
 				<p>
 					Neglecting any scrap, the amount of material it takes to construct the container is its surface area, which we know to be
-					<me>
+					<md>
 						S = 2\pi r^2 + 2\pi r h
-					</me>.
+					</md>.
 					Because we want the volume to be fixed, this results in a constraint equation that enables us to relate <m>r</m> and <m>h</m>.  In particular, since
-					<me>
+					<md>
 						V = 20 = \pi r^2 h
-					</me>,
+					</md>,
 					it follows that we can solve for <m>h</m> and get <m>h = \frac{20}{\pi r^2}</m>.  Substituting this expression for <m>h</m> in the equation for surface area, we find that
-					<me>
+					<md>
 						S = 2\pi r^2 + 2\pi r \cdot \frac{20}{\pi r^2} = 2 \pi r^2 + \frac{40}{r}
-					</me>.
+					</md>.
 					Getting a common denominator, we can also write <m>S</m> in the form
-					<me>
+					<md>
 						S(r) = \frac{2 \pi r^3 + 40}{r}
-					</me>
+					</md>
 					and thus we see that <m>S</m> is a rational function of <m>r</m>.  Because of the physical context of the problem and the fact that the denominator of <m>S</m> is <m>r</m>, the domain of <m>S</m> is the set of all positive real numbers.
 				</p>
 			</solution>

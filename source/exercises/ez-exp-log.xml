@@ -218,9 +218,9 @@
         A can of soda is removed from a refrigerator at time <m>t = 0</m> (in minutes)
         and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
         Based on the data, a model is formulated for the object's temperature, given by
-          <me>
+          <md>
             F(t) = 74.4 - 38.8e^{-0.05t}
-          </me>.
+          </md>.
       </p>
 
       <p>
@@ -259,9 +259,9 @@
           <li>
             <p>
               We solve <m>74.4 - 38.8e^{-0.05t} = 50</m>.  Subtracting <m>74.4</m> and dividing by <m>-38.8</m> gives <m>e^{-0.05t} = \frac{50 - 74.4}{-38.8} = \frac{24.4}{38.8}</m>.  Taking the natural log, <m>-0.05t = \ln\!\left(\frac{24.4}{38.8}\right)</m>, so
-              <me>
+              <md>
                 t = \frac{\ln\!\left(\frac{24.4}{38.8}\right)}{-0.05} \approx 9.28 \text{ minutes}.
-              </me>
+              </md>
             </p>
           </li>
           <li>
@@ -277,9 +277,9 @@
           <li>
             <p>
               Solving <m>y = 74.4 - 38.8e^{-0.05t}</m> for <m>t</m>: we get <m>e^{-0.05t} = \frac{y - 74.4}{-38.8}</m>, so
-              <me>
+              <md>
                 t = F^{-1}(y) = \frac{\ln\!\left(\frac{y - 74.4}{-38.8}\right)}{-0.05}.
-              </me>
+              </md>
               This inverse function tells us the time (in minutes) at which the soda reaches a given temperature <m>y</m> (in degrees Fahrenheit).
             </p>
           </li>

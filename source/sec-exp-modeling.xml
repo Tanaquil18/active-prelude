@@ -203,9 +203,9 @@
 
 	<p>
 		In addition, we make a key observation about the use of exponents.  For the function <m>q(t) = (\frac{1}{2})^t</m>, there are three equivalent ways we may write the function:
-		<me>
+		<md>
 			\left( \frac{1}{2} \right)^t = \frac{1}{2^t} = 2^{-t}
-		</me>.
+		</md>.
 		In our work with transformations involving horizontal scaling in <xref ref="ez-circular-sinusoidal-horiz-reflection">Exercise</xref>, we saw that the graph of <m>y = h(-t)</m> is the reflection of the graph of <m>y = h(t)</m> across the <m>y</m>-axis.  Therefore, we can say that the graphs of <m>p(t) = 2^t</m> and <m>q(t) = (\frac{1}{2})^t = 2^{-t}</m> are reflections of one another in the <m>y</m>-axis since <m>p(-t) = 2^{-t} = q(t)</m>.  We see this fact verified in <xref ref="F-modeling-exp-reflection">Figure</xref>.
 	</p>
 
@@ -336,9 +336,9 @@
 
 		<p>
 			The data in the bottom row of <xref ref="T-modeling-exp-coffee-revis">Table</xref> appears exponential, and if we test the data by computing the quotients of output values that correspond to equally-spaced input, we see a nearly constant ratio.  In particular,
-			<me>
+			<md>
 				\frac{73}{85} \approx 0.86, \ \frac{64}{73} \approx 0.88, \ \frac{56}{64} \approx 0.88, \ \frac{49}{56} \approx 0.88, \ \frac{45}{49} \approx 0.92, \text{and} \frac{40}{45} \approx 0.89 <!--, \ \frac{36}{40} = 0.9,  \frac{33}{36} \approx 0.92 -->
-			</me>.
+			</md>.
 			Of course, there is some measurement error in the data (plus it is only recorded to accuracy of whole degrees), so these computations provide convincing evidence that the underlying function is exponential.  In addition, we expect that if the data continued in the bottom row of <xref ref="T-modeling-exp-coffee-revis">Table</xref>, the values would approach <m>0</m> because <m>F(t)</m> will approach <m>71</m>.
 		</p>
 

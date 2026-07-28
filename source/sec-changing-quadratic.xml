@@ -40,9 +40,9 @@
   		After linear functions,
     	quadratic functions are arguably the next simplest functions in mathematics.
     	A <em>quadratic function</em> <idx><h>quadratic function</h></idx> is one that may be written in the form
-    	<me>
+    	<md>
       		q(x) = ax^2 + bx + c
-    	</me>,
+    	</md>,
     	where <m>a</m>,
     	<m>b</m>, and <m>c</m> are real numbers with <m>a \ne 0</m>.  One of the reasons that quadratic functions are especially important is that they model the height of an object falling under the force of gravity.
   	</p>
@@ -71,9 +71,9 @@
 		<idx>quadratic formula</idx>
 		<p>
 			Let <m>a</m>, <m>b</m>, and <m>c</m> be real numbers with <m>a \ne 0</m>.  The equation <m>ax^2 + bx + c = 0</m> can have <m>0</m>, <m>1</m>, or <m>2</m> real solutions.   These real solutions are given by the quadratic formula,
-			<me>
+			<md>
 				x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
-			</me>,
+			</md>,
 			provided that <m>b^2 - 4ac \ge 0</m>.
 		</p>
 	</assemblage>
@@ -97,9 +97,9 @@
 
 	<p>
 		While the quadratic formula will always provide any real solutions to <m>q(x) = 0</m>, in practice it is often easier to attempt to factor before using the formula.  For instance, given <m>q(x) = x^2 - 5x + 6</m>, we can find its <m>x</m>-intercepts quickly by factoring.  Since
-		<me>
+		<md>
 			x^2 - 5x + 6 = (x-2)(x-3)
-		</me>,
+		</md>,
 		it follows that <m>(2,0)</m> and <m>(3,0)</m> are the <m>x</m>-intercepts of <m>q</m>.  Note more generally that if we know the <m>x</m>-intercepts <idx><h>quadratic function</h> <h>x-intercepts</h></idx> of a quadratic function are <m>(r,0)</m> and <m>(s,0)</m>, it follows that we can write the quadratic function in the form <m>q(x) = a(x-r)(x-s)</m>.
 	</p>
 
@@ -143,17 +143,17 @@
 		<solution>
 			<p>
 				We first observe that we can write <m>q(x) = 0.25x^2 - x + 3.5</m> in a form closer to <m>q(x) = a(x-h)^2 + k</m> by factoring <m>0.25</m> from the first two terms to get
-				<me>
+				<md>
 					q(x) = 0.25(x^2 - 4x) + 3.5
-				</me>.
+				</md>.
 				Next, we want to add a constant inside the parentheses to form a perfect square.  Noting that <m>(x-2)^2 = x^2 - 4x + 4</m>, we need to add <m>4</m>.  Since we are adding <m>4</m> inside the parentheses, the <m>4</m> is being multiplied by <m>0.25</m>, which has the net effect of adding <m>1</m> to the function.  To keep the function as given, we must also subtract <m>1</m>, and thus we have
-				<me>
+				<md>
 					q(x) = 0.25(x^2 - 4x + 4) + 3.5 - 1
-				</me>.
+				</md>.
 				It follows that
-				<me>
+				<md>
 					q(x) = 0.25(x-2)^2 + 2.5
-				</me>.
+				</md>.
 			</p>
 			<p>
 				Next, observe that the vertex of <m>q</m> is <m>(2,2.5)</m>.  This holds because <m>(x-2)^2</m> is always greater than or equal to <m>0</m>, and thus its smallest possible value is <m>0</m> when <m>x = 2</m>.  Moreover, when <m>x = 2</m>, <m>q(2) = 2.5</m>.<fn>We can also verify this point is the vertex using standard form.  From <m>q(x) = 0.25x^2 - x + 3.5</m>, we see that <m>a = 0.25</m> and <m>b = -1</m>, so <m>x = -\frac{b}{2a} = \frac{1}{0.5} = 2</m>.  In addition, <m>q(2) = 2.5</m>.</fn>
@@ -209,9 +209,9 @@
 	  	<p>
 	  	For an object tossed vertically from an initial height of <m>s_0</m> feet with a velocity of <m>v_0</m> feet per second,
 	    the object's height at time <m>t</m> (in seconds) is given by the formula
-	    <me>
+	    <md>
 	    	h(t) = -16t^2 + v_0t + s_0
-	    </me>
+	    </md>
 	  	</p>
 	  </assemblage>
 
@@ -234,9 +234,9 @@
 
 	<p>
 		Recall that we considered a water balloon tossed vertically from a fifth story window whose height, <m>h</m>, in meters, at time <m>t</m>, in seconds, is modeled<fn>Here we are using <m>a = -5</m> rather than <m>a = -4.9</m> for simplicity.</fn> by the function
-		<me>
+		<md>
 			h = q(t) = -5t^2 + 20t + 25
-		</me>.
+		</md>.
 		We then completed <xref ref="T-PA-changing-quadratic-heights-complete">Table</xref> and <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref> to investigate how both function values and averages rates of change varied as we changed the input to the function.
 	</p>
 
@@ -391,9 +391,9 @@
   		<li>
   			<p>
   				For an object with height <m>h</m> measured in feet at time <m>t</m> in seconds, if the object was launched vertically at an initial velocity of <m>v_0</m> feet per second and from an initial height of <m>s_0</m> feet, the object's height is given by
-  				<me>
+  				<md>
   					h = q(t) = -16t^2 + v_0t + s_0
-  				</me>.
+  				</md>.
   				That is, the object's height is completely determined by the initial height and initial velocity from which it was launched.  The model is valid for the entire time until the object lands.  If <m>h</m> is instead measured in meters and <m>v_0</m> in meters per second, <m>-16</m> is replaced with <m>-4.9</m>.
   			</p>
   		</li>

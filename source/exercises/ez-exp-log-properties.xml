@@ -155,9 +155,9 @@
           <li>
             <p>
               We solve <m>10000 = 28000e^{-kt}</m>, giving <m>e^{-kt} = \frac{10000}{28000}</m>, so
-              <me>
+              <md>
                 t = \frac{\ln(10000/28000)}{-k} = \frac{\ln(10000) - \ln(28000)}{\ln(23200) - \ln(28000)} \approx 5.48 \text{ years}.
-              </me>
+              </md>
             </p>
           </li>
           <li>
@@ -205,9 +205,9 @@
           <li>
             <p>
               Recall that <m>y = \log_b(x)</m>.  Explain why the following equation (often called the Golden Rule for Logarithms) is true:
-              <me>
+              <md>
                 \log_b(x) = \frac{\ln(x)}{\ln(b)}
-              </me>.
+              </md>.
             </p>
           </li>
           <li>

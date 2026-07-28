@@ -42,13 +42,13 @@
 
 	<p>
 		We have also begun to see the important role that logarithms play in work with exponential models.  The natural logarithm is the inverse of the natural exponential function and satisfies the important rule that <m>\ln(b^k) = k\ln (b)</m>.  This rule enables us to solve equations with the structure <m>a^k = b</m> for <m>k</m> in the context where <m>a</m> and <m>b</m> are known but <m>k</m> is not.  Indeed, we can first take the natural log of both sides of the equation to get
-		<me>
+		<md>
 			\ln(a^k) = \ln(b)
-		</me>,
+		</md>,
 		from which it follows that <m>k \ln(a) = \ln(b)</m>, and therefore
-		<me>
+		<md>
 			k = \frac{\ln(b)}{\ln(a)}
-		</me>.
+		</md>.
 		Finding <m>k</m> is often central to determining an exponential model, and logarithms make finding the exact value of <m>k</m> possible.
 	</p>
 
@@ -107,9 +107,9 @@
   	<title>A more realistic model for population growth</title>
   	<p>
   		If we assume that a population grows at a rate that is proportionate to the size of the population, it follows that the population grows exponentially according to the model
-  		<me>
+  		<md>
   			P(t) = Ae^{kt}
-  		</me>
+  		</md>
   		where <m>A</m> is the initial population and <m>k</m> is tied to the rate at which the population grows.  Since <m>k \gt 0</m>, we know that <m>e^{kt}</m> is an always increasing, always concave up function that grows without bound.  While <m>P(t) = Ae^{kt}</m> may be a reasonable model for how a population grows when it is relatively small, because the function grows without bound as time increases, it can't be a realistic long-term representation of what happens in reality.  Indeed, whether it is the number of fish who can survive in a lake, the number of cells in a petri dish, or the number of human beings on earth, the size of the surroundings and the limitations of resources will keep the population from being able to grow without bound.
   	</p>
 
@@ -140,9 +140,9 @@
   		<li>
   			<p>
   				Because the exponential function <m>P(t) = Ae^{kt}</m> grows without bound as <m>t</m> increases, such a function is not a realistic model of a population that we expect to level off as time goes on.  The logistic function
-  				<me>
+  				<md>
   					P(t) = \frac{A}{1 + Me^{-kt}}
-  				</me>
+  				</md>
   				more appropriately models a population that grows roughly exponentially when <m>P</m> is small but whose size levels off as it approaches the carrying capacity of the surrounding environment, which is the value of the constant <m>A</m>.
   			</p>
   		</li>

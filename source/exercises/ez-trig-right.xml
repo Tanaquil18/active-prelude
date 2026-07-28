@@ -93,9 +93,9 @@
     <solution>
       <p>
         Each side panel is a <m>2' \times 24'</m> strip folded at angle <m>\theta</m> from the base.  The depth of the trough is <m>\sin(\theta)</m> feet, and the two slanted sides each add <m>\cos(\theta)</m> feet to the top width, giving a total top width of <m>2 + 2\cos(\theta)</m> feet.  The cross-sectional area of the trapezoidal cross-section is <m>\frac{1}{2}(2 + 2 + 2\cos(\theta))\sin(\theta) = \sin(\theta)(2 + \cos(\theta))</m> square feet.  Multiplying by the length of <m>24</m> feet gives
-        <me>
+        <md>
           V(\theta) = 24\sin(\theta)(2 + \cos(\theta)).
-        </me>
+        </md>
       </p>
     </solution>
   </exercise>

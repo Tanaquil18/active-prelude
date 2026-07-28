@@ -46,9 +46,9 @@
     <statement>
       <p>
         Consider the polynomial function given by
-        <me>
+        <md>
           p(x) = 0.0005(x+21.7)^3 (x-20.9)^2 (x-31.4)(x^2+100)
-        </me>.
+        </md>.
       </p>
 
       <p>
@@ -84,9 +84,9 @@
           <li>
             <p>
               Now consider the related but different polynomial
-              <me>
+              <md>
                 q(x) = -0.0005(x+21.7)^3 (x-20.9)^2 (x-31.4)(x^2+100)(x-92.3)
-              </me>.
+              </md>.
               What is the degree of <m>q</m>?
               What are the zeros of <m>q</m>?
               What is obvious from its graph and what is not?

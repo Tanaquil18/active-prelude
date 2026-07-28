@@ -51,12 +51,12 @@
       <statement>
         <p>
 						Later in this section, we'll learn that one model for how a population grows over time can be given by a function of the form
-						<me>
+						<md>
 							P(t) = \frac{A}{1 + Me^{-kt}}
-						</me>.  Models of this form lead naturally to equations that have structure like
-						<me>
+						</md>.  Models of this form lead naturally to equations that have structure like
+						<md>
 							3 = \frac{10}{1+x}.
-						</me>
+						</md>
 						Solve the equation <m>3 = \frac{10}{1+x}</m> for the exact value of <m>x</m>.
 					</p>
       </statement>

@@ -161,13 +161,13 @@
 
   	<p>
   		We can think of the natural logarithm, <m>\ln(y)</m>, as the <q>base-<m>e</m> logarithm</q>.  For instance,
-  		<me>
+  		<md>
   			\ln(e^{-1}) = -1
-  		</me>
+  		</md>
   		and
-  		<me>
+  		<md>
   			e^{\ln(2)} = 2
-  		</me>.
+  		</md>.
   		The former equation is true since <q>the power to which we raise <m>e</m> to get <m>e^{-1}</m> is <m>-1</m></q>; the latter equation is true since <q>when we raise <m>e</m> to the power to which we raise <m>e</m> to get <m>2</m>, we get <m>2</m></q>.  The key relationships between the natural exponential and the natural logarithm function are investigated in <xref ref="act-exp-log-natural">Activity</xref>.
   	</p>
 
@@ -179,9 +179,9 @@
   	<title><m>f(t) = b^t</m> revisited</title>
   	<p>
   		In <xref ref="sec-exp-growth">Section</xref> and <xref ref="sec-exp-modeling">Section</xref>, we saw that that function <m>f(t) = b^t</m> plays a key role in modeling exponential growth and decay, and that the value of <m>b</m> not only determines whether the function models growth (<m>b \gt 1</m>) or decay (<m>0 \lt b \lt 1</m>), but also how fast the growth or decay occurs.  Furthermore, once we introduced the natural base <m>e</m> in <xref ref="sec-exp-e">Section</xref>, we realized that we could write every exponential function of form <m>f(t) = b^t</m> as a horizontal scaling of the function <m>E(t) = e^t</m> by writing
-  		<me>
+  		<md>
   			b^t = f(t) = E(kt) = e^{kt}
-  		</me>
+  		</md>
   		for some value <m>k</m>.  Our development of the natural logarithm function in the current section enables us to now determine <m>k</m> exactly.
   	</p>
 
@@ -222,17 +222,17 @@
   		<li>
   			<p>
   				The natural logarithm often enables us to solve an equation that involves <m>e</m> to some unknown quantity.  For instance, to solve <m>2e^{3t-4} + 5 = 13</m>, we can first solve for <m>e^{3t-4}</m> by subtracting <m>5</m> from each side and dividing by <m>2</m> to get
-  				<me>
+  				<md>
   					e^{3t-4} = 4
-  				</me>.
+  				</md>.
   				This last equation says <q><m>e</m> to some power is <m>4</m></q>.  We know that it is equivalent to say
-  				<me>
+  				<md>
   					\ln(4) = 3t-4
-  				</me>.
+  				</md>.
   				Since <m>\ln(4)</m> is a number, we can solve this most recent linear equation for <m>t</m>.  In particular, <m>3t = 4 + \ln(4)</m>, so
-  				<me>
+  				<md>
   					t = \frac{1}{3}(4 + \ln(4))
-  				</me>.
+  				</md>.
   			</p>
   		</li>
   	</ul>

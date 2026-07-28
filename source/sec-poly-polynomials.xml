@@ -45,13 +45,13 @@
 
 	<p>
 		Indeed, if we instead view linear functions as having form
-	    <me>
+	    <md>
 	      L(x) = a_0 + a_1 x
-	    </me>
+	    </md>
 	    (for some constants <m>a_0</m> and <m>a_1</m>) and quadratic functions as having form
-	    <me>
+	    <md>
 	      Q(x) = a_0 + a_1 x + a_2 x^2
-	    </me>
+	    </md>
       (for some constants <m>a_0</m>, <m>a_1</m>, and <m>a_2</m>),
 	    then it's natural to think about more general functions of this same form,
 	    but with additional power functions included.
@@ -62,9 +62,9 @@
 		<statement>
 			<p>
         Given real numbers <m>a_0, a_1, \ldots, a_n</m> where <m>a_n \ne 0</m>, we say that the function
-        <me>
+        <md>
           P(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n
-        </me>
+        </md>
         is a <term>polynomial of degree <m>n</m></term>. <idx><h>polynomial</h><h>degree</h></idx> In addition, we say that the values of <m>a_i</m> are the <term>coefficients</term> of the polynomial and the individual power functions <m>a_i x^i</m> are the <term>terms</term> of the polynomial.  <idx><h>polynomial</h><h>coefficients</h></idx> <idx><h>polynomial</h><h>terms</h></idx>  Any value of <m>x</m> for which <m>P(x) = 0</m> is called a <term>zero</term> of the polynomial.  <idx><h>polynomial</h><h>zero</h></idx>
       </p>
 		</statement>
@@ -154,9 +154,9 @@
 
   	<p>
   		The Zero Product Property <idx><h>Zero Product Property</h></idx> states that if two or more numbers are multiplied together and the result is <m>0</m>, then at least one of the numbers must be <m>0</m>.  We use the Zero Product Property regularly with polynomial functions.  If we can determine all <m>n</m> zeros of a degree <m>n</m> polynomial, and we call those zeros <m>r_1</m>, <m>r_2</m>, <m>\ldots</m>, <m>r_n</m>, we can write
-  		<me>
+  		<md>
   			p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)
-  		</me>.
+  		</md>.
   		Moreover, if we are given a polynomial in this factored form, we can quickly determine its zeros.  For instance, if <m>p(x) = 2(x+7)(x+1)(x-2)(x-5)</m>, we know that the only way <m>p(x) = 0</m> is if at least one of the factors <m>(x+7)</m>, <m>(x+1)</m>, <m>(x-2)</m>, or <m>(x-5)</m> equals <m>0</m>, which implies that <m>x = -7</m>, <m>x = -1</m>, <m>x = 2</m>, or <m>x = 5</m>.  Hence, from the factored form of a polynomial, it is straightforward to identify the polynomial's zeros, the <m>x</m>-values at which its graph crosses the <m>x</m>-axis.  We can also use the factored form of a polynomial to develop what we call a <em>sign chart</em>, which we demonstrate in <xref ref="ex-polynomial-signs">Example</xref>. <idx><h>sign chart</h></idx>
   	</p>
 
@@ -302,13 +302,13 @@
   			<ul>
   				<li>
   					<p>
-  						If the function is in standard form, say <me>p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n</me>, we know that its degree is <m>n</m> and that when we zoom out, <m>p</m> looks like <m>a_n x^n</m> and thus has the same long-range behavior as <m>a_n x^n</m>.  Thus, <m>p</m> is chair-shaped if <m>n</m> is odd and U-shaped if <m>n</m> is even.  Whether <m>\lim_{n \to \infty} p(x)</m> is <m>+\infty</m> or <m>-\infty</m> depends on the sign of <m>a_n</m>.
+  						If the function is in standard form, say <md>p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1}x^{n-1} + a_n x^n</md>, we know that its degree is <m>n</m> and that when we zoom out, <m>p</m> looks like <m>a_n x^n</m> and thus has the same long-range behavior as <m>a_n x^n</m>.  Thus, <m>p</m> is chair-shaped if <m>n</m> is odd and U-shaped if <m>n</m> is even.  Whether <m>\lim_{n \to \infty} p(x)</m> is <m>+\infty</m> or <m>-\infty</m> depends on the sign of <m>a_n</m>.
   					</p>
   				</li>
 
   				<li>
   					<p>
-  						If the function is in factored form, say <me>p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)</me> (where the <m>r_i</m>'s are possibly not distinct and possibly complex), we can quickly determine both the degree of the polynomial (<m>n</m>) and the locations of its zeros, as well as their multiplicities.
+  						If the function is in factored form, say <md>p(x) = a_n(x-r_1)(x-r_2) \cdots (x-r_n)</md> (where the <m>r_i</m>'s are possibly not distinct and possibly complex), we can quickly determine both the degree of the polynomial (<m>n</m>) and the locations of its zeros, as well as their multiplicities.
   					</p>
   				</li>
   			</ul>
@@ -321,7 +321,7 @@
   		</li>
   		<li>
   			<p>
-  				When a polynomial <m>p</m> has a repeated factor such as <me>p(x) = (x-5)(x-5)(x-5) = (x-5)^3</me>, we say that <m>x = 5</m> is a zero of multiplicity <m>3</m>.  At the point <m>x = 5</m> where <m>p</m> will cross the <m>x</m>-axis, up close it will look like a cubic polynomial and thus be chair-shaped.  In general, if <m>(x-r)^n</m> is a factor of a polynomial <m>p</m> so that <m>x = r</m> is a zero of multiplicity <m>n</m>, the polynomial will behave near <m>x = r</m> like the polynomial <m>x^n</m> behaves near <m>x = 0</m>.
+  				When a polynomial <m>p</m> has a repeated factor such as <md>p(x) = (x-5)(x-5)(x-5) = (x-5)^3</md>, we say that <m>x = 5</m> is a zero of multiplicity <m>3</m>.  At the point <m>x = 5</m> where <m>p</m> will cross the <m>x</m>-axis, up close it will look like a cubic polynomial and thus be chair-shaped.  In general, if <m>(x-r)^n</m> is a factor of a polynomial <m>p</m> so that <m>x = r</m> is a zero of multiplicity <m>n</m>, the polynomial will behave near <m>x = r</m> like the polynomial <m>x^n</m> behaves near <m>x = 0</m>.
   			</p>
   		</li>
   	</ul>

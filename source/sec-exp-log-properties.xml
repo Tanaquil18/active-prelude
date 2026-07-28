@@ -51,21 +51,21 @@
 
 	<p>
 		Let <m>a</m> and <m>b</m> be any positive real numbers so that <m>x = \ln(a)</m> and <m>y = \ln(b)</m> are both defined.  Observe that we can rewrite these two equations using the definition of the natural logarithm so that
-		<me>
+		<md>
 			a = e^x \ \text{ and } \ b = e^y
-		</me>.
+		</md>.
 		Using substitution, we can now say that
-		<me>
+		<md>
 			\ln(a \cdot b) = \ln(e^x \cdot e^y)
-		</me>.
+		</md>.
 		By exponent rules, we know that <m>\ln(e^x \cdot e^y) = \ln(e^{x+y})</m>, and because the natural logarithm and natural exponential function are inverses, <m>\ln(e^{x+y}) = x+y</m>.  Combining the three most recent equations,
-		<me>
+		<md>
 			\ln(a \cdot b) = x + y
-		</me>.
+		</md>.
 		Finally, recalling that <m>x = \ln(a)</m> and <m>y = \ln(b)</m>, we have shown that
-		<me>
+		<md>
 			\ln(a \cdot b) = \ln(a) + \ln(b)
-		</me>
+		</md>
 		for any choice of positive real numbers <m>a</m> and <m>b</m>.
   	</p>
 
@@ -106,17 +106,17 @@
 
 	<p>
 		Because positive integer exponents are a shorthand way to express repeated multiplication, we can use the multiplication rule for logarithms to think about exponents as well.  For example,
-		<me>
+		<md>
 			\ln(a^3) = \ln(a \cdot a \cdot a)
-		</me>,
+		</md>,
 		and by repeated application of the rule for the natural logarithm of a product, we see
-		<me>
+		<md>
 			\ln(a^3) = \ln(a) + \ln(a) + \ln(a) = 3\ln(a)
-		</me>.
+		</md>.
 		A similar argument works to show that for every natural number <m>n</m>,
-		<me>
+		<md>
 			\ln(a^n) = n\ln(a)
-		</me>.
+		</md>.
 		More sophisticated mathematics can be used to prove that the following property holds for every real number exponent <m>t</m>.
 	</p>
 
@@ -124,9 +124,9 @@
 		<title>Logarithms of exponential expressions</title>
 		<p>
 			For any positive real number <m>a</m> and any real number <m>t</m>,
-			<me>
+			<md>
 				\ln(a^t) = t\ln(a)
-			</me>.
+			</md>.
 		</p>
 	</assemblage>
 
@@ -147,17 +147,17 @@
 					3^t = \frac{6}{7}
 				</m>.
 				Next, we take the natural logarithm of both sides of the equation.  Doing so, we have
-				<me>
+				<md>
 					\ln \left( 3^t \right) =  \ln \left( \frac{6}{7} \right)
-				</me>.
+				</md>.
 				Applying the rule for the logarithm of an exponential expression on the left, we see that
 				<m>
 					t \ln(3) = \ln \left( \frac{6}{7} \right)
 				</m>.
 				Both <m>\ln(3)</m> and <m>\ln \left( \frac{6}{7} \right)</m> are simply numbers, and thus we conclude that
-				<me>
+				<md>
 					t = \frac{\ln \left( \frac{6}{7} \right)}{\ln(3)}
-				</me>.
+				</md>.
 			</p>
 		</solution>
 	</example>
@@ -249,33 +249,33 @@
   		<solution>
   			<p>
   				Since the model has form <m>P(t) = Ae^{kt}</m>, we know that <m>P(0) = A</m>.  Because we are given that <m>P(0) = 2.475</m>, this shows that <m>A = 2.475</m>.  To find <m>k</m>, we use the fact that <m>P(10) = 4.298</m>.  Applying this information, <m>A = 2.475</m>, and the form of the model, <m>P(t) = Ae^{kt}</m>, we see that
-	  			<me>
+	  			<md>
 	  				4.298 = 2.475 e^{k \cdot 10}
-	  			</me>.
+	  			</md>.
   				To solve for <m>k</m>, we first isolate <m>e^{10k}</m> by dividing both sides by <m>2.475</m> to get
-  				<me>
+  				<md>
   					e^{10k} = \frac{4.298}{2.475}
-  				</me>.
+  				</md>.
   				Taking the natural logarithm of each side, we find
-  				<me>
+  				<md>
   					10k = \ln \left( \frac{4.298}{2.475} \right)
-  				</me>,
+  				</md>,
   				and thus <m>k = \frac{1}{10}\ln \left( \frac{4.298}{2.475} \right) \approx 0.05519</m>.
   			</p>
 
   			<p>
   				To determine how long it takes for the population to reach <m>1</m> billion cells, we need to solve the equation <m>P(t) = 1000</m>.  Using our preceding work to find <m>A</m> and <m>k</m>, we know that we need to solve the equation
-  				<me>
+  				<md>
   					1000 = 2.475 e^{\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t}
-  				</me>.
+  				</md>.
   				We divide both sides by <m>2.475</m> to get <m>e^{\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t} = \frac{1000}{2.475}</m>, and after taking the natural logarithm of each side, we see
-  				<me>
+  				<md>
   					\frac{1}{10}\ln \left( \frac{4.298}{2.475} \right)t = \ln \left( \frac{1000}{2.475} \right)
-  				</me>,
+  				</md>,
   				so that
-  				<me>
+  				<md>
   					t = \frac{10 \ln \left( \frac{1000}{2.475} \right)}{\ln \left( \frac{4.298}{2.475} \right)} \approx 108.741
-  				</me>.
+  				</md>.
   			</p>
   		</solution>
   	</example>
@@ -291,13 +291,13 @@
   		<li>
   			<p>
   				There are three fundamental rules for exponents given nonzero base <m>a</m> and exponents <m>m</m> and <m>n</m>:
-  				<me>
+  				<md>
   					a^m \cdot a^n = a^{m+n}, \frac{a^m}{a^n} = a^{m-n}, \text{ and } (a^m)^n = a^{mn}
-  				</me>.
+  				</md>.
   				For logarithms<fn>We state these rules for the natural logarithm, but they hold for any logarithm of any base.</fn>, we have the following analogous structural rules for positive real numbers <m>a</m> and <m>b</m> and any real number <m>t</m>:
-  				<me>
+  				<md>
   					\ln(a \cdot b) = \ln(a) + \ln(b), \ln \left( \frac{a}{b} \right) = \ln(a) - \ln(b), \text{ and } \ln(a^t) = t \ln(a)
-  				</me>.
+  				</md>.
   			</p>
   		</li>
   		<li>
@@ -308,13 +308,13 @@
   		<li>
   			<p>
   				Logarithms are very important in determining values that arise in equations of the form
-			    <me>
+			    <md>
 			      a^b = c
-			    </me>,
+			    </md>,
 			    where <m>a</m> and <m>c</m> are known, but <m>b</m> is not.  In this context, we can take the natural logarithm of both sides of the equation to find that
-			    <me>
+			    <md>
 			    	\ln(a^b) = \ln(c)
-			    </me>
+			    </md>
 			    and thus <m>b\ln(a) = \ln(c)</m>, so that <m>b = \frac{\ln(c)}{\ln(a)}</m>.
   			</p>
   		</li>

@@ -18,9 +18,9 @@
 			A can of soda (at room temperature) is placed in a refrigerator at time <m>t = 0</m> (in minutes)
       		and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
 			Based on the data, a model is formulated for the object's temperature, given by
-		      <me>
+		      <md>
 		        F(t) = 42 + 30(0.95)^{t}
-		      </me>.
+		      </md>.
 		</p>
       <p/>
     </introduction>

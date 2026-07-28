@@ -67,9 +67,9 @@
       <answer><p>As <m>x \to \infty</m>, the numerator <m>\to 3</m> and the denominator <m>\to 0^+</m>, so <m>\displaystyle\lim_{x \to \infty} u(x) = +\infty</m>.</p></answer>
       <solution>
         <p>Multiplying <m>u(x) = \dfrac{3x^2-5x+1}{7x+2}</m> by <m>\dfrac{1/x^2}{1/x^2}</m>:
-        <me>
+        <md>
           u(x) = \frac{3 - \frac{5}{x} + \frac{1}{x^2}}{\frac{7}{x} + \frac{2}{x^2}}.
-        </me>
+        </md>
         As <m>x \to \infty</m>, the numerator <m>\to 3</m> and the denominator <m>\to 0^+</m>, so <m>\displaystyle\lim_{x \to \infty} u(x) = +\infty</m>.  The numerator degree exceeds the denominator degree, so there is no horizontal asymptote.</p>
       </solution>
     </task>

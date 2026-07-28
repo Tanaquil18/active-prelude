@@ -27,7 +27,7 @@
 
   <exercise xml:id="ez-changing-combining-WW4" label="Library__CollegeOfIdaho__setAlgebra_02_02_AlgebraOfFunctions__22IntAlg_10_functOperation">
     <webwork source="Library/CollegeOfIdaho/setAlgebra_02_02_AlgebraOfFunctions/22IntAlg_10_functOperation.pg"/>
-  </exercise>  
+  </exercise>
 
   <exercise xml:id="ez-changing-combining-WW5" label="Library__CollegeOfIdaho__setAlgebra_02_02_AlgebraOfFunctions__22IntAlg_12_functOperation">
     <webwork source="Library/CollegeOfIdaho/setAlgebra_02_02_AlgebraOfFunctions/22IntAlg_12_functOperation.pg"/>
@@ -169,7 +169,7 @@
     </answer>
     <solution>
       <p><ol marker="a."><li><p>Read the graph of <m>s</m> to identify its behavior on each piece. Find the equations of each linear piece and write them in bracket notation with the corresponding domain intervals.</p></li><li><p>Similarly, read the graph of <m>g</m> and write a piecewise formula.</p></li><li><p>With formulas for <m>s</m> and <m>g</m> in hand: (i) <m>(s\cdot g)(1) = s(1)\cdot g(1)</m>; (ii) <m>(g-s)(3) = g(3)-s(3)</m>; (iii) <m>(s\circ g)(1.5) = s(g(1.5))</m>; (iv) <m>(g\circ s)(-4) = g(s(-4))</m>. For each, evaluate using the piecewise formulas.</p></li></ol></p>
-    </solution>    
+    </solution>
   </exercise>
 
   <exercise>
@@ -180,11 +180,11 @@
         average velocity, and time.
         For a moving body traveling on a straight-line path at an average rate of <m>v</m> for a period of time <m>t</m>,
         the distance traveled, <m>d</m>, is given by
-        <me>
+        <md>
           d = v \cdot t
-        </me>
+        </md>
       </p>
-      
+
       <p>
           In the Ironman Triathlon,
           competitors swim <m>2.4</m> miles, bike <m>112</m> miles,
@@ -303,7 +303,7 @@
       </p>
     </answer>
     <solution>
-      <p><ol marker="a."><li><p>The triathlete exits the water after the swim at <m>t = 2.4/2.5 = 0.96</m> hours.</p></li><li><p>The bike finishes at <m>t = 0.96 + 0.05 + 112/21 \approx 6.34</m> hours; the race ends at <m>t \approx 6.37 + 26.2/8.5 \approx 9.45</m> hours.</p></li><li><p>Key points: exits water at <m>(0.96, 2.4)</m>; starts bike at <m>(1.01, 2.4)</m>; finishes bike at <m>(6.34, 114.4)</m>; starts run at <m>(6.37, 114.4)</m>; finishes at <m>(9.45, 140.6)</m>.</p></li><li><p><me>f(t) = \begin{cases} 2.5t, \amp 0 \le t \le 0.96 \\ 2.4, \amp 0.96 \lt t \le 1.01 \\ 2.4 + 21(t-1.01), \amp 1.01 \lt t \le 6.34 \\ 114.4, \amp 6.34 \lt t \le 6.37 \\ 114.4 + 8.5(t-6.37), \amp 6.37 \lt t \le 9.45 \end{cases}</me></p></li><li><p>See graphs below.</p></li></ol></p>
+      <p><ol marker="a."><li><p>The triathlete exits the water after the swim at <m>t = 2.4/2.5 = 0.96</m> hours.</p></li><li><p>The bike finishes at <m>t = 0.96 + 0.05 + 112/21 \approx 6.34</m> hours; the race ends at <m>t \approx 6.37 + 26.2/8.5 \approx 9.45</m> hours.</p></li><li><p>Key points: exits water at <m>(0.96, 2.4)</m>; starts bike at <m>(1.01, 2.4)</m>; finishes bike at <m>(6.34, 114.4)</m>; starts run at <m>(6.37, 114.4)</m>; finishes at <m>(9.45, 140.6)</m>.</p></li><li><p><md>f(t) = \begin{cases} 2.5t, \amp 0 \le t \le 0.96 \\ 2.4, \amp 0.96 \lt t \le 1.01 \\ 2.4 + 21(t-1.01), \amp 1.01 \lt t \le 6.34 \\ 114.4, \amp 6.34 \lt t \le 6.37 \\ 114.4 + 8.5(t-6.37), \amp 6.37 \lt t \le 9.45 \end{cases}</md></p></li><li><p>See graphs below.</p></li></ol></p>
       <sidebyside widths="45% 45%">
         <image source="solution-images/Sec1.9Problem9f.png"/>
         <image source="solution-images/Sec1.9Problem9g.png"/>

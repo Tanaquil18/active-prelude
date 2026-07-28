@@ -23,9 +23,9 @@
       <statement>
         <p>
 						Determine the exact values of <m>A</m>, <m>M</m>, and <m>k</m> in the logistic model
-            			<me>
+            			<md>
               				P(t) = \frac{A}{1 + Me^{-kt}}
-            			</me>.
+            			</md>.
             			Clearly show your algebraic work and thinking.
 					</p>
       </statement>

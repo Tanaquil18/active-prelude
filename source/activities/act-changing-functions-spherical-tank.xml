@@ -19,9 +19,9 @@
 			<m>V</m> be the volume of water in the tank (in cubic meters) at a given time, and
 			<m>h</m> the depth of the water (in meters) at the same time.  It can be shown using calculus
 			that <m>V</m> is a function of <m>h</m> according to the rule
-      		<me>
+      		<md>
         		V = f(h) = \frac{\pi}{3} h^2(12-h)
-      		</me>.
+      		</md>.
 		</p>
       <p/>
     </introduction>

@@ -23,9 +23,9 @@
       <statement>
         <p>
 						Write <m>10^x \cdot 10^y</m> as <m>10</m> raised to a single power.  That is, complete the equation
-						<me>
+						<md>
 							10^x \cdot 10^y = 10^{\Box}
-						</me>
+						</md>
 						by filling in the box with an appropriate expression involving <m>x</m> and <m>y</m>.
 					</p>
       </statement>

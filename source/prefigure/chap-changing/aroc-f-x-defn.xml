@@ -18,7 +18,7 @@
     </group>
 
     <label p="(2,4)" aligment="center" clear-background="yes">
-      <me>AV_{[a,b]} = \frac{s(b)-s(a)}{b-a}</me>
+      <md>AV_{[a,b]} = \frac{s(b)-s(a)}{b-a}</md>
     </label>
 
   </coordinates>
