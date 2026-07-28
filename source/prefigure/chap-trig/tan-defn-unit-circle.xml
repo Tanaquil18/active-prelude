@@ -1,0 +1,37 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <coordinates bbox="[-1.2,-1.2,1.2,1.2]">
+    <axes id="axes" decorations="no"/>
+
+    <definition>p=(cos(1), sin(1))</definition>
+
+    <group outline="tactile">
+      <arc center="(0,0)" radius="20" range="(0,180/pi)" stroke="black" thickness="2" pixel-dims="yes"/>
+      
+      <line p1="(0,0)" p2="p" stroke="green" tactile-dash="9 9"/>
+    </group>
+    <circle center="(0,0)" r="1"/>
+
+    <point p="p" alignment="ne">
+      <m>(a,b)</m>
+    </point>
+
+    <point p="(1,0)"/>
+
+    <label p="smult(0.2, (cos(1/2), sin(1/2)))" alignment="ne" offset="(5,-2)">
+      <m>t</m>
+    </label>
+
+    <label p="smult(0.5, p)" alignment="nw">
+      <m>1</m>
+    </label>
+
+    <label p="(cos(2),sin(2))" alignment="nw" clear-background="yes"
+	   offset="(10,0)">
+      <m>\tan(t)=\frac ba</m>
+    </label>
+
+  </coordinates>
+
+
+
+</graphics>

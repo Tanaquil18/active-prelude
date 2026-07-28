@@ -1,0 +1,49 @@
+<graphics id="figure" width="250" height="200" margins="20">
+  <definition>p=(5,0)</definition>
+  <definition>q=(20,0)</definition>
+  <definition>r=(20,20)</definition>
+  <coordinates bbox="[0,0,25,20]">
+
+    <group outline="tactile">
+      <arc points="(q,p,r)"
+	  thickness="2"
+	   stroke="black"
+	   radius="25" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <line p1="(0,0)" p2="(25,0)" stroke="blue" thickness="2"/>
+      <line p1="(0,20)" p2="(25,20)" stroke="blue" thickness="2"/>
+      <line p1="p" p2="r" stroke="green" thickness="2" tactile-dash="9 9"/>
+      <line p1="q" p2="r" stroke="green" thickness="2" tactile-dash="9 9"/>
+    </group>
+
+    <label p="(7.5,2)" alignment="east">
+      <m>56.4^\circ</m>
+    </label>
+
+    <point p="p" alignment="se">
+      <m>P</m>
+    </point>
+    <point p="q" alignment="se">
+      <m>B</m>
+    </point>
+    <point p="r" alignment="ne">
+      <m>A</m>
+    </point>
+    <label p="midpoint(p,q)" alignment="south" offset="(0,-8)">
+      <m>50</m>
+    </label>
+    <label p="midpoint(p,r)" alignment="nw">
+      <m>z</m>
+    </label>
+    <label p="midpoint(q,r)" alignment="east">
+      <m>w</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

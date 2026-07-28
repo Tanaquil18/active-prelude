@@ -1,0 +1,40 @@
+<graphics id="figure" width="500" height="200" margins="5">
+  <definition>a=(0,0)</definition>
+  <definition>b=(4,0)</definition>
+  <definition>c=(4,1.5)</definition>
+  <definition>d=(1,0)</definition>
+
+  <coordinates bbox="[-0.5,-0.5,4.5,1.5]">
+    <group outline="tactile">
+      <arc points="(b,a,c)" radius="25" pixel-dims="yes" stroke="black"
+	   tactile-radius="50"/>
+      <arc points="(b,d,c)" radius="25" pixel-dims="yes" stroke="black"
+	   tactile-radius="50"/>
+
+      <line p1="d" p2="c" stroke="#999" dash="4 4" tactile-dash="9 9"/>
+      <polygon points="(a,b,c)" stroke="blue" thickness="2" closed="yes"
+	       miterlimit="1"/>
+      
+      <vector v="d" tail="(0,-0.1)" thickness="2"/>
+      <vector v="(-1,0)" tail="(1,-0.1)" thickness="2"/>
+    </group>
+    
+    <label p="a" alignment="ne" offset="(50,5)"
+	   tactile-offset="(0,30)">
+      <m>19^\circ</m>
+    </label>
+    <label p="d" alignment="ne" offset="(40,5)" tactile-offset="(50,5)">
+      <m>25^\circ</m>
+    </label>
+    <label p="(0.5,-0.1)" alignment="south" offset="(0,-5)">
+      <m>1000</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

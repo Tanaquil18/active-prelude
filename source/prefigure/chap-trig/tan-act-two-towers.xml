@@ -1,0 +1,38 @@
+<graphics id="figure" width="250" height="250" margins="20">
+  <definition>a=(0,0)</definition>
+  <definition>b=(0,1.534)</definition>
+  <definition>c=(1.073,0)</definition>
+  <definition>d=(1.073,0.635)</definition>
+
+  <coordinates bbox="[-0.25,-0.25,1.5,1.5]">
+    <group outline="tactile">
+      <arc points="(c,a,d)" radius="25" pixel-dims="yes" stroke="black"
+	   tactile-radius="50"/>
+      <arc points="(a,b,c)" radius="25" pixel-dims="yes" stroke="black"
+	   tactile-radius="50"/>
+      
+      <line p1="a" p2="b" stroke="darkblue" thickness="3"/>
+      <line p1="c" p2="d" stroke="darkblue" thickness="3"/>
+      
+      <line p1="a" p2="c" stroke="#999"/>
+      
+      <line p1="b" p2="c" stroke="#ccc" dash="2 2" tactile-dash="9 9"/>
+      <line p1="a" p2="d" stroke="#ccc" dash="2 2" tactile-dash="9 9"/>
+    </group>
+    
+    <label p="a" alignment="ne" offset="(35,5)"
+	   tactile-offset="(50,5)">
+      <m>31^\circ</m>
+    </label>
+    <label p="b" alignment="se" offset="(3,-60)">
+      <m>34^\circ</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

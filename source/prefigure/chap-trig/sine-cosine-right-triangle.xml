@@ -1,0 +1,46 @@
+<graphics id="figure" width="250" height="250" margins="[5,5,12,5]">
+  <definition>t=0.5</definition>
+  <coordinates bbox="[-1.3,-1.3,1.3,1.3]">
+    <axes id="axes" decorations="no" />
+
+    <circle center="(0,0)" r="1" stroke="#aaa" />
+
+    <group outline="tactile">
+      <polygon points="((0,0),(cos(t),0), (cos(t),sin(t)))"
+	       closed="yes" stroke="blue" thickness="2"/>
+      <arc center="(0,0)" range="(0,t*180/pi)" thickness="2"
+	   stroke="black"
+	   radius="30" tactile-radius="50"
+	   pixel-dims="yes"/>
+    </group>
+
+    <point p="(cos(t),0)" />
+    <point p="(cos(t),sin(t))" />
+    
+    <label p="(0.5*cos(t),0)" alignment="south" clear-background="yes"
+	   offset="(0,-8)">
+      <m>\cos(\theta)</m>
+    </label>
+
+    <label p="(cos(t),0.5*sin(t))" alignment="east" clear-background="yes"
+	   offset="(8,0)">
+      <m>\sin(\theta)</m>
+    </label>
+
+    <label p="smult(0.35,(cos(t/2),sin(t/2)))" alignment="east"
+	   offset="(3,3)">
+      <m>\theta</m>
+    </label>
+	   
+    
+    
+
+    
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

@@ -1,0 +1,47 @@
+<graphics id="figure" width="250" height="200" margins="20">
+  <definition>p=(0,0)</definition>
+  <definition>q=(25,0)</definition>
+  <definition>r=(25,20)</definition>
+  <coordinates bbox="[0,0,25,20]">
+
+    <group outline="tactile">
+      <arc points="(q,p,r)"
+	  thickness="2"
+	   stroke="black"
+	   radius="30" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <arc points="(p,r,q)"
+	  thickness="2"
+	   stroke="black"
+	   radius="30" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <polygon points="(p,r,q)" cliptobbox="no"
+	       closed="yes" stroke="blue" thickness="2"/>
+    </group>
+
+    <label p="midpoint(r,p)" alignment="nw">
+      <m>h</m>
+    </label>
+    <label p="midpoint(p,q)" alignment="south">
+      <m>x</m>
+    </label>
+    <label p="midpoint(q,r)" alignment="east">
+      <m>4</m>
+    </label>
+
+    <label p="(4,1.5)" alignment="east" offset="(0,0)">
+      <m>\beta</m>
+    </label>
+
+    <label p="(23.5,15.5)" alignment="center" offset="(0,0)">
+      <m>\alpha</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

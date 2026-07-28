@@ -1,0 +1,35 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>ep=0.0001</definition>
+  <definition>f(x)=sin(x)/cos(x)</definition>
+
+  <coordinates bbox="[-3,-3,3,3]">
+    <grid />
+    <axes decorations="no" hlabels="(-2,2,2)"
+	  vlabels="(-2,2,2)" xlabel="t" ylabel="y"/>
+
+    <line p1="(pi/2,0)" p2="(pi/2,1)" infinite="yes"
+	  stroke="red" thickness="1" tactile-dash="9 9"/>
+    <line p1="(-pi/2,0)" p2="(-pi/2,1)" infinite="yes"
+	  stroke="red" thickness="1" tactile-dash="9 9"/>
+
+    <graph function="f" domain="(-pi/2+ep,pi/2-ep)"/>
+    <repeat parameter="k=-1..1">
+      <point p="(k,f(k))"/>
+    </repeat>
+
+    <label p="(pi/2,-1.5)" alignment="center" clear-background="yes">
+      <m>t=\frac{\pi}2</m>
+    </label>
+
+    <label p="(-pi/2,1.5)" alignment="center" clear-background="yes">
+      <m>t=-\frac{\pi}2</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

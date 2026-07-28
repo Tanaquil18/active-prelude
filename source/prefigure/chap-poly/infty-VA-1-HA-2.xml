@@ -1,0 +1,30 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>ep=0.0001</definition>
+  <definition>f(x)=1/(x+1)-2</definition>
+
+  <coordinates bbox="[-5,-5,5,5]">
+    <grid rx="(-5,1,5)" ry="(-5,1,5)"/>
+    <axes decorations="no"
+	  hticks="(-5,1,5)" vticks="(-5,1,5)"
+	  vlabels="(-4,2,4)" hlabels="(-4,2,4)"/>
+
+    <line p1="(0,-2)" p2="(1,-2)" infinite="yes"
+	  stroke="red" thickness="1" tactile-dash="9 9"/>
+
+    <line p1="(-1,-2)" p2="(-1,0)" infinite="yes"
+	  stroke="red" thickness="1" tactile-dash="9 9"/>
+
+    <graph function="f" domain="(-5,-1-ep)"/>
+    <graph function="f" domain="(-1+ep,5)"/>
+
+    <label p="(-1.2,3)" alignment="west" clear-background="yes">
+      <m>y=g(x)</m>
+    </label>
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

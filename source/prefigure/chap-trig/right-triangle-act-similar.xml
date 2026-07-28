@@ -1,0 +1,77 @@
+<graphics id="figure" width="350" height="200" margins="5">
+  <definition>p=(0,5)</definition>
+  <definition>q=(30,5)</definition>
+  <definition>r=(30,20)</definition>
+  <definition>t=(15,5)</definition>
+  <definition>u=(15,15/30*15+5)</definition>
+  <definition>dx=2</definition>
+  <coordinates bbox="[0,0,35,20]">
+
+    <group outline="tactile">
+      <arc points="(q,p,r)"
+	  thickness="2"
+	   stroke="black"
+	   radius="30" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <arc points="(p,r,q)"
+	  thickness="2"
+	   stroke="black"
+	   radius="30" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <polygon points="((30,5+dx),(30-dx,5+dx),(30-dx,5))" stroke="black"
+	       thickness="2"/>
+      <polygon points="((15,5+dx),(15-dx,5+dx),(15-dx,5))" stroke="black"
+	       thickness="2"/>
+      <line p1="t" p2="u" stroke="blue" thickness="2"/>
+      <polygon points="(p,r,q)" cliptobbox="no"
+	       closed="yes" stroke="blue" thickness="2"/>
+    </group>
+
+    <label p="(20,18)" alignment="center">
+      <m>r</m>
+    </label>
+    <label p="(20,2)" alignment="center">
+      <m>x</m>
+    </label>
+    <label p="midpoint(r,q)" alignment="east" offset="(8,0)">
+      <m>y</m>
+    </label>
+    <label p="midpoint(p,u)" alignment="nw">
+      <m>1</m>
+    </label>
+
+    <label p="(4,6)" alignment="east" offset="(0,0)">
+      <m>\theta</m>
+    </label>
+
+    <point p="p" alignment="se">
+      <m>O</m>
+    </point>
+    <point p="t" alignment="se">
+      <m>N</m>
+    </point>
+    <point p="q" alignment="se">
+      <m>Q</m>
+    </point>
+    <point p="u" alignment="se">
+      <m>M</m>
+    </point>
+    <point p="r" alignment="se">
+      <m>P</m>
+    </point>
+
+    
+
+    
+
+    
+
+    
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

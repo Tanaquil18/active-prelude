@@ -1,0 +1,42 @@
+<graphics id="figure" width="250" height="100" margins="[5,20,5,5]">
+  <definition>p=(2,10)</definition>
+  <definition>q=(5,0)</definition>
+  <definition>r=(20,0)</definition>
+  <definition>u=(23,10)</definition>
+  <coordinates bbox="[0,0,25,10]">
+
+    <group outline="tactile">
+      <arc points="(p,q,(0,0))"
+	  thickness="2"
+	   stroke="black"
+	   radius="25" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <line p1="(0,0)" p2="(25,0)" stroke="#ccc" thickness="2"/>
+      <line p1="p" p2="u" stroke="#ccc" thickness="2"/>
+      <polygon points="(p,q,r,u)" stroke="black" thickness="2"/>
+    </group>
+
+    <label p="midpoint(p,q)" alignment="east">
+      <m>1</m>
+    </label>
+
+    <label p="midpoint(r,u)" alignment="west" tactile-offset="(-10,0)">
+      <m>1</m>
+    </label>
+
+    <label p="(3,2)" alignment="west">
+      <m>\theta</m>
+    </label>
+
+    <label p="midpoint(q,r)" alignment="south">
+      <m>2</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+
