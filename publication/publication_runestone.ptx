@@ -2,7 +2,7 @@
   <source>
     <directories external="../assets" generated="../generated-assets"
 		 />
-    <version include="doenet"/>
+    <version include="doenet online"/>
   </source>
   <html>
     <!-- <search google-cx="015103900096539427448:ngwuia10qci" /> -->

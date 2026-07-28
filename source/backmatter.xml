@@ -42,7 +42,7 @@
 
 <!-- This is the same thing ACS has, but ACS doesn't have answer or solution elements on Previews, and I can't figure out how to exclude blank answers appearing from exploration vs activity.  Will comment out answer elements from Previews. -->
 
-  <solutions xml:id="activities-answers" project="answer">
+  <solutions xml:id="activities-answers" project="answer" component="online">
       <title>Answers to Activities</title>
       <introduction>
         <p>This appendix contains answers to all activities in the text. Answers for preview activities are not included.</p>
