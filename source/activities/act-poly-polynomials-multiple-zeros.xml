@@ -26,10 +26,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>One formula: <m>f(x) = -21\left(\dfrac{x+12}{12}\right)^3\left(\dfrac{x+9}{9}\right)^2\left(\dfrac{x-4}{4}\right)^4\left(\dfrac{x-10}{10}\right)</m></p></answer>
       <solution>
         <p>
-          One formula: <m>f(x) = -21\!\left(\dfrac{x+12}{12}\right)^3\!\left(\dfrac{x+9}{9}\right)^2\!\left(\dfrac{x-4}{4}\right)^4\!\left(\dfrac{x-10}{10}\right)</m>.  We can verify: <m>f(0) = -21\cdot 1 \cdot 1 \cdot 1 \cdot (-1) = 21</m> ✓.  Since the degree is <m>10</m> (even) and the leading coefficient is negative, <m>\lim_{x \to \pm\infty} f(x) = -\infty</m>.
+          One formula: <m>f(x) = -21\left(\dfrac{x+12}{12}\right)^3\left(\dfrac{x+9}{9}\right)^2\left(\dfrac{x-4}{4}\right)^4\left(\dfrac{x-10}{10}\right)</m>.  We can verify: <m>f(0) = -21\cdot 1 \cdot 1 \cdot 1 \cdot (-1) = 21</m> ✓.  Since the degree is <m>10</m> (even) and the leading coefficient is negative, <m>\lim_{x \to \pm\infty} f(x) = -\infty</m>.
         </p>
       </solution>
     </task>
@@ -39,14 +39,14 @@
 						A polynomial <m>p</m> of degree <m>9</m> that satisfies <m>p(0) = -2</m> and has the graph shown in the following figure.  Assume that all of the zeros of <m>p</m> are shown in the figure.
 					</p>
 
-          <image source="images/poly-degree-9" width="50%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image source="images/poly-degree-9" width="50%"><description><p>Graph of a polynomial <m>p(x)</m></p></description></image>
 
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>One example is: <m>p(x) = -2\left(\dfrac{x+8}{8}\right)^2\left(\dfrac{x+4}{4}\right)^3(x-1)\left(\dfrac{x-5}{5}\right)^2\left(\dfrac{x-7.5}{7.5}\right)</m></p></answer>
       <solution>
         <p>
-          From the graph (reading off the zeros and their behavior), one example with <m>p(0)=-2</m> is: <m>p(x) = -2\!\left(\dfrac{x+8}{8}\right)^2\!\left(\dfrac{x+4}{4}\right)^3(x-1)\!\left(\dfrac{x-5}{5}\right)^2\!\left(\dfrac{x-7.5}{7.5}\right)</m>, which has degree <m>9</m> and <m>p(0)=-2</m>.
+          From the graph (reading off the zeros and their behavior), one example with <m>p(0)=-2</m> is: <m>p(x) = -2\left(\dfrac{x+8}{8}\right)^2\left(\dfrac{x+4}{4}\right)^3(x-1)\left(\dfrac{x-5}{5}\right)^2\left(\dfrac{x-7.5}{7.5}\right)</m>, which has degree <m>9</m> and <m>p(0)=-2</m>.
         </p>
       </solution>
     </task>
@@ -55,15 +55,14 @@
         <p>
 						A polynomial <m>q</m> of degree <m>8</m> with <m>3</m> distinct real zeros (possibly of different multiplicities) such that <m>q</m> has the sign chart in the figure below and satisfies <m>q(0) = -10</m>.
 					</p>
-
-            <image source="images/poly-sign-chart-2" width="50%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+            <image source="images/poly-sign-chart-2" width="50%"><description><p>Sign chart showing roots of <m>x=-2,3,9</m> and signs from left to right around the roots of negative, negative, positive, negative.</p></description></image>
 
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>One example: <m>q(x) = -10\left(\dfrac{x+2}{2}\right)^4\left(\dfrac{x-3}{3}\right)\left(\dfrac{x-9}{9}\right)^3</m></p></answer>
       <solution>
         <p>
-          From the sign chart (positive, then negative, then positive, then negative, with the pattern showing even-multiplicity zeros where sign doesn't change and odd-multiplicity zeros where it does), one example: <m>q(x) = -10\!\left(\dfrac{x+2}{2}\right)^4\!\left(\dfrac{x-3}{3}\right)\!\left(\dfrac{x-9}{9}\right)^3</m>.  This has degree <m>8</m>, three distinct real zeros, and <m>q(0) = -10 \cdot 1 \cdot (-1) \cdot (-1) = -10</m> ✓.
+          From the sign chart (negative, then negative, then positive, then negative, with the pattern showing even-multiplicity zeros where sign doesn't change and odd-multiplicity zeros where it does), one example: <m>q(x) = -10\left(\dfrac{x+2}{2}\right)^4\left(\dfrac{x-3}{3}\right)\left(\dfrac{x-9}{9}\right)^3</m>.  This has degree <m>8</m>, three distinct real zeros, and <m>q(0) = -10 \cdot 1 \cdot (-1) \cdot (-1) = -10</m> ✓.
         </p>
       </solution>
     </task>
@@ -74,7 +73,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Not possible.</p></answer>
       <solution>
         <p>
           It is not possible to have a degree 9 polynomial satisfying the sign chart from part (c) and <m>q(0)=-10</m>, if the sign chart shows the same behavior at both ends (both positive or both negative for large <m>|x|</m>).  A degree-9 polynomial has odd degree, so its limits at <m>+\infty</m> and <m>-\infty</m> must be opposite.  If the sign chart requires both ends to have the same sign, degree 9 is impossible.
@@ -88,18 +87,12 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>Not possible.</p></answer>
       <solution>
         <p>
           It is not possible to have a degree-11 polynomial matching the graph in part (b) if that graph shows the same long-term behavior at both ends.  A degree-11 polynomial has odd degree, so its limits at <m>+\infty</m> and <m>-\infty</m> must have opposite signs, while the graph in (b) (a degree-9 example) already illustrates this odd-degree behavior.  However, a degree-11 polynomial could match the graph if the overall end behavior is also opposite-going.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>
