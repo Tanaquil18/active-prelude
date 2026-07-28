@@ -19,7 +19,7 @@
 		</p>
 <!--      <figure xml:id="F-cosecant-plot">
         <caption>Axes for plotting <m>q(t) = \csc(t)</m>.</caption> -->
-        <image source="images/other-csc-activity-graph" width="70%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/other-csc-activity-graph" width="70%"><description><p>Axes for plotting <m>q(t) = \csc(t)</m></p></description></image>
 <!--      </figure> -->
       <p/>
     </introduction>
@@ -223,10 +223,14 @@
 <!--        </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The cosecant values are reciprocals of sine.  In Q1 and Q2: <m>u, 2, \sqrt{2}, \frac{2\sqrt{3}}{3}, 1, \frac{2\sqrt{3}}{3}, \sqrt{2}, 2, u</m>; In Q3 and Q4: <m>-2, -\sqrt{2}, -\frac{2\sqrt{3}}{3}, -1, -\frac{2\sqrt{3}}{3}, -\sqrt{2}, -2, u</m>.
+        </p>
+      </answer>
       <solution>
         <p>
-          The csc values are reciprocals of sin: Q1-Q2: <m>u, 2, \sqrt{2}, \frac{2\sqrt{3}}{3}, 1, \frac{2\sqrt{3}}{3}, \sqrt{2}, 2, u</m>; Q3-Q4: <m>-2, -\sqrt{2}, -\frac{2\sqrt{3}}{3}, -1, -\frac{2\sqrt{3}}{3}, -\sqrt{2}, -2, u</m>.
+          The cosecant values are reciprocals of sine.  In Q1 and Q2: <m>u, 2, \sqrt{2}, \frac{2\sqrt{3}}{3}, 1, \frac{2\sqrt{3}}{3}, \sqrt{2}, 2, u</m>; In Q3 and Q4: <m>-2, -\sqrt{2}, -\frac{2\sqrt{3}}{3}, -1, -\frac{2\sqrt{3}}{3}, -\sqrt{2}, -2, u</m>.
         </p>
       </solution>
     </task>
@@ -237,7 +241,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The cosecant function is positive in quadrants I and II and negative in quadrants III and IV.</p></answer>
       <solution>
         <p>
           Since <m>\csc(t) = 1/\sin(t)</m>, the cosecant function is positive wherever sine is positive, that is, in quadrants I and II, and negative wherever sine is negative, that is, in quadrants III and IV.
@@ -251,7 +255,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>At every integer multiple of <m>\pi</m>: <m>t = 0, \pm\pi, \pm 2\pi, \ldots</m></p></answer>
       <solution>
         <p>
           The cosecant function has vertical asymptotes wherever <m>\sin(t) = 0</m>, which occurs at every integer multiple of <m>\pi</m>: <m>t = 0, \pm\pi, \pm 2\pi, \ldots</m>  At these values <m>\csc(t) = 1/\sin(t)</m> is undefined (division by zero).
@@ -265,7 +269,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The domain of the cosecant function is all real numbers except integer multiples of <m>\pi</m>.  The range is <m>(-\infty, -1] \cup [1, \infty)</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The domain of the cosecant function is all real numbers except integer multiples of <m>\pi</m>.  The range is <m>(-\infty, -1] \cup [1, \infty)</m>.
@@ -279,9 +287,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="50%" source="solution-images/Activity4.5.3.png"><description><p>graph of cosecant</p></description></image>
+      </answer>
       <solution>
-        <image width="50%" source="solution-images/Activity4.5.3.png"/>
+        <image width="50%" source="solution-images/Activity4.5.3.png"><description><p>graph of cosecant</p></description></image>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-trig-other-csc-task-5">
@@ -291,18 +301,12 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>2\pi</m> radians</p></answer>
       <solution>
         <p>
           The period of the cosecant function is <m>2\pi</m> radians.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

@@ -23,15 +23,14 @@
 			</p>
 <!--        <figure xml:id="F-right-act-river">
           <caption>Finding the width of the river.</caption> -->
-          <image source="images/right-act-river" width="40%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image source="images/right-act-river" width="40%"><description><p>A triangle <m>\triangle APB</m> formed between two river banks where <m>\angle BPA = 56.4^{\circ}</m> and the length of leg <m>PB</m> is <m>50</m> meters.</p></description></image>
 <!--        </figure> -->
       </sidebyside>
     </statement>
     <answer>
-      <p/>
+      <p>The river is approximately <m>75.256</m> meters wide.  We could also determine the hypotenuse and the missing non-right angle.</p>
     </answer>
-    <solution>
-      <p/>
+    <solution><p>The river is <m>50\cdot\frac{\sin(56.4)}{\cos(56.4)} \approx 75.256</m> meters wide.  We could also determine the hypotenuse and the missing non-right angle.</p>
     </solution>
   </activity>
 </worksheet>

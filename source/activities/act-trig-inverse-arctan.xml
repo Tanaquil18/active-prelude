@@ -26,7 +26,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The domain of the arctangent function is all real numbers <m>(-\infty, \infty)</m>, and the range is the open interval <m>\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The domain of the arctangent function is all real numbers <m>(-\infty, \infty)</m>, and the range is the open interval <m>\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)</m>.
@@ -40,7 +44,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>\arctan(-\sqrt{3}) = -\frac{\pi}{3}</m>, <m>\arctan(-1) = -\frac{\pi}{4}</m>, <m>\arctan(0) = 0</m>, and <m>\arctan\!\left(\frac{1}{\sqrt{3}}\right) = \frac{\pi}{6}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>\arctan(-\sqrt{3}) = -\frac{\pi}{3}</m>, <m>\arctan(-1) = -\frac{\pi}{4}</m>, <m>\arctan(0) = 0</m>, and <m>\arctan\!\left(\frac{1}{\sqrt{3}}\right) = \frac{\pi}{6}</m>.
@@ -54,13 +62,15 @@
 						</p>
 <!--        <figure xml:id="F-inverse-trig-act-arctan">
           <caption>Axes for plotting the restricted tangent function and its inverse, the arctangent function.</caption> -->
-          <image width="50%" source="images/inverse-tan-graph"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="50%" source="images/inverse-tan-graph"><description><p>A graph of tangent for sketching the graph of arctangent.</p></description></image>
 <!--        </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="50%" source="solution-images/Activity4.3.4c.png"><description><p>graph of tangent and arctangent</p></description></image>
+      </answer>
       <solution>
-        <image width="50%" source="solution-images/Activity4.3.4c.png"/>
+        <image width="50%" source="solution-images/Activity4.3.4c.png"><description><p>graph of tangent and arctangent</p></description></image>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-trig-inverse-arctan-task-3">
@@ -70,18 +80,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          As <m>t</m> increases without bound, <m>\arctan(t)</m> approaches <m>\frac{\pi}{2}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           As <m>t</m> increases without bound, <m>\arctan(t)</m> approaches <m>\frac{\pi}{2}</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

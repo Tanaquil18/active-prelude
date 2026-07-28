@@ -303,10 +303,14 @@
 <!--        </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          Since <m>\cot(t) = \cos(t)/\sin(t)</m>, the cotangent values for Q1 and Q2 are: <m>u, \sqrt{3}, 1, \frac{1}{\sqrt{3}}, 0, -\frac{1}{\sqrt{3}}, -1, -\sqrt{3}, u</m>; and for Q3 and Q4: <m>\sqrt{3}, 1, \frac{1}{\sqrt{3}}, 0, -\frac{1}{\sqrt{3}}, -1, -\sqrt{3}, u</m>.
+        </p>
+      </answer>
       <solution>
         <p>
-          Since <m>\cot(t) = \cos(t)/\sin(t)</m>, the cotangent values for Q1–Q2 are: <m>u, \sqrt{3}, 1, \frac{1}{\sqrt{3}}, 0, -\frac{1}{\sqrt{3}}, -1, -\sqrt{3}, u</m>; and for Q3–Q4: <m>\sqrt{3}, 1, \frac{1}{\sqrt{3}}, 0, -\frac{1}{\sqrt{3}}, -1, -\sqrt{3}, u</m>.
+          Since <m>\cot(t) = \cos(t)/\sin(t)</m>, the cotangent values for Q1 and Q2 are: <m>u, \sqrt{3}, 1, \frac{1}{\sqrt{3}}, 0, -\frac{1}{\sqrt{3}}, -1, -\sqrt{3}, u</m>; and for Q3 and Q4: <m>\sqrt{3}, 1, \frac{1}{\sqrt{3}}, 0, -\frac{1}{\sqrt{3}}, -1, -\sqrt{3}, u</m>.
         </p>
       </solution>
     </task>
@@ -317,7 +321,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The cotangent function is positive in quadrants I and III and negative in quadrants II and IV.
+        </p>
+      </answer>
       <solution>
         <p>
           The cotangent function is positive in quadrants I and III (where sine and cosine have the same sign) and negative in quadrants II and IV (where they have opposite signs).
@@ -331,7 +339,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          At every integer multiple of <m>\pi</m>: <m>t = 0, \pm\pi, \pm 2\pi, \ldots</m>
+        </p>
+      </answer>
       <solution>
         <p>
           The cotangent function has vertical asymptotes wherever <m>\sin(t) = 0</m>, that is, at every integer multiple of <m>\pi</m>: <m>t = 0, \pm\pi, \pm 2\pi, \ldots</m>
@@ -345,7 +357,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The domain of the cotangent function is all real numbers except integer multiples of <m>\pi</m>.  The range is all real numbers <m>(-\infty, \infty)</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The domain of the cotangent function is all real numbers except integer multiples of <m>\pi</m>.  The range is all real numbers <m>(-\infty, \infty)</m>.
@@ -359,13 +375,15 @@
 					</p>
 <!--        <figure xml:id="F-cotangent-plot">
           <caption>Axes for plotting <m>r(t) = \cot(t)</m>.</caption> -->
-          <image source="images/other-cot-definition-graph" width="60%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image source="images/other-cot-definition-graph" width="60%"><description><p>Axes with tangent for graphing cotangent</p></description></image>
 <!--        </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="50%" source="solution-images/Activity4.5.4.png"><description><p>graph of cotangent</p></description></image>
+      </answer>
       <solution>
-        <image width="50%" source="solution-images/Activity4.5.4.png"/>
+        <image width="50%" source="solution-images/Activity4.5.4.png"><description><p>graph of cotangent</p></description></image>
       </solution>
     </task>
     <task workspace="1.75cm" xml:id="act-trig-other-cot-task-5">
@@ -375,7 +393,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The cotangent function is always decreasing on every interval where it is defined.
+        </p>
+      </answer>
       <solution>
         <p>
           The cotangent function is always decreasing on every interval where it is defined.
@@ -389,7 +411,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\pi</m> radians</p></answer>
       <solution>
         <p>
           The period of the cotangent function is <m>\pi</m> radians.
@@ -403,18 +425,12 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The graph of <m>r(t) = \cot(t)</m> can be obtained from the graph of <m>\tan(t)</m> by reflecting over the <m>y</m>-axis and then shifting <m>\frac{\pi}{2}</m> to the right.</p></answer>
       <solution>
         <p>
-          The graph of <m>r(t) = \cot(t)</m> can be obtained from the graph of <m>\tan(t)</m> by reflecting over the <m>y</m>-axis and then shifting <m>\frac{\pi}{2}</m> to the right.  Equivalently, <m>\cot(t) = \tan\!\left(\frac{\pi}{2} - t\right)</m>.
+          The graph of <m>r(t) = \cot(t)</m> can be obtained from the graph of <m>\tan(t)</m> by reflecting over the <m>y</m>-axis and then shifting <m>\frac{\pi}{2}</m> to the right.  Equivalently, <m>\cot(t) = \tan\left(\frac{\pi}{2} - t\right)</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

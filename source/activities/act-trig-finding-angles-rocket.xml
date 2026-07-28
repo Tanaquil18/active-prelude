@@ -33,7 +33,12 @@
 	    </p>
     </statement>
     <answer>
-      <p/>
+      <p>
+        For general height <m>h</m>, <m>\theta(h) = \arctan\left(\dfrac{h}{4000}\right)</m>.
+      </p>
+      <p>
+        The average rates of change are: <m>AV_{[3000,3500]} \approx \frac{0.075}{500} = 1.5 \times 10^{-4}</m> rad/ft; <m>AV_{[5000,5500]} \approx \frac{0.046}{500} = 9.2 \times 10^{-5}</m> rad/ft; <m>AV_{[7000,7500]} \approx \frac{0.030}{500} = 6 \times 10^{-5}</m> rad/ft.  The camera angle is increasing at a decreasing rate as the rocket climbs higher.
+      </p>
     </answer>
     <solution>
       <p>

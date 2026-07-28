@@ -20,15 +20,14 @@
 			</p>
 <!--        <figure xml:id="F-tan-act-two-towers">
           <caption>Two supertall skyscrapers.</caption> -->
-          <image source="images/tan-act-two-towers"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image source="images/tan-act-two-towers"><description><p>Two supertall skyscrapers a width of <m>d</m> apart.  The shorter one on the right has a height of <m>635</m> feet, and its top makes an angle of <m>31^\circ</m> at the ground at the bottom of the skyscraper on the left.  The taller skyscraper on the left makes an angle of <m>34^\circ</m> at the top when connected with the bottom of the skyscraper on the right.</p></description></image>
 <!--        </figure> -->
       </sidebyside>
     </statement>
-    <answer>
-      <p/>
+    <answer><p><m>d=\frac{635}{\tan(31)}\approx 1056.8</m> and <m>s=\frac{1056.8}{\tan(34)}\approx 1566.77</m></p>
     </answer>
     <solution>
-      <p/>
+      <p>The two towers have to be <m>d=\frac{635}{\tan(31)}\approx 1056.8</m> feet apart. The skyscraper on the left then is <m>s=\frac{1056.8}{\tan(34)}\approx 1566.77</m> feet high. </p>
     </solution>
   </activity>
 </worksheet>

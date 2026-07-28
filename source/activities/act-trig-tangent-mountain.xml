@@ -19,7 +19,7 @@
 		</p>
 <!--      <figure xml:id="F-tan-act-mountain">
         <caption>The surveyors' initial measurements.</caption> -->
-        <image source="images/tan-act-mountain" width="70%"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/tan-act-mountain" width="70%"><description><p>Triangle with various lengths and angles labeled</p></description></image>
 <!--      </figure> -->
       <p/>
     </introduction>
@@ -30,7 +30,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\tan(25^\circ) = \dfrac{h}{x}</m></p></answer>
       <solution>
         <p>
           Using the right triangle with the <m>25^\circ</m> angle, the opposite side is <m>h</m> and the adjacent side is <m>x</m>, so <m>\tan(25^\circ) = \dfrac{h}{x}</m>.
@@ -44,7 +44,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\tan(19^\circ) = \dfrac{h}{x+1000}</m></p></answer>
       <solution>
         <p>
           Using the right triangle with the <m>19^\circ</m> angle, the opposite side is <m>h</m> and the adjacent side is <m>x + 1000</m>, so <m>\tan(19^\circ) = \dfrac{h}{x+1000}</m>.
@@ -58,7 +58,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>x\tan(25^\circ) = (x+1000)\tan(19^\circ)</m></p></answer>
       <solution>
         <p>
           From (a), <m>h = x\tan(25^\circ)</m>.  From (b), <m>h = (x+1000)\tan(19^\circ)</m>.  Setting equal:
@@ -78,7 +78,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>x = \dfrac{1000\tan(19^\circ)}{\tan(25^\circ) - \tan(19^\circ)} \approx 3412.527</m></p></answer>
       <solution>
         <p>
           The exact value is <m>x = \dfrac{1000\tan(19^\circ)}{\tan(25^\circ) - \tan(19^\circ)}</m>.  Numerically, <m>x \approx 3412.527</m> feet.
@@ -92,7 +92,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>h \approx 1591.287</m> feet</p></answer>
       <solution>
         <p>
           Using <m>h = x\tan(25^\circ)</m> with <m>x \approx 3412.527</m>: <m>h \approx 3412.527 \cdot \tan(25^\circ) \approx 1591.287</m> feet.
@@ -106,18 +106,12 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>approximately <m>1591.287 + 78 \approx 1669</m> feet above sea level</p></answer>
       <solution>
         <p>
           If the initial measurements were taken from <m>78</m> feet above sea level, the peak of the hill is approximately <m>1591.287 + 78 \approx 1669</m> feet above sea level.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>
