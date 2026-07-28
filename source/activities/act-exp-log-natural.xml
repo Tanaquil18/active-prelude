@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-exp-log-natural">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-exp-log-natural">
   <activity xml:id="act-exp-log-natural">
     <introduction>
       <p>
@@ -26,7 +26,11 @@
 	  </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The domain of <m>E(t) = e^t</m> is all real numbers, and its range is all positive real numbers.
+        </p>
+      </answer>
       <solution>
         <p>
           The domain of <m>E(t) = e^t</m> is all real numbers, and its range is all positive real numbers.
@@ -40,7 +44,11 @@
 	  </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The domain of <m>N(y) = \ln(y)</m> is all positive real numbers, and its range is all real numbers.
+        </p>
+      </answer>
       <solution>
         <p>
           The domain of <m>N(y) = \ln(y)</m> is all positive real numbers, and its range is all real numbers.
@@ -54,7 +62,11 @@
 	  </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          For every real number <m>t</m>, <m>\ln(e^t) = t</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           For every real number <m>t</m>, <m>\ln(e^t) = t</m>.
@@ -68,7 +80,11 @@
 	  </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          For every positive real number <m>y</m>, <m>e^{\ln(y)} = y</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           For every positive real number <m>y</m>, <m>e^{\ln(y)} = y</m>.
@@ -80,7 +96,6 @@
         <p>
 	    Complete the following tables with both exact and approximate values of <m>E</m> and <m>N</m>.  Then, plot the corresponding ordered pairs from each table on the axes provided and connect the points in an intuitive way.  When you plot the ordered pairs on the axes, in both cases view the first line of the table as generating values on the horizontal axis and the second line of the table as producing values on the vertical axis.  Note that when we take this perspective for plotting the data in the table for <m>N</m>, we are viewing <m>N</m> as a function of <m>t</m>, writing <m>N(t) = \ln(t)</m> in order to plot the function on the <m>t</m>-<m>y</m> axes; label each ordered pair you plot appropriately.
 	  </p>
-        <p>
 <!--          <table xml:id="T-act-natural-e">
             <title>Values of <m>y = E(t)</m>.</title> -->
             <tabular>
@@ -111,10 +126,10 @@
                 <cell>
                   <m>e^{-2} \approx 0.135</m>
                 </cell>
-                <cell/>
-                <cell/>
-                <cell/>
-                <cell/>
+                <cell><fillin characters="8"/></cell>
+                <cell><fillin characters="8"/></cell>
+                <cell><fillin characters="8"/></cell>
+                <cell><fillin characters="8"/></cell>
               </row>
             </tabular>
  <!--         </table>
@@ -146,23 +161,80 @@
                   <m>N(y)=\ln(y)</m>
                 </cell>
                 <cell>
+                  <nbsp/>
+                  <nbsp/>
+                  <nbsp/>
                   <m>-2</m>
+                  <nbsp/>
+                  <nbsp/>
+                  <nbsp/>
                 </cell>
-                <cell/>
-                <cell/>
-                <cell/>
-                <cell/>
+                <cell><fillin characters="8"/></cell>
+                <cell><fillin characters="8"/></cell>
+                <cell><fillin characters="8"/></cell>
+                <cell><fillin characters="8"/></cell>
               </row>
             </tabular>
 <!--          </table> -->
-        </p>
 <!--        <figure xml:id="F-axes-e-ln">
           <caption>Axes for plotting data from <xref ref="T-act-natural-e">Table</xref> and <xref ref="T-act-natural-log">Table</xref> along with the graphs of the natural exponential and natural logarithm functions.</caption> -->
-          <image width="75%" source="images/exp-log-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <!-- <image width="75%" source="images/exp-log-blank-axes"> -->
+          <image width="75%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-log-act-blank-axes">
+                <xi:include href="../prefigure/chap-exp/exp-log-blank-axes.xml"/>
+            </prefigure>
+          <description><p>Blank axes for graphing <m>e^t</m> and <m>\ln(t)</m></p></description></image>
 <!--        </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <tabular>
+          <row bottom="minor" halign="center">
+            <cell><m>t</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+          <row halign="center">
+            <cell><m>E(t) = e^t</m> (exact)</cell>
+            <cell><m>e^{-2}</m></cell>
+            <cell><m>e^{-1}</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>e</m></cell>
+            <cell><m>e^2</m></cell>
+          </row>
+          <row halign="center">
+            <cell><m>E(t) = e^t</m> (approx.)</cell>
+            <cell><m>0.135</m></cell>
+            <cell><m>0.368</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2.718</m></cell>
+            <cell><m>7.39</m></cell>
+          </row>
+        </tabular>
+        <tabular>
+          <row bottom="minor" halign="center">
+            <cell><m>y</m></cell>
+            <cell><m>e^{-2}</m></cell>
+            <cell><m>e^{-1}</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>e^1</m></cell>
+            <cell><m>e^2</m></cell>
+          </row>
+          <row halign="center">
+            <cell><m>N(y) = \ln(y)</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+        </tabular>
+        <image width="50%" source="solution-images/Activity3.4.3.png">
+          <description><p>graphs of <m>e^t</m> and <m>\ln(t)</m> with points from the tables labeled on the graphs</p></description></image>
+      </answer>
       <solution>
         <tabular>
           <row bottom="minor" halign="center">
@@ -208,7 +280,8 @@
             <cell><m>2</m></cell>
           </row>
         </tabular>
-        <image width="50%" source="solution-images/Activity3.4.3.png"/>
+        <image width="50%" source="solution-images/Activity3.4.3.png">
+          <description><p>graphs of <m>e^t</m> and <m>\ln(t)</m> with points from the tables labeled on the graphs</p></description></image>
       </solution>
     </task>
 

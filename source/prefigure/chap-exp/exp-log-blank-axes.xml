@@ -1,15 +1,10 @@
 <diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
-  <coordinates bbox="[-8,-8,8,8]">
-    <grid rx="(-8,2,8)" ry="(-8,2,8)"/>
-    <axes id="axes" decorations="no"
-	  hlabels="(-8,2,8)" vlabels="(-8,2,8)"
-	  xlabel="t" ylabel="y"/>
+  <coordinates bbox="(-8,-8,8,8)">
+    <grid-axes decorations="no"
+	  hlabels="(-6,2,6)" vlabels="(-6,2,6)"
+	  xlabel="t" ylabel="y" spacings="((-8,2,8),(-8,2,8))"/>
 
   </coordinates>
-
-
-
-
 
 </diagram>
 
