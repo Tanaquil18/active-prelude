@@ -1,0 +1,24 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>ep=0.0001</definition>
+  <definition>f(x)=1/x</definition>
+
+  <coordinates bbox="[-5,-5,5,5]">
+    <grid rx="(-5,1,5)" ry="(-5,1,5)"/>
+    <axes decorations="no"
+	  hticks="(-5,1,5)" vticks="(-5,1,5)"
+	  vlabels="(-4,2,4)" hlabels="(-4,2,4)"/>
+
+    <graph function="f" domain="(-5,-ep)"/>
+    <graph function="f" domain="(ep,5)"/>
+
+    <label p="(2,1)" alignment="ne" clear-background="yes">
+      <m>y=\frac1x</m>
+    </label>
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

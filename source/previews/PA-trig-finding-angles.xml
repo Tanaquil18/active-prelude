@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,11 +11,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-trig-finding-angles">
+<worksheet label="ws-PA-trig-finding-angles" component="static">
   <exploration xml:id="PA-trig-finding-angles">
     <introduction>
       <p>
-			Consider a right triangle that has one leg of length <m>3</m> and another leg of length <m>\sqrt{3}</m>.  Let <m>\theta</m> be the angle that lies opposite the shorter leg.  
+			Consider a right triangle that has one leg of length <m>3</m> and another leg of length <m>\sqrt{3}</m>.  Let <m>\theta</m> be the angle that lies opposite the shorter leg.
 		</p>
       <p/>
     </introduction>
@@ -25,8 +25,8 @@
 					Sketch a labeled picture of the triangle.
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+        <!-- <hint/>
+        <answer/> -->
       <solution>
         <image width="50%" source="solution-images/PrevAct4.4.1.png"/>
       </solution>
@@ -37,8 +37,8 @@
 					What is the exact length of the triangle's hypotenuse?
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+        <!-- <hint/>
+        <answer/> -->
       <solution>
         <p>
           The hypotenuse has length <m>\sqrt{(\sqrt{3})^2 + 3^2} = \sqrt{12} = 2\sqrt{3}</m>.
@@ -51,8 +51,8 @@
 					What is the exact value of <m>\sin(\theta)</m>?
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+        <!-- <hint/>
+        <answer/> -->
       <solution>
         <p>
           Since <m>\theta</m> is opposite the shorter leg of length <m>\sqrt{3}</m>, we have <m>\sin(\theta) = \dfrac{\sqrt{3}}{2\sqrt{3}} = \dfrac{1}{2}</m>.
@@ -65,8 +65,8 @@
 					Rewrite your equation from (c) using the arcsine function in the form <m>\arcsin(\Box) = \Delta</m>, where <m>\Box</m> and <m>\Delta</m> are numerical values.
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Since <m>\sin(\theta) = \dfrac{1}{2}</m>, we can write <m>\arcsin\!\left(\dfrac{1}{2}\right) = \theta</m>.
@@ -79,8 +79,8 @@
 					What special angle from the unit circle is <m>\theta</m>?
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Since <m>\sin\!\left(\dfrac{\pi}{6}\right) = \dfrac{1}{2}</m>, we have <m>\theta = \dfrac{\pi}{6}</m>.

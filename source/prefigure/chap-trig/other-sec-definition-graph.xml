@@ -1,0 +1,59 @@
+<graphics id="figure" width="450" height="400" margins="5">
+  <definition>a=pi/4</definition>
+  <definition>ep=0.00001</definition>
+  <definition>f(x)=cos(a*x)</definition>
+  <definition>g(x)=1/f(x)</definition>
+
+  <coordinates bbox="[-2,-4.5,10,4.5]">
+    <grid rx="(-2,1,10)" ry="(-4.5,0.75,4.5)"/>
+    <axes decorations="no"
+	  hticks="(-2,1,10)" vticks="(-4.5,0.75,4.5)"
+	  vlabels="(-3.0,1.5,3.0)"
+	  xlabel="t" ylabel="y"/>
+
+    <line p1="(2,0)" p2="(2,1)" infinite="yes" stroke="red" thickness="1"/>
+    <line p1="(6,0)" p2="(6,1)" infinite="yes" stroke="red" thickness="1"/>
+      
+    <graph function="f" dash="9 9"/>
+    <graph function="g" domain="(-2+ep,2-ep)"/>
+    <graph function="g" domain="(2+ep,6-ep)"/>
+    <graph function="g" domain="(6+ep,10-ep)"/>
+
+    <repeat parameter="k=0..2">
+      <point p="(0+4*k),g(0+4*k)"/>
+      <point p="(2/3+4*k),g(2/3+4*k)"/>
+      <point p="(1+4*k),g(1+4*k)"/>
+      <point p="(4/3+4*k),g(4/3+4*k)"/>
+    </repeat>
+    <repeat parameter="k=0..1">
+      <point p="(4-2/3+4*k, g(4-2/3+4*k))"/>
+      <point p="(4-1+4*k, g(4-1+4*k))"/>
+      <point p="(4-4/3+4*k, g(4-4/3+4*k))"/>
+    </repeat>
+
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}{2}</m>
+    </label>
+    <label p="(4,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+    <label p="(6,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}{2}</m>
+    </label>
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+    <label p="(2,3.5)" alignment="east" clear-background="yes">
+      <m>p(t)=\sec(t)</m>
+    </label>
+    
+
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

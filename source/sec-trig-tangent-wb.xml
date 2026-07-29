@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -14,9 +14,9 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-trig-tangent">
   <title>The Tangent Function</title>
 
-		<xi:include href="./previews/PA-trig-tangent.xml"/> 
+		<xi:include href="./previews/PA-trig-tangent.xml"/>
   	<xi:include href="./activities/act-trig-tangent-tower.xml"/>
   	<xi:include href="./activities/act-trig-tangent-two-towers.xml"/>
-		<xi:include href="./activities/act-trig-tangent-mountain.xml"/> 
+		<xi:include href="./activities/act-trig-tangent-mountain.xml"/>
 
 </section>

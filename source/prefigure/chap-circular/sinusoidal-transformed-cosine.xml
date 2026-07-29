@@ -1,0 +1,117 @@
+<diagram xmlns="https://prefigure.org" width="510" height="510" margins="5">
+  <definition>k=pi/8</definition>
+  <definition>g(x)=cos(k*x)</definition>
+  <definition>b=1/k</definition>
+  <definition>g1(x)=g(x-b)</definition>
+  <definition>a=2.23</definition>
+  <definition>g2(x)=a*g1(x)</definition>
+  <definition>c=1.5</definition>
+  <definition>g3(x)=g2(x)+c</definition>
+
+  <coordinates bbox="[-2,-5,18,5]" destination="(0,0,250,250)">
+    <axes id="axes" decorations="no" xlabel="t" ylabel="y"
+	  hticks="(0,2,18)" vticks="(-5,1,5)"
+	  vlabels="(-1,1,1)"/>
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <label p="(18,3)" alignment="west" clear-background="yes">
+      <m>y=a\cos(t-b)</m>
+    </label>
+
+    <graph function="g1" stroke="#aaa" tactile-dash="9 9"/>
+    <graph function="g2"/>
+
+  </coordinates>
+
+  <coordinates bbox="[-2,-5,18,5]" destination="(0,260,250,510)">
+    <axes id="axes" decorations="no" xlabel="t" ylabel="y"
+	  hticks="(0,2,18)" vticks="(-5,1,5)"
+	  vlabels="(-1,1,1)"/>
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <label p="(18,3)" alignment="west" clear-background="yes">
+      <m>y=\cos(t)</m>
+    </label>
+
+    <graph function="g"/>
+
+  </coordinates>
+
+  <coordinates bbox="[-2,-5,18,5]" destination="(260,260,510,510)">
+    <axes id="axes" decorations="no" xlabel="t" ylabel="y"
+	  hticks="(0,2,18)" vticks="(-5,1,5)"
+	  vlabels="(-1,1,1)"/>
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <label p="(18,3)" alignment="west" clear-background="yes">
+      <m>y=\cos(t-b)</m>
+    </label>
+
+    <graph function="g" stroke="#aaa" tactile-dash="9 9"/>
+    <graph function="g1"/>
+
+  </coordinates>
+
+  <coordinates bbox="[-2,-5,18,5]" destination="(260,0,510,250)">
+    <axes id="axes" decorations="no" xlabel="t" ylabel="y"
+	  hticks="(0,2,18)" vticks="(-5,1,5)"
+	  vlabels="(-1,1,1)"/>
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}4</m>
+    </label>
+
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+
+    <label p="(16,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+
+    <graph function="g2" stroke="#aaa" tactile-dash="9 9"/>
+    <graph function="g3"/>
+
+    <label p="(18,3)" alignment="west" clear-background="yes">
+      <m>y=a\cos(t-b)+c</m>
+    </label>
+
+    <point p="(b,a+c)" alignment="ne">
+      <m>(b,a+c)</m>
+    </point>
+
+  </coordinates>
+
+
+
+</diagram>
+

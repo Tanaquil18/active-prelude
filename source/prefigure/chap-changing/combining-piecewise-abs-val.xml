@@ -1,0 +1,29 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-4,-4,4,4]">
+    <group>
+      <grid id="grid" />
+      <axes id="axes"
+	    xlabel="x" ylabel="y"/>
+    </group>
+
+    <group outline="tactile">
+      <line p1="(-4,4)" p2="(0,0)" cliptobbox="yes"
+	    stroke="blue" thickness="2"/>
+      <line p1="(0,0)" p2="(4,4)" cliptobbox="yes"
+	    stroke="blue" thickness="2"/>
+    </group>
+
+    <label p="(-2,1.7)" alignment="sw">
+      <m>y=-x</m>
+    </label>
+    <label p="(2,1.7)" alignment="se">
+      <m>y=x</m>
+    </label>
+    <label p="(2.8,3)" alignment="nw">
+      <m>A(x)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

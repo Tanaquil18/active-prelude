@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,11 +11,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-exp-modeling-potato">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-exp-modeling-potato">
   <activity xml:id="act-exp-modeling-potato">
     <introduction>
       <p>
-			A potato initially at room temperature (<m>68^\circ</m>) is placed in an oven (at <m>350^\circ</m>) at time <m>t = 0</m>.
+			A potato initially at room temperature (<m>68^\circ</m>) is placed in an oven (at <m>350^\circ</m>) at time <m>t = 0</m>.  It turns out that the potato's temperature will eventually stabilize near the boiling point of water, or <m>212^\circ</m>.
       		It is known that the potato's temperature at time <m>t</m> is given by the function
       		<m>F(t) = a - b(0.98)^t</m> for some positive constants <m>a</m> and <m>b</m>,
      		where <m>F</m> is measured in degrees Fahrenheit and <m>t</m> is time in minutes.
@@ -30,7 +30,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>F(0)=68^\circ</m>, and <m> a - b = 68</m>
+        </p>
+      </answer>
       <solution>
         <p>
           The numerical value of <m>F(0)</m> is <m>68^\circ</m>, because the potato begins at room temperature.  Therefore, <m>F(0) = a - b(0.98)^0 = a - b = 68</m>.
@@ -47,10 +51,14 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The expression <m>(0.98)^t</m> approaches zero as <m>t</m> gets large, so <m>F(t) \to a</m>, and therefore <m>a = 212^\circ</m>.
+        </p>
+      </answer>
       <solution>
         <p>
-          The long-range behavior of <m>F(t)</m> should reflect the potato approaching the oven temperature of <m>350^\circ</m>.  The expression <m>(0.98)^t</m> approaches zero as <m>t</m> gets large, so <m>F(t) \to a</m>.  Therefore <m>a = 350^\circ</m>.
+          The long-range behavior of <m>F(t)</m> should reflect the potato approaching the boiling point of water, or <m>212^\circ</m>.  The expression <m>(0.98)^t</m> approaches zero as <m>t</m> gets large, so <m>F(t) \to a</m>.  Therefore <m>a = 212^\circ</m>.
         </p>
       </solution>
     </task>
@@ -61,10 +69,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>b=144^\circ</m></p></answer>
       <solution>
         <p>
-          The value of <m>b</m> is <m>a - 68 = 350 - 68 = 282^\circ</m>, since we established that <m>a - b = 68</m> and <m>a = 350</m>.
+          The value of <m>b</m> is <m>a - 68 = 212 - 68 = 144^\circ</m>, since we established that <m>a - b = 68</m> and <m>a = 212</m>.
         </p>
       </solution>
     </task>
@@ -73,20 +81,43 @@
         <p>
 								Check your work above by plotting the function <m>F</m> using graphing technology in an appropriate window.
 								Record your results on the axes provided below, labeling the scale on the axes.
-            					Then, use the graph to estimate the time at which the potato's temperature reaches <m>325</m> degrees.
+            					Then, use the graph to estimate the time at which the potato's temperature reaches <m>180</m> degrees.
 							</p>
 <!--        <figure xml:id="F-modeling-act-blank-axes-potato">
           <caption>Axes for plotting <m>F</m>.</caption> -->
-          <image width="50%" source="images/modeling-F-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-modeling-act-F-t-blank-axes-2">
+            <xi:include href="../prefigure/chap-exp/modeling-F-t-blank-axes.xml"/>
+            </prefigure>
+            <description><p>Blank axes for plotting <m>F</m> as a function of <m>t</m>.</p></description>
+          </image>
+
+          <!-- <image width="50%" source="images/modeling-F-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--        </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The function <m>F(t) = 212 - 144(0.98)^t</m> is shown below.  The potato reaches <m>180</m> degrees after about <m>75</m> minutes of baking in the <m>350</m> degree oven.
+        </p>
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-modeling-potato-act-temp-graph-ans">
+            <xi:include href="../prefigure/chap-exp/modeling-potato-act-temp-graph.xml"/>
+            </prefigure>
+            <description><p>Graph of <m>F(t)=212-144(0.98)^t</m>.</p></description>
+        </image>
+      </answer>
       <solution>
         <p>
-          The function <m>F(t) = 350 - 282(0.98)^t</m> is shown below.  The potato reaches <m>325</m> degrees after about <m>120</m> minutes of baking in the <m>350</m> degree oven.
+          The function <m>F(t) = 212 - 144(0.98)^t</m> is shown below.  The potato reaches <m>180</m> degrees after about <m>75</m> minutes of baking in the <m>350</m> degree oven.
         </p>
-        <image width="50%" source="solution-images/Activity3.2.4.png"/>
+        <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-modeling-potato-act-temp-graph-soln">
+            <xi:include href="../prefigure/chap-exp/modeling-potato-act-temp-graph.xml"/>
+            </prefigure>
+            <description><p>Graph of <m>F(t)=212-144(0.98)^t</m>.</p></description>
+          </image>
+        <!-- <image width="50%" source="solution-images/Activity3.2.4.png"/> -->
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-exp-modeling-potato-task-4">
@@ -96,18 +127,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          We can view <m>F(t) = a - b(0.98)^t</m> as a transformation of the parent function <m>f(t) = (0.98)^t</m> by first stretching <m>f</m> vertically by a factor of <m>b</m>, then reflecting over the <m>t</m>-axis, and finally shifting vertically up by <m>a</m> units.
+        </p>
+      </answer>
       <solution>
         <p>
           We can view <m>F(t) = a - b(0.98)^t</m> as a transformation of the parent function <m>f(t) = (0.98)^t</m> by first stretching <m>f</m> vertically by a factor of <m>b</m>, then reflecting over the <m>t</m>-axis, and finally shifting vertically up by <m>a</m> units.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

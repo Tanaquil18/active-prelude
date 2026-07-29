@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-infty">
-  
+
 
   <exercise xml:id="ez-poly-infty-WW1" label="Library__LoyolaChicago__Precalc__Chap9Sec1__Q23">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec1/Q23.pg"/>
@@ -82,7 +82,7 @@
         </ol>
       </p>
     </solution>
-  </exercise> 
+  </exercise>
 
   <exercise xml:id="ez-poly-infty-transformations">
     <statement>
@@ -112,7 +112,7 @@
           </li>
           <li>
             <p>
-              Find a formula for <m>g</m> as a function of <m>x</m>.  What is the domain of <m>g</m>?  
+              Find a formula for <m>g</m> as a function of <m>x</m>.  What is the domain of <m>g</m>?
             </p>
           </li>
           <li>
@@ -171,20 +171,20 @@
     </solution>
   </exercise>
 
- 
+
 
   <exercise xml:id="ez-poly-infty-frac-powers">
     <statement>
       <p>
-        Power functions can have powers that are not whole numbers.  For instance, we can consider such functions as 
-        <m>f(x)=x^{2.4}</m>, <m>g(x)=x^{2.5}</m>, and <m>h(x)=x^{2.6}</m>. 
+        Power functions can have powers that are not whole numbers.  For instance, we can consider such functions as
+        <m>f(x)=x^{2.4}</m>, <m>g(x)=x^{2.5}</m>, and <m>h(x)=x^{2.6}</m>.
       </p>
 
       <p>
         <ol marker="a.">
           <li>
             <p>
-              Compare and contrast the graphs of <m>f</m>, <m>g</m>, and <m>h</m>.  How are they similar?  How are they different?  (There is a lot you can discuss here.) 
+              Compare and contrast the graphs of <m>f</m>, <m>g</m>, and <m>h</m>.  How are they similar?  How are they different?  (There is a lot you can discuss here.)
             </p>
           </li>
           <li>

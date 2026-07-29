@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-inverse-F-C">
+<worksheet label="ws-PA-changing-inverse-F-C" component="static">
   <exploration xml:id="PA-changing-inverse-F-C">
     <introduction>
       <p>
@@ -25,8 +25,8 @@
 					Show that it is possible to solve the equation <m>F = \frac{9}{5}C + 32</m> for <m>C</m> in terms of <m>F</m> and that doing so results in the equation <m>C = \frac{5}{9}(F-32)</m>.
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Subtracting 32 from both sides: <m>F - 32 = \frac{9}{5}C</m>.
@@ -44,8 +44,8 @@
 					Find the simplest expression that you can for the composite function <m>j(C) = h(g(C))</m>.
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <md>
@@ -61,8 +61,8 @@
 					Find the simplest expression that you can for the composite function <m>k(F) = g(h(F))</m>.
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/>-->
       <solution>
         <p>
           <md>
@@ -78,8 +78,8 @@
 					Why are the functions <m>j</m> and <m>k</m> so simple?  Explain by discussing how the functions <m>g</m> and <m>h</m> process inputs to generate outputs and what happens when we first execute one followed by the other.
 				</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The function <m>g</m> converts Celsius to Fahrenheit, and <m>h</m> converts

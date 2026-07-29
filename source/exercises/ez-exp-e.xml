@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -38,7 +38,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec4/Q13.pg"/>
   </exercise>
 
-<!--  
+<!--
   <exercise xml:id="ez-exp-e-WW5" label="Library__LoyolaChicago__Precalc__Chap3Sec4__Q24">
     <webwork source="Library/LoyolaChicago/Precalc/Chap3Sec4/Q24.pg" />
   </exercise>
@@ -52,7 +52,7 @@
       </p>
 
       <p>
-        Suppose we invest $<m>100</m> in an account that earns <m>8</m>% annual interest.  We investigate the effects of different rates of compounding.  
+        Suppose we invest $<m>100</m> in an account that earns <m>8</m>% annual interest.  We investigate the effects of different rates of compounding.
       </p>
 
       <p>
@@ -158,7 +158,7 @@
           </li>
           <li>
             <p>
-              Experiment with the slider to find a value of <m>k</m> for which <m>g(2) = \frac{1}{2}</m>.  Test your estimate by computing <m>e^{2k}</m>.  How accurate is your estimate? 
+              Experiment with the slider to find a value of <m>k</m> for which <m>g(2) = \frac{1}{2}</m>.  Test your estimate by computing <m>e^{2k}</m>.  How accurate is your estimate?
             </p>
           </li>
         </ol>
@@ -203,9 +203,9 @@
         A can of soda is removed from a refrigerator at time <m>t = 0</m> (in minutes)
         and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
         Based on the data, a model is formulated for the object's temperature, given by
-          <me>
+          <md>
             F(t) = 74.4 - 38.8e^{-0.05t}
-          </me>.
+          </md>.
       </p>
 
       <p>

@@ -1,0 +1,25 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="[5,5,5,5]">
+  <coordinates bbox="[-3,-3,7,7]">
+    <group>
+      <axes id="axes" xlabel="x" ylabel="y" decorations="no"/>
+    </group>
+
+    <definition>p(x)=-3*(x-1)^2/4+6</definition>
+
+    <line p1="(1,bbox[1])" p2="(1,bbox[3])" stroke="#999"
+	  thickness="2" infinite="yes" cliptobbox="yes" dash="8 8"
+	  tactile-dash="18 18"/>
+
+    <graph function="p" />
+
+    <point p="(1,p(1))"/>
+    <point p="(0,p(0))" />
+    <point p="(2,p(2))" />
+
+    <label p="(3,p(3))" alignment="ne">
+      <m>h(x)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>

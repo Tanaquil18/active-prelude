@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-trig-inverse">
+<worksheet label="ws-PA-trig-inverse" component="static">
   <exploration xml:id="PA-trig-inverse">
     <introduction>
       <p>
@@ -32,8 +32,8 @@
 		            What is the domain of <m>g</m>?
 		          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The domain of <m>g</m> is the interval <m>[0, \pi]</m>.</p>
       </solution>
@@ -44,8 +44,8 @@
 		            What is the range of <m>g</m>?
 		          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The range of <m>g</m> is the interval <m>[-1, 1]</m>.</p>
       </solution>
@@ -57,8 +57,8 @@
 		            Why or why not?
 		          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>Yes, <m>g</m> passes the horizontal line test.  On its restricted domain <m>[0,\pi]</m>, the cosine function is strictly decreasing, so no horizontal line can intersect its graph more than once.</p>
       </solution>
@@ -70,8 +70,8 @@
 		            <m>g^{-1}</m>, and state the domain and range of <m>g^{-1}</m>.
 		          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>Since <m>g</m> passes the horizontal line test, it is one-to-one and has an inverse function <m>g^{-1}</m>.  The domain of <m>g^{-1}</m> is the range of <m>g</m>, which is <m>[-1, 1]</m>, and the range of <m>g^{-1}</m> is the domain of <m>g</m>, which is <m>[0, \pi]</m>.</p>
       </solution>
@@ -84,8 +84,8 @@
 		            How about the exact value of <m>g^{-1}(-\frac{\sqrt{2}}{2})</m>?
 		          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>Since <m>g\!\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>, we have <m>g^{-1}\!\left(\frac{\sqrt{2}}{2}\right) = \frac{\pi}{4}</m>.  Since <m>g\!\left(\frac{3\pi}{4}\right) = -\frac{\sqrt{2}}{2}</m>, we have <m>g^{-1}\!\left(-\frac{\sqrt{2}}{2}\right) = \frac{3\pi}{4}</m>.</p>
       </solution>
@@ -99,8 +99,8 @@
 		            Use proper notation to label your results.
 		          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>g^{-1}\!\left(-\frac{1}{2}\right) = \frac{2\pi}{3}</m>, <m>g^{-1}\!\left(\frac{\sqrt{3}}{2}\right) = \frac{\pi}{6}</m>, <m>g^{-1}(0) = \frac{\pi}{2}</m>, <m>g^{-1}(-1) = \pi</m>.</p>
       </solution>

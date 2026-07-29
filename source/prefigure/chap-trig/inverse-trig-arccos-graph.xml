@@ -1,0 +1,34 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>f(x)=cos(x)</definition>
+  <definition>g(x)=x</definition>
+
+  <coordinates bbox="[-2,-2,4,4]">
+    <axes decorations="yes" hlabels="(-1,2,3)"
+	  vlabels="(-1,2,3)" xlabel="t" ylabel="y"/>
+
+    <graph function="g" stroke="#ccc" />
+    <graph function="f" domain="(0,pi)" stroke="green" tactile-dash="9 9"/>
+    <parametric-curve x="f" y="g" domain="(0,pi)"/>
+
+    <point p="(1,0)" />
+    <point p="(0,1)" />
+
+    <point p="(pi,-1)" style="diamond" alignment="sw">
+      <m>y=\cos(t)</m>
+    </point>
+    <point p="(-1,pi)" style="diamond" />
+
+    <label p="(-0.3, 2.4)" alignment="east" clear-background="yes">
+      <m>y=\arccos(t)</m>
+    </label>
+	   
+    
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

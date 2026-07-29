@@ -1,0 +1,17 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-5,-5,5,5]">
+    <grid-axes xlabel="t" ylabel="y" />
+
+    <definition>f(x)=-2.5*atan(x)</definition>
+
+    <graph function="f" />
+
+    <label p="(-4,f(-4))" alignment="ne" offset="(7,7)"
+	   clear-background="yes">
+      <m>y=r(t)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

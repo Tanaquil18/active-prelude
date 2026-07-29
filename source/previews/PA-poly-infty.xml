@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,11 +11,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-infty">
+<worksheet label="ws-PA-poly-infty" component="static">
   <exploration xml:id="PA-poly-infty">
     <introduction>
       <p>
-			Complete each of the following statements with an appropriate number or the symbols <m>\infty</m> or <m>-\infty</m>.  Do your best to do so <em>without</em> using a graphing utility; instead use your understanding of the function's graph.  
+			Complete each of the following statements with an appropriate number or the symbols <m>\infty</m> or <m>-\infty</m>.  Do your best to do so <em>without</em> using a graphing utility; instead use your understanding of the function's graph.
 		</p>
       <p/>
     </introduction>
@@ -25,8 +25,8 @@
 						As <m>t \to \infty</m>, <m>e^{-t} \to </m><fillin/>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>0</m></p>
       </solution>
@@ -37,8 +37,8 @@
 						As <m>t \to \infty</m>, <m>\ln(t) \to </m><fillin/>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>\infty</m></p>
       </solution>
@@ -49,8 +49,8 @@
 						As <m>t \to \infty</m>, <m>e^{t} \to </m><fillin/>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>\infty</m></p>
       </solution>
@@ -61,8 +61,8 @@
 						As <m>t \to 0^+</m>, <m>e^{-t} \to </m><fillin/>. (When we write <m>t \to 0^+</m>, this means that we are letting <m>t</m> get closer and closer to <m>0</m>, but only allowing <m>t</m> to take on positive values.)
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>1</m>.  Since <m>e^{-t} \to e^0 = 1</m> as <m>t \to 0^+</m>.</p>
       </solution>
@@ -73,8 +73,8 @@
 						As <m>t \to \infty</m>, <m>35 + 53e^{-0.025t} \to</m><fillin/>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>35</m>.  As <m>t \to \infty</m>, <m>e^{-0.025t} \to 0</m>, so the expression approaches <m>35 + 53 \cdot 0 = 35</m>.</p>
       </solution>
@@ -85,8 +85,8 @@
 						As <m>t \to \frac{\pi}{2}^-</m>, <m>\tan(t) \to </m><fillin/>. (When we write <m>t \to \frac{\pi}{2}^-</m>, this means that we are letting <m>t</m> get closer and closer to <m>\frac{\pi}{2}^-</m>, but only allowing <m>t</m> to take on values that lie to the left of <m>\frac{\pi}{2}</m>.)
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>\infty</m>.  As <m>t \to \frac{\pi}{2}^-</m>, <m>\cos(t) \to 0^+</m> while <m>\sin(t) \to 1</m>, so <m>\tan(t) = \frac{\sin(t)}{\cos(t)} \to +\infty</m>.</p>
       </solution>
@@ -97,8 +97,8 @@
 						As <m>t \to \frac{\pi}{2}^+</m>, <m>\tan(t) \to </m><fillin/>. (When we write <m>t \to \frac{\pi}{2}^+</m>, this means that we are letting <m>t</m> get closer and closer to <m>\frac{\pi}{2}^+</m>, but only allowing <m>t</m> to take on values that lie to the right of <m>\frac{\pi}{2}</m>.)
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>-\infty</m>.  As <m>t \to \frac{\pi}{2}^+</m>, <m>\cos(t) \to 0^-</m> while <m>\sin(t) \to 1</m>, so <m>\tan(t) = \frac{\sin(t)}{\cos(t)} \to -\infty</m>.</p>
       </solution>

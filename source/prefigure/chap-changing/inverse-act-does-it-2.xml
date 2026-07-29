@@ -1,0 +1,27 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-5,-5,5,5]">
+    <grid-axes xlabel="t" ylabel="y" />
+
+    <definition>f1(x)=-2*(x+3)+1</definition>
+    <definition>f2(x)=2/3*x</definition>
+    <definition>f3(x)=-x</definition>
+
+    <graph function="f1" domain="(-5,-3)"/>
+    <graph function="f2" domain="(-3,3)"/>
+    <graph function="f3" domain="(3,5)"/>
+
+    <label p="(-4,f1(-4))" alignment="ne" offset="(7,7)"
+	   clear-background="yes">
+      <m>y=s(t)</m>
+    </label>
+
+    <point p="(-3,f1(-3))" fill="white"/>
+    <point p="(-3,f2(-3))" fill="blue"/>
+    <point p="(3,f2(3))" fill="white"/>
+    <point p="(3,f3(3))" fill="blue"/>
+
+
+  </coordinates>
+
+</diagram>
+

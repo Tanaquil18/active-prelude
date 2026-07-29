@@ -1,0 +1,27 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-2.5,-1.5,3.5,4.5]">
+
+    <grid-axes hlabels="(-2,1,3)" vlabels="(-1,1,3)"
+	    xlabel="x" ylabel="y" spacings="((-2.5,0.5,3.5),(-1.5,0.5,4.5))"/>
+
+    <line p1="(-3,4)" p2="(-1,3)" cliptobbox="yes"
+	  stroke="blue" thickness="2"/>
+    <line p1="(-1,1)" p2="(1,4)" cliptobbox="yes"
+	  stroke="blue" thickness="2"/>
+    <line p1="(1,1)" p2="(4,-5/4)" cliptobbox="yes"
+	  stroke="blue" thickness="2"/>
+
+    <point p="(-1,3)" fill="white"/>
+    <point p="(-1,1)" fill="blue"/>
+    <point p="(1,4)" fill="blue"/>
+    <point p="(1,1)" fill="white"/>
+    <point p="(2,0.25)" fill="white"/>
+
+    <label p="(-1,3.75)" alignment="n" clear-background="yes">
+      <m>f(x)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

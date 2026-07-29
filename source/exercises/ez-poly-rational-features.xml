@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -163,26 +163,26 @@
           <li>
             <p>
               We need: numerator degree greater than denominator degree (no horizontal asymptote); zeros at <m>x=-5</m> and <m>x=3</m>; single vertical asymptote at <m>x=-1</m>; and the correct end behavior.  The function
-              <me>
+              <md>
                 s(x) = -\frac{(x+5)(x-3)}{x+1}
-              </me>
+              </md>
               satisfies all criteria: as <m>x \to \infty</m>, <m>s(x) \to -\infty</m> (since <m>-(+)(+)/(+) \to -\infty</m>); as <m>x \to -\infty</m>, <m>s(x) \to +\infty</m>.
             </p>
           </li>
           <li>
             <p>
               Zeros only at <m>x=-4</m> and <m>x=-2</m>, with <m>x=-2</m> having even multiplicity (no sign change), VAs at <m>x=1</m> and <m>x=5</m>, hole at <m>x=4</m>.  One formula:
-              <me>
+              <md>
                 u(x) = \frac{(x+4)(x+2)^2(x-4)}{(x-1)(x-5)(x-4)}.
-              </me>
+              </md>
             </p>
           </li>
           <li>
             <p>
               Reading from the graph: zeros near <m>x=-1</m> and <m>x=5</m>, vertical asymptotes near <m>x=3</m> and <m>x=8</m>, a hole near <m>x=10</m>, and a horizontal asymptote near <m>y=0</m>.  One formula consistent with the graph is
-              <me>
+              <md>
                 w(x) = -\frac{(x+2)(x-5)(x-10)}{5(x-3)(x-8)(x-10)}.
-              </me>
+              </md>
             </p>
           </li>
         </ol>
@@ -232,18 +232,18 @@
           <li>
             <p>
               <m>r(x) = -\dfrac{3}{x-4} + 5</m>.  Domain: <m>x \neq 4</m>.  Range: <m>r \neq 5</m>.  The graph passes the horizontal line test, so an inverse exists.  Solving <m>y = -\dfrac{3}{x-4}+5</m> for <m>x</m>: <m>y-5 = -\dfrac{3}{x-4}</m>, so <m>x-4 = -\dfrac{3}{y-5}</m> and <m>x = 4 - \dfrac{3}{y-5}</m>.  Thus
-              <me>
+              <md>
                 r^{-1}(x) = 4 - \frac{3}{x-5}.
-              </me>
+              </md>
               Domain of <m>r^{-1}</m>: <m>x \neq 5</m>.  Range of <m>r^{-1}</m>: <m>r^{-1} \neq 4</m>.
             </p>
           </li>
           <li>
             <p>
               <m>s(x) = \dfrac{4-3x}{7x-2}</m>.  Domain: <m>x \neq \dfrac{2}{7}</m>.  Range: <m>s \neq -\dfrac{3}{7}</m>.  The graph passes the horizontal line test.  Solving <m>y = \dfrac{4-3x}{7x-2}</m> for <m>x</m>: <m>y(7x-2) = 4-3x</m>, so <m>7xy + 3x = 4+2y</m>, giving <m>x = \dfrac{2y+4}{7y+3}</m>.  Thus
-              <me>
+              <md>
                 s^{-1}(x) = \frac{2x+4}{7x+3}.
-              </me>
+              </md>
               Domain of <m>s^{-1}</m>: <m>x \neq -\dfrac{3}{7}</m>.  Range of <m>s^{-1}</m>: <m>s^{-1} \neq \dfrac{2}{7}</m>.
             </p>
           </li>
@@ -255,9 +255,9 @@
           <li>
             <p>
               <m>w(x) = \dfrac{11}{(x+4)^3} - 7</m>.  Domain: <m>x \neq -4</m>.  Range: <m>w \neq -7</m>.  The graph passes the horizontal line test.  Solving for <m>x</m>: <m>y+7 = \dfrac{11}{(x+4)^3}</m>, so <m>(x+4)^3 = \dfrac{11}{y+7}</m> and <m>x = -4 + \sqrt[3]{\dfrac{11}{y+7}}</m>.  Thus
-              <me>
+              <md>
                 w^{-1}(x) = -4 + \sqrt[3]{\frac{11}{x+7}}.
-              </me>
+              </md>
               Domain of <m>w^{-1}</m>: <m>x \neq -7</m>.  Range of <m>w^{-1}</m>: <m>w^{-1} \neq -4</m>.
             </p>
           </li>

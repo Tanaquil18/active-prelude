@@ -1,0 +1,19 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>f(x)=8*0.85^x</definition>
+  <coordinates bbox="[-2,-2,12,12]">
+    <grid rx="(-2,1,12)" ry="(-2,1,12)" />
+    <axes id="axes" decorations="no"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="f"/>
+
+    <label p="(6,f(6))" alignment="ne" clear-background="yes" offset="(8,8)">
+      <m>g(t)</m>
+    </label>
+
+  </coordinates>
+
+
+
+</diagram>
+

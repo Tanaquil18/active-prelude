@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-polynomial-applications">
+<worksheet label="ws-PA-poly-polynomial-applications" component="static">
   <exploration xml:id="PA-poly-polynomial-applications">
     <introduction>
       <p>
@@ -25,8 +25,8 @@
 						Let <m>x</m> be the side length of the squares being cut from the corners of the cardboard.  Draw a labeled diagram that shows the given information and the variable being used.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <image width="50%" source="solution-images/PrevAct5.3.1.png"/>
       </solution>
@@ -34,16 +34,16 @@
     <task workspace="3cm" xml:id="PA-poly-polynomial-applications-task-1">
       <statement>
         <p>
-						Determine a formula for the function <m>V</m> whose output is the volume of the box that results from a square of size <m>x \times x</m> being cut from each corner of the cardboard.
+						Determine a formula for the function <m>V(x)</m> whose output is the volume of the box that results from a square of size <m>x \times x</m> being cut from each corner of the cardboard.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>After cutting <m>x \times x</m> squares from each corner, the base of the box has dimensions <m>(12 - 2x)</m> by <m>(18 - 2x)</m>, and the height of the box is <m>x</m>.  Thus
-        <me>
+        <md>
           V(x) = (12-2x)(18-2x)x = 4(6-x)(9-x)x.
-        </me>
+        </md>
         </p>
       </solution>
     </task>
@@ -53,8 +53,8 @@
 						What familiar kind of function is <m>V</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>V</m> is a cubic (degree 3) polynomial.</p>
       </solution>
@@ -62,11 +62,11 @@
     <task workspace="3cm" xml:id="PA-poly-polynomial-applications-task-3">
       <statement>
         <p>
-						If we start with a small positive value for <m>x</m> and let that value get larger and larger, what is the first value of <m>x</m>we encounter that makes it impossible to remove <m>x \times x</m> squares from the cardboard and still form a box?
+						If we start with a small positive value for <m>x</m> and let that value get larger and larger, what is the first value of <m>x</m> we encounter that makes it impossible to remove <m>x \times x</m> squares from the cardboard and still form a box?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The shorter side of the cardboard is <m>12</m> inches.  Cutting squares of size <m>x</m> from both ends of the short side removes <m>2x</m> inches, so we need <m>12 - 2x &gt; 0</m>, i.e., <m>x &lt; 6</m>.  The first value of <m>x</m> that makes it impossible to form a box is <m>x = 6</m>.</p>
       </solution>
@@ -77,8 +77,8 @@
 						What are the zeros of <m>V</m>?  What is the domain of the model <m>V</m> in the context of the rectangular box?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>From <m>V(x) = 4x(6-x)(9-x)</m>, the zeros are <m>x = 0</m>, <m>x = 6</m>, and <m>x = 9</m>.  In the context of the physical problem, we need <m>x &gt; 0</m> and <m>x &lt; 6</m> (so that both pairs of opposite sides of the base remain positive), giving domain <m>(0, 6)</m>.</p>
       </solution>

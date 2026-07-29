@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-polynomials">
-  
+
   <exercise xml:id="ez-poly-polynomials-WW1" label="Library__LoyolaChicago__Precalc__Chap9Sec2__Q02">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/Q02.pg"/>
   </exercise>
@@ -29,7 +29,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/Q12.pg"/>
   </exercise>
 
-<!--  
+<!--
   <exercise xml:id="ez-poly-polynomials-WW6" label="Library__LoyolaChicago__Precalc__Chap9Sec2__Q15">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/Q15.pg" />
   </exercise>
@@ -46,12 +46,12 @@
     <statement>
       <p>
         Consider the polynomial function given by
-        <me>
+        <md>
           p(x) = 0.0005(x+21.7)^3 (x-20.9)^2 (x-31.4)(x^2+100)
-        </me>.
+        </md>.
       </p>
 
-      <p>  
+      <p>
         <ol>
           <li>
             <p>
@@ -84,16 +84,16 @@
           <li>
             <p>
               Now consider the related but different polynomial
-              <me>
+              <md>
                 q(x) = -0.0005(x+21.7)^3 (x-20.9)^2 (x-31.4)(x^2+100)(x-92.3)
-              </me>.
+              </md>.
               What is the degree of <m>q</m>?
               What are the zeros of <m>q</m>?
               What is obvious from its graph and what is not?
             </p>
           </li>
         </ol>
-      </p>  
+      </p>
     </statement>
     <answer>
       <p>
@@ -216,12 +216,12 @@
         <ol>
           <li>
             <p>
-              A quadratic function <m>q</m> has zeros at <m>x = &#8722;7</m> and <m>x = 11</m> and its <m>y</m>-value at its vertex is <m>42</m>. 
+              A quadratic function <m>q</m> has zeros at <m>x = &#8722;7</m> and <m>x = 11</m> and its <m>y</m>-value at its vertex is <m>42</m>.
             </p>
           </li>
           <li>
               <p>
-                A polynomial <m>r</m> of degree <m>4</m> has zeros at <m>x = &#8722;3</m> and <m>x = 5</m>, both of multiplicity <m>2</m>, and the function has a <m>y</m>-intercept at the point <m>(0, 28)</m>. 
+                A polynomial <m>r</m> of degree <m>4</m> has zeros at <m>x = &#8722;3</m> and <m>x = 5</m>, both of multiplicity <m>2</m>, and the function has a <m>y</m>-intercept at the point <m>(0, 28)</m>.
               </p>
           </li>
           <li>

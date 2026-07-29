@@ -1,0 +1,8 @@
+<diagram xmlns="https://prefigure.org" dimensions="(400,300)" margins="5">
+  <definition>f(x)=212 - 144*0.98^x</definition>
+  <coordinates bbox="(-30,-30,250,230)">
+    <grid-axes xlabel="t" ylabel="F" hlabels="(50,50,200)" vlabels="(50,50,200)"
+    spacings="((-30,10,250),(-30,10,230))"/>
+    <graph function="f" domain="[0,250]"/>
+  </coordinates>
+</diagram>

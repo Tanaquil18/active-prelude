@@ -1,0 +1,20 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-1,-1,9,9]">
+    <group>
+      <grid id="grid" rx="(-1,1,9)" ry="(-1,1,9)"/>
+      <axes id="axes" hlabels="(-2,2,8)" vlabels="(-2,2,8)"
+	    ylabel="v"/>
+    </group>
+
+    <polygon points="((0,0), (1,4), (3,4), (4,0), (5,0), (6,6), (8,6), (9,0))"
+	     stroke="blue" thickness="3" />
+
+    <label p="(3,6)" alignment="center"
+	   clear-background="yes"><m>v=f(t)</m></label>
+    <label p="(9,0)" alignment="nw" offset="(-12,7)"
+	   clear-background="yes"><m>t</m></label>
+
+  </coordinates>
+
+</diagram>
+

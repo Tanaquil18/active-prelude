@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -180,7 +180,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The period of the motion is <m>p = 4</m> seconds.  The midline is <m>y = 8</m> inches.  The amplitude is <m>a = 5</m> inches.
+        </p>
+      </answer>
       <solution>
         <p>
           The period of the motion is <m>p = 4</m> seconds.  The midline is <m>y = 8</m> inches.  The amplitude is <m>a = 5</m> inches.
@@ -194,10 +197,13 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The greatest displacement of the weight is <m>13</m> inches.  The least displacement is <m>3</m> inches.  The range of <m>f</m> is <m>[3, 13]</m>.
+        </p>
+      </answer>
       <solution>
         <p>
-          The greatest displacement of the weight is equal to the maximum of the graph: 13 inches.  The least displacement is the minimum: 3 inches.  The range of <m>f</m> is <m>[3, 13]</m>.
+          The greatest displacement of the weight is equal to the maximum of the graph: <m>13</m> inches.  The least displacement is the minimum: <m>3</m> inches.  The range of <m>f</m> is <m>[3, 13]</m>.
         </p>
       </solution>
     </task>
@@ -208,7 +214,12 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          <m>AV_{[4,4.25]}= -4.772</m> inches per second on the interval <m>[4,4.25]</m>.</p><p>
+          <m>AV_{[4.75,5]} = -1.524</m> inches per second on the interval <m>[4.75,5]</m>.</p><p>
+          The average rate of change of this function represents the speed of the weight.  Taken together, these two values indicate that the weight is moving more slowly on the interval <m>[4.75,5]</m> than on the interval <m>[4,4.25]</m>, but that the weight is moving in the same direction on each of these intervals.
+        </p>
+      </answer>
       <solution>
         <p>
           The average rate of change <m>AV_{[4,4.25]}</m> on the interval <m>[4,4.25]</m> is
@@ -230,18 +241,14 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>f(6.75) = 12.619</m> inches and <m>f(11.25) = 12.619</m> inches.
+        </p>
+      </answer>
       <solution>
         <p>
           The value of <m>f(6.75) = f(2.75) = 12.619</m> inches.  The value of <m>f(11.25) = f(7.25) = f(3.25) = 12.619</m> inches.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

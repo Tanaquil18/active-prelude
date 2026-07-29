@@ -1,0 +1,23 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>f(x)=-0.000025*(x+8)*(x+6)*(x-5)*(x**2+1)*(x-7)*(x-9)</definition>
+
+  <coordinates bbox="[-15,-1500,15,1500]">
+    <axes decorations="no"
+	  hticks="(-10,5,10)" vticks="(-1000,500,1000)"
+	  hlabels="(-10,5,10)" vlabels="(-1000,500,1000)"
+	  xlabel="x" ylabel="y"
+	  />
+
+    <graph function="f"/>
+
+    <label p="(4,500)" alignment="east" clear-background="yes">
+      <m>y=p(x)</m>
+    </label>
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

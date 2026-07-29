@@ -1,0 +1,32 @@
+<graphics id="figure" width="100" height="200" margins="[5,20,5,5]">
+  <definition>a=(0,0)</definition>
+  <definition>b=(13,0)</definition>
+  <definition>c=(13,25)</definition>
+
+  <coordinates bbox="[0,0,15,25]">
+    <group outline="tactile">
+      <arc points="(b,a,c)" radius="25" pixel-dims="yes"
+	   stroke="black" thickness="2" tactile-radius="50"/>
+      <polygon points="(a,b,c)" stroke="blue" thickness="2" closed="yes"
+	       cliptobbox="no"/>
+    </group>
+
+    <label p="midpoint(a,c)" alignment="nw">
+      <m>1</m>
+    </label>
+    <label p="midpoint(b,c)" alignment="east">
+      <m>x</m>
+    </label>
+    <label p="(3.5,2.5)" alignment="east">
+      <m>\theta</m>
+    </label>
+
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-trig-tangent">
+<worksheet label="ws-PA-trig-tangent" component="static">
   <exploration xml:id="PA-trig-tangent">
     <introduction>
       <p>
@@ -52,8 +52,8 @@
 				</sidebyside>
 --></p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Using <m>\tan(t) = \frac{\sin(t)}{\cos(t)}</m>:
@@ -73,8 +73,8 @@
 	            What are three other input values <m>x</m> for which <m>\tan(x)</m> is not defined?
 	          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Since <m>\tan(t) = \frac{\sin(t)}{\cos(t)}</m> and <m>\cos\!\left(\frac{\pi}{2}\right) = 0</m>, <m>\tan\!\left(\frac{\pi}{2}\right)</m> is undefined because division by zero is not allowed.  Three other values where <m>\tan</m> is undefined are <m>-\frac{\pi}{2}</m>, <m>\frac{3\pi}{2}</m>, and <m>-\frac{3\pi}{2}</m> (any value of the form <m>\frac{\pi}{2} + k\pi</m> for integer <m>k</m>).
@@ -99,8 +99,8 @@
 	            Why is the value of <m>\tan(\frac{11\pi}{24})</m> so large relative to the other values of <m>\tan(x)</m> in the table?
 	          </p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           At <m>x = \frac{11\pi}{24}</m>, the point is approximately <m>\left(\frac{11\pi}{24},\ 7.596\right)</m>.  We have <m>\sin\!\left(\frac{11\pi}{24}\right) \approx 0.9914</m> and <m>\cos\!\left(\frac{11\pi}{24}\right) \approx 0.1305</m>.  The value of <m>\tan\!\left(\frac{11\pi}{24}\right)</m> is so large because <m>\frac{11\pi}{24}</m> is very close to <m>\frac{\pi}{2}</m>, making <m>\cos\!\left(\frac{11\pi}{24}\right)</m> very small; since we divide by cosine, the tangent value becomes very large.
@@ -133,8 +133,8 @@
 	              </li>
 --></ul></p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <ul>

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -78,7 +78,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          For Kent County, <m>AV_{[1990,2010]} \approx 5099.55</m> people per year.
+          For Ottawa County, <m>AV_{[1990,2010]} \approx 3801.65</m> people per year.
+        </p></answer>
       <solution>
         <p>
           For Kent County, the population in 1990 was 500,631 and in 2010 was 602,622, so
@@ -105,7 +108,9 @@
 			        </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The units are people per year for both.
+        </p></answer>
       <solution>
         <p>
           The units on <m>AV_{[1990,2010]}</m> for both counties are people per year.
@@ -119,11 +124,12 @@
             			<q>In an average year between 1990 and 2010, the population of Ottawa County was <m>\ldots</m></q></p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          In an average year between 1990 and 2010, the population of Ottawa County was increasing by approximately 3801.65 people per year.
+        </p></answer>
       <solution>
         <p>
-          Between 1990 and 2010, the population of Ottawa County grew by an average of
-          approximately 3801.65 people per year.
+          In an average year between 1990 and 2010, the population of Ottawa County was increasing by approximately 3801.65 people per year.
         </p>
       </solution>
     </task>
@@ -135,7 +141,10 @@
 			    	</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          Kent County had a greater average rate of change during the time interval <m>[2000,2010]</m>.
+          There were no intervals in which either county had a negative average rate of change.
+        </p></answer>
       <solution>
         <p>
           For Kent County on <m>[2000,2010]</m>:
@@ -146,7 +155,7 @@
           In both counties, the population increased in every decade from 1960 to 2010,
           so the average rate of change was positive on every decade interval for both counties.
         </p>
-      
+
         <image width="50%" source="solution-images/Kent-Pop-and-Ottawa-Pop.png"/>
       </solution>
     </task>
@@ -157,7 +166,7 @@
 			    	</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\approx 284{,}191 \text{ people.}</m></p></answer>
       <solution>
         <p>
           Using the most recent decade's rate of change as a guide, Ottawa County grew at
@@ -167,11 +176,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

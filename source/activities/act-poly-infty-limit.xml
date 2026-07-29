@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -148,7 +148,23 @@
 <!--      </table> -->
     </statement>
     <answer>
-      <p/>
+      <tabular>
+        <row header="yes" bottom="medium">
+          <cell><m>f(x)</m></cell>
+          <cell><m>\lim_{x \to \infty} f(x)</m></cell>
+          <cell><m>\lim_{x \to -\infty} f(x)</m></cell>
+        </row>
+        <row bottom="minor"><cell><m>e^x</m></cell><cell><m>\infty</m></cell><cell><m>0</m></cell></row>
+        <row bottom="minor"><cell><m>e^{-x}</m></cell><cell><m>0</m></cell><cell><m>\infty</m></cell></row>
+        <row bottom="minor"><cell><m>\ln(x)</m></cell><cell><m>\infty</m></cell><cell>not defined</cell></row>
+        <row bottom="minor"><cell><m>x</m></cell><cell><m>\infty</m></cell><cell><m>-\infty</m></cell></row>
+        <row bottom="minor"><cell><m>x^2</m></cell><cell><m>\infty</m></cell><cell><m>\infty</m></cell></row>
+        <row bottom="minor"><cell><m>x^3</m></cell><cell><m>\infty</m></cell><cell><m>-\infty</m></cell></row>
+        <row bottom="minor"><cell><m>x^4</m></cell><cell><m>\infty</m></cell><cell><m>\infty</m></cell></row>
+        <row bottom="minor"><cell><m>\frac{1}{x}</m></cell><cell><m>0</m></cell><cell><m>0</m></cell></row>
+        <row bottom="minor"><cell><m>\frac{1}{x^2}</m></cell><cell><m>0</m></cell><cell><m>0</m></cell></row>
+        <row><cell><m>\sin(x)</m></cell><cell>no limit</cell><cell>no limit</cell></row>
+      </tabular>
     </answer>
     <solution>
       <tabular>

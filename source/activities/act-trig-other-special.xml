@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -19,10 +19,14 @@
 		</p>
     </statement>
     <answer>
-      <p/>
+      <p>
+        <m>\cos(\beta) = -\frac{1}{2}</m>, <m>\sin(\beta) = \frac{\sqrt{3}}{2}</m>, <m>\csc(\beta) = \frac{2}{\sqrt{3}}</m>, <m>\cot(\beta) = -\frac{\sqrt{3}}{3}</m>, <m>\tan(\beta) = -\frac{3}{\sqrt{3}}</m>.
+      </p>
     </answer>
     <solution>
-      <p/>
+      <p>
+        If <m>\sec(\beta) = -2</m>, then <m>\cos(\beta) = -\frac{1}{2}</m>. The angle whose terminal side is in quadrant II satisfying <m>\sec(\beta) = -2</m> is <m>\beta=\frac{2\pi}{3}</m>, so <m>\sin(\beta) = \frac{\sqrt{3}}{2}</m>, <m>\csc(\beta) = \frac{2}{\sqrt{3}}</m>, <m>\cot(\beta) = -\frac{\sqrt{3}}{3}</m>, <m>\tan(\beta) = -\frac{3}{\sqrt{3}}</m>.
+      </p>
     </solution>
   </activity>
 </worksheet>

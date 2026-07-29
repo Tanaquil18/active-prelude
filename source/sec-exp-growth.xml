@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -36,30 +36,30 @@
 
   <subsection><title>Introduction</title>
   	<p>
-  		Linear functions have constant average rate of change and model many important phenomena.  In other settings, it is natural for a quantity to change at a rate that is proportional to the amount of the quantity present.  For instance, whether you put $<m>100</m> or $<m>100000</m> or any other amount in a mutual fund, the investment's value changes at a rate proportional the amount present.  We often measure that rate in terms of the annual percentage rate of return. 
+  		Linear functions have constant average rate of change and model many important phenomena.  In other settings, it is natural for a quantity to change at a rate that is proportional to the amount of the quantity present.  For instance, whether you put $<m>100</m> or $<m>100000</m> or any other amount in a mutual fund, the investment's value changes at a rate proportional the amount present.  We often measure that rate in terms of the annual percentage rate of return.
   	</p>
 
   	<p>
   		Suppose that a certain mutual fund has a <m>10</m>% annual return.  If we invest $<m>100</m>, after <m>1</m> year we still have the original $<m>100</m>, plus we gain <m>10</m>% of $<m>100</m>, so
-  		<me>
+  		<md>
   			100 \overset{\text{year } 1}{\longrightarrow} 100 + 0.1(100) = 1.1(100)
-  		</me>.
+  		</md>.
   		If we instead invested $<m>100000</m>, after <m>1</m> year we again have the original $<m>100000</m>, but now we gain <m>10</m>% of $<m>100000</m>, and thus
-  		<me>
+  		<md>
   			100000 \overset{\text{year } 1}{\longrightarrow}  100000 + 0.1(100000) = 1.1(100000)
-  		</me>.
+  		</md>.
   		We therefore see that regardless of the amount of money originally invested, say <m>P</m>, the amount of money we have after <m>1</m> year is <m>1.1P</m>.
   	</p>
 
   	<p>
-  		If we repeat our computations for the second year, we observe that 
-  		<me>
+  		If we repeat our computations for the second year, we observe that
+  		<md>
   			1.1(100) \overset{\text{year } 2}{\longrightarrow}  1.1(100) + 0.1(1.1(100)) = 1.1(1.1(100)) = 1.1^2 (100)
-  		</me>.
+  		</md>.
   		The ideas are identical with the larger dollar value, so
-  		<me>
+  		<md>
   			1.1(100000) \overset{\text{year } 2}{\longrightarrow}  1.1(100000) + 0.1(1.1(100000)) = 1.1(1.1(100000)) = 1.1^2 (100000)
-  		</me>,
+  		</md>,
   		and we see that if we invest <m>P</m> dollars, in <m>2</m> years our investment will grow to <m>1.1^2 P</m>.
   	</p>
 
@@ -68,6 +68,8 @@
   	</p>
 
   	<xi:include href="./previews/PA-exp-growth.xml"/>
+	<xi:include href="./previews/PA-exp-growth-D.xml"/>
+
   </subsection>
 
   <subsection xml:id="subsec-exp-growth-functions">
@@ -82,7 +84,7 @@
   		<statement>
   			<p>
   				Let <m>b</m> be a real number such that <m>b \gt 0</m> and <m>b \ne 1</m>.  We call the function defined by
-  				<me>f(t) = b^t</me>
+  				<md>f(t) = b^t</md>
   				an <term>exponential function</term> with <term>base</term> <m>b</m>.
   			</p>
   		</statement>
@@ -95,7 +97,7 @@
   	<p>
   		Because we will be frequently interested in functions such as <m>I(t)</m> and <m>V(t)</m> with the form <m>ab^t</m>, we will also refer to functions of this form as <q>exponential</q>, understanding that technically these are vertical stretches of exponential functions according to <xref ref="D-growth-exponential-function">Definition</xref>.  In <xref ref="PA-exp-growth">Preview Activity</xref>, we found that <m>I(t) = 20000(1.08)^t</m> and <m>V(t) = 20000(0.88)^t</m>.  It is natural to call <m>1.08</m> the <q>growth factor</q>  of <m>I</m> and similarly <m>0.88</m> the growth factor of <m>V</m>.  In addition, we note that these values stem from the actual growth rates:  <m>0.08</m> for <m>I</m> and <m>-0.12</m> for <m>V</m>, the latter being negative because value is depreciating.  In general, for a function of form <m>f(t) = ab^t</m>, we call <m>b</m> the <term>growth factor</term>. <idx><h>exponential function</h><h>growth factor</h></idx>  Moreover, if <m>b = 1+r</m>, we call <m>r</m> the <term>growth rate</term>. <idx><h>exponential function</h><h>growth rate</h></idx>  Whenever <m>b \gt 1</m>, we often say that the function <m>f</m> is exhibiting <q>exponential growth</q>, wherease if <m>0 \lt b \lt 1</m>, we say <m>f</m> exhibits <q>exponential decay</q>. <idx><h>exponential function</h><h>exponential decay</h></idx>
   	</p>
-  	
+
 	<p>
   		We explore the properties of functions of form <m>f(t) = ab^t</m> further in <xref ref="act-exp-growth-a-b-t">Activity</xref>.
   	</p>
@@ -157,9 +159,9 @@
 
 	<p>
 		In contrast, the function <m>s</m> given by <xref ref="T-exp-exponential-decay">Table</xref> does not exhibit constant average rate of change.  Instead, another pattern is present.  Observe that if we consider the ratios of consecutive outputs in the table, we see that
-		<me>
+		<md>
 			\frac{9} {12}= \frac{3}{4}, \frac{6.75}{9} = 0.75 = \frac{3}{4}, \text{ and } \frac{5.0625}{6.75} = 0.75 = \frac{3}{4}
-		</me>.
+		</md>.
 		So, where the <em>differences</em> in the outputs in <xref ref="T-exp-linear-decay">Table</xref> are constant, the <em>ratios</em> in the outputs in <xref ref="T-exp-exponential-decay">Table</xref> are constant.  The latter is a hallmark of exponential functions and may be used to help us determine the formula of a function for which we have certain information.
 	</p>
 
@@ -185,20 +187,20 @@
 					ab^5 = 18
 				</men>.
 				Because we know that the quotient of outputs of an exponential function corresponding to equally-spaced inputs must be constant, we thus naturally consider the quotient <m>\frac{18}{11}</m>.  Using <xref ref="eq-growth-p-2">Equation</xref> and <xref ref="eq-growth-p-5">Equation</xref>, it follows that
-				<me>
+				<md>
 					\frac{18}{11} = \frac{ab^5}{ab^2}
-				</me>.
-				Simplifying the fraction on the right, we see that 
+				</md>.
+				Simplifying the fraction on the right, we see that
 				<m>
 					\frac{18}{11} = b^3
 				</m>.
-				Solving for <m>b</m>, we find that <m>b = \sqrt[3]{\frac{18}{11}}</m> is the exact value of <m>b</m>.  Substituting this value for <m>b</m> in <xref ref="eq-growth-p-2">Equation</xref>, it then follows that <m>a \left( \sqrt[3]{\frac{18}{11}} \right)^2 = 11</m>, so 
+				Solving for <m>b</m>, we find that <m>b = \sqrt[3]{\frac{18}{11}}</m> is the exact value of <m>b</m>.  Substituting this value for <m>b</m> in <xref ref="eq-growth-p-2">Equation</xref>, it then follows that <m>a \left( \sqrt[3]{\frac{18}{11}} \right)^2 = 11</m>, so
 				<m>
 					a = \frac{11}{\left( \frac{18}{11} \right)^{2/3}}
 				</m>.  Therefore,
-				<me>
+				<md>
 					p(t) = \frac{11}{\left( \frac{18}{11} \right)^{2/3}} \left( \sqrt[3]{\frac{18}{11}} \right)^t \approx 7.9215 \cdot 1.1784^t
-				</me>, and a plot of <m>y = p(t)</m> confirms that the function indeed passes through <m>(2,11)</m> and <m>(5,18)</m> as shown in <xref ref="F-ex-growth-find-a-b">Figure</xref>.
+				</md>, and a plot of <m>y = p(t)</m> confirms that the function indeed passes through <m>(2,11)</m> and <m>(5,18)</m> as shown in <xref ref="F-ex-growth-find-a-b">Figure</xref>.
 			</p>
 
 			<figure xml:id="F-ex-growth-find-a-b">
@@ -217,7 +219,7 @@
   	<title>Trends in the behavior of exponential functions</title>
 
   	<p>
-  		Recall that a function is increasing on an interval if its value always increases as we move from left to right.  Similarly, a function is decreasing on an interval provided that its value always decreases as we move from left to right.  
+  		Recall that a function is increasing on an interval if its value always increases as we move from left to right.  Similarly, a function is decreasing on an interval provided that its value always decreases as we move from left to right.
   	</p>
 
   	<sidebyside>
@@ -234,14 +236,14 @@
   	</sidebyside>
 
   	<p>
-  		If we consider an exponential function <m>f</m> with a growth factor <m>b &gt; 1</m>, such as the function pictured in <xref ref="F-growth-incr-CCU">Figure</xref>, then the function is always increasing because higher powers of <m>b</m> are greater than lesser powers (for example, <m>(1.2)^3 \gt (1.2)^2</m>).  On the other hand, if <m>0 \lt b \lt 1</m>, then the exponential function will be decreasing because higher powers of positive numbers less than <m>1</m> get smaller (e.g., <m>(0.9)^3 \lt (0.9)^2</m>), as seen for the exponential function in <xref ref="F-growth-decr-CCU">Figure</xref>.   
+  		If we consider an exponential function <m>f</m> with a growth factor <m>b &gt; 1</m>, such as the function pictured in <xref ref="F-growth-incr-CCU">Figure</xref>, then the function is always increasing because higher powers of <m>b</m> are greater than lesser powers (for example, <m>(1.2)^3 \gt (1.2)^2</m>).  On the other hand, if <m>0 \lt b \lt 1</m>, then the exponential function will be decreasing because higher powers of positive numbers less than <m>1</m> get smaller (e.g., <m>(0.9)^3 \lt (0.9)^2</m>), as seen for the exponential function in <xref ref="F-growth-decr-CCU">Figure</xref>.
   	</p>
 
 	<p>
 		An additional trend is apparent in the graphs in <xref ref="F-growth-incr-CCU">Figure</xref> and <xref ref="F-growth-decr-CCU">Figure</xref>.  Each graph bends upward and is therefore concave up.  We can better understand why this is so by considering the average rate of change of both <m>f</m> and <m>g</m> on consecutive intervals of the same width.  We choose adjacent intervals of length <m>1</m> and note particularly that as we compute the average rate of change of each function on such intervals,
-		<me>
+		<md>
 			AV_{[t,t+1]} = \frac{f(t+1) - f(t)}{t+1-t} = f(t+1) - f(t)
-		</me>.  Thus, these average rates of change are also measuring the total change in the function across an interval that is <m>1</m>-unit wide. We now assume that <m>f(t) = 2 (1.25)^t</m> and <m>g(t) = 8(0.75)^t</m> and compute the rate of change of each function on several consecutive intervals.  
+		</md>.  Thus, these average rates of change are also measuring the total change in the function across an interval that is <m>1</m>-unit wide. We now assume that <m>f(t) = 2 (1.25)^t</m> and <m>g(t) = 8(0.75)^t</m> and compute the rate of change of each function on several consecutive intervals.
 	</p>
 
 	<sidebyside>
@@ -314,7 +316,7 @@
   	<assemblage xml:id="asm-growth-exponential-trends">
   		<title>Trends in exponential function behavior</title>
   		<p>
-  			For an exponential function of the form <m>f(t) = ab^t</m> where <m>a</m> and <m>b</m> are both positive with <m>b \ne 1</m>, 
+  			For an exponential function of the form <m>f(t) = ab^t</m> where <m>a</m> and <m>b</m> are both positive with <m>b \ne 1</m>,
   			<ul>
   				<li>
   					<p>

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,10 +15,10 @@
   <activity xml:id="act-poly-polynomials-sign-chart">
     <introduction>
       <p>
-			Consider the polynomial function given by 
-			<me>
+			Consider the polynomial function given by
+			<md>
 				p(x) = 4692(x+1520)(x^2+10000)(x-3471)^2(x-9738)
-			</me>.
+			</md>.
 		</p>
       <p/>
     </introduction>
@@ -29,7 +29,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>6</m>, adding the exponents from each factor.</p></answer>
       <solution>
         <p>
           The degree is <m>1 + 2 + 2 + 1 = 6</m>.  We add the exponents from each factor: <m>(x+1520)^1(x^2+10000)^1(x-3471)^2(x-9738)^1</m> contributes degrees <m>1+2+2+1=6</m>.
@@ -43,7 +43,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>always positive</p></answer>
       <solution>
         <p>
           The factor <m>(x^2 + 10000)</m> is always positive for all real <m>x</m>, since <m>x^2 \ge 0</m> so <m>x^2 + 10000 \ge 10000 \gt 0</m>.
@@ -57,7 +57,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The real zeros are <m>x = -1520</m>, <m>x = 3471</m>, and <m>x = 9738</m>.</p></answer>
       <solution>
         <p>
           The real zeros are <m>x = -1520</m>, <m>x = 3471</m>, and <m>x = 9738</m>.  (The factor <m>x^2+10000</m> has no real zeros since <m>x^2 = -10000</m> has no real solution.)
@@ -71,7 +71,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>From left to right around the roots: positive, negative, negative, positive</p></answer>
       <solution>
         <p>
           The constant <m>4692 \gt 0</m>, and <m>(x^2+10000) \gt 0</m> always, and <m>(x-3471)^2 \ge 0</m> always (no sign change at <m>x=3471</m>).  The sign is thus determined by <m>(x+1520)</m> and <m>(x-9738)</m>:
@@ -86,11 +86,15 @@
     <task workspace="6cm" xml:id="act-poly-polynomials-sign-chart-task-4">
       <statement>
         <p>
-						Without using a graphing utility, construct an approximate graph of <m>p</m> that has the zeros of <m>p</m> carefully labeled on the <m>x</m>-axis.  
+						Without using a graphing utility, construct an approximate graph of <m>p</m> that has the zeros of <m>p</m> carefully labeled on the <m>x</m>-axis.
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The graph is positive (above the <m>x</m>-axis) for <m>x \lt -1520</m>, crosses zero at <m>x=-1520</m> (passes through), touches zero at <m>x=3471</m> (bounce, even multiplicity), remains negative until <m>x=9738</m>, then crosses zero and becomes positive.  The leading term <m>4692 x^6</m> means both ends go to <m>+\infty</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The graph is positive (above the <m>x</m>-axis) for <m>x \lt -1520</m>, crosses zero at <m>x=-1520</m> (passes through), touches zero at <m>x=3471</m> (bounce, even multiplicity), remains negative until <m>x=9738</m>, then crosses zero and becomes positive.  The leading term <m>4692 x^6</m> means both ends go to <m>+\infty</m>.
@@ -104,18 +108,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          Using a graphing utility, the zeros at <m>x=-1520</m>, <m>3471</m>, and <m>9738</m> are spread over a large <m>x</m>-range, making it challenging to see all features at once.  It is difficult to tell from the graph that <m>x=3471</m> is a bounce point (touching zero without crossing) unless the scale is set appropriately.
+        </p>
+      </answer>
       <solution>
         <p>
           Using a graphing utility, the zeros at <m>x=-1520</m>, <m>3471</m>, and <m>9738</m> are spread over a large <m>x</m>-range, making it challenging to see all features at once.  It is difficult to tell from the graph that <m>x=3471</m> is a bounce point (touching zero without crossing) unless the scale is set appropriately.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

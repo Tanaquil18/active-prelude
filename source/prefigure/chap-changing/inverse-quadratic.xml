@@ -1,0 +1,17 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-5,-5,5,5]">
+    <grid-axes xlabel="t" ylabel="y" />
+
+    <definition>f(x)=3-(x-1)^2/5</definition>
+
+    <graph function="f" />
+
+    <label p="(3,f(3))" alignment="ne" offset="(7,6)"
+	   clear-background="yes">
+      <m>s(t)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

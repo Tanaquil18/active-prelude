@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-circular-sinusoidal">
-  
+
 
   <exercise xml:id="ez-circular-sinusoidal-WW1" label="Library__LoyolaChicago__Precalc__Chap6Review__Q18">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Review/Q18.pg"/>

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-circular-traversing-2nd-ex">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-circular-traversing-2nd-ex">
   <activity xml:id="act-circular-traversing-2nd-ex">
     <introduction>
       <p>
@@ -20,11 +20,25 @@
       <sidebyside widths="33% 66%">
 <!--        <figure xml:id="F-act-circular-traversing-circle">
           <caption>A point traversing the circle.</caption> -->
-          <image source="images/traversing-act-circle"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-circular-traversing-act-circle">
+                <xi:include href="../prefigure/chap-circular/traversing-act-circle.xml"/>
+              </prefigure>
+              <description><p>Circle centered at <m>(2,2)</m> with circumference <m>8</m>.</p>
+              </description>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-circular-traversing-act-circular-grid">
+                <xi:include href="../prefigure/chap-circular/traversing-act-circular-grid.xml"/>
+              </prefigure>
+              <description><p>Blank axes for plotting <m>h</m> versus <m>d</m>.</p>
+              </description>
+            </image>
+          <!-- <image source="images/traversing-act-circle"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--         </figure>
-        <figure xml:id="F-act-circular-traversing-grid"> 
+        <figure xml:id="F-act-circular-traversing-grid">
           <caption>Axes for plotting <m>h</m> as a function of <m>d</m>.</caption> -->
-          <image source="images/traversing-act-circular-grid"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <!-- <image source="images/traversing-act-circular-grid"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--         </figure> -->
       </sidebyside>
       <p/>
@@ -36,7 +50,8 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>1 unit apart</p>
+      </answer>
       <solution>
         <p>
           The eight points on the circle are evenly spaced, and the circle has a circumference of 8 units.  Thus, the distance between any two sequential points is 1 unit.
@@ -50,7 +65,8 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The <m>y</m>-coordinate of <m>P_2</m> is <m>2 - \frac{4}{\pi} = \frac{2(\pi - 2)}{\pi}</m>. The <m>y</m>-coordinate of <m>P_4</m> is <m>2</m>.</p>
+      </answer>
       <solution>
         <p>
           The point <m>P_2</m> is directly below the center, at coordinates <m>(2, 2)</m>, and thus has a <m>y</m>-coordinate that is one radius less than 2.  Using the formula for circumference, <m>C = 2\pi r</m>, the radius must be <m>8/(2\pi) = \frac{4}{\pi}</m>.  Therefore, the <m>y</m>-coordinate of point <m>P_2</m> is <m>2 - \frac{4}{\pi} = \frac{2(\pi - 2)}{\pi}</m>.  At point <m>P_4</m>, the point is at the same height as the center, so the <m>y</m>-coordinate of <m>P_4</m> is <m>2</m>.
@@ -181,7 +197,34 @@
 <!--        </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>d</m></cell>
+            <cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell>
+            <cell><m>4</m></cell><cell><m>5</m></cell><cell><m>6</m></cell><cell><m>7</m></cell>
+            <cell><m>8</m></cell>
+          </row>
+          <row>
+            <cell><m>h</m></cell>
+            <cell><m>2</m></cell><cell><m>1.10</m></cell><cell><m>0.73</m></cell><cell><m>1.10</m></cell>
+            <cell><m>2</m></cell><cell><m>2.90</m></cell><cell><m>3.27</m></cell><cell><m>2.90</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+        </tabular>
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>d</m></cell>
+            <cell><m>9</m></cell><cell><m>10</m></cell><cell><m>11</m></cell><cell><m>12</m></cell>
+            <cell><m>13</m></cell><cell><m>14</m></cell><cell><m>15</m></cell><cell><m>16</m></cell>
+          </row>
+          <row>
+            <cell><m>h</m></cell>
+            <cell><m>1.10</m></cell><cell><m>0.73</m></cell><cell><m>1.10</m></cell><cell><m>2</m></cell>
+            <cell><m>2.90</m></cell><cell><m>3.27</m></cell><cell><m>2.90</m></cell><cell><m>2</m></cell>
+          </row>
+        </tabular>
+      </answer>
       <solution>
         <p>
           The completed table is:
@@ -221,9 +264,24 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="60%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-circular-traversing-act-circular-grid-fcn-ans">
+            <xi:include href="../prefigure/chap-circular/traversing-act-circular-grid-fcn.xml"/>
+          </prefigure>
+          <description><p>Graph of <m>h</m> versus <m>d</m> with points marked at <m>d=2,4,6,8,10,12,14</m> and <m>16</m>.</p>
+          </description>
+        </image>
+      </answer>
       <solution>
-        <image width="50%" source="solution-images/Activity2.1.2d.png"/>
+        <image width="60%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-circular-traversing-act-circular-grid-fcn-soln">
+            <xi:include href="../prefigure/chap-circular/traversing-act-circular-grid-fcn.xml"/>
+          </prefigure>
+          <description><p>Graph of <m>h</m> versus <m>d</m> with points marked at <m>d=2,4,6,8,10,12,14</m> and <m>16</m>.</p>
+          </description>
+        </image>
+        <!-- <image width="50%" source="solution-images/Activity2.1.2d.png"/> -->
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-circular-traversing-2nd-ex-task-4">
@@ -233,7 +291,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          This graph is shifted up, shifted to the right, and is compressed horizontally compared to the textbook figure.
+        </p>
+      </answer>
       <solution>
         <p>
           The graph has a very similar shape to Figure 2.1.5.  This graph is shifted up, shifted to the right, and is compressed horizontally compared to the textbook figure.
@@ -247,18 +308,14 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>h(51) = \approx 1.10</m> and <m>h(102) = \approx 3.27</m>
+        </p>
+      </answer>
       <solution>
         <p>
           To find <m>h</m> when <m>d = 51</m>, we use the periodicity of the function: <m>51 = 4 \cdot 8 + 3</m>, so <m>h(51) = h(3) \approx 1.10</m>.  Likewise, <m>h(102) = h(6) \approx 3.27</m>, because <m>102 = 12 \cdot 8 + 6</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

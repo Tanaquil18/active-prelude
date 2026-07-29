@@ -1,0 +1,13 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-5,-5,5,5]">
+    <group>
+      <grid id="grid" />
+      <axes id="axes" decorations="no"
+	    hticks="(-5,1,5)" vticks="(-5,1,5)"
+	    xlabel="x" ylabel="y"/>
+    </group>
+
+  </coordinates>
+
+</diagram>
+

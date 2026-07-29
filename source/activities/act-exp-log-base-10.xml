@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -26,7 +26,11 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>t = \log_{10}(0.00001) = -5</m>, exactly.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>t = \log_{10}(0.00001) = -5</m>, exactly.
@@ -40,7 +44,11 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>t = \log_{10}(1000000) = 6</m>, exactly.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>t = \log_{10}(1000000) = 6</m>, exactly.
@@ -54,7 +62,11 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>t = \log_{10}(37) \approx 1.568</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>t = \log_{10}(37) \approx 1.568</m>.
@@ -68,7 +80,11 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>y = 10^{1.375} \approx 23.71</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>y = 10^{1.375} \approx 23.71</m>.
@@ -82,7 +98,11 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>t = \log_{10}(0.04) \approx -1.398</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>t = \log_{10}(0.04) \approx -1.398</m>.
@@ -96,10 +116,10 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>t = \log_{10}\left(\frac{136}{3}\right) \approx 1.656</m></p></answer>
       <solution>
         <p>
-          <m>3 \cdot 10^t + 11 = 147</m> gives <m>10^t = \frac{136}{3}</m>, so <m>t = \log_{10}\!\left(\frac{136}{3}\right) \approx 1.656</m>.
+          <m>3 \cdot 10^t + 11 = 147</m> gives <m>10^t = \frac{136}{3}</m>, so <m>t = \log_{10}\left(\frac{136}{3}\right) \approx 1.656</m>.
         </p>
       </solution>
     </task>
@@ -110,18 +130,12 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>y = 10^{-2} = 0.01</m>, exactly</p></answer>
       <solution>
         <p>
           <m>2\log_{10}(y) + 5 = 1</m> gives <m>\log_{10}(y) = -2</m>, so <m>y = 10^{-2} = 0.01</m>, exactly.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

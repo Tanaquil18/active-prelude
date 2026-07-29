@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -75,9 +75,9 @@
 	    and thus these functions on their full domains do not have inverse functions.
 	    At the same time, it is reasonable to think about changing perspective and viewing angles as outputs in certain restricted settings.
 	    For instance, we may want to say both
-	    <me>
+	    <md>
 	      \frac{\sqrt{3}}{2} = \cos\left(\frac{\pi}{6}\right) \ \ \ \mbox{and}  \ \ \ \frac{\pi}{6} = \cos^{-1}\left(\frac{\sqrt{3}}{2}\right)
-	    </me>
+	    </md>
 	    depending on the context in which we are considering the relationship between the angle and side length.
 	  </p>
 
@@ -94,11 +94,12 @@
 	    <m>g(t) = \cos(t)</m>, and
 	    <m>h(t) = \tan(t)</m> do not have inverse functions,
 	    it turns out that we can consider restricted versions of them that do
-	    have corresponding inverse functions.  We thus investigate how we can think differently about the 
+	    have corresponding inverse functions.  We thus investigate how we can think differently about the
 	    trigonometric functions so that we can discuss inverses in a meaningful way.
 	  </p>
 
 	  <xi:include href="./previews/PA-trig-inverse.xml"/>
+	  <xi:include href="./previews/PA-trig-inverse-D.xml"/>
 
   </subsection>
 
@@ -112,10 +113,10 @@
   		<idx><h>inverse trigonometric functions</h><h>arccosine</h></idx>
   		<statement>
   			<p>
-  				Let <m>y = g(t) = \cos(t)</m> be defined on the domain <m>[0,\pi]</m>, and observe <m>g : [0,\pi] \to [-1,1]</m>.  For any real number <m>y</m> that satisfies <m>-1 \le y \le 1</m>, the <term>arccosine of <m>y</m></term>, denoted 
-  				<me>
+  				Let <m>y = g(t) = \cos(t)</m> be defined on the domain <m>[0,\pi]</m>, and observe <m>g : [0,\pi] \to [-1,1]</m>.  For any real number <m>y</m> that satisfies <m>-1 \le y \le 1</m>, the <term>arccosine of <m>y</m></term>, denoted
+  				<md>
   					\arccos(y)
-  				</me>
+  				</md>
   				is the angle <m>t</m> satisfying <m>0 \le t \le \pi</m> such that <m>\cos(t) = y</m>.
   			</p>
   		</statement>
@@ -127,9 +128,9 @@
 
 	<p>
 		We recall that for any function with an inverse function, the inverse function reverses the process of the original function.  We know that <q><m>y = \cos(t)</m></q> can be read as saying <q><m>y</m> is the cosine of the angle <m>t</m></q>.  Changing perspective and writing the equivalent statement <q><m>t = \arccos(y)</m></q>, we read this statement as <q><m>t</m> is the angle whose cosine is <m>y</m></q>.  Just as <m>y = f(t)</m> and <m>t = f^{-1}(y)</m> say the same thing for a function and its inverse in general,
-		<me>
+		<md>
 			y = \cos(t) \ \text{ and } \ t = \arccos(y)
-		</me>
+		</md>
 		say the same thing for any angle <m>t</m> that satisfies <m>0 \le t \le \pi</m>.  We also use the equivalent notation <m>t = \cos^{-1}(y)</m> interchangeably with <m>t = \arccos(y)</m>.  We read <q><m>t = \cos^{-1}(y)</m></q> as <q><m>t</m> is the angle whose cosine is <m>y</m></q> or <q><m>t</m> is the inverse cosine of <m>y</m></q>.  Key properties of the arccosine function can be summarized as follows.
 	</p>
 
@@ -140,7 +141,7 @@
 				<ul>
 					<li>
 						<p>
-							The restricted cosine function, <m>y = g(t) = \cos(t)</m>, is defined on the domain <m>[0,\pi]</m> with range <m>[-1,1]</m>.  This function has an inverse function that we call the arccosine function, denoted <m>t = g^{-1}(y) = \arccos(y)</m>.		
+							The restricted cosine function, <m>y = g(t) = \cos(t)</m>, is defined on the domain <m>[0,\pi]</m> with range <m>[-1,1]</m>.  This function has an inverse function that we call the arccosine function, denoted <m>t = g^{-1}(y) = \arccos(y)</m>.
 						</p>
 					</li>
 					<li>
@@ -160,9 +161,9 @@
 					</li>
 				</ul>
 			</p>
-			
+
 			<image source="images/inverse-trig-arccos-graph"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-			
+
 		</sidebyside>
 	</assemblage>
 
@@ -184,10 +185,10 @@
   		<idx><h>inverse trigonometric functions</h><h>arcsine</h></idx>
   		<statement>
   			<p>
-  				Let <m>y = f(t) = \sin(t)</m> be defined on the domain <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, and observe <m>f : [-\frac{\pi}{2},\frac{\pi}{2}] \to [-1,1]</m>.  For any real number <m>y</m> that satisfies <m>-1 \le y \le 1</m>, the <term>arcsine of <m>y</m></term>, denoted 
-  				<me>
+  				Let <m>y = f(t) = \sin(t)</m> be defined on the domain <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, and observe <m>f : [-\frac{\pi}{2},\frac{\pi}{2}] \to [-1,1]</m>.  For any real number <m>y</m> that satisfies <m>-1 \le y \le 1</m>, the <term>arcsine of <m>y</m></term>, denoted
+  				<md>
   					\arcsin(y)
-  				</me>
+  				</md>
   				is the angle <m>t</m> satisfying <m>-\frac{\pi}{2} \le t \le \frac{\pi}{2}</m> such that <m>\sin(t) = y</m>.
   			</p>
   		</statement>
@@ -201,17 +202,17 @@
   	<title>The arctangent function</title>
 
   	<p>
-  		Finally, we develop an inverse function for a restricted version of the tangent function.  We choose the domain <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> on which <m>h(t) = \tan(t)</m> is increasing and attains all of the values in the range of the tangent function.  
+  		Finally, we develop an inverse function for a restricted version of the tangent function.  We choose the domain <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> on which <m>h(t) = \tan(t)</m> is increasing and attains all of the values in the range of the tangent function.
   	</p>
 
 	<definition xml:id="def-inverse-trig-arctan">
   		<idx><h>inverse trigonometric functions</h><h>arctangent</h></idx>
   		<statement>
   			<p>
-  				Let <m>y = h(t) = \tan(t)</m> be defined on the domain <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>, and observe <m>h : (-\frac{\pi}{2},\frac{\pi}{2}) \to (-\infty,\infty)</m>.  For any real number <m>y</m>, the <term>arctangent of <m>y</m></term>, denoted 
-  				<me>
+  				Let <m>y = h(t) = \tan(t)</m> be defined on the domain <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>, and observe <m>h : (-\frac{\pi}{2},\frac{\pi}{2}) \to (-\infty,\infty)</m>.  For any real number <m>y</m>, the <term>arctangent of <m>y</m></term>, denoted
+  				<md>
   					\arctan(y)
-  				</me>
+  				</md>
   				is the angle <m>t</m> satisfying <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m> such that <m>\tan(t) = y</m>.
   			</p>
   		</statement>
@@ -239,17 +240,17 @@
   				<ol marker="i.">
   					<li>
   						<p>
-  							For any <m>y</m> such that <m>-1 \le y \le 1</m>, the arccosine of <m>y</m> (denoted <m>\arccos(y)</m>) is the angle <m>t</m> in the interval <m>[0,\pi]</m> such that <m>\cos(t) = y</m>.  That is, <m>t</m> is the angle whose cosine is <m>y</m>. 
+  							For any <m>y</m> such that <m>-1 \le y \le 1</m>, the arccosine of <m>y</m> (denoted <m>\arccos(y)</m>) is the angle <m>t</m> in the interval <m>[0,\pi]</m> such that <m>\cos(t) = y</m>.  That is, <m>t</m> is the angle whose cosine is <m>y</m>.
   						</p>
   					</li>
   					<li>
   						<p>
-  							For any <m>y</m> such that <m>-1 \le y \le 1</m>, the arcsine of <m>y</m> (denoted <m>\arcsin(y)</m>) is the angle <m>t</m> in the interval <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> such that <m>\sin(t) = y</m>.  That is, <m>t</m> is the angle whose sine is <m>y</m>. 
+  							For any <m>y</m> such that <m>-1 \le y \le 1</m>, the arcsine of <m>y</m> (denoted <m>\arcsin(y)</m>) is the angle <m>t</m> in the interval <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> such that <m>\sin(t) = y</m>.  That is, <m>t</m> is the angle whose sine is <m>y</m>.
   						</p>
   					</li>
   					<li>
   						<p>
-  							For any real number <m>y</m>, the arctangent of <m>y</m> (denoted <m>\arctan(y)</m>) is the angle <m>t</m> in the interval <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> such that <m>\tan(t) = y</m>.  That is, <m>t</m> is the angle whose tangent is <m>y</m>. 
+  							For any real number <m>y</m>, the arctangent of <m>y</m> (denoted <m>\arctan(y)</m>) is the angle <m>t</m> in the interval <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m> such that <m>\tan(t) = y</m>.  That is, <m>t</m> is the angle whose tangent is <m>y</m>.
   						</p>
   					</li>
   				</ol>
@@ -283,7 +284,7 @@
   				<p>
   					The domain of <m>y = f^{-1}(t) = \arcsin(t)</m> is <m>[-1,1]</m> with corresponding range <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, and the arcsine function is always increasing.  These facts correspond to the domain and range of the restricted sine function and the fact that the restricted sine function is increasing on <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>.
   				</p>
-  				
+
   				<p>
   					The domain of <m>y = f^{-1}(t) = \arctan(t)</m> is the set of all real numbers with corresponding range <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>, and the arctangent function is always increasing.  These facts correspond to the domain and range of the restricted tangent function and the fact that the restricted tangent function is increasing on <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>.
   				</p>

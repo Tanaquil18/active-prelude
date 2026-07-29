@@ -1,0 +1,39 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-0.5, -10, 3.5, 70]">
+    <axes id="axes" xlabel="x" ylabel="y"
+	  decorations="no" hticks="(1,1,2)" />
+
+    <definition>f(x)=64-16*(x-1/2)^2</definition>
+
+    <definition>a=1</definition>
+    <definition>b=2</definition>
+    <definition>h=b-a</definition>
+
+    <line p1="(a,f(a))" p2="(b,f(b))" stroke="green" thickness="2"
+	  tactile-dash="18 18" infinite="yes" cliptobbox="yes"/>
+
+    <graph function="f" />
+    <point p="(a,f(a))"><m>(a,f(a))</m></point>
+    <point p="(b,f(b))" alignment="sw" clear-background="yes">
+      <m>(a+h,f(a+h))</m>
+    </point>
+
+    <vector v="(h,0)" tail="(a,5)" thickness="2"/>
+    <vector v="(-h,0)" tail="(b,5)" thickness="2"/>
+
+    <label p="(a,-5)" alignment="center"
+	   tactile-p="(a,0)"
+	   tactile-alignment="ha"><m>a</m></label>
+    <label p="(b,-5)" alignment="center"
+	   tactile-p="(b,0)"
+	   tactile-alignment="ha"><m>a+h</m></label>
+
+    <label p="((a+b)/2,5)" alignment="north" tactile-offset="(0,10)">
+      <m>h</m>
+    </label>
+
+
+  </coordinates>
+
+</diagram>
+

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-exp-growth-a-b-t">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-exp-growth-a-b-t">
   <activity xml:id="act-exp-growth-a-b-t">
     <introduction>
       <p>
@@ -26,7 +26,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>All real numbers, or <m>(-\infty, \infty)</m>.</p></answer>
       <solution>
         <p>
           The domain of <m>g(t) = ab^t</m> is all real numbers, <m>(-\infty, \infty)</m>.
@@ -40,10 +40,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>(0, \infty)</m></p></answer>
       <solution>
         <p>
-          Allowing for all possible values of <m>a</m> and <m>b</m>, the range of <m>g(t)</m> is all real numbers.  If we restrict <m>a</m> and <m>b</m> to <m>0.1 \le a, b \le 10</m>, the range of <m>g(t)</m> becomes <m>(0, \infty)</m>.
+          The range of <m>g(t)</m> is <m>(0, \infty)</m>.
         </p>
       </solution>
     </task>
@@ -54,7 +54,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>a</m></p></answer>
       <solution>
         <p>
           The <m>y</m>-intercept for <m>g(t)</m> is <m>a</m>.
@@ -68,10 +68,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>When <m>b</m> is less than <m>1</m>, the function is decreasing and concave up, approaching <m>0</m> as <m>x</m> gets larger and larger.  When When <m>b</m> is greater than <m>1</m>, the function is increasing and concave up, approaching <m>\infty</m> as <m>x</m> gets larger and larger.</p></answer>
       <solution>
         <p>
-          When <m>b</m> is less than 1, the graph approaches <m>\infty</m> as <m>t</m> approaches <m>-\infty</m>, and the graph approaches 0 when <m>t</m> approaches <m>\infty</m>.  When <m>b</m> is greater than 1, the graph approaches 0 when <m>t</m> approaches <m>-\infty</m> and the graph approaches <m>\infty</m> when <m>t</m> approaches <m>\infty</m>.
+          When <m>b</m> is less than <m>1</m>, the function is decreasing and concave up.  The graph approaches <m>\infty</m> as <m>t</m> approaches <m>-\infty</m>, and the graph approaches <m>0</m> as <m>t</m> approaches <m>\infty</m>.  When <m>b</m> is greater than <m>1</m>, the function is increasing and concave up.  The graph approaches <m>0</m> as <m>t</m> approaches <m>-\infty</m> and the graph approaches <m>\infty</m> as <m>t</m> approaches <m>\infty</m>.
         </p>
       </solution>
     </task>
@@ -82,10 +82,13 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          When <m>b</m> is greater than <m>1</m>, the function describes positive growth (growing with time).  When <m>b</m> is between <m>0</m> and <m>1</m>, the function describes negative growth (decreasing with time).
+        </p>
+      </answer>
       <solution>
         <p>
-          When <m>b</m> is greater than 1, the function describes positive growth (growing with time).  When <m>b</m> is between 0 and 1, the function describes negative growth (decreasing with time).
+          When <m>b</m> is greater than <m>1</m>, the function describes positive growth (growing with time).  When <m>b</m> is between <m>0</m> and <m>1</m>, the function describes negative growth (decreasing with time).
         </p>
       </solution>
     </task>
@@ -96,22 +99,21 @@
 						</p>
 <!--        <figure xml:id="F-growth-act-a-b-t">
           <caption>Graphs of exponential functions <m>p</m> and <m>q</m>.</caption> -->
-          <image width="50%" source="images/growth-act-a-b-t"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <!-- <image width="50%" source="images/growth-act-a-b-t"> -->
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-growth-act-a-b-t">
+                <xi:include href="../prefigure/chap-exp/growth-act-a-b-t.xml"/>
+            </prefigure>
+          <description><p>Graph of two exponential functions, <m>p(t)=ab^t</m> and <m>q(t)=cd^t</m>. The function <m>p(t)</m> is decreasing towards <m>0</m> and has a higher <m>y</m>-intercept, while the function <m>q(t)</m> has a lower <m>y</m>-intercept and is increasing towards higher and higher values as <m>x</m> increases.</p></description></image>
 <!--        </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>We can tell that <m>0 \lt b \lt 1</m> while <m>d \gt 1</m>.  Also, <m>a \gt c</m>.</p></answer>
       <solution>
         <p>
-          The function <m>p(t)</m> shows negative growth, so the value of <m>b</m> must be between 0 and 1.  The function <m>q(t)</m> shows positive growth, so the value of <m>d</m> must be greater than 1.  The function <m>p</m> has a <m>y</m>-intercept that is greater than the function <m>q</m>'s <m>y</m>-intercept, thus <m>a \gt c</m>.
+          The function <m>p(t)</m> shows negative growth, so the value of <m>b</m> must be between <m>0</m> and <m>1</m>.  The function <m>q(t)</m> shows positive growth, so the value of <m>d</m> must be greater than <m>1</m>.  The function <m>p</m> has a <m>y</m>-intercept that is greater than the function <m>q</m>'s <m>y</m>-intercept, thus <m>a \gt c</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

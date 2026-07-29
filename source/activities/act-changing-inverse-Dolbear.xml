@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -26,7 +26,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>N = E(F) = 4(F-40)</m></p></answer>
       <solution>
         <p>
           Subtracting 40 and multiplying by 4:
@@ -41,7 +41,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The function <m>E</m> takes a temperature in degrees Fahrenheit as its input and outputs the corresponding number of snowy tree cricket chirps per minute.</p></answer>
       <solution>
         <p>
           The function <m>E</m> takes a temperature in degrees Fahrenheit as its input and
@@ -56,7 +56,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>j(N) = N</m> and <m>k(F) = F</m></p></answer>
       <solution>
         <p>
           <md>j(N) = E(D(N)) = 4\!\left(\left(40 + \frac{1}{4}N\right) - 40\right) = 4 \cdot \frac{N}{4} = N.</md>
@@ -74,7 +74,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>They express the same relationship between <m>F</m> and <m>N</m>, just solved for different variables.</p></answer>
       <solution>
         <p>
           They express the same relationship between <m>F</m> and <m>N</m>, just solved
@@ -84,11 +84,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

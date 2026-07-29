@@ -1,0 +1,245 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<setup>
+  <mathList name="anglelist">pi/6 pi/4 pi/3 pi/2 2pi/3 3pi/4 5pi/6 pi 7pi/6 5pi/4 4pi/3 3pi/2 5pi/3 7pi/4 11pi/6 2pi</mathList>
+  <pointList name="plist">(sqrt(3)/2,1/2) (sqrt(2)/2, sqrt(2)/2) (1/2,sqrt(3)/2) (0,1) (-1/2,sqrt(3)/2) (-sqrt(2)/2, sqrt(2)/2) (-sqrt(3)/2,1/2) (-1,0) (-sqrt(3)/2,-1/2) (-sqrt(2)/2, -sqrt(2)/2) (-1/2,-sqrt(3)/2) (0,-1) (1/2,-sqrt(3)/2) (sqrt(2)/2, -sqrt(2)/2) (sqrt(3)/2,-1/2) (1,0)</pointList>
+  <repeatForSequence name="points" from="1" to="16" valueName="k">
+    <point>(cos($anglelist[$k]),sin($anglelist[$k]))</point>
+  </repeatForSequence>
+
+  <mathList name="tsEnt">$listEnt</mathList>
+  <number name="ans">-sqrt(3)/2</number>
+
+  <repeatForSequence name="bools" from="1" to="16" valueName="n">
+    <boolean>$P.coords=(cos($anglelist[$n]),sin($anglelist[$n]))</boolean>
+  </repeatForSequence>
+
+  <conditionalContent name="decangle">
+    <case condition="$bools[1]">
+      $anglelist[1] $plist[1]
+    </case>
+    <case condition="$bools[2]">
+      $anglelist[2] $plist[2]
+    </case>
+    <case condition="$bools[3]">
+      $anglelist[3] $plist[3]
+    </case>
+    <case condition="$bools[4]">
+      $anglelist[4] $plist[4]
+    </case>
+    <case condition="$bools[5]">
+      $anglelist[5] $plist[5]
+    </case>
+    <case condition="$bools[6]">
+      $anglelist[6] $plist[6]
+    </case>
+    <case condition="$bools[7]">
+      $anglelist[7] $plist[7]
+    </case>
+    <case condition="$bools[8]">
+      $anglelist[8] $plist[8]
+    </case>
+    <case condition="$bools[9]">
+      $anglelist[9] $plist[9]
+    </case>
+    <case condition="$bools[10]">
+      $anglelist[10] $plist[10]
+    </case>
+    <case condition="$bools[11]">
+      $anglelist[11] $plist[11]
+    </case>
+    <case condition="$bools[12]">
+      $anglelist[12] $plist[12]
+    </case>
+    <case condition="$bools[13]">
+      $anglelist[13] $plist[13]
+    </case>
+    <case condition="$bools[14]">
+      $anglelist[14] $plist[14]
+    </case>
+    <case condition="$bools[15]">
+      $anglelist[15] $plist[15]
+    </case>
+    <case condition="$bools[16]">
+      $anglelist[16] $plist[16]
+    </case>
+    <else>
+      <conditionalContent>
+        <case condition="$P.y>= 0" >
+          <number>arccos($P.x)</number>
+        </case>
+        <else>
+          <number>2pi-arccos($P.x)</number></else>
+      </conditionalContent>
+      $P.coords
+    </else>
+    </conditionalContent>
+
+</setup>
+
+<sideBySide widths="40% 60%">
+  <graph xMin="-1.5" xMax="1.5" yMin="-1.5" yMax="1.5" displayXAxisTicks="false" displayYAxisTicks="false" fixAxes yLabelAlignment="right">
+    <shortDescription>graph of a unit circle and moveable point on the circle</shortDescription>
+    <xLabel fixed><m>x</m></xLabel>
+    <yLabel fixed><m>y</m></yLabel>
+    <circle name="unitcir" center="(0,0)" radius="1" fixed/>
+    <point name="P" styleNumber="2" showCoordsWhenDragging="false"><constrainTo>$unitcir</constrainTo><attractTo threshold=".1">$points</attractTo>(.9,0.1)</point>
+    <lineSegment name="tick1" styleNumber="5" endpoints="(1,.1) (1,-.1)" draggable="false" lineWidth="1" labelPosition="lowerRight"><label><m>1</m></label></lineSegment>
+    <lineSegment name="tick2" styleNumber="5" endpoints="(-1,-.1) (-1,.1)" draggable="false" lineWidth="1" labelPosition="lowerLeft"><label><m>-1</m></label></lineSegment>
+    <lineSegment name="height" styleNumber="2" endpoints="($P.x,0) $P" draggable="false" lineStyle="dotted"/>
+    <lineSegment name="angleray" styleNumber="5" endpoints="(0,0) $P" draggable="false" lineWidth="3"/>
+    <curve name="angle1" variable="t" parMin="0" parMax="arccos($P.x)" lineWidth="1" styleNumber="5" hide="$P.y< 0" >
+    (1/5cos(t), 1/5sin(t))
+  </curve>
+    <curve name="angle2" variable="t" parMin="0" parMax="2pi-arccos($P.x)" lineWidth="1" styleNumber="5" hide="$P.y>= 0" >
+    (1/5cos(t), 1/5sin(t))
+  </curve>
+    <label fixed anchor="(.35cos(arccos($P.x)/2),.35sin(arccos($P.x)/2))" hide="$P.y< 0"><m>t</m></label>
+    <label fixed anchor="(-.35cos(arccos($P.x)/2),.35sin(arccos($P.x)/2))" hide="$P.y>= 0"><m>t</m></label>
+    <!-- <label draggable="false" anchor="(-1,1.2)"><m>\theta=$decangle[1][1]</m></label> -->
+    <!-- <label draggable="false" anchor="(0.8,1.2)"><m>$decangle[1][2]</m></label> -->
+  </graph>
+  <graph xMin="-.5" xMax="6.5" yMin="-1.5" yMax="1.5" displayXAxisTicks="false" displayYAxisTicks="false" aspectRatio="3/2" fixAxes yLabelAlignment="right">
+    <shortDescription>graph of a function whose height is the y value of the point on the unit circle</shortDescription>
+    <xLabel fixed><m>t</m></xLabel>
+    <yLabel fixed><m>h=f(t)</m></yLabel>
+    <lineSegment name="tick3" styleNumber="5" endpoints="(-.1,1) (.1,1)" draggable="false" lineWidth="1" labelPosition="left"><label><m>1</m></label></lineSegment>
+    <lineSegment name="tick4" styleNumber="5" endpoints="(-.1,-1) (.1,-1)" draggable="false" lineWidth="1" labelPosition="right"><label><m>-1</m></label></lineSegment>
+    <curve name="htvcir" variable="t" parMin="0" parMax="2pi" lineWidth="4" >
+    (t, sin(t))
+  </curve>
+    <point name="sinept1" styleNumber="2" showCoordsWhenDragging="false" hide="$P.y< 0">(arccos($P.x),$P.y)</point>
+    <lineSegment name="height1" styleNumber="2" endpoints="($sinept1.x,0) $sinept1" draggable="false" lineStyle="dotted" hide="$P.y< 0"/>
+    <point name="sinept2" styleNumber="2" showCoordsWhenDragging="false" hide="$P.y>= 0">(2pi-arccos($P.x),$P.y)</point>
+    <lineSegment name="height2" styleNumber="2" endpoints="($sinept2.x,0) $sinept2" draggable="false" lineStyle="dotted" hide="$P.y>= 0"/>
+    <lineSegment name="xtick1" styleNumber="5" endpoints="($sinept1.x,.1) ($sinept1.x,-.1)" draggable="false" hide="$P.y< 0" lineWidth="2"/>
+    <lineSegment name="xtick2" styleNumber="5" endpoints="($sinept2.x,.1) ($sinept2.x,-.1)" draggable="false" hide="$P.y>= 0" lineWidth="2"/>
+    <label hide="$P.y< 0" anchor="($sinept1.x, -.3)" draggable="false"><m>$decangle[1][1]</m></label>
+    <label hide="$P.y>= 0" anchor="($sinept2.x, .3)" draggable="false"><m>$decangle[1][1]</m></label>
+  </graph>
+</sideBySide>
+
+<p>
+  When <m>t=$decangle[1][1]</m>, the coordinates of the point on the unit circle are: <m>$decangle[1][2]</m>
+</p>
+
+<ol marker="a.">
+  <li>
+    <p>
+      Drag the point on the unit circle to the location where <br/><m>t=\frac{\pi}{4}</m>. <answer><award><when>$P=$plist[2]</when></award></answer>
+    </p>
+    <p>
+      What is the exact value of <m>f\left(\frac{\pi}{4}\right)?</m><br/>
+      <answer name="fpiover4"><label><m>f\left(\frac{\pi}{4}\right)=</m></label>sqrt(2)/2</answer>
+    </p>
+    <p>
+      What is the exact value of <m>f\left(\frac{\pi}{3}\right)?</m><br/>
+      <answer name="fpiover3"><label><m>f\left(\frac{\pi}{3}\right)=</m></label>sqrt(3)/2</answer>
+    </p>
+  </li>
+  <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <p>
+      Complete the following table with the exact values of <m>h</m> that correspond to the stated inputs.
+    </p>
+    <tabular bottom="minor" top="minor">
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>$anglelist[1]</m></cell>
+          <cell><m>$anglelist[2]</m></cell>
+          <cell><m>$anglelist[3]</m></cell>
+          <cell><m>$anglelist[4]</m></cell>
+        </row>
+        <row halign="center" bottom="major">
+          <cell><m>h</m></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>0</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[1][2]</answer></cell>
+          <cell><mathInput minWidth="40" disabled><shortDescription>value of h</shortDescription><conditionalContent condition="$fpiover4.creditAchieved=1">$plist[2][2]</conditionalContent></mathInput></cell>
+          <cell><mathInput minWidth="40" disabled><shortDescription>value of h</shortDescription><conditionalContent condition="$fpiover3.creditAchieved=1">$plist[3][2]</conditionalContent></mathInput></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[4][2]</answer></cell>
+        </row>
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell><m>$anglelist[5]</m></cell>
+          <cell><m>$anglelist[6]</m></cell>
+          <cell><m>$anglelist[7]</m></cell>
+          <cell><m>$anglelist[8]</m></cell>
+          <cell><m>$anglelist[9]</m></cell>
+        </row>
+        <row halign="center" bottom="major">
+          <cell><m>h</m></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[5][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[6][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[7][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[8][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[9][2]</answer></cell>
+        </row>
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell><m>$anglelist[10]</m></cell>
+          <cell><m>$anglelist[11]</m></cell>
+          <cell><m>$anglelist[12]</m></cell>
+          <cell><m>$anglelist[13]</m></cell>
+          <cell><m>$anglelist[14]</m></cell>
+        </row>
+        <row halign="center" bottom="major">
+          <cell><m>h</m></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[10][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[11][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[12][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[13][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[14][2]</answer></cell>
+        </row>
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell><m>$anglelist[15]</m></cell>
+          <cell><m>$anglelist[16]</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row halign="center" bottom="major">
+          <cell><m>h</m></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[15][2]</answer></cell>
+          <cell><answer><mathInput minWidth="40"><shortDescription>value of h</shortDescription></mathInput>$plist[16][2]</answer></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+  </li>
+  <li>
+    <p>
+      Use the patterns you observe above to answer the following questions.
+    </p>
+    <p>
+      What is the exact value of <m>f\left(\frac{11\pi}{4}\right)?</m><br/>
+      <answer><label><m>f\left(\frac{11\pi}{4}\right)=</m></label>-sqrt(2)/2</answer>
+    </p>
+    <p>
+      What is the exact value of <m>f\left(\frac{14\pi}{3}\right)?</m><br/>
+      <answer><label><m>f\left(\frac{14\pi}{3}\right)=</m></label>-sqrt(3)/2</answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Give four different values of <m>t</m> for which <m>f(t) = -\frac{\sqrt{3}}{2}</m>. Separate your answers with commas.<br/>
+      <answer><mathInput name="listEnt"> minWidth="200"><label><m>t=</m></label></mathInput><award><when>$tsEnt.numComponents=4 and <boolean>sin($tsEnt[1])=$ans</boolean> and <boolean>sin($tsEnt[2])=$ans</boolean> and <boolean>sin($tsEnt[3])=$ans</boolean> and <boolean>sin($tsEnt[4])=$ans</boolean></when></award></answer>
+    </p>
+  </li>
+
+</ol>

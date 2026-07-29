@@ -1,0 +1,19 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-4,-4,4,4]">
+    <grid-axes xlabel="x" ylabel="y" />
+
+    <definition>f(x)=-3-3*(x+2)</definition>
+    <definition>g(x)=-3+0.5*(x+2)</definition>
+
+    <group outline="tactile">
+      <graph function="f" domain="(-4,-2)" />
+      <graph function="g" domain="(-2,4)" />
+    </group>
+
+    <label p="(-3,2)" alignment="east" clear-background="yes">
+      <m>s(x)</m>
+    </label>
+  </coordinates>
+
+</diagram>
+

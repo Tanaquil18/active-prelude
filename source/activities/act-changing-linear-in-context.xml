@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -27,10 +27,10 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>f(t) = 28750 + 825t</m></p></answer>
       <solution>
         <p>
-          <md>f(t) = 28750 + 825t.</md>
+          <m>f(t) = 28750 + 825t</m>
         </p>
       </solution>
     </task>
@@ -41,11 +41,14 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The slope is <m>-465</m>.  This means the town's population
+          decreases by <m>465</m> people each year.
+        </p></answer>
       <solution>
         <p>
           The slope is <m>-465</m> people per year.  This means the town's population
-          decreases by 465 people each year.
+          decreases by <m>465</m> people each year.
         </p>
       </solution>
     </task>
@@ -56,7 +59,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>p(t) = \frac{32\pi}{3} - 1.2t</m>. A reasonable domain is <m>[0, 27.9]</m>.</p></answer>
       <solution>
         <p>
           <md>p(t) = \frac{32\pi}{3} - 1.2t.</md>
@@ -72,7 +75,9 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The water level rises at a constant rate of <m>0.65</m> feet per minute.
+        </p></answer>
       <solution>
         <p>
           Since <m>q(t) = 0.65t</m> is a linear function with slope <m>0.65</m>, the water
@@ -87,7 +92,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>C=L(t) = 15800 - 1120t</m>. A reasonable domain is <m>[0, 14.1]</m>. The slope is <m>-1120</m>, meaning the car loses <m>\$1120</m> in value each year.</p></answer>
       <solution>
         <p>
           The slope is <m>\frac{4600 - 10200}{10-5} = \frac{-5600}{5} = -1120</m> dollars per year.
@@ -101,11 +106,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

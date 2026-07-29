@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-trig-other">
-  
+
 
   <exercise xml:id="ez-trig-other-WW1" label="Library__LoyolaChicago__Precalc__Chap6Sec6__Q08-old">
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec6/Q08-old.pg"/>
@@ -43,9 +43,9 @@
     <solution>
       <p>
         With <m>\cos(\beta) = -\frac{12}{13}</m> and <m>\beta</m> in quadrant II, the Pythagorean identity gives <m>\sin(\beta) = \frac{5}{13}</m> (positive in QII).  The remaining values are:
-        <me>
+        <md>
           \sec(\beta) = -\frac{13}{12}, \quad \csc(\beta) = \frac{13}{5}, \quad \tan(\beta) = -\frac{5}{12}, \quad \cot(\beta) = -\frac{12}{5}.
-        </me>
+        </md>
       </p>
       <p>
         If <m>\beta</m> lies in quadrant III, then <m>\cos(\beta)</m> is still <m>-\frac{12}{13}</m> but now <m>\sin(\beta) = -\frac{5}{13}</m> (negative in QIII).  So <m>\sec(\beta) = -\frac{13}{12}</m> (unchanged), <m>\csc(\beta) = -\frac{13}{5}</m>, <m>\tan(\beta) = \frac{5}{12}</m>, and <m>\cot(\beta) = \frac{12}{5}</m>.
@@ -163,7 +163,7 @@
               <m>\cot(\arcsin(x))</m>
             </p>
           </li>
-        </ol>        
+        </ol>
       </p>
     </statement>
     <answer>

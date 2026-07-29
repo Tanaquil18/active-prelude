@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -18,7 +18,7 @@
   		<ul>
   			<li>
   				<p>
-  					How can we create new functions by adding, subtracting, multiplying, or dividing given functions? 
+  					How can we create new functions by adding, subtracting, multiplying, or dividing given functions?
   				</p>
   			</li>
   			<li>
@@ -36,7 +36,7 @@
 	</p>
 
 	<p>
-		We can work similarly with functions.  Indeed, we have already seen a sophisticated way to combine two functions to generate a new, related function through composition.  If <m>g : A \to B</m> and <m>f : B \to C</m>, then we know there's a new, related function <m>f \circ g : A \to C</m> defined by the process <m>(f \circ g)(x) = f(g(x))</m>.  Said differently, the new function <m>f \circ g</m> results from executing <m>g</m> first, followed by <m>f</m>. 
+		We can work similarly with functions.  Indeed, we have already seen a sophisticated way to combine two functions to generate a new, related function through composition.  If <m>g : A \to B</m> and <m>f : B \to C</m>, then we know there's a new, related function <m>f \circ g : A \to C</m> defined by the process <m>(f \circ g)(x) = f(g(x))</m>.  Said differently, the new function <m>f \circ g</m> results from executing <m>g</m> first, followed by <m>f</m>.
 	</p>
 
 	<p>
@@ -44,6 +44,7 @@
 	</p>
 
 	<xi:include href="./previews/PA-changing-combining.xml"/>
+	<xi:include href="./previews/PA-changing-combining-D.xml"/>
 
   </subsection>
 
@@ -70,7 +71,7 @@
 	    			<m>f(x) = \sqrt{x^2 + 1}</m> by the input <m>x = -2</m>?</q>
 	    		</p>
 	    	</li>
-	    </ul> 
+	    </ul>
 	    Certainly we also study overall patterns as seen in functions and equations,
 	    but this usually occurs through an examination of numbers themselves,
 	    and we think of numbers as the main objects being acted upon.
@@ -84,9 +85,9 @@
 
 	  <p>
 	  	It is often helpful to look at a function's formula and observe algebraic structure.  For instance, given the quadratic function
-	  	<me>
+	  	<md>
 	  		q(x) = -3x^2 + 5x - 7
-	  	</me>
+	  	</md>
 	  	we might benefit from thinking of this as the sum of three simpler functions:  the constant function <m>c(x) = -7</m>, the linear function <m>s(x) = 5x</m> that passes through <m>(0,0)</m> with slope <m>m = 5</m>, and the concave down basic quadratic function <m>w(x) = -3x^2</m>.  Indeed, each of the simpler functions <m>c</m>, <m>s</m>, and <m>w</m> contribute to making <m>q</m> be the function that it is.  Likewise, if we were interested in the function <m>p(x) = (3x^2 + 4)(9 - 2x^2)</m>, it might be natural to think about the two simpler functions <m>f(x) = 3x^2 + 4</m> and <m>g(x) = 9 - 2x^2</m> that are being multiplied to produce <m>p</m>.
 	  </p>
 
@@ -96,7 +97,7 @@
 
 	  <definition>
 	  	<idx><h>function arithmetic</h><h>sum of</h></idx>
-	  	<idx><h>function arithmetic</h><h>difference of</h></idx>	  	
+	  	<idx><h>function arithmetic</h><h>difference of</h></idx>
 	  	<idx><h>function arithmetic</h><h>product of</h></idx>
 	  	<idx><h>function arithmetic</h><h>quotient of</h></idx>
 	  	<statement>
@@ -124,13 +125,13 @@
 		  				</p>
 		  			</li>
 		  		</ul>
-	  		</p>	  			
+	  		</p>
 	  	</statement>
 	  </definition>
 
 	  <xi:include href="./activities/act-changing-combining-arithmetic.xml"/>
 
-  </subsection>		  
+  </subsection>
 
   <subsection xml:id="subsec-changing-combining-functions-context">
   	<title>Combining functions in context</title>
@@ -159,13 +160,13 @@
 
 		    <p>
 		    	<em>Solution</em>.  Observe that the units on <m>N(t)</m> are <q>shares</q> and the units on <m>S(t)</m> are <q>dollars per share</q>.  Thus when we compute the product
-		    	<me>
+		    	<md>
 		        	N(t) \, \text{shares}  \cdot S(t) \, \text{dollars per share}
-		      	</me>,
+		      	</md>,
 		      	it follows that the resulting units are <q>dollars</q>, which is the total value of held stock.  Hence,
-		      	<me>
+		      	<md>
 		      		V(t) = N(t) \cdot S(t)
-		      	</me>.
+		      	</md>.
 		    </p>
 		</statement>
 	</example>
@@ -187,7 +188,7 @@
 			<p>
 				A familiar and important function that is defined <em>piecewise</em>
 			    is the absolute value function: <m>A(x) = |x|</m>.
-			    We know that if <m>x \ge 0</m>, <m>|x| = x</m>, whereas if <m>x \lt 0</m>, <m>|x| = -x</m>.  
+			    We know that if <m>x \ge 0</m>, <m>|x| = x</m>, whereas if <m>x \lt 0</m>, <m>|x| = -x</m>.
 			</p>
 			<p>
 	  		<definition xml:id="def-combining-abs-val">
@@ -195,13 +196,13 @@
 					<statement>
 						<p>
 							The absolute value of a real number, denoted by <m>A(x) = |x|</m>, is defined by the rule
-			  				<me>
-			        			A(x) = 
+			  				<md>
+			        			A(x) =
 			        			\begin{cases}
 			        				-x, \amp  x \lt  0 \\
 			        				x, \amp x \ge 0
 			        			\end{cases}
-			  				</me>
+			  				</md>
 						</p>
 					</statement>
 	  		</definition>
@@ -232,26 +233,26 @@
   		<ul>
   			<li>
   				<p>
-  					Just as we can generate a new number by adding, subtracting, multiplying, or dividing two given numbers, we can generate a new function by adding, subtracting, multiplying, or dividing two given functions.  For instance, if we know formulas, graphs, or tables for functions <m>f</m> and <m>g</m> that share the same domain, we can create their product <m>p</m> according to the rule <m>p(x) = (f \cdot g)(x) = f(x) \cdot g(x)</m>. 
+  					Just as we can generate a new number by adding, subtracting, multiplying, or dividing two given numbers, we can generate a new function by adding, subtracting, multiplying, or dividing two given functions.  For instance, if we know formulas, graphs, or tables for functions <m>f</m> and <m>g</m> that share the same domain, we can create their product <m>p</m> according to the rule <m>p(x) = (f \cdot g)(x) = f(x) \cdot g(x)</m>.
   				</p>
   			</li>
   			<li>
   				<p>
   					A piecewise function is a function whose formula consists of at least two different formulas in such a way that which formula applies depends on where the input falls in the domain.  For example, given two functions <m>f</m> and <m>g</m> each defined on all real numbers, we can define a new piecewise function <m>P</m> according to the rule
-  					<me>
-  						P(x) = 
+  					<md>
+  						P(x) =
 	        			\begin{cases}
 	        				f(x), \amp  x \lt  a \\
 	        				g(x), \amp x \ge a
 	        			\end{cases}
-  					</me>
+  					</md>
   					This tells us that for any <m>x</m> to the left of <m>a</m>, we use the rule for <m>f</m>, whereas for any <m>x</m> to the right of or equal to <m>a</m>, we use the rule for <m>g</m>.  We can use as many different functions as we want on different intervals, provided the intervals don't overlap.
   				</p>
   			</li>
   		</ul>
   	</p>
   </subsection>
-	
+
   <xi:include href="./exercises/ez-changing-combining.xml"/>
 
   <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-circular-sinusoidal">
+<worksheet label="ws-PA-circular-sinusoidal" component="static">
   <exploration xml:id="PA-circular-sinusoidal">
     <introduction>
       <p>
@@ -24,8 +24,8 @@
       <statement>
         <p><m>g(t) = 3\cos(t)</m> and <m>h(t) = -\frac{1}{4}\cos(t)</m></p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <m>g(t)</m> is a vertical stretch of <m>f</m> by a factor of 3, with amplitude 3, midline <m>y=0</m>, and period <m>2\pi</m>.  <m>h(t)</m> is a vertical shrink by a factor of <m>\frac{1}{4}</m> combined with a reflection over the <m>x</m>-axis, with amplitude <m>\frac{1}{4}</m>, midline <m>y=0</m>, and period <m>2\pi</m>.
@@ -36,8 +36,8 @@
       <statement>
         <p><m>g(t) = \cos(t-\pi)</m> and <m>h(t) = \cos\left(t+ \frac{\pi}{2}\right)</m></p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <m>g(t)</m> is a horizontal translation of <m>f</m> by <m>\pi</m> units to the right (equivalently, a reflection over the <m>x</m>-axis due to periodicity), with amplitude 1, midline <m>y=0</m>, and period <m>2\pi</m>.  <m>h(t)</m> is a horizontal translation <m>\frac{\pi}{2}</m> units to the left, with amplitude 1, midline <m>y=0</m>, and period <m>2\pi</m>.
@@ -48,8 +48,8 @@
       <statement>
         <p><m>g(t) = \cos(t)+4</m> and <m>h(t) = \cos\left(t\right)-2</m></p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <m>g(t)</m> is a vertical translation of <m>f</m> by 4 units up, with amplitude 1, midline <m>y=4</m>, and period <m>2\pi</m>.  <m>h(t)</m> is a vertical translation 2 units down, with amplitude 1, midline <m>y=-2</m>, and period <m>2\pi</m>.
@@ -60,8 +60,8 @@
       <statement>
         <p><m>g(t) = 3\cos(t-\pi)+4</m> and <m>h(t) = -\frac{1}{4}\cos\left(t+ \frac{\pi}{2}\right)-2</m></p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <m>g(t)</m> is a vertical stretch by a factor of 3, followed by a horizontal shift <m>\pi</m> units to the right, and a vertical shift 4 units up.  Due to the periodicity, it is also accurate to say that <m>g(t)</m> is reflected over the <m>x</m>-axis, stretched by a factor of 3, and shifted vertically up 4 units.  <m>g(t)</m> has amplitude 3, midline <m>y=4</m>, and period <m>2\pi</m>.

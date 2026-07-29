@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -36,14 +36,14 @@
 
   <subsection><title>Introduction</title>
   	<p>
-  		In <xref ref="sec-exp-modeling">Section</xref>, we compared the behavior of the exponential functions <m>p(t) = 2^t</m> and <m>q(t) = (\frac{1}{2})^t</m>, and observed in <xref ref="F-modeling-exp-reflection">Figure</xref> that as <m>t</m> increases without bound, <m>p(t)</m> also increases without bound, while <m>q(t)</m> approaches <m>0</m> (while having its value be always positive).  We also introduced shorthand notation for describing these phenomena, writing 
-  		<me>
+  		In <xref ref="sec-exp-modeling">Section</xref>, we compared the behavior of the exponential functions <m>p(t) = 2^t</m> and <m>q(t) = (\frac{1}{2})^t</m>, and observed in <xref ref="F-modeling-exp-reflection">Figure</xref> that as <m>t</m> increases without bound, <m>p(t)</m> also increases without bound, while <m>q(t)</m> approaches <m>0</m> (while having its value be always positive).  We also introduced shorthand notation for describing these phenomena, writing
+  		<md>
   			p(t) \to \infty \text{ as } t \to \infty
-  		</me>
-  		and 
-  		<me>
+  		</md>
+  		and
+  		<md>
   			q(t) \to 0 \text{ as } t \to \infty
-  		</me>.
+  		</md>.
   		It's important to remember that infinity is not itself a number.  We use the <q><m>\infty</m></q> symbol to represent a quantity that gets larger and larger with no bound on its growth.
   	</p>
 
@@ -56,13 +56,14 @@
   	</p>
 
   	<xi:include href="./previews/PA-poly-infty.xml"/>
+	<xi:include href="./previews/PA-poly-infty-D.xml"/>
 
   </subsection>
 
   <subsection xml:id="subsec-poly-infty-limit">
   	<title>Limit notation</title>
   	<p>
-  		When observing a pattern in the values of a function that correspond to letting the inputs get closer and closer to a fixed value or letting the inputs increase or decrease without bound, we are often interested in the behavior of the function <q>in the limit</q>.  In either case, we are considering an infinite collection of inputs that are themselves following a pattern, and we ask the question <q>how can we expect the function's output to behave if we continue?</q>  
+  		When observing a pattern in the values of a function that correspond to letting the inputs get closer and closer to a fixed value or letting the inputs increase or decrease without bound, we are often interested in the behavior of the function <q>in the limit</q>.  In either case, we are considering an infinite collection of inputs that are themselves following a pattern, and we ask the question <q>how can we expect the function's output to behave if we continue?</q>
   	</p>
 
   	<p>
@@ -92,17 +93,17 @@
   		<statement>
   			<p>
   				Let <m>L</m> be a real number and <m>f</m> be a function.  If we can make the value of <m>f(t)</m> as close to <m>L</m> as we want by letting <m>t</m> increase without bound, we write
-	  			<me>
+	  			<md>
 	  				\lim_{t \to \infty} f(t) = L
-	  			</me>
-	  			and say that the <term>limit of <m>f</m> as <m>t</m> increases without bound is <m>L</m></term>.  
-  			</p> 
+	  			</md>
+	  			and say that the <term>limit of <m>f</m> as <m>t</m> increases without bound is <m>L</m></term>.
+  			</p>
 
   			<p>
   				If the value of <m>f(t)</m> increases without bound as <m>t</m> increases without bound, we instead write
-	  			<me>
+	  			<md>
 	  				\lim_{t \to \infty} f(t) = \infty
-	  			</me>.
+	  			</md>.
   			</p>
 
   			<p>
@@ -113,9 +114,9 @@
 
   	<p>
   		We use limit notation in related, natural ways to express patterns we see in function behavior.  For instance, we write <m>t \to -\infty</m> when we let <m>t</m> decrease without bound, and <m>f(t) \to -\infty</m> if <m>f</m> decreases without bound.  We can also think about an input value <m>t</m> approaching a value <m>a</m> at which the function <m>f</m> is not defined.  As one example, we write
-  		<me>
+  		<md>
   			\lim_{t \to 0^+} \ln(t) = -\infty
-  		</me>
+  		</md>
   		because the natural logarithm function decreases without bound as input values get closer and closer to <m>0</m> (while always being positive), as seen in <xref ref="F-exp-log">Figure</xref>.
   	</p>
 
@@ -157,10 +158,10 @@
 
 	<p>
 		In the situation where the power <m>p</m> is a negative integer (i.e., a negative whole number), power functions behave very differently.  This is because of the property of exponents that states
-		<me>
+		<md>
 			x^{-n} = \frac{1}{x^n}
-		</me>
-		so for a power function such as <m>p(x) = x^{-2}</m>, we can equivalently consider <m>p(x) = \frac{1}{x^2}</m>.  Note well that for these functions, their domain is the set of all real numbers except <m>x = 0</m>.  Like with power functions with positive whole number powers, we want to know how power functions with negative whole number powers behave as <m>x</m> increases without bound, as well as how the functions behave near <m>x = 0</m>.  
+		</md>
+		so for a power function such as <m>p(x) = x^{-2}</m>, we can equivalently consider <m>p(x) = \frac{1}{x^2}</m>.  Note well that for these functions, their domain is the set of all real numbers except <m>x = 0</m>.  Like with power functions with positive whole number powers, we want to know how power functions with negative whole number powers behave as <m>x</m> increases without bound, as well as how the functions behave near <m>x = 0</m>.
 	</p>
 
 	<xi:include href="./activities/act-poly-infty-negative-powers.xml"/>
@@ -173,17 +174,17 @@
   		<li>
   			<p>
   				The notation
-  				<me>
+  				<md>
   					\lim_{x \to \infty} f(x) = L
-  				</me>
+  				</md>
   				means that we can make the value of <m>f(x)</m> as close to <m>L</m> as we'd like by letting <m>x</m> be sufficiently large.  This indicates that the value of <m>f</m> eventually stops changing much and tends to a single value, and thus <m>y = L</m> is a horizontal asymptote of the function <m>f</m>.
   			</p>
 
   			<p>
   				Similarly, the notation
-  				<me>
+  				<md>
   					\lim_{x \to a} f(x) = \infty
-  				</me>
+  				</md>
   				means that we can make the value of <m>f(x)</m> as large as we'd like by letting <m>x</m> be sufficiently close, but not equal, to <m>a</m>.  This unbounded behavior of <m>f</m> near a finite value <m>a</m> indicates that <m>f</m> has a vertical asymptote at <m>x = a</m>.
   			</p>
   		</li>
@@ -267,7 +268,7 @@
 			    </row>
 			    <row bottom="minor" halign="center">
 			      <cell><m>\ln(x)</m></cell>
-			      <cell>NA</cell>			      
+			      <cell>NA</cell>
 			      <cell><m>\lim_{x \to 0^+} \ln(x) = -\infty</m></cell>
 			    </row>
 			    <row bottom="minor" halign="center">

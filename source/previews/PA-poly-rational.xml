@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,12 +11,12 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-poly-rational">
+<worksheet label="ws-PA-poly-rational" component="static">
   <exploration xml:id="PA-poly-rational">
     <introduction>
       <p>
 			A drug company estimates that to produce a new drug,
-			it will cost $5 million in startup resources, and that once they reach production, each gram of the drug will cost $2500 to make.  
+			it will cost <m>$5</m> million in startup resources, and that once they reach production, each gram of the drug will cost <m>$2500</m> to make.
 		</p>
       <p/>
     </introduction>
@@ -26,8 +26,8 @@
 						Determine a formula for a function <m>C(q)</m> that models the cost of producing <m>q</m> grams of the drug.  What familiar kind of function is <m>C</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p><m>C(q) = 5{,}000{,}000 + 2500q</m> gives the total cost in dollars to produce <m>q</m> grams.  <m>C</m> is a linear function whose slope is the per-gram manufacturing cost and whose <m>y</m>-intercept is the startup cost.</p>
       </solution>
@@ -35,11 +35,11 @@
     <task workspace="3cm" xml:id="PA-poly-rational-task-1">
       <statement>
         <p>
-						The drug company needs to sell the drug at a price of more than $2500 per gram in order to at least break even.  To investigate how they might set prices, they first consider what their <em>average</em> cost per gram is.  What is the <em>total</em> cost of producing <m>1000</m> grams?  What is the <em>average</em> cost per gram to produce <m>1000</m> grams?
+						The drug company needs to sell the drug at a price of more than <m>$2500</m> per gram in order to at least break even.  To investigate how they might set prices, they first consider what their <em>average</em> cost per gram is.  What is the <em>total</em> cost of producing <m>1000</m> grams?  What is the <em>average</em> cost per gram to produce <m>1000</m> grams?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The total cost of producing <m>1000</m> grams is <m>C(1000) = 5{,}000{,}000 + 2500(1000) = \$7{,}500{,}000</m>.  The average cost per gram is <m>\frac{7{,}500{,}000}{1000} = \$7{,}500</m> per gram.</p>
       </solution>
@@ -50,8 +50,8 @@
 						What is the total cost of producing <m>10000</m> grams?  What is the average cost per gram to produce <m>10000</m> grams?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The total cost of producing <m>10{,}000</m> grams is <m>C(10000) = 5{,}000{,}000 + 2500(10000) = \$30{,}000{,}000</m>.  The average cost per gram is <m>\frac{30{,}000{,}000}{10{,}000} = \$3{,}000</m> per gram.</p>
       </solution>
@@ -62,29 +62,29 @@
 						Our computations in (b) and (c) naturally lead us to define the <q>average cost per gram</q> function, <m>A(q)</m>, whose output is the average cost of producing <m>q</m> grams of the drug.  What is a formula for <m>A(q)</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>The average cost per gram to produce <m>q</m> grams is
-        <me>
+        <md>
           A(q) = \frac{C(q)}{q} = \frac{5{,}000{,}000 + 2500q}{q}.
-        </me>
+        </md>
         </p>
       </solution>
     </task>
     <task workspace="4cm" xml:id="PA-poly-rational-task-4">
       <statement>
         <p>
-						Explain why another formula for <m>A</m> is <m>A(q) = 2500 + \frac{5000000}{q}</m>.  
+						Explain why another formula for <m>A</m> is <m>A(q) = 2500 + \frac{5000000}{q}</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>Dividing both terms in the numerator of <m>A(q)</m> by <m>q</m>:
-        <me>
+        <md>
           A(q) = \frac{5{,}000{,}000 + 2500q}{q} = \frac{5{,}000{,}000}{q} + \frac{2500q}{q} = 2500 + \frac{5{,}000{,}000}{q}.
-        </me>
+        </md>
         </p>
       </solution>
     </task>
@@ -94,15 +94,15 @@
 						What can you say about the long-range behavior of <m>A</m>?  What does this behavior mean in the context of the problem?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>As <m>q \to \infty</m>, the term <m>\frac{5{,}000{,}000}{q} \to 0</m>, so <m>A(q) \to 2500</m>.  In context, this means that as production volume grows very large, the startup cost is spread over so many grams that the average cost per gram approaches the per-gram manufacturing cost of <m>\$2500</m>.</p>
       </solution>
     </task>
     <conclusion>
       <p>
-        This activity is based on p. 457ff in <em>Functions Modeling Change</em>, by Connally et al.
+        This activity is based on p. 457ff in <em>Functions Modeling Change</em>, 5th edition, by Connally et al.
       </p>
     </conclusion>
   </exploration>

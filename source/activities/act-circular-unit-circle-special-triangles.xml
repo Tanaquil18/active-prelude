@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-circular-unit-circle-special-triangles">
     <introduction>
       <p>
-			In what follows, we work to understand key relationships in 
+			In what follows, we work to understand key relationships in
     		<m>45^\circ</m>-<m>45^\circ</m>-<m>90^\circ</m> and
     		<m>30^\circ</m>-<m>60^\circ</m>-<m>90^\circ</m> triangles.
 		</p>
@@ -38,7 +38,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>x = y = \frac{\sqrt{2}}{2}</m></p></answer>
       <solution>
         <p>
           Because a <m>45^\circ</m>-<m>45^\circ</m>-<m>90^\circ</m> triangle is isosceles, the sides <m>x</m> and <m>y</m> must be equal.  From the Pythagorean theorem, <m>\sqrt{x^2 + y^2} = 1</m>, which reduces to <m>\sqrt{2x^2} = 1</m>, giving <m>x = y = \frac{\sqrt{2}}{2}</m>.
@@ -52,7 +52,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The resulting shape forms an equilateral triangle where all three interior angles are <m>60^\circ</m> and all sides have the same length, 1 unit. Thus, <m>y = \frac{1}{2}</m> and by the Pythagorean theorem, <m>x = \frac{\sqrt{3}}{2}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           When the <m>30^\circ</m>-<m>60^\circ</m>-<m>90^\circ</m> triangle is reflected across the <m>x</m>-axis, the outer perimeter of the resulting shape forms an equilateral triangle where all three interior angles are <m>60^\circ</m> and all sides have the same length, 1 unit.  This gives us the insight that side <m>y</m> must have a length equal to half of one unit: <m>y = \frac{1}{2}</m>.  Side <m>x</m> is determined from the Pythagorean theorem: <m>x = \frac{\sqrt{3}}{2}</m>.
@@ -66,7 +70,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>y = \frac{\sqrt{3}}{2}</m> and <m>x = \frac{1}{2}</m></p></answer>
       <solution>
         <p>
           When a <m>30^\circ</m>-<m>60^\circ</m>-<m>90^\circ</m> triangle is constructed such that the angle between the hypotenuse and the <m>x</m>-side is <m>60^\circ</m>, the sides are <m>y = \frac{\sqrt{3}}{2}</m> and <m>x = \frac{1}{2}</m>.
@@ -97,18 +101,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The coordinates of the point at <m>\theta = \frac{\pi}{6}</m> on the unit circle are <m>\left( \frac{\sqrt{3}}{2}, \frac{1}{2} \right)</m>.  The coordinates at <m>\theta = \frac{\pi}{4}</m> are <m>\left( \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right)</m>.  The coordinates at <m>\theta = \frac{\pi}{3}</m> are <m>\left( \frac{1}{2}, \frac{\sqrt{3}}{2} \right)</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The coordinates of the point at <m>\theta = \frac{\pi}{6}</m> on the unit circle are <m>\left( \frac{\sqrt{3}}{2}, \frac{1}{2} \right)</m>.  The coordinates at <m>\theta = \frac{\pi}{4}</m> are <m>\left( \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right)</m>.  The coordinates at <m>\theta = \frac{\pi}{3}</m> are <m>\left( \frac{1}{2}, \frac{\sqrt{3}}{2} \right)</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

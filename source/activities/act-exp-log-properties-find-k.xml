@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -26,7 +26,7 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>k = -\dfrac{\ln(41/50)}{7}</m></p></answer>
       <solution>
         <p>
           From <m>41 = 50e^{-7k}</m>, we get <m>e^{-7k} = \frac{41}{50}</m>, so <m>-7k = \ln\!\left(\frac{41}{50}\right)</m> and <m>k = -\dfrac{\ln(41/50)}{7}</m>.
@@ -40,7 +40,7 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>k = -\dfrac{\ln(31/47)}{45}</m></p></answer>
       <solution>
         <p>
           From <m>65 = 34 + 47e^{-45k}</m>, we get <m>31 = 47e^{-45k}</m>, so <m>e^{-45k} = \frac{31}{47}</m> and <m>k = -\dfrac{\ln(31/47)}{45}</m>.
@@ -54,7 +54,7 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>k = \dfrac{\ln 4 + 1}{2}</m></p></answer>
       <solution>
         <p>
           From <m>7e^{2k-1} + 4 = 32</m>, we get <m>e^{2k-1} = 4</m>, so <m>2k - 1 = \ln 4</m> and <m>k = \dfrac{\ln 4 + 1}{2}</m>.
@@ -68,18 +68,12 @@
         </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>k = -\dfrac{\ln(1/8)}{10} = \dfrac{\ln 8}{10}</m></p></answer>
       <solution>
         <p>
           From <m>\dfrac{5}{1 + 2e^{-10k}} = 4</m>, we get <m>5 = 4 + 8e^{-10k}</m>, so <m>e^{-10k} = \frac{1}{8}</m> and <m>k = -\dfrac{\ln(1/8)}{10} = \dfrac{\ln 8}{10}</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

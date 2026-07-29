@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <title>Inverses of trigonometric functions</title>
 
 	  <xi:include href="./previews/PA-trig-inverse.xml"/>
-		<xi:include href="./activities/act-trig-inverse-arccos.xml"/>	
+		<xi:include href="./activities/act-trig-inverse-arccos.xml"/>
 		<xi:include href="./activities/act-trig-inverse-arcsin.xml"/>
 		<xi:include href="./activities/act-trig-inverse-arctan.xml"/>
 

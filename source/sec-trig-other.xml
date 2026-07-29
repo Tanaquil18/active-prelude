@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -55,25 +55,25 @@
   					<li>
   						<p>
   							For any real number <m>t</m> for which <m>\cos(t) \ne 0</m>, we define the secant of <m>t</m>, denoted <m>\sec(t)</m>, by the rule
-			  				<me>
+			  				<md>
 			  					\sec(t) = \frac{1}{\cos(t)}
-			  				</me>.  
+			  				</md>.
   						</p>
   					</li>
   					<li>
   						<p>
   							For any real number <m>t</m> for which <m>\sin(t) \ne 0</m>, we define the cosecant of <m>t</m>, denoted <m>\csc(t)</m>, by the rule
-			  				<me>
+			  				<md>
 			  					\csc(t) = \frac{1}{\sin(t)}
-			  				</me>. 
+			  				</md>.
   						</p>
   					</li>
   					<li>
   						<p>
   							For any real number <m>t</m> for which <m>\sin(t) \ne 0</m>, we define the cotangent of <m>t</m>, denoted <m>\cot(t)</m>, by the rule
-			  				<me>
+			  				<md>
 			  					\cot(t) = \frac{\cos(t)}{\sin(t)}
-			  				</me>.
+			  				</md>.
   						</p>
   					</li>
   				</ul>
@@ -111,6 +111,7 @@
   	</p>
 
 	<xi:include href="./previews/PA-trig-other.xml"/>
+	<xi:include href="./previews/PA-trig-other-D.xml"/>
 
   </subsection>
 
@@ -131,7 +132,7 @@
   	</figure>
 
   	<p>
-  		But we could also view <m>\sin(\alpha) = \frac{3}{5}</m> as <m>\sin(\alpha) = \frac{\frac{3}{5}}{1}</m>, and thus think of the right triangle has having hypotenuse <m>1</m> and vertical leg <m>\frac{3}{5}</m>.  This triangle is similar to the originally considered <m>3</m>-<m>4</m>-<m>5</m> right triangle, but can be viewed as lying within the unit circle.  The perspective of the unit circle is particularly valuable when ratios such as <m>\frac{\sqrt{3}}{2}</m>, <m>\frac{\sqrt{2}}{2}</m>, and <m>\frac{1}{2}</m> arise in right triangles.  	
+  		But we could also view <m>\sin(\alpha) = \frac{3}{5}</m> as <m>\sin(\alpha) = \frac{\frac{3}{5}}{1}</m>, and thus think of the right triangle has having hypotenuse <m>1</m> and vertical leg <m>\frac{3}{5}</m>.  This triangle is similar to the originally considered <m>3</m>-<m>4</m>-<m>5</m> right triangle, but can be viewed as lying within the unit circle.  The perspective of the unit circle is particularly valuable when ratios such as <m>\frac{\sqrt{3}}{2}</m>, <m>\frac{\sqrt{2}}{2}</m>, and <m>\frac{1}{2}</m> arise in right triangles.
   	</p>
 
 	<xi:include href="./activities/act-trig-other-special.xml"/>
@@ -161,7 +162,7 @@
 								<cell><m>\frac{2\pi}{3}</m></cell>
 								<cell><m>\frac{3\pi}{4}</m></cell>
 								<cell><m>\frac{5\pi}{6}</m></cell>
-								<cell><m>\pi</m></cell>								
+								<cell><m>\pi</m></cell>
 							</row>
 							<row bottom="minor" halign="center">
 								<cell><m>\cos(t)</m></cell>
@@ -186,7 +187,7 @@
 								<cell><m>-\sqrt{2}</m></cell>
 								<cell><m>-\frac{2}{\sqrt{3}}</m></cell>
 								<cell><m>-1</m></cell>
-							</row>							
+							</row>
 						</tabular>
 					</table>
 
@@ -194,7 +195,7 @@
 						<title>Values of the cosine and secant functions at special points on the unit circle (Quadrants III and IV).</title>
 						<tabular>
 							<row bottom="minor" halign="center">
-								<cell><m>t</m></cell>		
+								<cell><m>t</m></cell>
 								<cell><m>\frac{7\pi}{6}</m></cell>
 								<cell><m>\frac{5\pi}{4}</m></cell>
 								<cell><m>\frac{4\pi}{3}</m></cell>
@@ -202,7 +203,7 @@
 								<cell><m>\frac{5\pi}{3}</m></cell>
 								<cell><m>\frac{7\pi}{4}</m></cell>
 								<cell><m>\frac{11\pi}{6}</m></cell>
-								<cell><m>2\pi</m></cell>						
+								<cell><m>2\pi</m></cell>
 							</row>
 							<row bottom="minor" halign="center">
 								<cell><m>\cos(t)</m></cell>
@@ -225,19 +226,19 @@
 								<cell><m>\sqrt{2}</m></cell>
 								<cell><m>\frac{2}{\sqrt{3}}</m></cell>
 								<cell><m>1</m></cell>
-							</row>							
+							</row>
 						</tabular>
 					</table>
 
 		<p>
-			<xref ref="T-secant-values">Table</xref> and <xref ref="T-secant-values-2">Table</xref> help us identify trends in the secant function.  The sign of <m>\sec(t)</m> matches the sign of <m>\cos(t)</m> and thus is positive in Quadrant I, negative in Quadrant II, negative in Quadrant III, and positive in Quadrant IV.    
+			<xref ref="T-secant-values">Table</xref> and <xref ref="T-secant-values-2">Table</xref> help us identify trends in the secant function.  The sign of <m>\sec(t)</m> matches the sign of <m>\cos(t)</m> and thus is positive in Quadrant I, negative in Quadrant II, negative in Quadrant III, and positive in Quadrant IV.
 		</p>
 
 		<p>
 			In addition, we observe that as <m>t</m>-values in the first quadrant get closer to <m>\frac{\pi}{2}</m>, <m>\cos(t)</m> gets closer to <m>0</m> (while being always positive).  Since the numerator of the secant function is always <m>1</m>, having its denominator approach <m>0</m> (while the denominator remains positive) means that <m>\sec(t)</m> increases without bound as <m>t</m> approaches <m>\frac{\pi}{2}</m> from the left side.  Once <m>t</m> is slightly greater than <m>\frac{\pi}{2}</m> in Quadrant II, the value of <m>\cos(t)</m> is negative (and close to zero).  This makes the value of <m>\sec(t)</m> decrease without bound (negative and getting further away from <m>0</m>) for <m>t</m> approaching <m>\frac{\pi}{2}</m> from the right side.  We therefore see that <m>p(t) = \sec(t)</m> has a vertical asymptote at <m>t = \frac{\pi}{2}</m>; the periodicity and sign behavior of <m>\cos(t)</m> mean this asymptotic behavior of the secant function will repeat.
 		</p>
 
-		<p>	
+		<p>
 			Plotting the data in the table along with the expected asymptotes and connecting the points intuitively, we see the graph of the secant function in <xref ref="F-secant-plot">Figure</xref>.
 		</p>
 
@@ -254,7 +255,7 @@
 		<assemblage xml:id="asm-secant-properties">
 			<title>Properties of the secant function</title>
 			<p>
-				For the function <m>p(t) = \sec(t)</m>, 
+				For the function <m>p(t) = \sec(t)</m>,
 				<ul>
 					<li>
 						<p>
@@ -285,9 +286,9 @@
   	<title>A few important identities</title>
   	<p>
   		An <em>identity</em> is an equation that is true for all possible values of <m>x</m> for which the involved quantities are defined.  An example of a non-trigonometric identity is
-	    <me>
+	    <md>
 	      (x+1)^2 = x^2 + 2x + 1
-	    </me>,
+	    </md>,
     	since this equation is true for every value of <m>x</m>,
     	and the left and right sides of the equation are simply two different-looking but entirely equivalent expressions.
   	</p>
@@ -306,7 +307,7 @@
 				\cos^2(\theta) + \sin^2(\theta) = 1
 			</men>.
 		</p>
-		
+
 	</assemblage>
 
 	<p>
@@ -316,16 +317,16 @@
 	  <p>
 	    There are two related Pythagorean identities that involve the tangent, secant,
 	    cotangent, and cosecant functions, which we can derive from the fundamental trigonometric identity by dividing both sides by either <m>\cos^2(\theta)</m> or <m>\sin^2(\theta)</m>.  If we divide both sides of <xref ref="eq-fund-trig-identity">Equation</xref> by <m>\cos^2(\theta)</m> (and assume that <m>\cos(\theta) \ne 0</m>), we see that
-	    <me>
-	    	1 + \frac{\sin^2(\theta)}{\cos^2(\theta)} = \frac{1}{\cos^2(\theta)} 
-	    </me>, or equivalently,
-	    <me>
-	    	1 + \tan^2(\theta) = \sec^2(\theta) 
-	    </me>.
+	    <md>
+	    	1 + \frac{\sin^2(\theta)}{\cos^2(\theta)} = \frac{1}{\cos^2(\theta)}
+	    </md>, or equivalently,
+	    <md>
+	    	1 + \tan^2(\theta) = \sec^2(\theta)
+	    </md>.
 	    A similar argument dividing by <m>\sin^2(\theta)</m> (while assuming <m>\sin(\theta) \ne 0</m>) shows that
-	    <me>
-	    	\cot^2(\theta) + 1 = \csc^2(\theta) 
-	    </me>.  These identities prove useful in calculus when we develop the formulas for the derivatives of the tangent and cotangent functions.
+	    <md>
+	    	\cot^2(\theta) + 1 = \csc^2(\theta)
+	    </md>.  These identities prove useful in calculus when we develop the formulas for the derivatives of the tangent and cotangent functions.
 	  </p>
 
 	  <p>
@@ -367,10 +368,10 @@
   	<ul>
   		<li>
   			<p>
-  				The secant, cosecant, and cotangent functions are respectively defined as the reciprocals of the cosine, sine, and tangent functions.  That is, 
-  				<me>
+  				The secant, cosecant, and cotangent functions are respectively defined as the reciprocals of the cosine, sine, and tangent functions.  That is,
+  				<md>
   					\sec(t) = \frac{1}{\cos(t)}, \csc(t) = \frac{1}{\sin(t)}, \text{ and } \cot(t) = \frac{1}{\tan(t)}
-  				</me>. 
+  				</md>.
   			</p>
   		</li>
   		<li>

@@ -1,0 +1,25 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-3,-3,7,7]">
+    <axes id="axes" xlabel="x" ylabel="y" decorations="no"/>
+
+    <definition>f(x)=-0.75*(x-3)**2 + 6</definition>
+    <definition>a=2</definition>
+    <definition>b=4</definition>
+    <definition>c=f(a)</definition>
+
+    <line p1="(0,c)" p2="(b,c)" thickness="2" stroke="#999"/>
+    <line p1="(a,f(a))" p2="(a,0)" thickness="2" stroke="#999"/>
+    <line p1="(b,f(b))" p2="(b,0)" thickness="2" stroke="#999"/>
+
+    <graph function="f" />
+
+    <point p="(a,f(a))" />
+    <point p="(b,f(b))" />
+    <point p="(a,0)" alignment="ha" offset="(0,-12)"><m>a</m></point>
+    <point p="(b,0)" alignment="ha" offset="(0,-8)"><m>b</m></point>
+    <point p="(0,c)" alignment="va" offset="(-8,0)"><m>c</m></point>
+
+  </coordinates>
+
+</diagram>
+

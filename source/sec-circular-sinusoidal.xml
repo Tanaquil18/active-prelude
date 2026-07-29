@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -38,6 +38,7 @@
   	</p>
 
   	<xi:include href="./previews/PA-circular-sinusoidal.xml"/>
+	<xi:include href="./previews/PA-circular-sinusoidal-D.xml"/>
 
   </subsection>
   <subsection xml:id="subsec-circular-sinusoidal-shifts-stretches">
@@ -50,9 +51,9 @@
   		<title>Transformations of sine and cosine</title>
   		<p>
   			Given real numbers <m>a</m>, <m>b</m>, and <m>c</m> with <m>a \ne 0</m>, the functions
-  			<me>
+  			<md>
   				k(t) = a\cos(t-b)+c \ \text{ and } \ h(t) = a\sin(t-b) + c
-  			</me>
+  			</md>
   			each represent a horizontal shift by <m>b</m> units to the right, followed by a vertical stretch by <m>|a|</m> units (if <m>a \lt 0</m>, there is also a reflection across the <m>x</m>-axis), followed by a vertical shift of <m>c</m> units, applied to the parent function (<m>\cos(t)</m> or <m>\sin(t)</m>, respectively).  The resulting circular functions have midline <m>y = c</m>, amplitude <m>|a|</m>, range <m>[c-|a|,c+|a|]</m>, and period <m>p = 2\pi</m>.  In addition, the point <m>(b,a+c)</m> lies on the graph of <m>k</m> and the point <m>(b,c)</m> lies on the graph of <m>h</m>.
   		</p>
   	</assemblage>
@@ -68,7 +69,7 @@
   	</figure>
 
   	<p>
-  		It is often useful to follow one particular point through a sequence of transformations.  In <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, we see the red point that is located at <m>(0,1)</m> on the original function <m>y = \cos(t)</m>, as well as the point <m>(b, a+c)</m> that is the corresponding point on <m>k(t) = a\cos(t-b) + c</m> under the overall transformation.  Note that the point <m>(b,a+c)</m> results from the input, <m>t = b</m>, that makes the argument of the cosine function zero:  <m>k(b) = a\cos(b-b) + c = a\cos(0) + c</m>.  
+  		It is often useful to follow one particular point through a sequence of transformations.  In <xref ref="F-sinusoidal-cosine-transf">Figure</xref>, we see the red point that is located at <m>(0,1)</m> on the original function <m>y = \cos(t)</m>, as well as the point <m>(b, a+c)</m> that is the corresponding point on <m>k(t) = a\cos(t-b) + c</m> under the overall transformation.  Note that the point <m>(b,a+c)</m> results from the input, <m>t = b</m>, that makes the argument of the cosine function zero:  <m>k(b) = a\cos(b-b) + c = a\cos(0) + c</m>.
   	</p>
 
   	<p>
@@ -104,25 +105,25 @@
 			<slate xml:id="compressing" aspect="4:4" surface="canvas"/>
 			<instructions>
 				<p>
-					Move the slider by clicking and dragging on the red point to see how changing <m>k</m> affects the graph of <m>y = f(kt)</m>.  The graph of <m>y = f(t)</m> will appear in grey and remain fixed. 
+					Move the slider by clicking and dragging on the red point to see how changing <m>k</m> affects the graph of <m>y = f(kt)</m>.  The graph of <m>y = f(t)</m> will appear in grey and remain fixed.
 				</p>
 			</instructions>
 		</interactive>
-	</figure> 
+	</figure>
 
 	<p>
 		By experimenting with the slider, we gain an intuitive sense for how the value of <m>k</m> affects the graph of <m>h(t) = f(kt)</m> in comparision to the graph of <m>f(t)</m>.  When <m>k = 2</m>, we see that the graph of <m>h</m> is oscillating twice as fast as the graph of <m>f</m> since <m>h(t) = f(2t)</m> completes two full cycles over an interval in which <m>f</m> completes one full cycle.  In contrast, when <m>k = \frac{1}{2}</m>, the graph of <m>h</m> oscillates half as fast as the graph of <m>f</m>, as <m>h(t) = f(\frac{1}{2}t)</m> completes only half of one cycle over an interval where <m>f(t)</m> completes a full one.
 	</p>
 
 	<p>
-		We can also understand this from the perspective of function composition.  To evaluate <m>h(t) = f(2t)</m>, at a given value of <m>t</m>, we first multiply the input <m>t</m> by a factor of <m>2</m>, and then evaluate the function <m>f</m> at the result.  An important observation is that 
-		<me>
+		We can also understand this from the perspective of function composition.  To evaluate <m>h(t) = f(2t)</m>, at a given value of <m>t</m>, we first multiply the input <m>t</m> by a factor of <m>2</m>, and then evaluate the function <m>f</m> at the result.  An important observation is that
+		<md>
 			h\left( \frac{1}{2}t \right) = f\left( 2 \cdot \frac{1}{2}t \right) = f(t)
-		</me>.
+		</md>.
 		This tells us that the point <m>(\frac{1}{2}t, f(t))</m> lies on the graph of <m>h</m> since an input of <m>\frac{1}{2}t</m> in <m>h</m> results in the value <m>f(t)</m>.  At the same time, the point <m>(t,f(t))</m> lies on the graph of <m>f</m>.  Thus we see that the correlation between points on the graphs of <m>f</m> and <m>h</m> (where <m>h(t) = f(2t)</m>) is
-		<me>
+		<md>
 			(t, f(t)) \rightarrow \left( \frac{1}{2}t, f(t) \right)
-		</me>.
+		</md>.
 		We can therefore think of the transformation <m>h(t) = f(2t)</m> as achieving the output values of <m>f</m> twice as fast as the original function <m>f(t)</m> does.  Analogously, the transformation <m>h(t) = f(\frac{1}{2}t)</m> will achieve the output values of <m>f</m> only half as quickly as the original function.
 	</p>
 
@@ -180,9 +181,9 @@
   	<title>The period of a circular function</title>
   	<p>
   		For any constant <m>k \gt 0</m>, the period of the functions <m>\sin(kt)</m> and <m>\cos(kt)</m> is
-  		<me>
+  		<md>
   			P = \frac{2\pi}{k}
-  		</me>.
+  		</md>.
   	</p>
   </assemblage>
 
@@ -203,9 +204,9 @@
   		<li>
   			<p>
   				Given real numbers <m>a</m>, <m>b</m>, and <m>c</m> with <m>a \ne 0</m>, the functions
-	  			<me>
+	  			<md>
 	  				k(t) = a\cos(t-b)+c \text{ and } h(t) = a\sin(t-b) + c
-	  			</me>
+	  			</md>
 	  			each represent a horizontal shift by <m>b</m> units to the right, followed by a vertical stretch by <m>|a|</m> units (with a reflection across the <m>x</m>-axis if <m>a \lt 0</m>), followed by a vertical shift of <m>c</m> units, applied to the parent function (<m>\cos(t)</m> or <m>\sin(t)</m>, respectively).  The resulting circular functions have midline <m>y = c</m>, amplitude <m>|a|</m>, range <m>[c-|a|,c+|a|]</m>, and period <m>p = 2\pi</m>.  In addition, the anchor point <m>(b,a+c)</m> lies on the graph of <m>k</m> and the anchor point <m>(b,c)</m> lies on the graph of <m>h</m>.
   			</p>
   		</li>
@@ -216,10 +217,10 @@
   		</li>
   		<li>
   			<p>
-  				Given any circular periodic function for which the midline, amplitude, period, and an anchor point are known, we can find a corresponding formula for the function of the form 
-  				<me>
+  				Given any circular periodic function for which the midline, amplitude, period, and an anchor point are known, we can find a corresponding formula for the function of the form
+  				<md>
   					k(t) = a\cos(k(t-b))+c \text{ or } h(t) = a\sin(k(t-b)) + c
-  				</me>.
+  				</md>.
   				Each of these functions has midline <m>y = c</m>, amplitude <m>|a|</m>, and period <m>P = \frac{2\pi}{k}</m>.  The point <m>(b,a+c)</m> lies on <m>k</m> and the point <m>(b,c)</m> lies on <m>h</m>.
   			</p>
   		</li>

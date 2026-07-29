@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -46,16 +46,17 @@
   		</p>
 
   		<p>
-  			For a function <m>s</m> that tells the location of a moving object along a straight path at time <m>t</m>, we define the average rate of change of <m>s</m> on the interval <m>[a,b]</m> to be the quantity 
-  			<me>
+  			For a function <m>s</m> that tells the location of a moving object along a straight path at time <m>t</m>, we define the average rate of change of <m>s</m> on the interval <m>[a,b]</m> to be the quantity
+  			<md>
   				AV_{[a,b]} = \frac{s(b)-s(a)}{b-a}
-  			</me>.
+  			</md>.
   			<idx><h>average rate of change</h><h>of position</h></idx>
   			Note particularly that the average rate of change of <m>s</m> on <m>[a,b]</m> is measuring the
     		<em>change in position</em> divided by the <em>change in time</em>.
     	</p>
-    	
-    	<xi:include href="./previews/PA-changing-aroc.xml"/>		
+
+    	<xi:include href="./previews/PA-changing-aroc.xml"/>
+		<xi:include href="./previews/PA-changing-aroc-D.xml"/>
 
 	</subsection>
 
@@ -89,10 +90,10 @@
 			<idx><h>average rate of change</h></idx>
 			<statement>
 				<p>
-					For a function <m>f</m> defined on an interval <m>[a,b]</m>, the <term>average rate of change of <m>f</m> on <m>[a,b]</m></term> is the quantity 
-					<me>
+					For a function <m>f</m> defined on an interval <m>[a,b]</m>, the <term>average rate of change of <m>f</m> on <m>[a,b]</m></term> is the quantity
+					<md>
 						AV_{[a,b]} = \frac{f(b) - f(a)}{b-a}
-					</me>.
+					</md>.
 				</p>
 			</statement>
 		</definition>
@@ -105,22 +106,22 @@
 		<xi:include href="./activities/act-changing-aroc-population.xml"/>
 
 		<p>
-			The average rate of change of a function on an interval gives us an excellent way to describe how the function behaves, on average.  For instance, if we compute <m>AV_{[1970,2000]}</m> for Kent County, we find that 
-			<me>
+			The average rate of change of a function on an interval gives us an excellent way to describe how the function behaves, on average.  For instance, if we compute <m>AV_{[1970,2000]}</m> for Kent County, we find that
+			<md>
 				AV_{[1970,2000]} = \frac{574,336 - 411,044}{30} = 5443.07
-			</me>,
+			</md>,
 			which tells us that in an average year from 1970 to 2000, the population of Kent County increased by about <m>5443</m> people.  Said differently, we could also say that from 1970 to 2000, Kent County was growing at an average rate of <m>5443</m> people per year.  These ideas also afford the opportunity to make comparisons over time.  Since
-			<me>
+			<md>
 				AV_{[1990,2000]} = \frac{574,336 - 500,631}{10} = 7370.5
-			</me>,
+			</md>,
 			we can not only say that Kent county's population increased by about <m>7370</m> in an average year between 1990 and 2000, but also that the population was growing faster from 1990 to 2000 than it did from 1970 to 2000.
 		</p>
 
 		<p>
-			Finally, we can even use the average rate of change of a function to predict future behavior.  Since the population was changing on average by <m>7370.5</m> people per year from 1990 to 2000, we can estimate that the population in 2002 is 
-			<me>
+			Finally, we can even use the average rate of change of a function to predict future behavior.  Since the population was changing on average by <m>7370.5</m> people per year from 1990 to 2000, we can estimate that the population in 2002 is
+			<md>
 				K(2002) \approx K(2000) + 2 \cdot 7370.5 = 574,336 + 14,741 = 589,077
-			</me>.
+			</md>.
 		</p>
 
 	</subsection>
@@ -139,11 +140,11 @@
 			<idx><h>function trends</h><h>increasing</h></idx> <idx><h>function trends</h><h>decreasing</h></idx>
 			<statement>
 				<p>
-					Let <m>f</m> be a function defined on an interval <m>(a,b)</m> (that is, on the set of all <m>x</m> for which <m>a \lt x \lt b</m>).  We say that <m>f</m> is <term>increasing on <m>(a,b)</m></term> provided that the function is always rising as we move from left to right.  That is, for any <m>x</m> and <m>y</m> in <m>(a,b)</m>, if <m>x \lt y</m>, then <m>f(x) \lt f(y)</m>.  
+					Let <m>f</m> be a function defined on an interval <m>(a,b)</m> (that is, on the set of all <m>x</m> for which <m>a \lt x \lt b</m>).  We say that <m>f</m> is <term>increasing on <m>(a,b)</m></term> provided that the function is always rising as we move from left to right.  That is, for any <m>x</m> and <m>y</m> in <m>(a,b)</m>, if <m>x \lt y</m>, then <m>f(x) \lt f(y)</m>.
 				</p>
 
 				<p>
-					Similarly, we say that <m>f</m> is <term>decreasing on <m>(a,b)</m></term> provided that 
+					Similarly, we say that <m>f</m> is <term>decreasing on <m>(a,b)</m></term> provided that
            			the function is always falling as we move from left to right.  That is, for any <m>x</m> and <m>y</m> in <m>(a,b)</m>,  if <m>x \lt y</m>, then <m>f(x) \gt f(y)</m>.
 				</p>
 			</statement>
@@ -157,9 +158,9 @@
 
 		<p>
 			It is helpful be able to connect information about a function's average rate of change and its graph.  For instance, if we have determined that <m>AV_{[-3,2]} = 1.75</m> for some function <m>f</m>, this tells us that, on average, the function rises between the points <m>x = -3</m> and <m>x = 2</m> and does so at an average rate of <m>1.75</m> vertical units for every horizontal unit.  Moreover, we can even determine that the difference between <m>f(2)</m> and <m>f(-3)</m> is
-			<me>
+			<md>
 				f(2)-f(-3) = 1.75 \cdot 5 = 8.75
-			</me>
+			</md>
 			since <m>\frac{f(2)-f(-3)}{2-(-3)} = 1.75</m>.
 		</p>
 
@@ -173,8 +174,8 @@
 	  <ul>
   		<li>
   			<p>
-  				For a function <m>f</m> defined on an interval <m>[a,b]</m>, the average rate of change of <m>f</m> on <m>[a,b]</m> is the quantity 
-				<me>AV_{[a,b]} = \frac{f(b) - f(a)}{b-a}</me>.
+  				For a function <m>f</m> defined on an interval <m>[a,b]</m>, the average rate of change of <m>f</m> on <m>[a,b]</m> is the quantity
+				<md>AV_{[a,b]} = \frac{f(b) - f(a)}{b-a}</md>.
   			</p>
   		</li>
   		<li>

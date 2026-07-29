@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-composite">
+<worksheet label="ws-PA-changing-composite" component="static">
   <exploration xml:id="PA-changing-composite">
     <introduction>
       <p>
@@ -25,8 +25,8 @@
 						Let <m>r(t) = p(q(t))</m>. Determine a formula for <m>r</m> that depends only on <m>t</m> and not on <m>p</m> or <m>q</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <md>
@@ -43,8 +43,8 @@
 						Review the introductory example with <m>f(x) = x^2 - 1</m> and <m>g(t) = 3t - 4</m>, which involved functions similar to <m>p</m> and <m>q</m> in part (a).  What is the biggest difference between your work in (a) above and in the introductory example?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           In the introductory example, the inner function <m>g(t) = 3t-4</m> is linear
@@ -60,8 +60,8 @@
 						Let <m>t = s(z) = \frac{1}{z+4}</m> and recall that <m>x = q(t) = t^2 - 1</m>.  Determine a formula for <m>x = q(s(z))</m> that depends only on <m>z</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <md>q(s(z)) = \left(\frac{1}{z+4}\right)^2 - 1 = \frac{1}{(z+4)^2} - 1.</md>
@@ -74,8 +74,8 @@
 						Suppose that <m>h(t) = \sqrt{2t^2 + 5}</m>.  Determine formulas for two related functions, <m>y = f(x)</m> and <m>x = g(t)</m>, so that <m>h(t) = f(g(t))</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           One natural decomposition: <m>f(x) = \sqrt{x}</m> and <m>g(t) = 2t^2 + 5</m>,

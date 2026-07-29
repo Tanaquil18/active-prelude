@@ -1,0 +1,43 @@
+<graphics id="figure" width="450" height="450" margins="5">
+  <definition>a=pi/4</definition>
+  <definition>ep=0.00001</definition>
+  <definition>f(x)=sin(a*x)/cos(a*x)</definition>
+  <definition>g(x)=1/f(x)</definition>
+
+  <coordinates bbox="[-2,-4.5,10,4.5]">
+    <grid rx="(-2,1,10)" ry="(-4.5,0.75,4.5)"/>
+    <axes decorations="no"
+	  hticks="(-2,1,10)" vticks="(-4.5,0.75,4.5)"
+	  vlabels="(-3.0,1.5,3.0)"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="f" dash="9 9" domain="(-2+ep,2-ep)"/>
+    <graph function="f" dash="9 9" domain="(2+ep,6-ep)"/>
+    <graph function="f" dash="9 9" domain="(6+ep,10-ep)"/>
+
+    <label p="(2,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{\pi}{2}</m>
+    </label>
+    <label p="(4,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>\pi</m>
+    </label>
+    <label p="(6,0)" alignment="ha" offset="(0,-8)" clear-background="yes">
+      <m>\frac{3\pi}{2}</m>
+    </label>
+    <label p="(8,0)" alignment="ha" offset="(0,-16)" clear-background="yes">
+      <m>2\pi</m>
+    </label>
+    <label p="(2,2.25)" alignment="east" clear-background="yes">
+      <m>h(t)=\tan(t)</m>
+    </label>
+    
+
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-circular-sine-cosine">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-circular-sine-cosine">
   <activity xml:id="act-circular-sine-cosine">
     <introduction>
       <p>
@@ -26,7 +26,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>\cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}</m>; <m>\cos\left(\frac{5\pi}{6}\right) = -\frac{\sqrt{3}}{2}</m>; <m>\cos\left(-\frac{\pi}{3}\right) = \frac{1}{2}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>\cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}</m>; <m>\cos\left(\frac{5\pi}{6}\right) = -\frac{\sqrt{3}}{2}</m>; <m>\cos\left(-\frac{\pi}{3}\right) = \frac{1}{2}</m>.
@@ -140,7 +144,59 @@
 <!--         </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <tabular>
+          <row bottom="minor">
+            <cell><m>t</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>\frac{\pi}{6}</m></cell>
+            <cell><m>\frac{\pi}{4}</m></cell>
+            <cell><m>\frac{\pi}{3}</m></cell>
+            <cell><m>\frac{\pi}{2}</m></cell>
+            <cell><m>\frac{2\pi}{3}</m></cell>
+            <cell><m>\frac{3\pi}{4}</m></cell>
+            <cell><m>\frac{5\pi}{6}</m></cell>
+            <cell><m>\pi</m></cell>
+          </row>
+          <row>
+            <cell><m>k</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+            <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+            <cell><m>\frac{1}{2}</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>-\frac{1}{2}</m></cell>
+            <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
+            <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
+            <cell><m>-1</m></cell>
+          </row>
+          <row><cell colspan="10"/></row>
+          <row bottom="minor">
+            <cell><m>t</m></cell>
+            <cell><m>\pi</m></cell>
+            <cell><m>\frac{7\pi}{6}</m></cell>
+            <cell><m>\frac{5\pi}{4}</m></cell>
+            <cell><m>\frac{4\pi}{3}</m></cell>
+            <cell><m>\frac{3\pi}{2}</m></cell>
+            <cell><m>\frac{5\pi}{3}</m></cell>
+            <cell><m>\frac{7\pi}{4}</m></cell>
+            <cell><m>\frac{11\pi}{6}</m></cell>
+            <cell><m>2\pi</m></cell>
+          </row>
+          <row>
+            <cell><m>k</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
+            <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
+            <cell><m>-\frac{1}{2}</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>\frac{1}{2}</m></cell>
+            <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+            <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+            <cell><m>1</m></cell>
+          </row>
+        </tabular>
+      </answer>
       <solution>
         <tabular>
           <row bottom="minor">
@@ -202,13 +258,32 @@
 					</p>
 <!--         <figure xml:id="F-circular-sine-cosine-axes">
           <caption>Axes for plotting <m>k = \cos(t)</m>.</caption> -->
-          <image source="images/sine-cosine-definition-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-circular-sine-cosine-act-axes">
+                <xi:include href="../prefigure/chap-circular/sine-cosine-definition-axes.xml"/>
+              </prefigure>
+              <description><p>Blank axes for graphing <m>\cos(t)</m></p>
+              </description>
+            </image>
+          <!-- <image source="images/sine-cosine-definition-axes"><description><p>Blank axes for graphing <m>\cos(t)</m></p></description></image> -->
 <!--         </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <image width="60%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-circular-sine-cosine-act-graph-cosine-ans">
+            <xi:include href="../prefigure/chap-circular/sine-cosine-act-graph-cosine.xml"/>
+          </prefigure>
+        <description><p>a plot of <m>\cos(t)</m></p></description></image>
+        <!-- <image width="50%" source="solution-images/Activity2.3.2.png"><description>a plot of <m>\cos(t)</m></description></image> -->
+      </answer>
       <solution>
-        <image width="50%" source="solution-images/Activity2.3.2.png"/>
+        <image width="60%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-circular-sine-cosine-act-graph-cosine-soln">
+            <xi:include href="../prefigure/chap-circular/sine-cosine-act-graph-cosine.xml"/>
+          </prefigure>
+        <description><p>a plot of <m>\cos(t)</m></p></description></image>
+        <!-- <image width="50%" source="solution-images/Activity2.3.2.png"><description><p>a plot of <m>\cos(t)</m></p></description></image> -->
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-circular-sine-cosine-task-3">
@@ -218,7 +293,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>\cos\left(\frac{11\pi}{4}\right) = \cos\left(\frac{3\pi}{4}\right) = -\frac{\sqrt{2}}{2}</m>; and <m>\cos\left(\frac{14\pi}{3}\right) = \cos\left(\frac{2\pi}{3}\right) = -\frac{1}{2}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>\cos\left(\frac{11\pi}{4}\right) = \cos\left(\frac{3\pi}{4}\right) = -\frac{\sqrt{2}}{2}</m>; and <m>\cos\left(\frac{14\pi}{3}\right) = \cos\left(\frac{2\pi}{3}\right) = -\frac{1}{2}</m>.
@@ -232,7 +311,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>\cos(t) = -\frac{\sqrt{3}}{2}</m> for <m>t = \frac{5\pi}{6},\ \frac{7\pi}{6},\ \frac{17\pi}{6},\ \frac{19\pi}{6}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           <m>\cos(t) = -\frac{\sqrt{3}}{2}</m> for <m>t = \frac{5\pi}{6},\ \frac{7\pi}{6},\ \frac{17\pi}{6},\ \frac{19\pi}{6}</m>.
@@ -246,18 +329,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The graphs of <m>k = \cos(t)</m> and <m>h = \sin(t)</m> are the same after a horizontal shift of <m>\frac{\pi}{2}</m>.
+        </p>
+      </answer>
       <solution>
         <p>
-          The graphs of <m>k = \cos(t)</m> and <m>h = \sin(t)</m> are actually identical, just with a horizontal shift of <m>\pm\frac{\pi}{2}</m>.
+          The graphs of <m>k = \cos(t)</m> and <m>h = \sin(t)</m> are actually identical, just with a horizontal shift of <m>\frac{\pi}{2}</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

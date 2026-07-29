@@ -1,0 +1,45 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+  <definition>q=(cos(pi/4), sin(pi/4))</definition>
+
+  <coordinates bbox="[-0.15,-0.15,1.2,1.2]">
+    <axes id="axes" decorations="no"/>
+
+    <arc center="(0,0)" radius="1" range="(0,90)"
+	 stroke="blue" thickness="2"/>
+
+    <line p1="(1,0)" p2="q" stroke="green" tactile-dash="9 9"/>
+    <line p1="(1,0)" p2="(q[0],0)" stroke="green" tactile-dash="9 9"/>
+    <line p1="(q[0],0)" p2="q" stroke="green" tactile-dash="9 9"/>
+
+    <line p1="(0,1)" p2="q" stroke="magenta" tactile-dash="4 4"/>
+    <line p1="(0,1)" p2="(0,q[1])" stroke="magenta" tactile-dash="4 4"/>
+    <line p1="(0,q[1])" p2="q" stroke="magenta" tactile-dash="4 4"/>
+
+    <label p="(q[0],q[1]/2)" alignment="west">
+      <m>h_1</m>
+    </label>
+    <label p="(cos(pi/8), sin(pi/8))" alignment="ne">
+      <m>d_1</m>
+    </label>
+
+    <label p="(0,(1+q[1])/2)" alignment="west">
+      <m>h_2</m>
+    </label>
+    <label p="(cos(3*pi/8), sin(3*pi/8))" alignment="ne">
+      <m>d_2</m>
+    </label>
+
+    <point p="(0,1)" alignment="ne">
+      <m>R</m>
+    </point>
+    <point p="q" alignment="ne">
+      <m>Q</m>
+    </point>
+    <point p="(1,0)" alignment="ne">
+      <m>P</m>
+    </point>
+
+  </coordinates>
+
+</diagram>
+

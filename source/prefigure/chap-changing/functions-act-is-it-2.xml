@@ -1,0 +1,26 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-2.5,-1.5,3.5,4.5]">
+    <group>
+      <grid id="grid" rx="(-2.5,0.5,3.5)" ry="(-1.5,0.5,4.5)"/>
+      <axes id="axes" hlabels="(-2,1,3)" vlabels="(-1,1,3)" />
+    </group>
+
+    <definition>f(x)=4-x^2</definition>
+    <definition>g(x)=3-x</definition>
+    <graph function="f" domain="(-2.5,1)" />
+    <graph function="g" domain="(1,3.5)" />
+
+    <label p="(1,3.5)" alignment="ne" clear-background="yes">
+      <m>y=g(x)</m>
+    </label>
+
+    <point p="(0,4)" fill="white" stroke="black"/>
+    <point p="(0,1)" fill="blue" stroke="black"/>
+    <point p="(1,3)" fill="blue" stroke="black"/>
+    <point p="(1,2)" fill="white" stroke="black"/>
+    <point p="(2,1)" fill="white" stroke="black"/>
+
+  </coordinates>
+
+</diagram>
+

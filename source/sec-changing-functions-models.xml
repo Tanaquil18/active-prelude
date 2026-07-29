@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -49,18 +49,19 @@
 				      <cell><m>60^\circ</m></cell>
 				      <cell><m>70^\circ</m></cell>
 				      <cell><m>80^\circ</m></cell>
-				    </row>				    			    
+				    </row>
 				</tabular>
-			</table>		
+			</table>
 	<p>
-		For a mathematical model, we often seek an algebraic formula that captures observed behavior accurately and can be used to predict behavior not yet observed.  For the data in <xref ref="T-functions-Dolbear">Table</xref>, we observe that each of the ordered pairs in the table make the equation 
+		For a mathematical model, we often seek an algebraic formula that captures observed behavior accurately and can be used to predict behavior not yet observed.  For the data in <xref ref="T-functions-Dolbear">Table</xref>, we observe that each of the ordered pairs in the table make the equation
 		<men xml:id="eq-functions-Dolbear">
 			T = 40 + 0.25N
-		</men> 
-		true.  For instance, <m>70 = 40 + 0.25(120)</m>.  Indeed, scientists who made many additional cricket chirp observations following Dolbear's initial counts found that the formula in <xref ref="eq-functions-Dolbear">Equation</xref> holds with remarkable accuracy for the snowy tree cricket in temperatures ranging from about <m>50^\circ</m> F to <m>85^\circ</m> F. 
+		</men>
+		true.  For instance, <m>70 = 40 + 0.25(120)</m>.  Indeed, scientists who made many additional cricket chirp observations following Dolbear's initial counts found that the formula in <xref ref="eq-functions-Dolbear">Equation</xref> holds with remarkable accuracy for the snowy tree cricket in temperatures ranging from about <m>50^\circ</m> F to <m>85^\circ</m> F.
 	</p>
 
-	<xi:include href="./previews/PA-changing-functions-crickets.xml"/>	
+	<xi:include href="./previews/PA-changing-functions-crickets.xml"/>
+	<xi:include href="./previews/PA-changing-functions-crickets-D.xml"/>
 
   </subsection>
 
@@ -68,7 +69,7 @@
   	<title>Functions</title>
 
   	<p>
-  		The mathematical concept of a <em>function</em> <idx><h>function</h><h>introduction to</h></idx> is one of the most central ideas in all of mathematics, in part since functions provide an important tool for representing and explaining patterns.  At its core, a function is a repeatable process that takes a collection of input values and generates a corresponding collection of output values with the property that if we use a particular single input, the process always produces exactly the same single output.  
+  		The mathematical concept of a <em>function</em> <idx><h>function</h><h>introduction to</h></idx> is one of the most central ideas in all of mathematics, in part since functions provide an important tool for representing and explaining patterns.  At its core, a function is a repeatable process that takes a collection of input values and generates a corresponding collection of output values with the property that if we use a particular single input, the process always produces exactly the same single output.
 	</p>
 
 	<p>
@@ -82,7 +83,7 @@
   			</mrow>
    			<mrow>
   				N &amp;\xrightarrow{D} 40 + 0.25 N
-  			</mrow> 			
+  			</mrow>
   		</md>
   		Alternatively, for the relationship <q><m>80 \xrightarrow{D} 60</m></q> we can also use the equivalent notation <q><m>D(80) = 60</m></q> to indicate that Dolbear's Law takes an input of <m>80</m> chirps per minute and produces a corresponding output of <m>60</m> degrees Fahrenheit.  More generally, we write <q><m>T = D(N) = 40 + 0.25N</m></q> to indicate that a certain temperature, <m>T</m>, is determined by a given number of chirps per minute, <m>N</m>, according to the process <m>D(N) = 40 + 0.25N</m>.
   	</p>
@@ -90,7 +91,7 @@
 	<p>
 		Tables and graphs are particularly valuable ways to characterize and represent functions.  For the current example, we summarize some of the data the Dolbear function generates in <xref ref="T-functions-Dolbear-data">Table</xref> and plot that data along with the underlying curve in <xref ref="F-functions-Dolbear-data">Figure</xref>.
 	</p>
-					
+
 		<sidebyside width="50%" valign="middle">
 			<table xml:id="T-functions-Dolbear-data">
 				<title>Data for the function <m>T = D(N) = 40 + 0.25N</m>.</title>
@@ -102,11 +103,11 @@
 					<row>
 						<cell><m>40</m></cell>
 						<cell><m>50</m></cell>
-					</row> 
+					</row>
 					<row>
 						<cell><m>80</m></cell>
 						<cell><m>60</m></cell>
-					</row>  
+					</row>
 					<row>
 						<cell><m>120</m></cell>
 						<cell><m>70</m></cell>
@@ -120,13 +121,13 @@
 						<cell><m>85</m></cell>
 					</row>
 				</tabular>
-			</table>		
+			</table>
 			<figure xml:id="F-functions-Dolbear-data">
 				<caption>Graph of data from the function <m>T = D(N) = 40 + 0.25N</m> and the underlying curve.</caption>
 				<image source="images/functions-Dolbears-Law" width="50%"><description><p>Graph of data from the function <m>T = D(N) = 40 + 0.25N</m> and the underlying curve.</p>
-				</description></image>	
+				</description></image>
 			</figure>
-		</sidebyside>	
+		</sidebyside>
 
 		<p>
 			When a point such as <m>(120,70)</m> in <xref ref="F-functions-Dolbear-data">Figure</xref> lies on a function's graph, this indicates the correspondence between input and output:  when the value <m>120</m> chirps per minute is entered in the function <m>D</m>, the result is <m>70</m> degrees Fahrenheit.  More concisely, <m>D(120) = 70</m>.  Aloud, we read <q><m>D</m> of <m>120</m> is <m>70</m></q>.
@@ -134,7 +135,7 @@
 
 		<p>
 			For most important concepts in mathematics, the mathematical community decides on formal definitions to ensure that we have a shared language of understanding.  In this text, we will use the following definition of the term <q>function</q>.
-		</p>	
+		</p>
 
 		<definition xml:id="def-function-process">
 			<idx><h>function</h><h>definition</h></idx>
@@ -163,10 +164,10 @@
 		</p>
 
 		<definition xml:id="def-function-range">
-			<idx><h>function</h><h>range</h></idx> 
+			<idx><h>function</h><h>range</h></idx>
 			<statement>
 				<p>
-					Let <m>F</m> be a function from <m>A</m> to <m>B</m>.  The <term>range</term> of <m>F</m> is the collection of all actual outputs of the function.  That is, the range is the collection of all elements <m>y</m> in <m>B</m> for which it is possible to find an element <m>x</m> in <m>A</m> such that <m>F(x) = y</m>. 
+					Let <m>F</m> be a function from <m>A</m> to <m>B</m>.  The <term>range</term> of <m>F</m> is the collection of all actual outputs of the function.  That is, the range is the collection of all elements <m>y</m> in <m>B</m> for which it is possible to find an element <m>x</m> in <m>A</m> such that <m>F(x) = y</m>.
 				</p>
 			</statement>
 		</definition>
@@ -200,9 +201,9 @@
 		<solution>
 			<p>
 				We start with the abstract function <m>y = f(x) = -16x^2 + 32x + 48</m>.  Absent a physical context, we can investigate the behavior of this function by computing function values, plotting points, and thinking about its overall behavior.  We recognize the function <m>f</m> as quadratic<fn>We will engage in a brief review of quadratic functions in <xref ref="sec-changing-quadratic">Section</xref></fn>, noting that it opens down because of the leading coefficient of <m>-16</m>, with vertex located at <m>x = \frac{-32}{2(-16)} = 1</m>, <m>y</m>-intercept at <m>(0,48)</m>, and with <m>x</m>-intercepts at <m>(-1,0)</m> and <m>(3,0)</m> because
-				<me>
+				<md>
 					-16x^2 + 32x + 48 = -16(x^2 - 2x - 3) = -16(x-3)(x+1)
-				</me>.  Computing some additional points to gain more information, we see both the data in <xref ref="T-functions-quadratic-example-data">Table</xref> and the corresponding graph in <xref ref="F-functions-quadratic-example-data">Figure</xref>. 
+				</md>.  Computing some additional points to gain more information, we see both the data in <xref ref="T-functions-quadratic-example-data">Table</xref> and the corresponding graph in <xref ref="F-functions-quadratic-example-data">Figure</xref>.
 			</p>
 
 			<sidebyside width="50%" valign="middle">
@@ -216,11 +217,11 @@
 						<row>
 							<cell><m>-2</m></cell>
 							<cell><m>-80</m></cell>
-						</row> 
+						</row>
 						<row>
 							<cell><m>-1</m></cell>
 							<cell><m>0</m></cell>
-						</row>  
+						</row>
 						<row>
 							<cell><m>0</m></cell>
 							<cell><m>48</m></cell>
@@ -236,22 +237,22 @@
 						<row>
 							<cell><m>3</m></cell>
 							<cell><m>0</m></cell>
-						</row>	
+						</row>
 						<row>
 							<cell><m>4</m></cell>
 							<cell><m>-80</m></cell>
-						</row>											
+						</row>
 					</tabular>
-				</table>		
+				</table>
 				<figure xml:id="F-functions-quadratic-example-data">
 					<caption>Graph of the function <m>y = f(x)</m> and some data from the table.</caption>
 					<image source="images/functions-quadratic-example-data" width="50%"><description><p>Graph of the function <m>y = f(x)</m> and some data from the table.</p>
-					</description></image>	
+					</description></image>
 				</figure>
 			</sidebyside>
 
 			<p>
-				For this abstract function, its domain is <q>all real numbers</q> since we may input any real number <m>x</m> we wish into the formula <m>f(x) = -16x^2 + 32x + 48</m> and have the result be defined.  Moreover, taking a real number <m>x</m> and processing it in the formula <m>f(x) = -16x^2 + 32x + 48</m> will produce another real number.  This tells us that the codomain of the abstract function <m>f</m> is also <q>all real numbers.</q>  Finally, from the graph and the data, we observe that the largest possible output of the function <m>f</m> is <m>y = 64</m>.  It is apparent that we can generate any <m>y</m>-value less than or equal to <m>64</m>, and thus the range of the abstract function <m>f</m> is all real numbers less than or equal to <m>64</m>.  We denote this collection of real numbers using the shorthand interval notation <m>(-\infty, 64]</m>.<fn>The notation <m>(-\infty,64]</m> stands for all the real numbers that lie to the left of and including <m>64</m>.  The <q><m>-\infty</m></q> indicates that there is no left-hand bound on the interval.</fn> 
+				For this abstract function, its domain is <q>all real numbers</q> since we may input any real number <m>x</m> we wish into the formula <m>f(x) = -16x^2 + 32x + 48</m> and have the result be defined.  Moreover, taking a real number <m>x</m> and processing it in the formula <m>f(x) = -16x^2 + 32x + 48</m> will produce another real number.  This tells us that the codomain of the abstract function <m>f</m> is also <q>all real numbers.</q>  Finally, from the graph and the data, we observe that the largest possible output of the function <m>f</m> is <m>y = 64</m>.  It is apparent that we can generate any <m>y</m>-value less than or equal to <m>64</m>, and thus the range of the abstract function <m>f</m> is all real numbers less than or equal to <m>64</m>.  We denote this collection of real numbers using the shorthand interval notation <m>(-\infty, 64]</m>.<fn>The notation <m>(-\infty,64]</m> stands for all the real numbers that lie to the left of and including <m>64</m>.  The <q><m>-\infty</m></q> indicates that there is no left-hand bound on the interval.</fn>
 			</p>
 
 			<p>
@@ -281,13 +282,13 @@
 						<row>
 							<cell><m>3</m></cell>
 							<cell><m>0</m></cell>
-						</row>											
+						</row>
 					</tabular>
-				</table>		
+				</table>
 				<figure xml:id="F-functions-quadratic-model-data">
 					<caption>Graph of the model <m>h = g(t)</m> and some data from the table.</caption>
 					<image source="images/functions-quadratic-model-data" width="50%"><description><p>Graph of the model <m>h = g(t)</m> and some data from the table.</p>
-					</description></image>	
+					</description></image>
 				</figure>
 			</sidebyside>
 
@@ -301,7 +302,7 @@
   <subsection xml:id="subsec-changing-functions-models-is-it">
   	<title>Determining whether a relationship is a function or not</title>
   	<p>
-  		To this point in our discussion of functions, we have mostly focused on what the function process may model and what the domain, codomain, and range of a model or abstract function are.  It is also important to take note of another part of <xref ref="def-function-process">Definition</xref>: <q><m>\ldots</m> the process produces one and only one output value for any single input value</q>.  Said differently, if a relationship or process ever associates a single input with two or more different outputs, the process cannot be a function. 
+  		To this point in our discussion of functions, we have mostly focused on what the function process may model and what the domain, codomain, and range of a model or abstract function are.  It is also important to take note of another part of <xref ref="def-function-process">Definition</xref>: <q><m>\ldots</m> the process produces one and only one output value for any single input value</q>.  Said differently, if a relationship or process ever associates a single input with two or more different outputs, the process cannot be a function.
   	</p>
 
 	<example xml:id="ex-functions-people-phone-numbers">
@@ -345,7 +346,7 @@
 				</table>
 
 				<p>
-					<em>Solution.</em> The relationship between <m>y</m> and <m>x</m> in <xref ref="T-functions-is-it-1">Table</xref> allows us to think of <m>y</m> as a function of <m>x</m> since each particular input is associated with one and only one output.  If we name the function <m>f</m>, we can say for instance that <m>f(4) = 11</m>.  Moreover, the domain of <m>f</m> is the set of inputs <m>\{1,2,3,4,5\}</m>, and the codomain (which is also the range) is the set of outputs <m>\{10,11,13\}</m>.  
+					<em>Solution.</em> The relationship between <m>y</m> and <m>x</m> in <xref ref="T-functions-is-it-1">Table</xref> allows us to think of <m>y</m> as a function of <m>x</m> since each particular input is associated with one and only one output.  If we name the function <m>f</m>, we can say for instance that <m>f(4) = 11</m>.  Moreover, the domain of <m>f</m> is the set of inputs <m>\{1,2,3,4,5\}</m>, and the codomain (which is also the range) is the set of outputs <m>\{10,11,13\}</m>.
 				</p>
 		</statement>
 	</example>
@@ -382,7 +383,7 @@
 	</definition>
 
 	<p>
-		When we use a computing device such as <em>Desmos</em> to graph a function <m>g</m>, the program is generating a large collection of ordered pairs <m>(x,g(x))</m>, plotting them in the <m>x</m>-<m>y</m> plane, and connecting the points with short line segments. 
+		When we use a computing device such as <em>Desmos</em> to graph a function <m>g</m>, the program is generating a large collection of ordered pairs <m>(x,g(x))</m>, plotting them in the <m>x</m>-<m>y</m> plane, and connecting the points with short line segments.
 	</p>
 
   </subsection>

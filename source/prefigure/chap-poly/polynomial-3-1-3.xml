@@ -1,0 +1,23 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>dx=0.4</definition>
+  <definition>f(x)=x^3*(x-1)</definition>
+
+  <coordinates bbox="[-dx,-dx,dx,dx]">
+    <axes decorations="no"
+	  />
+
+    <graph function="f"/>
+
+    <point p="(0,0)"/>
+
+    <rectangle lower-left="(-dx,-dx)" dimensions="(2*dx,2*dx)"
+	       stroke="#ccc" thickness="2"/>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

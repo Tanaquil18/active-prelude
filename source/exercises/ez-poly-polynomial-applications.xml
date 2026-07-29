@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-poly-polynomial-applications">
-  
+
 
   <exercise xml:id="ez-poly-polynomial-applications-WW1" label="Library__LoyolaChicago__Precalc__Chap9Sec3__Q44">
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec3/Q44.pg"/>
@@ -21,7 +21,7 @@
     <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec3/Q43.pg"/>
   </exercise>
 
-<!--  
+<!--
   <exercise xml:id="ez-poly-polynomial-applications-WW3" label="Library__Rochester__setAlgebra23PolynomialZeros__beth1polydiv">
     <webwork source="Library/Rochester/setAlgebra23PolynomialZeros/beth1polydiv.pg" />
   </exercise>
@@ -95,17 +95,17 @@
           <li>
             <p>
               The trough has two equilateral triangular ends and two rectangular side panels (the open top means there is no rectangular top panel).  The surface area is
-              <me>
+              <md>
                 A = 2 \cdot \frac{\sqrt{3}}{4}s^2 + 2sl = \frac{\sqrt{3}}{2}s^2 + 2sl.
-              </me>
+              </md>
             </p>
           </li>
           <li>
             <p>
               Setting the surface area equal to <m>100</m>: <m>\dfrac{\sqrt{3}}{2}s^2 + 2sl = 100</m>, so
-              <me>
+              <md>
                 l = \frac{100 - \frac{\sqrt{3}}{2}s^2}{2s} = \frac{50}{s} - \frac{\sqrt{3}}{4}s.
-              </me>
+              </md>
             </p>
           </li>
           <li>
@@ -142,13 +142,13 @@
     <solution>
       <p>
         Let the box have width <m>w</m>, length <m>2w</m>, and height <m>h</m>.  The areas of the base and top are each <m>2w^2</m>, and the combined area of the four sides is <m>2(wh) + 2(2wh) = 6wh</m>.  The cost constraint is
-        <me>
+        <md>
           2(2w^2 + 2w^2) + 1.5(6wh) = 8w^2 + 9wh = 10.
-        </me>
+        </md>
         Solving for <m>h</m>: <m>h = \dfrac{10 - 8w^2}{9w}</m>.  The volume is
-        <me>
+        <md>
           V(w) = w \cdot 2w \cdot h = 2w^2 \cdot \frac{10 - 8w^2}{9w} = \frac{20w - 16w^3}{9}.
-        </me>
+        </md>
         For the domain, we need <m>h &gt; 0</m>, so <m>10 - 8w^2 &gt; 0</m>, giving <m>w &lt; \sqrt{\dfrac{10}{8}} = \dfrac{\sqrt{5}}{2}</m>.  With <m>w &gt; 0</m>, the domain is <m>\left(0,\ \dfrac{\sqrt{5}}{2}\right)</m>.
       </p>
     </solution>
@@ -211,9 +211,9 @@
           <li>
             <p>
               Substituting into the surface area formula:
-              <me>
+              <md>
                 A(r) = 2\pi r^2 + 2\pi r \cdot \frac{8}{\pi r^2} = 2\pi r^2 + \frac{16}{r}.
-              </me>
+              </md>
             </p>
           </li>
           <li>

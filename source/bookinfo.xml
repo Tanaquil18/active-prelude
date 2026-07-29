@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -14,7 +14,7 @@
 <docinfo>
   <brandlogo url="https://activecalculus.org" source="images/APC-cover.jpg"/>
 
-<!--  
+<!--
   <macros>
 		\newcommand{\dollar}{\$}
 		\DeclareMathOperator{\erf}{erf}
@@ -37,10 +37,17 @@
 
 -->
 
+  <document-id>active-prelude</document-id>
+  <blurb shelf="Mathematics">
+    Active Prelude to Calculus is designed for college students who aspire to take calculus and who either need to take a course to prepare them for calculus or want to do some additional self-study. The reader will find that the text requires them to engage actively with the material, to view topics from multiple perspectives, and to develop deep conceptual undersanding of ideas. Every section offers engaging activities for students to complete before and during class; additional exercises that challenge students to connect and assimilate core concepts; interactive WeBWorK exercises; opportunities for students to improve their skills at communicating mathematical ideas.  The text is free and open-source, available in HTML, PDF, and print formats.  Ancillary materials for instructors are also available.
+  </blurb>
+
   <rename element="exploration" xml:lang="en-US">Preview Activity</rename>
 
   <rename element="objectives" xml:lang="en-US">Motivating Questions</rename>
   <!-- PreTeXt doesn't like renaming to whitespace, so using U+3164 (Hangul Filler) -->
   <!-- here inside the rename element. -->
   <rename element="worksheet" xml:lang="en-US">&#8193;</rename>
+
+  <doenetml version="0.7.21-dev.343" />
 </docinfo>

@@ -1,0 +1,42 @@
+<diagram xmlns="https://prefigure.org" width="250" height="250" margins="5">
+
+  <definition>p=(1, sin(pi/6)/cos(pi/6))</definition>
+  <definition>q=(1, -sin(pi/6)/cos(pi/6))</definition>
+  <coordinates bbox="[-0.1,-0.6,1.1,0.6]">
+    <polygon points="((0,0), (1,0), (p))" closed="yes"
+	     stroke="blue" thickness="2"/>
+
+    <arc points="((1,0),(0,0),p)" radius="25" pixel-dims="yes"
+	 stroke="black" thickness="1"/>
+    <arc points="((0,0),p,(1,0))" radius="25" pixel-dims="yes"
+	 stroke="black" thickness="1"/>
+
+    <polygon points="(p,q,(0,0))" closed="yes" stroke="blue"
+	     thickness="2"/>
+
+    <label p="(1/2,0)" alignment="south" offset="(0,-9)">
+      <m>x</m>
+    </label>
+
+    <label p="(1,p[1]/2)" alignment="east" offset="(9,0)">
+      <m>y</m>
+    </label>
+
+    <label p="smult(0.5,p)" alignment="nw" offset="(-9,9)">
+      <m>1</m>
+    </label>
+
+    <label p="(0.2*cos(pi/12),0.2*sin(pi/12))" alignment="east"
+	   offset="(9,4)">
+      <m>30^\circ</m>
+    </label>
+
+    <label p="(p[0]-0.15*sin(pi/12),p[1]-0.15*cos(pi/12))" alignment="south"
+	   offset="(-12,0)" tactile-offset="(-40, 0)">
+      <m>60^\circ</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

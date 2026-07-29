@@ -1,0 +1,32 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>f(x)=e^x</definition>
+  <definition>g(x)=log(x)</definition>
+  <definition>h(x)=x</definition>
+
+  <coordinates bbox="[-15,-15,15,15]">
+    <grid rx="(-15,5,15)" ry="(-15,5,15)"/>
+    <axes decorations="no"
+	  hticks="(-15,5,15)" vticks="(-15,5,15)"
+	  vlabels="(-15,5,15)" hlabels="(-15,5,15)"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="h" stroke="#aaa"/>
+
+    <graph function="f" domain="(-15,3)"/>
+    <graph function="g" stroke="green" domain="(0.0001,15)"
+	   tactile-dash="9 9" />
+
+    <label p="(3.5,10)" alignment="ne" clear-background="yes">
+      <m>y=e^t</m>
+    </label>
+    <label p="(15,3)" alignment="nw" clear-background="yes">
+      <m>y=\ln(x)</m>
+    </label>
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

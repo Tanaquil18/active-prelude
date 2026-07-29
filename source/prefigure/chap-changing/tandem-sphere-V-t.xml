@@ -1,0 +1,14 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <coordinates bbox="[-20,-20,120,120]">
+    <group>
+      <grid id="grid" rx="(-20,10,120)" ry="(-20,10,120)" />
+      <axes id="axes" xlabel="t" ylabel="V" decorations="no"
+	    hticks="(20,20,120)" vticks="(20,20,120)"
+	    hlabels="(40,40,120)" vlabels="(40,40,120)"
+	    />
+    </group>
+
+  </coordinates>
+
+</diagram>
+

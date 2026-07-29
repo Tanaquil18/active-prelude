@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -21,18 +21,18 @@
       This text began as my sabbatical project in the fall semester of 2018,
       during which I wrote most of the material.
       For the sabbatical leave, I express my deep gratitude to Grand Valley State University for its support of the project,
-      as well as to my colleagues in the Department of Mathematics and the College of Liberal Arts and Sciences for their endorsement of the project.  
+      as well as to my colleagues in the Department of Mathematics and the College of Liberal Arts and Sciences for their endorsement of the project.
 
       <!--I'm also grateful to the American Institute of Mathematics
       for their <url href="https://aimath.org/textbooks/">support of free and open textbooks in general</url>, and their support of this one in particular.-->
     </p>
 
     <p>
-      The beautiful full-color .eps graphics, as well as the occasional interactive JavaScript graphics, use David Austin's Python library that employs Bill Casselman's <url href="http://gvsu.edu/s/bi">PiScript</url>.  
+      The beautiful full-color .eps graphics, as well as the occasional interactive JavaScript graphics, use David Austin's Python library that employs Bill Casselman's <url href="http://gvsu.edu/s/bi">PiScript</url>.
       The .html version of the text is the result Rob Beezer's amazing work to develop the publishing language <pretext/> (formerly known as Mathbook XML); learn more at <url href="pretextbook.org">pretextbook.org</url>.
       I'm grateful to the American Institute of Mathematics for hosting and funding
       a weeklong workshop in San Jose, CA, in April 2016, which enabled me to get started in <pretext/>.  The ongoing support of the <url href="https://groups.google.com/forum/#!forum/pretext-support">user group</url> is invaluable, and David Farmer of AIM is has also been a source of major support and advocacy.
-      Mitch Keller of the University of Wisconsin is the production editor of both <url href="https://activecalculus.org/single/">Active Calculus: Single Variable</url> and this text; his technical expertise is a gift. 
+      Mitch Keller of the University of Wisconsin is the production editor of both <url href="https://activecalculus.org/single/">Active Calculus: Single Variable</url> and this text; his technical expertise is a gift.
     </p>
 
 <!--  <attribution>
@@ -88,7 +88,7 @@
     </p>
 
     <p>
-      Many courses at the high school and college level with titles such as <q>college algebra</q>, <q>precalculus</q>, and <q>trigonometry</q> serve other disciplines and courses other than calculus.  As such, these prerequisite classes frequently contain wide-ranging material that, while mathematically interesting and important, isn't necessary for calculus.  Perhaps because of these additional topics, certain ideas that are essential in calculus are under-emphasized or ignored.  In <pubtitle>Active Prelude to Calculus</pubtitle>, one of our top goals is to keep the focus narrow on the following most important ideas.  
+      Many courses at the high school and college level with titles such as <q>college algebra</q>, <q>precalculus</q>, and <q>trigonometry</q> serve other disciplines and courses other than calculus.  As such, these prerequisite classes frequently contain wide-ranging material that, while mathematically interesting and important, isn't necessary for calculus.  Perhaps because of these additional topics, certain ideas that are essential in calculus are under-emphasized or ignored.  In <pubtitle>Active Prelude to Calculus</pubtitle>, one of our top goals is to keep the focus narrow on the following most important ideas.
     </p>
 
     <p>
@@ -96,16 +96,16 @@
         <li>
           <p>
             <em>Functions as processes</em>.  The mathematical concept of function is sophisticated.  Understanding how a function is a special mathematical process that converts a collection of inputs to a collection of outputs is crucial for success in calculus, as calculus is the study of how functions change.
-          </p> 
+          </p>
         </li>
         <li>
           <p>
             <em>Average rate of change</em>.  The central idea in differential calculus is the instantaneous rate of change of a function, which measures how fast a function's output changes with respect to changes in the input at a particular location.  Because instantaneous rate of change is defined in terms of average rate of change, it's essential that students are comfortable and familiar with the idea, meaning, and applications of average rate of change.
           </p>
-        </li>        
+        </li>
         <li>
           <p>
-            <em>Library of basic functions</em>.  The vast majority of functions in calculus come from an algebraic combination of a collection of familiar basic functions that include power, circular, exponential, and logarithmic functions.  By developing understanding of a relatively small family of basic functions and using these along with transformations to consider larger collections of functions, we work to make the central objects of calculus more intuitive and accessible. 
+            <em>Library of basic functions</em>.  The vast majority of functions in calculus come from an algebraic combination of a collection of familiar basic functions that include power, circular, exponential, and logarithmic functions.  By developing understanding of a relatively small family of basic functions and using these along with transformations to consider larger collections of functions, we work to make the central objects of calculus more intuitive and accessible.
           </p>
         </li>
         <li>
@@ -135,7 +135,7 @@
         </li>
         <li>
           <p>
-            <em>Long-term trends, unbounded behavior, and limits</em>.  By working to study functions as objects themselves, we often focus on trends and overall behavior.  In addition to introducing the ideas of a function being increasing or decreasing, or concave up or concave down, we also focus on using algebraic approaces to comprehend function behavior where the input and/or output increase without bound.  In anticipation of calculus, we use limit notation and work to understand how this shorthand summarizes key features of functions.
+            <em>Long-term trends, unbounded behavior, and limits</em>.  By working to study functions as objects themselves, we often focus on trends and overall behavior.  In addition to introducing the ideas of a function being increasing or decreasing, or concave up or concave down, we also focus on using algebraic approaches to comprehend function behavior where the input and/or output increase without bound.  In anticipation of calculus, we use limit notation and work to understand how this shorthand summarizes key features of functions.
           </p>
         </li>
       </ul>
@@ -237,15 +237,15 @@
   <preface xml:id="preface-for-students">
     <title>Students!  Read this!</title>
     <p>
-      This book is different.  
-    </p>  
+      This book is different.
+    </p>
 
     <p>
       The text is available in three different formats:  HTML, PDF, and print, each of which is available via links on the landing page at <url href="https://activecalculus.org/">https://activecalculus.org/</url>.  The first two formats are free.  If you are going to use the book electronically, the best mode is the <url href="https://activecalculus.org/prelude/">HTML</url>.  The HTML version looks great in any browser, including on a smartphone, and the links are much easier to navigate in HTML than in PDF.  Some particular direct suggestions about using the HTML follow among the next few paragraphs; alternatively, you can <url href="http://gvsu.edu/s/14i">watch this short video from the author</url> (based on using the text <pubtitle>Active Calculus</pubtitle>, which is similar).  It is also wise to download and save the PDF, since you can use the PDF offline, while the HTML version requires an internet connection.  An inexpensive print copy is available on <url href="http://gvsu.edu/s/15y">Amazon</url>.
     </p>
 
     <p>
-      This book is intended to be read sequentially and engaged with, much more than to be used as a lookup reference.  For example, each section begins with a short introduction and a Preview Activity; you should read the short introduction and complete the Preview Activity prior to class.  Your instructor may require you to do this.  Most Preview Activities can be completed in 15-20 minutes and are intended to be accessible based on the understanding you have from preceding sections. <!-- There are not answers provided to Preview Activities because ... -->    
+      This book is intended to be read sequentially and engaged with, much more than to be used as a lookup reference.  For example, each section begins with a short introduction and a Preview Activity; you should read the short introduction and complete the Preview Activity prior to class.  Your instructor may require you to do this.  Most Preview Activities can be completed in 15-20 minutes and are intended to be accessible based on the understanding you have from preceding sections. <!-- There are not answers provided to Preview Activities because ... -->
     </p>
 
     <p>
@@ -264,7 +264,7 @@
     <p>
       You can find additional support for your work in learning calculus from the <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-">GVSU Math 201 YouTube  Channel</url> and <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGtewW75Nw7PnGNSkfqwAm3v">GVSU Math 202 YouTube Channel</url> where there are several short video tutorials for each section of the text, numbered in alignment with the textbook sections.  Math 201 corresponds to Chapters 1-4 and Math 202 to Chapters 5-8; there are about 90 videos for each, totally more than 180.
     </p>
--->    
+-->
 
     <p>
       The best way to be successful in mathematics generally and calculus specifically is to strive to make sense of the main ideas.  We make sense of ideas by asking questions, interacting with others, attempting to solve problems, making mistakes, revising attempts, and writing and speaking about our understanding.  This text has been designed to help you make sense of key ideas that are needed in calculus and to help you be well-prepared for success in calculus; we wish you the very best as you undertake the large and challenging task of doing so.
@@ -287,7 +287,7 @@
       <ul>
         <li>
           <p>
-             Students complete a Preview Activity in advance of class.  Class begins with a short debrief among peers followed by all class discussion.  (5-10 minutes) 
+             Students complete a Preview Activity in advance of class.  Class begins with a short debrief among peers followed by all class discussion.  (5-10 minutes)
           </p>
         </li>
         <li>
@@ -335,12 +335,12 @@
 -->
 
     <p>
-      The <pretext/> source code for the text can be found on <url href="https://github.com/active-calculus/prep">GitHub</url>.  If you find errors in the text or have other suggestions, you can file an issue on GitHub <!--use the <url href="http://gvsu.edu/s/0vK">Feedback link</url> in the HTML version (found at the bottom left in the main menu),--> or email the author directly.  To engage with instructors who use the text, we maintain a Google group and <url href="https://activecalculus.org/blog/" visual="activecalculus.org/blog">a blog</url>; you can request to join the Google group via the link at <url href="https://activecalculus.org/instructors/" visual="https://activecalculus.org/instructors/"> the instructors page</url>.  Finally, if you're interested in a video presentation on using the similar <pubtitle>Active Calculus</pubtitle> text, you can see this <url href="http://math.mit.edu/seminars/esme/videos/2018-10-02_Boelkins.mp4">online video presentation</url> to the <url href="http://math.mit.edu/seminars/esme/">MIT Electronic Seminar on Mathematics Education</url>; at about the 17-minute mark, the portion begins where we demonstrate features of and how to use the text. 
+      The <pretext/> source code for the text can be found on <url href="https://github.com/active-calculus/prep">GitHub</url>.  If you find errors in the text or have other suggestions, you can file an issue on GitHub <!--use the <url href="http://gvsu.edu/s/0vK">Feedback link</url> in the HTML version (found at the bottom left in the main menu),--> or email the author directly.  To engage with instructors who use the text, we maintain a Google group and <url href="https://activecalculus.org/blog/" visual="activecalculus.org/blog">a blog</url>; you can request to join the Google group via the link at <url href="https://activecalculus.org/instructors/" visual="https://activecalculus.org/instructors/"> the instructors page</url>.  Finally, if you're interested in a video presentation on using the similar <pubtitle>Active Calculus</pubtitle> text, you can see this <url href="http://math.mit.edu/seminars/esme/videos/2018-10-02_Boelkins.mp4">online video presentation</url> to the <url href="http://math.mit.edu/seminars/esme/">MIT Electronic Seminar on Mathematics Education</url>; at about the 17-minute mark, the portion begins where we demonstrate features of and how to use the text.
     </p>
 
     <p>
       Thank you for considering <pubtitle>Active Prelude to Calculus</pubtitle> as a resource to help your students develop deep understanding of the subject.  I wish you the very best in your work and hope to hear from you.
     </p>
   </preface>
-  
+
 </frontmatter>

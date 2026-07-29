@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -62,9 +62,9 @@
 					<mrow>  &amp;= f(3t-4)</mrow>
 				</md>.
 				Applying the process defined by the function <m>f</m> to the input <m>3t-4</m>, we see that
-				<me>
+				<md>
 					y = (3t-4)^2 - 1
-				</me>,
+				</md>,
 				which defines <m>y</m> as a function of <m>t</m>.
 			</p>
 
@@ -76,6 +76,7 @@
 	</p>
 
 	<xi:include href="./previews/PA-changing-composite.xml"/>
+	<xi:include href="./previews/PA-changing-composite-D.xml"/>
 
   </subsection>
 
@@ -88,10 +89,10 @@
   	<definition xml:id="D-composite-compose-functions"> <idx>composite function</idx>
   		<statement>
   			<p>
-  				If <m>f</m> and <m>g</m> are functions such that <m>g : A \to B</m> and <m>f : B \to C</m>, we define the <term>composition of <m>f</m> and <m>g</m></term> to be the new function <m>h: A \to C</m> given by 
-  				<me>
+  				If <m>f</m> and <m>g</m> are functions such that <m>g : A \to B</m> and <m>f : B \to C</m>, we define the <term>composition of <m>f</m> and <m>g</m></term> to be the new function <m>h: A \to C</m> given by
+  				<md>
   					h(t) = f(g(t))
-  				</me>.
+  				</md>.
   				We also sometimes use the notation <m>h = f \circ g</m>, where <m>f \circ g</m> is the single function defined by <m>(f \circ g)(t) = f(g(t))</m>.
   			</p>
   		</statement>
@@ -119,9 +120,9 @@
 
 	<p>
 		The Celsius and Fahrenheit temperature scales are connected by a linear function.  Indeed, the function that converts Fahrenheit to Celsius is
-        <me>
+        <md>
         	C = G(F) = \frac{5}{9}(F-32)
-        </me>.
+        </md>.
         For instance, a Fahrenheit temperature of <m>32</m> degrees corresponds to <m>C = G(32) = 0</m> degrees Celsius.
 	</p>
 
@@ -134,9 +135,9 @@
 
 	  <p>
 	    Recall that the average rate of change of a function <m>f</m> on the interval <m>[a,b]</m> is given by
-	    <me>
+	    <md>
 	      AV_{[a,b]} = \frac{f(b) - f(a)}{b-a}
-	    </me>.
+	    </md>.
 	    In <xref ref="F-composite-aroc-a-b">Figure</xref>, we see the familiar representation of <m>AV_{[a,b]}</m> as the slope of the line joining the points <m>(a,f(a))</m> and <m>(b,f(b))</m> on the graph of <m>f</m>.  In the study of calculus, we progress from the <em>average rate of change on an interval</em> to the <em>instantaneous rate of change of a function at a single value</em>; the core idea that allows us to move from an <em>average</em> rate to an <em>instantaneous</em> one is letting the interval <m>[a,b]</m> shrink in size.
 	  </p>
 
@@ -155,9 +156,9 @@
 
 	  <p>
 	    To think about the interval <m>[a,b]</m> shrinking while <m>a</m> stays fixed, we often change our perspective and think of <m>b</m> as <m>b = a + h</m>, where <m>h</m> measures the horizontal difference from <m>b</m> to <m>a</m>.  This allows us to eventually think about <m>h</m> getting closer and closer to <m>0</m> (without every actually equalling <m>0</m>), and in that context we consider the equivalent expression
-	    <me>
-	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{a+h-a} = \frac{f(a+h) - f(a)}{h} 
-	    </me>
+	    <md>
+	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{a+h-a} = \frac{f(a+h) - f(a)}{h}
+	    </md>
 	    for the average rate of change of <m>f</m> on	<m>[a,a+h]</m>.
 	  </p>
 
@@ -165,7 +166,7 @@
 	    In this most recent expression for <m>AV_{[a,a+h]}</m>,
 	    we see the important role that the composite function
 	    <q><m>f(a+h)</m></q> plays.  In particular, to understand the expression for <m>AV_{[a,a+h]}</m> we need to evaluate <m>f</m> at the quantity <m>(a+h)</m>.
-	  </p> 
+	  </p>
 
 	  <example xml:id="ex-composite-aroc-simplify">
 	  	<statement>
@@ -175,14 +176,14 @@
 	  	</statement>
 	  	<solution>
 	  		<p>
-	  			By definition, we know that 
-	  			<me>
+	  			By definition, we know that
+	  			<md>
 	  				AV_{[3,3+h]} = \frac{f(3+h)-f(3)}{h}.
-	  			</me>
+	  			</md>
 	  			Using the formula for <m>f</m>, we see that
-	  			<me>
+	  			<md>
 	  				AV_{[3,3+h]} = \frac{(3+h)^2-(3)^2}{h}.
-	  			</me>
+	  			</md>
 	  			Expanding the numerator and combining like terms, it follows that
 				<md>
 					<mrow>AV_{[3,3+h]} &amp;= \frac{(9+6h+h^2)-9}{h}</mrow>
@@ -196,19 +197,19 @@
 				Hence, <m>AV_{[3,3+h]} = 6+h</m>, which is the average rate of change of <m>f(x) = x^2</m> on the interval <m>[3,3+h]</m>.<fn>Note that <m>6 + h</m> is a <em>linear</em> function of <m>h</m>.  This computation is connected to the observation we made in <xref ref="T-PA-changing-quadratic-AVs-complete">Table</xref> regarding how there's a linear aspect to how the average rate of change of a quadratic function changes as we modify the interval.</fn>
 	  		</p>
 	  	</solution>
-	  </example> 
+	  </example>
 
 	<xi:include href="./activities/act-changing-composite-aroc.xml"/>
 
 	<p>
-		In <xref ref="act-changing-composite-aroc">Activity</xref>, we see an important setting where algebraic simplification plays a crucial role in calculus.  Because the expresssion 
-		<me>
-	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
-	    </me>
+		In <xref ref="act-changing-composite-aroc">Activity</xref>, we see an important setting where algebraic simplification plays a crucial role in calculus.  Because the expresssion
+		<md>
+	      AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h}
+	    </md>
 	    always begins with an <m>h</m> in the denominator, in order to precisely understand how this quantity behaves when <m>h</m> gets close to <m>0</m>, a simplified version of this expression is needed.  For instance, as we found in part (b) of <xref ref="act-changing-composite-aroc">Activity</xref>, it's possible to show that for <m>f(x) = 2x^2 - 3x + 1</m>,
-	    <me>
+	    <md>
 	    	AV_{[1,1+h]} = 2h + 1
-	    </me>,
+	    </md>,
 	    which is a much simpler expression to investigate.
 	</p>
 
@@ -231,9 +232,9 @@
   		<li>
   			<p>
   				Because the expression <m>AV_{[a,a+h]}</m> is defined by
-  				<me>
-	      			AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h} 
-	    		</me>
+  				<md>
+	      			AV_{[a,a+h]} = \frac{f(a+h) - f(a)}{h}
+	    		</md>
 	    		and this includes the quantity <m>f(a+h)</m>, the average rate of change of a function on the interval <m>[a,a+h]</m> always involves the evaluation of a composite function expression.  This idea plays a crucial role in the study of calculus.
   			</p>
   		</li>

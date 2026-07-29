@@ -1,0 +1,75 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<p>
+  A drug company estimates that to produce a new drug, it will cost <m>$5</m> million in startup resources, and that once they reach production, each gram of the drug will cost <m>$2500</m> to make.
+</p>
+<aside><title>Instructions for entering large numbers</title>
+  Throughout this entire problem, don't use commas inside of large numbers.  If you wanted to enter "1 million", you would type <m>1000000</m>, not <m>1{,}000{,}000</m>. Also don't use any <q><m>$</m>.</q>
+</aside>
+
+<ol marker="a.">
+  <li>
+    <p>
+      Determine a formula for a function <m>C(q)</m> that models the cost of producing <m>q</m> grams of the drug.<br/>
+      <answer name="Cofq"><label><m>C(q)=</m></label>5000000 + 2500q</answer>
+    </p>
+    <p>
+      <answer><choiceInput inline><label>What familiar kind of function is <m>C</m>?</label><choice credit="1">linear</choice><choice>exponential</choice><choice>degree <m>3</m> polynomial</choice><choice>quadratic</choice><choice>sinusoidal</choice></choiceInput></answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      The drug company needs to sell the drug at a price of more than <m>$2500</m> per gram in order to at least break even.  To investigate how they might set prices, they first consider what their <em>average</em> cost per gram is.  </p>
+    <p>
+      <answer><label>What is the <em>total</em> cost of producing <m>1000</m> grams?</label>5000000+2500*1000</answer>
+    </p>
+    <p>
+      <answer><label>What is the <em>average</em> cost per gram to produce <m>1000</m> grams?</label>(5000000+2500*1000)/1000</answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      <answer><label>What is the <em>total</em> cost of producing <m>10000</m> grams?</label>5000000+2500*10000</answer>
+    </p>
+    <p>
+      <answer><label>What is the <em>average</em> cost per gram to produce <m>10000</m> grams?</label>(5000000+2500*10000)/10000</answer>
+    </p>
+  </li>
+  <li>
+    <p>
+      Our computations in b. and c. naturally lead us to define the <q>average cost per gram</q> function, <m>A(q)</m>, whose output is the average cost of producing <m>q</m> grams of the drug.</p>
+    <p sectionWideCheckWork colorAnswersSeparately>
+      The average cost per gram of producing <m>q</m> grams is the <answer><choiceInput inline><shortDescription>numerator of A of q</shortDescription><choice>cost per gram</choice><choice credit="1">total cost</choice><choice>number of grams</choice></choiceInput></answer> to produce <m>q</m> grams divided by the <answer><choiceInput inline><shortDescription>denominator of A of q</shortDescription><choice>cost per gram <m>A(q)</m></choice><choice>total cost <m>C(q)</m></choice><choice credit="1">number of grams <m>q</m></choice></choiceInput></answer>, which means that <answer><choiceInput inline><shortDescription>formula for A of q</shortDescription><choice><m>A(q)=C(q)</m></choice><choice><m>A(q)=q</m></choice><choice><m>\displaystyle A(q)=\frac{q}{C(q)}</m></choice><choice credit="1"><m>\displaystyle A(q)=\frac{C(q)}{q}</m></choice></choiceInput></answer>, and from our work in part a, that is the same as <m>A(q)=</m><mathInput disabled><shortDescription>formula for A of q using C of q</shortDescription><conditionalContent condition="$Cofq.creditAchieved=1"><m>\frac{5000000+2500q}{q}</m></conditionalContent></mathInput>. Dividing both terms in the numerator by <m>q</m> results in an equivalent form, <m>A(q)=</m><mathInput disabled><shortDescription>another formula for A of q using C of q</shortDescription><conditionalContent condition="$Cofq.creditAchieved=1"><m>2500+\frac{5000000}{q}</m></conditionalContent></mathInput>.
+    </p>
+  </li>
+  <li>
+    <p>
+      What can you say about the long-range behavior of <m>A</m>?
+    </p>
+    <p>
+      <answer><label>As <m>q\to \infty</m>, the function <m>A(q) \to</m></label>2500</answer>
+    </p>
+    <p sectionWideCheckWork colorAnswersSeparately>
+      In the context of this scenario, this means <answer><choiceInput inline><label>that the company should produce</label><choice><m>1000</m> grams</choice><choice><m>10000</m> grams</choice><choice credit="1">as many grams as possible</choice><choice>as few grams as possible</choice></choiceInput></answer> so that their average cost per gram is as small as possible.
+    </p>
+  </li>
+</ol>
+
+<conclusion>
+  This activity is based on p. 457ff in <em>Functions Modeling Change</em>, 5th edition, by Connally et al.
+</conclusion>
+

@@ -1,0 +1,44 @@
+<diagram xmlns="https://prefigure.org" width="350" height="200" margins="5">
+  <definition>p=8</definition>
+  <definition>r=p/(2*pi)</definition>
+  <definition>f(x)=2+r*cos(x/p*2*pi)</definition>
+
+  <coordinates bbox="[-2,-0.5,2*p,4]">
+    <axes id="axes" decorations="no"
+	  xlabel="d" ylabel="h"
+	  vticks="(2,1,2)" hticks="(p,1,p)"/>
+
+    <line p1="(0,2)" p2="(bbox[2],2)" stroke="green" tactile-dash="9 9"/>
+    <line p1="(p/2,2)" p2="(p/2,f(p/2))" stroke="green" tactile-dash="9 9"/>
+    <line p1="(p,2)" p2="(p,f(p))" stroke="green" tactile-dash="9 9"/>
+
+    <graph function="f"/>
+    <repeat parameter="k=0..8">
+      <point p="(k*p/4, f(k*p/4))"/>
+    </repeat>
+
+    <group outline="tactile">
+      <vector v="(p,0)" tail="(0, 0.25)" thickness="2"/>
+      <vector v="(-p,0)" tail="(p, 0.25)" thickness="2"/>
+    </group>
+
+    <label p="(p,0)" alignment="ha" offset="(0,-8)">
+      <m>p</m>
+    </label>
+    <label p="(0,2)" alignment="va" offset="(-8,0)">
+      <m>m</m>
+    </label>
+    <label p="(p/2,(2+f(p/2))/2)" alignment="east">
+      <m>a</m>
+    </label>
+    <label p="(p,(2+f(p))/2)" alignment="east">
+      <m>a</m>
+    </label>
+    <label p="(p,f(p))" alignment="ne" tactile-offset="(12,4)">
+      <m>(p,m+a)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

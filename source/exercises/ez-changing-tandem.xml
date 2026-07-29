@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -34,13 +34,13 @@
       <figure xml:id="F-ez-chiminea">
         <caption>A spherical tank with a cylindrical chimney.</caption>
         <image width="50%" source="images/tandem-ez-chiminea"><description><p>A spherical tank with a cylindrical chimney.</p>
-        </description></image>   
+        </description></image>
       </figure>
 
       <p>
         Let <m>V</m> denote the total volume of water (in cubic feet) in the tank at any time <m>t</m> (in minutes), and <m>h</m> the depth of the water (in feet) at time <m>t</m>.
-      </p> 
-  
+      </p>
+
       <p>
         <ol marker="a.">
           <li>
@@ -89,8 +89,8 @@
 
       <p>
         Let <m>V</m> denote the total volume of water (in cubic feet) in the tank at any time <m>t</m> (in minutes), and <m>h</m> the depth of the water (in feet) at given time <m>t</m>.
-      </p> 
-  
+      </p>
+
       <p>
         <ol marker="a.">
           <li>
@@ -175,7 +175,7 @@
           </li>
         </ol>
       </p>
-      
+
     </statement>
     <answer>
       <p>
@@ -184,7 +184,7 @@
     </answer>
     <solution>
       <p><ol marker="a."><li><p>Describe the car based on the graph: on intervals where <m>s</m> is increasing, the car moves forward; where <m>s</m> is flat, the car is stopped; where <m>s</m> decreases, the car is in reverse. The slope (steepness) indicates speed.</p></li><li><p>From the graph, <m>s(2)</m> and <m>s(10)</m> can be read. The distance traveled between <m>t = 2</m> and <m>t = 10</m> is <m>|s(10) - s(2)|</m> thousand feet.</p></li><li><p>If the position graph is always non-decreasing (never moves backward), the car never goes in reverse. A graph that decreases (negative slope) over some interval would indicate reverse motion.</p></li><li><p>For the described motion: <m>t = 0</m>: <m>s = 0</m>. At <m>t = 5</m>: <m>s = 1000 \times 5 = 5000</m> ft (i.e., <m>5</m> thousand ft). From <m>t = 5</m> to <m>t = 7</m>: car is stopped, so <m>s = 5</m>. At <m>t = 7</m>: U-turn, moving at <m>-800</m> ft/min. At <m>t = 12</m>: <m>s = 5000 - 800 \times 5 = 5000 - 4000 = 1000</m> ft (i.e., <m>1</m> thousand ft). Plot a line of slope <m>1</m> from <m>(0,0)</m> to <m>(5,5)</m>, horizontal from <m>(5,5)</m> to <m>(7,5)</m>, and a line of slope <m>-0.8</m> from <m>(7,5)</m> to <m>(12,1)</m>.</p></li></ol></p>
-    </solution>    
+    </solution>
   </exercise>
 
 </exercises>

@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -35,13 +35,13 @@
   </objectives>
 
   <subsection><title>Introduction</title>
-  	
+
 	<sidebyside valign="middle" widths="55% 40%" margins="0%">
 		<p>
-			In <xref ref="act-trig-right-sine-cosine-ratio">Activity</xref>, we determined the distance between two points <m>A</m> and <m>B</m> on opposite sides of a river by knowing a length along one shore of the river and the angle formed between a point downstream and the point on the opposite shore, as pictured in <xref ref="F-right-act-river-rev">Figure</xref>. By first using the cosine of the angle, we determined the value of <m>z</m> and from there were able to use the sine of the angle to find <m>w</m>, the river's width, which turns out to be 
-			<me>
+			In <xref ref="act-trig-right-sine-cosine-ratio">Activity</xref>, we determined the distance between two points <m>A</m> and <m>B</m> on opposite sides of a river by knowing a length along one shore of the river and the angle formed between a point downstream and the point on the opposite shore, as pictured in <xref ref="F-right-act-river-rev">Figure</xref>. By first using the cosine of the angle, we determined the value of <m>z</m> and from there were able to use the sine of the angle to find <m>w</m>, the river's width, which turns out to be
+			<md>
 				w = 50 \cdot \frac{\sin(56.4)}{\cos(56.4)}
-			</me>.
+			</md>.
 		</p>
 
 		<figure xml:id="F-right-act-river-rev">
@@ -62,14 +62,15 @@
 		<statement>
 			<p>
 				For any real number <m>t</m> for which <m>\cos(t) \ne 0</m>, we define the <term>tangent of <m>t</m></term>, denoted <m>\tan(t)</m>, by
-			<me>
+			<md>
 				\tan(t) = \frac{\sin(t)}{\cos(t)}
-			</me>.
+			</md>.
 			</p>
 		</statement>
 	</definition>
 
-	<xi:include href="./previews/PA-trig-tangent.xml"/> 
+	<xi:include href="./previews/PA-trig-tangent.xml"/>
+	<xi:include href="./previews/PA-trig-tangent-D.xml"/>
 
   </subsection>
 
@@ -95,14 +96,14 @@
 
   	<p>
   		From the viewpoint of <xref ref="F-tan-defn-unit-circle">Figure</xref>, as the point corresponding to angle <m>t</m> traverses the circle and generates the point <m>(a,b)</m>, we know <m>\cos(t) = a</m> and <m>\sin(t) = b</m>, and therefore the tangent function tracks the ratio of these two quantities, and is given by
-  		<me>
+  		<md>
   			\tan(t) = \frac{\sin(t)}{\cos(t)} = \frac{b}{a}
-  		</me>.
+  		</md>.
   		From the perspective of any right triangle (not necessarily in the unit circle) with hypotenuse <q>hyp</q> and legs
   		<q>adj</q> and <q>opp</q> that are respectively adjacent and opposite the known angle <m>\theta</m>, as seen in <xref ref="F-tan-right-triangle-TOA">Figure</xref>, we know that <m>\sin(\theta) = \frac{\text{opp}}{\text{hyp}}</m> and <m>\cos(\theta) = \frac{\text{adj}}{\text{hyp}}</m>.  Substituting these expressions for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> in the rule for the tangent function, we see that
-  		<me>
+  		<md>
   			\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{\frac{\text{opp}}{\text{hyp}}}{\frac{\text{adj}}{\text{hyp}}} = \frac{\text{opp}}{\text{adj}}
-  		</me>.
+  		</md>.
   	</p>
 
   	<p>
@@ -115,9 +116,9 @@
 
 	  <p>
 	  	Because the tangent function is defined in terms of the sine and cosine functions, its values and behavior are completely determined by those two functions.  To begin, we know the value of <m>\tan(t)</m> for every special angle <m>t</m> on the unit circle that we identified for the sine and cosine functions.  For instance, we know that
-	  	<me>
+	  	<md>
 	  		\tan \left( \frac{\pi}{6} \right) = \frac{ \sin \left( \frac{\pi}{6} \right) }{ \cos \left( \frac{\pi}{6} \right) } = \frac{ \frac{1}{2} }{ \frac{\sqrt{3}}{2} } = \frac{1}{\sqrt{3}}
-	  	</me>.
+	  	</md>.
 	  	Executing similar computations for every familiar special angle on the unit circle, we find the results shown in <xref ref="T-tangent-values">Table</xref> and <xref ref="T-tangent-values-2">Table</xref>.  We also note that anywhere <m>\cos(t) = 0</m>, the value of <m>\tan(t)</m> is undefined.  We record such instances in the table by writing <q>u</q>.
 	  </p>
 
@@ -134,7 +135,7 @@
 								<cell><m>\frac{2\pi}{3}</m></cell>
 								<cell><m>\frac{3\pi}{4}</m></cell>
 								<cell><m>\frac{5\pi}{6}</m></cell>
-								<cell><m>\pi</m></cell>								
+								<cell><m>\pi</m></cell>
 							</row>
 							<row halign="center" bottom="minor">
 								<cell><m>\sin(t)</m></cell>
@@ -171,7 +172,7 @@
 								<cell><m>-1</m></cell>
 								<cell><m>-\frac{1}{\sqrt{3}}</m></cell>
 								<cell><m>0</m></cell>
-							</row>							
+							</row>
 						</tabular>
 					</table>
 
@@ -179,7 +180,7 @@
 						<title>Additional values of the sine, cosine, and tangent functions at special points on the unit circle.</title>
 						<tabular>
 							<row halign="center" bottom="minor">
-								<cell><m>t</m></cell>		
+								<cell><m>t</m></cell>
 								<cell><m>\frac{7\pi}{6}</m></cell>
 								<cell><m>\frac{5\pi}{4}</m></cell>
 								<cell><m>\frac{4\pi}{3}</m></cell>
@@ -187,7 +188,7 @@
 								<cell><m>\frac{5\pi}{3}</m></cell>
 								<cell><m>\frac{7\pi}{4}</m></cell>
 								<cell><m>\frac{11\pi}{6}</m></cell>
-								<cell><m>2\pi</m></cell>						
+								<cell><m>2\pi</m></cell>
 							</row>
 							<row halign="center" bottom="minor">
 								<cell><m>\sin(t)</m></cell>
@@ -221,27 +222,27 @@
 								<cell><m>-1</m></cell>
 								<cell><m>-\frac{1}{\sqrt{3}}</m></cell>
 								<cell><m>0</m></cell>
-							</row>							
+							</row>
 						</tabular>
-					</table>					
+					</table>
 
 		<p>
-			<xref ref="T-tangent-values">Table</xref> and <xref ref="T-tangent-values-2">Table</xref> helps us identify trends in the tangent function.  For instance, we observe that the sign of <m>\tan(t)</m> is positive in Quadrant I, negative in Quadrant II, positive in Quadrant III, and negative in Quadrant IV.  This holds because the sine and cosine functions have the same sign in the first and third quadrants, and opposite signs in the other two quadrants.  
+			<xref ref="T-tangent-values">Table</xref> and <xref ref="T-tangent-values-2">Table</xref> helps us identify trends in the tangent function.  For instance, we observe that the sign of <m>\tan(t)</m> is positive in Quadrant I, negative in Quadrant II, positive in Quadrant III, and negative in Quadrant IV.  This holds because the sine and cosine functions have the same sign in the first and third quadrants, and opposite signs in the other two quadrants.
 		</p>
 
 		<p>
 			In addition, we observe that as <m>t</m>-values in the first quadrant get closer to <m>\frac{\pi}{2}</m>, <m>\sin(t)</m> gets closer to <m>1</m>, while <m>\cos(t)</m> gets closer to <m>0</m> (while being always positive).  Noting that <m>\frac{\pi}{2} \approx 1.57</m>, we observe that
-			<me>
+			<md>
 				\tan(1.47) = \frac{\sin(1.47)}{\cos(1.47)} \approx \frac{0.995}{0.101} = 9.887
-			</me>
+			</md>
 			and
-			<me>
+			<md>
 				\tan(1.56) = \frac{\sin(1.56)}{\cos(1.56)} \approx \frac{0.9994}{0.0108} = 92.6205
-			</me>.
+			</md>.
 			Because the ratio of numbers closer and closer to <m>1</m> divided by numbers closer and closer to <m>0</m> (but positive) increases without bound, this means that <m>\tan(t)</m> increases without bound as <m>t</m> approaches <m>\frac{\pi}{2}</m> from the left side.  Once <m>t</m> is slightly greater than <m>\frac{\pi}{2}</m> in Quadrant II, the value of <m>\sin(t)</m> stays close to <m>1</m>, but now the value of <m>\cos(t)</m> is negative (and close to zero).  For instance, <m>\cos(1.58) \approx -0.0092</m>.  This makes the value of <m>\tan(t)</m> decrease without bound (negative and getting further away from <m>0</m>) for <m>t</m> approaching <m>\frac{\pi}{2}</m> from the right side, and results in <m>h(t) = \tan(t)</m> having a vertical asymptote at <m>t = \frac{\pi}{2}</m>.  The periodicity and sign behaviors of <m>\sin(t)</m> and <m>\cos(t)</m> mean this asymptotic behavior of the tangent function will repeat.
 		</p>
 
-		<p>	
+		<p>
 			Plotting the data in the table along with the expected asymptotes and connecting the points intuitively, we see the graph of the tangent function in <xref ref="F-tangent-plot">Figure</xref>.
 		</p>
 
@@ -258,7 +259,7 @@
 		<assemblage xml:id="asm-tangent-properties">
 			<title>Properties of the tangent function</title>
 			<p>
-				For the function <m>h(t) = \tan(t)</m>, 
+				For the function <m>h(t) = \tan(t)</m>,
 				<ul>
 					<li>
 						<p>
@@ -310,15 +311,15 @@
   		</statement>
   		<solution>
   			<p>
-  				Using the perspective that <m>\tan(\theta) = \frac{\text{opp}}{\text{adj}}</m> in a right triangle, in this context we have 
-  				<me>
-  					\tan(56.4^\circ) = \frac{w}{50} 
-  				</me>
+  				Using the perspective that <m>\tan(\theta) = \frac{\text{opp}}{\text{adj}}</m> in a right triangle, in this context we have
+  				<md>
+  					\tan(56.4^\circ) = \frac{w}{50}
+  				</md>
   				and thus <m>w = 50\tan(56.4)</m> is the exact width of the river.  Using a computational device, we find that <m>w \approx 75.256</m>.
   			</p>
   		  	<p>
   				Once we know the river's width, we can use the Pythagorean theorem or the sine function to determine the distance from <m>P</m> to <m>A</m>, at which point all <m>6</m> parts of the triangle are known.
- 		 	</p>	
+ 		 	</p>
   		</solution>
   	</example>
 
@@ -330,7 +331,7 @@
 
   	<xi:include href="./activities/act-trig-tangent-two-towers.xml"/>
 
-	<xi:include href="./activities/act-trig-tangent-mountain.xml"/> 
+	<xi:include href="./activities/act-trig-tangent-mountain.xml"/>
 
   </subsection>
 
@@ -341,9 +342,9 @@
   		<li>
   			<p>
   				The tangent function is defined defined to be the ratio of the sine and cosine functions according to the rule
-  				<me>
+  				<md>
   					\tan(t) = \frac{\sin(t)}{\cos(t)}
-  				</me>
+  				</md>
   				for all values of <m>t</m> for which <m>\cos(t) \ne 0</m>.
   			</p>
   		</li>
@@ -355,9 +356,9 @@
   		<li>
   			<p>
   				The tangent function finds some of its most important applications in the setting of right triangles where one leg of the triangle is known and one of the non-right angles is known.  Computing the tangent of the known angle, say <m>\alpha</m>, and using the fact that
-  				<me>
+  				<md>
   					\tan(\alpha) = \frac{\text{opp}}{\text{adj}}
-  				</me>
+  				</md>
   				we can then find the missing leg's length in terms of the other and the tangent of the angle.
   			</p>
   		</li>

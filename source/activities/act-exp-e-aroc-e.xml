@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,35 +15,39 @@
   <activity xml:id="act-exp-e-aroc">
     <introduction>
       <p>
-			Recall from <xref ref="sec-changing-aroc">Section</xref> that the average rate of change of a function <m>f</m> on an interval <m>[a,b]</m> is 
-			<me>
+			Recall from <xref ref="sec-changing-aroc">Section</xref> that the average rate of change of a function <m>f</m> on an interval <m>[a,b]</m> is
+			<md>
 				AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
-			</me>.
+			</md>.
 			In <xref ref="sec-changing-composite">Section</xref>, we also saw that if we instead think of the average rate of change of <m>f</m> on the interval <m>[a,a+h]</m>, the expression changes to
-			<me>
+			<md>
 				AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}
-			</me>.
+			</md>.
 			In this activity we explore the average rate of change of <m>f(t) = e^t</m> near the points where <m>t = 1</m> and <m>t = 2</m>.
 		</p>
       <p>
-			In a new <em>Desmos</em> worksheet, let <m>f(t) = e^t</m> and define the function <m>A</m> by the rule 
-			<me>
+			In a new <em>Desmos</em> worksheet, let <m>f(t) = e^t</m> and define the function <m>A</m> by the rule
+			<md>
 				A(h) = \frac{f(1+h)-f(1)}{h}
-			</me>.
+			</md>.
 		</p>
       <p/>
     </introduction>
     <task workspace="3cm" xml:id="act-exp-e-aroc-task-0">
       <statement>
         <p>
-						What is the meaning of <m>A(0.5)</m> in terms of the function <m>f</m> and its graph?		
+						What is the meaning of <m>A(0.5)</m> in terms of the function <m>f</m> and its graph?
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>A(0.5)</m> gives the average rate of change of <m>f(t) = e^t</m> on the interval <m>[1, 1.5]</m>, which is the slope of the line between the points <m>(1,f(1))</m> and <m>(1.5,f(1.5))</m>.
+        </p>
+      </answer>
       <solution>
         <p>
-          The function <m>A</m> evaluated at <m>h = 0.5</m> gives the average rate of change of <m>f(t) = e^t</m> on the interval <m>[1, 1.5]</m>.
+          The function <m>A</m> evaluated at <m>h = 0.5</m> gives the average rate of change of <m>f(t) = e^t</m> on the interval <m>[1, 1.5]</m>. This is the slope of the line between the points <m>(1,f(1))</m> and <m>(1.5,f(1.5))</m>.
         </p>
       </solution>
     </task>
@@ -54,7 +58,38 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <tabular>
+          <row header="yes" bottom="minor">
+            <cell><m>h</m></cell>
+            <cell><m>A(h)</m></cell>
+          </row>
+          <row>
+            <cell><m>0.01</m></cell>
+            <cell><m>2.7319</m></cell>
+          </row>
+          <row>
+            <cell><m>0.001</m></cell>
+            <cell><m>2.7196</m></cell>
+          </row>
+          <row>
+            <cell><m>0.0001</m></cell>
+            <cell><m>2.7184</m></cell>
+          </row>
+          <row>
+            <cell><m>-0.0001</m></cell>
+            <cell><m>2.7181</m></cell>
+          </row>
+          <row>
+            <cell><m>-0.001</m></cell>
+            <cell><m>2.7169</m></cell>
+          </row>
+          <row>
+            <cell><m>-0.01</m></cell>
+            <cell><m>2.7047</m></cell>
+          </row>
+        </tabular>
+      </answer>
       <solution>
         <tabular>
           <row header="yes" bottom="minor">
@@ -62,28 +97,28 @@
             <cell><m>A(h)</m></cell>
           </row>
           <row>
-            <cell><m>0.2</m></cell>
-            <cell><m>3.010</m></cell>
-          </row>
-          <row>
-            <cell><m>0.1</m></cell>
-            <cell><m>2.859</m></cell>
-          </row>
-          <row>
             <cell><m>0.01</m></cell>
-            <cell><m>2.732</m></cell>
+            <cell><m>2.7319</m></cell>
           </row>
           <row>
             <cell><m>0.001</m></cell>
-            <cell><m>2.720</m></cell>
+            <cell><m>2.7196</m></cell>
           </row>
           <row>
             <cell><m>0.0001</m></cell>
-            <cell><m>2.718</m></cell>
+            <cell><m>2.7184</m></cell>
           </row>
           <row>
-            <cell><m>0.00001</m></cell>
-            <cell><m>2.718</m></cell>
+            <cell><m>-0.0001</m></cell>
+            <cell><m>2.7181</m></cell>
+          </row>
+          <row>
+            <cell><m>-0.001</m></cell>
+            <cell><m>2.7169</m></cell>
+          </row>
+          <row>
+            <cell><m>-0.01</m></cell>
+            <cell><m>2.7047</m></cell>
           </row>
         </tabular>
       </solution>
@@ -95,7 +130,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          As <m>h</m> gets smaller and smaller, the value of <m>A(h)</m> approaches the value of <m>e</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           As <m>h</m> gets smaller and smaller, the value of <m>A(h)</m> approaches the value of <m>e</m>.
@@ -108,7 +147,11 @@
 						Explain why the following sentence makes sense: <q>The function <m>e^t</m> is increasing at an average rate that is about the same as its value on small intervals near <m>t = 1</m>.</q></p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The statement makes sense because the rate of change on small intervals near <m>t = 1</m> is close to the value of <m>e^1 = e</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The statement makes sense because the rate of change on small intervals near <m>t = 1</m> is close to the value of <m>e^1 = e</m>.
@@ -118,26 +161,24 @@
     <task workspace="5cm" xml:id="act-exp-e-aroc-task-4">
       <statement>
         <p>
-						Adjust your definition of <m>A</m> in <em>Desmos</em> by changing <m>1</m> to <m>2</m> so that 
-						<me>
+						Adjust your definition of <m>A</m> in <em>Desmos</em> by changing <m>1</m> to <m>2</m> so that
+						<md>
 							A(h) = \frac{f(2+h)-f(2)}{h}
-						</me>.
+						</md>.
 						How does the value of <m>A(h)</m> compare to <m>f(2)</m> for small values of <m>h</m>?
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The value of <m>A(h)</m> near <m>h = 0</m> appears to be the same as the value of <m>f(2) = e^2</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           The value of <m>A(h)</m> near <m>h = 0</m> appears to be the same as the value of <m>f(2) = e^2</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

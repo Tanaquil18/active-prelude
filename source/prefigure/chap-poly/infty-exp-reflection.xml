@@ -1,0 +1,28 @@
+<graphics id="figure" width="250" height="250" margins="5">
+  <definition>f(x)=e^x</definition>
+  <definition>g(x)=1/f(x)</definition>
+
+  <coordinates bbox="[-3,-2,3,10]">
+    <grid rx="(-3,1,3)" ry="(-2,2,10)"/>
+    <axes decorations="no"
+	  hticks="(-2,1,2)" vticks="(-2,2,10)"
+	  vlabels="(-2,2,8)" hlabels="(-2,2,2)"
+	  xlabel="t" ylabel="y"/>
+
+    <graph function="f" />
+    <graph function="g" stroke="green" tactile-dash="9 9" />
+
+    <label p="(1.5,3)" alignment="east" clear-background="yes">
+      <m>y=e^t</m>
+    </label>
+    <label p="(-1.5,3)" alignment="west" clear-background="yes">
+      <m>y=e^{-t}</m>
+    </label>
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

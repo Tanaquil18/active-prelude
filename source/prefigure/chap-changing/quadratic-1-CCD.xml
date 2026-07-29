@@ -1,0 +1,20 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="[5,5,5,5]">
+  <coordinates bbox="[-3,-3,7,7]">
+    <group>
+      <grid />
+      <axes id="axes" xlabel="x" ylabel="y" decorations="no"/>
+    </group>
+
+    <definition>p(x)=-3*(x-1)^2/4+6</definition>
+
+    <graph function="p" />
+
+    <point p="(0,p(0))" />
+
+    <label p="(3.25,4)" alignment="ne" clear-background="yes">
+      <m>h(x)</m>
+    </label>
+
+  </coordinates>
+
+</diagram>

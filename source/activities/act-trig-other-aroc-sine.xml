@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -19,9 +19,9 @@
 		</p>
       <p>
 			Recall that for any function <m>f</m> on an interval <m>[a,a+h]</m>, its average rate of change is
-			<me>
+			<md>
 				AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}
-			</me>.
+			</md>.
 		</p>
       <p/>
     </introduction>
@@ -32,7 +32,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <m>AV_{[a,a+h]} = \dfrac{\sin(a+h) - \sin(a)}{h}</m>
+        </p>
+      </answer>
       <solution>
         <p>
           <m>AV_{[a,a+h]} = \dfrac{\sin(a+h) - \sin(a)}{h}</m>
@@ -46,7 +50,7 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\sin(a+h) = \sin(a)\cos(h) + \cos(a)\sin(h)</m></p></answer>
       <solution>
         <p>
           Using the sum identity: <m>\sin(a+h) = \sin(a)\cos(h) + \cos(a)\sin(h)</m>.
@@ -56,14 +60,22 @@
     <task workspace="6cm" xml:id="act-trig-other-aroc-sine-task-2">
       <statement>
         <p>
-						Explain why your work in (a) and (b) together with some algebra shows that 
-						<me>
+						Explain why your work in (a) and (b) together with some algebra shows that
+						<md>
 							AV_{[a,a+h]} = \sin(a) \cdot \frac{\cos(h)-1}{h} - \cos(a) \cdot \frac{\sin(h)}{h}
-						</me>.
+						</md>.
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <md>
+            <mrow>AV_{[a,a+h]} &amp;= \frac{\sin(a)\cos(h) + \cos(a)\sin(h) - \sin(a)}{h}</mrow>
+            <mrow>&amp;= \frac{\sin(a)(\cos(h)-1) + \cos(a)\sin(h)}{h}</mrow>
+            <mrow>&amp;= \sin(a) \cdot \frac{\cos(h)-1}{h} + \cos(a) \cdot \frac{\sin(h)}{h}</mrow>
+          </md>
+        </p>
+      </answer>
       <solution>
         <p>
           Substituting into the average rate of change:
@@ -79,26 +91,24 @@
     <task workspace="6cm" xml:id="act-trig-other-aroc-sine-task-3">
       <statement>
         <p>
-						In calculus, we move from <em>average</em> rate of change to <em>instantaneous</em> rate of change by letting <m>h</m> approach <m>0</m> in the expression for average rate of change.  Using a computational device in radian mode, investigate the behavior of 
-						<me>
+						In calculus, we move from <em>average</em> rate of change to <em>instantaneous</em> rate of change by letting <m>h</m> approach <m>0</m> in the expression for average rate of change.  Using a computational device in radian mode, investigate the behavior of
+						<md>
 							\frac{\cos(h)-1}{h}
-						</me>
+						</md>
 						as <m>h</m> gets close to <m>0</m>.  What happens?  Similarly, how does <m>\frac{\sin(h)}{h}</m> behave for small values of <m>h</m>?  What does this tell us about <m>AV_{[a,a+h]}</m> for the sine function as <m>h</m> approaches <m>0</m>?
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          As <m>h</m> approaches 0, the expression <m>\dfrac{\cos(h)-1}{h}</m> approaches <m>0</m>, and <m>\dfrac{\sin(h)}{h}</m> approaches <m>1</m>.  Therefore <m>AV_{[a,a+h]}</m> approaches <m>\sin(a) \cdot 0 + \cos(a) \cdot 1 = \cos(a)</m>.  This tells us that the instantaneous rate of change of the sine function at <m>a</m> is <m>\cos(a)</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           As <m>h</m> approaches 0, the expression <m>\dfrac{\cos(h)-1}{h}</m> approaches <m>0</m>, and <m>\dfrac{\sin(h)}{h}</m> approaches <m>1</m>.  Therefore <m>AV_{[a,a+h]}</m> approaches <m>\sin(a) \cdot 0 + \cos(a) \cdot 1 = \cos(a)</m>.  This tells us that the instantaneous rate of change of the sine function at <m>a</m> is <m>\cos(a)</m>.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

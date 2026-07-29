@@ -1,0 +1,38 @@
+<graphics id="figure" width="150" height="200" margins="20">
+  <definition>p=(0,0)</definition>
+  <definition>q=(13,0)</definition>
+  <definition>r=(13,20)</definition>
+  <coordinates bbox="[0,0,15,20]">
+
+    <group outline="tactile">
+      <arc points="(q,p,r)"
+	  thickness="2"
+	   stroke="black"
+	   radius="30" tactile-radius="50"
+	   pixel-dims="yes"/>
+      <polygon points="(p,r,q)" cliptobbox="no"
+	       closed="yes" stroke="blue" thickness="2"/>
+    </group>
+
+    <label p="midpoint(r,p)" alignment="nw">
+      <m>\text{hyp}</m>
+    </label>
+    <label p="midpoint(p,q)" alignment="south">
+      <m>\text{adj}</m>
+    </label>
+    <label p="midpoint(q,r)" alignment="east">
+      <m>\text{opp}</m>
+    </label>
+
+    <label p="(4,2)" alignment="east" offset="(0,0)">
+      <m>\theta</m>
+    </label>
+
+  </coordinates>
+
+  
+
+
+
+</graphics>
+

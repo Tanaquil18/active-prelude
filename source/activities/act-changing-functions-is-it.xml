@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -15,7 +15,7 @@
   <activity xml:id="act-changing-functions-is-it">
     <introduction>
       <p>
-			Each of the following prompts describes a relationship between two quantities.  For each, your task is to decide whether or not the relationship can be thought of as a function.  If not, explain why.  If so, state the domain and codomain of the function and write at least one sentence to explain the process that leads from the collection of inputs to the collection of outputs.  
+			Each of the following prompts describes a relationship between two quantities.  For each, your task is to decide whether or not the relationship can be thought of as a function.  If not, explain why.  If so, state the domain and codomain of the function and write at least one sentence to explain the process that leads from the collection of inputs to the collection of outputs.
 		</p>
       <p/>
     </introduction>
@@ -36,7 +36,7 @@
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>The circle is not a function of <m>x</m>, but the curve in the right-hand figure is a function of <m>x</m>.</p></answer>
       <solution>
         <p>
           The circle is <em>not</em> a function of <m>x</m>, because some values of <m>x</m>
@@ -44,7 +44,7 @@
           both <m>y = 4</m> and <m>y = -4</m> lie on the circle.
         </p>
         <p>
-          The curve in the righthand figure <em>is</em> a function of <m>x</m>, because
+          The curve in the right-hand figure <em>is</em> a function of <m>x</m>, because
           each value of <m>x</m> in the domain corresponds to exactly one value of <m>y</m>.
         </p>
       </solution>
@@ -56,7 +56,9 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The relationship between the day of the year and the S&amp;P500 stock index is a function.
+        </p></answer>
       <solution>
         <p>
           The closing value of the S&amp;P500 can be expressed as a function of the day of
@@ -73,7 +75,9 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The odometer reading cannot be viewed as a function of the car's velocity.
+        </p></answer>
       <solution>
         <p>
           The odometer reading cannot be viewed as a function of the car's velocity.
@@ -134,7 +138,9 @@
 <!--        </table> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          Not a function, because there is at least one input value which corresponds to more than one output value.
+        </p></answer>
       <solution>
         <p>
           The table does <em>not</em> represent a function, because the input values
@@ -142,11 +148,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

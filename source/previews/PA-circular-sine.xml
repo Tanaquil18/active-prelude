@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-circular-sine">
+<worksheet label="ws-PA-circular-sine" component="static">
   <exploration xml:id="PA-circular-sine">
     <introduction>
       <p>
@@ -29,8 +29,8 @@
 						What is the exact value of <m>f( \frac{\pi}{4} )</m>? of <m>f( \frac{\pi}{3} )</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The exact value of <m>f\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>, and the exact value of <m>f\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}</m>.
@@ -143,8 +143,8 @@
           </tabular>
 <!--        </table> -->
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <tabular>
           <row bottom="minor">
@@ -205,8 +205,8 @@
 						What is the exact value of <m>f( \frac{11\pi}{4} )</m>? of <m>f( \frac{14\pi}{3} )</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The exact value of <m>f\left(\frac{11\pi}{4}\right)</m> is the same as <m>f\left(\frac{3\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>, because of the periodicity of <m>2\pi</m>.  Likewise, <m>f\left(\frac{14\pi}{3}\right) = f\left(\frac{2\pi}{3}\right) = \frac{\sqrt{3}}{2}</m>.
@@ -219,8 +219,8 @@
 						Give four different values of <m>t</m> for which <m>f(t) = -\frac{\sqrt{3}}{2}</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           <m>f(t) = -\frac{\sqrt{3}}{2}</m> for values <m>t = n(2\pi) + \frac{4\pi}{3}</m> and <m>t = n(2\pi) + \frac{5\pi}{3}</m>, where <m>n</m> is a non-negative integer.  Four such values are: <m>t = \frac{4\pi}{3},\ \frac{5\pi}{3},\ \frac{10\pi}{3},\ \frac{11\pi}{3}</m>.

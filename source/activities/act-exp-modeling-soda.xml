@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,16 +11,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-exp-modeling-soda">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-exp-modeling-soda">
   <activity xml:id="act-exp-modeling-soda">
     <introduction>
       <p>
 			A can of soda (at room temperature) is placed in a refrigerator at time <m>t = 0</m> (in minutes)
       		and its temperature, <m>F(t)</m>, in degrees Fahrenheit, is computed at regular intervals.
 			Based on the data, a model is formulated for the object's temperature, given by
-		      <me>
+		      <md>
 		        F(t) = 42 + 30(0.95)^{t}
-		      </me>.
+		      </md>.
 		</p>
       <p/>
     </introduction>
@@ -35,12 +35,19 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The graph of <m>p(t) = (0.95)^t</m> is always decreasing, always concave up, and decreasing toward zero.
+        </p>
+        <image width="50%" source="solution-images/Activity3.2.3a.png">
+          <description><p>graph of <m>p(t) = (0.95)^t</m></p></description></image>
+      </answer>
       <solution>
         <p>
           The graph of <m>p(t) = (0.95)^t</m> is always decreasing, always concave up, and decreasing toward zero.
         </p>
-        <image width="50%" source="solution-images/Activity3.2.3a.png"/>
+        <image width="50%" source="solution-images/Activity3.2.3a.png">
+          <description><p>graph of <m>p(t) = (0.95)^t</m></p></description></image>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-exp-modeling-soda-task-1">
@@ -51,12 +58,19 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The function <m>r(t) = 30(0.95)^t</m> is similar to <m>p(t)</m> but stretched vertically by a factor of <m>30</m>.  It is always decreasing, always concave up, and decreasing toward zero.
+        </p>
+        <image width="50%" source="solution-images/Activity3.2.3b.png">
+          <description><p>graph of <m>r(t) = 30 (0.95)^t</m></p></description></image>
+      </answer>
       <solution>
         <p>
           The function <m>r(t) = 30(0.95)^t</m> is similar to <m>p(t)</m> but stretched vertically by a factor of <m>30</m>.  It is always decreasing, always concave up, and decreasing toward zero.
         </p>
-        <image width="50%" source="solution-images/Activity3.2.3b.png"/>
+        <image width="50%" source="solution-images/Activity3.2.3b.png">
+          <description><p>graph of <m>r(t) = 30 (0.95)^t</m></p></description></image>
       </solution>
     </task>
     <task workspace="1cm" xml:id="act-exp-modeling-soda-task-2">
@@ -68,16 +82,30 @@
 							</p>
 <!--        <figure xml:id="F-modeling-act-blank-axes-soda">
           <caption>Axes for plotting <m>F</m>.</caption> -->
-          <image width="50%" source="images/modeling-F-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <!-- <image width="50%" source="images/modeling-F-t-blank-axes"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-exp-modeling-act-F-t-blank-axes-1">
+            <xi:include href="../prefigure/chap-exp/modeling-F-t-blank-axes.xml"/>
+            </prefigure>
+            <description><p>Blank axes for plotting <m>F</m> as a function of <m>t</m>.</p></description>
+          </image>
+
 <!--        </figure> -->
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          Since <m>F(t) = 42 + 30(0.95)^t</m> has a vertical shift of <m>42</m> up, it remains always decreasing, always concave up, but decreasing toward <m>42</m>.
+        </p>
+        <image width="50%" source="solution-images/Activity3.2.3c.png">
+          <description><p>graph of <m>F(t) = 42+ 30 (0.95)^t</m></p></description></image>
+      </answer>
       <solution>
         <p>
           Since <m>F(t) = 42 + 30(0.95)^t</m> has a vertical shift of <m>42</m> up, it remains always decreasing, always concave up, but decreasing toward <m>42</m>.
         </p>
-        <image width="50%" source="solution-images/Activity3.2.3c.png"/>
+        <image width="50%" source="solution-images/Activity3.2.3c.png">
+          <description><p>graph of <m>F(t) = 42+ 30 (0.95)^t</m></p></description></image>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-exp-modeling-soda-task-3">
@@ -89,7 +117,11 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The temperature of the refrigerator is <m>42</m>. The room temperature of the surroundings outside the refrigerator is <m>72</m>.
+        </p>
+      </answer>
       <solution>
         <p>
           Because <m>F(t)</m> decreases toward <m>42</m>, that is the temperature of the refrigerator.  Because the function starts at <m>42 + 30 = 72</m>, that is the room temperature of the surroundings outside the refrigerator.
@@ -106,7 +138,16 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          <md>
+            AV_{[10,20]} &amp; \approx -0.721 \text{ degrees per minute} \\
+            AV_{[20,30]} &amp; \approx -0.432 \text{ degrees per minute} \\
+            AV_{[30,40]} &amp; \approx -0.258 \text{ degrees per minute}
+          </md>
+          The average rate of change is always negative and is decreasing in magnitude as <m>t</m> increases.  This is consistent with a function that is always decreasing and always concave up.  In context, the soda is cooling more and more slowly as time goes on.
+        </p>
+      </answer>
       <solution>
         <p>
           <md>
@@ -118,11 +159,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

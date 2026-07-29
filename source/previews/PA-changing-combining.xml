@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-combining">
+<worksheet label="ws-PA-changing-combining" component="static">
   <exploration xml:id="PA-changing-combining">
     <introduction>
       <p>
@@ -66,8 +66,8 @@
 						Let <m>h(x) = f(x) + g(x)</m>.  Determine <m>h(3)</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           From the table, <m>f(3) = 20</m> and <m>g(3) = 2</m>, so
@@ -81,8 +81,8 @@
 						Let <m>r(x) = p(x) - q(x)</m>.  Determine <m>r(-1)</m> exactly.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           From the graph, <m>p(-1) = \frac{1}{5}</m> and <m>q(-1) = \frac{7}{2}</m>, so
@@ -96,8 +96,8 @@
 						Are there any values of <m>x</m> for which <m>r(x) = 0</m>?  If not, explain why; if so, determine all such values, with justification.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Yes. Setting <m>r(x) = 0</m> requires <m>p(x) = q(x)</m>.
@@ -117,8 +117,8 @@
 						Let <m>k(x) = f(x) \cdot g(x)</m>.  Determine <m>k(0)</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           From the table, <m>f(0) = 5</m> and <m>g(0) = 9</m>, so
@@ -132,8 +132,8 @@
 						Let <m>s(x) = \frac{p(x)}{q(x)}</m>.  Determine <m>s(1)</m> exactly.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           From the graph, <m>p(1) = -\frac{3}{5}</m> and <m>q(1) = \frac{5}{2}</m>, so
@@ -147,8 +147,8 @@
 						Are there any values of <m>x</m> in the interval <m>-4 \le x \le 4</m> for which <m>s(x)</m> is not defined?  If not, explain why; if so, determine all such values, with justification.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Yes: <m>s(x)</m> is undefined wherever <m>q(x) = 0</m>.

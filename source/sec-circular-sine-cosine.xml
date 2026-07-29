@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -50,6 +50,7 @@
 	</p>
 
 	<xi:include href="./previews/PA-circular-sine.xml"/>
+	<xi:include href="./previews/PA-circular-sine-D.xml"/>
 
   </subsection>
 
@@ -66,9 +67,9 @@
 				<statement>
 					<p>
 						Given a central angle in the unit circle that measures <m>t</m> radians and that intersects the circle at both <m>(1,0)</m> and <m>(a,b)</m>, as shown in <xref ref="F-def-sine">Figure</xref>, we define the <term>sine of <m>t</m></term>, denoted <m>\sin(t)</m>, by the rule
-						<me>
+						<md>
 							\sin(t) = b
-						</me>.
+						</md>.
 					</p>
 				</statement>
 		</definition>
@@ -172,9 +173,9 @@
 				<statement>
 					<p>
 						Given a central angle in the unit circle that measures <m>t</m> radians and that intersects the circle at both <m>(1,0)</m> and <m>(a,b)</m>, as shown in <xref ref="F-def-cosine">Figure</xref>, we define the <term>cosine of <m>t</m></term>, denoted <m>\cos(t)</m>, by the rule
-						<me>
+						<md>
 							\cos(t) = a
-						</me>.
+						</md>.
 					</p>
 				</statement>
 			</definition>
@@ -256,13 +257,13 @@
 
 	<p>
 		In particular, since the sine graph can be viewed as the cosine graph shifted <m>\frac{\pi}{2}</m> units to the right, it follows that for any value of <m>t</m>,
-		<me>
+		<md>
 			\sin(t) = \cos(t-\frac{\pi}{2})
-		</me>.
+		</md>.
 		Similarly, since the cosine graph can be viewed as the sine graph shifted left,
-		<me>
+		<md>
 			\cos(t) = \sin(t + \frac{\pi}{2})
-		</me>.
+		</md>.
 		Because each of the two preceding equations hold for every value of <m>t</m>, they are often referred to as <em>identities</em>.
 	</p>
 
@@ -274,9 +275,9 @@
 		<title>The Fundamental Trigonometric Identity</title>
 		<p>
 			For any real number <m>t</m>,
-			<me>
+			<md>
 				\cos^2(t) + \sin^2(t) = 1
-			</me>.
+			</md>.
 		</p>
 	</assemblage>
 

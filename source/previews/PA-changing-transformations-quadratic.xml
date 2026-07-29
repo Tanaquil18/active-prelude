@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-changing-transformations-quadratic">
+<worksheet label="ws-PA-changing-transformations-quadratic" component="static">
   <exploration xml:id="PA-changing-transformations-quadratic">
     <introduction>
       <p>
@@ -31,11 +31,11 @@
 					</p>
         <p>
 						Explore by moving the slider for <m>a</m> and write at least one sentence to describe
-            			the effect that changing the value of <m>a</m> has on the graph of <m>g</m>.  
+            			the effect that changing the value of <m>a</m> has on the graph of <m>g</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Changing <m>a</m> shifts the graph of <m>f</m> vertically: positive values of
@@ -56,8 +56,8 @@
             			the effect that changing the value of <m>b</m> has on the graph of <m>h</m>.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           Changing <m>b</m> shifts the graph of <m>f</m> horizontally: positive values of
@@ -79,8 +79,8 @@
             			how is the graph of <m>p</m> related to the graph of <m>f</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The value <m>c</m> vertically stretches or compresses the graph of <m>f</m>:
@@ -102,8 +102,8 @@
             			Write a couple of sentences to describe your observations of your explorations.
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The same three effects hold for any choice of <m>f</m>: adding <m>a</m> shifts

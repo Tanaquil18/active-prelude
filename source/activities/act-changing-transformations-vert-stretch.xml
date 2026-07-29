@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus                       -->
@@ -11,42 +11,78 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-act-changing-transformations-vert-stretch">
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" label="ws-act-changing-transformations-vert-stretch">
   <activity xml:id="act-changing-transformations-vert-stretch">
     <introduction>
       <p>
 			Consider the functions <m>r</m> and <m>s</m> given in the figures below.
 		</p>
     <sidebyside width="45%">
-<!--          <figure xml:id="F-act-transformations-r-2">
-          <caption>A parent function <m>r</m>.</caption> -->
-          <image source="images/transformations-act-r-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-r-translations-2">
+              <xi:include href="../prefigure/chap-changing/transformations-act-r-translations.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>r(x)</m>.
+              </p>
+            </description>
+          </image>
+          <!-- <image source="images/transformations-act-r-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
 <!--        </figure>
-        <figure xml:id="F-act-transformations-s-2">
-          <caption>A parent function <m>s</m>.</caption>  -->
-          <image source="images/transformations-act-s-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-<!--        </figure>  -->
+        <figure xml:id="F-act-transformations-s">
+          <caption>A parent function <m>s</m>.</caption> -->
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-s-translations-2">
+              <xi:include href="../prefigure/chap-changing/transformations-act-s-translations.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>s(x)</m>.
+              </p>
+            </description>
+          </image>
+          <!-- <image source="images/transformations-act-s-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+<!--        </figure> -->
       </sidebyside>
       <p/>
     </introduction>
     <task workspace="5cm" xml:id="act-changing-transformations-vert-stretch-task-0">
       <statement>
         <p>
-						 On the same axes as the plot of <m>y = r(x)</m>, sketch the following graphs:  <m>y = g(x) = 3r(x)</m> and <m>y = h(x) = \frac{1}{3}r(x)</m>.  Be sure to label the point on <m>g</m>  and <m>h</m> that corresponds to the point <m>(-2,-1)</m> on the original graph of <m>r</m>.  In addition, write one sentence to explain the overall transformations that have resulted in <m>g</m> and <m>h</m> from <m>r</m>.
+						 On the same axes as the plot of <m>y = r(x)</m>, sketch the following graphs:  <m>y = g(x) = 3r(x)</m> and <m>y = h(x) = \frac{1}{3}r(x)</m>.  Be sure to label the point on <m>g</m>  and <m>h</m> that corresponds to the point <m>(-2,1)</m> on the original graph of <m>r</m>.  In addition, write one sentence to explain the overall transformations that have resulted in <m>g</m> and <m>h</m> from <m>r</m>.
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The graph of <m>g(x) = 3r(x)</m> is a vertical stretch of <m>r</m> by a factor
+          of <m>3</m> while the graph of <m>h(x) = \frac{1}{3}r(x)</m> is a vertical compression of <m>r</m>
+          by a factor of <m>\frac{1}{3}</m>.
+        </p>
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-r-vert-stretch-g-h-ans">
+              <xi:include href="../prefigure/chap-changing/transformations-act-r-vert-stretch-g-h.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>r(x)</m> along with two transformations: <m>g(x)</m> which stretches vertical heights by a factor of 3, and <m>h(x)</m> which vertically compresses vertical heights by a factor of 1/3.
+              </p>
+            </description>
+          </image>
+        </answer>
       <solution>
         <p>
           The graph of <m>g(x) = 3r(x)</m> is a vertical stretch of <m>r</m> by a factor
-          of <m>3</m>; the point <m>(-2, -1)</m> moves to <m>(-2, -3)</m>.
+          of <m>3</m>; the point <m>(-2, 1)</m> moves to <m>(-2, 3)</m>.
           The graph of <m>h(x) = \frac{1}{3}r(x)</m> is a vertical compression of <m>r</m>
-          by a factor of <m>\frac{1}{3}</m>; the point <m>(-2, -1)</m> moves to
-          <m>(-2, -\frac{1}{3})</m>.
+          by a factor of <m>\frac{1}{3}</m>; the point <m>(-2, 1)</m> moves to
+          <m>(-2, \frac{1}{3})</m>.
         </p>
-      
-        <image width="50%" source="solution-images/Activity1.8.3a.png"/>
+
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-r-vert-stretch-g-h-soln">
+              <xi:include href="../prefigure/chap-changing/transformations-act-r-vert-stretch-g-h.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>r(x)</m> along with two transformations: <m>g(x)</m> which stretches vertical heights by a factor of 3, and <m>h(x)</m> which vertically compresses vertical heights by a factor of 1/3.
+              </p>
+            </description>
+          </image>
+
+        <!-- <image width="50%" source="solution-images/Activity1.8.3a.png"/> -->
       </solution>
     </task>
     <task workspace="5cm" xml:id="act-changing-transformations-vert-stretch-task-1">
@@ -56,7 +92,20 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The graph of <m>k(x) = -s(x)</m> is a reflection of <m>s</m> across the
+          <m>x</m>-axis, while the graph of <m>j(x) = -\frac{1}{2}s(x)</m> is a vertical compression by <m>\frac{1}{2}</m> combined with a reflection across the <m>x</m>-axis.
+        </p>
+
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-s-vert-stretch-j-k-ans">
+            <xi:include href="../prefigure/chap-changing/transformations-act-s-vert-stretch-j-k.xml"/>
+          </prefigure>
+          <description><p>A parent function <m>s(x)</m> along with two transformations: <m>k(x)</m> which reflects heights over the <m>x</m>-axis and <m>j(x)</m> which reflects and vertically compresses vertical heights by a factor of 1/2.
+            </p>
+          </description>
+        </image>
+      </answer>
       <solution>
         <p>
           The graph of <m>k(x) = -s(x)</m> is a reflection of <m>s</m> across the
@@ -65,33 +114,95 @@
           <m>\frac{1}{2}</m> combined with a reflection across the <m>x</m>-axis;
           the point <m>(-2, -3)</m> moves to <m>(-2, \frac{3}{2})</m>.
         </p>
-      
-        <image width="50%" source="solution-images/Activity1.8.3b.png"/>
+
+        <image width="50%">
+          <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-s-vert-stretch-j-k-soln">
+              <xi:include href="../prefigure/chap-changing/transformations-act-s-vert-stretch-j-k.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>s(x)</m> along with two transformations: <m>k(x)</m> which reflects heights over the <m>x</m>-axis and <m>j(x)</m> which reflects and vertically compresses vertical heights by a factor of 1/2.
+              </p>
+            </description>
+          </image>
+        <!-- <image width="50%" source="solution-images/Activity1.8.3b.png"/> -->
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-changing-transformations-vert-stretch-task-2">
       <statement>
         <p>
-						On the additional copies of the two figures below, sketch the graphs of the following transformed functions:  <m>y = m(x) = 2r(x+1)-1</m> (at left) and <m>y = n(x) = \frac{1}{2}s(x-2)+2</m>.  As above, be sure to label a key point on each graph that corresonds to the labeled point on the original parent function.
+						On the additional copies of the two figures below, sketch the graphs of the following transformed functions:  <m>y = m(x) = 2r(x+1)-1</m> (at left) and <m>y = n(x) = \frac{1}{2}s(x-2)+2</m>.  As above, be sure to label a key point on each graph that corresponds to a labeled point on the original parent function.
 					</p>
         <sidebyside width="45%">
-          <image source="images/transformations-act-r-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
-          <image source="images/transformations-act-s-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-r-translations-3">
+              <xi:include href="../prefigure/chap-changing/transformations-act-r-translations.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>r(x)</m>.
+              </p>
+            </description>
+          </image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-s-translations-3">
+              <xi:include href="../prefigure/chap-changing/transformations-act-s-translations.xml"/>
+            </prefigure>
+            <description><p>A parent function <m>s(x)</m>.
+              </p>
+            </description>
+          </image>
+
+          <!-- <image source="images/transformations-act-r-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
+          <!-- <image source="images/transformations-act-s-translation"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image> -->
         </sidebyside>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <sidebyside widths="45% 45%">
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-r-vert-stretch-m-ans">
+                <xi:include href="../prefigure/chap-changing/transformations-act-r-vert-stretch-m.xml"/>
+              </prefigure>
+              <description><p>A parent function <m>r(x)</m> along with a transformation <m>m(x)</m> which shifts left 1 unit, stretches vertical heights by a factor of 2, and shifts down by 1 unit.
+                </p>
+              </description>
+          </image>
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-s-vert-stretch-n-ans">
+                <xi:include href="../prefigure/chap-changing/transformations-act-s-vert-stretch-n.xml"/>
+              </prefigure>
+              <description><p>A parent function <m>s(x)</m> along with a transformation <m>n(x)</m> which shifts right 2 units, compresses vertical heights by a factor of 1/2, and shifts up by 2 units.
+                </p>
+              </description>
+          </image>
+          <!-- <image source="solution-images/Activity1.8.3ci.png"/> -->
+          <!-- <image source="solution-images/Activity1.8.3cii.png"/> -->
+        </sidebyside>
+      </answer>
       <solution>
         <p>
-          For <m>m(x) = 2r(x+1) - 1</m>: the point <m>(-2, -1)</m> on <m>r</m> moves
-          to <m>(-3, -3)</m> on <m>m</m>.
+          For <m>m(x) = 2r(x+1) - 1</m>: the point <m>(2, -1)</m> on <m>r</m> moves
+          to <m>(1, -3)</m> on <m>m</m>.
           For <m>n(x) = \frac{1}{2}s(x-2) + 2</m>: the point <m>(-2, -3)</m> on <m>s</m>
           moves to <m>(0, \frac{1}{2})</m> on <m>n</m>.
         </p>
-      
+
         <sidebyside widths="45% 45%">
-          <image source="solution-images/Activity1.8.3ci.png"/>
-          <image source="solution-images/Activity1.8.3cii.png"/>
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-r-vert-stretch-m-soln">
+                <xi:include href="../prefigure/chap-changing/transformations-act-r-vert-stretch-m.xml"/>
+              </prefigure>
+              <description><p>A parent function <m>r(x)</m> along with a transformation <m>m(x)</m> which shifts left 1 unit, stretches vertical heights by a factor of 2, and shifts down by 1 unit.
+                </p>
+              </description>
+          </image>
+          <image width="50%">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-changing-transformations-act-s-vert-stretch-n-soln">
+                <xi:include href="../prefigure/chap-changing/transformations-act-s-vert-stretch-n.xml"/>
+              </prefigure>
+              <description><p>A parent function <m>s(x)</m> along with a transformation <m>n(x)</m> which shifts right 2 units, compresses vertical heights by a factor of 1/2, and shifts up by 2 units.
+                </p>
+              </description>
+          </image>
+          <!-- <image source="solution-images/Activity1.8.3ci.png"/> -->
+          <!-- <image source="solution-images/Activity1.8.3cii.png"/> -->
         </sidebyside>
       </solution>
     </task>
@@ -102,7 +213,15 @@
 					</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>
+          The function <m>m(x) = 2r(x+1) - 1</m> results from three elementary
+          transformations of <m>r</m>: a horizontal shift left 1 unit (replacing <m>x</m>
+          with <m>x+1</m>), a vertical stretch by a factor of 2 (multiplying by 2), and
+          a vertical shift down 1 unit (subtracting 1).
+          The vertical stretch and the horizontal shift may be applied in either order,
+          but both must be applied before the vertical shift.
+        </p>
+      </answer>
       <solution>
         <p>
           The function <m>m(x) = 2r(x+1) - 1</m> results from three elementary
@@ -114,11 +233,5 @@
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

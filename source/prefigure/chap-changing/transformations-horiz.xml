@@ -1,0 +1,20 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+    <coordinates bbox="[-4,-4,4,4]">
+        <grid-axes xlabel="x" ylabel="y"/>
+        <vector v="(1.9,0)" tail="(-3.5,-2)" tactile-v="(1.8,0)"/>
+        <polygon points="((-4,-3),(-2,1),(4,4))" cliptobbox="true" thickness="2" stroke="blue"/>
+        <polygon points="((-2.5,-4),(0,1),(4,3))" cliptobbox="true" thickness="2" stroke="green" tactile-dash="18 18"/>
+        <point p="(-2,1)" alignment="nw" clear-background="yes" offset="(-7,7)" tactile-offset="(-15,10)">
+        <m>(-2,1)</m>
+        </point>
+        <point p="(0,1)" alignment="se" clear-background="yes" offset="(8,-6)">
+        <m>(0,1)</m>
+        </point>
+        <label p="(2,3.15)" alignment="nw" clear-background="yes">
+        <m>f(x)</m>
+        </label>
+        <label p="(2.25,2)" alignment="se" clear-background="yes">
+        <m>h(x)</m>
+        </label>
+    </coordinates>
+</diagram>

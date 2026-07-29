@@ -1,0 +1,86 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2019-2026                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Prelude to Calculus.                      -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Chrissy Safranski  -->
+
+<p>
+  All of the following situations contain expressions which can be used to model temperature or population growth.  In each situation, we will solve for the exact value of various unknown quantities.
+</p>
+
+<cascade revealAll>
+  <aside sectionWideCheckWork forceIndividualAnswerColoring startOpen><title>a.</title>
+    <p>
+      The temperature of a warming object in an oven is given by <m>F(t) = 275 - 203e^{-kt}</m>, and we know that the object's temperature after <m>20</m> minutes is <m>F(20) = 101</m>.
+    </p>
+    <p >
+      This means that when <answer><mathInput minWidth="25"><label><m>t=</m></label></mathInput>20</answer>, <answer><mathInput minWidth="25"><label><m>F(t)=</m></label></mathInput>101</answer>, and thus
+      <me>101 = 275 - 203e^{-k\cdot 20}</me>
+    </p>
+    <p>
+      Determine the exact value of <m>k</m>. <br/>
+      <answer><label><m>k=</m></label><description>The exact value means that answer should have <m>e</m> or <m>\ln</m> in it.</description><award symbolicEquality>-ln(6/7)/20</award><award symbolicEquality>(-ln(6/7))/20</award><award symbolicEquality>ln(6/7)/(-20)</award><award name="anotsimplified" credit="0">-ln(6/7)/20</award><award name="adecimal" credit="0" allowedErrorInNumbers=".01" allowedErrorIsAbsolute>-ln(6/7)/20</award></answer>
+    </p>
+    <feedback condition="$anotsimplified">You are doing the right thing, but your answer isn't simplified enough, yet. Evaluate any additions and subtractions, and put any fractions of whole numbers into lowest terms.</feedback>
+    <feedback condition="$adecimal">Your answer is close but it is not the exact value. Do not enter a decimal approximation.  Your answer should have <m>\ln</m> in it.</feedback>
+  </aside>
+  <aside><title>b.</title>
+    <p>
+      The temperature of a cooling object in a refrigerator is modeled by <m>F(t) = a + 37.4e^{-0.05t}</m>, and the temperature of the refrigerator is <m>39.8^\circ</m>.
+    </p>
+    <p>
+      <answer name="bans1"><label>After a long time has passed, what will the temperature of the object be?</label>39.8</answer>
+    </p>
+    <p>
+      What is the long-term behavior of <m>e^{-0.05t}</m>? <br/>
+      <answer name="bans2"><mathInput minWidth="25"><label>As <m>t</m> is getting larger and larger, the value of <m>e^{-0.05t}</m> is approaching</label></mathInput>0</answer>
+    </p>
+    <p>
+      This means that after a long time, when <m>t</m> is very large,
+      <me>F(t) = a + 37.4e^{-0.05t}</me> becomes
+      <mathInput disabled minWidth="30"><shortDescription>value of F of t after a long time</shortDescription><conditionalContent condition="$bans1.creditAchieved=1">$bans1</conditionalContent></mathInput><m>\displaystyle = a + 37.4\cdot</m><mathInput disabled minWidth="30"><shortDescription>value of e to the -0.05 t after a long time</shortDescription><conditionalContent condition="$bans2.creditAchieved=1">$bans2</conditionalContent></mathInput>, and thus <br/>
+      <answer><label><m>a=</m></label>39.8</answer>
+    </p>
+  </aside>
+  <aside><title>c.</title>
+    <p>
+      Later in this section, we'll learn that one model for how a population grows over time can be given by a function of the form
+						<me>
+							P(t) = \frac{A}{1 + Me^{-kt}}.
+						</me>
+      Models of this form lead naturally to equations that have structure like
+						<me>
+							3 = \frac{10}{1+x}.
+						</me>
+    	Solve the equation <m>\displaystyle 3 = \frac{10}{1+x}</m> for the exact value of <m>x</m>.
+    </p>
+    <p>
+      <answer><label><m>x=</m></label><award symbolicEquality>7/3</award><award name="cnotsimplified" credit="0">7/3</award><award name="cdecimal" credit="0" allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>7/3</award></answer>
+    </p>
+    <feedback condition="$cnotsimplified">You are doing the right thing, but your answer isn't simplified enough, yet. Evaluate any additions and subtractions, and put any fractions of whole numbers into lowest terms.</feedback>
+    <feedback condition="$cdecimal">Your answer is close but it is not the exact value. Do not enter a decimal approximation.</feedback>
+  </aside>
+  <aside><title>d.</title>
+    <p>
+      Suppose that <me>y = a + be^{-kt}.</me>
+      Solve for <m>t</m> in terms of <m>a</m>, <m>b</m>, <m>k</m>, and <m>y</m>.
+    </p>
+    <p>
+      <answer><label><m>t=</m></label>ln((y-a)/b)/-k</answer>
+    </p>
+    <!-- I don't know what we're looking for here? Just commenting out for now. -->
+    <!-- <p>
+      What does this new equation represent?
+    </p> -->
+  </aside>
+</cascade>

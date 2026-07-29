@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -27,7 +27,7 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\left[\frac{\pi}{2}, \frac{3\pi}{2}\right]</m></p></answer>
       <solution>
         <p>
           The function <m>f(t) = \sin(t)</m> is decreasing on the interval <m>\left[\frac{\pi}{2}, \frac{3\pi}{2}\right]</m>.
@@ -42,7 +42,7 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\left[\frac{\pi}{2}, \pi\right]</m></p></answer>
       <solution>
         <p>
           The function <m>f(t) = \sin(t)</m> is decreasing and concave down on the interval <m>\left[\frac{\pi}{2}, \pi\right]</m>.
@@ -57,7 +57,7 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>[\pi, 2\pi]</m></p></answer>
       <solution>
         <p>
           The function <m>g(t) = \cos(t)</m> is increasing on the interval <m>[\pi, 2\pi]</m>.
@@ -72,7 +72,7 @@
 		          </p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\left[\pi, \frac{3\pi}{2}\right]</m></p></answer>
       <solution>
         <p>
           The function <m>g(t) = \cos(t)</m> is increasing and concave up on the interval <m>\left[\pi, \frac{3\pi}{2}\right]</m>.
@@ -86,7 +86,7 @@
 		        	</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p><m>\left[\frac{3\pi}{2}, \frac{3\pi}{2} + 0.1\right]</m></p></answer>
       <solution>
         <p>
           The average rate of change of <m>g(t) = \cos(t)</m> is greater on the interval <m>\left[\frac{3\pi}{2}, \frac{3\pi}{2} + 0.1\right]</m> because <m>g(t)</m> has a steeper slope near <m>\frac{3\pi}{2}</m> (a zero crossing) than near <m>\pi</m> (a minimum).
@@ -100,7 +100,11 @@
 		        	</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer>
+        <p>
+          The most rapid average rates of change on both graphs occur near the zero crossing points (where the function crosses the midline).
+        </p>
+      </answer>
       <solution>
         <p>
           The most rapid average rates of change on both graphs occur near the zero crossing points (where the function crosses the midline).
@@ -114,18 +118,12 @@
 		        	</p>
       </statement>
       <hint/>
-      <answer/>
+      <answer><p>quadrants II and III</p></answer>
       <solution>
         <p>
           The function <m>g(t) = \cos(t)</m> is negative on quadrants II and III.
         </p>
       </solution>
     </task>
-    <answer>
-      <p/>
-    </answer>
-    <solution>
-      <p/>
-    </solution>
   </activity>
 </worksheet>

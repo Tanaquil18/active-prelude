@@ -1,0 +1,36 @@
+<diagram xmlns="https://prefigure.org" width="350" height="350" margins="5">
+  <coordinates bbox="[-4,-4,4,4]">
+    <grid-axes xlabel="x"/>
+
+    <definition>f(x)=2^x</definition>
+    <definition>g(x)=log(x)/log(2)</definition>
+    <definition>h(x)=x</definition>
+
+    <graph function="f" />
+    <graph function="g" domain="(0.0001,4)"/>
+    <graph function="h" stroke="#666"/>
+
+    <label p="(-3,h(-3))" alignment="se" offset="(7,-7)"
+	   clear-background="yes">
+      <m>y=x</m>
+    </label>
+    <point p="(-1,f(-1))" alignment="nw" clear-background="yes">
+      <m>\left(-1,\frac12\right)</m>
+    </point>
+    <point p="(0.5,g(0.5))" alignment="se" clear-background="yes">
+      <m>\left(\frac12,-1\right)</m>
+    </point>
+    <label p="(0.3,-2.8)" alignment="se" offset="(7,-7)"
+	   clear-background="yes">
+      <m>y=f^{-1}(x)</m>
+    </label>
+    <label p="(1.3,2.8)" alignment="nw"
+	   clear-background="yes">
+      <m>y=f(x)</m>
+    </label>
+
+
+  </coordinates>
+
+</diagram>
+

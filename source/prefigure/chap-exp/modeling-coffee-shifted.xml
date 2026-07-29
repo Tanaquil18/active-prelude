@@ -1,0 +1,37 @@
+<diagram xmlns="https://prefigure.org" dimensions="(300,300)" margins="5">
+  <definition>points=((0,186),(1,179),(2,175),(3,171),(8,156),(13,144),
+  (18,135),(23,127),(28,120),(33,116),(38,111),(43,107),(48,104))</definition>
+  <definition>f(x)=103.503 * (0.974)**x</definition>
+  <definition>shift=(0,71)</definition>
+  <coordinates bbox="[-10,-20,50,200]">
+    <grid rx="(-10,5,50)" ry="(-20,20,200)" />
+    <axes id="axes" decorations="no"
+	  xlabel="t \text{(min)}" ylabel="F \text{(degrees)}"
+	  hticks="(-5,5,50)" vticks="(20,20,200)"
+	  hlabels="(10,10,50)" vlabels="(40,40,200)"/>
+
+    <graph function="f"/>
+
+    <group outline="tactile">
+      <point p="vdiff(points[0],shift)"/>
+      <point p="vdiff(points[1],shift)"/>
+      <point p="vdiff(points[2],shift)"/>
+      <point p="vdiff(points[3],shift)"/>
+      <point p="vdiff(points[4],shift)"/>
+      <point p="vdiff(points[5],shift)"/>
+      <point p="vdiff(points[6],shift)"/>
+      <point p="vdiff(points[7],shift)"/>
+      <point p="vdiff(points[8],shift)"/>
+      <point p="vdiff(points[9],shift)"/>
+      <point p="vdiff(points[10],shift)"/>
+      <point p="vdiff(points[11],shift)"/>
+      <point p="vdiff(points[12],shift)"/>
+    </group>
+  </coordinates>
+
+
+
+
+
+</diagram>
+

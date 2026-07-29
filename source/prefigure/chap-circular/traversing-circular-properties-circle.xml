@@ -1,0 +1,49 @@
+<diagram xmlns="https://prefigure.org" width="200" height="200" margins="5">
+  <coordinates bbox="[-0.5,-0.5,4,4]">
+    <group>
+      <axes id="axes" decorations="no"
+	    hticks="(2,1,2)" vticks="(2,1,2)"/>
+    </group>
+
+    <definition>r=4/pi</definition>
+    <definition>f(x)=r-r*cos(x/12*pi)</definition>
+
+    <line p1="(2,2)" p2="(2,2+r)" stroke="green" tactile-dash="9 9"/>
+
+    <circle center="(2,2)" r="r" />
+
+    <point p="(2,2)" fill="black"/>
+
+    <point p="(2+r,2)" alignment="se">
+      <m>S</m>
+    </point>
+
+    <point p="(2-r,2)" alignment="se">
+      <m>Q</m>
+    </point>
+
+    <point p="(2,2+r)" alignment="ne">
+      <m>P</m>
+    </point>
+
+    <point p="(2,2-r)" alignment="se">
+      <m>R</m>
+    </point>
+
+    <label p="(2,0)" alignment="ha" offset="(0,-8)">
+      <m>k</m>
+    </label>
+
+    <label p="(0,2)" alignment="va" offset="(-8,0)">
+      <m>m</m>
+    </label>
+
+    <label p="(2,2+r/2)" alignment="east" offset="(5,0)"
+	   tactile-offset="(10,0)">
+      <m>a</m>
+    </label>
+
+  </coordinates>
+
+</diagram>
+

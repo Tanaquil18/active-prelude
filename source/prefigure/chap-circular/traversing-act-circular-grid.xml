@@ -1,0 +1,9 @@
+<diagram xmlns="https://prefigure.org" width="600" height="300" margins="5">
+  <coordinates bbox="[-.6,-.25,16,4]">
+    <grid-axes decorations="no"
+	    xlabel="d" ylabel="h"
+	    hticks="(0,1,16)" vticks="(0,.5,8)" spacings="((0,1,16),(0,.5,8))"/>
+
+  </coordinates>
+
+</diagram>

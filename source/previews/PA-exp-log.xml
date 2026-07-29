@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -11,7 +11,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<worksheet label="ws-PA-exp-log">
+<worksheet label="ws-PA-exp-log" component="static">
   <exploration xml:id="PA-exp-log">
     <introduction>
       <p>
@@ -66,8 +66,8 @@
           </tabular>
 <!--        </table> -->
       </statement>
-      <hint/>
-      <answer/>
+        <!-- <hint/>
+        <answer/> -->
       <solution>
         <tabular>
           <row bottom="minor">
@@ -99,8 +99,8 @@
 						Why does <m>P</m> have an inverse function?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The function <m>P(t)</m> has an inverse because it is a one-to-one function, where each value of <m>y</m> has only one corresponding value of <m>t</m>.
@@ -180,8 +180,8 @@
           </tabular>
 <!--        </table> -->
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <tabular>
           <row>
@@ -214,8 +214,8 @@
 						What are the domain and range of the function <m>P</m>?  What are the domain and range of the function <m>L</m>?
 					</p>
       </statement>
-      <hint/>
-      <answer/>
+      <!-- <hint/>
+      <answer/> -->
       <solution>
         <p>
           The domain of <m>y = P(t) = 10^t</m> is all real numbers, and the range is all positive real numbers.  The domain of <m>t = L(y)</m> is all positive real numbers, and the range is all real numbers.

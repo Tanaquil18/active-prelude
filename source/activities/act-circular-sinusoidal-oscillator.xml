@@ -1,5 +1,5 @@
 <!-- **********************************************************************-->
-<!-- Copyright 2019                                                        -->
+<!-- Copyright 2019-2026                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Prelude to Calculus.                      -->
@@ -22,7 +22,8 @@
 		</p>
     </statement>
     <answer>
-      <p/>
+      <p>One formula is <m>d(t) = -2.5\sin(t) + 4.5</m>, which has an anchor point with coordinates <m>(0, 4.5)</m>.  Another formula with the same anchor point is <m>d(t) = 2.5\cos\left(t + \frac{\pi}{2}\right) + 4.5</m>.
+      </p>
     </answer>
     <solution>
       <p>
