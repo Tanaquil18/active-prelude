@@ -19,3 +19,4 @@ settings.json
 logs
 .cache
 latex/
+devcontainer-lock.json
