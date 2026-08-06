@@ -51,9 +51,9 @@
   	<title>Volume, surface area, and constraints</title>
   	<p>
   		In <xref ref="PA-poly-polynomial-applications">Preview Activity</xref>, we worked with a rectangular box being built by folding cardboard.  One of the key principles we needed to use was the fact that the volume of a rectangular box of length <m>l</m>, width <m>w</m>, and height <m>h</m> is
-      <men xml:id="eq-polynomial-applications-volume-box">
+      <md number="yes" xml:id="eq-polynomial-applications-volume-box">
         V = lwh
-      </men>.  <idx><h>rectangular box</h><h>volume</h></idx>  <idx><h>volume</h><h>box</h></idx>
+      </md>.  <idx><h>rectangular box</h><h>volume</h></idx>  <idx><h>volume</h><h>box</h></idx>
     </p>
 
     <sidebyside valign="bottom">
@@ -71,21 +71,21 @@
 
     <p>
       One way to remember the formula for the volume of a rectangular box is <q>area of the base times the height</q>.  This principle extends to other three-dimensional shapes that have constant cross-sectional area.  For instance, the volume of a circular cylinder with radius <m>r</m> and height <m>h</m> is
-      <men xml:id="eq-polynomial-applications-volume-cylinder">
+      <md number="yes" xml:id="eq-polynomial-applications-volume-cylinder">
         V = \pi r^2 h
-      </men> <idx><h>circular cylinder</h><h>volume</h></idx>  <idx><h>volume</h><h>cylinder</h></idx>
+      </md> <idx><h>circular cylinder</h><h>volume</h></idx>  <idx><h>volume</h><h>cylinder</h></idx>
       since the area of the base is <m>\pi r^2</m>.
   	</p>
 
     <p>
       We'll also often consider the surface area of a three-dimensional container.  For a rectangular box with side lengths of <m>l</m>, <m>w</m>, and <m>h</m>, its surface area consists of <m>3</m> pairs of rectangles:  the top and bottom, each of area <m>lw</m>, the two sides that are the front and back when we look right at the box, each of area <m>lh</m>, and the remaining two sides of area <m>wh</m>.  Thus the total surface area of the box is
-      <men xml:id="eq-polynomial-applications-SA-box"> <idx><h>rectangular box</h><h>surface area</h></idx>  <idx><h>surface area</h><h>box</h></idx>
+      <md number="yes" xml:id="eq-polynomial-applications-SA-box"> <idx><h>rectangular box</h><h>surface area</h></idx>  <idx><h>surface area</h><h>box</h></idx>
         SA = 2lw + 2lh + 2wh
-      </men>.
+      </md>.
       For a circular cylinder, its surface area is the sum of the areas of the top and bottom (<m>\pi r^2</m> each), plus the area of the <q>sides</q>.  If we think of cutting the cylinder vertically and unfurling it, the resulting figure is a rectangle whose dimensions are the height of the cylinder, <m>h</m>, by the circumference of the base, <m>2\pi r</m>.  The rectangle's area is therefore <m>2\pi r \cdot h</m>, and hence the total surface area of a cylinder is
-      <men xml:id="eq-polynomial-applications-SA-cylinder">
+      <md number="yes" xml:id="eq-polynomial-applications-SA-cylinder">
         SA = 2\pi r^2 + 2\pi r h
-      </men>. <idx><h>circular cylinder</h><h>surface area</h></idx> <idx><h>surface area</h><h>cylinder</h></idx>
+      </md>. <idx><h>circular cylinder</h><h>surface area</h></idx> <idx><h>surface area</h><h>cylinder</h></idx>
     </p>
 
     <p>

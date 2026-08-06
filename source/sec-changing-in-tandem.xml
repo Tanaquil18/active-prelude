@@ -174,9 +174,9 @@
 
 		<p>
 			With the equation <m>V = \frac{\pi}{12} h^3</m>, we can now also see how the height of the water changes in tandem with time.  Solving the equation for <m>h</m>, note that <m>h^3 = \frac{12}{\pi} V</m>, and therefore
-			<men xml:id="eq-height-from-volume">
+			<md number="yes" xml:id="eq-height-from-volume">
 				h = \sqrt[3]{\frac{12}{\pi} V}
-			</men>.  Thus, when <m>V = 0.75</m>, it follows that <m>h = \sqrt[3]{\frac{12}{\pi} 0.75} \approx 1.42</m>.  Executing similar computations with the other values of <m>V</m> in <xref ref="T-tandem-cone-V-t">Table</xref>, we get the following updated data that now includes <m>h</m>.
+			</md>.  Thus, when <m>V = 0.75</m>, it follows that <m>h = \sqrt[3]{\frac{12}{\pi} 0.75} \approx 1.42</m>.  Executing similar computations with the other values of <m>V</m> in <xref ref="T-tandem-cone-V-t">Table</xref>, we get the following updated data that now includes <m>h</m>.
 		</p>
 
 			<table xml:id="T-tandem-cone-V-h-t">

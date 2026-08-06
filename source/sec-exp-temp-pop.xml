@@ -33,9 +33,9 @@
 
 	<p>
 		We've seen that exponential functions can be used to model several different important phenomena, such as the growth of money due to continuously compounded interest, the decay of radioactive quanitities, and the temperature of an object that is cooling or warming due to its surroundings.  From initial work with functions of the form <m>f(t) = ab^t</m> where <m>b \gt 0</m> and <m>b \ne 1</m>, we found that shifted exponential functions of form <m>g(t) = ab^t + c</m> are also important.  Moreover, the special base <m>e</m> allows us to represent all of these functions through horizontal scaling by writing
-		<men xml:id="eq-temp-pop-gen-exp-model">
+		<md number="yes" xml:id="eq-temp-pop-gen-exp-model">
 			g(t) = ae^{kt} + c
-		</men>
+		</md>
 		where <m>k</m> is the constant such that <m>e^k = b</m>.
 		Functions of the form of <xref ref="eq-temp-pop-gen-exp-model">Equation</xref> are either always increasing or always decreasing, always have the same concavity, are defined on the set of all real numbers, and have their range as the set of all real numbers greater than <m>c</m> or all real numbers less than <m>c</m>.  In whatever setting we are using a model of this form, the crucial task is to identify the values of <m>a</m>, <m>k</m>, and <m>c</m>; that endeavor is the focus of this section.
 	</p>
@@ -65,9 +65,9 @@
   	<title>Newton's Law of Cooling revisited</title>
   	<p>
   		In <xref ref="sec-exp-modeling">Section</xref>, we learned that Newton's Law of Cooling, which states that an object's temperature changes at a rate proportional to the difference between its own temperature and the surrounding temperature, results in the object's temperature being modeled by functions of the form <m>F(t) = ab^t + c</m>.  In light of our subsequent work in <xref ref="sec-exp-e">Section</xref> with the natural base <m>e</m>, as well as the fact that <m>0 \lt b \lt 1</m> in this model, we know that Newton's Law of Cooling implies that the object's temperature is modeled by a function of the form
-  		<men xml:id="eq-temp-pop-NLOC">
+  		<md number="yes" xml:id="eq-temp-pop-NLOC">
   			F(t) = ae^{-kt} + c
-  		</men>
+  		</md>
   		for some constants <m>a</m>, <m>c</m>, and <m>k</m>, where <m>k \gt 0</m>.
   	</p>
 
@@ -116,9 +116,9 @@
   	<p>
   		In light of these observations, a different model is needed for population, one that grows exponentially at first, but that levels off later.  Calculus can be used to develop such a model, and the resulting function is usually called the
     	<term>logistic function</term>, <idx><h>logistic function</h></idx> which has form
-	    <men xml:id="eq-temp-pop-logistic">
+	    <md number="yes" xml:id="eq-temp-pop-logistic">
 	      P(t) = \frac{A}{1 + Me^{-kt}}
-	    </men>,
+	    </md>,
     	where <m>A</m>, <m>M</m>, and <m>k</m> are positive constants.
     	Since <m>k \gt 0</m>, it follows that <m>e^{-kt} \to 0</m> as <m>t</m> increases without bound, and thus the denominator of <m>P</m> approaches <m>1</m> as time goes on.  Thus, we observe that <m>P(t)</m> tends to <m>A</m> as <m>t</m> increases without bound.  We sometimes refer to <m>A</m> as the <em>carrying capacity</em> of the population.
   	</p>

@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-changing-aroc" component="doenet">
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-changing-aroc" label="PA-changing-aroc-doenet" component="doenet">
   <dynamic>
     <statement>
       <interactive label="int-PA-changing-aroc-D" platform="doenetml" width="100%" aspect="2:8">

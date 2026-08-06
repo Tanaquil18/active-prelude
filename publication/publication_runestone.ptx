@@ -1,6 +1,6 @@
 <publication>
   <source>
-    <directories external="../assets" generated="../generated-assets"
+    <directories generated="../generated-assets"
 		 />
     <version include="doenet online"/>
   </source>
@@ -16,6 +16,7 @@
     <webwork divisional="dynamic" />
     <baseurl href="https://activecalculus.org/prelude/" />
     <platform host="runestone" />
+    <brandlogo url="https://activecalculus.org" source="images/APC-cover.jpg"/>
   </html>
   <latex sides="two" print="yes" font-size="10" pageref="no">
     <page geometry="paperwidth=7.44in,paperheight=9.69in,tmargin=.5in,bmargin=.3in,hmargin=.75in,bindingoffset=.4in,includeheadfoot,marginparsep=6ex" />

@@ -214,7 +214,7 @@
 			    <row bottom="minor" halign="center">
 			      <cell><m>\ln(x)</m></cell>
 			      <cell><m>\infty</m></cell>
-			      <cell>NA<fn>Because the domain of the natural logarithm function is only positive real numbers, it doesn't make sense to even consider this limit.</fn></cell>
+			      <cell>NA<tn>Because the domain of the natural logarithm function is only positive real numbers, it doesn't make sense to even consider this limit.</tn></cell>
 			    </row>
 			    <row bottom="minor" halign="center">
 			      <cell><m>x</m></cell>
@@ -248,7 +248,7 @@
 			    </row>
 			    <row halign="center">
 			      <cell><m>\sin(x)</m></cell>
-			      <cell>no limit<fn>Because the sine function neither increases without bound nor approaches a single value, but rather keeps oscillating through every value between <m>-1</m> and <m>1</m> repeatedly, the sine function does not have a limit as <m>x \to \infty</m>.</fn></cell>
+			      <cell>no limit<tn>Because the sine function neither increases without bound nor approaches a single value, but rather keeps oscillating through every value between <m>-1</m> and <m>1</m> repeatedly, the sine function does not have a limit as <m>x \to \infty</m>.</tn></cell>
 			      <cell>no limit</cell>
 			    </row>
 			  </tabular>

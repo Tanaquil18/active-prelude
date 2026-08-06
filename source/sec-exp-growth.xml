@@ -179,13 +179,13 @@
 		<solution>
 			<p>
 				Since we know that <m>p(t) = ab^t</m>, the two data points give us two equations in the unknowns <m>a</m> and <m>b</m>.  First, using <m>t = 2</m>,
-				<men xml:id="eq-growth-p-2">
+				<md number="yes" xml:id="eq-growth-p-2">
 					ab^2 = 11
-				</men>,
+				</md>,
 				and using <m>t = 5</m> we also have
-				<men xml:id="eq-growth-p-5">
+				<md number="yes" xml:id="eq-growth-p-5">
 					ab^5 = 18
-				</men>.
+				</md>.
 				Because we know that the quotient of outputs of an exponential function corresponding to equally-spaced inputs must be constant, we thus naturally consider the quotient <m>\frac{18}{11}</m>.  Using <xref ref="eq-growth-p-2">Equation</xref> and <xref ref="eq-growth-p-5">Equation</xref>, it follows that
 				<md>
 					\frac{18}{11} = \frac{ab^5}{ab^2}

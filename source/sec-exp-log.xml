@@ -69,28 +69,28 @@
 
 	<p>
 		In the notation of logarithms, we can now update our earlier observations with the functions <m>P</m> and <m>L</m> and see how exponential equations can be written in two equivalent ways.  For instance,
-		<men xml:id="eq-exp-log-base-10-2">
+		<md number="yes" xml:id="eq-exp-log-base-10-2">
 			10^2 = 100 \text{ and } \log_{10}(100) = 2
-		</men>
+		</md>
 		each say the same thing from two different perspectives.  The first says <q><m>100</m> is <m>10</m> to the power <m>2</m></q>, while the second says <q><m>2</m> is the power to which we raise <m>10</m> to get <m>100</m></q>.  Similarly,
-		<men xml:id="eq-exp-log-base-10-minus-3">
+		<md number="yes" xml:id="eq-exp-log-base-10-minus-3">
 			10^{-3} = \frac{1}{1000} \text{ and } \log_{10} \left( \frac{1}{1000} \right) = -3
-		</men>.
+		</md>.
 	</p>
 
 	<p>
 		If we rearrange the statements of the facts in <xref ref="eq-exp-log-base-10-2">Equation</xref>, we can see yet another important relationship between the powers of <m>10</m> and base-<m>10</m> logarithm function.  Noting that <m>\log_{10}(100) = 2</m> and <m>100 = 10^2</m> are equivalent statements, and substituting the latter equation into the former, we see that
-		<men xml:id="eq-exp-log-base-10-2-undo">
+		<md number="yes" xml:id="eq-exp-log-base-10-2-undo">
 			\log_{10}(10^2) = 2
-		</men>.
+		</md>.
 		In words, <xref ref="eq-exp-log-base-10-2-undo">Equation</xref> says that <q>the power to which we raise <m>10</m> to get <m>10^2</m>, is <m>2</m></q>.  That is, the base-<m>10</m> logarithm function undoes the work of the powers of <m>10</m> function.
 	</p>
 
 	<p>
 		In a similar way, if we rearrange the statements in <xref ref="eq-exp-log-base-10-minus-3">Equation</xref>, we can observe that by replacing <m>-3</m> with <m>\log_{10}(\frac{1}{1000})</m> we have
-		<men xml:id="eq-exp-log-base-10-minus-3-undo">
+		<md number="yes" xml:id="eq-exp-log-base-10-minus-3-undo">
 			10^{\log_{10}(\frac{1}{1000})} = \frac{1}{1000}
-		</men>.
+		</md>.
 		In words, <xref ref="eq-exp-log-base-10-minus-3-undo">Equation</xref> says that <q>when <m>10</m> is raised to the power to which we raise <m>10</m> in order to get <m>\frac{1}{1000}</m>, we get <m>\frac{1}{1000}</m></q>.
 	</p>
 
