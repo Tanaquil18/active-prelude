@@ -13,5 +13,8 @@
     <exercise-divisional statement="yes" hint="no" answer="no" solution="yes"/>
     <exercise-project statement="yes" hint="no" answer="no" solution="yes" />
   </common>
+  <numbering>
+    <projects distinct="yes" />
+  </numbering>
   <webwork server="https://webwork-ptx.aimath.org" />
 </publication>

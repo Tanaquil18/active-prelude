@@ -26,5 +26,8 @@
     <exercise-divisional statement="yes" hint="no" answer="no" solution="no"/>
     <exercise-project statement="yes" hint="no" answer="no" solution="no" />
   </common>
+  <numbering>
+    <projects distinct="yes" />
+  </numbering>
   <webwork server="https://webwork-ptx.aimath.org" />
 </publication>

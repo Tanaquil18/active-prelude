@@ -17,5 +17,6 @@
   <webwork server="https://webwork-ptx.aimath.org" />
   <numbering>
     <divisions level="2"/>
+    <projects distinct="yes" />
   </numbering>
 </publication>
