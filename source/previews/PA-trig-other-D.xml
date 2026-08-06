@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-trig-other" component="doenet">
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-trig-other" label="PA-trig-other-doenet" component="doenet">
   <dynamic>
     <statement>
       <interactive label="int-PA-trig-other-D" platform="doenetml" width="100%" aspect="2:8">
