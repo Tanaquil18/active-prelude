@@ -408,7 +408,7 @@
   						<cell/>
   						<cell>standard</cell>
   						<cell>vertex</cell>
-  						<cell>factored<fn>Provided <m>q</m> has <m>1</m> or <m>2</m> <m>x</m>-intercepts.  In the case of just one, we take <m>r = s</m>.</fn></cell>
+  						<cell>factored<tn>Provided <m>q</m> has <m>1</m> or <m>2</m> <m>x</m>-intercepts.  In the case of just one, we take <m>r = s</m>.</tn></cell>
   					</row>
   					<row>
   						<cell>form</cell>
@@ -423,7 +423,7 @@
   						<cell><m>(0,ars)</m></cell>
   					</row>
   					<row>
-  						<cell><m>x</m>-int<fn>Provided <m>b^2 - 4ac \ge 0</m> for standard form; provided <m>-\frac{k}{a} \ge 0</m> for vertex form.</fn></cell>
+  						<cell><m>x</m>-int<tn>Provided <m>b^2 - 4ac \ge 0</m> for standard form; provided <m>-\frac{k}{a} \ge 0</m> for vertex form.</tn></cell>
   						<cell><m>\left(\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} , 0 \right)</m></cell>
   						<cell><m>\left(h \pm \sqrt{-\frac{k}{a}} , 0 \right)</m></cell>
   						<cell><m>(r,0)</m>, <m>(s,0)</m></cell>

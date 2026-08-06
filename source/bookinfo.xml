@@ -12,7 +12,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <docinfo>
-  <brandlogo url="https://activecalculus.org" source="images/APC-cover.jpg"/>
+  
 
 <!--
   <macros>
@@ -22,7 +22,10 @@
   </macros>
 -->
 
-<cross-references text="type-global"/>
+<defaults>
+  <cross-references text="type-global"/>
+</defaults>
+<directories external="../assets"/>
   <initialism>APC</initialism>
 <!--
   <search>
@@ -39,7 +42,7 @@
 
   <document-id>active-prelude</document-id>
   <blurb shelf="Mathematics">
-    Active Prelude to Calculus is designed for college students who aspire to take calculus and who either need to take a course to prepare them for calculus or want to do some additional self-study. The reader will find that the text requires them to engage actively with the material, to view topics from multiple perspectives, and to develop deep conceptual undersanding of ideas. Every section offers engaging activities for students to complete before and during class; additional exercises that challenge students to connect and assimilate core concepts; interactive WeBWorK exercises; opportunities for students to improve their skills at communicating mathematical ideas.  The text is free and open-source, available in HTML, PDF, and print formats.  Ancillary materials for instructors are also available.
+    Active Prelude to Calculus is designed for college students who aspire to take calculus and who either need to take a course to prepare them for calculus or want to do some additional self-study. The reader will find that the text requires them to engage actively with the material, to view topics from multiple perspectives, and to develop deep conceptual understanding of ideas. Every section offers engaging activities for students to complete before and during class; additional exercises that challenge students to connect and assimilate core concepts; interactive WeBWorK exercises; opportunities for students to improve their skills at communicating mathematical ideas.  The text is free and open-source, available in HTML, PDF, and print formats.  Ancillary materials for instructors are also available.
   </blurb>
 
   <rename element="exploration" xml:lang="en-US">Preview Activity</rename>
