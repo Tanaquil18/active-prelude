@@ -303,9 +303,9 @@
 		<title>The fundamental trigonometric identity</title>
 		<p>
 			For any real number <m>\theta</m>,
-			<men xml:id="eq-fund-trig-identity">
+			<md number="yes" xml:id="eq-fund-trig-identity">
 				\cos^2(\theta) + \sin^2(\theta) = 1
-			</men>.
+			</md>.
 		</p>
 
 	</assemblage>

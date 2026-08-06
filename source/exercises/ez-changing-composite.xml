@@ -267,9 +267,9 @@
           <li>
             <p>
               Calculus can be used to show that the volume, <m>V</m>, is a function of the depth, <m>h</m>, of the water in the tank according to the function 
-              <men xml:id="E-ez-composite-spherical-tank-V-h">
+              <md number="yes" xml:id="E-ez-composite-spherical-tank-V-h">
                 V = f(h) = \frac{\pi}{3} h^2(12-h)
-              </men>.
+              </md>.
               What is the domain of this model?  Why?  What is the corresponding range?
             </p>
           </li>

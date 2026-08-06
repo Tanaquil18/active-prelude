@@ -93,9 +93,9 @@
 			f(x) - f(x_0) = m(x-x_0)
 		</md>.
 		Adding <m>f(x_0)</m> to each side, it follows
-		<men xml:id="E-linear-point-slope-first-take">
+		<md number="yes" xml:id="E-linear-point-slope-first-take">
 			f(x) = f(x_0) + m(x-x_0)
-		</men>.
+		</md>.
 		This shows that to determine the formula for a linear function, all we need to know is its average rate of change (or slope) and a single point the function passes through.
 	</p>
 

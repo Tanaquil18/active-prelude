@@ -54,9 +54,9 @@
 			</table>
 	<p>
 		For a mathematical model, we often seek an algebraic formula that captures observed behavior accurately and can be used to predict behavior not yet observed.  For the data in <xref ref="T-functions-Dolbear">Table</xref>, we observe that each of the ordered pairs in the table make the equation
-		<men xml:id="eq-functions-Dolbear">
+		<md number="yes" xml:id="eq-functions-Dolbear">
 			T = 40 + 0.25N
-		</men>
+		</md>
 		true.  For instance, <m>70 = 40 + 0.25(120)</m>.  Indeed, scientists who made many additional cricket chirp observations following Dolbear's initial counts found that the formula in <xref ref="eq-functions-Dolbear">Equation</xref> holds with remarkable accuracy for the snowy tree cricket in temperatures ranging from about <m>50^\circ</m> F to <m>85^\circ</m> F.
 	</p>
 

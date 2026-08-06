@@ -127,21 +127,21 @@
 
 	<p>
 		From the similar triangles in <xref ref="F-right-triangle-r-theta">Figure</xref>, we can make an important observation about ratios in right triangles.  Because the triangles are similar, the ratios of corresponding sides must be equal, so if we consider the two hypotenuses and the two horizontal legs, we have
-		<men xml:id="eq-right-COH">
+		<md number="yes" xml:id="eq-right-COH">
 			\frac{r}{1} = \frac{r\cos(\theta)}{\cos(\theta)}
-		</men>.
+		</md>.
 		If we rearrange <xref ref="eq-right-COH">Equation</xref> by dividing both sides by <m>r</m> and multiplying both sides by <m>\cos(\theta)</m>, we see that
-		<men xml:id="eq-right-COH-2">
+		<md number="yes" xml:id="eq-right-COH-2">
 			\frac{\cos(\theta)}{1} = \frac{r\cos(\theta)}{r}
-		</men>.
+		</md>.
 		From a geometric perspective, <xref ref="eq-right-COH-2">Equation</xref> tells us that the ratio of the length of the horizontal leg of a right triangle to the length of the hypotenuse of the triangle is always the same (regardless of <m>r</m>) and that the value of that ratio is <m>\cos(\theta)</m>, where <m>\theta</m> is the angle adjacent to the horizontal leg.  In an analogous way, the equation involving the hypotenuses and vertical legs of the similar triangles is
-		<men xml:id="eq-right-SOH">
+		<md number="yes" xml:id="eq-right-SOH">
 			\frac{r}{1} = \frac{r\sin(\theta)}{\sin(\theta)}
-		</men>,
+		</md>,
 		which can be rearranged to
-		<men xml:id="eq-right-SOH-2">
+		<md number="yes" xml:id="eq-right-SOH-2">
 			\frac{\sin(\theta)}{1} = \frac{r\sin(\theta)}{r}
-		</men>.
+		</md>.
 		<xref ref="eq-right-SOH-2">Equation</xref> shows that the ratio of the length of the vertical leg of a right triangle to the length of the hypotenuse of the triangle is always the same (regardless of <m>r</m>) and that the value of that ratio is <m>\sin(\theta)</m>, where <m>\theta</m> is the angle opposite the vertical leg.  We summarize these recent observations as follows.
 	</p>
 
@@ -232,24 +232,24 @@
 		<solution>
 				<p>
 					From the fact that <m>\beta = \frac{\pi}{5}</m>, it follows that <m>\alpha = \frac{\pi}{2} - \frac{\pi}{5} = \frac{3\pi}{10}</m>.  In addition, we know that
-					<men xml:id="eq-right-sin-ratio">
+					<md number="yes" xml:id="eq-right-sin-ratio">
 						\sin\left(\frac{\pi}{5}\right) = \frac{4}{h}
-					</men>
+					</md>
 					and
-					<men xml:id="eq-right-cos-ratio">
+					<md number="yes" xml:id="eq-right-cos-ratio">
 						\cos\left(\frac{\pi}{5}\right) = \frac{x}{h}
-					</men>
+					</md>
 				</p>
 
 			<p>
 				Solving <xref ref="eq-right-sin-ratio">Equation</xref> for <m>h</m>, we see that
-				<men xml:id="eq-right-sin-ratio-2">
+				<md number="yes" xml:id="eq-right-sin-ratio-2">
 						h = \frac{4}{\sin\left(\frac{\pi}{5}\right)}
-				</men>, which is the exact numerical value of <m>h</m>.  Substituting this result in
+				</md>, which is the exact numerical value of <m>h</m>.  Substituting this result in
 				<xref ref="eq-right-cos-ratio">Equation</xref>, we find that
-				<men xml:id="eq-right-cos-ratio-2">
+				<md number="yes" xml:id="eq-right-cos-ratio-2">
 						\cos\left(\frac{\pi}{5}\right) = \frac{x}{\frac{4}{\sin\left(\frac{\pi}{5}\right)}}
-				</men>.
+				</md>.
 				Solving this equation for the single unknown <m>x</m> shows that
 				<md>
 					x = \frac{4 \cos\left(\frac{\pi}{5}\right)}{\sin\left(\frac{\pi}{5}\right)}
